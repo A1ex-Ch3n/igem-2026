@@ -20,11 +20,11 @@ Concentrate an overnight liquid bacterial culture into a washed cell pellet free
 
 Two recorded specs for the harvest spin — the team's two-stage scheme (used 6-3) and the prof's single-stage spec. Both produce washed pellets; the team's scheme is what's reflected in the project record below.
 
-| Source | Vessel | Speed | Time | Use |
-|---|---|---|---|---|
-| **Team — as run [2026-06-03](../../../lab_notebook/digitalized/2026-06-03_phage-plaque-assay.md)** | 15 mL falcon tube | **3,000 rpm** | **15 min** | First pellet from overnight culture; PBS washes |
-| **Team — as run [2026-06-03](../../../lab_notebook/digitalized/2026-06-03_phage-plaque-assay.md)** | 2 mL Eppendorf | **10,000 × g** | **10 min** | Final wash & pellet, ready for storage |
-| **Prof — `Genomic_And_Phage_Work.docx` Part 1** | centrifuge tube (sized to overnight culture, typically 15 mL or 50 mL) | **4,000 rpm** | until a bacterial pellet forms | One-stage harvest of the entire culture |
+| Source                                                                                             | Vessel                                                                 | Speed          | Time                           | Use                                             |
+| -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | -------------- | ------------------------------ | ----------------------------------------------- |
+| **Team — as run [2026-06-03](../../../lab_notebook/digitalized/2026-06-03_phage-plaque-assay.md)** | 15 mL falcon tube                                                      | **3,000 rpm**  | **15 min**                     | First pellet from overnight culture; PBS washes |
+| **Team — as run [2026-06-03](../../../lab_notebook/digitalized/2026-06-03_phage-plaque-assay.md)** | 2 mL Eppendorf                                                         | **10,000 × g** | **10 min**                     | Final wash & pellet, ready for storage          |
+| **Prof — `Genomic_And_Phage_Work.docx` Part 1**                                                    | centrifuge tube (sized to overnight culture, typically 15 mL or 50 mL) | **4,000 rpm**  | until a bacterial pellet forms | One-stage harvest of the entire culture         |
 
 > [!tip] iGEM 26 team practice — confirmed 2026-06-06 (pending teammate cross-check)
 > The team uses the **two-stage scheme** (rows 1 + 2 above): start in the 15 mL falcon tube at 3,000 rpm × 15 min for the initial pellet + PBS washes, then transfer to a 2 mL Eppendorf and finish at 10,000 × g × 10 min. Prof's one-stage 4,000 rpm variant (row 3) is recorded for reference but not adopted — the two-stage scheme gives a smaller final tube volume that's easier to carry into [[bacteria_genome_extraction]] downstream.
