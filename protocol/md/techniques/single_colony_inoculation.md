@@ -1,0 +1,70 @@
+---
+title: Single-Colony Inoculation into Liquid Culture
+type: technique
+purpose: Transfer one (or a defined small number of) isolated colony from a plate into liquid LB broth to grow a pure overnight culture.
+references:
+  - "[[lb_broth]]"
+source:
+  - lab_notebook/digitalized/2026-05-28_inoculation-2nd-dna-extraction.md
+  - lab_notebook/digitalized/2026-06-02_inoculation-phage-isolation.md
+  - protocol/Genomic_And_Phage_Work.docx
+estimated_time: ≈ 5 min per tube
+---
+
+# Single-Colony Inoculation into Liquid Culture
+
+## Purpose
+Take an isolated single colony (or a defined small number, e.g., 3 per plate for the 6-2 round) from an agar plate and grow it in liquid LB broth overnight. The resulting overnight culture feeds both bacterial sequencing prep ([[bacteria_pellet_for_sequencing]]) and plaque-assay lawn preparation.
+
+## Materials & equipment
+- LB broth tubes (sized per the use case — see [[lb_broth]])
+- Rack
+- Loop
+- Pipette + tips (e.g., 5 mL)
+- Source plate with isolated colonies (e.g., PIA plate from streak isolation)
+- Bunsen burner or alcohol burner (for flame-sterilization, also for sterile zone)
+
+## Quick-lookup table — colonies per tube (all recorded variants)
+
+| Use case | Source | Colonies / tube | LB broth volume |
+|---|---|---|---|
+| Sequencing prep — 2nd DNA extraction | Team — as run [5-28](../../../lab_notebook/digitalized/2026-05-28_inoculation-2nd-dna-extraction.md) | 1 | **5 mL** |
+| Phage-isolation round — next-round culture | Team — as run [6-2](../../../lab_notebook/digitalized/2026-06-02_inoculation-phage-isolation.md) | 3 | **5 mL** `[TBD: confirm volume — notebook says "same as 5-28"]` |
+| Sequencing prep — bacterial isolation & growth | Prof — `Genomic_And_Phage_Work.docx` Part 1 | 1 | **10 mL** |
+
+> [!tip] iGEM 26 team practice — confirmed 2026-06-06 (pending teammate cross-check)
+> The team uses the **5 mL** LB volume for both use cases above (1 colony for sequencing prep, 3 colonies for phage-isolation prep) — the prof's 10 mL variant is recorded for reference but the team has not adopted it. Volume choice between rows 1 and 2 is decided by what the culture feeds downstream:
+> - **1 colony / 5 mL** → narrow downstream use (e.g., DNA extraction from a single isolate)
+> - **3 colonies / 5 mL** → broader / scaled-up downstream use (e.g., a plaque-assay lawn, where colony diversity is OK)
+
+## Reagents
+- [[lb_broth]] (5 mL per tube)
+- Source plate carrying isolated colonies (typically a PIA plate following [[pia]] + [[three_phase_streak]])
+
+## Procedure
+1. Pipette **5 mL** of [[lb_broth]] into each LB tube.
+2. Label each tube with the source plate's number / colony ID.
+3. Select and mark an isolated single colony on the source plate.
+4. Pick that colony onto the loop and dissolve it into the LB broth in **half** the tube (notebook 5-28 phrasing).
+5. Repeat for the remaining plates / colonies.
+6. Place the rack in the incubator (see Checklist).
+
+## Notes / common deviations
+- **Single colony for sequencing; 3 colonies for plaque assay.** Same procedure, different number of colonies picked per plate.
+- "Be careful of contamination!" appears explicitly in the 5-28 notebook entry — work in the sterile zone near the burner.
+- On [2026-06-04](../../../lab_notebook/digitalized/2026-06-04_second-phage-plaque-assay-prep.md) the team used **50 µL of an existing culture** as a 1:100 inoculum into fresh LB instead of picking from a plate ("Add 50 µL of first tube of bacteria to the new tube … 1:100 for bacteria culturing"). This is the **passage** variant of the technique — same idea, source is a liquid culture rather than a plate.
+- **Prof's 10 mL volume** (`Genomic_And_Phage_Work.docx` Part 1) is recommended specifically for sequencing-prep inoculation — gives more total culture for the harvest spin in [[bacteria_pellet_for_sequencing]]. The team's 5 mL variant works for the project's scale but produces less pellet biomass per tube.
+
+## Checklist — where do the outputs go?
+- [ ] Inoculated LB tubes → **30 °C incubator**, rack with **tilted slope** to maximize surface area to oxygen (notebook 6-4 explicit guidance).
+- [ ] After overnight growth → use immediately for downstream (sequencing prep, plaque-assay lawn, OD reading), or short-term **4 °C fridge** if delaying.
+
+## Source
+- Lab notebook: [2026-05-28](../../../lab_notebook/digitalized/2026-05-28_inoculation-2nd-dna-extraction.md) (single-colony version), [2026-06-02](../../../lab_notebook/digitalized/2026-06-02_inoculation-phage-isolation.md) (3-colony version), [2026-06-04](../../../lab_notebook/digitalized/2026-06-04_second-phage-plaque-assay-prep.md) (passage variant).
+- [`../Genomic_And_Phage_Work.docx`](../../Genomic_And_Phage_Work.docx) — Part 1: Bacterial Isolation & Growth (1 colony → **10 mL** LB variant for sequencing prep).
+
+---
+## Log
+- 2026-06-05 — Initial draft from lab notebook entries.
+- 2026-06-05 — Added the prof's **10 mL** sequencing-prep variant as a third row in the quick-lookup table (alongside the team's two 5 mL rows). All three rows preserved per *the project rule of preserving all version variants from disagreeing sources*. Added G&PW as a Source.
+- 2026-06-06 — Added **iGEM 26 team practice** spotlight callout flagging the two **5 mL** rows as the team's actual practice (1 colony for sequencing prep, 3 colonies for phage-isolation prep); prof's 10 mL kept for reference. Pending teammate cross-check.

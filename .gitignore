@@ -1,0 +1,33 @@
+# ===== macOS junk =====
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ===== Obsidian — keep vault config, exclude per-workspace state =====
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# ===== Python / Jupyter =====
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.python-version
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ===== Editor / IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===== Local-only artefacts =====
+# Add anything per-machine here. Project source PDFs (Zymo, AAT Bioquest, prof's docx)
+# are intentionally committed for team reference — see README.md attribution section.
