@@ -24,6 +24,7 @@ PIA further restricts growth to *Pseudomonas* species relative to [[pmm]]. Used 
 - Scale
 - Pipette (for glycerol)
 - Autoclave
+- Autoclave indicator tape
 - Petri dishes
 
 ## Reagents
@@ -32,10 +33,14 @@ PIA further restricts growth to *Pseudomonas* species relative to [[pmm]]. Used 
 - MiniQ water
 
 ## Procedure
+
+> [!important] Label as you prepare
+> Label every bottle and tube with its **substance, volume, and date** (e.g. `PIA — 500 mL — 2026-06-08`) before it goes on a shelf or into the fridge.
+
 1. Add 500 mL of MiniQ water to the bottle.
 2. Weigh out 12.5 g of PIA base medium and add to the water.
 3. Pipette 10 mL of 100 % glycerol into the bottle.
-4. Cap loosely (vent), autoclave for **30 min**.
+4. Cap loosely with autoclave tape (Autoclave Indicator Tape) over the cap, then autoclave for **30 min**.
 5. After autoclave, dispense **8 mL per plate** (notebook 5-27 standard).
    - *Caveat from 5-27:* "For 4 of them, we accidentally added 12 mL :C" — pay attention to pour volume.
 
@@ -54,3 +59,4 @@ PIA further restricts growth to *Pseudomonas* species relative to [[pmm]]. Used 
 ---
 ## Log
 - 2026-06-05 — Initial draft from lab notebook entry.
+- 2026-06-08 — Named the autoclave tape (**Autoclave Indicator Tape**) in the cap-loosely step and added it to Materials & equipment. Added a labelling reminder callout (substance / volume / date on every bottle and tube).

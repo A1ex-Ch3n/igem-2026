@@ -44,7 +44,7 @@ Mix bacterial culture into molten soft agar and pour onto a Petri dish to form a
 - Optional: [[phage_buffer]] for any dilution steps
 
 ## Procedure
-1. **Autoclave soft agar.** Per [[lb_agar]] (0.7 % recipe), 50 mL LB broth + 0.35 g agar → autoclave 1 hr. Keep molten in a **50 °C water bath**. (Recommend 0.8 % per the failure lesson.)
+1. **Autoclave soft agar.** Per [[lb_agar]] (0.7 % recipe), 50 mL LB broth + 0.35 g agar → cap loosely with autoclave tape (Autoclave Indicator Tape) over the cap, then autoclave 1 hr. Keep molten in a **50 °C water bath**. (Recommend 0.8 % per the failure lesson.)
 2. **Mix per-plate volumes** for each bacteria sample:
    - 5 mL molten soft agar + 500 µL of one bacteria sample → quickly invert to mix.
 3. **Pour the mix** over a Petri dish (or onto a hard-agar base for the related layered-plate method — see [[plaque_assay_layered_plate]]). Use **2 plates per bacteria sample** (≈ 2750 µL per plate).
@@ -76,3 +76,4 @@ Mix bacterial culture into molten soft agar and pour onto a Petri dish to form a
 ---
 ## Log
 - 2026-06-05 — Initial draft from lab notebook entry, including the failure record + lesson.
+- 2026-06-08 — Added autoclave-tape instruction (cap loosely with **Autoclave Indicator Tape** over the cap before autoclaving) to the soft-agar prep step.

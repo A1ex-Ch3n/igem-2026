@@ -54,6 +54,7 @@ Per 1 L: 15 mL of 1 M NaH₂PO₄ + 15 mL of 1 M K₂HPO₄ + 970 mL DI H₂O �
 - pH meter or pH paper, 1 N NaOH and 1 N HCl
 - Scale
 - Autoclave
+- Autoclave indicator tape
 - Pipette (for dispensing into plates)
 - Petri dishes
 - UV-light safety cabin (used on 5-22 while plates solidified)
@@ -66,13 +67,17 @@ Per 1 L: 15 mL of 1 M NaH₂PO₄ + 15 mL of 1 M K₂HPO₄ + 970 mL DI H₂O �
 - DI water
 
 ## Procedure (Variant A — notebook 5-21)
+
+> [!important] Label as you prepare
+> Label every bottle and tube with its **substance, volume, and date** (e.g. `PMM — 500 mL — 2026-06-08`) before it goes on a shelf or into the fridge.
+
 1. Add 900 mL DI water to a 1 L flask.
 2. Dissolve **2.07 g NaH₂PO₄·H₂O** and **2.61 g K₂HPO₄** to form the phosphate buffer.
 3. Adjust pH to **6.8** using 1 N NaOH or HCl.
 4. Add **0.05 g FeCl₃** as mineral base; swirl to dissolve.
 5. For solid medium, add **15 g agar** for solidification.
 6. Separate into 2 bottles before autoclaving (notebook 5-21 explicit note).
-7. Autoclave for **45 min**. (Liquid cycle.)
+7. Cap each bottle loosely with autoclave tape (Autoclave Indicator Tape) over the cap, then autoclave for **45 min**. (Liquid cycle.)
 8. After autoclave, dispense into Petri dishes.
    - Notebook 5-21: **7 mL per plate** (made 40 plates from 1 L).
    - Notebook 5-22: **12 mL per plate**. `[TBD: standardize one volume.]`
@@ -97,3 +102,4 @@ Per 1 L: 15 mL of 1 M NaH₂PO₄ + 15 mL of 1 M K₂HPO₄ + 970 mL DI H₂O �
 ## Log
 - 2026-06-05 — Initial draft from lab notebook + both source PMM recipes preserved as variants.
 - 2026-06-08 — Proofread cosmetic fix (**#12**): backtick source-path display corrected from `../X` → `../../X` (the actual files are at `protocol/X` which is `../../X` from `media/`).
+- 2026-06-08 — Named the autoclave tape (**Autoclave Indicator Tape**) in the cap-loosely step (step 7) and added it to Materials & equipment. Added a labelling reminder callout (substance / volume / date on every bottle and tube).

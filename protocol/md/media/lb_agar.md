@@ -33,6 +33,7 @@ LB agar serves three distinct purposes in this project, each at a different agar
 - Autoclave-safe bottle (sized to final volume)
 - Scale (for agar + LB powder)
 - Autoclave
+- Autoclave indicator tape
 - Water bath set to 50 °C (for keeping melted agar pourable, see plaque-assay workflows)
 - Petri dishes
 
@@ -42,10 +43,14 @@ LB agar serves three distinct purposes in this project, each at a different agar
 - DI water
 
 ## Procedure
+
+> [!important] Label as you prepare
+> Label every bottle and tube with its **substance, volume, and date** (e.g. `LB agar 1.0 % — 500 mL — 2026-06-08`) before it goes on a shelf or into the fridge.
+
 1. Add DI water to the bottle (volume per the table).
 2. Weigh out LB broth powder (12.5 g per 500 mL is the project standard) and agar powder (per the table for the desired concentration).
 3. Add both to the bottle, swirl to wet.
-4. Cap loosely (vent for autoclave) and autoclave.
+4. Cap loosely with autoclave tape (Autoclave Indicator Tape) over the cap, then autoclave.
    - 1 hr was used on 6-1 for hard agar.
    - 1 hr was used on 6-3 for 0.7 % soft agar.
    - 30 min was used on 6-4 for 0.7 % soft agar.
@@ -72,3 +77,4 @@ LB agar serves three distinct purposes in this project, each at a different agar
 - 2026-06-05 — Initial draft from lab notebook entries.
 - 2026-06-08 — Proofread fixes (**#6** + **#19**): renamed the 0.7 % row label "Soft-agar overlay (failed)" → "Soft-agar overlay / layered-plate top" because 0.7 % only failed in the overlay-only method (6-3) — it works fine in the layered-plate method (6-4 / 6-5). Renamed the 0.8 % row to "Soft-agar overlay (alt. — solidifies more reliably)". Added a Notes paragraph explaining when to choose 0.7 % vs 0.8 % based on whether a hard-agar base is present. Aligned the Source column formatting on the 0.8 % row.
 - 2026-06-08 — Proofread cosmetic fix (**#12**): backtick source-path display corrected from `../PseudomonasClassAppendixes.pdf` → `../../PseudomonasClassAppendixes.pdf`.
+- 2026-06-08 — Named the autoclave tape (**Autoclave Indicator Tape**) in the cap-loosely step and added it to Materials & equipment. Added a labelling reminder callout (substance / volume / date on every bottle and tube).

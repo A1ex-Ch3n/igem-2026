@@ -31,15 +31,20 @@ Standard rich-medium broth used throughout the project: as a carrier for bacteri
 - Bottle (500 mL or larger, autoclave-safe)
 - Scale (for weighing LB powder)
 - Autoclave
+- Autoclave indicator tape
 
 ## Reagents
 - LB broth powder. `[TBD: brand / catalog number]`
 - DI water (5-27 used MiniQ; 6-1 used DI). `[TBD: pick one for the standard protocol.]`
 
 ## Procedure
+
+> [!important] Label as you prepare
+> Label every bottle and tube with its **substance, volume, and date** (e.g. `LB broth — 500 mL — 2026-06-08`) before it goes on a shelf or into the fridge.
+
 1. Add the water volume to the bottle (see table).
 2. Weigh out the LB broth powder and add it to the water.
-3. Cap loosely (vent for autoclave) and autoclave.
+3. Cap loosely with autoclave tape (Autoclave Indicator Tape) over the cap, then autoclave.
    - 30 min was used on 5-27.
    - 1 hr was used on 6-1.
    - `[TBD: standardize one autoclave cycle for routine use.]`
@@ -61,3 +66,4 @@ Standard rich-medium broth used throughout the project: as a carrier for bacteri
 ## Log
 - 2026-06-05 — Initial draft from lab notebook entries.
 - 2026-06-08 — Proofread improvement (**#16**): expanded quick-lookup table from 1 row (500 mL) to 3 rows (100 mL / 500 mL / 1 L) so smaller and larger batch sizes can be read off the table directly. Moved the autoclave-cycle info out of the table into a separate inline note.
+- 2026-06-08 — Named the autoclave tape (**Autoclave Indicator Tape**) in the cap-loosely step and added it to Materials & equipment. Added a labelling reminder callout (substance / volume / date on every bottle and tube).

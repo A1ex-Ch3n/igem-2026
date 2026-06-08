@@ -50,6 +50,7 @@ Two equivalent recipes are recorded — they give the **same final salt composit
 - Scale
 - pH meter or pH paper (to verify / adjust to pH 7.5 — only needed for Variant B / when using Trizma base)
 - Autoclave
+- Autoclave indicator tape
 
 ## Reagents
 - **Tris** — Trizma base (then pH-adjusted to 7.5) or Tris-HCl pre-buffered at pH 7.5
@@ -59,11 +60,15 @@ Two equivalent recipes are recorded — they give the **same final salt composit
 - MiniQ water
 
 ## Procedure
+
+> [!important] Label as you prepare
+> Label every bottle and tube with its **substance, volume, and date** (e.g. `Phage buffer — 1 L — 2026-06-08`) before it goes on a shelf or into the fridge. This matters especially for the small-tube aliquots (see Notes).
+
 1. Add the water volume to the bottle.
 2. Weigh out and add Tris, MgSO₄·7H₂O, NaCl, and CaCl₂·2H₂O in order.
 3. Mix until fully dissolved.
 4. *(Variant B only)* Verify pH is 7.5; adjust with HCl / NaOH if needed.
-5. Cap loosely (vent), autoclave for **1 hr** (notebook 6-1 cycle).
+5. Cap loosely with autoclave tape (Autoclave Indicator Tape) over the cap, then autoclave for **1 hr** (notebook 6-1 cycle).
 
 ## Notes / common deviations
 - On [2026-06-03](../../../lab_notebook/digitalized/2026-06-03_phage-plaque-assay.md), the team noted: **divide phage buffer (and PBS) into smaller tubes for routine use** to avoid contamination caused by repeatedly pipetting from the bulk bottle.
@@ -83,3 +88,4 @@ Two equivalent recipes are recorded — they give the **same final salt composit
 - 2026-06-05 — Initial draft from lab notebook entry.
 - 2026-06-05 — Added prof's molar-based recipe as **Variant B** alongside the team's existing mass-based recipe (Variant A). Resolved the hydrate-form `[TBD]`s by reverse-checking molar mass × concentration against the team's recorded gram weights — **MgSO₄·7H₂O** and **CaCl₂·2H₂O** confirmed. Added pH 7.5 from prof's spec. Both recipe variants preserved per *the project rule of preserving all version variants from disagreeing sources*.
 - 2026-06-06 — Added **iGEM 26 team practice** spotlight callout flagging Variant A (mass-based, as run on 6-1) as the team's actual practice; Variant B kept as equivalent reference recipe. Pending teammate cross-check.
+- 2026-06-08 — Named the autoclave tape (**Autoclave Indicator Tape**) in the cap-loosely step and added it to Materials & equipment. Added a labelling reminder callout (substance / volume / date on every bottle and tube — emphasised for the aliquot tubes).

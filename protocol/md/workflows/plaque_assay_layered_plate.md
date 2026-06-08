@@ -48,7 +48,7 @@ This was the **second** plaque assay attempt by the project, after the 6-3 soft-
 - Optional: [[phage_buffer]] for any dilution steps
 
 ## Procedure
-1. **Prepare the 0.7 % soft agar:** per [[lb_agar]] — 100 mL LB broth + 0.7 g agar; autoclave 30 min in a 200 mL bottle.
+1. **Prepare the 0.7 % soft agar:** per [[lb_agar]] — 100 mL LB broth + 0.7 g agar in a 200 mL bottle; cap loosely with autoclave tape (Autoclave Indicator Tape) over the cap, then autoclave 30 min.
    - Notebook 6-4 totals: 3 mL × 30 plates = 90 mL needed; made 100 mL.
 2. **Warm the water bath to 50 °C** (to keep soft agar pourable but cool enough not to kill bacteria).
 3. **In a falcon tube**, combine:
@@ -84,3 +84,4 @@ Each plate gets a three-row label:
 ---
 ## Log
 - 2026-06-05 — Initial draft from lab notebook + user clarification on 30-plate / 3-phage / 10-bacteria layout.
+- 2026-06-08 — Added autoclave-tape instruction (cap loosely with **Autoclave Indicator Tape** over the cap before autoclaving) to the soft-agar prep step.

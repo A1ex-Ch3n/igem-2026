@@ -29,6 +29,10 @@ A 1:1 dilution of 100 % glycerol in water used as the cryoprotectant for bacteri
 - MiniQ water
 
 ## Procedure
+
+> [!important] Label as you prepare
+> Label every bottle and tube with its **substance, volume, and date** (e.g. `50 % glycerol — 50 mL — 2026-06-08`) before it goes on a shelf or into the fridge.
+
 1. Measure equal volumes of 100 % glycerol and MiniQ water.
 2. Combine in the bottle. Glycerol is viscous — invert / swirl thoroughly to mix.
 3. Use the same day, or store at **room temperature** (same day) / **4 °C fridge** (short-term reuse over a few days).
@@ -46,3 +50,4 @@ A 1:1 dilution of 100 % glycerol in water used as the cryoprotectant for bacteri
 ## Log
 - 2026-06-05 — Initial draft from lab notebook entry.
 - 2026-06-08 — Proofread improvement (**#18**): reconciled Procedure step 3 with the Checklist — both now mention room temp (same day) and 4 °C fridge (short-term reuse) consistently.
+- 2026-06-08 — Added a labelling reminder callout (substance / volume / date on every bottle and tube). No autoclave step in this protocol, so no autoclave-tape change.
