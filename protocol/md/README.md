@@ -20,14 +20,15 @@ Markdown drafts of all lab protocols, source-of-truth for porting to Benchling. 
 | 6 | [50 % Glycerol Solution](media/glycerol_50pct.md) ★ | 🔍 review | [5-29](../../lab_notebook/digitalized/2026-05-29_optical-density-bacteria-stock.md) | #10 |
 | 7 | [Quick-DNA Miniprep Kit (Zymo)](media/quick_dna_miniprep_kit.md) ★ | 📝 draft *(new)* | `../_d3024_d3025_quick-dna_miniprep_kit.pdf` | #14, #20 |
 
-## Techniques (4)
+## Techniques (5)
 
 | # | Protocol | Status | Source notebook entries / source docs | Used by |
 |---|---|---|---|---|
-| 8 | [Three-Phase Streak Plate](techniques/three_phase_streak.md) | 🔍 review | [5-22](../../lab_notebook/digitalized/2026-05-22_streak-test-trial.md) (practice), [5-26](../../lab_notebook/digitalized/2026-05-26_streak-soil-enrichment.md) (real run) | #12 |
+| 8 | [Three-Phase Streak Plate](techniques/three_phase_streak.md) | 🔍 review | [5-22](../../lab_notebook/digitalized/2026-05-22_streak-test-trial.md) (practice), [5-26](../../lab_notebook/digitalized/2026-05-26_streak-soil-enrichment.md) (real run) | #12, #24 |
 | 9 | [Single-Colony Inoculation](techniques/single_colony_inoculation.md) ★ | 🔍 review *(modified)* | [5-28](../../lab_notebook/digitalized/2026-05-28_inoculation-2nd-dna-extraction.md), [6-2](../../lab_notebook/digitalized/2026-06-02_inoculation-phage-isolation.md); `../Genomic_And_Phage_Work.docx` | #19, #22, #23 |
 | 10 | [OD₆₀₀ Measurement](techniques/od600_measurement.md) ★ | 🔍 review | [5-29](../../lab_notebook/digitalized/2026-05-29_optical-density-bacteria-stock.md) (diluted t22 + undiluted t26) | log-phase decisions |
-| 11 | [Glycerol Stock Storage](techniques/glycerol_stock_storage.md) ★ | 🔍 review | [5-29](../../lab_notebook/digitalized/2026-05-29_optical-density-bacteria-stock.md) | bank cultures |
+| 11 | [Glycerol Stock Storage](techniques/glycerol_stock_storage.md) ★ | 🔍 review | [5-29](../../lab_notebook/digitalized/2026-05-29_optical-density-bacteria-stock.md) | bank cultures; reverse = #24 |
+| 24 | [Revive Bacteria from −80 °C Glycerol Stock](techniques/revive_bacteria_from_glycerol_stock.md) | 📝 draft *(new)* | [6-1](../../lab_notebook/digitalized/2026-06-01_lb-agar-phage-buffer.md) (Procedure ③) | reverse of #11; −80 stock → streak → fresh [[lb_agar]] plates |
 
 ## Workflows (12 active; 2 archived)
 
@@ -65,6 +66,7 @@ Markdown drafts of all lab protocols, source-of-truth for porting to Benchling. 
 - 2026-06-05 — **Folded in `Genomic_And_Phage_Work.docx` and the Zymo kit PDF.** Counts: **20 → 25** protocols. **5 new** (`quick_dna_miniprep_kit`, `bacteria_genome_extraction`, `spot_testing`, `phage_amplification`, `phage_purification`). **4 modified, preserving all variants** (`phage_buffer` ← added prof's molar recipe + pH 7.5; `bacteria_pellet_for_sequencing` ← added prof's 4000 rpm variant; `single_colony_inoculation` ← added prof's 10 mL row; `phage_isolation` ← restructured into bulk + daily-aliquot variants). Cross-ref graph: `quick_dna_miniprep_kit` ← used by `metagenomic_dna_extraction` + `bacteria_genome_extraction`; `phage_isolation` → `phage_amplification` → plaque assays → `phage_purification` (× 3 rounds) → UNDONE phage DNA extraction + sequencing.
 - 2026-06-06 — **Prof updated `Genomic_And_Phage_Work.docx`:** crossed out steps 15–17 (host amplification + daily sampling) and steps 21–26 (spot-testing execution); also indicated step 14 (Filtering) should now be done twice. **Impact on `protocol/md/`:** marked **`workflows/spot_testing.md`** and **`workflows/phage_amplification.md`** as **🔴 deprecated** (content preserved as historical reference; both protocols team had never executed). Removed Variant B daily-aliquot from **`workflows/phage_isolation.md`** (now deprecated within that file). Updated "Downstream pipeline" notes in `phage_isolation` to the simplified path `phage_isolation → plaque_assay_layered_plate → phage_purification (× 3 rounds)`. **Step 14 "filter 2×" update deliberately NOT yet applied** — pending team discussion before adoption. README status legend gained 🔴 deprecated.
 - 2026-06-06 — **Moved the 2 deprecated protocols to [`/archived/`](../../archived/) at the project root** (`spot_testing.md` + `phage_amplification.md`). Workflows count `14 → 12 active + 2 archived`. Index split into an active section + an "Archived" section linking to the new home. Each archived file's full content + `[!failure] DEPRECATED` callout preserved verbatim — the archive directory has its own `README.md` recording provenance.
+- 2026-06-08 — **New technique: [Revive Bacteria from −80 °C Glycerol Stock](techniques/revive_bacteria_from_glycerol_stock.md)** — drafted from the 6-1 entry (Procedure ③ "Streak bacteria stock"). Fills a real gap: the revival direction (−80 stock → streak → fresh plates) previously had no protocol, only the freezing direction (#11). **Appended as #24** rather than inserting as a new #12 — the index's "Used by" column cross-references protocol numbers, so renumbering would ripple; #24 keeps existing refs intact (rows now run 8–11, 24 in the Techniques table). Techniques count `4 → 5`.
 
 ---
 
@@ -98,6 +100,7 @@ Missing values and ambiguities surfaced during drafting. Each protocol carries i
 - **Bacteria genome extraction — team modifications** to the Zymo Whole Blood protocol (resuspension buffer + volume + any incubation tweaks) — [`workflows/bacteria_genome_extraction.md`](workflows/bacteria_genome_extraction.md). User will share specifics.
 - **Phage buffer aliquot volume** — [`media/phage_buffer.md`](media/phage_buffer.md)
 - **Phage purification — long-term banking** of confirmed-clonal lysate — [`workflows/phage_purification.md`](workflows/phage_purification.md) (after round 3)
+- **Glycerol-stock revival — incubation temp + time, and scrape amount** (6-1 entry doesn't record either; project default is 30 °C overnight) — [`techniques/revive_bacteria_from_glycerol_stock.md`](techniques/revive_bacteria_from_glycerol_stock.md)
 
 ### `==CONFIRM==` items (flagged inline)
 - **`8-5-2` × 2 vs `8-3-2` × 2** in the 6-3 pellet list vs 6-5 Set A — physical freezer rack to verify — [`workflows/bacteria_pellet_for_sequencing.md`](workflows/bacteria_pellet_for_sequencing.md), [`lab_notebook/digitalized/2026-06-05_…md`](../../lab_notebook/digitalized/2026-06-05_plaque-assay-r3-dna-extraction-quantification.md) Procedure ③
