@@ -94,7 +94,7 @@ Full readings live in [`data/0529_OD.xlsx`](../../data/0529_OD.xlsx). Summary be
 | 11 | 9-2-2 | 0.809 |
 | 12 | 8-5-2 | 0.697 |
 | 13 | 6-3-2 | 0.645 |
-| 14 | 6-2-1 | 0.826 — **Most Likely *P. aeruginosa*** |
+| 14 | 6-2-1 | 0.826 — **Most Likely *P. aeruginosa*** (heads the block below) |
 | 15 | 6-2-2 | 1.166 |
 | 16 | 6-6-1 | 0.962 |
 | 17 | 6-6-2 | 0.817 |
@@ -112,7 +112,11 @@ Full readings live in [`data/0529_OD.xlsx`](../../data/0529_OD.xlsx). Summary be
 
 Total: **28 stocks**.
 
+> [!note] Two sub-lists — entries 14–28 are the likely *P. aeruginosa* candidates
+> Entries **1–13** are the first batch, sorted by descending OD (1.235 → 0.645). Entries **14–28** (6-2-1 onward) are a separate, unsorted sub-list — and per the team, **all of them are likely *P. aeruginosa*** candidates. The "Most Likely *P. aeruginosa*" annotation on 6-2-1 heads this whole block, not just that single stock. (The 2026-06-08 revived/plated panel is drawn entirely from this block — see [2026-06-08](2026-06-08_metagenomic-extraction-dna-concentration-quantification.md) ①.)
+
 ---
 ## Log
 - 2026-06-04 — Initial digitization from `pre_0604.pdf` pp.18–19. Corrected handwritten "10 mL" → "10 µL" loop volume (logged in `typos.md`).
 - 2026-06-04 — Added full OD measurement tables transcribed from `data/0529_OD.xlsx`.
+- 2026-06-09 — Clarified (team) that Sheet-2 entries **14–28** (6-2-1 onward) are a separate sub-list of **likely *P. aeruginosa*** candidates — the "Most Likely *P. aeruginosa*" note heads the whole block, not just 6-2-1. Surfaced while adding the OD column to the [2026-06-08](2026-06-08_metagenomic-extraction-dna-concentration-quantification.md) revived-stock table (that panel is drawn entirely from this block).

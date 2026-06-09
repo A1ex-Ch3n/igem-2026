@@ -20,3 +20,4 @@ Digital copies of all entries from the physical lab notebook. Page images in `im
 | 2026-06-03 | [Phage plaque assay](2026-06-03_phage-plaque-assay.md) | p.24–26 | Alex, Olivia |
 | 2026-06-04 | [Second phage plaque assay prep](2026-06-04_second-phage-plaque-assay-prep.md) | p.27–28 | Carol |
 | 2026-06-05 | [Plaque assay R3, bacterial DNA extraction, Qubit quant](2026-06-05_plaque-assay-r3-dna-extraction-quantification.md) | p.29–31 | Alex, Olivia, Carol |
+| 2026-06-08 | [Metagenomic extraction (small-biomass), DNA concentration, Qubit quant (before/after)](2026-06-08_metagenomic-extraction-dna-concentration-quantification.md) | p.32–36 | Alex, Olivia |

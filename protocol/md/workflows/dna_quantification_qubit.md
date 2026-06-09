@@ -6,6 +6,7 @@ references: []
 source:
   - lab_notebook/digitalized/2026-05-27_dna-quantification-pia-plates.md
   - lab_notebook/digitalized/2026-06-05_plaque-assay-r3-dna-extraction-quantification.md
+  - lab_notebook/digitalized/2026-06-08_metagenomic-extraction-dna-concentration-quantification.md
   - protocol/protocol-for-portelite-fluorimetric-dna-quantitation-kit-with-broad-dynamic-range-optimized-for-cytocite-and-qubit-fluorometers-version-OFFcC.pdf
 estimated_time: ≈ 30 min for ≤ 8 samples + 6–7 standards
 ---
@@ -52,6 +53,19 @@ Uses Component D directly as the top standard:
 
 ### Kit-recommended alternative (7-point)
 Per the protocol: 1/3 serial dilution from Component D (100 ng/µL) gives **30 / 10 / 3 / 1 / 0.3 / 0.1 / 0 ng/µL** — denser low end, no high-concentration top point. Use this when samples are expected to be in the <10 ng/µL range.
+
+### Smaller-volume 4-point series (used 2026-06-08)
+On [2026-06-08](../../../lab_notebook/digitalized/2026-06-08_metagenomic-extraction-dna-concentration-quantification.md) the team made a **fresh, smaller-volume standard series** to read the **concentrated** metagenomic eluates (the **unconcentrated** samples were read against the prior 6-point curve from 2026-06-05 — a before/after-concentration comparison). Top point at 30 ng/µL, four points:
+
+| Standard | team label | Conc (ng/µL) | RFU (green, p.36) |
+|---|---|---:|---:|
+| Std 0 (blank) | S0 | 0 | 156.326 `[TBD: photo "15 6326"]` |
+| Std 1 | S1 | 1 | 173.90 |
+| Std 10 | S10 | 10 | 316.95 |
+| Std 30 | S30 | 30 | 724.52 `[TBD: p.36 subscript reads like "S₅₀"/value "7224.52"; resolved to Std 30 = 724.52 on linearity grounds]` |
+
+> [!tip] Pick the curve to match the samples
+> Read **concentrated / high-DNA** samples and **dilute** samples on appropriate curves. With only a 30 ng/µL top point, concentrated eluates can read **far above the top standard** (sites C8/C9 on 6-8 were ~3,000–5,600 RFU, heavily extrapolated) — quote with caution or re-dilute / add a higher standard. See [[dna_concentration]] for the concentration step that precedes this read.
 
 ## Materials & equipment
 - **Qubit 4 Fluorometer** (also compatible with AAT Bioquest CytoCite Fluorometer)
@@ -120,3 +134,4 @@ Per the protocol: 1/3 serial dilution from Component D (100 ng/µL) gives **30 /
 - 2026-06-05 — Added explicit diluent confirmation to the standards callout: all team standard dilutions are made in **Component B (Assay Buffer)** — never water or another buffer. (The "How prepared" column rows already named Component B; the callout now states it too for at-a-glance clarity.)
 - 2026-06-08 — Proofread fix (**#2**): corrected wrong mix labels in Notes — "M1 / M2 / M3 mix" → "**M1 / M3 / M4 / M7 mix**" to match the actual 6-05 lab-notebook record (one mix per 2nd-batch site #1, #3, #4, #7).
 - 2026-06-08 — Proofread cosmetic fix (**#13**): markdown link label for the Portelite kit PDF corrected from `../protocol-for-portelite-…pdf` → `../../protocol-for-portelite-…pdf` to match the actual target.
+- 2026-06-08 — Added the **smaller-volume 4-point standard series** (used 2026-06-08 for concentrated metagenomic eluates) **alongside** the existing 6-point and kit 7-point series (preserve-all-versions). Noted the before/after-concentration workflow with [[dna_concentration]] and the extrapolation caution for concentrated reads. Added the 6-8 entry to `source:`. Several p.36 standard digits flagged `[TBD]`; S30-vs-S50 resolution recorded.
