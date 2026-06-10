@@ -22,10 +22,18 @@ Handwritten errors and unclear items identified during digitization. Tick off ea
 - [ ] **p.36** — 4th standard subscript reads like **"S₅₀"** and value like **"7224.52"**, but resolved with the team to **Std 30 = 724.52** on linearity grounds (a conc-50 point would be ~10× off the line). Confirm label + value against the bench record.
 - [ ] **p.36** — concentrated samples: **C1** last digit ("151.6x"), **C8** ("5655.31" vs "5455.31"), **C9** last digits (".36" vs ".86"). Confirm.
 - [ ] **p.36** — right-margin concentration-factor calc (≈250 ng/µL, ×30, ≈180 ng/µL, "16k ng/µL → 30 µL") needs exact transcription; confirm the concentrated-eluate final volume.
-- [ ] **p.32/p.33** — day objective/procedure sub-steps and the bead-beater / standard-curve sketches are partly illegible; LB-broth volume and soil-enrichment site/flask count are `[TBD]`.
+- [ ] **p.32/p.33** — day objective/procedure sub-steps and the bead-beater / standard-curve sketches are partly illegible; LB-broth volume is `[TBD]`. (Phage soil-enrichment resolved: sites **#3, 5, 6, 8, 9, 10**, 6 flasks — user, 2026-06-09.)
 - [x] **Sequencing submission (6-8) — bacterial dilution** → confirmed **NOT diluted** (user); submitted at 6-5 extraction concentration. Only metagenomes were diluted (38 µL + 50 µL kit buffer). Still `[ ]` open: the exact **bacterial submitted volume** (taken as ≈ 90 µL from the 6-5 margin; confirm if less than the full eluate).
 - [x] **p.32 (kit page `0608/IMG_4411.png`)** — metagenomic input mass → confirmed **0.12 g/tube** (user; lab scale has no mg mode). Still `[ ]` open: the **"mix 4 tubes into 1" pooling ratio** ("1-1, 1, 1×1").
 - Note (not a physical-notebook typo): the user's started `code/0608_quantification.ipynb` had `C1 = 316.95` — that is the Std-10 RFU, not C1; corrected to the p.36 value during digitization.
+
+### 2026-06-09 (p.37–38) — open
+- [ ] **p.37** — entry **authors** not legible; confirm.
+- [ ] **p.37** — objective/goal wording partly illegible (incl. the name of whoever banked the bacteria).
+- [ ] **p.37** — bacteria-culture **label scheme** ("00/0 / plate number (D in E, C)") and **total tube count** (~30 = "next 27" + 3) unclear; confirm.
+- [x] **p.37/p.38** — phage-isolation **enrichment site list** → confirmed **#3, 5, 6, 8, 9, 10** (user; the 6-8 batch, same as 6-1). The p.37 "#3,6,8,9" / p.38 "#3,5,7,8,9,10" reads were both garbled. 6 enrichments × 4 tubes = 24 tubes.
+- [ ] **p.37** — phage-isolation **centrifuge speed** reads "5×g" — a misread of a higher rpm/×g ("higher than last time, cleaner supernatant"). Confirm the value.
+- [ ] **p.38** — phage **filtrate volume** per enrichment (~2–3 mL?) unclear; confirm.
 
 ### Resolved earlier (2026-06-04)
 - [x] **p.27** — Left-margin annotation is an illustration of the plate-labelling convention: row 1 = date (e.g. `26/6/4`), row 2 = phage ID (`ϕ<n>`, where `n` = the soil enrichment the phage filtrate came from), row 3 = bacteria label (e.g. `8-8-2`).
@@ -37,3 +45,4 @@ Handwritten errors and unclear items identified during digitization. Tick off ea
 - 2026-06-04 — All three pending-clarification items resolved (p.27 margin illustration described; p.19 OD data added from `data/0529_OD.xlsx`; p.10 enrichment samples confirmed as #2/5/6/8/9/10).
 - 2026-06-08 — Added p.32–36 pending-clarification block during digitization of the 0608 session (unconcentrated readings, p.36 blurry standards/samples, S30-vs-S50 resolution, concentration-factor calc, p.32/33 objective + kit-page annotations).
 - 2026-06-08 — Resolved (user): unconcentrated readings (119.87/195.94/3600.46/1139.16), input mass (0.12 g/tube), bacterial sequencing dilution (not diluted). Remaining open: pooling ratio, blurry p.36 digits, concentration-factor calc, bacterial submitted volume.
+- 2026-06-09 — Added p.37–38 pending-clarification block during digitization of the 0609 session (authors, objective wording, label scheme + tube count, enrichment site list discrepancy, centrifuge speed, filtrate volume).

@@ -7,6 +7,7 @@ references:
   - "[[phage_purification]]"
 source:
   - lab_notebook/digitalized/2026-06-02_inoculation-phage-isolation.md
+  - lab_notebook/digitalized/2026-06-09_bacteria-culture-phage-isolation.md
   - protocol/Genomic_And_Phage_Work.docx
 estimated_time: ≈ 30 min for 6 enrichments (bulk filtration)
 ---
@@ -69,7 +70,21 @@ Process each enrichment in one batch of its full volume.
 
 (Source: photo `../../../photos/0605/` "phage isolation round 1, 4/6/2".)
 
+## As-run record — round 2 (2026-06-09): smaller tubes, higher speed
+
+A second isolation round on [2026-06-09](../../../lab_notebook/digitalized/2026-06-09_bacteria-culture-phage-isolation.md) processed a fresh soil enrichment with the **same Variant A logic (centrifuge + single 0.22 µm filtration)** but **different vessel/speed parameters** — recorded here side-by-side with the 6-2 parameters (don't overwrite):
+
+| Parameter | Round 1 (6-2) | Round 2 (6-9) |
+|---|---|---|
+| Vessel | 15 mL falcon, 12 mL/tube | **2 mL microcentrifuge tubes**, 4 tubes/enrichment (24 tubes, 2 runs) |
+| Spin | 2,800 rpm × 5 min | **higher speed × ~5 min** `[TBD: exact speed — notebook reads "5×g", a misread]` |
+| Filtration | 5 mL pulls through 0.22 µm (single pass) | draw supernatant → **single 0.22 µm syringe-filter** into new 2 mL tube |
+| Output | ϕ3/5/6/8/9/10 → 4 °C | **ϕ3/5/6/8/9/10** (same 6 sites), ~2–3 mL each → 4 °C |
+
+**Lesson (6-9): the higher centrifuge speed gave a visibly cleaner / smoother / less-smelly supernatant** than the 6-2 round — a worthwhile parameter change for future rounds.
+
 ## Notes / common deviations
+- **Higher centrifuge speed → cleaner supernatant (6-9).** The 2026-06-09 round spun at a higher speed than the 6-2 round (in 2 mL microcentrifuge tubes) and got a visibly cleaner, less-smelly supernatant before filtration — see the round-2 table above.
 - The centrifugation removes intact cells; the 0.22 µm filtration removes anything cell-sized that's left. Together they give a "cell-free lysate" — i.e., anything that grows from this on a host lawn is necessarily a sub-bacterial particle (phage being the most likely).
 - **Downstream pipeline (simplified per prof's 2026-06-06 update):** this protocol feeds → [[plaque_assay_layered_plate]] (the team's screening method) → [[phage_purification]] (3 rounds of single-plaque re-isolation) → phage DNA extraction → sequencing. The previously-planned `[[phage_amplification]]` (host amplification) and `[[spot_testing]]` (multi-spot screening) steps are deprecated and no longer in the pipeline.
 - **Iterative re-isolation lives in [[phage_purification]].** That's the protocol that picks a single plaque from a positive assay, re-elutes it into [[phage_buffer]], and re-plates on a fresh lawn — repeated ≥ 3 times to drive the lysate toward monoclonality. Re-isolation rounds 2 and 3 are currently UNDONE in the scheme.
@@ -80,7 +95,7 @@ Process each enrichment in one batch of its full volume.
 - [ ] Used syringes / filters → biohazard waste per local guidance.
 
 ## Source
-- Lab notebook: [2026-06-02](../../../lab_notebook/digitalized/2026-06-02_inoculation-phage-isolation.md) (Procedure for ② — Variant A bulk filtration).
+- Lab notebook: [2026-06-02](../../../lab_notebook/digitalized/2026-06-02_inoculation-phage-isolation.md) (Procedure for ② — Variant A bulk filtration), [2026-06-09](../../../lab_notebook/digitalized/2026-06-09_bacteria-culture-phage-isolation.md) (round 2 — 2 mL tubes, higher speed, single filter).
 - [`../Genomic_And_Phage_Work.docx`](../../Genomic_And_Phage_Work.docx) — Part 2: Phage Isolation & Enrichment from Soil (step 14 Filtering → Variant A here; Variant B daily-aliquot scheme **deprecated** 2026-06-06 along with the now-removed steps 15–17).
 - Photo evidence: `../../../photos/0605/` (round-1 phage isolation rack).
 
@@ -91,3 +106,4 @@ Process each enrichment in one batch of its full volume.
 - 2026-06-06 — Added **iGEM 26 team practice** spotlight callout flagging **Variant A** (bulk filtration, as run 6-2) as the team's actual practice; Variant B kept for when the team starts running [[phage_amplification]]. Pending teammate cross-check.
 - 2026-06-06 — **Deprecated Variant B** (daily-aliquot scheme). Prof crossed out steps 15–17 of `Genomic_And_Phage_Work.docx` (Enrichment Set-Up + Incubation + Daily phage Sampling), eliminating the upstream host-amplification step that Variant B fed off. Variant B procedure steps struck through but content preserved as historical reference; references frontmatter no longer links `[[phage_amplification]]`; "Downstream pipeline" Note updated to the simplified path `phage_isolation → plaque_assay_layered_plate → phage_purification`. Variant A unchanged. Prof's separate "filter 2×" update to step 14 deliberately **not yet applied** — pending team discussion.
 - 2026-06-08 — Proofread fixes (**#7** + **#5**): Variant A step 5 "label with sample ID + isolation round number" → "label with sample ID + collection date" (Variant B was the multi-round one; now deprecated, "round number" no longer applies). Spin-format house style: 2800 rpm → 2,800 rpm.
+- 2026-06-09 — Added an **as-run round-2 record** (2026-06-09): 2 mL microcentrifuge tubes + higher centrifuge speed → cleaner supernatant, then the **same single 0.22 µm filtration** as 6-2 (preserved 6-2's parameters side-by-side, didn't overwrite). Added the cleaner-supernatant lesson to Notes + 6-9 to `source:`. **Prof's "filter 2×" update remains NOT adopted** — the team confirmed 6-9 followed the 6-2 single-filter procedure, so it stays pending team discussion.

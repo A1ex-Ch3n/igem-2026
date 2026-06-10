@@ -42,12 +42,13 @@ The medium is intentionally **LB**, not PMM — for the phage track we want the 
 3. Incubate at `[TBD: temperature & duration — not documented in 6-1]`.
 
 ## Selected samples (project record)
-On 2026-06-01 the team enriched **6 sites**: **#3, #5, #6, #8, #9, #10**.
+On 2026-06-01 the team enriched **6 sites**: **#3, #5, #6, #8, #9, #10**. The **same 6 sites** were re-enriched on **2026-06-08** (isolated to filtrate 2026-06-09).
 
 The sample selection differs from [[soil_enrichment_bacteria]] (which used #2 in place of #3) — `==CONFIRM: was the #2 vs #3 difference intentional?==`
 
 ## Notes / common deviations
 - After enrichment, the next step is [[phage_isolation]] (centrifuge + 0.22 µm filter) to produce the working phage stock.
+- **Repeat batches.** A fresh enrichment of the **same 6 sites (#3, 5, 6, 8, 9, 10)** was set up on [2026-06-08](../../../lab_notebook/digitalized/2026-06-08_metagenomic-extraction-dna-concentration-quantification.md) ③ and processed to phage filtrate on [2026-06-09](../../../lab_notebook/digitalized/2026-06-09_bacteria-culture-phage-isolation.md) (see [[phage_isolation]] round 2).
 
 ## Checklist — where do the outputs go?
 - [ ] Inoculated enrichment flasks → **30 °C incubator** during enrichment.
@@ -60,3 +61,4 @@ The sample selection differs from [[soil_enrichment_bacteria]] (which used #2 in
 ---
 ## Log
 - 2026-06-05 — Initial draft from lab notebook entry.
+- 2026-06-09 — Added a repeat-batch note: a fresh enrichment was processed to phage filtrate on 6-9 ([[phage_isolation]] round 2). Cross-link + `[TBD]` to confirm it was the 6-8 ③ setup and its site list.
