@@ -7,9 +7,14 @@ references:
   - "[[lb_broth]]"
   - "[[phage_buffer]]"
   - "[[phage_isolation]]"
+  - "[[phage_purification]]"
   - "[[single_colony_inoculation]]"
 source:
   - lab_notebook/digitalized/2026-06-04_second-phage-plaque-assay-prep.md
+  - lab_notebook/digitalized/2026-06-05_plaque-assay-r3-dna-extraction-quantification.md
+  - lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md
+  - lab_notebook/digitalized/2026-06-11_bacteria-culture-plaque-assay.md
+  - lab_notebook/digitalized/2026-06-12_plaque-assay-extracted-phage.md
 estimated_time: ≈ 2–3 hr setup + overnight incubation
 ---
 
@@ -71,6 +76,10 @@ Each plate gets a three-row label:
 - **3 phages × 10 bacteria = 30 plates** in 3 groups of 10. Each group uses one phage (ϕ8, ϕ9, or ϕ10) across all 10 bacteria samples.
 - Phage filtrate is kept at **4 °C** between transfers to the falcon tube — the 6-4 right margin notes "4 °C" near step 4.
 - Lessons from the prior 6-3 failure are baked into this method: the hard agar base + smaller overlay volume per plate (3 mL vs 5.5 mL) makes solidification more reliable.
+- **Per-plate overlay recipe (as run).** [6-05](../../../lab_notebook/digitalized/2026-06-05_plaque-assay-r3-dna-extraction-quantification.md): 3 mL 0.7 % soft agar + **300 µL** bacteria + **150 µL** phage filtrate. [6-12](../../../lab_notebook/digitalized/2026-06-12_plaque-assay-extracted-phage.md): 3 mL 0.7 % LB agar + **300 µL** bacteria + **200 µL** *extracted* phage (picked-plaque eluate, more dilute than fresh filtrate → larger volume). Both preserved.
+- **As run [2026-06-10](../../../lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md) ④:** Φ3/5/6 assayed against the 10 new revived-panel hosts (per 6-05 procedure).
+- **As run [2026-06-11](../../../lab_notebook/digitalized/2026-06-11_bacteria-culture-plaque-assay.md):** Φ8/9/10 against 10 new hosts. **Stack only 2 plates high in the incubator to maximize oxygen interaction** (a deliberate change from earlier rounds that stacked more). Outcome (reported [6-12](../../../lab_notebook/digitalized/2026-06-12_plaque-assay-extracted-phage.md)): **none of these plaques grew.**
+- **Re-assay of picked plaques [2026-06-12](../../../lab_notebook/digitalized/2026-06-12_plaque-assay-extracted-phage.md):** `6-8-1` Φ3 and `8-1-2` Φ6, eluted from the 6-10 ϕ3/5/6 plates (see [[phage_purification]]), re-plated with their host bacteria. *(Both this week's assays — 6-10 ϕ3/5/6 and 6-11 ϕ8/9/10 — ran on the same 10 newly revived hosts; the ϕ8/9/10 screen produced no plaques.)*
 
 ## Checklist — where do the outputs go?
 - [ ] Poured plates (after the 10-min solidification wait) → **30 °C incubator**, inverted (lid on bottom).
@@ -78,10 +87,11 @@ Each plate gets a three-row label:
 - [ ] Soft-agar leftovers / failed pours → [[media_disposal]].
 
 ## Source
-- Lab notebook: [2026-06-04](../../../lab_notebook/digitalized/2026-06-04_second-phage-plaque-assay-prep.md) (Procedure ①).
+- Lab notebook: [2026-06-04](../../../lab_notebook/digitalized/2026-06-04_second-phage-plaque-assay-prep.md) (Procedure ①); [2026-06-05](../../../lab_notebook/digitalized/2026-06-05_plaque-assay-r3-dna-extraction-quantification.md) (round 3, per-plate recipe); [2026-06-10](../../../lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md) / [2026-06-11](../../../lab_notebook/digitalized/2026-06-11_bacteria-culture-plaque-assay.md) / [2026-06-12](../../../lab_notebook/digitalized/2026-06-12_plaque-assay-extracted-phage.md) (Φ3/5/6 + Φ8/9/10 rounds, stack-2 oxygen note, extracted-phage re-assay).
 - User confirmation in chat (2026-06-05): "Second plaque run only has thirty plates, and it's the combination of 3 phages (8, 9, 10) and 10 bacteria samples."
 
 ---
 ## Log
 - 2026-06-05 — Initial draft from lab notebook + user clarification on 30-plate / 3-phage / 10-bacteria layout.
 - 2026-06-08 — Added autoclave-tape instruction (cap loosely with **Autoclave Indicator Tape** over the cap before autoclaving) to the soft-agar prep step.
+- 2026-06-12 — Added 6-05/6-10/6-11/6-12 as-run notes: per-plate recipe variants (6-05 150 µL filtrate vs 6-12 200 µL extracted phage), the **stack-only-2-plates** oxygen lesson (6-11), Φ8/9/10 outcome ("none grew"), and the extracted-phage re-assay (6-8-1 Φ3 / 8-1-2 Φ6). Added `[[phage_purification]]` cross-ref + 6-05/6-10/6-11/6-12 to `source:`. No procedure changes.

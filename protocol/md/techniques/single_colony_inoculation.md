@@ -8,6 +8,9 @@ source:
   - lab_notebook/digitalized/2026-05-28_inoculation-2nd-dna-extraction.md
   - lab_notebook/digitalized/2026-06-02_inoculation-phage-isolation.md
   - lab_notebook/digitalized/2026-06-09_bacteria-culture-phage-isolation.md
+  - lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md
+  - lab_notebook/digitalized/2026-06-11_bacteria-culture-plaque-assay.md
+  - lab_notebook/digitalized/2026-06-12_plaque-assay-extracted-phage.md
   - protocol/Genomic_And_Phage_Work.docx
 estimated_time: ≈ 5 min per tube
 ---
@@ -55,6 +58,8 @@ Take an isolated single colony (or a defined small number, e.g., 3 per plate for
 - **As run [2026-06-09](../../../lab_notebook/digitalized/2026-06-09_bacteria-culture-phage-isolation.md):** 3 colonies/plate into LB tubes, **~30 tubes** total (the "3 colonies / 5 mL" row above), scraping the colony surface gently (not too deep) and **changing the loop per colony**. `[TBD: confirm tube count; flagged inference that the source plates are the 6-8 revived P. aeruginosa candidate stocks.]`
 - "Be careful of contamination!" appears explicitly in the 5-28 notebook entry — work in the sterile zone near the burner.
 - On [2026-06-04](../../../lab_notebook/digitalized/2026-06-04_second-phage-plaque-assay-prep.md) the team used **50 µL of an existing culture** as a 1:100 inoculum into fresh LB instead of picking from a plate ("Add 50 µL of first tube of bacteria to the new tube … 1:100 for bacteria culturing"). This is the **passage** variant of the technique — same idea, source is a liquid culture rather than a plate.
+- **Passage variant, as run [2026-06-10](../../../lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md) ③ and [2026-06-12](../../../lab_notebook/digitalized/2026-06-12_plaque-assay-extracted-phage.md) ①:** **5 mL LB broth + 50 µL of the prior overnight culture** per tube (same 1:100 passage as 6-04).
+- **As run [2026-06-11](../../../lab_notebook/digitalized/2026-06-11_bacteria-culture-plaque-assay.md):** 10 isolates picked from LB plates (by Rafael) into tubes. **Cultures may show sediment & floc — vortex first, then pipette only the clear liquid on top** when using the culture downstream (e.g., for a plaque-assay lawn).
 - **Prof's 10 mL volume** (`Genomic_And_Phage_Work.docx` Part 1) is recommended specifically for sequencing-prep inoculation — gives more total culture for the harvest spin in [[bacteria_pellet_for_sequencing]]. The team's 5 mL variant works for the project's scale but produces less pellet biomass per tube.
 
 ## Checklist — where do the outputs go?
@@ -62,7 +67,7 @@ Take an isolated single colony (or a defined small number, e.g., 3 per plate for
 - [ ] After overnight growth → use immediately for downstream (sequencing prep, plaque-assay lawn, OD reading), or short-term **4 °C fridge** if delaying.
 
 ## Source
-- Lab notebook: [2026-05-28](../../../lab_notebook/digitalized/2026-05-28_inoculation-2nd-dna-extraction.md) (single-colony version), [2026-06-02](../../../lab_notebook/digitalized/2026-06-02_inoculation-phage-isolation.md) (3-colony version), [2026-06-04](../../../lab_notebook/digitalized/2026-06-04_second-phage-plaque-assay-prep.md) (passage variant).
+- Lab notebook: [2026-05-28](../../../lab_notebook/digitalized/2026-05-28_inoculation-2nd-dna-extraction.md) (single-colony version), [2026-06-02](../../../lab_notebook/digitalized/2026-06-02_inoculation-phage-isolation.md) (3-colony version), [2026-06-04](../../../lab_notebook/digitalized/2026-06-04_second-phage-plaque-assay-prep.md) / [2026-06-10](../../../lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md) / [2026-06-12](../../../lab_notebook/digitalized/2026-06-12_plaque-assay-extracted-phage.md) (passage variant), [2026-06-11](../../../lab_notebook/digitalized/2026-06-11_bacteria-culture-plaque-assay.md) (10 isolates from LB plates; vortex sediment/floc).
 - [`../Genomic_And_Phage_Work.docx`](../../Genomic_And_Phage_Work.docx) — Part 1: Bacterial Isolation & Growth (1 colony → **10 mL** LB variant for sequencing prep).
 
 ---
@@ -71,3 +76,4 @@ Take an isolated single colony (or a defined small number, e.g., 3 per plate for
 - 2026-06-05 — Added the prof's **10 mL** sequencing-prep variant as a third row in the quick-lookup table (alongside the team's two 5 mL rows). All three rows preserved per *the project rule of preserving all version variants from disagreeing sources*. Added G&PW as a Source.
 - 2026-06-06 — Added **iGEM 26 team practice** spotlight callout flagging the two **5 mL** rows as the team's actual practice (1 colony for sequencing prep, 3 colonies for phage-isolation prep); prof's 10 mL kept for reference. Pending teammate cross-check.
 - 2026-06-09 — Added a 6-9 as-run note (3 colonies/plate, ~30 tubes) + 6-9 to `source:`. Covered by the existing "3 colonies / 5 mL" quick-lookup row — no new variant.
+- 2026-06-12 — Added 6-10/6-11/6-12 as-run notes: 6-10/6-12 passage (5 mL LB + 50 µL prior culture, same 1:100 as 6-04); 6-11 (10 isolates from LB plates by Rafael; vortex sediment/floc, pipette clear top). Added 6-10/6-11/6-12 to `source:`. No new variant rows.

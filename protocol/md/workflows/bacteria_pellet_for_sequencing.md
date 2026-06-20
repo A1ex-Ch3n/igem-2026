@@ -7,6 +7,7 @@ references:
   - "[[bacteria_genome_extraction]]"
 source:
   - lab_notebook/digitalized/2026-06-03_phage-plaque-assay.md
+  - lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md
   - protocol/Genomic_And_Phage_Work.docx
 estimated_time: ≈ 1 hr for ~10 samples
 ---
@@ -44,9 +45,9 @@ Two recorded specs for the harvest spin — the team's two-stage scheme (used 6-
 ## Procedure
 1. **Pool overnight cultures into falcon tubes.** Add tubes #1 and #2 from the source culture into one 15 mL falcon tube (per 6-3 step 1; for the project this combined the duplicate inoculations from 6-2).
 2. **First spin.** Centrifuge at **3,000 rpm for 15 min** (balanced). Pour off the supernatant to waste.
-3. **First wash.** Resuspend the pellet in **5 mL of PBS**. Centrifuge again at **3,000 rpm for 15 min**. Pour off the supernatant.
+3. **First wash.** Resuspend the pellet in **5 mL of PBS** and vortex till mix well. Centrifuge again at **3,000 rpm for 15 min**. Pour off the supernatant.
 4. **Second wash.** Repeat step 3 (i.e., a second 5 mL PBS wash and second 3,000 rpm × 15 min spin).
-5. **Transfer to Eppendorf.** Wash with **1.5 mL PBS**, transfer the suspension into a 2 mL Eppendorf tube.
+5. **Transfer to Eppendorf.** Wash with **1.5 mL PBS** and vortex till mix well, transfer the suspension into a 2 mL Eppendorf tube.
 6. **Final pellet.** Centrifuge the Eppendorf at **10,000 × g for 10 min**. Pour the supernatant to waste.
 7. **Store the pellet at −20 °C** until DNA extraction / sequencing submission.
 
@@ -54,9 +55,12 @@ Two recorded specs for the harvest spin — the team's two-stage scheme (used 6-
 Pellets prepared for sequencing from **10 cultures**:
 `9-2-2`, `10-9-2`, `8-5-2`, `8-3-2`, `9-2-1`, `6-3-2`, `8-2-2`, `10-10-2`, `8-5-2`, `9-6-2`
 
-`==CONFIRM: cross-day inconsistency — the 6-3 pellet list (this page) shows `8-5-2 × 2` + `8-3-2 × 1`, but the 6-05 lab-notebook entry's Set A bacterial-genome extracts records the opposite (`8-3-2 × 2` + `8-5-2 × 1`). One of these was mislabelled — verify against the physical freezer rack. See [`2026-06-05_…md`](../../../lab_notebook/digitalized/2026-06-05_plaque-assay-r3-dna-extraction-quantification.md) Procedure ③ for the original cross-day flag.==`
+`==CONFIRM: cross-day inconsistency — the 6-3 pellet list (this page) shows `8-5-2 × 2` + `8-3-2 × 1` and **no `8-3-1`**, but the 6-05 Set A bacterial extracts record `8-5-2 × 1` + `8-3-2 × 1` + `8-3-1 × 1` (the 26,136 RFU reading is `8-3-1`, confirmed 2026-06-10). So one tube banked here as `8-5-2` appears as `8-3-1` on 6-5 — likely a 6-3 transcription slip; verify against the physical freezer rack. See [`2026-06-05_…md`](../../../lab_notebook/digitalized/2026-06-05_plaque-assay-r3-dna-extraction-quantification.md) Procedure ③.==`
 
 Photo evidence: `../../../photos/0605/` "6/3 bacteria pellet for sequencing".
+
+## Project record (2026-06-10) — second run
+Pellets prepared (same procedure) from the **10 revived-stock LB cultures** grown on [2026-06-09](../../../lab_notebook/digitalized/2026-06-09_bacteria-culture-phage-isolation.md), then carried straight into [[bacteria_genome_extraction]]: **8 extracted** (9-1-1, 6-8-1, 9-10-1, 6-2-1, 8-10-2, 9-9-2, 6-8-2, 6-10-2); the kit's **last 8 spin columns were used up** on those 8, so the **2 leftover pellets (8-1-2, 9-1-2) were held at −20 °C** for a later round. Observation: **pellets were loose after PBS was added** `[TBD: confirm wording]`. See [2026-06-10](../../../lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md) ①–②.
 
 ## Notes / common deviations
 - The two centrifugation speeds (3,000 rpm in falcon tubes, 10,000 × g in Eppendorfs) are appropriate for the respective vessels — large bottles can't spin at high g without unsafe rotor stresses, but small tubes pellet faster at high g.
@@ -79,4 +83,6 @@ Photo evidence: `../../../photos/0605/` "6/3 bacteria pellet for sequencing".
 - 2026-06-05 — Added the prof's **one-stage 4,000 rpm** spin from `Genomic_And_Phage_Work.docx` as a third row in the centrifugation quick-lookup table — both variants preserved per *the project rule of preserving all version variants from disagreeing sources*. Added downstream cross-ref to [[bacteria_genome_extraction]] (new) so the pipeline reads forward into DNA extraction. Added G&PW as a Source.
 - 2026-06-06 — Added **iGEM 26 team practice** spotlight callout flagging the **two-stage scheme** (3,000 rpm in falcon → 10,000 × g in Eppendorf) as the team's actual practice; prof's 4,000 rpm one-stage variant kept for reference. Pending teammate cross-check.
 - 2026-06-08 — Proofread fix (**#3**): updated the `==CONFIRM==` marker on the `8-5-2` duplicate to record the **cross-day discrepancy** with the 6-05 lab notebook (today's Set A is `8-3-2 × 2 + 8-5-2 × 1` — the opposite of this 6-3 record). One of the two days mislabelled; needs physical freezer-rack verification.
+- 2026-06-10 — Re-framed the `==CONFIRM==`: the 6-05 26,136 RFU reading is **`8-3-1`** (user), so 6-05 Set A is `8-5-2 × 1 + 8-3-2 × 1 + 8-3-1 × 1` (not `8-3-2 × 2`). The mismatch is now localized — one tube banked here as `8-5-2` appears as `8-3-1` on 6-5; still needs rack verification.
 - 2026-06-08 — Proofread fix (**#5** — spin format house style): standardized RPM values to use a comma (3,000 / 4,000 — was 3000 / 4000) and `g` values to use the `× g` symbol (10,000 × g — was 10,000 g). Applies throughout the file; no underlying values changed.
+- 2026-06-12 — Added a **second project record (2026-06-10)**: pellets from the 6-09 revived-stock cultures → genome extraction (8 of 10; 2 banked at −20 °C; "loose pellets after PBS" observation). Added 6-10 to `source:`. No procedure changes.

@@ -8,6 +8,7 @@ references:
   - "[[dna_quantification_qubit]]"
 source:
   - lab_notebook/digitalized/2026-06-05_plaque-assay-r3-dna-extraction-quantification.md
+  - lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md
   - protocol/_d3024_d3025_quick-dna_miniprep_kit.pdf
 estimated_time: ≈ 15–20 min per sample once pellet is thawed
 ---
@@ -135,6 +136,7 @@ Pipette assignments follow the **kit's 5-step procedure numbering** (see kit man
 - **Why 15,000 × g for 5 min (vs the kit's ≥ 10,000 × g / 1 min).** The team's first attempts at the kit-default spin **left liquid in the column for most samples** — likely because the bacterial-pellet lysate is more viscous / particulate-laden than the whole-blood / serum samples the kit was optimised against. The team's higher-g, longer-time spin reliably moves the liquid through; if it still hasn't passed after 5 min, extend the spin until it does. *(See the centrifugation callout in the quick-lookup section.)*
 - **The 6-05 lab notebook** ([2026-06-05](../../../lab_notebook/digitalized/2026-06-05_plaque-assay-r3-dna-extraction-quantification.md)) records only the high-level "Ran each through the Quick-DNA Miniprep Kit (Zymo Research) following the kit's manufacturer protocol" — the team-practice details (no resuspension, 450 µL lysis, 15K g × 5 min spin, 100 µL elution, tube discipline, pipette assignments) come from this annotation pass on 2026-06-05.
 - **6-05 yields were excellent** — Set A samples gave 93–264 ng/µL DNA (8.4–23.8 µg per 90 µL tube), comfortably above the typical ≥ 10 ng/µL sequencing-submission floor. See the [6-05 Computed concentrations table](../../../lab_notebook/digitalized/2026-06-05_plaque-assay-r3-dna-extraction-quantification.md#set-a--bacteria-genome-extracts) for per-sample numbers.
+- **As run [2026-06-10](../../../lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md):** a second batch from the 10 revived-stock cultures. **Only 8 of 10 were extracted — the kit's last 8 spin columns were all used on these 8 (none remain afterwards)**; the 2 leftover samples (`8-1-2`, `9-1-2`) were **banked as pellets at −20 °C** until more columns are obtained. **Spin-column stock is the throughput limit** — check (and reorder) columns before planning a batch. Eluates were **stored at 4 °C**; quantification was deferred ("next week"). The notebook margin flags **"update the Zymo protocol"** to record 4 °C eluate storage (already reflected in the Checklist below).
 
 ## Checklist — where do the outputs go?
 - [ ] Eluted DNA → **4 °C fridge** (short-term, up to days for Qubit + downstream prep) or **−20 °C freezer** (long-term archive).
@@ -143,7 +145,7 @@ Pipette assignments follow the **kit's 5-step procedure numbering** (see kit man
 - [ ] Original thawed pellet (residual) → discard once extraction completes; do not re-freeze.
 
 ## Source
-- Lab notebook: [2026-06-05](../../../lab_notebook/digitalized/2026-06-05_plaque-assay-r3-dna-extraction-quantification.md) (Procedure ③ — Bacteria genome extraction).
+- Lab notebook: [2026-06-05](../../../lab_notebook/digitalized/2026-06-05_plaque-assay-r3-dna-extraction-quantification.md) (Procedure ③ — Bacteria genome extraction); [2026-06-10](../../../lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md) (Procedure ② — second batch, 8 of 10).
 - Kit manual: [`../../_d3024_d3025_quick-dna_miniprep_kit.pdf`](../../_d3024_d3025_quick-dna_miniprep_kit.pdf) (Zymo Research, Whole Blood / Serum / Plasma protocol, p.4).
 - Kit reference: [[quick_dna_miniprep_kit]].
 
@@ -152,3 +154,4 @@ Pipette assignments follow the **kit's 5-step procedure numbering** (see kit man
 - 2026-06-05 — Initial draft from Zymo kit p.4 (Whole Blood) + 6-05 lab-notebook entry. `[TBD: team modification pending]` flags inserted at the resuspension step + incubation time — user will fill in once specifics are recorded.
 - 2026-06-05 — Annotated with **iGEM 26 team practice** (Obsidian `[!tip]` callouts), resolving all `[TBD]` flags. Confirmed deviations from the kit-default Whole Blood protocol: (1) wait for pellets to fully melt on the bench before starting; (2) **no separate resuspension** — Genomic Lysis Buffer added directly into the pellet's Eppendorf; (3) **lysis buffer 450 µL** (kit: 400 µL); (4) **every spin = 15,000 × g for 5 min** (kit: ≥ 10,000 × g / 1 min) — kit-default spin failed for most samples; extend if liquid remains; (5) **elution 100 µL** (kit: ≥ 50 µL); (6) **collection-tube discipline** — discard after every spin **except** between pre-wash and wash (same tube); (7) **pipette assignments** — p1000 for kit steps 1, 2, 4 and p200 for kit steps 3, 5 (added as a new quick-lookup table). Both kit-default and team values preserved side-by-side per the project's "preserve all versions" rule.
 - 2026-06-08 — Proofread cleanups (**#9** + **#10** + **#13**): "input solid" → "input sample" in the no-resuspension callout; removed the parenthetical "if the team has adjusted this, update accordingly" on step 6 since the team uses the kit default 5–10 min as-is; markdown link label for the Zymo kit PDF corrected from `../protocol/_d3024…` → `../../_d3024…` to match the actual target.
+- 2026-06-12 — Added the **2026-06-10 second batch** as-run note (8 of 10 extracted, limited by 8 remaining spin columns; 2 pellets banked at −20 °C; eluates → 4 °C; quant deferred; notebook "update the Zymo protocol" 4 °C note). Added 6-10 to `source:`. No procedure values changed.

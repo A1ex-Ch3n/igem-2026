@@ -10,13 +10,15 @@ references:
   - "[[plaque_assay_layered_plate]]"
 source:
   - protocol/Genomic_And_Phage_Work.docx
+  - lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md
+  - lab_notebook/digitalized/2026-06-12_plaque-assay-extracted-phage.md
 estimated_time: ≈ 1 hr per round + overnight incubation; ≥ 3 rounds total ≈ 4–5 days
 ---
 
 # Phage Purification — Iterative Single-Plaque Re-Isolation
 
-> [!note] Status — as of 2026-06-08
-> Project has not yet executed this protocol — drafted verbatim from the prof's `Genomic_And_Phage_Work.docx` (Part 4). No team-recorded values exist yet. This protocol maps directly to the scheme's currently-UNDONE "re-isolation round 2" and "re-isolation round 3" bullets. Part 4 (steps 27–30) of the prof's doc was **not** affected by the 2026-06-06 update that deprecated `[[spot_testing]]` and `[[phage_amplification]]` — phage purification remains an active part of the simplified pipeline.
+> [!note] Status — first plaque-pick recorded 2026-06-10 / 2026-06-12
+> The team has now performed its **first single-plaque pick → elute → re-plate** (one round), so the iterative protocol is no longer purely on-paper. Steps still drafted from the prof's `Genomic_And_Phage_Work.docx` (Part 4); the team's as-run pick technique is folded into Notes. **This is at most round 1 of the ≥ 3 rounds** required for a clonal lysate. `==CONFIRM: which candidate counts toward purification depends on the 6/10–6/12 phage lineage (see the as-run note + the [6-10 entry](../../../lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md) Notes).==` Part 4 (steps 27–30) was **not** affected by the 2026-06-06 update that deprecated `[[spot_testing]]` and `[[phage_amplification]]` — phage purification remains an active part of the simplified pipeline.
 
 ## Purpose
 A single plaque on a first-round plaque assay is **not yet proof of a single phage clone** — it may have formed from multiple phages that happened to co-localise. To get a **clonal (axenic)** lysate suitable for phage DNA extraction and sequencing, the plaque must be re-isolated multiple times: pick a single plaque → suspend it → plate on a fresh bacterial lawn → pick a single new plaque → repeat.
@@ -77,6 +79,8 @@ A single plaque on a first-round plaque assay is **not yet proof of a single pha
 12. **Repeat steps A–D at least 3 consecutive times** to ensure you have isolated a completely **clonal, axenic** phage strain. The output of the third successful round is the lysate to feed phage DNA extraction → sequencing.
 
 ## Notes / common deviations
+- **Team's as-run pick technique (6-10 / 6-12).** Mark the target plaque on the **back** of the plate first. Then **insert a (cut/wide) pipette tip vertically into the soft agar at the marked plaque** — as vertical as possible — to core out the plaque plug, **pipette the gel plug into phage buffer, and vortex thoroughly** to elute. The eluate is the phage source for the next re-plate (per [[plaque_assay_layered_plate]], 200 µL eluate/plate on 6-12). *(6-10 used 20 mL-pipette tips for a wide bore; the prof's Part 4 below specifies a sterile pipette tip / loop.)* `==CONFIRM: phage-buffer volume per pick — 6-10 reads "2 mL" into a 1.5 mL Eppendorf, likely 1 mL.==`
+- **First candidates picked:** `6-8-1` Φ3 and `8-1-2` Φ6, off the **6-10 ϕ3/5/6 plaque assay** (run on the 10 newly revived hosts; see the [6-10 entry](../../../lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md) Notes) — these are the live re-isolation candidates. A **separate Φ8 pick** was also taken on 6-10 from the two successful **06/05 plates** — **host `9-6-2` Φ8** and **host `9-2-1` Φ8** (the only week-1 phage hits; those plates used the *old* 06/03-banked hosts). Both picks are stored at 4 °C (see [[dna_extraction_inventory]], [[week_3_bacteria_list]]). The 6-11 Φ8/9/10 screen — on the new hosts — produced no plaques, **but whether that screen used these 6-10 eluates or the fresh 06/09 ϕ8/9/10 filtrate is unconfirmed** (so "the 6-10 pick failed" is not established). `==CONFIRM==`
 - **Why three rounds?** Statistically, after one round you might still have multiple phage variants if the original plaque was mixed. Each subsequent round geometrically reduces the chance of co-isolation — three rounds is the field-standard convention for clonality.
 - **Mixed-lysate symptoms** in sequencing assembly: poor contig N50, chimeric assemblies, ambiguous variant calls. If sequencing assembly fails despite three rounds, add a fourth round before re-extracting.
 - **Plaque morphology consistency** across rounds is informative — a plaque that looks the same (size, edge sharpness, turbidity) across all three rounds is more likely truly clonal than one that varies between rounds.
@@ -91,9 +95,13 @@ A single plaque on a first-round plaque assay is **not yet proof of a single pha
 
 ## Source
 - [`../Genomic_And_Phage_Work.docx`](../../Genomic_And_Phage_Work.docx) — Part 4: Phage Purification (steps 27–30).
+- Lab notebook: [2026-06-10](../../../lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md) (Procedure ⑤ — first plaque pick/elute) and [2026-06-12](../../../lab_notebook/digitalized/2026-06-12_plaque-assay-extracted-phage.md) (Procedure ② — re-plate of picked plaques).
 
 ---
 ## Log
 - 2026-06-05 — Initial draft from prof's `Genomic_And_Phage_Work.docx` Part 4. Project has not executed this protocol yet — no team-recorded values to fold in. Maps to the scheme's UNDONE "re-isolation round 2" + "round 3" bullets.
 - 2026-06-06 — Updated `spot_testing` cross-ref in Reagents section to point at `archived/spot_testing.md` (the protocol was archived after prof's update crossed out spot-testing steps 21–26). Reagents `[[spot_testing]]` wiki-link removed; references frontmatter cleaned.
 - 2026-06-08 — Proofread cleanups (**#11** + **#14** + **#15**): converted prose `> **Status:** …` to `> [!note] Status — as of 2026-06-08` callout to match project convention; `estimated_time` uses `≈` instead of `~` for consistency; added this Log entry to record the 6-06 archive update + this 6-08 cleanup.
+- 2026-06-12 — **Status update:** team performed its first single-plaque pick → elute → re-plate (6-10 pick/elute, 6-12 re-plate) — protocol is no longer purely on-paper. Added the team's as-run pick technique (mark on back → vertical tip core → elute in phage buffer → vortex) to Notes, the first picked candidates (`6-8-1` Φ3, `8-1-2` Φ6), and 6-10/6-12 to `source:`. Flagged with `==CONFIRM==` (round counting depends on the 6/10–6/12 phage lineage; phage-buffer volume per pick). No prof-protocol steps changed.
+- 2026-06-12 — **User correction:** clarified that the ϕ8/9/10 pick is from the *old* 06/05 plates while both of the week's plaque *assays* (ϕ3/5/6 6/10, ϕ8/9/10 6/11) ran on the **10 newly revived hosts**; reworded the "First candidates picked" note so the new-host screen isn't conflated with the old-plate pick.
+- 2026-06-13 — **User-confirmed** the two week-1 hits / 06/05 successful plates: **`9-6-2` Φ8** + **`9-2-1` Φ8** (picks now at 4 °C); named them in the "separate Φ8 pick" note. Cross-linked to the new [[dna_extraction_inventory]] + [[week_3_bacteria_list]].
