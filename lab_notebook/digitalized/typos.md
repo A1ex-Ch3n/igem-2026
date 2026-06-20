@@ -35,6 +35,23 @@ Handwritten errors and unclear items identified during digitization. Tick off ea
 - [ ] **p.37** — phage-isolation **centrifuge speed** reads "5×g" — a misread of a higher rpm/×g ("higher than last time, cleaner supernatant"). Confirm the value.
 - [ ] **p.38** — phage **filtrate volume** per enrichment (~2–3 mL?) unclear; confirm.
 
+### 2026-06-10 (p.39–41) — open
+- [ ] **p.39** — phage-buffer volume into the two **1.5 mL** Eppendorfs reads **"2 mL"** (impossible in a 1.5 mL tube) — likely **1 mL**; confirm.
+- [ ] **p.40** — observation "pellets **loose** after PBS added" — confirm wording (loose vs larger).
+- [x] **p.40** — extraction list = the **10 revived stocks**; **8 extracted** (9-1-1, 6-8-1, 9-10-1, 6-2-1, 8-10-2, 9-9-2, 6-8-2, 6-10-2), **2 pellets** banked (8-1-2, 9-1-2). The kit's **last 8 spin columns were all used** on the 8 extractions (none remain); the 2 pellets wait for new columns (user). Verified against the 6-08 revival panel.
+- [ ] **p.40** — margin note "**update the Zymo protocol**" (store eluted DNA at **4 °C**, not −20 °C) — action item for the protocol, confirm intent.
+- [x] **Hosts (continuity, user-confirmed):** *both* this week's plaque assays — 6/10 ϕ3/5/6 and 6/11 ϕ8/9/10 — ran on the **10 newly revived hosts** (same panel as the pellet prep/extraction), *not* old hosts. The only old-host element is the 06/05 source plates picked on 6/10 (⑤, a purification pick).
+- [x] **Two successful 06/05 plates (user-confirmed 2026-06-13):** = **`9-6-2` Φ8** + **`9-2-1` Φ8** (the only week-1 phage hits). Named in the 6/10 ⑤; picks stored at 4 °C (see `data/dna_extraction_inventory.md`, `data/week_3_bacteria_list.md`).
+- [ ] **`8-3-1` ≈ `8-5-1` (6/5 bacterial extract):** `8-3-1` is not one of the 28 glycerol stocks; `8-5-1` is (and was a 6/3 plaque host). Almost certainly `8-5-1` mislabelled — label kept per user; **verify + relabel the physical tube**.
+- [ ] **p.42 phage source (continuity):** the 6/11 ϕ8/9/10 screen's phage source is unstated — fresh 06/09 ϕ8/9/10 filtrate (parsimonious) vs the 06/10 eluate picked from the 06/05 plates. Do not assume the 06/10 pick fed it (`==CONFIRM==` in the entries).
+
+### 2026-06-11 (p.42) — open
+- [ ] **p.42** — entry **authors** not legible; confirm.
+- [ ] **p.42** — host isolate count reads **"10 out of >8"** (garbled) — confirm (10 isolates, picked by Rafael).
+
+### 2026-06-12 (p.43) — open
+- [ ] **p.43** — largely legible; confirm the picked-plaque labels `6-8-1 Φ3` and `8-1-2 Φ6` against the physical plates.
+
 ### Resolved earlier (2026-06-04)
 - [x] **p.27** — Left-margin annotation is an illustration of the plate-labelling convention: row 1 = date (e.g. `26/6/4`), row 2 = phage ID (`ϕ<n>`, where `n` = the soil enrichment the phage filtrate came from), row 3 = bacteria label (e.g. `8-8-2`).
 - [x] **p.19** — Right-margin OD data lives in `data/0529_OD.xlsx` and has been transcribed into the 2026-05-29 entry.
@@ -46,3 +63,6 @@ Handwritten errors and unclear items identified during digitization. Tick off ea
 - 2026-06-08 — Added p.32–36 pending-clarification block during digitization of the 0608 session (unconcentrated readings, p.36 blurry standards/samples, S30-vs-S50 resolution, concentration-factor calc, p.32/33 objective + kit-page annotations).
 - 2026-06-08 — Resolved (user): unconcentrated readings (119.87/195.94/3600.46/1139.16), input mass (0.12 g/tube), bacterial sequencing dilution (not diluted). Remaining open: pooling ratio, blurry p.36 digits, concentration-factor calc, bacterial submitted volume.
 - 2026-06-09 — Added p.37–38 pending-clarification block during digitization of the 0609 session (authors, objective wording, label scheme + tube count, enrichment site list discrepancy, centrifuge speed, filtrate volume).
+- 2026-06-12 — Added p.39–43 pending-clarification blocks during digitization of the 0610 / 0611 / 0612 sessions (phage-buffer "2 mL"→likely 1 mL; "pellets loose" wording; Zymo 4 °C protocol-update note; 0611 authors + "10 out of >8" isolate count; 0612 picked-plaque labels). Resolved: 0610 extraction list = 8 extracted + 2 pellets from the 10 revived stocks (user). Noted the 6/11 phage source as inferred (`==CONFIRM==` in entries).
+- 2026-06-12 — **User corrections:** (1) spin columns were all *used up* by the 8 extractions (not "8 left over"); (2) *both* this week's plaque assays ran on the 10 newly revived hosts (not old hosts) — updated the 0610 resolved item + replaced the "two-thread" continuity note with the corrected host/phage framing.
+- 2026-06-13 — **User physical re-check (inventory restructure):** named the 2 week-1 phage hits (`9-6-2 Φ8` + `9-2-1 Φ8`); flagged `8-3-1` ≈ `8-5-1` (not in the 28-stock list — verify/relabel tube). Both folded into `data/dna_extraction_inventory.md` (now storage-based) + new `data/week_3_bacteria_list.md`.

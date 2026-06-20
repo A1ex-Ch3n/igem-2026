@@ -53,7 +53,7 @@ Outcome: **no plate failures observed during setup; readout tomorrow (2026-06-06
 
 ### ③ Bacteria genome extraction (Alex)
 
-1. Took the **10 bacteria pellets** banked at **−20 °C** on [2026-06-03](2026-06-03_phage-plaque-assay.md). 6-3 pellet list as recorded: `9-2-2`, `10-9-2`, `8-5-2`, `8-3-2`, `9-2-1`, `6-3-2`, `8-2-2`, `10-10-2`, `8-5-2`, `9-6-2` (`8-5-2` duplicated). **Today's Set A table below records `8-3-2` × 2 and `8-5-2` × 1** — so either the 6-3 list mis-recorded which sample was duplicated, or one of today's tubes is mislabelled. `==CONFIRM: which is correct — does the freezer rack actually have two `8-3-2` pellets (and one `8-5-2`), or two `8-5-2` (and one `8-3-2`)?==`
+1. Took the **10 bacteria pellets** banked at **−20 °C** on [2026-06-03](2026-06-03_phage-plaque-assay.md). 6-3 pellet list as recorded: `9-2-2`, `10-9-2`, `8-5-2`, `8-3-2`, `9-2-1`, `6-3-2`, `8-2-2`, `10-10-2`, `8-5-2`, `9-6-2` (`8-5-2` duplicated). **Today's Set A below records distinct `8-3-2` (RFU 15,622) and `8-3-1` (RFU 26,136), with `8-5-2` × 1** — the 26,136 reading is **`8-3-1`** (confirmed by user 2026-06-10), *not* a second `8-3-2`. That leaves one cross-day mismatch: the 6-3 list has `8-5-2` × 2 and no `8-3-1`, whereas 6-5 has `8-5-2` × 1 + `8-3-1` × 1. `==CONFIRM: one tube banked as `8-5-2` on 6-3 appears as `8-3-1` on 6-5 — likely a 6-3 transcription slip; verify the physical freezer-rack label.==`
 2. Ran each through the **Quick-DNA Miniprep Kit (Zymo Research)** following the kit's manufacturer protocol.
    - Brief 10,000 g spin used at appropriate steps purely to consolidate solutions before transfer — not a separate procedural step.
 3. Eluates retained for Qubit quantification (see ④).
@@ -106,17 +106,17 @@ The protocol's recommended calibration is a 1/3 serial dilution from Component D
 ### Set A — bacteria-genome extracts
 
 | Sample (bacteria stock) | Reading (RFU, green channel) |
-| ----------------------- | --------------- |
-| 8-5-2                   | 40827.88        |
-| 8-2-2                   | 43887.14        |
-| 10-9-2                  | 20917.70        |
-| 9-6-2                   | 32384.09        |
-| 9-2-1                   | 23232.52        |
-| 8-3-2                   | 15622.18        |
-| 10-10-2                 | 23423.31        |
-| 8-3-2                   | 26136.76        |
-| 6-3-2                   | 16999.92        |
-| 9-2-2                   | 17097.18        |
+| ----------------------- | ---------------------------- |
+| 8-5-2                   | 40827.88                     |
+| 8-2-2                   | 43887.14                     |
+| 10-9-2                  | 20917.70                     |
+| 9-6-2                   | 32384.09                     |
+| 9-2-1                   | 23232.52                     |
+| 8-3-2                   | 15622.18                     |
+| 10-10-2                 | 23423.31                     |
+| 8-3-1                   | 26136.76                     |
+| 6-3-2                   | 16999.92                     |
+| 9-2-2                   | 17097.18                     |
 
 ### Set B — metagenomic 2nd-batch re-quant
 
@@ -175,15 +175,15 @@ Computed against the 90 µL remaining-volume estimate (p.31 margin). 9 of 10 sam
 | 10-9-2 | 20,917.70 | 125.31 | 11.28 | ⚠ |
 | 9-6-2  | 32,384.09 | 194.53 | 17.51 | ⚠ |
 | 9-2-1  | 23,232.52 | 139.29 | 12.54 | ⚠ |
-| 8-3-2 (a) | 15,622.18 |  93.34 |  8.40 |   |
+| 8-3-2  | 15,622.18 |  93.34 |  8.40 |   |
 | 10-10-2| 23,423.31 | 140.44 | 12.64 | ⚠ |
-| 8-3-2 (b) | 26,136.76 | 156.82 | 14.11 | ⚠ |
+| 8-3-1  | 26,136.76 | 156.82 | 14.11 | ⚠ |
 | 6-3-2  | 16,999.92 | 101.66 |  9.15 | ⚠ |
 | 9-2-2  | 17,097.18 | 102.25 |  9.20 | ⚠ |
 
-> The two `8-3-2` rows reflect today's actual Set A composition (see the `==CONFIRM==` flag in Procedure ③ about the 6-3 pellet-list mismatch). `(a)` and `(b)` are added only to disambiguate them in this table.
+> `8-3-2` (15,622 RFU) and `8-3-1` (26,136 RFU) are **distinct samples** — the 26,136 reading is `8-3-1`, confirmed 2026-06-10 (it had briefly been mis-transcribed as a second `8-3-2`). See the `==CONFIRM==` in Procedure ③ for the remaining 6-3-vs-6-5 mismatch (`8-5-2` × 2 on 6-3 vs `8-5-2` × 1 + `8-3-1` × 1 on 6-5).
 
-**Set A total recoverable DNA: ≈ 140.68 µg** across 10 tubes (range 8.4–23.8 µg per tube). The single in-range sample (`8-3-2 (a)` at 93.3 ng/µL) sits right at the kit's well-characterised linear-region ceiling (10 ng/µL nominal, but in practice tracks linearly close to Std 100 too — see the standard-curve plot's R²).
+**Set A total recoverable DNA: ≈ 140.68 µg** across 10 tubes (range 8.4–23.8 µg per tube). The single in-range sample (`8-3-2` at 93.3 ng/µL) sits right at the kit's well-characterised linear-region ceiling (10 ng/µL nominal, but in practice tracks linearly close to Std 100 too — see the standard-curve plot's R²).
 
 ### Set B — metagenomic 2nd-batch sites + batch-1 + batch-2 mixes
 
@@ -230,3 +230,4 @@ Each sample placed on the fitted line at its (concentration, blank-subtracted RF
 - 2026-06-05 — Clarified that the Qubit was run in **raw fluorescence (RFU) mode**, not the built-in dsDNA assay (Alex confirmed) — so the instrument output raw green-channel fluorescence, not concentration. Corrected the instrument line in ④ accordingly and relabeled the three sample-table value columns "Reading (ng/µL)" → **"Reading (RFU, green channel)"** to match. Processing notebook [`../../code/0605_quantification.ipynb`](../../code/0605_quantification.ipynb) builds the standard curve (linear fit, slope 165.64, intercept 33.43, R² 0.99993), converts each reading to concentration, and computes per-tube mass from the 90 µL / 80 µL remaining volumes.
 - 2026-06-05 — Fixed transcription: Set A sample `8-3-1` (RFU 26136.76) corrected to `8-3-2` per user — same fix applied to `code/0605_quantification.ipynb` cell `f90e9794`. Side-effect: today's Set A now records `8-3-2` × 2 and `8-5-2` × 1, which **does not match** the 6-3 pellet list (which had `8-5-2` × 2 and `8-3-2` × 1) — flagged inline in Procedure ③ as `==CONFIRM==` for the team to verify against the physical freezer rack.
 - 2026-06-05 — Added a new **`## Computed concentrations & masses`** section between the raw-RFU Data section and the Lessons section. Derived from the standard-curve fit in [`../../code/0605_quantification.ipynb`](../../code/0605_quantification.ipynb). Contains: standard-curve fit summary (R² 0.999929), Set A concentration + per-tube mass table (9 of 10 extrapolated above 100 ng/µL), Set B sites + mixes table (all within linear range), and the three plots from `code/output/`. Headline: Set A total ≈ 140.7 µg recoverable bacterial DNA; Set B sites + mixes total ≈ 0.51 µg combined. Appended one bullet to Lessons noting that the bacterial-genome track is in good shape for sequencing (≥ 93 ng/µL on every isolate).
+- 2026-06-10 — **Reverted the 6-05 `8-3-1`→`8-3-2` mis-correction (user).** The RFU 26,136.76 reading is **`8-3-1`**, not a second `8-3-2`. Set A now records distinct `8-3-2` (15,622) + `8-3-1` (26,136), each ×1 (no duplicate). Updated the raw-RFU table, the computed table (dropped the `(a)`/`(b)` disambiguation), the note, and `code/0605_quantification.ipynb` (re-executed). Re-framed the Procedure ③ `==CONFIRM==`: the remaining mismatch is the 6-3 list's `8-5-2` × 2 (no `8-3-1`) vs 6-5's `8-5-2` × 1 + `8-3-1` × 1 — likely a 6-3 transcription slip; verify the rack. Also fixed `data/dna_extraction_inventory.md`, `protocol/md/workflows/bacteria_pellet_for_sequencing.md`, `protocol/md/README.md`.
