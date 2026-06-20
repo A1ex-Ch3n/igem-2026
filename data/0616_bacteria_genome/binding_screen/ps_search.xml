@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSearchResult PUBLIC "-//NLM//DTD esearch 20060628//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20060628/esearch.dtd">
+<eSearchResult><Count>10</Count><RetMax>10</RetMax><RetStart>0</RetStart><QueryKey>1</QueryKey><WebEnv>MCID_6a3233685dd9ac2051001a1d</WebEnv><IdList>
+<Id>3269903942</Id>
+<Id>3269903826</Id>
+<Id>3269903824</Id>
+<Id>3269903748</Id>
+<Id>3269903722</Id>
+<Id>3269903693</Id>
+<Id>3269903672</Id>
+<Id>3269903644</Id>
+<Id>3269903499</Id>
+<Id>3269903498</Id>
+</IdList><TranslationSet><Translation>     <From>Pseudomonas phage[Organism]</From>     <To>"Pseudomonas phage"[Organism]</To>    </Translation></TranslationSet><TranslationStack>   <TermSet>    <Term>"Pseudomonas phage"[Organism]</Term>    <Field>Organism</Field>    <Count>1443</Count>    <Explode>Y</Explode>   </TermSet>   <TermSet>    <Term>tail fiber[Title]</Term>    <Field>Title</Field>    <Count>498750</Count>    <Explode>N</Explode>   </TermSet>   <TermSet>    <Term>tail fibre[Title]</Term>    <Field>Title</Field>    <Count>4954</Count>    <Explode>N</Explode>   </TermSet>   <OP>OR</OP>   <TermSet>    <Term>"tail spike"[Title]</Term>    <Field>Title</Field>    <Count>40497</Count>    <Explode>N</Explode>   </TermSet>   <OP>OR</OP>   <TermSet>    <Term>tailspike[Title]</Term>    <Field>Title</Field>    <Count>6554</Count>    <Explode>N</Explode>   </TermSet>   <OP>OR</OP>   <TermSet>    <Term>"receptor binding"[Title]</Term>    <Field>Title</Field>    <Count>21695</Count>    <Explode>N</Explode>   </TermSet>   <OP>OR</OP>   <TermSet>    <Term>"receptor-binding"[Title]</Term>    <Field>Title</Field>    <Count>21695</Count>    <Explode>N</Explode>   </TermSet>   <OP>OR</OP>   <TermSet>    <Term>"host specificity"[Title]</Term>    <Field>Title</Field>    <Count>93575</Count>    <Explode>N</Explode>   </TermSet>   <OP>OR</OP>   <OP>GROUP</OP>   <OP>AND</OP>  </TranslationStack><QueryTranslation>"Pseudomonas phage"[Organism] AND (tail fiber[Title] OR tail fibre[Title] OR "tail spike"[Title] OR tailspike[Title] OR "receptor binding"[Title] OR "receptor-binding"[Title] OR "host specificity"[Title])</QueryTranslation><ErrorList><PhraseNotFound>Pseudomonas virus[Organism]</PhraseNotFound></ErrorList></eSearchResult>
