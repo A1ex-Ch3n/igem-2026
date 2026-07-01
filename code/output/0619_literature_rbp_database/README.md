@@ -13,6 +13,32 @@ FASTA + metadata table. Built by
 | `rbp_metadata.tsv` | 2447 | one row per source RBP (incl. exact duplicates), full schema + cluster cross-refs |
 | `rbp_clusters.tsv` | 2447 | `rbp_id → cluster_rep_100 / cluster_rep_95` (MMseqs2 membership) |
 | `pseudomonas_rbp_candidates.fasta` | 115 | *Pseudomonas* slice, for the binding screen (`../../0616_binding-screen-fold-plan.md`) |
+| `rbp_by_receptor_class.tsv` | 1215 | **which RBPs map to each receptor class** — every RBP with a receptor assignment, grouped by `receptor` (OMP classes first), validated-first. Cols: receptor, receptor_class, rbp_id, phage, host, source, confidence, rbp_type, seq_length, sequence. Filter `confidence ∈ {experimentally_validated, af3_validated}` for high-confidence (173), or `receptor_class==OMP` for E. coli protein receptors (362) |
+
+## BLAST databases (`blast/`)
+
+Prebuilt BLAST+ **protein** databases (built by the PI, 2026-06-24) for searching a query
+protein against the RBP set without re-indexing. Query with `-db blast/<name>`:
+
+| DB | Built from | Seqs | Use |
+|---|---|---|---|
+| `RBP_DB`  | `rbp_database.fasta`               | 1673 | search any protein against the full RBP reference set |
+| `RBP_PSE` | `pseudomonas_rbp_candidates.fasta` | 115  | *Pseudomonas*-only slice (binding-screen probes) |
+
+```bash
+# find RBP homologs of candidate proteins (run from repo root)
+blastp -query my_proteins.faa \
+       -db code/output/0619_literature_rbp_database/blast/RBP_DB \
+       -evalue 1e-5 -outfmt 6 -max_target_seqs 5
+```
+
+The 16 `.p*` index files are **derived** from the two FASTAs — regenerate with BLAST+ if stale:
+
+```bash
+cd code/output/0619_literature_rbp_database
+makeblastdb -in rbp_database.fasta               -dbtype prot -out blast/RBP_DB
+makeblastdb -in pseudomonas_rbp_candidates.fasta -dbtype prot -out blast/RBP_PSE
+```
 
 ## Sources
 
@@ -102,3 +128,4 @@ notebook dir). Needs `mmseqs`, `pandas`, `openpyxl`.
 
 ---
 *Log: 2026-06-19 — initial build. 3 sources → 2447 RBP rows → 1673 unique sequences.*
+*Log: 2026-06-30 — added prebuilt BLAST+ protein DBs from the PI under `blast/`: `RBP_DB` (1673 seqs) + `RBP_PSE` (115 Pseudomonas). The PI's accompanying FASTAs/TSVs were byte-identical to this folder; only the 16 index files were new.*

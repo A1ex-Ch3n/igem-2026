@@ -1,0 +1,22 @@
+{
+  "version": "1.2",
+  "dbname": "RBP_DB",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "rbp_database.fasta",
+  "number-of-letters": 1038134,
+  "number-of-sequences": 1673,
+  "last-updated": "2026-06-24T15:54:00",
+  "number-of-volumes": 1,
+  "bytes-total": 1247707,
+  "bytes-to-cache": 1053296,
+  "files": [
+    "RBP_DB.pdb",
+    "RBP_DB.phr",
+    "RBP_DB.pin",
+    "RBP_DB.pot",
+    "RBP_DB.psq",
+    "RBP_DB.ptf",
+    "RBP_DB.pto"
+  ]
+}
