@@ -45,8 +45,8 @@ conda env remove -n phagerbp -y 2>/dev/null || true    # 若之前半途建過 e
 repo 是 private,clone 需要認證。github.com → Settings → Developer settings →
 **Personal access tokens → Fine-grained tokens → Generate**:
 - Repository access:只選 `A1ex-Ch3n/igem-2026`
-- Permissions → **Contents: Read-only**
-- 複製產生的 token(等下當密碼用)
+- Permissions → **Contents: Read and write**(clone 只需 read,但 Step F 要 push 結果需要 write,一次設好)
+- 複製產生的 token(clone / push 時當密碼用)
 
 ## Step B — clone(只抓這個套件資料夾,不下載 974 MB 的 data)
 
@@ -88,15 +88,46 @@ bash laguna/run_interactive.sh
 
 ---
 
-## Step E — 取回結果並 commit
+## Step E — 交付物
 
-交付物在套件資料夾的 `output/`:
+在套件資料夾的 `output/`:
 - `predictions_MG08.csv`, `predictions_MG09.csv` — 全部蛋白的分數表
 - `MG08_RBPs.{tsv,faa}`, `MG09_RBPs.{tsv,faa}` — 各 metagenome 的預測 RBP
 - `all_metagenome_RBPs.{tsv,faa}` — 合併後的 **RBP 總清單**(主要交付物)
 
-用 OnDemand Files 下載,或 scp 回本機 repo 的 `code/output/0701_phagerbp_metagenome/`,再 commit。
 （`output/`、`model/`、`tool/` 都在 `.gitignore` 裡,不會污染 git 狀態。）
+
+## Step F — push 結果回 repo(直接在 Laguna)
+
+前提:Step A 的 token 要有 **Contents: Read and write**(read-only 推不上去,會 403)。
+在套件資料夾裡整段貼上:
+```bash
+cd /project/jespinoza_1541/$USER/igem-2026/code/0701_phagerbp_metagenome
+
+# 1. 兩個 ~33 MB 的 predictions CSV 先壓縮(大多是 preds=0,壓得很小)
+gzip -kf output/predictions_MG08.csv output/predictions_MG09.csv
+
+# 2. 設 git 身分(若還沒設過)
+git config user.name  "CChen29"
+git config user.email "CChen29@cmc.edu"
+
+# 3. 先把遠端的更新拉下來(避免 non-fast-forward)
+git pull --rebase origin phagerbp-metagenome
+
+# 4. output/ 有被 .gitignore,用 -f 強制加入交付物(清單 + 壓縮後的分數表)
+git add -f output/all_metagenome_RBPs.tsv output/all_metagenome_RBPs.faa \
+           output/MG08_RBPs.tsv output/MG08_RBPs.faa \
+           output/MG09_RBPs.tsv output/MG09_RBPs.faa \
+           output/predictions_MG08.csv.gz output/predictions_MG09.csv.gz
+
+git commit -m "results(0701): PhageRBPdetect v4 RBP lists for MG08/MG09 (1,293 RBPs)
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>"
+
+# 5. 推上去(帳密:Username=A1ex-Ch3n,Password=有寫入權限的 token)
+git push origin phagerbp-metagenome
+```
+- 只加**壓縮後**的 `.csv.gz`,不加原始 35 MB CSV,免得 repo 歷史暴肥。不想要完整分數表就把第 4 步兩行 `predictions_*.csv.gz` 拿掉。
+- 若 `git push` 出現 **403** → token 沒有寫入權限,重產一顆 Read and write 的再試。
 
 ### 驗證重點
 - sanity 3 條全 `preds=1`(本機已驗過,Laguna 上再確認)。
