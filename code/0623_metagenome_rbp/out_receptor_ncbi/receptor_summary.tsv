@@ -1,0 +1,107 @@
+rep	category	n_members	member_strains	best_pct_id	best_cov	best_hit_organism	n_high_id_carrier_species
+BPBBIK_00251	porin	3	10-10-2,9-2-1,9-6-2	97.4	100.0	Pseudomonas alloputida	24
+BPBBIK_00346	TBDR	1	10-10-2	94.6	100.0	Pseudomonas fortuita	8
+BPBBIK_00419	LptD	1	10-10-2	94.3	100.0	Pseudomonas alloputida	20
+BPBBIK_00531	Omp-porin	3	10-10-2,9-2-1,9-6-2	97.3	100.0	Pseudomonas inefficax	25
+BPBBIK_00552	TBDR	1	10-10-2	91.9	97.6	Pseudomonas monteilii	2
+BPBBIK_00659	pilin	1	10-10-2	89.5	98.5	Pseudomonas pudica	0
+BPBBIK_00770	other-OM	3	10-10-2,9-2-1,9-6-2	97.5	100.0	Pseudomonas monteilii	66
+BPBBIK_00790	porin	3	10-10-2,9-2-1,9-6-2	95.9	100.0	Pseudomonas alloputida	22
+BPBBIK_00875	TBDR	1	10-10-2	96.3	100.0	Pseudomonas alloputida	20
+BPBBIK_01078	OmpA	3	10-10-2,9-2-1,9-6-2	97.7	99.2	Pseudomonas putida NBRC 14164	49
+BPBBIK_01263	FadL	3	10-10-2,9-2-1,9-6-2	96.6	100.0	Pseudomonas monteilii	15
+BPBBIK_01442	TolC/efflux-OM	3	10-10-2,9-2-1,9-6-2	96.2	100.0	Pseudomonas asiatica	17
+BPBBIK_01530	flagellin	1	10-10-2	89.8	100.0	Pseudomonas phoenicis	0
+BPBBIK_01606	Tsx	3	10-10-2,9-2-1,9-6-2	98.4	100.0	Pseudomonas putida NBRC 14164	46
+BPBBIK_01607	Tsx	3	10-10-2,9-2-1,9-6-2	96.1	100.0	Pseudomonas vlassakiae	40
+BPBBIK_01688	OmpA	3	10-10-2,9-2-1,9-6-2	95.1	100.0	Pseudomonas shirazica	32
+BPBBIK_01716	TBDR	3	10-10-2,9-2-1,9-6-2	94.4	100.0	Pseudomonas hunanensis	12
+BPBBIK_01800	porin	3	10-10-2,9-2-1,9-6-2	83.4	99.6	Pseudomonas shiyinii	0
+BPBBIK_02079	TolC/efflux-OM	1	10-10-2	71.8	99.8	Pseudomonas caspiana	0
+BPBBIK_02105	TolC/efflux-OM	1	10-10-2	92.3	100.0	Pseudomonas vranovensis	2
+BPBBIK_02113	porin	1	10-10-2	94.5	100.0	Pseudomonas faucium	1
+BPBBIK_02140	porin	1	10-10-2	89.0	97.3	Pseudomonas fakonensis	0
+BPBBIK_02172	other-OM	1	10-10-2	62.7	100.0	Pseudomonas rhizoryzae	0
+BPBBIK_02259	other-OM	1	10-10-2	88.7	100.0	Pseudomonas capeferrum	0
+BPBBIK_02684	TBDR	1	10-10-2	94.0	100.0	Pseudomonas cremoricolorata DSM 17059 = NBRC 16634	4
+BPBBIK_03005	porin	3	10-10-2,9-2-1,9-6-2	89.3	100.0	Pseudomonas kermanshahensis	0
+BPBBIK_03127	porin	1	10-10-2	83.2	100.0	Pseudomonas capeferrum	0
+BPBBIK_03520	porin	3	10-10-2,9-2-1,9-6-2	97.9	100.0	Pseudomonas putida NBRC 14164	65
+BPBBIK_03546	porin	1	10-10-2	94.3	100.0	Pseudomonas kurunegalensis	13
+BPBBIK_03851	porin	3	10-10-2,9-2-1,9-6-2	99.4	100.0	Pseudomonas putida NBRC 14164	30
+BPBBIK_04042	TBDR	1	10-10-2	93.8	100.0	Pseudomonas shirazica	12
+BPBBIK_04072	other-OM	3	10-10-2,9-2-1,9-6-2	82.5	100.0	Pseudomonas kurunegalensis	0
+BPBBIK_04109	TBDR	3	10-10-2,9-2-1,9-6-2	93.8	100.0	Pseudomonas asiatica	4
+BPBBIK_04215	porin	3	10-10-2,9-2-1,9-6-2	93.9	100.0	Pseudomonas juntendi	8
+BPBBIK_04237	other-OM	3	10-10-2,9-2-1,9-6-2	96.5	100.0	Pseudomonas hunanensis	21
+BPBBIK_04306	OmpA	3	10-10-2,9-2-1,9-6-2	98.6	100.0	Pseudomonas fortuita	32
+BPBBIK_04368	porin	3	10-10-2,9-2-1,9-6-2	96.8	100.0	Pseudomonas hunanensis	33
+BPBBIK_04430	porin	3	10-10-2,9-2-1,9-6-2	96.1	100.0	Pseudomonas kurunegalensis	33
+BPBBIK_04668	OmpA	1	10-10-2	93.2	100.0	Pseudomonas pudica	12
+OHPLIO_03992	TolC/efflux-OM	3	10-10-2,9-2-1,9-6-2	88.1	100.0	Pseudomonas fortuita	0
+OHPLIO_04516	TBDR	3	10-10-2,9-2-1,9-6-2	96.4	98.4	Pseudomonas kurunegalensis	38
+PICBEH_00129	TBDR	3	10-10-2,9-2-1,9-6-2	94.0	97.1	Pseudomonas inefficax	17
+PICBEH_00213	porin	3	10-10-2,9-2-1,9-6-2	90.8	100.0	Pseudomonas mosselii	1
+PICBEH_00246	TBDR	3	10-10-2,9-2-1,9-6-2	93.6	100.0	Pseudomonas alloputida	11
+PICBEH_00251	TBDR	3	10-10-2,9-2-1,9-6-2	95.6	100.0	Pseudomonas putida NBRC 14164	11
+PICBEH_00402	LptD	2	9-2-1,9-6-2	94.8	100.0	Pseudomonas kermanshahensis	21
+PICBEH_00535	TBDR	2	9-2-1,9-6-2	92.4	14.6	Pseudomonas persica	2
+PICBEH_00641	pilin	2	9-2-1,9-6-2	88.8	98.5	Pseudomonas pudica	0
+PICBEH_00704	TolC/efflux-OM	3	10-10-2,9-2-1,9-6-2	88.4	99.6	Pseudomonas alloputida	0
+PICBEH_00788	TolC/efflux-OM	3	10-10-2,9-2-1,9-6-2	96.6	100.0	Pseudomonas putida NBRC 14164	11
+PICBEH_00842	TBDR	2	9-2-1,9-6-2	92.3	99.7	Pseudomonas mosselii	2
+PICBEH_00848	TBDR	3	10-10-2,9-2-1,9-6-2	96.0	100.0	Pseudomonas pudica	35
+PICBEH_00860	porin	3	10-10-2,9-2-1,9-6-2	94.5	100.0	Pseudomonas alloputida	15
+PICBEH_00939	TBDR	3	10-10-2,9-2-1,9-6-2	95.0	100.0	Pseudomonas hunanensis	14
+PICBEH_00952	porin	3	10-10-2,9-2-1,9-6-2	98.2	100.0	Pseudomonas kurunegalensis	48
+PICBEH_01069	usher	3	10-10-2,9-2-1,9-6-2	75.0	98.0	Pseudomonas hunanensis	0
+PICBEH_01203	TolC/efflux-OM	3	10-10-2,9-2-1,9-6-2	94.8	100.0	Pseudomonas capeferrum	2
+PICBEH_01321	porin	3	10-10-2,9-2-1,9-6-2	99.0	100.0	Pseudomonas kermanshahensis	25
+PICBEH_01439	flagellin	2	9-2-1,9-6-2	88.9	100.0	Pseudomonas phoenicis	0
+PICBEH_01601	TolC/efflux-OM	3	10-10-2,9-2-1,9-6-2	90.8	100.0	Pseudomonas hunanensis	3
+PICBEH_01674	TBDR	3	10-10-2,9-2-1,9-6-2	95.7	100.0	Pseudomonas fortuita	15
+PICBEH_01843	porin	2	9-2-1,9-6-2	56.2	99.6	Pseudomonas typographi	0
+PICBEH_01884	porin	2	9-2-1,9-6-2	44.4	41.4	Pseudomonas brassicae	0
+PICBEH_01917	porin	2	9-2-1,9-6-2	75.0	100.0	Pseudomonas oplopanacis	0
+PICBEH_02070	porin	2	9-2-1,9-6-2	81.6	100.0	Pseudomonas spartinae	0
+PICBEH_02082	other-OM	2	9-2-1,9-6-2	61.8	100.0	Pseudomonas rhizoryzae	0
+PICBEH_02130	TBDR	3	10-10-2,9-2-1,9-6-2	94.6	100.0	Pseudomonas monteilii	11
+PICBEH_02169	other-OM	2	9-2-1,9-6-2	88.6	100.0	Pseudomonas capeferrum	0
+PICBEH_02355	TolC/efflux-OM	3	10-10-2,9-2-1,9-6-2	95.3	100.0	Pseudomonas asiatica	29
+PICBEH_02362	TBDR	3	10-10-2,9-2-1,9-6-2	94.5	100.0	Pseudomonas kurunegalensis	11
+PICBEH_02367	porin	3	10-10-2,9-2-1,9-6-2	97.8	100.0	Pseudomonas kurunegalensis	32
+PICBEH_02516	TolC/efflux-OM	3	10-10-2,9-2-1,9-6-2	96.3	100.0	Pseudomonas kurunegalensis	40
+PICBEH_02554	porin	3	10-10-2,9-2-1,9-6-2	88.2	100.0	Pseudomonas alloputida	0
+PICBEH_02650	porin	2	9-2-1,9-6-2	61.9	97.5	Pseudomonas monteilii	0
+PICBEH_02743	porin	2	9-2-1,9-6-2	73.9	100.0	Pseudomonas paraversuta	0
+PICBEH_02758	FadL	2	9-2-1,9-6-2	88.7	96.8	Pseudomonas kermanshahensis	0
+PICBEH_02767	TolC/efflux-OM	2	9-2-1,9-6-2	94.8	98.8	Pseudomonas faucium	10
+PICBEH_02786	porin	3	10-10-2,9-2-1,9-6-2	95.6	98.3	Pseudomonas fortuita	28
+PICBEH_02851	porin	3	10-10-2,9-2-1,9-6-2	95.1	99.8	Pseudomonas putida NBRC 14164	16
+PICBEH_02870	TBDR	3	10-10-2,9-2-1,9-6-2	92.3	100.0	Pseudomonas juntendi	5
+PICBEH_02982	other-OM	3	10-10-2,9-2-1,9-6-2	77.0	100.0	Pseudomonas hunanensis	0
+PICBEH_03254	TBDR	2	9-2-1,9-6-2	93.0	100.0	Pseudomonas xanthosomatis	6
+PICBEH_03513	porin	3	10-10-2,9-2-1,9-6-2	95.7	99.8	Pseudomonas asiatica	32
+PICBEH_03548	OmpA	3	10-10-2,9-2-1,9-6-2	50.9	11.3	Pseudomonas paraeruginosa	0
+PICBEH_03582	other-OM	3	10-10-2,9-2-1,9-6-2	75.0	100.0	Pseudomonas capeferrum	0
+PICBEH_03583	TBDR	3	10-10-2,9-2-1,9-6-2	89.4	100.0	Pseudomonas hunanensis	0
+PICBEH_03589	porin	2	9-2-1,9-6-2	92.8	100.0	Pseudomonas kurunegalensis	7
+PICBEH_03599	TolC/efflux-OM	3	10-10-2,9-2-1,9-6-2	95.0	100.0	Pseudomonas hunanensis	11
+PICBEH_03651	usher	3	10-10-2,9-2-1,9-6-2	90.9	96.0	Pseudomonas kurunegalensis	5
+PICBEH_03745	TBDR	3	10-10-2,9-2-1,9-6-2	95.4	100.0	Pseudomonas hunanensis	10
+PICBEH_03798	TBDR	3	10-10-2,9-2-1,9-6-2	95.4	100.0	Pseudomonas kurunegalensis	22
+PICBEH_03999	porin	3	10-10-2,9-2-1,9-6-2	92.0	100.0	Pseudomonas oryzicola	3
+PICBEH_04119	usher	3	10-10-2,9-2-1,9-6-2	80.7	99.5	Pseudomonas urethralis	0
+PICBEH_04129	other-OM	3	10-10-2,9-2-1,9-6-2	66.8	97.0	Pseudomonas kermanshahensis	0
+PICBEH_04164	TBDR	2	9-2-1,9-6-2	94.3	100.0	Pseudomonas putida NBRC 14164	14
+PICBEH_04212	other-OM	2	9-2-1,9-6-2	0.0	0.0	none	0
+PICBEH_04300	TBDR	3	10-10-2,9-2-1,9-6-2	95.8	100.0	Pseudomonas fortuita	6
+PICBEH_04397	porin	3	10-10-2,9-2-1,9-6-2	97.5	100.0	Pseudomonas fortuita	18
+PICBEH_04481	OmpA	3	10-10-2,9-2-1,9-6-2	86.2	94.8	Pseudomonas guariconensis	0
+PICBEH_04541	porin	3	10-10-2,9-2-1,9-6-2	99.0	100.0	Pseudomonas monteilii	40
+PICBEH_04577	TolC/efflux-OM	3	10-10-2,9-2-1,9-6-2	97.5	99.8	Pseudomonas alloputida	46
+PICBEH_04741	TBDR	3	10-10-2,9-2-1,9-6-2	92.3	100.0	Pseudomonas fortuita	13
+PICBEH_04900	TBDR	2	9-2-1,9-6-2	94.4	100.0	Pseudomonas kurunegalensis	7
+PICBEH_05001	TBDR	3	10-10-2,9-2-1,9-6-2	97.0	100.0	Pseudomonas fortuita	28
+PICBEH_05092	TolC/efflux-OM	3	10-10-2,9-2-1,9-6-2	98.3	100.0	Pseudomonas alloputida	47
+PICBEH_05427	porin	3	10-10-2,9-2-1,9-6-2	94.2	100.0	Pseudomonas kurunegalensis	13

@@ -12,6 +12,7 @@
 | `rbp_metadata.tsv` | 2447 | 每條來源 RBP 一列(**含完全重複**),完整 schema + 群集交叉引用 |
 | `rbp_clusters.tsv` | 2447 | `rbp_id → cluster_rep_100 / cluster_rep_95`(MMseqs2 群集歸屬) |
 | `pseudomonas_rbp_candidates.fasta` | 115 | *Pseudomonas* 切片,供 binding screen 使用(`../../0616_binding-screen-fold-plan.md`) |
+| `rbp_by_receptor_class.tsv` | 1215 | **每個受體類別 → 對應 RBP 清單(含序列)** —— 所有有受體標註的 RBP,依 `receptor` 分組(OMP 類在前)、驗證等級高的在前。欄位:receptor, receptor_class, rbp_id, phage, host, source, confidence, rbp_type, seq_length, sequence。篩 `confidence ∈ {experimentally_validated, af3_validated}` 取高信心(173 列),或 `receptor_class==OMP` 取 E. coli 蛋白受體(362 列) |
 
 > **2447 vs 1673**:metadata 共 2447 列 = 1673 條 unique 代表序列 + 774 列完全重複
 > (不同來源/phage 的同一條序列)。重複列透過 `cluster_rep_100` 指向同一條 unique 序列,

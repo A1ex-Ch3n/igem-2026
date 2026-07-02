@@ -1,0 +1,32 @@
+Metric,8-5-2,9-2-1,9-6-2,10-10-2,8-10-2,Description,Source (file -> field)
+Isolate (internal name),8-5-2,9-2-1,9-6-2,10-10-2,8-10-2,Our lab's site code for the isolate.,strain folder name under data/bacteria_genome/
+Sequencing sample ID,B9TF7H_1_Sample_1_8A,XH254M_1_sample_1,QB9Y48_1_rerun_sample_2_2,XH254M_3_sample_3,CZJZZ4_1_rerun_Sample_2_8B_2,Sequencing facility's order/sample identifier.,deliverable filename prefix (*_ont-stats.tsv)
+Genome accession (GenBank),pending,pending,pending,pending,pending,NCBI GenBank assembly accession (after deposition).,placeholder 'pending' - not yet deposited
+Raw read accession (SRA),pending,pending,pending,pending,pending,NCBI SRA accession for the raw reads (after deposition).,placeholder 'pending' - not yet deposited
+Isolation source,California Botanic Garden soil,California Botanic Garden soil,California Botanic Garden soil,California Botanic Garden soil,California Botanic Garden soil,Where the bacterium was isolated from.,"project metadata (soil, California Botanic Garden)"
+Coordinates,"34°6'54""N 117°43'28""W","34°6'54""N 117°43'28""W","34°6'54""N 117°43'28""W","34°6'52""N 117°43'13""W","34°6'54""N 117°43'28""W",GPS coordinates of the sampling site.,field metadata (recorded on site)
+Elevation (m),410,410,410,410,410,"Elevation of the sampling site, in meters.",field metadata (recorded on site)
+Adjacent plant,Chilopsis linearis,Aesculus californica,Aesculus californica,Nicotiana quadrivalvis,Chilopsis linearis,Nearest plant at the sampling site.,field metadata (recorded on site)
+Sequencing platform,Oxford Nanopore (long-read),Oxford Nanopore (long-read),Oxford Nanopore (long-read),Oxford Nanopore (long-read),Oxford Nanopore (long-read),Sequencing technology used.,inferred from ONT deliverable files (*_ont-*)
+Genome size (bp),"5,929,752","6,178,779","6,178,775","5,933,216","5,698,233","Total assembled genome length, base pairs.",annotation/*_reference.txt -> Length
+Contigs (n),1,1,1,1,1,Number of assembled sequences (1 = complete chromosome).,*_reference.txt -> Count
+Topology,Circular,Circular,Circular,Circular,Circular,Whether the chromosome closed into a circle.,*_prepolished-assembly-info.yaml -> topology
+N50 (bp),"5,929,752","6,178,779","6,178,775","5,933,216","5,698,233",Assembly N50 (= genome length for a single contig).,*_reference.txt -> N50
+GC content (%),62.6,62.4,62.4,62.6,62.6,Percent of bases that are G or C.,*_reference.txt -> GC
+Sequencing depth (×),95,94,67,84,96,Mean fold coverage of the genome by reads (polished).,*_ont-stats.tsv -> est_cov
+Total reads,"559,553","354,501","107,609","128,866","546,337",Number of sequencing reads generated.,*_ont-stats.tsv -> total_num_reads
+Read N50 (bp),"8,803","9,050","6,516","6,891","9,663",Read-length N50 (50% of bases in reads this long or longer).,*_ont-stats.tsv -> rN50
+Median read length (bp),"3,474","3,436","2,484","2,350","3,839",Median length of the reads.,*_ont-stats.tsv -> median_read
+Median read quality (Phred),24.52,25.79,24.16,24.24,23.48,Median per-read Phred quality score.,*_ont-stats.tsv -> median_phred
+Completeness % (CheckM),99.74,99.74,99.74,99.74,100.00,Estimated genome completeness from single-copy marker genes.,*_checkm-results.tsv -> Completeness
+Contamination % (CheckM),0.87,1.94,1.94,0.87,0.20,Estimated contamination from duplicated markers.,*_checkm-results.tsv -> Contamination
+Closest species (GTDB),Pseudomonas_E sp013179515,Pseudomonas_E sp013179515,Pseudomonas_E sp013179515,Pseudomonas_E sp013179515,Pseudomonas_E capeferrum,Closest GTDB species assignment.,*_sourmash-genome-species.csv -> lineage (species)
+ANI to closest (%),99.75,99.53,99.53,99.75,98.66,Average nucleotide identity to that species representative.,*_sourmash-genome-species.csv -> query_ani_at_rank x100
+Total genes,"5,410","5,588","5,587","5,413","5,199",All annotated genes (CDS + tRNA + tmRNA + rRNA + ncRNA).,computed from *_reference.txt counts
+CDS (protein-coding genes),"5,264","5,449","5,448","5,267","5,055",Number of protein-coding genes.,*_reference.txt -> CDSs
+tRNA,73,74,74,73,79,Number of tRNA genes.,*_reference.txt -> tRNAs
+rRNA,22,22,22,22,22,Number of rRNA genes (5S/16S/23S).,*_reference.txt -> rRNAs
+ncRNA,50,42,42,50,42,Number of other non-coding RNA genes.,*_reference.txt -> ncRNAs
+Pseudogenes,10,11,11,10,12,Genes annotated as pseudogenes (disrupted/non-functional).,*_reference.txt -> pseudogenes
+Hypothetical proteins,177,233,232,177,172,CDS with no known/assigned function.,*_reference.txt -> hypotheticals
+Coding density (%),89.7,89.6,89.6,89.7,90.9,Percent of the genome that is protein-coding.,*_reference.txt -> coding density

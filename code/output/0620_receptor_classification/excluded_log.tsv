@@ -1,0 +1,306 @@
+strain	locus_tag	annotation	exclusion_reason
+9-2-1	OHPLIO_00005	Integral membrane-like protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_00009	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_00093	UPF0391 membrane protein PputW619_5092	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_00134	cyclic di-GMP receptor LapD	non-receptor (signaling / lipoprotein / misc)
+9-2-1	OHPLIO_00135	Membrane fusion protein (MFP) family protein	efflux periplasmic adaptor / inner-membrane RND pump
+9-2-1	OHPLIO_00145	Membrane fusion protein biotin-lipoyl like domain-containing protein	efflux periplasmic adaptor / inner-membrane RND pump
+9-2-1	OHPLIO_00294	Membrane dipeptidase	non-receptor (signaling / lipoprotein / misc)
+9-2-1	OHPLIO_00365	Membrane protein	generic/uncharacterized membrane protein
+9-2-1	OHPLIO_00384	Membrane-bound lytic murein transglycosylase F	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_00498	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_00609	murein biosynthesis integral membrane protein MurJ	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_00622	Outer membrane protein assembly factor BamD	OM biogenesis/assembly (Bam/Lol/Mla)
+9-2-1	OHPLIO_00679	Energy transducer TonB	TonB/Exb energizer or fragment
+9-2-1	OHPLIO_00714	lipoprotein insertase outer membrane protein LolB	OM biogenesis/assembly (Bam/Lol/Mla)
+9-2-1	OHPLIO_00786	Membrane fusion protein (MFP) family protein	efflux periplasmic adaptor / inner-membrane RND pump
+9-2-1	OHPLIO_00817	Protein-export membrane protein SecF	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_00837	outer membrane protein assembly factor BamB	OM biogenesis/assembly (Bam/Lol/Mla)
+9-2-1	OHPLIO_00868	Sodium/calcium exchanger membrane region domain-containing protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_00901	outer membrane lipid asymmetry maintenance protein MlaD	OM biogenesis/assembly (Bam/Lol/Mla)
+9-2-1	OHPLIO_00938	Inner membrane protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_00965	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_00973	membrane-bound lytic murein transglycosylase MltF	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_00987	type II secretion system inner membrane protein GspF	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_01054	Energy transducer TonB	TonB/Exb energizer or fragment
+9-2-1	OHPLIO_01091	outer membrane protein assembly factor BamA	OM biogenesis/assembly (Bam/Lol/Mla)
+9-2-1	OHPLIO_01092	OmpH family outer membrane protein	non-receptor (signaling / lipoprotein / misc)
+9-2-1	OHPLIO_01153	Membrane lipoprotein	non-receptor (signaling / lipoprotein / misc)
+9-2-1	OHPLIO_01243	Inner membrane protein YjcH	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_01347	Aerotaxis receptor	non-receptor (signaling / lipoprotein / misc)
+9-2-1	OHPLIO_01350	Inner membrane protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_01386	Arginine/ornithine transport protein AotQ (Membrane)	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_01421	Negative regulator of flagellin synthesis	non-receptor (signaling / lipoprotein / misc)
+9-2-1	OHPLIO_01622	succinate dehydrogenase, hydrophobic membrane anchor protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_01725	Paraquat-inducible membrane protein A	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_01727	Membrane integrity-associated transporter subunit PqiC	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_01781	Outer membrane lipoprotein Blc	non-receptor (signaling / lipoprotein / misc)
+9-2-1	OHPLIO_01787	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_01807	outer membrane lipoprotein chaperone LolA	OM biogenesis/assembly (Bam/Lol/Mla)
+9-2-1	OHPLIO_01955	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_02155	type VI secretion system membrane subunit TssM	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_02271	UPF0324 membrane protein PP_3661	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_02273	Small integral membrane protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_02355	Multidrug efflux transport system-membrane subunit	efflux periplasmic adaptor / inner-membrane RND pump
+9-2-1	OHPLIO_02494	Efflux pump membrane transporter	efflux periplasmic adaptor / inner-membrane RND pump
+9-2-1	OHPLIO_02518	Efflux pump membrane transporter	efflux periplasmic adaptor / inner-membrane RND pump
+9-2-1	OHPLIO_02655	Membrane protein	generic/uncharacterized membrane protein
+9-2-1	OHPLIO_02656	Membrane protein	generic/uncharacterized membrane protein
+9-2-1	OHPLIO_02905	EPS-associated small membrane protein EppA	non-receptor (signaling / lipoprotein / misc)
+9-2-1	OHPLIO_02956	type VI secretion system membrane subunit TssM	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_02958	type VI secretion system membrane subunit TssM	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_02970	Membrane protein	generic/uncharacterized membrane protein
+9-2-1	OHPLIO_02979	Inner membrane ABC transporter permease protein YejE	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_03035	type VI secretion system membrane subunit TssM	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_03249	Binding-protein-dependent transport systems inner membrane component	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_03344	Membrane-bound lytic murein transglycosylase F	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_03362	Inner membrane metabolite transport protein YgcS	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_03533	High-affinity zinc uptake system membrane protein ZnuB	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_03549	Membrane-bound redox modulator Alx	non-receptor (signaling / lipoprotein / misc)
+9-2-1	OHPLIO_03599	Membrane fusion protein (MFP) family protein	efflux periplasmic adaptor / inner-membrane RND pump
+9-2-1	OHPLIO_03653	Pili assembly chaperone N-terminal domain-containing protein	no receptor-fold keyword matched
+9-2-1	OHPLIO_03692	Major outer membrane lipoprotein	non-receptor (signaling / lipoprotein / misc)
+9-2-1	OHPLIO_03701	Membrane-bound lytic murein transglycosylase F	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_03722	Small integral membrane protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_03724	Binding-protein-dependent transport system inner membrane protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_03729	Aerotaxis receptor	non-receptor (signaling / lipoprotein / misc)
+9-2-1	OHPLIO_03737	Membrane protein YkvI	generic/uncharacterized membrane protein
+9-2-1	OHPLIO_03741	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_03868	Outer membrane protein assembly factor BamE domain-containing protein	OM biogenesis/assembly (Bam/Lol/Mla)
+9-2-1	OHPLIO_03946	Lipid ABC transporter ATPase/inner membrane protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_04152	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_04269	Inner membrane metabolite transport protein YgcS	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_04311	Outer membrane protein assembly factor BamC	OM biogenesis/assembly (Bam/Lol/Mla)
+9-2-1	OHPLIO_04322	Membrane protein	generic/uncharacterized membrane protein
+9-2-1	OHPLIO_04412	Integral membrane protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_04426	Efflux system membrane protein	efflux periplasmic adaptor / inner-membrane RND pump
+9-2-1	OHPLIO_04449	Flagellar motor protein MotB	non-receptor (signaling / lipoprotein / misc)
+9-2-1	OHPLIO_04468	Energy transducer TonB	TonB/Exb energizer or fragment
+9-2-1	OHPLIO_04514	Pr6Pr family membrane protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_04700	Amino acid ABC transporter-membrane subunit	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_04734	Membrane fusion protein biotin-lipoyl like domain-containing protein	efflux periplasmic adaptor / inner-membrane RND pump
+9-2-1	OHPLIO_04805	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_04859	Membrane biogenesis protein	non-receptor (signaling / lipoprotein / misc)
+9-2-1	OHPLIO_04889	Outer membrane protein assembly factor BamE	OM biogenesis/assembly (Bam/Lol/Mla)
+9-2-1	OHPLIO_04984	UPF0056 membrane protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_05123	TIGR01666 family membrane protein	non-receptor (signaling / lipoprotein / misc)
+9-2-1	OHPLIO_05140	Membrane-bound lytic murein transglycosylase A	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_05162	Type IV pili response regulator PilG	non-receptor (signaling / lipoprotein / misc)
+9-2-1	OHPLIO_05164	TonB C-terminal domain-containing protein	TonB/Exb energizer or fragment
+9-2-1	OHPLIO_05193	Amino acid ABC transporter membrane protein, PAAT family	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_05207	Outer membrane lipoprotein Blc	non-receptor (signaling / lipoprotein / misc)
+9-2-1	OHPLIO_05208	Outer membrane protein assembly factor BamE domain-containing protein	OM biogenesis/assembly (Bam/Lol/Mla)
+9-2-1	OHPLIO_05311	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_05339	Protein TonB	TonB/Exb energizer or fragment
+9-2-1	OHPLIO_05346	RND efflux pump membrane fusion protein barrel-sandwich domain-containing protein	efflux periplasmic adaptor / inner-membrane RND pump
+9-2-1	OHPLIO_05351	Inner membrane ABC transporter permease protein YdcV	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_05352	Spermidine/putrescine ABC transporter-inner membrane subunit	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_05382	Membrane fusion protein biotin-lipoyl like domain-containing protein	efflux periplasmic adaptor / inner-membrane RND pump
+9-2-1	OHPLIO_05483	tonB-system energizer ExbB	TonB/Exb energizer or fragment
+9-2-1	OHPLIO_05484	TonB system transport protein ExbD	TonB/Exb energizer or fragment
+9-2-1	OHPLIO_05485	Protein TonB	TonB/Exb energizer or fragment
+9-2-1	OHPLIO_05533	Inner membrane protein YbaL	inner-membrane / transporter / not surface receptor
+9-2-1	OHPLIO_05590	membrane protein insertase YidC	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_00005	Integral membrane-like protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_00009	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_00093	UPF0391 membrane protein PputW619_5092	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_00134	cyclic di-GMP receptor LapD	non-receptor (signaling / lipoprotein / misc)
+9-6-2	PICBEH_00135	Membrane fusion protein (MFP) family protein	efflux periplasmic adaptor / inner-membrane RND pump
+9-6-2	PICBEH_00145	Membrane fusion protein biotin-lipoyl like domain-containing protein	efflux periplasmic adaptor / inner-membrane RND pump
+9-6-2	PICBEH_00294	Membrane dipeptidase	non-receptor (signaling / lipoprotein / misc)
+9-6-2	PICBEH_00365	Membrane protein	generic/uncharacterized membrane protein
+9-6-2	PICBEH_00384	Membrane-bound lytic murein transglycosylase F	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_00498	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_00609	murein biosynthesis integral membrane protein MurJ	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_00622	Outer membrane protein assembly factor BamD	OM biogenesis/assembly (Bam/Lol/Mla)
+9-6-2	PICBEH_00679	Energy transducer TonB	TonB/Exb energizer or fragment
+9-6-2	PICBEH_00714	lipoprotein insertase outer membrane protein LolB	OM biogenesis/assembly (Bam/Lol/Mla)
+9-6-2	PICBEH_00786	Membrane fusion protein (MFP) family protein	efflux periplasmic adaptor / inner-membrane RND pump
+9-6-2	PICBEH_00817	Protein-export membrane protein SecF	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_00837	outer membrane protein assembly factor BamB	OM biogenesis/assembly (Bam/Lol/Mla)
+9-6-2	PICBEH_00868	Sodium/calcium exchanger membrane region domain-containing protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_00900	outer membrane lipid asymmetry maintenance protein MlaD	OM biogenesis/assembly (Bam/Lol/Mla)
+9-6-2	PICBEH_00937	Inner membrane protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_00964	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_00972	membrane-bound lytic murein transglycosylase MltF	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_00986	type II secretion system inner membrane protein GspF	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_01053	Energy transducer TonB	TonB/Exb energizer or fragment
+9-6-2	PICBEH_01090	outer membrane protein assembly factor BamA	OM biogenesis/assembly (Bam/Lol/Mla)
+9-6-2	PICBEH_01091	OmpH family outer membrane protein	non-receptor (signaling / lipoprotein / misc)
+9-6-2	PICBEH_01152	Membrane lipoprotein	non-receptor (signaling / lipoprotein / misc)
+9-6-2	PICBEH_01242	Inner membrane protein YjcH	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_01346	Aerotaxis receptor	non-receptor (signaling / lipoprotein / misc)
+9-6-2	PICBEH_01349	Inner membrane protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_01385	Arginine/ornithine transport protein AotQ (Membrane)	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_01420	Negative regulator of flagellin synthesis	non-receptor (signaling / lipoprotein / misc)
+9-6-2	PICBEH_01621	succinate dehydrogenase, hydrophobic membrane anchor protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_01724	Paraquat-inducible membrane protein A	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_01726	Membrane integrity-associated transporter subunit PqiC	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_01780	Outer membrane lipoprotein Blc	non-receptor (signaling / lipoprotein / misc)
+9-6-2	PICBEH_01786	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_01806	outer membrane lipoprotein chaperone LolA	OM biogenesis/assembly (Bam/Lol/Mla)
+9-6-2	PICBEH_01954	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_02154	type VI secretion system membrane subunit TssM	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_02270	UPF0324 membrane protein PP_3661	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_02272	Small integral membrane protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_02354	Multidrug efflux transport system-membrane subunit	efflux periplasmic adaptor / inner-membrane RND pump
+9-6-2	PICBEH_02493	Efflux pump membrane transporter	efflux periplasmic adaptor / inner-membrane RND pump
+9-6-2	PICBEH_02517	Efflux pump membrane transporter	efflux periplasmic adaptor / inner-membrane RND pump
+9-6-2	PICBEH_02654	Membrane protein	generic/uncharacterized membrane protein
+9-6-2	PICBEH_02655	Membrane protein	generic/uncharacterized membrane protein
+9-6-2	PICBEH_02904	EPS-associated small membrane protein EppA	non-receptor (signaling / lipoprotein / misc)
+9-6-2	PICBEH_02955	type VI secretion system membrane subunit TssM	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_02957	type VI secretion system membrane subunit TssM	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_02969	Membrane protein	generic/uncharacterized membrane protein
+9-6-2	PICBEH_02978	Inner membrane ABC transporter permease protein YejE	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_03034	type VI secretion system membrane subunit TssM	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_03248	Binding-protein-dependent transport systems inner membrane component	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_03344	Membrane-bound lytic murein transglycosylase F	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_03362	Inner membrane metabolite transport protein YgcS	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_03533	High-affinity zinc uptake system membrane protein ZnuB	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_03549	Membrane-bound redox modulator Alx	non-receptor (signaling / lipoprotein / misc)
+9-6-2	PICBEH_03598	Membrane fusion protein (MFP) family protein	efflux periplasmic adaptor / inner-membrane RND pump
+9-6-2	PICBEH_03652	Pili assembly chaperone N-terminal domain-containing protein	no receptor-fold keyword matched
+9-6-2	PICBEH_03691	Major outer membrane lipoprotein	non-receptor (signaling / lipoprotein / misc)
+9-6-2	PICBEH_03700	Membrane-bound lytic murein transglycosylase F	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_03721	Small integral membrane protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_03723	Binding-protein-dependent transport system inner membrane protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_03728	Aerotaxis receptor	non-receptor (signaling / lipoprotein / misc)
+9-6-2	PICBEH_03736	Membrane protein YkvI	generic/uncharacterized membrane protein
+9-6-2	PICBEH_03740	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_03867	Outer membrane protein assembly factor BamE domain-containing protein	OM biogenesis/assembly (Bam/Lol/Mla)
+9-6-2	PICBEH_03945	Lipid ABC transporter ATPase/inner membrane protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_04151	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_04268	Inner membrane metabolite transport protein YgcS	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_04310	Outer membrane protein assembly factor BamC	OM biogenesis/assembly (Bam/Lol/Mla)
+9-6-2	PICBEH_04321	Membrane protein	generic/uncharacterized membrane protein
+9-6-2	PICBEH_04411	Integral membrane protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_04425	Efflux system membrane protein	efflux periplasmic adaptor / inner-membrane RND pump
+9-6-2	PICBEH_04448	Flagellar motor protein MotB	non-receptor (signaling / lipoprotein / misc)
+9-6-2	PICBEH_04467	Energy transducer TonB	TonB/Exb energizer or fragment
+9-6-2	PICBEH_04513	Pr6Pr family membrane protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_04699	Amino acid ABC transporter-membrane subunit	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_04733	Membrane fusion protein biotin-lipoyl like domain-containing protein	efflux periplasmic adaptor / inner-membrane RND pump
+9-6-2	PICBEH_04804	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_04858	Membrane biogenesis protein	non-receptor (signaling / lipoprotein / misc)
+9-6-2	PICBEH_04888	Outer membrane protein assembly factor BamE	OM biogenesis/assembly (Bam/Lol/Mla)
+9-6-2	PICBEH_04983	UPF0056 membrane protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_05122	TIGR01666 family membrane protein	non-receptor (signaling / lipoprotein / misc)
+9-6-2	PICBEH_05139	Membrane-bound lytic murein transglycosylase A	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_05161	Type IV pili response regulator PilG	non-receptor (signaling / lipoprotein / misc)
+9-6-2	PICBEH_05163	TonB C-terminal domain-containing protein	TonB/Exb energizer or fragment
+9-6-2	PICBEH_05192	Amino acid ABC transporter membrane protein, PAAT family	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_05206	Outer membrane lipoprotein Blc	non-receptor (signaling / lipoprotein / misc)
+9-6-2	PICBEH_05207	Outer membrane protein assembly factor BamE domain-containing protein	OM biogenesis/assembly (Bam/Lol/Mla)
+9-6-2	PICBEH_05310	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_05338	Protein TonB	TonB/Exb energizer or fragment
+9-6-2	PICBEH_05345	RND efflux pump membrane fusion protein barrel-sandwich domain-containing protein	efflux periplasmic adaptor / inner-membrane RND pump
+9-6-2	PICBEH_05350	Inner membrane ABC transporter permease protein YdcV	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_05351	Spermidine/putrescine ABC transporter-inner membrane subunit	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_05381	Membrane fusion protein biotin-lipoyl like domain-containing protein	efflux periplasmic adaptor / inner-membrane RND pump
+9-6-2	PICBEH_05482	tonB-system energizer ExbB	TonB/Exb energizer or fragment
+9-6-2	PICBEH_05483	TonB system transport protein ExbD	TonB/Exb energizer or fragment
+9-6-2	PICBEH_05484	Protein TonB	TonB/Exb energizer or fragment
+9-6-2	PICBEH_05532	Inner membrane protein YbaL	inner-membrane / transporter / not surface receptor
+9-6-2	PICBEH_05589	membrane protein insertase YidC	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_00005	Integral membrane-like protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_00009	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_00093	UPF0391 membrane protein PputW619_5092	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_00134	cyclic di-GMP receptor LapD	non-receptor (signaling / lipoprotein / misc)
+10-10-2	BPBBIK_00135	Membrane fusion protein (MFP) family protein	efflux periplasmic adaptor / inner-membrane RND pump
+10-10-2	BPBBIK_00145	Membrane fusion protein biotin-lipoyl like domain-containing protein	efflux periplasmic adaptor / inner-membrane RND pump
+10-10-2	BPBBIK_00299	Membrane dipeptidase	non-receptor (signaling / lipoprotein / misc)
+10-10-2	BPBBIK_00371	Membrane protein	generic/uncharacterized membrane protein
+10-10-2	BPBBIK_00401	Membrane-bound lytic murein transglycosylase F	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_00512	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_00628	murein biosynthesis integral membrane protein MurJ	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_00641	Outer membrane protein assembly factor BamD	OM biogenesis/assembly (Bam/Lol/Mla)
+10-10-2	BPBBIK_00692	Energy transducer TonB	TonB/Exb energizer or fragment
+10-10-2	BPBBIK_00727	lipoprotein insertase outer membrane protein LolB	OM biogenesis/assembly (Bam/Lol/Mla)
+10-10-2	BPBBIK_00799	Membrane fusion protein (MFP) family protein	efflux periplasmic adaptor / inner-membrane RND pump
+10-10-2	BPBBIK_00849	Protein-export membrane protein SecF	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_00869	outer membrane protein assembly factor BamB	OM biogenesis/assembly (Bam/Lol/Mla)
+10-10-2	BPBBIK_00901	Sodium/calcium exchanger membrane region domain-containing protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_00933	outer membrane lipid asymmetry maintenance protein MlaD	OM biogenesis/assembly (Bam/Lol/Mla)
+10-10-2	BPBBIK_00970	Inner membrane protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_00997	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_01005	membrane-bound lytic murein transglycosylase MltF	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_01018	type II secretion system inner membrane protein GspF	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_01059	Inner membrane ABC transporter permease protein YdcU	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_01088	Energy transducer TonB	TonB/Exb energizer or fragment
+10-10-2	BPBBIK_01125	outer membrane protein assembly factor BamA	OM biogenesis/assembly (Bam/Lol/Mla)
+10-10-2	BPBBIK_01126	OmpH family outer membrane protein	non-receptor (signaling / lipoprotein / misc)
+10-10-2	BPBBIK_01238	Membrane lipoprotein	non-receptor (signaling / lipoprotein / misc)
+10-10-2	BPBBIK_01345	Inner membrane protein YjcH	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_01440	Aerotaxis receptor	non-receptor (signaling / lipoprotein / misc)
+10-10-2	BPBBIK_01443	Inner membrane protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_01451	Membrane protein	generic/uncharacterized membrane protein
+10-10-2	BPBBIK_01478	Arginine/ornithine transport protein AotQ (Membrane)	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_01695	succinate dehydrogenase, hydrophobic membrane anchor protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_01840	Outer membrane lipoprotein Blc	non-receptor (signaling / lipoprotein / misc)
+10-10-2	BPBBIK_01845	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_01865	outer membrane lipoprotein chaperone LolA	OM biogenesis/assembly (Bam/Lol/Mla)
+10-10-2	BPBBIK_01894	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_02047	Integrating conjugative element membrane protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_02054	TIGR03747 family integrating conjugative element membrane protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_02076	Receptor protein-tyrosine kinase	non-receptor (signaling / lipoprotein / misc)
+10-10-2	BPBBIK_02217	RND efflux pump membrane fusion protein barrel-sandwich domain-containing protein	efflux periplasmic adaptor / inner-membrane RND pump
+10-10-2	BPBBIK_02244	type VI secretion system membrane subunit TssM	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_02364	UPF0324 membrane protein PP_3661	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_02366	Small integral membrane protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_02446	Multidrug efflux transport system-membrane subunit	efflux periplasmic adaptor / inner-membrane RND pump
+10-10-2	BPBBIK_02586	Efflux pump membrane transporter	efflux periplasmic adaptor / inner-membrane RND pump
+10-10-2	BPBBIK_02610	Efflux pump membrane transporter	efflux periplasmic adaptor / inner-membrane RND pump
+10-10-2	BPBBIK_02842	EPS-associated small membrane protein EppA	non-receptor (signaling / lipoprotein / misc)
+10-10-2	BPBBIK_02893	type VI secretion system membrane subunit TssM	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_02895	type VI secretion system membrane subunit TssM	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_02903	Membrane protein	generic/uncharacterized membrane protein
+10-10-2	BPBBIK_02912	Inner membrane ABC transporter permease protein YejE	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_02970	type VI secretion system membrane subunit TssM	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_03221	Arsenical pump membrane protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_03301	Membrane-bound lytic murein transglycosylase F	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_03318	Inner membrane metabolite transport protein YgcS	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_03489	High-affinity zinc uptake system membrane protein ZnuB	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_03505	Membrane-bound redox modulator Alx	non-receptor (signaling / lipoprotein / misc)
+10-10-2	BPBBIK_03555	Membrane fusion protein (MFP) family protein	efflux periplasmic adaptor / inner-membrane RND pump
+10-10-2	BPBBIK_03608	Pili assembly chaperone N-terminal domain-containing protein	no receptor-fold keyword matched
+10-10-2	BPBBIK_03648	Major outer membrane lipoprotein	non-receptor (signaling / lipoprotein / misc)
+10-10-2	BPBBIK_03657	Membrane-bound lytic murein transglycosylase F	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_03678	Small integral membrane protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_03680	Binding-protein-dependent transport system inner membrane protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_03685	Aerotaxis receptor	non-receptor (signaling / lipoprotein / misc)
+10-10-2	BPBBIK_03693	Membrane protein YkvI	generic/uncharacterized membrane protein
+10-10-2	BPBBIK_03697	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_03822	Lipid ABC transporter ATPase/inner membrane protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_04029	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_04138	Inner membrane metabolite transport protein YgcS	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_04182	Outer membrane protein assembly factor BamC	OM biogenesis/assembly (Bam/Lol/Mla)
+10-10-2	BPBBIK_04193	Membrane protein	generic/uncharacterized membrane protein
+10-10-2	BPBBIK_04262	Integral membrane protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_04277	Efflux system membrane protein	efflux periplasmic adaptor / inner-membrane RND pump
+10-10-2	BPBBIK_04300	Flagellar motor protein MotB	non-receptor (signaling / lipoprotein / misc)
+10-10-2	BPBBIK_04319	Energy transducer TonB	TonB/Exb energizer or fragment
+10-10-2	BPBBIK_04365	Pr6Pr family membrane protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_04550	Amino acid ABC transporter-membrane subunit	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_04584	Membrane fusion protein biotin-lipoyl like domain-containing protein	efflux periplasmic adaptor / inner-membrane RND pump
+10-10-2	BPBBIK_04655	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_04709	Membrane biogenesis protein	non-receptor (signaling / lipoprotein / misc)
+10-10-2	BPBBIK_04739	Outer membrane protein assembly factor BamE	OM biogenesis/assembly (Bam/Lol/Mla)
+10-10-2	BPBBIK_04834	UPF0056 membrane protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_04968	TIGR01666 family membrane protein	non-receptor (signaling / lipoprotein / misc)
+10-10-2	BPBBIK_04984	Membrane-bound lytic murein transglycosylase A	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_05006	Type IV pili response regulator PilG	non-receptor (signaling / lipoprotein / misc)
+10-10-2	BPBBIK_05008	TonB C-terminal domain-containing protein	TonB/Exb energizer or fragment
+10-10-2	BPBBIK_05052	Outer membrane lipoprotein Blc	non-receptor (signaling / lipoprotein / misc)
+10-10-2	BPBBIK_05053	Outer membrane protein assembly factor BamE domain-containing protein	OM biogenesis/assembly (Bam/Lol/Mla)
+10-10-2	BPBBIK_05157	putative membrane transporter protein	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_05187	Protein TonB	TonB/Exb energizer or fragment
+10-10-2	BPBBIK_05194	RND efflux pump membrane fusion protein barrel-sandwich domain-containing protein	efflux periplasmic adaptor / inner-membrane RND pump
+10-10-2	BPBBIK_05198	Inner membrane ABC transporter permease protein YdcV	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_05199	Spermidine/putrescine ABC transporter-inner membrane subunit	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_05229	Membrane fusion protein biotin-lipoyl like domain-containing protein	efflux periplasmic adaptor / inner-membrane RND pump
+10-10-2	BPBBIK_05329	tonB-system energizer ExbB	TonB/Exb energizer or fragment
+10-10-2	BPBBIK_05330	TonB system transport protein ExbD	TonB/Exb energizer or fragment
+10-10-2	BPBBIK_05331	Protein TonB	TonB/Exb energizer or fragment
+10-10-2	BPBBIK_05379	Inner membrane protein YbaL	inner-membrane / transporter / not surface receptor
+10-10-2	BPBBIK_05415	membrane protein insertase YidC	inner-membrane / transporter / not surface receptor

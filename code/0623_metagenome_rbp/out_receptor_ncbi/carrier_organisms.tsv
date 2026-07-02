@@ -1,0 +1,391 @@
+organism	named	max_pct_id	n_receptors_shared	n_high_id_hits	phage_count	example_phage_accessions
+Pseudomonas hunanensis	True	98.3	102	58	0	
+Pseudomonas putida	True	99.4	98	57	139	3325678296,3260776726,3260776602,3111839917,3111832209
+Pseudomonas fortuita	True	99.1	97	57	0	
+Pseudomonas monteilii	True	99.0	97	56	0	
+Pseudomonas kurunegalensis	True	99.0	98	55	0	
+Pseudomonas pudica	True	97.8	95	53	0	
+Pseudomonas inefficax	True	98.1	93	52	0	
+Pseudomonas alloputida	True	98.3	100	50	0	
+Pseudomonas shirazica	True	97.2	93	50	0	
+Pseudomonas asiatica	True	97.8	94	49	0	
+Pseudomonas kermanshahensis	True	99.0	96	48	0	
+Pseudomonas capeferrum	True	98.3	98	45	0	
+Pseudomonas oryzicola	True	97.6	90	42	0	
+Pseudomonas juntendi	True	97.2	92	42	0	
+Pseudomonas anuradhapurensis	True	97.5	94	41	0	
+Pseudomonas persica	True	96.9	92	41	0	
+Pseudomonas ceruminis	True	97.3	95	33	0	
+Pseudomonas faucium	True	96.8	92	29	0	
+Pseudomonas vlassakiae	True	96.6	93	28	0	
+Pseudomonas urethralis	True	96.8	93	27	0	
+Pseudomonas parafulva	True	95.9	93	25	1	1726260324
+Pseudomonas taiwanensis	True	95.8	90	22	4	2917586733,2917586668,2917586218,2917586164
+Pseudomonas plecoglossicida	True	95.9	87	20	7	2441065722,824479682,564292481,564292430,563784751
+Pseudomonas urmiensis	True	95.2	92	20	0	
+Pseudomonas muyukensis	True	96.8	93	19	0	
+Pseudomonas mosselii	True	94.8	94	19	0	
+Pseudomonas oryziphila	True	96.0	97	18	0	
+Pseudomonas sichuanensis	True	96.0	95	18	0	
+Pseudomonas peradeniyensis	True	96.0	90	18	0	
+Pseudomonas fakonensis	True	96.0	96	18	0	
+Pseudomonas carassii	True	96.0	91	18	0	
+Pseudomonas promysalinigenes	True	95.0	85	18	0	
+Pseudomonas soli	True	96.9	89	17	0	
+Pseudomonas sp.	False	96.5	91	17		
+Pseudomonas fulva	True	96.2	87	17	2	414086915,378565749
+Pseudomonas reidholzensis	True	97.0	95	16	0	
+Pseudomonas maumuensis	True	96.5	92	16	0	
+Pseudomonas xanthosomatis	True	96.2	97	16	0	
+Pseudomonas xantholysinigenes	True	96.8	89	15	0	
+Pseudomonas shiyinii	True	95.6	86	15	0	
+Pseudomonas parasichuanensis	True	95.1	93	15	0	
+Pseudomonas entomophila	True	95.7	90	14	2	435844340,383394854
+Pseudomonas guariconensis	True	95.6	87	14	0	
+Pseudomonas wayambapalatensis	True	95.8	96	13	0	
+Pseudomonas machongensis	True	95.6	96	13	0	
+Pseudomonas shirazensis	True	95.6	97	10	0	
+Pseudomonas farsensis	True	95.0	92	10	0	
+Pseudomonas boreofloridensis	True	93.6	83	5	0	
+Pseudomonas cremoricolorata	True	94.0	81	4	0	
+Pseudomonas vranovensis	True	92.3	88	3	0	
+Pseudomonas ulcerans	True	94.8	98	2	0	
+Pseudomonas bharatica	True	94.3	91	2	0	
+Pseudomonas palmensis	True	94.3	91	2	0	
+Pseudomonas wadenswilerensis	True	92.1	92	2	0	
+Pseudomonas fontis	True	91.2	93	2	0	
+Pseudomonas qingdaonensis	True	94.3	92	1	0	
+Pseudomonas phoenicis	True	93.9	86	1	0	
+Pseudomonas japonica	True	93.5	93	1	0	
+Pseudomonas arcuscaelestis	True	93.0	87	1	0	
+Pseudomonas huaxiensis	True	93.0	98	1	0	
+Pseudomonas cucumis	True	92.6	81	1	0	
+Pseudomonas gregormendelii	True	92.6	80	1	0	
+Pseudomonas aegrilactucae	True	92.6	90	1	0	
+Pseudomonas wuhanensis	True	92.4	83	1	0	
+Pseudomonas lini	True	92.4	82	1	0	
+Pseudomonas farris	True	92.4	88	1	0	
+Pseudomonas migulae	True	92.4	86	1	0	
+Pseudomonas rubra	True	92.1	87	1	0	
+Pseudomonas auratipiscis	True	92.1	90	1	0	
+Pseudomonas umsongensis	True	92.1	83	1	0	
+Pseudomonas violetae	True	91.8	80	1	0	
+Pseudomonas halotolerans	True	91.8	77	1	0	
+Pseudomonas donghuensis	True	91.7	91	1	0	
+Pseudomonas tussilaginis	True	91.7	89	1	0	
+Pseudomonas brassicae	True	91.7	77	1	0	
+Pseudomonas tructae	True	91.7	86	1	0	
+Pseudomonas mohnii	True	91.6	82	1	0	
+Pseudomonas alkylphenolica	True	91.3	91	1	0	
+Pseudomonas hefeiensis	True	91.3	73	1	0	
+Pseudomonas silesiensis	True	91.3	81	1	0	
+Pseudomonas azerbaijanorientalis	True	91.3	77	1	0	
+Pseudomonas grandcourensis	True	91.3	77	1	0	
+Pseudomonas monachiensis	True	91.3	84	1	0	
+Pseudomonas laurylsulfativorans	True	91.3	83	1	0	
+Pseudomonas kielensis	True	91.1	81	1	0	
+Pseudomonas tehranensis	True	91.1	80	1	0	
+Pseudomonas corrugata	True	91.1	80	1	0	
+Pseudomonas viciae	True	91.1	74	1	0	
+Pseudomonas uvaldensis	True	91.1	75	1	0	
+Pseudomonas thivervalensis	True	91.1	76	1	0	
+Pseudomonas nunensis	True	91.1	88	1	0	
+Pseudomonas serbica	True	91.1	87	1	0	
+Pseudomonas jessenii	True	91.1	82	1	0	
+Pseudomonas rhizophila	True	90.8	76	1	0	
+Pseudomonas svalbardensis	True	90.8	79	1	0	
+Pseudomonas mediterranea	True	90.8	78	1	0	
+Pseudomonas marvdashtae	True	90.8	76	1	0	
+Pseudomonas silensiensis	True	90.8	88	1	0	
+Pseudomonas laurylsulfatiphila	True	90.8	79	1	0	
+Pseudomonas beijingensis	True	90.6	80	1	0	
+Pseudomonas bijieensis	True	90.6	78	1	0	
+Pseudomonas lyxosi	True	90.6	92	1	0	
+Pseudomonas agronomica	True	90.6	70	1	0	
+Pseudomonas frigoris	True	90.6	88	1	0	
+Pseudomonas multiresinivorans	True	90.3	81	1	0	
+Pseudomonas medicaginis	True	90.3	82	1	0	
+Pseudomonas alvandae	True	90.3	81	1	0	
+Pseudomonas algeriensis	True	90.3	74	1	0	
+Pseudomonas citrullilanati	True	90.3	73	1	0	
+Pseudomonas rossensis	True	90.3	79	1	0	
+Pseudomonas arabinosi	True	90.3	87	1	0	
+Pseudomonas shahriarae	True	90.3	92	1	1	3153732048
+Pseudomonas morbosilactucae	True	90.3	83	1	0	
+Pseudomonas citri	True	90.3	80	1	0	
+Pseudomonas pseudonitroreducens	True	90.1	75	1	0	
+Pseudomonas brassicacearum	True	90.1	78	1	2	374531848,373429464
+Pseudomonas nicosulfuronedens	True	90.1	79	1	0	
+Pseudomonas nitroreducens	True	90.1	83	1	0	
+Pseudomonas oplopanacis	True	90.1	79	1	0	
+Pseudomonas macauensis	True	90.1	75	1	0	
+Pseudomonas hygromyciniae	True	90.1	94	1	0	
+Pseudomonas mandelii	True	89.8	83	0		
+Pseudomonas ogarae	True	89.8	76	0		
+Pseudomonas kilonensis	True	89.8	82	0		
+Pseudomonas zanjanensis	True	89.6	73	0		
+Pseudomonas brenneri	True	89.6	89	0		
+Pseudomonas asgharzadehiana	True	89.6	85	0		
+Pseudomonas paraveronii	True	89.6	85	0		
+Pseudomonas kairouanensis	True	89.6	88	0		
+Pseudomonas helvetica	True	89.3	71	0		
+Pseudomonas lactucae	True	89.3	88	0		
+Pseudomonas sivasensis	True	89.3	91	0		
+Pseudomonas fildesensis	True	89.3	90	0		
+Pseudomonas laurentiana	True	89.2	75	0		
+Pseudomonas defluvii	True	89.2	75	0		
+Pseudomonas asplenii	True	89.1	65	0		
+Pseudomonas gorinensis	True	89.1	92	0		
+Pseudomonas cremoris	True	89.1	91	0		
+Pseudomonas pisciculturae	True	89.1	93	0		
+Pseudomonas veronii	True	88.8	92	0		
+Pseudomonas botevensis	True	88.6	97	0		
+Pseudomonas danubii	True	88.3	89	0		
+Pseudomonas idahonensis	True	88.3	90	0		
+Pseudomonas mucidolens	True	88.3	84	0		
+Pseudomonas protegens	True	88.1	92	0		
+Pseudomonas berkeleyensis	True	88.0	70	0		
+Pseudomonas extremaustralis	True	87.8	83	0		
+Pseudomonas imrae	True	87.8	85	0		
+Pseudomonas vanderleydeniana	True	87.7	78	0		
+Pseudomonas abieticivorans	True	87.5	91	0		
+Pseudomonas hormoni	True	87.5	83	0		
+Pseudomonas akapageensis	True	87.5	69	0		
+Pseudomonas serboccidentalis	True	87.4	90	0		
+Pseudomonas maioricensis	True	87.4	79	0		
+Pseudomonas saponiphila	True	87.3	89	0		
+Pseudomonas syringae	True	87.3	74	0		
+Pseudomonas tensinigenes	True	87.2	94	0		
+Pseudomonas piscis	True	87.2	84	0		
+Pseudomonas helmanticensis	True	87.2	92	0		
+Pseudomonas hamedanensis	True	87.0	74	0		
+Pseudomonas crudilactis	True	86.9	95	0		
+Pseudomonas carnis	True	86.9	86	0		
+Pseudomonas sputi	True	86.8	91	0		
+Pseudomonas baetica	True	86.8	87	0		
+Pseudomonas avellanae	True	86.8	67	0		
+Pseudomonas gozinkensis	True	86.7	89	0		
+Pseudomonas anatoliensis	True	86.7	93	0		
+Pseudomonas glycinae	True	86.7	84	0		
+Pseudomonas germanica	True	86.7	94	0		
+Pseudomonas spartinae	True	86.7	66	0		
+Pseudomonas sediminis	True	86.7	64	0		
+Pseudomonas wenzhouensis	True	86.7	60	0		
+Pseudomonas monsensis	True	86.6	89	0		
+Pseudomonas chlororaphis	True	86.5	87	0		
+Pseudomonas neuropathica	True	86.5	97	0		
+Pseudomonas caspiana	True	86.5	87	0		
+Pseudomonas folii	True	86.5	79	0		
+Pseudomonas pharyngis	True	86.4	83	0		
+Candidatus Pseudomonas	True	86.4	88	0		
+Pseudomonas fitomaticsae	True	86.4	86	0		
+Pseudomonas aphyarum	True	86.4	93	0		
+Pseudomonas paraglycinae	True	86.4	81	0		
+Pseudomonas iridis	True	86.4	90	0		
+Pseudomonas cannabina	True	86.4	64	0		
+Pseudomonas savastanoi	True	86.4	66	0		
+Pseudomonas amygdali	True	86.4	67	0		
+Pseudomonas meliae	True	86.4	55	0		
+Pseudomonas ficuserectae	True	86.4	61	0		
+Pseudomonas sihuiensis	True	86.4	69	0		
+Pseudomonas zeae	True	86.3	92	0		
+Pseudomonas ovata	True	86.3	85	0		
+Pseudomonas baltica	True	86.2	71	0		
+Pseudomonas koreensis	True	86.2	87	0		
+Pseudomonas allokribbensis	True	86.2	90	0		
+Pseudomonas parakoreensis	True	86.2	84	0		
+Pseudomonas lactis	True	86.2	85	0		
+Pseudomonas salmasensis	True	86.2	86	0		
+Pseudomonas rhizosphaerae	True	86.1	70	0		
+Pseudomonas cerasi	True	86.0	56	0		
+Pseudomonas caricapapayae	True	86.0	66	0		
+Pseudomonas congelans	True	86.0	69	0		
+Pseudomonas bananamidigenes	True	85.9	83	0		
+Pseudomonas paracarnis	True	85.9	88	0		
+Pseudomonas yangonensis	True	85.9	70	0		
+Pseudomonas sessilinigenes	True	85.8	88	0		
+Pseudomonas capsici	True	85.8	72	0		
+Pseudomonas lijiangensis	True	85.8	71	0		
+Pseudomonas coleopterorum	True	85.7	74	0		
+Pseudomonas granadensis	True	85.7	76	0		
+Pseudomonas endophytica	True	85.7	82	0		
+Pseudomonas atagonensis	True	85.7	94	0		
+Pseudomonas costantinii	True	85.7	88	0		
+Pseudomonas extremorientalis	True	85.7	91	0		
+Pseudomonas lurida	True	85.7	92	0		
+Pseudomonas abietaniphila	True	85.7	65	0		
+Pseudomonas atacamensis	True	85.5	76	0		
+Pseudomonas cichorii	True	85.5	73	0		
+Pseudomonas siliginis	True	85.5	77	0		
+Pseudomonas mercuritolerans	True	85.5	81	0		
+Pseudomonas rhizozeae	True	85.5	72	0		
+Pseudomonas tremae	True	85.5	64	0		
+Pseudomonas coronafaciens	True	85.5	64	0		
+Pseudomonas simiae	True	85.4	88	0		
+Pseudomonas bohemica	True	85.4	72	0		
+Pseudomonas pergaminensis	True	85.4	90	0		
+Pseudomonas gelidaquae	True	85.4	89	0		
+Pseudomonas bambusae	True	85.4	81	0		
+Pseudomonas triticicola	True	85.3	76	0		
+Pseudomonas retamae	True	85.3	75	0		
+Pseudomonas iranensis	True	85.3	77	0		
+Pseudomonas serbiensis	True	85.2	73	0		
+Pseudomonas quasicaspiana	True	85.2	81	0		
+Pseudomonas antarctica	True	85.2	83	0		
+Pseudomonas nabeulensis	True	85.2	86	0		
+Pseudomonas marginalis	True	85.2	88	0		
+Pseudomonas triticifolii	True	85.2	75	0		
+Pseudomonas azotoformans	True	85.2	92	0		
+Pseudomonas proteolytica	True	85.2	52	0		
+Pseudomonas purpurea	True	85.1	84	0		
+Pseudomonas khorasanensis	True	85.1	72	0		
+Pseudomonas moraviensis	True	85.1	77	0		
+Pseudomonas huanghezhanensis	True	85.1	62	0		
+Pseudomonas salicis	True	85.1	76	0		
+Pseudomonas izuensis	True	85.0	80	0		
+Pseudomonas prosekii	True	84.9	88	0		
+Pseudomonas californiensis	True	84.9	76	0		
+Pseudomonas canadensis	True	84.9	91	0		
+Pseudomonas asturiensis	True	84.9	76	0		
+Pseudomonas salomonii	True	84.9	89	0		
+Pseudomonas rosaeacicularis	True	84.8	70	0		
+Pseudomonas typographi	True	84.7	71	0		
+Pseudomonas rustica	True	84.6	97	0		
+Pseudomonas reactans	True	84.6	91	0		
+Pseudomonas vancouverensis	True	84.5	84	0		
+Pseudomonas weihenstephanensis	True	84.5	78	0		
+Pseudomonas viridiflava	True	84.5	74	0		
+Pseudomonas alliivorans	True	84.5	70	0		
+Pseudomonas corni	True	84.5	75	0		
+Pseudomonas chaetocerotis	True	84.5	71	0		
+Pseudomonas tritici	True	84.4	76	0		
+Pseudomonas allii	True	84.4	91	0		
+Pseudomonas reinekei	True	84.3	84	0		
+Pseudomonas lutea	True	84.3	65	0		
+Pseudomonas kribbensis	True	84.2	88	0		
+Pseudomonas viridinivis	True	84.2	67	0		
+Pseudomonas khavaziana	True	84.2	79	0		
+Pseudomonas libanensis	True	84.2	80	0		
+Pseudomonas graminis	True	84.1	66	0		
+Pseudomonas ekonensis	True	84.0	84	0		
+Pseudomonas azerbaijanoccidentalis	True	84.0	89	0		
+Pseudomonas floridensis	True	84.0	77	0		
+Pseudomonas petrae	True	84.0	65	0		
+Pseudomonas pichavaramensis	True	84.0	76	0		
+Pseudomonas edaphica	True	83.9	90	0		
+Pseudomonas yamanorum	True	83.8	95	0		
+Pseudomonas synxantha	True	83.7	81	0		
+Pseudomonas tolaasii	True	83.6	89	0		
+Pseudomonas onubensis	True	83.6	88	0		
+Pseudomonas solani	True	83.4	81	0		
+Pseudomonas aylmerensis	True	83.4	91	0		
+Pseudomonas delhiensis	True	83.2	81	0		
+Pseudomonas frederiksbergensis	True	83.2	67	0		
+Pseudomonas massiliensis	True	83.1	66	0		
+Pseudomonas tohonis	True	83.1	77	0		
+Pseudomonas arsenicoxydans	True	82.9	75	0		
+Pseudomonas eucalypticola	True	82.9	83	0		
+Pseudomonas spelaei	True	82.8	84	0		
+Pseudomonas fluorescens	True	82.8	90	0		
+Pseudomonas gingeri	True	82.5	78	0		
+Pseudomonas imperatae	True	82.5	80	0		
+Pseudomonas palleroniana	True	82.5	92	0		
+Pseudomonas indica	True	82.5	65	0		
+Pseudomonas quercus	True	82.4	60	0		
+Pseudomonas fungipugnans	True	82.3	80	0		
+Pseudomonas gessardii	True	82.3	90	0		
+Pseudomonas cyclaminis	True	82.3	86	0		
+Pseudomonas rhodesiae	True	82.3	81	0		
+Pseudomonas karstica	True	82.1	84	0		
+Pseudomonas grimontii	True	82.1	89	0		
+Pseudomonas mucoides	True	82.0	75	0		
+Pseudomonas kitaguniensis	True	82.0	85	0		
+Pseudomonas citronellolis	True	81.9	41	0		
+Pseudomonas paralactis	True	81.9	84	0		
+Pseudomonas petroselini	True	81.9	86	0		
+Pseudomonas azadiae	True	81.9	70	0		
+Pseudomonas cedrina	True	81.9	72	0		
+Pseudomonas quebecensis	True	81.9	76	0		
+Pseudomonas cavernicola	True	81.9	59	0		
+Pseudomonas knackmussii	True	81.8	73	0		
+Pseudomonas paraeruginosa	True	81.7	85	0		
+Pseudomonas agarici	True	81.7	59	0		
+Pseudomonas trivialis	True	81.7	79	0		
+Pseudomonas orientalis	True	81.7	78	0		
+Pseudomonas artemisiae	True	81.6	55	0		
+Pseudomonas poae	True	81.5	79	0		
+Pseudomonas moorei	True	81.4	76	0		
+Pseudomonas cavernae	True	81.3	63	0		
+Pseudomonas batumici	True	81.1	63	0		
+Pseudomonas eutrophicaquae	True	80.9	28	0		
+Pseudomonas jinjuensis	True	80.8	75	0		
+Pseudomonas paraversuta	True	80.7	84	0		
+Pseudomonas taetrolens	True	80.5	86	0		
+Pseudomonas versuta	True	80.5	81	0		
+Pseudomonas turukhanskensis	True	80.5	82	0		
+Pseudomonas schmalbachii	True	80.4	71	0		
+Pseudomonas triclosanedens	True	80.2	61	0		
+Pseudomonas taeanensis	True	80.2	52	0		
+Pseudomonas panipatensis	True	80.0	59	0		
+Pseudomonas lalucatii	True	79.8	52	0		
+Pseudomonas kulmbachensis	True	79.7	87	0		
+Pseudomonas lundensis	True	79.7	76	0		
+Pseudomonas deceptionensis	True	79.6	82	0		
+Pseudomonas psychrophila	True	79.5	90	0		
+Pseudomonas guineae	True	79.5	44	0		
+Pseudomonas haemolytica	True	79.5	20	0		
+Pseudomonas peli	True	79.4	54	0		
+Pseudomonas cimarronensis	True	79.4	54	0		
+Pseudomonas cuatrocienegasensis	True	79.3	72	0		
+Pseudomonas xionganensis	True	79.3	40	0		
+Pseudomonas leptonychotis	True	79.1	56	0		
+Pseudomonas zhanjiangensis	True	79.1	42	0		
+Pseudomonas segetis	True	78.9	61	0		
+Pseudomonas helleri	True	78.8	84	0		
+Pseudomonas paeninsulae	True	78.8	55	0		
+Pseudomonas aestuarii	True	78.8	46	0		
+Pseudomonas bubulae	True	78.7	84	0		
+Pseudomonas fragi	True	78.7	80	0		
+Pseudomonas benzenivorans	True	78.6	50	0		
+Pseudomonas borbori	True	78.6	57	0		
+Pseudomonas kuykendallii	True	78.5	62	0		
+Pseudomonas saxonica	True	78.2	76	0		
+Pseudomonas tumuqii	True	78.2	57	0		
+Pseudomonas oryzihabitans	True	78.2	55	0		
+Pseudomonas aeruginosa	True	78.1	61	0		
+Pseudomonas spirodelae	True	77.9	50	0		
+Pseudomonas anguilliseptica	True	77.8	45	0		
+Pseudomonas aestiva	True	77.8	57	0		
+Pseudomonas marincola	True	77.1	55	0		
+Pseudomonas linyingensis	True	77.1	51	0		
+Pseudomonas paralcaligenes	True	77.0	60	0		
+Pseudomonas subflava	True	77.0	56	0		
+Pseudomonas mangiferae	True	76.8	60	0		
+Pseudomonas stagnisoli	True	76.8	48	0		
+Pseudomonas vesperimontis	True	76.8	34	0		
+Pseudomonas oryzagri	True	76.6	55	0		
+Pseudomonas abyssi	True	76.5	59	0		
+Pseudomonas oligotrophica	True	76.3	61	0		
+Pseudomonas matsuisoli	True	76.2	67	0		
+Pseudomonas luteola	True	76.1	66	0		
+Pseudomonas oryzae	True	76.1	51	0		
+Pseudomonas flavocrustae	True	75.7	53	0		
+Pseudomonas asuensis	True	75.6	58	0		
+Pseudomonas duriflava	True	75.6	40	0		
+Pseudomonas benzopyrenica	True	75.5	53	0		
+Pseudomonas songnenensis	True	75.4	60	0		
+Pseudomonas lopnurensis	True	75.1	61	0		
+Pseudomonas mangrovi	True	74.6	48	0		
+Pseudomonas phenolilytica	True	73.9	22	0		
+Pseudomonas rhizoryzae	True	73.7	38	0		
+Pseudomonas saudiphocaensis	True	72.0	47	0		
+Pseudomonas flexibilis	True	72.0	33	0		
+Pseudomonas saudimassiliensis	True	70.1	43	0		
+Pseudomonas jilinensis	True	70.1	52	0		
+Serpens gallinarum	True	69.1	37	0		
+Pseudomonas fluvialis	True	68.8	30	0		
+Pseudomonas neustonica	True	67.4	40	0		
+Pseudomonas profundi	True	65.7	38	0		
+Pseudomonas saliphila	True	63.8	42	0		
+Pseudomonas pohangensis	True	61.9	22	0		
+Pseudomonas nanhaiensis	True	60.4	33	0		

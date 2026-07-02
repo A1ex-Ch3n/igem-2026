@@ -1,0 +1,442 @@
+strain	locus_tag	gene	product	category	go_outer_membrane	in_0620
+9-6-2	PICBEH_00129	foxA	Ferrioxamine receptor FoxA	TBDR		yes
+9-6-2	PICBEH_00213	oprD	OprD family porin	porin		yes
+9-6-2	PICBEH_00246		TonB-dependent siderophore receptor	TBDR		yes
+9-6-2	PICBEH_00247		Outer membrane porin	porin		yes
+9-6-2	PICBEH_00251	fhuE	TonB-dependent siderophore receptor	TBDR		yes
+9-6-2	PICBEH_00402	lptD	LPS-assembly protein LptD	LptD		no
+9-6-2	PICBEH_00514	ompW	OmpW family protein	Omp-porin		no
+9-6-2	PICBEH_00535		TonB-dependent receptor, plug	TBDR		yes
+9-6-2	PICBEH_00641		Pilin	pilin		no
+9-6-2	PICBEH_00704	tolC	TolC family protein	TolC/efflux-OM		no
+9-6-2	PICBEH_00757	ompA	Outer membrane protein/peptidoglycan-associated (Lipo)protein	other-OM		yes
+9-6-2	PICBEH_00777		Histidine-specific outer membrane porin D	porin		yes
+9-6-2	PICBEH_00788	tolC	Outer membrane efflux protein BepC	TolC/efflux-OM		yes
+9-6-2	PICBEH_00842	bfrD	Putative TonB-dependent receptor BfrD	TBDR		yes
+9-6-2	PICBEH_00848	fecA	TonB-dependent siderophore receptor	TBDR		yes
+9-6-2	PICBEH_00860		Porin D	porin		yes
+9-6-2	PICBEH_00939		TonB-dependent receptor	TBDR		yes
+9-6-2	PICBEH_00952	oprB	Glucose-selective porin OprB	porin		yes
+9-6-2	PICBEH_01043	ompA	OmpA-like domain-containing protein	OmpA		yes
+9-6-2	PICBEH_01069		Fimbria/pilus outer membrane usher protein	usher		yes
+9-6-2	PICBEH_01177	fadL	Long-chain fatty acid transporter	FadL		no
+9-6-2	PICBEH_01203	tolC	TolC family outer membrane protein	TolC/efflux-OM		yes
+9-6-2	PICBEH_01321		Porin	porin		yes
+9-6-2	PICBEH_01348	tolC	Channel protein TolC	TolC/efflux-OM		no
+9-6-2	PICBEH_01439		Flagellin	flagellin		yes
+9-6-2	PICBEH_01532	tsx	Nucleoside-binding outer membrane protein	Tsx		yes
+9-6-2	PICBEH_01533	tsx	Nucleoside-specific outer membrane channel protein Tsx	Tsx		yes
+9-6-2	PICBEH_01601		efflux transporter outer membrane subunit	TolC/efflux-OM		yes
+9-6-2	PICBEH_01614		OmpA-like domain-containing protein	OmpA		yes
+9-6-2	PICBEH_01642	fepA	TonB-dependent receptor	TBDR		yes
+9-6-2	PICBEH_01674	fecA	TonB-dependent receptor	TBDR		yes
+9-6-2	PICBEH_01740	oprD	Outer membrane porin, OprD family	porin		yes
+9-6-2	PICBEH_01843	oprD	Outer membrane porin, OprD family	porin		yes
+9-6-2	PICBEH_01884		Carbohydrate porin	porin		yes
+9-6-2	PICBEH_01917		Porin	porin		yes
+9-6-2	PICBEH_02070	oprD	OprD family porin	porin		yes
+9-6-2	PICBEH_02082		Outer membrane autotransporter barrel domain-containing protein	other-OM		yes
+9-6-2	PICBEH_02130		TonB-dependent receptor	TBDR		yes
+9-6-2	PICBEH_02169	bcsC	cellulose synthase complex outer membrane protein BcsC	other-OM	yes	yes
+9-6-2	PICBEH_02355		Efflux transporter outer membrane subunit	TolC/efflux-OM		yes
+9-6-2	PICBEH_02362	fiu	TonB-dependent siderophore receptor	TBDR		yes
+9-6-2	PICBEH_02367		carbohydrate porin	porin		yes
+9-6-2	PICBEH_02516	tolC	Multidrug efflux RND outer membrane protein OprN	TolC/efflux-OM		yes
+9-6-2	PICBEH_02554	oprD	Outer membrane porin, OprD family	porin		yes
+9-6-2	PICBEH_02650	oprE	Anaerobically-induced outer membrane porin OprE	porin		yes
+9-6-2	PICBEH_02743		Porin D	porin		yes
+9-6-2	PICBEH_02758		Long-chain fatty acid transport protein	FadL		no
+9-6-2	PICBEH_02767	tolC	TolC family protein	TolC/efflux-OM		no
+9-6-2	PICBEH_02786		Phenylacetic acid-specific porin	porin		yes
+9-6-2	PICBEH_02851	oprD	Outer membrane porin, OprD family	porin		yes
+9-6-2	PICBEH_02870		TonB-dependent siderophore receptor	TBDR		yes
+9-6-2	PICBEH_02982		Autotransporter outer membrane beta-barrel domain-containing protein	other-OM		yes
+9-6-2	PICBEH_03058	oprD	OprD family porin	porin		yes
+9-6-2	PICBEH_03254		TonB-dependent siderophore receptor	TBDR		yes
+9-6-2	PICBEH_03513	oprD	Outer membrane porin, OprD family	porin		yes
+9-6-2	PICBEH_03548		OmpA-like domain-containing protein	OmpA		yes
+9-6-2	PICBEH_03563		Porin domain-containing protein	porin		yes
+9-6-2	PICBEH_03582		Outer membrane protein beta-barrel domain-containing protein	other-OM		yes
+9-6-2	PICBEH_03583		TonB-dependent receptor	TBDR		yes
+9-6-2	PICBEH_03589		Porin D	porin		yes
+9-6-2	PICBEH_03599	tolC	Channel protein TolC	TolC/efflux-OM		no
+9-6-2	PICBEH_03651		Fimbrial biogenesis outer membrane usher protein	usher		yes
+9-6-2	PICBEH_03745	fepA	Ferric enterobactin transport system outer membrane subunit	TBDR		yes
+9-6-2	PICBEH_03798	cirA	TonB-dependent siderophore receptor	TBDR		yes
+9-6-2	PICBEH_03973	ompW	Outer membrane porin F	porin		yes
+9-6-2	PICBEH_03991	tolC	TolC family protein	TolC/efflux-OM		no
+9-6-2	PICBEH_03999	oprD	OprD family porin	porin		yes
+9-6-2	PICBEH_04119		Fimbrial biogenesis outer membrane usher protein	usher		yes
+9-6-2	PICBEH_04129		Autotransporter outer membrane beta-barrel domain-containing protein	other-OM		yes
+9-6-2	PICBEH_04164		TonB-denpendent receptor	TBDR		yes
+9-6-2	PICBEH_04193		Outer membrane protein beta-barrel domain-containing protein	other-OM		yes
+9-6-2	PICBEH_04212		Polysaccharide export outer membrane protein	other-OM		yes
+9-6-2	PICBEH_04237		Ferric-pseudobactin 358 receptor	TBDR		yes
+9-6-2	PICBEH_04300		Ferrichrome outer membrane transporter/phage receptor	TBDR		yes
+9-6-2	PICBEH_04343		Porin	porin		yes
+9-6-2	PICBEH_04365		Outer membrane protein beta-barrel domain-containing protein	other-OM		yes
+9-6-2	PICBEH_04397		Outer membrane porin	porin		yes
+9-6-2	PICBEH_04454	ompA	OmpA-like domain-containing protein	OmpA		yes
+9-6-2	PICBEH_04481		OmpA-like domain-containing protein	OmpA		yes
+9-6-2	PICBEH_04515		TonB-dependent receptor	TBDR		yes
+9-6-2	PICBEH_04516		Porin	porin		yes
+9-6-2	PICBEH_04541	oprD	Outer membrane OprD family porin	porin		yes
+9-6-2	PICBEH_04577	mepC	Multidrug/solvent efflux pump outer membrane protein MepC	TolC/efflux-OM	yes	yes
+9-6-2	PICBEH_04578		Porin-like protein	porin		yes
+9-6-2	PICBEH_04741		TonB-dependent receptor	TBDR		yes
+9-6-2	PICBEH_04900	fhuE	Ferrichrome outer membrane transporter/phage receptor	TBDR		yes
+9-6-2	PICBEH_05001		TonB-dependent copper receptor	TBDR	yes	yes
+9-6-2	PICBEH_05092	tolC	Channel protein TolC	TolC/efflux-OM		no
+9-6-2	PICBEH_05427		Outer membrane porin	porin		yes
+9-2-1	OHPLIO_00129	foxA	Ferrioxamine receptor FoxA	TBDR		yes
+9-2-1	OHPLIO_00213	oprD	OprD family porin	porin		yes
+9-2-1	OHPLIO_00246		TonB-dependent siderophore receptor	TBDR		yes
+9-2-1	OHPLIO_00247		Outer membrane porin	porin		yes
+9-2-1	OHPLIO_00251	fhuE	TonB-dependent siderophore receptor	TBDR		yes
+9-2-1	OHPLIO_00402	lptD	LPS-assembly protein LptD	LptD		no
+9-2-1	OHPLIO_00514	ompW	OmpW family protein	Omp-porin		no
+9-2-1	OHPLIO_00535		TonB-dependent receptor, plug	TBDR		yes
+9-2-1	OHPLIO_00641		Pilin	pilin		no
+9-2-1	OHPLIO_00704	tolC	TolC family protein	TolC/efflux-OM		no
+9-2-1	OHPLIO_00757	ompA	Outer membrane protein/peptidoglycan-associated (Lipo)protein	other-OM		yes
+9-2-1	OHPLIO_00777		Histidine-specific outer membrane porin D	porin		yes
+9-2-1	OHPLIO_00788	tolC	Outer membrane efflux protein BepC	TolC/efflux-OM		yes
+9-2-1	OHPLIO_00842	bfrD	Putative TonB-dependent receptor BfrD	TBDR		yes
+9-2-1	OHPLIO_00848	fecA	TonB-dependent siderophore receptor	TBDR		yes
+9-2-1	OHPLIO_00860		Porin D	porin		yes
+9-2-1	OHPLIO_00940		TonB-dependent receptor	TBDR		yes
+9-2-1	OHPLIO_00953	oprB	Glucose-selective porin OprB	porin		yes
+9-2-1	OHPLIO_01044	ompA	OmpA-like domain-containing protein	OmpA		yes
+9-2-1	OHPLIO_01070		Fimbria/pilus outer membrane usher protein	usher		yes
+9-2-1	OHPLIO_01178	fadL	Long-chain fatty acid transporter	FadL		no
+9-2-1	OHPLIO_01204	tolC	TolC family outer membrane protein	TolC/efflux-OM		yes
+9-2-1	OHPLIO_01322		Porin	porin		yes
+9-2-1	OHPLIO_01349	tolC	Channel protein TolC	TolC/efflux-OM		no
+9-2-1	OHPLIO_01440		Flagellin	flagellin		yes
+9-2-1	OHPLIO_01533	tsx	Nucleoside-binding outer membrane protein	Tsx		yes
+9-2-1	OHPLIO_01534	tsx	Nucleoside-specific outer membrane channel protein Tsx	Tsx		yes
+9-2-1	OHPLIO_01602		efflux transporter outer membrane subunit	TolC/efflux-OM		yes
+9-2-1	OHPLIO_01615		OmpA-like domain-containing protein	OmpA		yes
+9-2-1	OHPLIO_01643	fepA	TonB-dependent receptor	TBDR		yes
+9-2-1	OHPLIO_01675	fecA	TonB-dependent receptor	TBDR		yes
+9-2-1	OHPLIO_01741	oprD	Outer membrane porin, OprD family	porin		yes
+9-2-1	OHPLIO_01844	oprD	Outer membrane porin, OprD family	porin		yes
+9-2-1	OHPLIO_01885		Carbohydrate porin	porin		yes
+9-2-1	OHPLIO_01918		Porin	porin		yes
+9-2-1	OHPLIO_02071	oprD	OprD family porin	porin		yes
+9-2-1	OHPLIO_02083		Outer membrane autotransporter barrel domain-containing protein	other-OM		yes
+9-2-1	OHPLIO_02131		TonB-dependent receptor	TBDR		yes
+9-2-1	OHPLIO_02170	bcsC	cellulose synthase complex outer membrane protein BcsC	other-OM	yes	yes
+9-2-1	OHPLIO_02356		Efflux transporter outer membrane subunit	TolC/efflux-OM		yes
+9-2-1	OHPLIO_02363	fiu	TonB-dependent siderophore receptor	TBDR		yes
+9-2-1	OHPLIO_02368		carbohydrate porin	porin		yes
+9-2-1	OHPLIO_02517	tolC	Multidrug efflux RND outer membrane protein OprN	TolC/efflux-OM		yes
+9-2-1	OHPLIO_02555	oprD	Outer membrane porin, OprD family	porin		yes
+9-2-1	OHPLIO_02651	oprE	Anaerobically-induced outer membrane porin OprE	porin		yes
+9-2-1	OHPLIO_02744		Porin D	porin		yes
+9-2-1	OHPLIO_02759		Long-chain fatty acid transport protein	FadL		no
+9-2-1	OHPLIO_02768	tolC	TolC family protein	TolC/efflux-OM		no
+9-2-1	OHPLIO_02787		Phenylacetic acid-specific porin	porin		yes
+9-2-1	OHPLIO_02852	oprD	Outer membrane porin, OprD family	porin		yes
+9-2-1	OHPLIO_02871		TonB-dependent siderophore receptor	TBDR		yes
+9-2-1	OHPLIO_02983		Autotransporter outer membrane beta-barrel domain-containing protein	other-OM		yes
+9-2-1	OHPLIO_03059	oprD	OprD family porin	porin		yes
+9-2-1	OHPLIO_03255		TonB-dependent siderophore receptor	TBDR		yes
+9-2-1	OHPLIO_03513	oprD	Outer membrane porin, OprD family	porin		yes
+9-2-1	OHPLIO_03548		OmpA-like domain-containing protein	OmpA		yes
+9-2-1	OHPLIO_03563		Porin domain-containing protein	porin		yes
+9-2-1	OHPLIO_03582		Outer membrane protein beta-barrel domain-containing protein	other-OM		yes
+9-2-1	OHPLIO_03583		TonB-dependent receptor	TBDR		yes
+9-2-1	OHPLIO_03589		Porin D	porin		yes
+9-2-1	OHPLIO_03600	tolC	Channel protein TolC	TolC/efflux-OM		no
+9-2-1	OHPLIO_03652		Fimbrial biogenesis outer membrane usher protein	usher		yes
+9-2-1	OHPLIO_03746	fepA	Ferric enterobactin transport system outer membrane subunit	TBDR		yes
+9-2-1	OHPLIO_03799	cirA	TonB-dependent siderophore receptor	TBDR		yes
+9-2-1	OHPLIO_03974	ompW	Outer membrane porin F	porin		yes
+9-2-1	OHPLIO_03992	tolC	TolC family protein	TolC/efflux-OM		no
+9-2-1	OHPLIO_04000	oprD	OprD family porin	porin		yes
+9-2-1	OHPLIO_04120		Fimbrial biogenesis outer membrane usher protein	usher		yes
+9-2-1	OHPLIO_04130		Autotransporter outer membrane beta-barrel domain-containing protein	other-OM		yes
+9-2-1	OHPLIO_04165		TonB-denpendent receptor	TBDR		yes
+9-2-1	OHPLIO_04194		Outer membrane protein beta-barrel domain-containing protein	other-OM		yes
+9-2-1	OHPLIO_04213		Polysaccharide export outer membrane protein	other-OM		yes
+9-2-1	OHPLIO_04238		Ferric-pseudobactin 358 receptor	TBDR		yes
+9-2-1	OHPLIO_04301		Ferrichrome outer membrane transporter/phage receptor	TBDR		yes
+9-2-1	OHPLIO_04344		Porin	porin		yes
+9-2-1	OHPLIO_04366		Outer membrane protein beta-barrel domain-containing protein	other-OM		yes
+9-2-1	OHPLIO_04398		Outer membrane porin	porin		yes
+9-2-1	OHPLIO_04455	ompA	OmpA-like domain-containing protein	OmpA		yes
+9-2-1	OHPLIO_04482		OmpA-like domain-containing protein	OmpA		yes
+9-2-1	OHPLIO_04516		TonB-dependent receptor	TBDR		yes
+9-2-1	OHPLIO_04517		Porin	porin		yes
+9-2-1	OHPLIO_04542	oprD	Outer membrane OprD family porin	porin		yes
+9-2-1	OHPLIO_04578	mepC	Multidrug/solvent efflux pump outer membrane protein MepC	TolC/efflux-OM	yes	yes
+9-2-1	OHPLIO_04579		Porin-like protein	porin		yes
+9-2-1	OHPLIO_04742		TonB-dependent receptor	TBDR		yes
+9-2-1	OHPLIO_04901	fhuE	Ferrichrome outer membrane transporter/phage receptor	TBDR		yes
+9-2-1	OHPLIO_05002		TonB-dependent copper receptor	TBDR	yes	yes
+9-2-1	OHPLIO_05093	tolC	Channel protein TolC	TolC/efflux-OM		no
+9-2-1	OHPLIO_05428		Outer membrane porin	porin		yes
+10-10-2	BPBBIK_00129	foxA	Ferrioxamine receptor FoxA	TBDR		yes
+10-10-2	BPBBIK_00217	oprD	OprD family porin	porin		yes
+10-10-2	BPBBIK_00250	fiu	TonB-dependent siderophore receptor	TBDR		yes
+10-10-2	BPBBIK_00251		Outer membrane porin	porin		yes
+10-10-2	BPBBIK_00255	fhuE	TonB-dependent siderophore receptor	TBDR		yes
+10-10-2	BPBBIK_00346		TonB-dependent siderophore receptor	TBDR		yes
+10-10-2	BPBBIK_00419	lptD	LPS-assembly protein LptD	LptD		no
+10-10-2	BPBBIK_00531	ompW	OmpW family protein	Omp-porin		no
+10-10-2	BPBBIK_00552		TonB-dependent receptor, plug	TBDR		yes
+10-10-2	BPBBIK_00659		Pilin	pilin		no
+10-10-2	BPBBIK_00717	tolC	TolC family protein	TolC/efflux-OM		no
+10-10-2	BPBBIK_00770	ompA	Outer membrane protein/peptidoglycan-associated (Lipo)protein	other-OM		yes
+10-10-2	BPBBIK_00790		Histidine-specific outer membrane porin D	porin		yes
+10-10-2	BPBBIK_00801	tolC	Outer membrane efflux protein BepC	TolC/efflux-OM		yes
+10-10-2	BPBBIK_00875	bfrD	Putative TonB-dependent receptor BfrD	TBDR		yes
+10-10-2	BPBBIK_00881	fecA	TonB-dependent siderophore receptor	TBDR		yes
+10-10-2	BPBBIK_00893		Porin D	porin		yes
+10-10-2	BPBBIK_00972	cirA	Outer membrane heme receptor	other-OM		yes
+10-10-2	BPBBIK_00985	oprB	Glucose-selective porin OprB	porin		yes
+10-10-2	BPBBIK_01078	ompA	OmpA-like domain-containing protein	OmpA		yes
+10-10-2	BPBBIK_01104		Fimbria/pilus outer membrane usher protein	usher		yes
+10-10-2	BPBBIK_01263	fadL	Long-chain fatty acid transporter	FadL		no
+10-10-2	BPBBIK_01289	tolC	TolC family outer membrane protein	TolC/efflux-OM		yes
+10-10-2	BPBBIK_01416		Porin	porin		yes
+10-10-2	BPBBIK_01442	tolC	Channel protein TolC	TolC/efflux-OM		no
+10-10-2	BPBBIK_01530		Flagellin	flagellin		yes
+10-10-2	BPBBIK_01606	tsx	Nucleoside-binding outer membrane protein	Tsx		yes
+10-10-2	BPBBIK_01607	tsx	Nucleoside-specific outer membrane channel protein Tsx	Tsx		yes
+10-10-2	BPBBIK_01675	ttgF	Toluene efflux pump outer membrane protein TtgF	TolC/efflux-OM		yes
+10-10-2	BPBBIK_01688		OmpA-like domain-containing protein	OmpA		yes
+10-10-2	BPBBIK_01716	fepA	TonB-dependent receptor	TBDR		yes
+10-10-2	BPBBIK_01749		TonB-dependent receptor	TBDR		yes
+10-10-2	BPBBIK_01800	oprD	Outer membrane porin, OprD family	porin		yes
+10-10-2	BPBBIK_02079		Efflux transporter outer membrane subunit	TolC/efflux-OM		yes
+10-10-2	BPBBIK_02105	srpC	solvent efflux RND transporter outer membrane subunit SrpC	TolC/efflux-OM	yes	yes
+10-10-2	BPBBIK_02113	oprD	OprD family porin	porin		yes
+10-10-2	BPBBIK_02140		Porin	porin		yes
+10-10-2	BPBBIK_02172		Outer membrane autotransporter barrel domain-containing protein	other-OM		yes
+10-10-2	BPBBIK_02221		TonB-dependent receptor	TBDR		yes
+10-10-2	BPBBIK_02259	bcsC	cellulose synthase complex outer membrane protein BcsC	other-OM	yes	yes
+10-10-2	BPBBIK_02447		Efflux transporter outer membrane subunit	TolC/efflux-OM		yes
+10-10-2	BPBBIK_02454	fiu	TonB-dependent siderophore receptor	TBDR		yes
+10-10-2	BPBBIK_02459		carbohydrate porin	porin		yes
+10-10-2	BPBBIK_02609	tolC	Multidrug efflux RND outer membrane protein OprN	TolC/efflux-OM		yes
+10-10-2	BPBBIK_02647	oprD	Outer membrane porin, OprD family	porin		yes
+10-10-2	BPBBIK_02684		TonB-dependent receptor	TBDR		yes
+10-10-2	BPBBIK_02727		Phenylacetic acid-specific porin	porin		yes
+10-10-2	BPBBIK_02792	oprD	Outer membrane porin, OprD family	porin		yes
+10-10-2	BPBBIK_02808		TonB-dependent siderophore receptor	TBDR		yes
+10-10-2	BPBBIK_02916		Autotransporter outer membrane beta-barrel domain-containing protein	other-OM		yes
+10-10-2	BPBBIK_03005	oprD	OprD family porin	porin		yes
+10-10-2	BPBBIK_03127	oprD	OprD family porin	porin		yes
+10-10-2	BPBBIK_03400	oprD	Outer membrane porin, OprD family	porin		yes
+10-10-2	BPBBIK_03504		OmpA-like domain-containing protein	OmpA		yes
+10-10-2	BPBBIK_03520		Porin domain-containing protein	porin		yes
+10-10-2	BPBBIK_03539		Outer membrane protein beta-barrel domain-containing protein	other-OM		yes
+10-10-2	BPBBIK_03540		TonB-dependent receptor	TBDR		yes
+10-10-2	BPBBIK_03546		Porin D	porin		yes
+10-10-2	BPBBIK_03556	tolC	Channel protein TolC	TolC/efflux-OM		no
+10-10-2	BPBBIK_03607		Fimbrial biogenesis outer membrane usher protein	usher		yes
+10-10-2	BPBBIK_03702	fepA	Ferric enterobactin transport system outer membrane subunit	TBDR		yes
+10-10-2	BPBBIK_03755	cirA	TonB-dependent siderophore receptor	TBDR		yes
+10-10-2	BPBBIK_03851	ompW	Outer membrane porin F	porin		yes
+10-10-2	BPBBIK_03869	tolC	TolC family protein	TolC/efflux-OM		no
+10-10-2	BPBBIK_03877	oprD	OprD family porin	porin		yes
+10-10-2	BPBBIK_03996		Fimbrial biogenesis outer membrane usher protein	usher		yes
+10-10-2	BPBBIK_04006		Autotransporter outer membrane beta-barrel domain-containing protein	other-OM		yes
+10-10-2	BPBBIK_04042		TonB-denpendent receptor	TBDR		yes
+10-10-2	BPBBIK_04072		Outer membrane protein beta-barrel domain-containing protein	other-OM		yes
+10-10-2	BPBBIK_04109		Ferric-pseudobactin 358 receptor	TBDR		yes
+10-10-2	BPBBIK_04170		Ferrichrome outer membrane transporter/phage receptor	TBDR		yes
+10-10-2	BPBBIK_04215		Porin	porin		yes
+10-10-2	BPBBIK_04237		Outer membrane protein beta-barrel domain-containing protein	other-OM		yes
+10-10-2	BPBBIK_04248		Outer membrane porin	porin		yes
+10-10-2	BPBBIK_04306	ompA	OmpA-like domain-containing protein	OmpA		yes
+10-10-2	BPBBIK_04333		OmpA-like domain-containing protein	OmpA		yes
+10-10-2	BPBBIK_04367		TonB-dependent receptor	TBDR		yes
+10-10-2	BPBBIK_04368		Porin	porin		yes
+10-10-2	BPBBIK_04393	oprD	Outer membrane OprD family porin	porin		yes
+10-10-2	BPBBIK_04429	mepC	Multidrug/solvent efflux pump outer membrane protein MepC	TolC/efflux-OM	yes	yes
+10-10-2	BPBBIK_04430		Porin-like protein	porin		yes
+10-10-2	BPBBIK_04592		TonB-dependent receptor	TBDR		yes
+10-10-2	BPBBIK_04668	ompA	OmpA-like domain-containing protein	OmpA		yes
+10-10-2	BPBBIK_04852		TonB-dependent copper receptor	TBDR	yes	yes
+10-10-2	BPBBIK_04940	tolC	Channel protein TolC	TolC/efflux-OM		no
+10-10-2	BPBBIK_05275		Outer membrane porin	porin		yes
+8-5-2	PEMOGA_00129	foxA	Ferrioxamine receptor FoxA	TBDR		no
+8-5-2	PEMOGA_00217	oprD	OprD family porin	porin		no
+8-5-2	PEMOGA_00250	fiu	TonB-dependent siderophore receptor	TBDR		no
+8-5-2	PEMOGA_00251		Outer membrane porin	porin		no
+8-5-2	PEMOGA_00255	fhuE	TonB-dependent siderophore receptor	TBDR		no
+8-5-2	PEMOGA_00346		TonB-dependent siderophore receptor	TBDR		no
+8-5-2	PEMOGA_00419	lptD	LPS-assembly protein LptD	LptD		no
+8-5-2	PEMOGA_00531	ompW	OmpW family protein	Omp-porin		no
+8-5-2	PEMOGA_00552		TonB-dependent receptor, plug	TBDR		no
+8-5-2	PEMOGA_00659		Pilin	pilin		no
+8-5-2	PEMOGA_00717	tolC	TolC family protein	TolC/efflux-OM		no
+8-5-2	PEMOGA_00770	ompA	Outer membrane protein/peptidoglycan-associated (Lipo)protein	other-OM		no
+8-5-2	PEMOGA_00790		Histidine-specific outer membrane porin D	porin		no
+8-5-2	PEMOGA_00801	tolC	Outer membrane efflux protein BepC	TolC/efflux-OM		no
+8-5-2	PEMOGA_00875	bfrD	Putative TonB-dependent receptor BfrD	TBDR		no
+8-5-2	PEMOGA_00881	fecA	TonB-dependent siderophore receptor	TBDR		no
+8-5-2	PEMOGA_00893		Porin D	porin		no
+8-5-2	PEMOGA_00972	cirA	Outer membrane heme receptor	other-OM		no
+8-5-2	PEMOGA_00985	oprB	Glucose-selective porin OprB	porin		no
+8-5-2	PEMOGA_01078	ompA	OmpA-like domain-containing protein	OmpA		no
+8-5-2	PEMOGA_01104		Fimbria/pilus outer membrane usher protein	usher		no
+8-5-2	PEMOGA_01263	fadL	Long-chain fatty acid transporter	FadL		no
+8-5-2	PEMOGA_01289	tolC	TolC family outer membrane protein	TolC/efflux-OM		no
+8-5-2	PEMOGA_01416		Porin	porin		no
+8-5-2	PEMOGA_01442	tolC	Channel protein TolC	TolC/efflux-OM		no
+8-5-2	PEMOGA_01530		Flagellin	flagellin		no
+8-5-2	PEMOGA_01606	tsx	Nucleoside-binding outer membrane protein	Tsx		no
+8-5-2	PEMOGA_01607	tsx	Nucleoside-specific outer membrane channel protein Tsx	Tsx		no
+8-5-2	PEMOGA_01674	ttgF	Toluene efflux pump outer membrane protein TtgF	TolC/efflux-OM		no
+8-5-2	PEMOGA_01687		OmpA-like domain-containing protein	OmpA		no
+8-5-2	PEMOGA_01715	fepA	TonB-dependent receptor	TBDR		no
+8-5-2	PEMOGA_01748		TonB-dependent receptor	TBDR		no
+8-5-2	PEMOGA_01799	oprD	Outer membrane porin, OprD family	porin		no
+8-5-2	PEMOGA_02078		Efflux transporter outer membrane subunit	TolC/efflux-OM		no
+8-5-2	PEMOGA_02104	srpC	solvent efflux RND transporter outer membrane subunit SrpC	TolC/efflux-OM	yes	no
+8-5-2	PEMOGA_02112	oprD	OprD family porin	porin		no
+8-5-2	PEMOGA_02139		Porin	porin		no
+8-5-2	PEMOGA_02171		Outer membrane autotransporter barrel domain-containing protein	other-OM		no
+8-5-2	PEMOGA_02220		TonB-dependent receptor	TBDR		no
+8-5-2	PEMOGA_02258	bcsC	cellulose synthase complex outer membrane protein BcsC	other-OM	yes	no
+8-5-2	PEMOGA_02446		Efflux transporter outer membrane subunit	TolC/efflux-OM		no
+8-5-2	PEMOGA_02453	fiu	TonB-dependent siderophore receptor	TBDR		no
+8-5-2	PEMOGA_02458		carbohydrate porin	porin		no
+8-5-2	PEMOGA_02608	tolC	Multidrug efflux RND outer membrane protein OprN	TolC/efflux-OM		no
+8-5-2	PEMOGA_02646	oprD	Outer membrane porin, OprD family	porin		no
+8-5-2	PEMOGA_02683		TonB-dependent receptor	TBDR		no
+8-5-2	PEMOGA_02726		Phenylacetic acid-specific porin	porin		no
+8-5-2	PEMOGA_02791	oprD	Outer membrane porin, OprD family	porin		no
+8-5-2	PEMOGA_02807		TonB-dependent siderophore receptor	TBDR		no
+8-5-2	PEMOGA_02915		Autotransporter outer membrane beta-barrel domain-containing protein	other-OM		no
+8-5-2	PEMOGA_03003	oprD	OprD family porin	porin		no
+8-5-2	PEMOGA_03125	oprD	OprD family porin	porin		no
+8-5-2	PEMOGA_03398	oprD	Outer membrane porin, OprD family	porin		no
+8-5-2	PEMOGA_03502		OmpA-like domain-containing protein	OmpA		no
+8-5-2	PEMOGA_03518		Porin domain-containing protein	porin		no
+8-5-2	PEMOGA_03537		Outer membrane protein beta-barrel domain-containing protein	other-OM		no
+8-5-2	PEMOGA_03538		TonB-dependent receptor	TBDR		no
+8-5-2	PEMOGA_03544		Porin D	porin		no
+8-5-2	PEMOGA_03554	tolC	Channel protein TolC	TolC/efflux-OM		no
+8-5-2	PEMOGA_03605		Fimbrial biogenesis outer membrane usher protein	usher		no
+8-5-2	PEMOGA_03700	fepA	Ferric enterobactin transport system outer membrane subunit	TBDR		no
+8-5-2	PEMOGA_03753	cirA	TonB-dependent siderophore receptor	TBDR		no
+8-5-2	PEMOGA_03849	ompW	Outer membrane porin F	porin		no
+8-5-2	PEMOGA_03867	tolC	TolC family protein	TolC/efflux-OM		no
+8-5-2	PEMOGA_03875	oprD	OprD family porin	porin		no
+8-5-2	PEMOGA_03994		Fimbrial biogenesis outer membrane usher protein	usher		no
+8-5-2	PEMOGA_04004		Autotransporter outer membrane beta-barrel domain-containing protein	other-OM		no
+8-5-2	PEMOGA_04041		TonB-denpendent receptor	TBDR		no
+8-5-2	PEMOGA_04071		Outer membrane protein beta-barrel domain-containing protein	other-OM		no
+8-5-2	PEMOGA_04108		Ferric-pseudobactin 358 receptor	TBDR		no
+8-5-2	PEMOGA_04169		Ferrichrome outer membrane transporter/phage receptor	TBDR		no
+8-5-2	PEMOGA_04212		Porin	porin		no
+8-5-2	PEMOGA_04234		Outer membrane protein beta-barrel domain-containing protein	other-OM		no
+8-5-2	PEMOGA_04245		Outer membrane porin	porin		no
+8-5-2	PEMOGA_04303	ompA	OmpA-like domain-containing protein	OmpA		no
+8-5-2	PEMOGA_04330		OmpA-like domain-containing protein	OmpA		no
+8-5-2	PEMOGA_04364		TonB-dependent receptor	TBDR		no
+8-5-2	PEMOGA_04365		Porin	porin		no
+8-5-2	PEMOGA_04390	oprD	Outer membrane OprD family porin	porin		no
+8-5-2	PEMOGA_04426	mepC	Multidrug/solvent efflux pump outer membrane protein MepC	TolC/efflux-OM	yes	no
+8-5-2	PEMOGA_04427		Porin-like protein	porin		no
+8-5-2	PEMOGA_04589		TonB-dependent receptor	TBDR		no
+8-5-2	PEMOGA_04665	ompA	OmpA-like domain-containing protein	OmpA		no
+8-5-2	PEMOGA_04849		TonB-dependent copper receptor	TBDR	yes	no
+8-5-2	PEMOGA_04937	tolC	Channel protein TolC	TolC/efflux-OM		no
+8-5-2	PEMOGA_05272		Outer membrane porin	porin		no
+8-10-2	NEEDOG_00053	trbC	conjugal transfer system pilin TrbC	pilin		no
+8-10-2	NEEDOG_00147	foxA	Ferrioxamine receptor FoxA	TBDR		no
+8-10-2	NEEDOG_00167		efflux transporter outer membrane subunit	TolC/efflux-OM		no
+8-10-2	NEEDOG_00192		Putative porin	porin		no
+8-10-2	NEEDOG_00236	oprD	OprD family porin	porin		no
+8-10-2	NEEDOG_00274		TonB-denpendent receptor	TBDR		no
+8-10-2	NEEDOG_00275		Outer membrane porin	porin		no
+8-10-2	NEEDOG_00378	fhuE	Outer membrane ferrichrome-iron receptor	TBDR		no
+8-10-2	NEEDOG_00418		Carbohydrate porin	porin		no
+8-10-2	NEEDOG_00438	lptD	LPS-assembly protein LptD	LptD		no
+8-10-2	NEEDOG_00554	ompW	OmpW family protein	Omp-porin		no
+8-10-2	NEEDOG_00704		TonB-dependent siderophore receptor	TBDR		no
+8-10-2	NEEDOG_00760	nodT	Efflux transporter, outer membrane factor (OMF) lipoprotein, NodT family	TolC/efflux-OM		no
+8-10-2	NEEDOG_00816	ompA	Outer membrane protein/peptidoglycan-associated (Lipo)protein	other-OM		no
+8-10-2	NEEDOG_00836		Histidine-specific outer membrane porin D	porin		no
+8-10-2	NEEDOG_00845	tolC	Outer membrane efflux protein BepC	TolC/efflux-OM		no
+8-10-2	NEEDOG_00910	bfrD	Putative TonB-dependent receptor BfrD	TBDR		no
+8-10-2	NEEDOG_00917	fecA	TonB-dependent siderophore receptor	TBDR		no
+8-10-2	NEEDOG_00933		Porin D	porin		no
+8-10-2	NEEDOG_01018	cirA	Outer membrane heme receptor	other-OM		no
+8-10-2	NEEDOG_01031	oprB	Glucose-selective porin OprB	porin		no
+8-10-2	NEEDOG_01118	ompA	OmpA-like domain-containing protein	OmpA		no
+8-10-2	NEEDOG_01245	fadL	Long-chain fatty acid transporter	FadL		no
+8-10-2	NEEDOG_01262	tolC	TolC family outer membrane protein	TolC/efflux-OM		no
+8-10-2	NEEDOG_01394		TonB-denpendent receptor	TBDR		no
+8-10-2	NEEDOG_01428		Outer membrane autotransporter barrel	other-OM		no
+8-10-2	NEEDOG_01559	ompW	Outer membrane porin F	porin		no
+8-10-2	NEEDOG_01717	cirA	TonB-dependent siderophore receptor	TBDR		no
+8-10-2	NEEDOG_01768	fepA	Outer membrane receptor FepA	other-OM		no
+8-10-2	NEEDOG_02084		Efflux transporter outer membrane subunit	TolC/efflux-OM		no
+8-10-2	NEEDOG_02113	tolC	TolC family outer membrane protein	TolC/efflux-OM		no
+8-10-2	NEEDOG_02121		TonB-dependent receptor	TBDR		no
+8-10-2	NEEDOG_02122		TonB-dependent receptor	TBDR		no
+8-10-2	NEEDOG_02189		TonB-dependent receptor	TBDR		no
+8-10-2	NEEDOG_02224		Long-chain fatty acid transport protein	FadL		no
+8-10-2	NEEDOG_02240	oprD	Outer membrane porin, OprD family	porin		no
+8-10-2	NEEDOG_02261	oprD	Outer membrane porin, OprD family	porin		no
+8-10-2	NEEDOG_02301		porin	porin		no
+8-10-2	NEEDOG_02346	bcsC	cellulose synthase complex outer membrane protein BcsC	other-OM	yes	no
+8-10-2	NEEDOG_02421		Fap system outer membrane protein	other-OM		no
+8-10-2	NEEDOG_02545	oprD	Outer membrane porin, OprD family	porin		no
+8-10-2	NEEDOG_02551	nicP	Porin-like protein NicP	porin		no
+8-10-2	NEEDOG_02555	oprD	OprD family porin	porin		no
+8-10-2	NEEDOG_02632	tonB	Outer membrane receptor, TonB dependent	other-OM		no
+8-10-2	NEEDOG_02654		Phenylacetic acid-specific porin	porin		no
+8-10-2	NEEDOG_02677		Porin	porin		no
+8-10-2	NEEDOG_02775	oprM	Outer membrane protein OprM	other-OM		no
+8-10-2	NEEDOG_02823	oprD	Outer membrane porin, OprD family	porin		no
+8-10-2	NEEDOG_02846	mepC	Multidrug/solvent efflux pump outer membrane protein MepC	TolC/efflux-OM		no
+8-10-2	NEEDOG_02848	cirA	TonB-dependent siderophore receptor	TBDR		no
+8-10-2	NEEDOG_02887		Beta-barrel porin 2	porin		no
+8-10-2	NEEDOG_03029		TonB-dependent siderophore receptor	TBDR		no
+8-10-2	NEEDOG_03037		carbohydrate porin	porin		no
+8-10-2	NEEDOG_03050		efflux transporter outer membrane subunit	TolC/efflux-OM		no
+8-10-2	NEEDOG_03230	oprD	Outer membrane porin, OprD family	porin		no
+8-10-2	NEEDOG_03290		Outer-membrane porin D	porin		no
+8-10-2	NEEDOG_03343		Outer membrane protein beta-barrel domain-containing protein	other-OM		no
+8-10-2	NEEDOG_03349		Porin D	porin		no
+8-10-2	NEEDOG_03356		TonB-dependent receptor	TBDR		no
+8-10-2	NEEDOG_03360	tolC	TolC family protein	TolC/efflux-OM		no
+8-10-2	NEEDOG_03405		Outer membrane usher protein	usher		no
+8-10-2	NEEDOG_03533		TonB-dependent receptor	TBDR		no
+8-10-2	NEEDOG_03549		TonB-dependent siderophore receptor	TBDR		no
+8-10-2	NEEDOG_03560		TonB-dependent siderophore receptor	TBDR		no
+8-10-2	NEEDOG_03569		TonB-dependent receptor	TBDR		no
+8-10-2	NEEDOG_03597		OmpA-like domain-containing protein	OmpA		no
+8-10-2	NEEDOG_03608		Efflux transporter outer membrane subunit	TolC/efflux-OM		no
+8-10-2	NEEDOG_03671	ompK	outer membrane protein OmpK	Omp-porin		no
+8-10-2	NEEDOG_03672	tsx	Nucleoside-binding outer membrane protein	Tsx		no
+8-10-2	NEEDOG_03760		Flagellin	flagellin		no
+8-10-2	NEEDOG_03853	tolC	Channel protein TolC	TolC/efflux-OM		no
+8-10-2	NEEDOG_03878		Porin	porin		no
+8-10-2	NEEDOG_03909	pupA	Ferric-pyoverdine 358 receptor	TBDR	yes	no
+8-10-2	NEEDOG_03919		Uncharacterized protein involved in outer membrane biogenesis	other-OM		no
+8-10-2	NEEDOG_04027		Outer membrane protein beta-barrel domain-containing protein	other-OM		no
+8-10-2	NEEDOG_04036		Outer membrane porin	porin		no
+8-10-2	NEEDOG_04082	slyB	Outer membrane lipoprotein SlyB	other-OM		no
+8-10-2	NEEDOG_04085		OmpA-like domain-containing protein	OmpA		no
+8-10-2	NEEDOG_04092	ompA	OmpA-like domain-containing protein	OmpA		no
+8-10-2	NEEDOG_04119	ompA	OmpA family protein	OmpA		no
+8-10-2	NEEDOG_04155	cirA	TonB-dependent receptor	TBDR		no
+8-10-2	NEEDOG_04156		carbohydrate porin	porin		no
+8-10-2	NEEDOG_04185		Tricarboxylate-specific outer membrane porin	porin		no
+8-10-2	NEEDOG_04222	mepC	Multidrug/solvent efflux pump outer membrane protein MepC	TolC/efflux-OM	yes	no
+8-10-2	NEEDOG_04223		Porin-like protein	porin		no
+8-10-2	NEEDOG_04370		efflux transporter outer membrane subunit	TolC/efflux-OM		no
+8-10-2	NEEDOG_04456	ompA	Outer membrane protein OmpA	OmpA		no
+8-10-2	NEEDOG_04549	fhuE	Ferrichrome outer membrane transporter/phage receptor	TBDR		no
+8-10-2	NEEDOG_04639		TonB-dependent copper receptor	TBDR	yes	no
+8-10-2	NEEDOG_04722	tolC	Channel protein TolC	TolC/efflux-OM		no
+8-10-2	NEEDOG_05056	oprD	Outer membrane porin, OprD family	porin		no

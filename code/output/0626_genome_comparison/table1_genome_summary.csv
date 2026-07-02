@@ -1,0 +1,32 @@
+Metric,8-5-2,9-2-1,9-6-2,10-10-2,8-10-2
+Isolate (internal name),8-5-2,9-2-1,9-6-2,10-10-2,8-10-2
+Sequencing sample ID,B9TF7H_1_Sample_1_8A,XH254M_1_sample_1,QB9Y48_1_rerun_sample_2_2,XH254M_3_sample_3,CZJZZ4_1_rerun_Sample_2_8B_2
+Genome accession (GenBank),pending,pending,pending,pending,pending
+Raw read accession (SRA),pending,pending,pending,pending,pending
+Isolation source,California Botanic Garden soil,California Botanic Garden soil,California Botanic Garden soil,California Botanic Garden soil,California Botanic Garden soil
+Coordinates,"34°6'54""N 117°43'28""W","34°6'54""N 117°43'28""W","34°6'54""N 117°43'28""W","34°6'52""N 117°43'13""W","34°6'54""N 117°43'28""W"
+Elevation (m),410,410,410,410,410
+Adjacent plant,Chilopsis linearis,Aesculus californica,Aesculus californica,Nicotiana quadrivalvis,Chilopsis linearis
+Sequencing platform,Oxford Nanopore (long-read),Oxford Nanopore (long-read),Oxford Nanopore (long-read),Oxford Nanopore (long-read),Oxford Nanopore (long-read)
+Genome size (bp),"5,929,752","6,178,779","6,178,775","5,933,216","5,698,233"
+Contigs (n),1,1,1,1,1
+Topology,Circular,Circular,Circular,Circular,Circular
+N50 (bp),"5,929,752","6,178,779","6,178,775","5,933,216","5,698,233"
+GC content (%),62.6,62.4,62.4,62.6,62.6
+Sequencing depth (×),95,94,67,84,96
+Total reads,"559,553","354,501","107,609","128,866","546,337"
+Read N50 (bp),"8,803","9,050","6,516","6,891","9,663"
+Median read length (bp),"3,474","3,436","2,484","2,350","3,839"
+Median read quality (Phred),24.52,25.79,24.16,24.24,23.48
+Completeness % (CheckM),99.74,99.74,99.74,99.74,100.00
+Contamination % (CheckM),0.87,1.94,1.94,0.87,0.20
+Closest species (GTDB),Pseudomonas_E sp013179515,Pseudomonas_E sp013179515,Pseudomonas_E sp013179515,Pseudomonas_E sp013179515,Pseudomonas_E capeferrum
+ANI to closest (%),99.75,99.53,99.53,99.75,98.66
+Total genes,"5,410","5,588","5,587","5,413","5,199"
+CDS (protein-coding genes),"5,264","5,449","5,448","5,267","5,055"
+tRNA,73,74,74,73,79
+rRNA,22,22,22,22,22
+ncRNA,50,42,42,50,42
+Pseudogenes,10,11,11,10,12
+Hypothetical proteins,177,233,232,177,172
+Coding density (%),89.7,89.6,89.6,89.7,90.9

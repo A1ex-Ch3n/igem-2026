@@ -1,0 +1,286 @@
+{
+ "9-6-2": [
+  {
+   "title": "gi|2744742676|gb|CP158159.1| Pseudomonas putida strain CRA-04 chromosome, complete genome",
+   "ref_len": 5914547,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2623565045|gb|CP137621.1| Pseudomonas putida strain 1.8.4 chromosome, complete genome",
+   "ref_len": 5946927,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2197957769|gb|CP069080.1| Pseudomonas putida strain LWPZF chromosome, complete genome",
+   "ref_len": 6259530,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2295324123|gb|CP079827.1| Pseudomonas sp. HD6515 chromosome, complete genome",
+   "ref_len": 6290791,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|3062544045|gb|CP199806.1| Pseudomonas putida strain NCFB-sbj8-Pt1-l chromosome, complete genome",
+   "ref_len": 6101836,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2475877576|gb|CP120969.1| Pseudomonas putida strain AHSWHJXPP1 chromosome, complete genome",
+   "ref_len": 6279264,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2505451261|gb|CP124864.1| Pseudomonas sp. Ap32 chromosome, complete genome",
+   "ref_len": 5764507,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2689091467|gb|CP145799.1| Pseudomonas putida group bacterium ESBL64 chromosome, complete genome",
+   "ref_len": 5873281,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2422079972|gb|CP096920.1| Pseudomonas putida strain NY4811 chromosome, complete genome",
+   "ref_len": 6362490,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|3044655644|gb|CP197256.1| Pseudomonas putida strain S2/27 chromosome, complete genome",
+   "ref_len": 6032578,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2736748367|gb|CP156901.1| Pseudomonas kurunegalensis strain 2024CK-00038 chromosome, complete genome",
+   "ref_len": 6216022,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2666117289|gb|PP249537.1| Pseudomonas sp. strain BEA3.1 16S ribosomal RNA gene, partial sequence",
+   "ref_len": 1537,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2732416965|gb|CP138357.1| Pseudomonas putida strain NY11286 chromosome, complete genome",
+   "ref_len": 6362594,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2522203555|gb|CP127871.1| Pseudomonas kurunegalensis strain ANKC.G2 chromosome, complete genome",
+   "ref_len": 6133480,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|3018372595|gb|CP195315.1| Pseudomonas putida strain PSBB026 chromosome, complete genome",
+   "ref_len": 5844059,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2783866613|gb|CP163498.1| Pseudomonas putida strain J06 chromosome, complete genome",
+   "ref_len": 6319294,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2263457126|gb|CP099727.1| Pseudomonas putida strain PCL1760 chromosome, complete genome",
+   "ref_len": 6002785,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2581017650|gb|CP134602.1| Pseudomonas putida strain L2890 chromosome, complete genome",
+   "ref_len": 6302573,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2323004096|gb|CP109606.1| Pseudomonas putida strain QH1 chromosome, complete genome",
+   "ref_len": 6321372,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2732433760|gb|CP132350.1| Pseudomonas sp. NY8896 chromosome, complete genome",
+   "ref_len": 6966988,
+   "pct_id": 99.8,
+   "aln_len": 1537,
+   "evalue": 0.0
+  }
+ ],
+ "10-10-2": [
+  {
+   "title": "gi|2744742676|gb|CP158159.1| Pseudomonas putida strain CRA-04 chromosome, complete genome",
+   "ref_len": 5914547,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2623565045|gb|CP137621.1| Pseudomonas putida strain 1.8.4 chromosome, complete genome",
+   "ref_len": 5946927,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2197957769|gb|CP069080.1| Pseudomonas putida strain LWPZF chromosome, complete genome",
+   "ref_len": 6259530,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2295324123|gb|CP079827.1| Pseudomonas sp. HD6515 chromosome, complete genome",
+   "ref_len": 6290791,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|3062544045|gb|CP199806.1| Pseudomonas putida strain NCFB-sbj8-Pt1-l chromosome, complete genome",
+   "ref_len": 6101836,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2475877576|gb|CP120969.1| Pseudomonas putida strain AHSWHJXPP1 chromosome, complete genome",
+   "ref_len": 6279264,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2505451261|gb|CP124864.1| Pseudomonas sp. Ap32 chromosome, complete genome",
+   "ref_len": 5764507,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2689091467|gb|CP145799.1| Pseudomonas putida group bacterium ESBL64 chromosome, complete genome",
+   "ref_len": 5873281,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2422079972|gb|CP096920.1| Pseudomonas putida strain NY4811 chromosome, complete genome",
+   "ref_len": 6362490,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|3044655644|gb|CP197256.1| Pseudomonas putida strain S2/27 chromosome, complete genome",
+   "ref_len": 6032578,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2736748367|gb|CP156901.1| Pseudomonas kurunegalensis strain 2024CK-00038 chromosome, complete genome",
+   "ref_len": 6216022,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2666117289|gb|PP249537.1| Pseudomonas sp. strain BEA3.1 16S ribosomal RNA gene, partial sequence",
+   "ref_len": 1537,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2732416965|gb|CP138357.1| Pseudomonas putida strain NY11286 chromosome, complete genome",
+   "ref_len": 6362594,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2522203555|gb|CP127871.1| Pseudomonas kurunegalensis strain ANKC.G2 chromosome, complete genome",
+   "ref_len": 6133480,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|3018372595|gb|CP195315.1| Pseudomonas putida strain PSBB026 chromosome, complete genome",
+   "ref_len": 5844059,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2783866613|gb|CP163498.1| Pseudomonas putida strain J06 chromosome, complete genome",
+   "ref_len": 6319294,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2263457126|gb|CP099727.1| Pseudomonas putida strain PCL1760 chromosome, complete genome",
+   "ref_len": 6002785,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2581017650|gb|CP134602.1| Pseudomonas putida strain L2890 chromosome, complete genome",
+   "ref_len": 6302573,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2323004096|gb|CP109606.1| Pseudomonas putida strain QH1 chromosome, complete genome",
+   "ref_len": 6321372,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  },
+  {
+   "title": "gi|2732433760|gb|CP132350.1| Pseudomonas sp. NY8896 chromosome, complete genome",
+   "ref_len": 6966988,
+   "pct_id": 99.87,
+   "aln_len": 1537,
+   "evalue": 0.0
+  }
+ ]
+}

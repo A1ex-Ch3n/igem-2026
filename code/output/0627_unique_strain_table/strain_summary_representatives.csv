@@ -1,0 +1,33 @@
+Metric,8-5-2,9-2-1,8-10-2
+Isolate (internal name),8-5-2,9-2-1,8-10-2
+Sequencing sample ID,B9TF7H_1_Sample_1_8A,XH254M_1_sample_1,CZJZZ4_1_rerun_Sample_2_8B_2
+Represents (≈100%-ANI clones),"8-5-2, 10-10-2","9-2-1, 9-6-2",8-10-2
+Genome accession (GenBank),pending,pending,pending
+Raw read accession (SRA),pending,pending,pending
+Isolation source,California Botanic Garden soil,California Botanic Garden soil,California Botanic Garden soil
+Coordinates,"34°6'54""N 117°43'28""W","34°6'54""N 117°43'28""W","34°6'54""N 117°43'28""W"
+Elevation (m),410,410,410
+Adjacent plant,Chilopsis linearis,Aesculus californica,Chilopsis linearis
+Sequencing platform,Oxford Nanopore (long-read),Oxford Nanopore (long-read),Oxford Nanopore (long-read)
+Genome size (bp),"5,929,752","6,178,779","5,698,233"
+Contigs (n),1,1,1
+Topology,Circular,Circular,Circular
+N50 (bp),"5,929,752","6,178,779","5,698,233"
+GC content (%),62.6,62.4,62.6
+Sequencing depth (×),95,94,96
+Total reads,"559,553","354,501","546,337"
+Read N50 (bp),"8,803","9,050","9,663"
+Median read length (bp),"3,474","3,436","3,839"
+Median read quality (Phred),24.52,25.79,23.48
+Completeness % (CheckM),99.74,99.74,100.00
+Contamination % (CheckM),0.87,1.94,0.20
+Closest species (GTDB),Pseudomonas_E sp013179515,Pseudomonas_E sp013179515,Pseudomonas_E capeferrum
+ANI to closest (%),99.75,99.53,98.66
+Total genes,"5,410","5,588","5,199"
+CDS (protein-coding genes),"5,264","5,449","5,055"
+tRNA,73,74,79
+rRNA,22,22,22
+ncRNA,50,42,42
+Pseudogenes,10,11,12
+Hypothetical proteins,177,233,172
+Coding density (%),89.7,89.6,90.9
