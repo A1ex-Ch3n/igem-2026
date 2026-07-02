@@ -119,7 +119,7 @@ On [2026-06-08](../../../lab_notebook/digitalized/2026-06-08_metagenomic-extract
 ## Checklist — where do the outputs go?
 - [ ] DNA samples after measurement → return to **4 °C fridge** (short-term) or **−20 °C freezer** (longer-term).
 - [ ] Used 0.2 mL PCR tubes (now stained with Helixyte BR / DMSO) → [[media_disposal]] (or per kit waste guidance — Helixyte is in DMSO).
-- [ ] Numerical readings (standards RFU + samples RFU + computed concentrations) → recorded in `data/` (per-day file, e.g. `data/0605_qubit.xlsx`, following the [2026-05-29 pattern](../../../data/0529_OD.xlsx)).
+- [ ] Numerical readings (standards RFU + samples RFU + computed concentrations) → recorded in `data/` (per-day file, e.g. `data/0605_qubit.xlsx`, following the [2026-05-29 pattern](../../../data/assays/0529_OD.xlsx)).
 
 ## Source
 - Lab notebook: [2026-05-27](../../../lab_notebook/digitalized/2026-05-27_dna-quantification-pia-plates.md) (Procedure ① + outcome), [2026-06-05](../../../lab_notebook/digitalized/2026-06-05_plaque-assay-r3-dna-extraction-quantification.md) (Procedure ④ + 6-point Standards section + PI extrapolation note).

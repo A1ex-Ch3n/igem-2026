@@ -4,7 +4,7 @@ purpose: The strains from the 28-stock panel still to be worked in week 3 (no pl
 last_updated: 2026-06-13
 sources:
   - data/dna_extraction_inventory.md
-  - data/0529_OD.xlsx
+  - data/assays/0529_OD.xlsx
   - lab_notebook/digitalized/2026-05-29_optical-density-bacteria-stock.md
   - lab_notebook/digitalized/2026-06-03_phage-plaque-assay.md
   - lab_notebook/digitalized/2026-06-05_plaque-assay-r3-dna-extraction-quantification.md
@@ -30,7 +30,7 @@ These 8 of the 28 stocks have never been revived into a pellet, a genome extract
 | 6-7-2 | batch-2 | 0.646 | yes |
 | 8-7-1 | batch-2 | 0.841 | yes |
 
-*(Batch-2 = the "likely *P. aeruginosa*" sub-list, entries 14–28 of [`0529_OD.xlsx`](0529_OD.xlsx) → prioritize these 5 for the project's target organism.)*
+*(Batch-2 = the "likely *P. aeruginosa*" sub-list, entries 14–28 of [`0529_OD.xlsx`](assays/0529_OD.xlsx) → prioritize these 5 for the project's target organism.)*
 
 ## Phage-positive hosts from week-1 plaque assay (2)
 
@@ -38,8 +38,8 @@ The two plates that grew phage in the first plaque-assay week (the "two successf
 
 | Host | Phage | Notes |
 |---|---|---|
-| 9-6-2 | Φ8 | batch-1; bacterial genome sent for sequencing 6/8 ([results](0612_sequencing/)); phage pick at 4 °C |
-| 9-2-1 | Φ8 | batch-1; bacterial genome sent for sequencing 6/8 ([results](0612_sequencing/)); phage pick at 4 °C |
+| 9-6-2 | Φ8 | batch-1; bacterial genome sent for sequencing 6/8 ([results](bacteria_genome/)); phage pick at 4 °C |
+| 9-2-1 | Φ8 | batch-1; bacterial genome sent for sequencing 6/8 ([results](bacteria_genome/)); phage pick at 4 °C |
 
 > [!note] Why these counts work out
 > 28 stocks − 20 already pelleted/plaque-assayed (10 in the 6/3→6/5 Round-1 panel, incl. `8-5-1`; 10 in the 6/10 Round-2 revived panel) = **8** untouched. `8-5-1` counts as worked because the 6/5 "`8-3-1`" extract is almost certainly `8-5-1` mislabelled (see [Discrepancies](dna_extraction_inventory.md#discrepancies--miswrites-to-fix)).
@@ -50,4 +50,4 @@ The two plates that grew phage in the first plaque-assay week (the "two successf
 
 ---
 ## Log
-- 2026-06-13 — Created from the 28-stock panel minus the 20 already worked. 8 untouched strains (3 batch-1 + 5 batch-2 likely *P. aeruginosa*) + the 2 week-1 phage-positive hosts (`9-6-2 Φ8`, `9-2-1 Φ8`, per user). OD values from [`0529_OD.xlsx`](0529_OD.xlsx) Sheet 2.
+- 2026-06-13 — Created from the 28-stock panel minus the 20 already worked. 8 untouched strains (3 batch-1 + 5 batch-2 likely *P. aeruginosa*) + the 2 week-1 phage-positive hosts (`9-6-2 Φ8`, `9-2-1 Φ8`, per user). OD values from [`0529_OD.xlsx`](assays/0529_OD.xlsx) Sheet 2.

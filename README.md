@@ -38,8 +38,13 @@ iGEM 26/
 │   ├── 0605_quantification_report.pdf
 │   └── output/                       ← plots (standard curve, per-sample bars)
 │
-├── data/                      ← raw datasets
-│   └── 0529_OD.xlsx                  ← Optical density measurements from 5-29
+├── data/                      ← datasets, organized by category
+│   ├── bacteria_genome/             ← vendor genome bundles per strain (9-2-1, 9-6-2, 10-10-2, 8-5-2)
+│   ├── processed_genome/            ← extracted receptors + phage-binding screen
+│   ├── metagenomes/                 ← MG08 / MG09 predicted proteomes
+│   ├── assays/                      ← OD/phage growth data (0529 OD, 0624/0625 od600)
+│   ├── dna_extraction_inventory.md  ← bacteria/phage/DNA storage inventory
+│   └── week_3_bacteria_list.md      ← strains queued for week 3
 │
 └── photos/                    ← raw lab photos (LFS)
     ├── 0529/                  ← 37 camera photos from 5-29 OD/stock session

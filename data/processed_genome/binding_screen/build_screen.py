@@ -17,7 +17,7 @@ import re, csv, os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent          # .../binding_screen
-DATA = ROOT.parent                              # .../0616_bacteria_genome
+DATA = ROOT.parent                              # .../processed_genome
 
 STRAINS = {
     "10-10-2": dict(tsv="10-10-2_phage_matches.tsv",        fasta="10-10-2_potential_receptors.fasta"),

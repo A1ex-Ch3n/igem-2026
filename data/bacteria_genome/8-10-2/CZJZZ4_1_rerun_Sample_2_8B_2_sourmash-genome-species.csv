@@ -1,0 +1,2 @@
+query_name,status,rank,fraction,lineage,query_md5,query_filename,f_weighted_at_rank,bp_match_at_rank,query_ani_at_rank
+genome,match,species,0.6588983050847459,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Pseudomonadales;f__Pseudomonadaceae;g__Pseudomonas_E;s__Pseudomonas_E capeferrum,7a388a55,assembly/CZJZZ4_1/results/CZJZZ4_1_1_reference.fasta,0.6588983050847459,3732000,0.9866325335839088

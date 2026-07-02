@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phage-finding decision tree — iGEM 26</title>
+<style>
+  :root{
+    --done:#2e7d52; --done-bg:#e9f7ef; --done-br:#3aa56b;
+    --next:#1565c0; --next-bg:#e8f1fb; --next-br:#3b82d6;
+    --todo:#b26a00; --todo-bg:#fff6e6; --todo-br:#e0a106;
+    --ink:#1f2933; --mut:#5b6770; --line:#9aa7b1;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:40px 16px 64px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Microsoft JhengHei",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink); background:linear-gradient(180deg,#f5f8fb 0%,#eef2f6 100%);
+    line-height:1.5;
+  }
+  .wrap{max-width:860px; margin:0 auto}
+  h1{font-size:24px; margin:0 0 4px; text-align:center}
+  .sub{text-align:center; color:var(--mut); font-size:14px; margin-bottom:8px}
+  .legend{display:flex; gap:18px; justify-content:center; flex-wrap:wrap; margin:18px 0 28px; font-size:13px}
+  .legend span{display:inline-flex; align-items:center; gap:7px}
+  .dot{width:12px; height:12px; border-radius:3px; display:inline-block}
+  .tree{display:flex; flex-direction:column; align-items:center}
+  .card{
+    width:100%; background:#fff; border:1px solid #e1e7ec; border-left:6px solid var(--line);
+    border-radius:12px; padding:16px 20px; box-shadow:0 2px 8px rgba(20,40,60,.06);
+  }
+  .card.done{border-left-color:var(--done-br)}
+  .card.next{border-left-color:var(--next-br); background:linear-gradient(0deg,#fff,var(--next-bg))}
+  .card.todo{border-left-color:var(--todo-br); background:linear-gradient(0deg,#fff,var(--todo-bg)); border-style:dashed}
+  .head{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+  .num{font-weight:700; font-size:13px; color:#fff; background:var(--line); width:24px;height:24px;
+       border-radius:50%; display:inline-flex; align-items:center; justify-content:center; flex:0 0 auto}
+  .done .num{background:var(--done-br)} .next .num{background:var(--next-br)} .todo .num{background:var(--todo-br)}
+  .title{font-size:17px; font-weight:650; margin:0}
+  .zh{color:var(--mut); font-weight:500; font-size:14px}
+  .badge{margin-left:auto; font-size:11px; font-weight:700; letter-spacing:.04em; padding:3px 9px; border-radius:999px}
+  .badge.done{color:var(--done); background:var(--done-bg)}
+  .badge.next{color:var(--next); background:var(--next-bg)}
+  .badge.todo{color:var(--todo); background:var(--todo-bg)}
+  ul{margin:11px 0 2px; padding-left:20px}
+  li{margin:4px 0; font-size:14px}
+  .out{font-size:12.5px; color:var(--mut); margin-top:10px}
+  .out code{background:#eef2f6; padding:1px 6px; border-radius:5px; font-size:12px}
+  .verdict{margin-top:10px; font-weight:650; font-size:14px}
+  .verdict.no{color:#c0392b}
+  .arrow{height:34px; width:2px; background:var(--line); position:relative; margin:2px 0}
+  .arrow::after{content:""; position:absolute; bottom:-1px; left:-5px; border:6px solid transparent; border-top-color:var(--line)}
+  .arrow.todo{background:repeating-linear-gradient(var(--todo-br) 0 6px,transparent 6px 12px)}
+  .arrow.todo::after{border-top-color:var(--todo-br)}
+  .pill{display:inline-block; font-family:ui-monospace,Menlo,monospace; font-size:12px; font-weight:700;
+        color:#0b3d2e; background:#cdeedd; padding:2px 8px; border-radius:6px}
+  .pill.todo{color:#7a4a00; background:#ffe6b3}
+  .foot{text-align:center; color:var(--mut); font-size:12px; margin-top:34px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Phage-finding decision tree</h1>
+  <div class="sub">為三株分離菌 (9-6-2 / 9-2-1 / 10-10-2) 尋找可用噬菌體 · iGEM 26 · 2026-06-24</div>
+
+  <div class="legend">
+    <span><i class="dot" style="background:var(--done-br)"></i>已完成 Done</span>
+    <span><i class="dot" style="background:var(--next-br)"></i>下一步 Next</span>
+    <span><i class="dot" style="background:var(--todo-br)"></i>尚未進行 Not done yet</span>
+  </div>
+
+  <div class="tree">
+
+    <!-- 1 -->
+    <div class="card done">
+      <div class="head">
+        <span class="num">1</span>
+        <p class="title">有沒有「已知會感染我們菌、且本身有已知噬菌體」的現成菌株？
+          <span class="zh">Is there a known bacterium matching our isolates that already has a known phage?</span></p>
+        <span class="badge done">DONE</span>
+      </div>
+      <ul>
+        <li>三株分離菌彼此 <b>~99.4–100% ANI</b> → 同一株 (9-6-2 ≡ 9-2-1 為 rerun；10-10-2 為姊妹株)。</li>
+        <li>ANI 比對：最近的是 <i>Pseudomonas</i> sp. <b>CM27</b> (GCA_013179515.1, ~99.2%)，屬 <b>P. putida group</b>。</li>
+        <li>排除 <i>P. aeruginosa</i> PAO1 (~80%) 與 <i>P. putida</i> 模式株 NBRC 14164 (~89%)；其餘公開株驟降至 ~89%。</li>
+        <li>CM27 是未命名的環境分離株，<b>沒有任何已知噬菌體</b>。</li>
+      </ul>
+      <div class="verdict no">✘ 沒有現成可用的噬菌體 → 改走「蛋白質層面 / protein-wise」路線。</div>
+      <div class="out">依據 <code>out_finding_rbps/ani/</code> · <code>documents/strain_phage_conclusions.md</code></div>
+    </div>
+    <div class="arrow"></div>
+
+    <!-- 2 -->
+    <div class="card done">
+      <div class="head">
+        <span class="num">2</span>
+        <p class="title">拆分基因體，只留下受體蛋白（噬菌體的「鎖」）
+          <span class="zh">Split each genome into receptor proteins (the phage "locks")</span></p>
+        <span class="badge done">DONE</span>
+      </div>
+      <ul>
+        <li>掃描每株 Bakta 註解 (~5,300–5,450 CDS)，<b>只保留表面受體</b>：porin、TonB-dependent receptor、OmpA/W、TolC、LptD、FadL、Tsx、usher、flagellin、pilin。</li>
+        <li>剔除非受體的膜蛋白：Bam/Lol/Mla 生合成、TonB/Exb 能量器、內膜/週質運輸子、aquaporin、OmpR 調控子等。</li>
+        <li>得到 <b>264 個受體</b>（88 / 88 / 86 每株）。與 0620 既有清單交叉比對 <b>98.3% 一致</b>（並補回 0620 漏掉的 LptD/OmpW/FadL/更多 TolC）。</li>
+      </ul>
+      <div class="out">輸出 <code>out_receptor_fasta/{site}_receptors.faa</code> · 由 <code>receptor_fasta.py</code> 產生</div>
+    </div>
+    <div class="arrow"></div>
+
+    <!-- 3 -->
+    <div class="card done">
+      <div class="head">
+        <span class="num">3</span>
+        <p class="title">找出帶有相同受體、且本身有已知噬菌體的菌（替身宿主）
+          <span class="zh">Find named bacteria carrying the same receptors that DO have known phages — "surrogate hosts"</span></p>
+        <span class="badge done">DONE</span>
+      </div>
+      <ul>
+        <li>264 受體先以 mmseqs 去冗餘 (0.99/0.9) → <b>106 代表序列</b>。</li>
+        <li>比對 <b>395 個 NCBI 參考 Pseudomonas 基因體</b>；先把 2.06M 標的蛋白用受體規則 <b>功能過濾 → 33k（62×）</b>，mmseqs 搜尋 ~15 秒。</li>
+        <li>每個帶有受體的菌種再查 NCBI 是否有噬菌體（Entrez <code>[Host]</code>，已驗證會回傳真實噬菌體）。</li>
+        <li>最相近的近親（P. hunanensis / fortuita / monteilii / kurunegalensis，~97–99%）<b>多半沒有噬菌體</b>。</li>
+        <li><b>最佳替身宿主 = <i>Pseudomonas putida</i></b>：共享 <b>57 個受體（最高 99.4%）</b>、<b>139 筆噬菌體</b>。次要：plecoglossicida、taiwanensis、fulva、parafulva、entomophila。</li>
+        <li>另有 1 個受體 (PICBEH_04212) 在 395 株中<b>找不到同源</b> → 可能是新穎/株專一表面蛋白。</li>
+      </ul>
+      <div class="out">輸出 <code>out_receptor_ncbi/surrogate_hosts.md</code>、<code>carrier_organisms.tsv</code> · 由 <code>receptor_ncbi_search.py</code> 產生</div>
+    </div>
+    <div class="arrow"></div>
+
+    <!-- 4 -->
+    <div class="card next">
+      <div class="head">
+        <span class="num">4</span>
+        <p class="title">收集這些替身宿主之噬菌體的 RBP，存成清單
+          <span class="zh">Collect the RBPs of those surrogate hosts' phages → save</span></p>
+        <span class="badge next">下一步 NEXT</span>
+      </div>
+      <ul>
+        <li>從替身宿主（尤其 <i>P. putida</i>）的噬菌體基因體抓出 <b>受體結合蛋白 (RBP / tail fiber / spike)</b>。</li>
+        <li>整理成 NCBI 蛋白清單 → <span class="pill">list_NCBIprotein</span></li>
+      </ul>
+      <div class="out">尚未產出。可承接步驟 3 的噬菌體 accession（如 phage phQ1）。</div>
+    </div>
+    <div class="arrow todo"></div>
+
+    <!-- 5 -->
+    <div class="card todo">
+      <div class="head">
+        <span class="num">5</span>
+        <p class="title">在 metagenome 中搜尋這些 RBP，存成清單
+          <span class="zh">Search the metagenomes for those RBPs → save</span></p>
+        <span class="badge todo">尚未進行 NOT DONE</span>
+      </div>
+      <ul>
+        <li>把 <span class="pill">list_NCBIprotein</span> 拿去比對 MG08 / MG09 環境 metagenome 蛋白體，找出同源 RBP。</li>
+        <li>命中的序列存成 → <span class="pill todo">list_mg</span></li>
+      </ul>
+      <div class="out">尚未產出（最後一層，待完成）。</div>
+    </div>
+
+  </div>
+
+  <div class="foot">Log: 2026-06-24 建立 · 反映 documents/strain_phage_conclusions.md 之決策流程</div>
+</div>
+</body>
+</html>

@@ -11,8 +11,8 @@ sources:
   - lab_notebook/digitalized/2026-06-05_plaque-assay-r3-dna-extraction-quantification.md
   - lab_notebook/digitalized/2026-06-08_metagenomic-extraction-dna-concentration-quantification.md
   - lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md
-  - data/0529_OD.xlsx
-  - data/0612_sequencing/
+  - data/assays/0529_OD.xlsx
+  - data/bacteria_genome/
   - code/0605_quantification.ipynb
   - code/0608_quantification.ipynb
 ---
@@ -76,7 +76,7 @@ See [[metagenomic_dna_extraction]] and [[bacteria_genome_extraction]] for method
 
 ## −80 °C — glycerol stocks (28)
 
-All 28 stocks physically confirmed 2026-06-13 (Alex found batch-1 ×13; R found batch-2 ×15 — exactly the two `Stock Solutions` sub-lists in [`0529_OD.xlsx`](0529_OD.xlsx)). **Batch-2 (6-x onward) = the "likely *P. aeruginosa*" candidates.** Created 2026-05-29 ([2026-05-29](../lab_notebook/digitalized/2026-05-29_optical-density-bacteria-stock.md) ②). Glycerol stocks are the permanent backup — not themselves sent for sequencing.
+All 28 stocks physically confirmed 2026-06-13 (Alex found batch-1 ×13; R found batch-2 ×15 — exactly the two `Stock Solutions` sub-lists in [`0529_OD.xlsx`](assays/0529_OD.xlsx)). **Batch-2 (6-x onward) = the "likely *P. aeruginosa*" candidates.** Created 2026-05-29 ([2026-05-29](../lab_notebook/digitalized/2026-05-29_optical-density-bacteria-stock.md) ②). Glycerol stocks are the permanent backup — not themselves sent for sequencing.
 
 | ID | What it is | Date created | Status |
 |---|---|---|---|
@@ -115,7 +115,7 @@ All 28 stocks physically confirmed 2026-06-13 (Alex found batch-1 ×13; R found 
 
 ## Sent for sequencing — 2026-06-08
 
-Results returned ~2026-06-12 (in [`0612_sequencing/`](0612_sequencing/) — Cal_Bot_9_2_1, 9_6_2, 10_10_2).
+Results returned ~2026-06-12 (in [`bacteria_genome/`](bacteria_genome/) — Cal_Bot_9_2_1, 9_6_2, 10_10_2).
 
 | ID | What it is | Date created | Status |
 |---|---|---|---|
@@ -195,13 +195,13 @@ All sites quantified [2026-05-27](../lab_notebook/digitalized/2026-05-27_dna-qua
 
 ### Sent-for-sequencing submission masses (2026-06-08)
 
-| Sample | Type | Diluted? | Submitted conc (ng/µL) | Volume (µL) | DNA sent (µg) |
-|---|---|---|---:|---:|---:|
-| Metagenome #8 | metagenome | yes (38 µL DNA + 50 µL kit buffer) | 125.33 | 88 | 11.03 |
-| Metagenome #9 | metagenome | yes (38 µL DNA + 50 µL kit buffer) | 69.39 | 88 | 6.11 |
-| 9-2-1 | bacterial genome | no (see Discrepancy #3) | 139.29 | ≈ 90 | 12.54 |
-| 9-6-2 | bacterial genome | no (see Discrepancy #3) | 194.53 | ≈ 90 | 17.51 |
-| 10-10-2 | bacterial genome | no (see Discrepancy #3) | 140.44 | ≈ 90 | 12.64 |
+| Sample        | Type             | Diluted?                           | Submitted conc (ng/µL) | Volume (µL) | DNA sent (µg) |
+| ------------- | ---------------- | ---------------------------------- | ---------------------: | ----------: | ------------: |
+| Metagenome #8 | metagenome       | yes (38 µL DNA + 50 µL kit buffer) |                 125.33 |          88 |         11.03 |
+| Metagenome #9 | metagenome       | yes (38 µL DNA + 50 µL kit buffer) |                  69.39 |          88 |          6.11 |
+| 9-2-1         | bacterial genome | no (see Discrepancy #3)            |                 139.29 |        ≈ 90 |         12.54 |
+| 9-6-2         | bacterial genome | no (see Discrepancy #3)            |                 194.53 |        ≈ 90 |         17.51 |
+| 10-10-2       | bacterial genome | no (see Discrepancy #3)            |                 140.44 |        ≈ 90 |         12.64 |
 
 *Metagenome mass sent = pre-dilution conc × 38 µL; bacterial = conc × ≈ 90 µL (`[TBD]` if less than full eluate).*
 
@@ -211,4 +211,4 @@ All sites quantified [2026-05-27](../lab_notebook/digitalized/2026-05-27_dna-qua
 - 2026-06-10 — Initial compilation (by type: metagenomic / bacterial / sequencing) from the digitized lab notebook (5-20 / 5-27 / 5-28 / 6-5 / 6-8) and the 0605 / 0608 notebooks.
 - 2026-06-10 — Corrected the 6-5 bacterial Set A: the 26,136.76 RFU reading is `8-3-1` (not a second `8-3-2`), per user.
 - 2026-06-12 — Added Bacterial Round 2 (6-10): 8 extracted + 2 pellets; spin-column note.
-- 2026-06-13 — **Restructured to a by-storage-location layout** (4 °C / −20 °C / −80 °C / sent), each a single table (ID · what · date · status), from the user's physical re-check. Added the −80 glycerol-stock table (all 28), the 2 week-1 phage picks (`9-6-2 Φ8` / `9-2-1 Φ8`) at 4 °C, and the older metagenome extracts (1st-batch sites 2/5/6/8/9/10, mixes mix_1/3/4/7). Moved per-sample conc/mass into a **Quantification details** appendix (nothing lost). Added a **Discrepancies** section (8-3-1≈8-5-1 — label kept per user; 6/3 `8-5-2 ×2`; bacterial "diluted" wording; 5/20 "all 10"→6). Added sources (5-29 OD, 6-3 entry, `0529_OD.xlsx`, `0612_sequencing/`). Created companion [[week_3_bacteria_list]].
+- 2026-06-13 — **Restructured to a by-storage-location layout** (4 °C / −20 °C / −80 °C / sent), each a single table (ID · what · date · status), from the user's physical re-check. Added the −80 glycerol-stock table (all 28), the 2 week-1 phage picks (`9-6-2 Φ8` / `9-2-1 Φ8`) at 4 °C, and the older metagenome extracts (1st-batch sites 2/5/6/8/9/10, mixes mix_1/3/4/7). Moved per-sample conc/mass into a **Quantification details** appendix (nothing lost). Added a **Discrepancies** section (8-3-1≈8-5-1 — label kept per user; 6/3 `8-5-2 ×2`; bacterial "diluted" wording; 5/20 "all 10"→6). Added sources (5-29 OD, 6-3 entry, `0529_OD.xlsx`, `bacteria_genome/`). Created companion [[week_3_bacteria_list]].

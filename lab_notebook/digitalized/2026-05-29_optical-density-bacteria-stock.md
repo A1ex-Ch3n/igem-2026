@@ -53,7 +53,7 @@ The threshold to take as stock is OD of **0.6 or above** at full concentration (
 
 ### OD measurement data
 
-Full readings live in [`data/0529_OD.xlsx`](../../data/0529_OD.xlsx). Summary below.
+Full readings live in [`data/assays/0529_OD.xlsx`](../../data/assays/0529_OD.xlsx). Summary below.
 
 **Sheet 1 — Per-plate readings** *(collection time 12 PM, UV spectrophotometer at A₆₀₀)*
 
@@ -118,5 +118,5 @@ Total: **28 stocks**.
 ---
 ## Log
 - 2026-06-04 — Initial digitization from `pre_0604.pdf` pp.18–19. Corrected handwritten "10 mL" → "10 µL" loop volume (logged in `typos.md`).
-- 2026-06-04 — Added full OD measurement tables transcribed from `data/0529_OD.xlsx`.
+- 2026-06-04 — Added full OD measurement tables transcribed from `data/assays/0529_OD.xlsx`.
 - 2026-06-09 — Clarified (team) that Sheet-2 entries **14–28** (6-2-1 onward) are a separate sub-list of **likely *P. aeruginosa*** candidates — the "Most Likely *P. aeruginosa*" note heads the whole block, not just 6-2-1. Surfaced while adding the OD column to the [2026-06-08](2026-06-08_metagenomic-extraction-dna-concentration-quantification.md) revived-stock table (that panel is drawn entirely from this block).

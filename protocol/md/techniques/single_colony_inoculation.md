@@ -49,7 +49,7 @@ Take an isolated single colony (or a defined small number, e.g., 3 per plate for
 1. Pipette **5 mL** of [[lb_broth]] into each LB tube.
 2. Label each tube with the source plate's number / colony ID.
 3. Select and mark an isolated single colony on the source plate.
-4. Pick that colony onto the loop and dissolve it into the LB broth in **half** the tube (notebook 5-28 phrasing).
+4. Pick that colony onto the loop and dissolve it into the LB broth in  the tube.
 5. Repeat for the remaining plates / colonies.
 6. Place the rack in the incubator (see Checklist).
 

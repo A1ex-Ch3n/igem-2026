@@ -1,0 +1,2 @@
+query_name,status,rank,fraction,lineage,query_md5,query_filename,f_weighted_at_rank,bp_match_at_rank,query_ani_at_rank
+genome,match,species,0.8641748706824629,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Pseudomonadales;f__Pseudomonadaceae;g__Pseudomonas_E;s__Pseudomonas_E sp013179515,4176f15b,assembly/QB9Y48_1/results/QB9Y48_1_1_reference.fasta,0.8641748706824629,5179000,0.9953020335476479

@@ -57,12 +57,12 @@ The output drives downstream decisions: which cultures are dense enough for [[gl
 - Always blank against the same lot of broth as the cultures were grown in — different broth lots have slightly different baseline absorbance.
 
 ## Checklist — where do the outputs go?
-- [ ] OD readings → recorded in `data/0529_OD.xlsx` (or equivalent for future days).
+- [ ] OD readings → recorded in `data/assays/0529_OD.xlsx` (or equivalent for future days).
 - [ ] Measured cuvette contents → discard via [[media_disposal]].
 
 ## Source
 - Lab notebook: [2026-05-29](../../../lab_notebook/digitalized/2026-05-29_optical-density-bacteria-stock.md) (Procedures ①ₐ and ①ᵦ).
-- Data file: `../../../data/0529_OD.xlsx`.
+- Data file: `../../../data/assays/0529_OD.xlsx`.
 
 ---
 ## Log

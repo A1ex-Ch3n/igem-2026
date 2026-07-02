@@ -54,12 +54,12 @@ Handwritten errors and unclear items identified during digitization. Tick off ea
 
 ### Resolved earlier (2026-06-04)
 - [x] **p.27** — Left-margin annotation is an illustration of the plate-labelling convention: row 1 = date (e.g. `26/6/4`), row 2 = phage ID (`ϕ<n>`, where `n` = the soil enrichment the phage filtrate came from), row 3 = bacteria label (e.g. `8-8-2`).
-- [x] **p.19** — Right-margin OD data lives in `data/0529_OD.xlsx` and has been transcribed into the 2026-05-29 entry.
+- [x] **p.19** — Right-margin OD data lives in `data/assays/0529_OD.xlsx` and has been transcribed into the 2026-05-29 entry.
 - [x] **p.10** — Six enrichment samples are **#2, #5, #6, #8, #9, #10** (of the 10 total sites collected on 2026-05-19).
 
 ## Log
 - 2026-06-04 — Initial cataloging during digitization of `pre_0604.pdf` + `0604/` photos.
-- 2026-06-04 — All three pending-clarification items resolved (p.27 margin illustration described; p.19 OD data added from `data/0529_OD.xlsx`; p.10 enrichment samples confirmed as #2/5/6/8/9/10).
+- 2026-06-04 — All three pending-clarification items resolved (p.27 margin illustration described; p.19 OD data added from `data/assays/0529_OD.xlsx`; p.10 enrichment samples confirmed as #2/5/6/8/9/10).
 - 2026-06-08 — Added p.32–36 pending-clarification block during digitization of the 0608 session (unconcentrated readings, p.36 blurry standards/samples, S30-vs-S50 resolution, concentration-factor calc, p.32/33 objective + kit-page annotations).
 - 2026-06-08 — Resolved (user): unconcentrated readings (119.87/195.94/3600.46/1139.16), input mass (0.12 g/tube), bacterial sequencing dilution (not diluted). Remaining open: pooling ratio, blurry p.36 digits, concentration-factor calc, bacterial submitted volume.
 - 2026-06-09 — Added p.37–38 pending-clarification block during digitization of the 0609 session (authors, objective wording, label scheme + tube count, enrichment site list discrepancy, centrifuge speed, filtrate volume).
