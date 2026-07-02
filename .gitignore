@@ -31,3 +31,22 @@ env/
 # ===== Local-only artefacts =====
 # Add anything per-machine here. Project source PDFs (Zymo, AAT Bioquest, prof's docx)
 # are intentionally committed for team reference — see README.md attribution section.
+
+# ===== large genome / metagenome sequence data (kept on disk, not in git) =====
+data/metagenomes/*.faa
+# bulky per-genome annotation formats (keep the compact .faa/.tsv/plots instead)
+data/bacteria_genome/**/*.json
+data/bacteria_genome/**/*.gbff
+data/bacteria_genome/**/*.gbk
+data/bacteria_genome/**/*.embl
+data/bacteria_genome/**/*.gff3
+data/bacteria_genome/**/*.fna
+data/bacteria_genome/**/*.ffn
+# 0623 metagenome-RBP: downloaded NCBI reference genomes & the ANI hit dump
+code/0623_metagenome_rbp/out_finding_rbps/ani/hit_genomes/
+code/0623_metagenome_rbp/out_finding_rbps/ani/refs_raw/
+code/0623_metagenome_rbp/out_finding_rbps/ani/refs.zip
+# mmseqs scratch dirs
+code/output/**/mmseqs_tmp/
+code/output/**/mmseqs_tmp_search/
+data/bacteria_genome/**/*.fasta
