@@ -40,11 +40,15 @@ strains; 22 records have a P. putida-group / non-aeruginosa host (closest to our
 *Pseudomonas_E* isolates — most of the DB's Pseudomonas is *P. aeruginosa*).
 → `output/0701_pharbp_query/pseudomonas_rbps.csv` + `_summary.md`.
 
-**Track B — our RBPs vs PharBP:** (full 1,293 run; see `rbp_vs_pharbp_hits.tsv`).
-Validation on the first 30 RBPs: only 8/30 had any hit, all at low identity (30–46%) to
-*non-Pseudomonas* phages (Salmonella/Cyano/Bacillus-prophage). Preliminary signal: our
-soil-metagenome RBPs are largely **novel** relative to catalogued RBPs. Final counts +
-host/phage distribution filled in after the full run.
+**Track B — our RBPs vs PharBP:** full 1,293 run (28.9 min) → `rbp_vs_pharbp_hits.tsv`.
+- **429/1,293 (33.2%)** had ≥1 hit; **864 had none**.
+- Best hits are overwhelmingly distant: only 1 at ≥90%, 6 at ≥70%; most 30–50% identity.
+- **0** hits to a recorded Pseudomonas *host*; **15** RBPs match a Pseudomonas *phage* by
+  name (Y5 ×13, Phabio 55.4%, Y12) — all distant (28–55%).
+- Other hits skew to prophages / *Bacillus* / *Bacteroides* / *Brevibacillus* (environmental).
+→ Conclusion: our soil-metagenome RBPs are **largely novel** vs catalogued RBPs; a small
+handful (~15) are distant relatives of known Pseudomonas-phage RBPs (Y5/Phabio/Y12) worth
+flagging as priority candidates.
 
 ## Outputs (`code/output/0701_pharbp_query/`)
 - `pseudomonas_rbps.csv`, `pseudomonas_rbps_summary.md` — Track A.

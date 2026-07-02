@@ -1,6 +1,6 @@
 # PharBP 查詢 — mini report
 
-**Date:** 2026-07-01 · **Code:** `code/0701_pharbp_query/` · **狀態:** Track A 完成;Track B 全量跑完後更新
+**Date:** 2026-07-01 · **Code:** `code/0701_pharbp_query/` · **狀態:** Track A + Track B 皆完成
 
 教授任務:在 [PharBP](https://pharbp.ugent.be/)(UGent Boeckaerts group,與 PhageRBPdetection
 同一實驗室)確認我們的 bacteria receptor 在不在裡面、有沒有已記錄的 pairs,並用其 API 執行。
@@ -23,14 +23,20 @@ pili / flagella 都沒有),唯一的「pairs」是 RBP↔host,且**多為電腦�
 - 這是此 DB 能提供、最接近「recorded pairs」的東西(phage–host + 結構 + evidence)。
 - 產物:`code/output/0701_pharbp_query/pseudomonas_rbps.csv` + `_summary.md`。
 
-## Track B — 把我們的 RBP 比對 PharBP ⏳(全量跑完更新)
-把 `0701_phagerbp_metagenome` 的 **1,293 個** metagenome RBP 逐條 BLASTP 進 PharBP,
+## Track B — 把我們的 RBP 比對 PharBP ✅
+把 `0701_phagerbp_metagenome` 的 **1,293 個** metagenome RBP 逐條 BLASTP 進 PharBP(28.9 min),
 每個 hit 直接帶 phage + host + identity/evalue/coverage。
 
-**初步(前 30 條驗證):** 只有 **8/30** 有 hit,且都是**低相似度(30–46%)、對到非 Pseudomonas 的
-phage**(Salmonella / Cyanophage / Bacillus prophage)。初步訊號:我們的土壤 metagenome RBP
-**相當新穎**,與資料庫(多為 aeruginosa/臨床)不相似。
-→ 完整 1,293 條的命中率、host/phage 分布、是否有對到 Pseudomonas,待全量跑完填入。
+- **429 / 1,293(33.2%)** 有 ≥1 hit;**864 條完全沒有 hit**。
+- best-hit 相似度**普遍很低**:≥90% 只有 **1** 條、≥70% 共 6 條;大多落在 30–50%。
+- 對到**已記錄 Pseudomonas host** 的:**0 筆**。
+- 對到 **Pseudomonas *phage*(依 phage 名)**:**15 條**我們的 RBP —— Pseudomonas phage
+  **Y5**(13)、**Phabio**(1,55.4% 最高)、**Y12**(1),但全為**遠緣**(28–55% identity)。
+- 其餘 hit 多為 prophage / *Bacillus* / *Bacteroides* / *Brevibacillus* 等環境或腸道宿主。
+
+**結論:我們的土壤 metagenome RBP 絕大多數是新穎序列**(2/3 在 PharBP 找不到同源,有 hit 者也多為遠緣)。
+只有少數(~15 條)與已知 Pseudomonas phage(Y5/Phabio/Y12)遠緣相關,可列為優先關注候選。
+→ 完整結果:`code/output/0701_pharbp_query/rbp_vs_pharbp_hits.tsv`。
 
 ## 對專案的意義
 - PharBP 對我們最實際的用途:**Track A 的 198 個 Pseudomonas RBP 可當 binding screen 的 phage 側輸入**。
