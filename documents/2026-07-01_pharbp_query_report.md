@@ -38,6 +38,26 @@ pili / flagella 都沒有),唯一的「pairs」是 RBP↔host,且**多為電腦�
 只有少數(~15 條)與已知 Pseudomonas phage(Y5/Phabio/Y12)遠緣相關,可列為優先關注候選。
 → 完整結果:`code/output/0701_pharbp_query/rbp_vs_pharbp_hits.tsv`。
 
+## 我們的三個 strain 直接查 PharBP host
+
+問題:測序回來的三個 site isolate(9-6-2 / 9-2-1 / 10-10-2)能在 PharBP 上找到嗎?
+先釐清:依 ANI(`0623` 定論),**這三株其實幾乎相同(~99.4–100% ANI),是同一個 strain**,
+物種 = *Pseudomonas_E* sp013179515(GTDB 未命名種;最接近的已命名基因體 = *Pseudomonas* sp. CM27)。
+
+用 PharBP host autocomplete(`/export/autocomplete/?field=host&term=…`)逐一查:
+
+| 我們的 strain | 物種(GTDB) | PharBP host 查詢 | 結果 |
+|---|---|---|---|
+| **9-6-2** | *Pseudomonas_E* sp013179515 | `9-6-2` / `sp013179515` / `CM27` | **查無** |
+| **9-2-1** | *Pseudomonas_E* sp013179515(與 9-6-2 同株) | 同上 | **查無** |
+| **10-10-2** | *Pseudomonas_E* sp013179515(與 9-6-2 同株) | 同上 | **查無** |
+| (8-10-2) | *Pseudomonas_E* capeferrum | `capeferrum` | **查無** |
+
+**結論:三株(以及它們的種名、最接近的 CM27)在 PharBP 完全查無** —— 合理,因為它們是我們自己的
+新環境分離株,而 PharBP 的 host 是以已發表的具名菌株命名。唯一在 PharBP 有記錄的**近緣**是
+***Pseudomonas putida***(host 變體 KT2440 / NBRC 14164 / S12,共 **8** 個 unique RBP 記錄),
+正是 `0623` 找到的 surrogate host —— 它的 phage 是最實際的測試來源。
+
 ## 對專案的意義
 - PharBP 對我們最實際的用途:**Track A 的 198 個 Pseudomonas RBP 可當 binding screen 的 phage 側輸入**。
 - **receptor↔RBP 配對 PharBP 給不了**;要做那個得靠我們自己的 in-silico fold screen
