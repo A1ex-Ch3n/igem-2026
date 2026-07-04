@@ -1,5 +1,12 @@
 # RBP × receptor fold on Laguna — 完整操作指南
 
+> **⚡ 改用 Boltz-2**:AF2-multimer 實測 ~3.5 min/折 + single_seq 精度差(pLDDT≈28)。
+> 改走 **Boltz-2(MSA-free,~30s/折、堪用)** → 見 [`boltz/GUIDE.md`](boltz/GUIDE.md)。
+> 下面的 ColabFold 版保留作備援。
+
+---
+
+
 Fold **114 candidate RBP families × 63 overlapped receptors = 7,182 ColabFold multimer**
 預測 → 每對 ipTM → 最終 RBP × receptor 矩陣 + 熱圖。程式碼透過 git branch
 `rbp-receptor-fold` 上 Laguna,結果在 Laguna 上 **commit + push** 回來。
