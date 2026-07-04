@@ -75,6 +75,16 @@ Pseudomonas host even at ≥50% — mostly porins; candidates for genuinely dist
 The receptors shared at ≥90% are shared almost exclusively with the **P. putida group**
 (putida / KT2440 / S12 / taiwanensis / plecoglossicida / lactis …), never with aeruginosa.
 
+**Heatmap (host × our strain, colour = # receptors shared ≥90%).** `shared_receptors_heatmap.png`
+makes the point visually: **only the P. putida group is coloured** (NBRC 14164 ~52, KT2440 ~48,
+S12 ~48, taiwanensis ~22, plecoglossicida ~19); every other host is 0. Crucially the row labels
+carry PharBP phage counts, exposing the key asymmetry — the **phage-richest hosts share nothing
+with us**: *P. aeruginosa* PAO1 = **767 phages / 0 shared**, PA14 = 40 / 0, *P. fluorescens* =
+24 / 0. **KT2440 (71 phages, ~48 shared) is the only host that is both phage-rich and
+receptor-similar.** The 4 sp013179515 isolates give near-identical columns; 8-10-2 (capeferrum)
+differs slightly. (Shared-receptors is a host-level quantity, so host × strain is the honest
+axis; an RBP-level heatmap waits for the fold step.)
+
 **Takeaway.** Following the receptor-overlap logic converges hard on **P. putida (especially
 KT2440) as the surrogate host** — it is the only host that is both highly receptor-similar to
 us (~99%) and phage-rich (71 phages). Its phages are the top candidates to test / to fold

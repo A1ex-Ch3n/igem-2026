@@ -32,8 +32,17 @@ that share a genome, e.g. 8 aeruginosa names → PAO1). Use 54 for "PharBP hosts
   receptors, mmseqs'd our 144 receptor reps vs each → **host × our-receptor overlap matrix**.
   Validates 0623: P. putida max 99.4% id (57–68 receptors shared ≥90%, KT2440 = 71 phages);
   aeruginosa far (81.7%, 0 shared ≥90%).
+- ✅ Step 3 viz (`step3_shared_receptor_heatmap.py`): **host × our-strain heatmap**, colour =
+  # receptors shared ≥90%. Only the P. putida group lights up; phage-rich hosts (PAO1 = 767
+  phages) share 0 — KT2440 (71 phages, ~48 shared) is the sweet spot. Row labels carry phage counts.
 - ⏭ Next: join PharBP RBP sequences for the top hosts (P. putida group) → the RBP × receptor
   layer; optional fold/ipTM on the shortlist.
+
+## Step 3 outputs
+- `shared_receptors_heatmap.png` — host (43 genomes) × our 5 isolates, colour = shared receptors ≥90%.
+- `shared_receptors_by_strain.tsv` — the underlying matrix.
+- Note: shared-receptors is a HOST-level quantity, so this is the honest axis now; an RBP-level
+  heatmap (colour = per-RBP fold score) waits for the fold step.
 
 ## Step 2 outputs
 - `host_overlap_matrix.tsv` — 144 our-receptors × 43 host genomes, cell = best % identity.
