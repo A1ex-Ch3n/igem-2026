@@ -1,0 +1,145 @@
+our_rep	category	n_our_isolates	our_isolates	n_hoststrains_ge90	n_hoststrains_ge70	n_hoststrains_ge50	max_identity	best_host	hoststrains_ge90
+NEEDOG_04082	other-OM	1	8-10-2	7	27	27	98.7	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas taiwanensis; Pseudomonas plecoglossicida; Pseudomonas lactis; Pseudomonas grimontii; Pseudomonas gessardii
+BPBBIK_04940	TolC/efflux-OM	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	6	45	45	98.1	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida S12; Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas taiwanensis; Pseudomonas plecoglossicida
+BPBBIK_01078	OmpA	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	6	50	53	97.7	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida S12; Pseudomonas putida KT2440; Pseudomonas plecoglossicida; Pseudomonas taiwanensis
+BPBBIK_04393	porin	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	6	17	41	97.6	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida S12; Pseudomonas taiwanensis; Pseudomonas plecoglossicida
+BPBBIK_04429	TolC/efflux-OM	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	6	35	53	97.5	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida S12; Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas taiwanensis; Pseudomonas plecoglossicida
+BPBBIK_00770	other-OM	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	6	43	45	97.5	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440; Pseudomonas putida S12; Pseudomonas taiwanensis; Pseudomonas plecoglossicida
+BPBBIK_00985	porin	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	6	35	49	97.5	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440; Pseudomonas putida S12; Pseudomonas plecoglossicida; Pseudomonas taiwanensis
+BPBBIK_00251	porin	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	6	6	44	97.4	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida S12; Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas taiwanensis; Pseudomonas plecoglossicida
+BPBBIK_02459	porin	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	6	11	12	97.1	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida S12; Pseudomonas taiwanensis; Pseudomonas plecoglossicida
+BPBBIK_04368	porin	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	6	11	49	96.1	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440; Pseudomonas putida S12; Pseudomonas taiwanensis; Pseudomonas plecoglossicida
+BPBBIK_02609	TolC/efflux-OM	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	6	53	53	95.9	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440; Pseudomonas putida S12; Pseudomonas taiwanensis; Pseudomonas plecoglossicida
+BPBBIK_04430	porin	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	6	49	51	95.6	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida S12; Pseudomonas putida KT2440; Pseudomonas taiwanensis; Pseudomonas plecoglossicida
+BPBBIK_01607	Tsx	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	6	29	44	95.4	Pseudomonas putida S12	Pseudomonas putida S12; Pseudomonas putida KT2440; Pseudomonas taiwanensis; Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas plecoglossicida
+BPBBIK_00881	TBDR	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	6	30	31	95.3	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440; Pseudomonas putida S12; Pseudomonas taiwanensis; Pseudomonas plecoglossicida
+NEEDOG_00167	TolC/efflux-OM	1	8-10-2	6	31	34	95.2	Pseudomonas putida S12	Pseudomonas putida S12; Pseudomonas putida KT2440; Pseudomonas plecoglossicida; Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas taiwanensis
+BPBBIK_02447	TolC/efflux-OM	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	6	34	45	95.1	Pseudomonas putida S12	Pseudomonas putida S12; Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440; Pseudomonas plecoglossicida; Pseudomonas taiwanensis
+NEEDOG_01768	other-OM	1	8-10-2	6	6	30	94.5	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas taiwanensis; Pseudomonas putida S12; Pseudomonas plecoglossicida; Pseudomonas putida KT2440
+NEEDOG_04370	TolC/efflux-OM	1	8-10-2	6	6	24	94.2	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida S12; Pseudomonas putida KT2440; Pseudomonas taiwanensis; Pseudomonas plecoglossicida
+BPBBIK_01606	Tsx	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	5	34	44	98.4	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida S12; Pseudomonas putida KT2440; Pseudomonas taiwanensis
+BPBBIK_04306	OmpA	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	5	13	20	98.2	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida S12; Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas plecoglossicida
+BPBBIK_04248	porin	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	5	38	51	97.3	Pseudomonas putida S12	Pseudomonas putida S12; Pseudomonas putida KT2440; Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas taiwanensis
+OHPLIO_04516	TBDR	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	5	20	27	96.4	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida S12; Pseudomonas putida KT2440; Pseudomonas taiwanensis
+PEMOGA_00875	TBDR	3	10-10-2,8-5-2,8-10-2	5	6	33	96.3	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida S12; Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas plecoglossicida
+BPBBIK_00790	porin	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	5	6	34	95.9	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida S12; Pseudomonas plecoglossicida
+BPBBIK_00531	Omp-porin	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	5	20	53	95.5	Pseudomonas putida S12	Pseudomonas putida S12; Pseudomonas putida KT2440; Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas plecoglossicida
+BPBBIK_02792	porin	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	5	8	11	95.4	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida S12; Pseudomonas putida KT2440; Pseudomonas taiwanensis
+BPBBIK_03755	TBDR	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	5	7	22	94.6	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida S12; Pseudomonas taiwanensis
+BPBBIK_02727	porin	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	5	7	25	94.6	Pseudomonas putida S12	Pseudomonas putida S12; Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440; Pseudomonas taiwanensis
+BPBBIK_03400	porin	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	5	9	37	94.6	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440; Pseudomonas putida S12; Pseudomonas taiwanensis
+BPBBIK_01688	OmpA	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	5	34	45	94.4	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida S12; Pseudomonas plecoglossicida
+BPBBIK_03851	porin	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	4	23	53	99.4	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440; Pseudomonas putida S12
+BPBBIK_03520	porin	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	4	18	18	97.9	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440; Pseudomonas putida S12
+BPBBIK_04852	TBDR	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	4	37	38	96.6	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440; Pseudomonas putida S12
+BPBBIK_00801	TolC/efflux-OM	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	4	6	7	96.4	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440; Pseudomonas putida S12
+BPBBIK_04237	other-OM	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	4	6	27	96.0	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440; Pseudomonas putida S12
+BPBBIK_01442	TolC/efflux-OM	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	4	9	20	95.7	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida S12; Pseudomonas putida; Pseudomonas putida NBRC 14164
+BPBBIK_00255	TBDR	4	9-6-2,9-2-1,10-10-2,8-5-2	4	5	5	95.6	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440; Pseudomonas putida S12
+BPBBIK_01749	TBDR	4	9-6-2,9-2-1,10-10-2,8-5-2	4	8	22	95.5	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida S12; Pseudomonas putida KT2440
+BPBBIK_00419	LptD	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	4	34	45	95.4	Pseudomonas putida S12	Pseudomonas putida S12; Pseudomonas putida KT2440; Pseudomonas putida; Pseudomonas putida NBRC 14164
+BPBBIK_00893	porin	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	4	7	35	94.5	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida S12; Pseudomonas putida; Pseudomonas putida NBRC 14164
+BPBBIK_03702	TBDR	4	9-6-2,9-2-1,10-10-2,8-5-2	4	6	30	94.4	Pseudomonas putida S12	Pseudomonas putida S12; Pseudomonas putida KT2440; Pseudomonas putida; Pseudomonas putida NBRC 14164
+PICBEH_04164	TBDR	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	4	4	28	94.3	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440; Pseudomonas putida S12
+BPBBIK_00250	TBDR	4	9-6-2,9-2-1,10-10-2,8-5-2	4	13	14	94.2	Pseudomonas putida S12	Pseudomonas putida S12; Pseudomonas putida KT2440; Pseudomonas putida; Pseudomonas putida NBRC 14164
+BPBBIK_02454	TBDR	4	9-6-2,9-2-1,10-10-2,8-5-2	4	24	28	94.1	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440; Pseudomonas putida S12
+BPBBIK_00129	TBDR	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	4	10	28	93.6	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida S12
+NEEDOG_01018	other-OM	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	4	12	38	93.2	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida S12; Pseudomonas putida; Pseudomonas putida NBRC 14164
+PEMOGA_04665	OmpA	2	10-10-2,8-5-2	4	8	44	93.2	Pseudomonas putida S12	Pseudomonas putida S12; Pseudomonas putida KT2440; Pseudomonas putida; Pseudomonas putida NBRC 14164
+NEEDOG_04085	OmpA	1	8-10-2	4	6	40	92.6	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida S12; Pseudomonas putida; Pseudomonas putida NBRC 14164
+NEEDOG_04549	TBDR	1	8-10-2	4	4	5	91.7	Pseudomonas putida S12	Pseudomonas putida S12; Pseudomonas putida KT2440; Pseudomonas putida; Pseudomonas putida NBRC 14164
+BPBBIK_04592	TBDR	4	9-6-2,9-2-1,10-10-2,8-5-2	4	5	37	91.5	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440; Pseudomonas putida S12
+NEEDOG_03760	flagellin	1	8-10-2	3	5	21	98.1	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida S12
+BPBBIK_01416	porin	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	3	6	16	98.0	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida S12; Pseudomonas taiwanensis
+BPBBIK_01263	FadL	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	3	20	45	96.1	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida KT2440
+PICBEH_04900	TBDR	2	9-6-2,9-2-1	3	4	5	94.4	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164; Pseudomonas putida S12
+BPBBIK_04215	porin	4	9-6-2,9-2-1,10-10-2,8-5-2	3	7	21	94.1	Pseudomonas putida S12	Pseudomonas putida S12; Pseudomonas putida; Pseudomonas putida NBRC 14164
+PICBEH_02767	TolC/efflux-OM	2	9-6-2,9-2-1	3	3	3	93.8	Pseudomonas plecoglossicida	Pseudomonas plecoglossicida; Pseudomonas putida; Pseudomonas putida NBRC 14164
+BPBBIK_03877	porin	4	9-6-2,9-2-1,10-10-2,8-5-2	3	10	15	90.1	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida; Pseudomonas putida NBRC 14164
+NEEDOG_02346	other-OM	1	8-10-2	3	6	7	90.1	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida; Pseudomonas putida NBRC 14164
+NEEDOG_00236	porin	1	8-10-2	2	6	30	96.8	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164
+NEEDOG_02122	TBDR	1	8-10-2	2	4	4	95.7	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164
+BPBBIK_04170	TBDR	4	9-6-2,9-2-1,10-10-2,8-5-2	2	2	4	95.4	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164
+NEEDOG_02121	TBDR	1	8-10-2	2	4	4	95.3	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164
+BPBBIK_02221	TBDR	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	2	3	24	94.6	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164
+NEEDOG_03343	other-OM	1	8-10-2	2	8	8	94.3	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164
+NEEDOG_03569	TBDR	1	8-10-2	2	19	26	94.1	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164
+BPBBIK_03546	porin	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	2	4	5	93.9	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164
+BPBBIK_00346	TBDR	3	10-10-2,8-5-2,8-10-2	2	17	37	93.8	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida S12
+NEEDOG_02224	FadL	1	8-10-2	2	3	3	93.5	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164
+BPBBIK_05275	porin	4	9-6-2,9-2-1,10-10-2,8-5-2	2	3	19	92.6	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida S12
+BPBBIK_01716	TBDR	4	9-6-2,9-2-1,10-10-2,8-5-2	2	19	26	92.4	Pseudomonas putida KT2440	Pseudomonas putida KT2440; Pseudomonas putida S12
+BPBBIK_01675	TolC/efflux-OM	4	9-6-2,9-2-1,10-10-2,8-5-2	2	5	41	90.4	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164
+BPBBIK_03607	usher	4	9-6-2,9-2-1,10-10-2,8-5-2	2	6	22	90.4	Pseudomonas putida	Pseudomonas putida; Pseudomonas putida NBRC 14164
+PEMOGA_02112	porin	2	10-10-2,8-5-2	1	2	22	95.0	Pseudomonas putida S12	Pseudomonas putida S12
+PEMOGA_02104	TolC/efflux-OM	2	10-10-2,8-5-2	1	1	53	94.6	Pseudomonas putida S12	Pseudomonas putida S12
+BPBBIK_03556	TolC/efflux-OM	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	1	1	1	94.1	Pseudomonas putida KT2440	Pseudomonas putida KT2440
+BPBBIK_00552	TBDR	4	9-6-2,9-2-1,10-10-2,8-5-2	1	5	19	91.8	Pseudomonas putida S12	Pseudomonas putida S12
+BPBBIK_02808	TBDR	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	0	26	29	89.2	Pseudomonas asplenii	
+BPBBIK_03540	TBDR	4	9-6-2,9-2-1,10-10-2,8-5-2	0	7	38	89.2	Pseudomonas putida	
+NEEDOG_03405	usher	1	8-10-2	0	6	22	89.0	Pseudomonas putida	
+BPBBIK_02647	porin	4	9-6-2,9-2-1,10-10-2,8-5-2	0	1	2	88.7	Pseudomonas putida KT2440	
+NEEDOG_03533	TBDR	1	8-10-2	0	8	22	88.7	Pseudomonas plecoglossicida	
+NEEDOG_03360	TolC/efflux-OM	1	8-10-2	0	4	44	88.5	Pseudomonas putida	
+NEEDOG_03230	porin	1	8-10-2	0	23	50	88.4	Pseudomonas putida	
+BPBBIK_02259	other-OM	4	9-6-2,9-2-1,10-10-2,8-5-2	0	6	7	88.3	Pseudomonas putida KT2440	
+NEEDOG_04456	OmpA	1	8-10-2	0	10	43	88.3	Pseudomonas taiwanensis	
+BPBBIK_00717	TolC/efflux-OM	4	9-6-2,9-2-1,10-10-2,8-5-2	0	6	6	88.0	Pseudomonas putida KT2440	
+NEEDOG_00760	TolC/efflux-OM	1	8-10-2	0	6	6	88.0	Pseudomonas putida KT2440	
+NEEDOG_00704	TBDR	1	8-10-2	0	2	11	87.9	Pseudomonas chlororaphis	
+NEEDOG_00274	TBDR	1	8-10-2	0	13	14	87.7	Pseudomonas putida	
+NEEDOG_05056	porin	1	8-10-2	0	3	19	87.6	Pseudomonas putida KT2440	
+BPBBIK_00659	pilin	4	9-6-2,9-2-1,10-10-2,8-5-2	0	6	38	87.5	Pseudomonas putida	
+BPBBIK_00217	porin	4	9-6-2,9-2-1,10-10-2,8-5-2	0	6	29	87.0	Pseudomonas putida S12	
+PICBEH_02758	FadL	2	9-6-2,9-2-1	0	3	3	86.4	Pseudomonas plecoglossicida	
+OHPLIO_03992	TolC/efflux-OM	4	9-6-2,9-2-1,10-10-2,8-5-2	0	4	5	86.2	Pseudomonas putida	
+PEMOGA_02683	TBDR	2	10-10-2,8-5-2	0	3	26	86.0	Pseudomonas taiwanensis	
+NEEDOG_03608	TolC/efflux-OM	1	8-10-2	0	5	41	84.0	Pseudomonas putida	
+PICBEH_03254	TBDR	2	9-6-2,9-2-1	0	14	15	81.8	Pseudomonas putida	
+NEEDOG_00418	porin	1	8-10-2	0	2	12	81.6	Pseudomonas sp. D3	
+NEEDOG_03549	TBDR	1	8-10-2	0	3	8	80.5	Pseudomonas chlororaphis	
+PICBEH_01439	flagellin	4	9-6-2,9-2-1,10-10-2,8-5-2	0	5	20	79.8	Pseudomonas putida S12	
+BPBBIK_04072	other-OM	4	9-6-2,9-2-1,10-10-2,8-5-2	0	1	5	79.3	Pseudomonas putida KT2440	
+NEEDOG_01428	other-OM	1	8-10-2	0	1	7	78.6	Pseudomonas putida KT2440	
+BPBBIK_03996	usher	4	9-6-2,9-2-1,10-10-2,8-5-2	0	1	17	78.5	Pseudomonas putida KT2440	
+NEEDOG_02632	other-OM	1	8-10-2	0	16	17	78.4	Pseudomonas gessardii	
+NEEDOG_02084	TolC/efflux-OM	1	8-10-2	0	4	5	75.7	Pseudomonas putida	
+PICBEH_02070	porin	2	9-6-2,9-2-1	0	2	5	75.3	Pseudomonas chlororaphis	
+NEEDOG_03560	TBDR	1	8-10-2	0	1	4	75.3	Pseudomonas cichorii	
+BPBBIK_03005	porin	4	9-6-2,9-2-1,10-10-2,8-5-2	0	2	22	74.3	Pseudomonas putida S12	
+NEEDOG_03909	TBDR	1	8-10-2	0	2	3	74.2	Pseudomonas putida	
+NEEDOG_02677	porin	1	8-10-2	0	2	10	73.8	Pseudomonas psychrophila	
+NEEDOG_04119	OmpA	1	8-10-2	0	2	4	73.7	Pseudomonas sp. D3	
+BPBBIK_03539	other-OM	4	9-6-2,9-2-1,10-10-2,8-5-2	0	3	8	73.3	Pseudomonas putida	
+NEEDOG_03029	TBDR	1	8-10-2	0	2	20	72.2	Pseudomonas putida S12	
+BPBBIK_04333	OmpA	4	9-6-2,9-2-1,10-10-2,8-5-2	0	2	4	71.7	Pseudomonas sp. D3	
+NEEDOG_02846	TolC/efflux-OM	1	8-10-2	0	3	53	70.2	Pseudomonas protegens Pf-5	
+BPBBIK_02916	other-OM	4	9-6-2,9-2-1,10-10-2,8-5-2	0	0	2	69.8	Pseudomonas putida KT2440	
+PICBEH_00842	TBDR	2	9-6-2,9-2-1	0	0	33	69.5	Pseudomonas aeruginosa PAK	
+NEEDOG_02189	TBDR	1	8-10-2	0	0	38	69.5	Pseudomonas cuatrocienegasensis	
+BPBBIK_04109	TBDR	4	9-6-2,9-2-1,10-10-2,8-5-2	0	0	2	67.6	Pseudomonas putida	
+PEMOGA_02139	porin	2	10-10-2,8-5-2	0	0	49	66.9	Pseudomonas putida KT2440	
+BPBBIK_04006	other-OM	4	9-6-2,9-2-1,10-10-2,8-5-2	0	0	7	65.3	Pseudomonas putida KT2440	
+NEEDOG_02261	porin	1	8-10-2	0	0	23	64.3	Pseudomonas aeruginosa	
+PICBEH_02743	porin	2	9-6-2,9-2-1	0	0	13	60.5	Pseudomonas sp. D3	
+PICBEH_02650	porin	2	9-6-2,9-2-1	0	0	6	56.9	Pseudomonas putida S12	
+BPBBIK_01289	TolC/efflux-OM	5	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	0	0	1	56.2	Pseudomonas lactis	
+NEEDOG_02555	porin	1	8-10-2	0	0	4	55.6	Pseudomonas putida S12	
+NEEDOG_02551	porin	1	8-10-2	0	0	28	54.4	Pseudomonas aeruginosa	
+PEMOGA_03125	porin	2	10-10-2,8-5-2	0	0	4	53.8	Pseudomonas putida S12	
+PEMOGA_02078	TolC/efflux-OM	2	10-10-2,8-5-2	0	0	16	51.8	Pseudomonas gessardii	
+BPBBIK_03504	OmpA	4	9-6-2,9-2-1,10-10-2,8-5-2	0	0	7	50.9	Pseudomonas aeruginosa UCBPP-PA14	
+NEEDOG_00192	porin	1	8-10-2	0	0	9	50.7	Pseudomonas syringae pv. porri	
+PICBEH_01843	porin	2	9-6-2,9-2-1	0	0	0	48.7	Pseudomonas sp. ANT_H14	
+BPBBIK_01800	porin	4	9-6-2,9-2-1,10-10-2,8-5-2	0	0	0	48.5	Pseudomonas alcaligenes	
+NEEDOG_02545	porin	1	8-10-2	0	0	0	48.2	Pseudomonas sp. ANT_H14	
+NEEDOG_02240	porin	1	8-10-2	0	0	0	45.9	Pseudomonas gessardii	
+PICBEH_01884	porin	2	9-6-2,9-2-1	0	0	0	44.5	Pseudomonas aeruginosa ATCC 15442	
+BPBBIK_01104	usher	4	9-6-2,9-2-1,10-10-2,8-5-2	0	0	0	41.2	Pseudomonas sp. G11	
+PEMOGA_02171	other-OM	4	9-6-2,9-2-1,10-10-2,8-5-2	0	0	0	35.7	Pseudomonas tolaasii	
+PICBEH_04212	other-OM	2	9-6-2,9-2-1	0	0	0	0.0		
+PICBEH_01917	porin	2	9-6-2,9-2-1	0	0	0	0.0		
+NEEDOG_02421	other-OM	1	8-10-2	0	0	0	0.0		
+NEEDOG_03919	other-OM	1	8-10-2	0	0	0	0.0		
+NEEDOG_00053	pilin	1	8-10-2	0	0	0	0.0		
+NEEDOG_02887	porin	1	8-10-2	0	0	0	0.0		
