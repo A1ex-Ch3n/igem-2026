@@ -22,9 +22,11 @@ export LD_LIBRARY_PATH="$CF/lib:${LD_LIBRARY_PATH:-}"   # conda libstdc++ (GLIBC
 cd "$BASE"
 mkdir -p logs results
 
-# MSA: default uses the remote MMseqs2 API (needs compute-node egress; slower). If the smoke
-# test shows that's blocked or too slow for 7k folds, add:  --msa-mode single_sequence
-MSA_FLAGS=""
+# single_sequence = no MSA -> pure GPU on the l40s, offline, no remote-MMseqs2 queue.
+# The default MSA server is rate-limited (~few thousand/day, "submit from a single IP") and
+# idles the GPU while waiting, so it's impractical for 7,182 folds. Use single_sequence for
+# the screen; re-fold the top-ipTM hits with full MSA (MSA_FLAGS="") afterwards for confidence.
+MSA_FLAGS="--msa-mode single_sequence"
 
 CHUNK=$(printf "chunks/chunk_%03d.csv" "$SLURM_ARRAY_TASK_ID")
 OUT=$(printf "results/chunk_%03d" "$SLURM_ARRAY_TASK_ID")

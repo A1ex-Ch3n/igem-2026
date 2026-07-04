@@ -11,8 +11,10 @@ export PATH="$CF/bin:$PATH"
 export LD_LIBRARY_PATH="$CF/lib:${LD_LIBRARY_PATH:-}"
 cd "$BASE"; mkdir -p results logs
 
-echo ">> folding smoke.csv (6 pairs, 1 model, 3 recycles) — timing per-pair budget..."
-time colabfold_batch --num-models 1 --num-recycle 3 smoke.csv results/smoke
+# single_sequence = no MSA -> pure GPU, offline, no remote-MMseqs2 queue (the default MSA
+# server is rate-limited to ~a few thousand/day and idles the GPU while it waits). Required
+# for a 7k-fold screen. Drop this flag only to re-fold a few TOP hits with full MSA later.
+echo ">> folding smoke.csv (6 pairs, 1 model, 3 recycles, single_sequence) — timing..."
+time colabfold_batch --num-models 1 --num-recycle 3 --msa-mode single_sequence smoke.csv results/smoke
 echo ">> rank_001 score files:"; ls results/smoke/*_scores_rank_001_*.json
-echo ">> divide the wall-time above by 6 = per-fold cost; × 7182 = full-run GPU-hours."
-echo ">> if MSA (remote MMseqs2) is slow/blocked, add --msa-mode single_sequence in rbp_receptor.sbatch."
+echo ">> wall-time ÷ 6 = per-fold cost; × 7182 = full-run GPU-hours."

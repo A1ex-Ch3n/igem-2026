@@ -84,8 +84,10 @@ cd /project/jespinoza_1541/$USER/rbp_receptor_fold
 bash run_smoke.sh
 ```
 記 `time` 的 wall-time ÷ 6 = 每對成本;× 7,182 = 全跑 GPU-hr,對照共用 10k-hour 額度。
-> **MSA**:預設走遠端 MMseqs2(需 compute node egress、較慢)。若 smoke 顯示太慢或被擋,
-> 編輯 `rbp_receptor.sbatch` 把 `MSA_FLAGS=""` 改成 `MSA_FLAGS="--msa-mode single_sequence"`(快、離線)。
+> **MSA(重要)**:`run_smoke.sh` 和 `rbp_receptor.sbatch` 已預設 **`--msa-mode single_sequence`**
+> ——純 GPU、離線、不碰遠端 MMseqs2 伺服器(那台 rate-limited、一天只幾千個、還會讓 GPU 空等)。
+> 7,182 folds 只能這樣跑。**代價**:沒有 MSA、精度較低,所以把 ipTM 當**粗排序**;跑完後可對
+> **top hits** 拿掉這個 flag(`MSA_FLAGS=""`)用完整 MSA 重折幾個、拿較可信的分數。
 
 ## Step F — 切塊 + 送出 array
 ```bash
