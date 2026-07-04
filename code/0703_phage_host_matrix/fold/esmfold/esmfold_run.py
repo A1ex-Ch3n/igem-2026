@@ -42,7 +42,8 @@ def main():
     ap.add_argument("out")
     ap.add_argument("--linker", type=int, default=25, help="glycine linker length between chains")
     ap.add_argument("--chunk-size", type=int, default=64, help="ESMFold trunk chunk size (lower = less VRAM)")
-    ap.add_argument("--max-len", type=int, default=2000, help="skip pairs whose total length exceeds this")
+    ap.add_argument("--max-len", type=int, default=1600, help="skip pairs whose total length exceeds this "
+                    "(1600 drops the most expensive/least-reliable ~11.5%% as SKIP_TOOLONG, re-foldable later)")
     a = ap.parse_args()
 
     import torch

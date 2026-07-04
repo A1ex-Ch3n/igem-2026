@@ -19,4 +19,5 @@ for i in range(nch):
         w.writerow(header)
         w.writerows(data[i * n:(i + 1) * n])
 print(f"{len(data)} pairs -> {nch} chunks of {n}")
-print(f"sbatch --array=0-{nch - 1}%8 esmfold.sbatch")
+# %16 if the allocation allows (~11h) — %8 is borderline (~22h). See folding_tool_recommendation.md
+print(f"sbatch --array=0-{nch - 1}%16 esmfold.sbatch   # (drop to %8 if you can't hold 16 concurrent L40S)")

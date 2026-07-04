@@ -50,12 +50,15 @@ bash run_smoke_esm.sh                # 折 6 對 + 首次下載 ~2.5GB 權重
 
 ## Step 6 — 切塊 + 送 array
 ```bash
-python3 split_esm.py 60               # 7,182 -> 120 塊;印出 --array=0-119%8
-sbatch --array=0-119%8 esmfold.sbatch
+python3 split_esm.py 60               # 7,182 -> 120 塊;印出 --array=0-119%16
+sbatch --array=0-119%16 esmfold.sbatch   # %16≈11h;若拿不到 16 張 L40S 就 %8(≈22h,吃邊界)
 squeue -u $USER
 ```
 `esmfold_run.py` 每對即時寫檔且**可續跑**(重跑會跳過已完成的對);array 掛了重送即可。
-> 太長(>2000 aa)的對會標 `SKIP_TOOLONG`(~179 對,2.5%),OOM 的標 `OOM` —— 都有記錄,不是靜默丟掉。
+> **併發數是決定 24h 的關鍵**(不是工具):`%16`≈11h 安全,`%8`≈22h 吃邊界。見
+> `documents/2026-07-04_folding_tool_recommendation.md`。
+> 預設 `--max-len 1600` → 砍掉最貴/最不可靠的 ~11.5%(824 對)標 `SKIP_TOOLONG`,OOM 標 `OOM` ——
+> 都有記錄、之後可補折,不是靜默丟掉。
 
 ## Step 7 — 收集 + 熱圖
 ```bash
@@ -75,6 +78,14 @@ git commit -m "results(0703): RBP × receptor ESMFold pseudo-ipTM matrix + heatm
 Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>"
 git push origin rbp-receptor-fold
 ```
+
+## ⚠️ 跑全矩陣前必做兩件事(見 recommendation 文件 §6–§7)
+1. **對照組(MANDATORY)**:先拿 2–4 對「已知會結合」的 phage RBP–receptor(文獻)+ 同 RBP 配錯 receptor
+   /打亂序列當負對照,走**同一支 `esmfold_run.py`**。若 pseudo-ipTM 分不開正/負對 → 整張矩陣≈雜訊,
+   要改用 Chai-1/MEGADOCK 對 shortlist 重驗,別直接出圖。~10 折,最划算的一步。
+2. **大 RBP 域截斷**:4–6 個 >1000 aa 的 RBP(最長 1922)在 `--max-len 1600` 下**整列被 skip**。
+   tailspike/tail-fiber 的**結合域在 C 端** → 在 `make_esm_pairs.py` 對這幾條改用 **C 端 ~700–900 aa**,
+   並標 `truncated` 為低信心。其餘 108 條不動。
 
 ## 分數與限制
 - **`iptm`** = 跨鏈 PAE 導出的 interface-pTM 代理(0–1,越高=界面相對位置越有把握)。**不是** AF 的 ipTM,
