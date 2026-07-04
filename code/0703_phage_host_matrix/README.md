@@ -46,10 +46,10 @@ that share a genome, e.g. 8 aeruginosa names → PAO1). Use 54 for "PharBP hosts
 - `candidate_rbps_table.tsv` — 347 candidate RBPs: phage, host, TF/TSP, length, seq-rep flag,
   per-strain shared-receptor counts.
 - `candidate_rbps.faa` / `candidate_rbps_meta.tsv` — sequences (for folding) + metadata.
-- RBP × strain heatmaps (4): `rbp_by_strain_heatmap.png` (our isolates, summary) +
-  `rbp_by_strain_detailed.png` (our isolates, per-RBP); `rbp_by_pharbp_host_heatmap.png`
-  (PharBP host, summary) + `rbp_by_pharbp_host_detailed.png` (PharBP host, per-RBP — each RBP
-  lit in its own host column, colour = that host's receptors shared with us).
+- RBP × our-strain heatmaps: `rbp_by_strain_heatmap.png` (summary, host-grouped) +
+  `rbp_by_strain_detailed.png` (one row per RBP), colour = receptors that isolate shares with
+  the RBP's host. (Host-level colour — a candidate-RBP sanity view; RBP × specific receptor
+  needs folding.)
 
 ## Step 3 outputs
 - `shared_receptors_heatmap.png` — host (43 genomes) × our 5 isolates, colour = shared receptors ≥90%.
