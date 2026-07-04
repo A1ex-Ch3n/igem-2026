@@ -34,12 +34,24 @@ github.com → Settings → Developer settings → **Personal access tokens → 
 - Permissions → **Contents: Read and write**(等下 clone 和 push 結果都用)
 - 複製 token。
 
-## Step B — sparse clone 這個 branch(只抓 fold 相關資料夾)
+## Step B — 取得程式碼(sparse,只抓 fold 資料夾)
+
+**情況 1 — 還沒 clone 過 `igem-2026`:**
 ```bash
 cd /project/jespinoza_1541/$USER
 git clone --filter=blob:none --no-checkout --branch rbp-receptor-fold \
   https://github.com/A1ex-Ch3n/igem-2026.git igem-2026
 cd igem-2026
+```
+
+**情況 2 — 之前的 task 已經 clone 過 `igem-2026`(沿用它,要先 fetch 這個新 branch):**
+```bash
+cd /project/jespinoza_1541/$USER/igem-2026
+git fetch origin rbp-receptor-fold        # ← 沒這行 checkout 會說 "pathspec did not match"
+```
+
+**兩種情況都接著跑:**
+```bash
 git sparse-checkout set code/0703_phage_host_matrix/fold code/output/0703_phage_host_matrix/fold
 git checkout rbp-receptor-fold
 ```
