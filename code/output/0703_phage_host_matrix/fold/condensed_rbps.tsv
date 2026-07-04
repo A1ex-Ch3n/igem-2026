@@ -1,0 +1,115 @@
+rbp_id	rbp_type	n_members	length	hosts	example_phages
+RBP0001	TF	25	682	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-BotAed; Pseudomonas phage vB_PpuP-ErraM; Pseudomonas p
+RBP0002	TSP	20	806	Pseudomonas putida KT2440; Pseudomonas putida NBRC 14164	Pseudomonas phage Pf-10; Pseudomonas phage vB_PpuP-AnF1; Pseudomonas phage vB_Pp
+RBP0003	TF,TF+TSP	8	595	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-AnF1; Pseudomonas phage vB_PpuP-Eino; Pseudomonas phag
+RBP0004	TF	8	1346	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuM-Amme-1; Pseudomonas phage vB_PpuM-Aura; Pseudomonas ph
+RBP0005	TSP	7	808	Pseudomonas putida KT2440; Pseudomonas putida NBRC 14164	Pseudomonas phage PCW2; Pseudomonas phage gh-1; Pseudomonas phage vB_PpuP-Emajog
+RBP0006	TF	9	141	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuM-Amme-3; Pseudomonas phage vB_PpuM-Kassivere; Pseudomon
+RBP0007	TF	9	589	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Haage; Pseudomonas phage vB_PpuP-Hammaste-5; Pseudomon
+RBP0008	TF	9	589	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuM-Amme-3; Pseudomonas phage vB_PpuM-Kassivere; Pseudomon
+RBP0009	TF	8	186	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuM-Amme-1; Pseudomonas phage vB_PpuM-Aura; Pseudomonas ph
+RBP0010	TF	5	948	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuM-Illi-2; Pseudomonas phage vB_PpuM-KoPa-5; Pseudomonas 
+RBP0011	TF	9	494	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuM-Amme-3; Pseudomonas phage vB_PpuM-Kassivere; Pseudomon
+RBP0012	TSP	4	806	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Kurepalu-2; Pseudomonas phage vB_PpuP-Mudajogi; Pseudo
+RBP0013	TF	5	887	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuM-Amme-3; Pseudomonas phage vB_PpuM-Kassivere; Pseudomon
+RBP0014	TF	4	222	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuM-Amme-3; Pseudomonas phage vB_PpuM-KoPa-4; Pseudomonas 
+RBP0015	TF	2	119	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Kurepalu-2; Pseudomonas phage vB_PpuP-Pori-3
+RBP0016	TF	3	119	Pseudomonas putida KT2440; Pseudomonas putida NBRC 14164	Pseudomonas phage gh-1; Pseudomonas phage vB_PpuP-Luke-2
+RBP0017	TF+TSP	2	633	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-IPa-2; Pseudomonas phage vB_PpuP-Luke-3
+RBP0018	TF	4	871	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuM-KoPa-4; Pseudomonas phage vB_PpuM-Roomu-2
+RBP0019	TF,TSP	2	226	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuM-Aura; Pseudomonas phage vB_PpuM-Illi-2
+RBP0020	TSP	3	544	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuM-Amme-1; Pseudomonas phage vB_PpuM-KoPa-5; Pseudomonas 
+RBP0021	TF+TSP	5	618	Pseudomonas putida NBRC 14164	Pseudomonas phage gh-1
+RBP0022	TF	2	561	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuM-KoPa-5; Pseudomonas phage vB_PpuM-Voja-6
+RBP0023	TF	2	300	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuM-Amme-3; Pseudomonas phage vB_PpuM-NoPa
+RBP0024	TF+TSP	2	612	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Kurepalu-2; Pseudomonas phage vB_PpuP-Pori-3
+RBP0025	TF	2	118	Pseudomonas putida KT2440; Pseudomonas putida NBRC 14164	Pseudomonas phage PCW2; Pseudomonas phage vB_PpuP-Emajogi
+RBP0026	TF	1	1345	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuM-Peetri
+RBP0027	TF	3	217	Pseudomonas putida NBRC 14164	Pseudomonas phage tf
+RBP0028	TF	25	199	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-BotAed; Pseudomonas phage vB_PpuP-ErraM; Pseudomonas p
+RBP0029	TF+TSP	3	727	Pseudomonas putida NBRC 14164	Pseudomonas phage phi15
+RBP0030	TF+TSP	2	675	Pseudomonas putida NBRC 14164	Pseudomonas phage Lu11
+RBP0031	TSP	3	793	Pseudomonas putida NBRC 14164	Pseudomonas phage phi15
+RBP0032	TF+TSP	1	206	Pseudomonas putida KT2440	Escherichia phage JNP1
+RBP0033	TSP	2	463	Pseudomonas putida NBRC 14164	Pseudomonas phage Lu11
+RBP0034	TSP	2	843	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-IPa-2; Pseudomonas phage vB_PpuP-Luke-3
+RBP0035	TF	2	268	Pseudomonas putida NBRC 14164	Pseudomonas phage Lu11
+RBP0036	TSP	3	883	Pseudomonas putida NBRC 14164	Pseudomonas phage tf
+RBP0037	TF+TSP	1	802	Pseudomonas putida NBRC 14164	Pseudomonas phage PCS5
+RBP0038	TF	2	340	Pseudomonas putida NBRC 14164	Pseudomonas phage Lu11
+RBP0039	TF+TSP	3	724	Pseudomonas putida NBRC 14164	Pseudomonas phage YMC11/06/C171_PPU_BP
+RBP0040	TF+TSP	1	842	Pseudomonas putida NBRC 14164	Pseudomonas phage Bosely
+RBP0041	TF+TSP	3	639	Pseudomonas putida NBRC 14164	Pseudomonas phage pf16
+RBP0042	TF+TSP	3	626	Pseudomonas putida NBRC 14164	Pseudomonas phage YMC11/06/C171_PPU_BP
+RBP0043	TF	2	340	Pseudomonas putida NBRC 14164	Pseudomonas phage AF
+RBP0044	TF+TSP	3	659	Pseudomonas putida NBRC 14164	Pseudomonas phage pf16
+RBP0045	TSP	1	800	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Kallioja
+RBP0046	TF	9	281	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuM-Amme-3; Pseudomonas phage vB_PpuM-Kassivere; Pseudomon
+RBP0047	TF	2	143	Pseudomonas putida NBRC 14164	Pseudomonas phage pf16
+RBP0048	TF	2	208	Pseudomonas putida NBRC 14164	Pseudomonas phage Lu11
+RBP0049	TF+TSP	3	591	Pseudomonas putida NBRC 14164	Pseudomonas phage pf16
+RBP0050	TSP	2	358	Pseudomonas putida NBRC 14164	Pseudomonas phage Lu11
+RBP0051	TF	1	101	Pseudomonas putida NBRC 14164	Pseudomonas phage phiPMW
+RBP0052	TF	1	86	Pseudomonas putida NBRC 14164	Pseudomonas phage PCW2
+RBP0053	TSP	1	852	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Kurepalu-1
+RBP0054	TSP	2	783	Pseudomonas putida NBRC 14164	Pseudomonas phage AF
+RBP0055	TF	3	229	Pseudomonas putida S12	Pseudomonas phage MiCath
+RBP0056	TF+TSP	2	631	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Mudajogi
+RBP0057	TSP	3	777	Pseudomonas putida NBRC 14164	Pseudomonas phage YMC11/06/C171_PPU_BP
+RBP0058	TSP	3	519	Pseudomonas putida NBRC 14164	Pseudomonas phage tf
+RBP0059	TF	1	669	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Kompost-2
+RBP0060	TF+TSP	1	609	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Emajogi
+RBP0061	TF	2	228	Pseudomonas putida NBRC 14164	Pseudomonas phage Lu11
+RBP0062	TF+TSP	3	660	Pseudomonas putida NBRC 14164	Pseudomonas phage pf16
+RBP0063	TF+TSP	1	626	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Luke-2
+RBP0064	TF	2	173	Pseudomonas putida NBRC 14164	Pseudomonas phage Lu11
+RBP0065	TF	3	520	Pseudomonas putida NBRC 14164	Pseudomonas phage phiPMW
+RBP0066	TF	1	184	Pseudomonas plecoglossicida	Pseudomonas phage PPpW-3
+RBP0067	TF+TSP	2	741	Pseudomonas putida NBRC 14164	Pseudomonas phage AF
+RBP0068	TF	2	502	Pseudomonas gessardii	Pseudomonas phage vB_PseuGesM_254
+RBP0069	TF	2	98	Pseudomonas putida NBRC 14164	Pseudomonas phage AF
+RBP0070	TF	1	815	Pseudomonas taiwanensis DSM 21245	Pseudomonas phage Lebethron
+RBP0071	TF	2	121	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-IPa-2; Pseudomonas phage vB_PpuP-Luke-3
+RBP0072	TSP	1	852	Pseudomonas putida KT2440	Psuedomonas phage SVOphi44
+RBP0073	TF	3	170	Pseudomonas plecoglossicida	Pseudomonas phage PPpW-3
+RBP0074	TF+TSP	3	814	Pseudomonas plecoglossicida	Pseudomonas phage PPpW-4
+RBP0075	TF	1	185	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuM-Peetri
+RBP0076	TSP	1	805	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Vasula
+RBP0077	TF	1	437	Pseudomonas putida NBRC 14164	Pseudomonas phage pf16
+RBP0078	TSP	3	794	Pseudomonas plecoglossicida	Pseudomonas phage PPpW-4
+RBP0079	TF+TSP	3	550	Pseudomonas putida NBRC 14164	Pseudomonas phage Pf-10
+RBP0080	TSP	1	800	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Kompost-2
+RBP0081	TF	3	1922	Pseudomonas putida NBRC 14164	Pseudomonas phage phiPMW
+RBP0082	TF	1	599	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Vasula
+RBP0083	TSP	1	895	Pseudomonas taiwanensis DSM 21245	Pseudomonas phage Lebethron
+RBP0084	TF	1	704	Pseudomonas putida KT2440	Psuedomonas phage SVOphi44
+RBP0085	TF+TSP	1	646	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Kallioja
+RBP0086	TF	2	120	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Mudajogi
+RBP0087	TF	3	465	Pseudomonas putida S12	Pseudomonas phage MiCath
+RBP0088	TF+TSP	1	910	Pseudomonas putida NBRC 14164	Pseudomonas phage Psp6
+RBP0089	TF	1	821	Pseudomonas taiwanensis DSM 21245	Escherichia phage Halfdan_Juelich_variant
+RBP0090	TF	1	115	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Kompost-2
+RBP0091	TF	1	575	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuM-Aura
+RBP0092	TSP	1	658	Pseudomonas putida NBRC 14164	Pseudomonas phage Psp6
+RBP0093	TF	1	119	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Kallioja
+RBP0094	TF	1	379	Pseudomonas plecoglossicida	Pseudomonas phage vB_PpS_SYP
+RBP0095	TF	1	205	Pseudomonas plecoglossicida	Pseudomonas phage vB_PpS_SYP
+RBP0096	TF	1	1439	Pseudomonas plecoglossicida	Pseudomonas phage vB_PpS_SYP
+RBP0097	TF	2	127	Pseudomonas putida NBRC 14164	Pseudomonas phage phiPMW
+RBP0098	TF	1	704	Pseudomonas putida KT2440	Pseudomonas phage vB_PpuP-Kurepalu-1
+RBP0099	TF	1	84	Pseudomonas putida S12	Pseudomonas phage MiCath
+RBP0100	TF+TSP	1	1118	Pseudomonas putida KT2440	Escherichia phage JNP1
+RBP0101	TSP	1	795	Pseudomonas taiwanensis DSM 21245	Pseudomonas phage Oiolarie
+RBP0102	TSP	1	790	Pseudomonas putida NBRC 14164	Pseudomonas phage Bosely
+RBP0103	TF	1	192	Pseudomonas putida S12	Pseudomonas phage MiCath
+RBP0104	TF	1	618	Pseudomonas putida NBRC 14164	Pseudomonas phage PCS5
+RBP0105	TF+TSP	1	766	Pseudomonas lactis	Pseudomonas phage HU1
+RBP0106	TSP	1	791	Pseudomonas lactis	Pseudomonas phage HU1
+RBP0107	TF	2	205	Pseudomonas gessardii	Pseudomonas phage vB_PseuGesM_254
+RBP0108	TF	3	272	Pseudomonas grimontii	Pseudomonas phage PMBT3
+RBP0109	TF+TSP	2	804	Pseudomonas gessardii	Pseudomonas phage vB_PseuGesM_254
+RBP0110	TF+TSP	3	1217	Pseudomonas grimontii	Pseudomonas phage PMBT3
+RBP0111	TF	2	495	Pseudomonas grimontii	Pseudomonas phage PMBT3
+RBP0112	TF	2	255	Pseudomonas gessardii	Pseudomonas phage vB_PseuGesM_254
+RBP0113	TF	1	151	Pseudomonas gessardii	Pseudomonas phage vB_PseuGesM_254
+RBP0114	TF	1	129	Pseudomonas gessardii	Pseudomonas phage vB_PseuGesM_254

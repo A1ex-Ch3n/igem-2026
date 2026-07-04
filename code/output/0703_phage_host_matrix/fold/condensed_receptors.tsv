@@ -1,0 +1,64 @@
+rec_id	category	our_strains	locus_tag	product
+REC014	FadL	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_01263	Long-chain fatty acid transporter
+REC050	FadL	8-10-2	NEEDOG_02224	Long-chain fatty acid transport protein
+REC006	Omp-porin	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_00531	OmpW family protein
+REC013	OmpA	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_01078	OmpA-like domain-containing protein
+REC018	OmpA	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_01688	OmpA-like domain-containing protein
+REC038	OmpA	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_04306	OmpA-like domain-containing protein
+REC056	OmpA	8-10-2	NEEDOG_04085	OmpA-like domain-containing protein
+REC061	OmpA	10-10-2,8-5-2	PEMOGA_04665	OmpA-like domain-containing protein
+REC001	TBDR	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_00129	Ferrioxamine receptor FoxA
+REC002	TBDR	9-6-2,9-2-1,10-10-2,8-5-2	BPBBIK_00250	TonB-dependent siderophore receptor
+REC004	TBDR	9-6-2,9-2-1,10-10-2,8-5-2	BPBBIK_00255	TonB-dependent siderophore receptor
+REC005	TBDR	10-10-2,8-5-2,8-10-2	BPBBIK_00346	TonB-dependent siderophore receptor
+REC007	TBDR	9-6-2,9-2-1,10-10-2,8-5-2	BPBBIK_00552	TonB-dependent receptor, plug
+REC010	TBDR	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_00881	TonB-dependent siderophore receptor
+REC019	TBDR	9-6-2,9-2-1,10-10-2,8-5-2	BPBBIK_01716	TonB-dependent receptor
+REC020	TBDR	9-6-2,9-2-1,10-10-2,8-5-2	BPBBIK_01749	TonB-dependent receptor
+REC021	TBDR	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_02221	TonB-dependent receptor
+REC022	TBDR	9-6-2,9-2-1,10-10-2,8-5-2	BPBBIK_02454	TonB-dependent siderophore receptor
+REC030	TBDR	9-6-2,9-2-1,10-10-2,8-5-2	BPBBIK_03702	Ferric enterobactin transport system outer membrane subunit
+REC031	TBDR	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_03755	TonB-dependent siderophore receptor
+REC034	TBDR	9-6-2,9-2-1,10-10-2,8-5-2	BPBBIK_04170	Ferrichrome outer membrane transporter/phage receptor
+REC042	TBDR	9-6-2,9-2-1,10-10-2,8-5-2	BPBBIK_04592	TonB-dependent receptor
+REC043	TBDR	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_04852	TonB-dependent copper receptor
+REC048	TBDR	8-10-2	NEEDOG_02121	TonB-dependent receptor
+REC049	TBDR	8-10-2	NEEDOG_02122	TonB-dependent receptor
+REC053	TBDR	8-10-2	NEEDOG_03569	TonB-dependent receptor
+REC057	TBDR	8-10-2	NEEDOG_04549	Ferrichrome outer membrane transporter/phage receptor
+REC058	TBDR	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	OHPLIO_04516	TonB-dependent receptor
+REC059	TBDR	10-10-2,8-5-2,8-10-2	PEMOGA_00875	Putative TonB-dependent receptor BfrD
+REC062	TBDR	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	PICBEH_04164	TonB-denpendent receptor
+REC063	TBDR	9-6-2,9-2-1	PICBEH_04900	Ferrichrome outer membrane transporter/phage receptor
+REC016	Tsx	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_01606	Nucleoside-binding outer membrane protein
+REC017	Tsx	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_01607	Nucleoside-specific outer membrane channel protein Tsx
+REC054	flagellin	8-10-2	NEEDOG_03760	Flagellin
+REC008	other-OM	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_00770	Outer membrane protein/peptidoglycan-associated (Lipo)protein
+REC036	other-OM	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_04237	Outer membrane protein beta-barrel domain-containing protein
+REC046	other-OM	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	NEEDOG_01018	Outer membrane heme receptor
+REC047	other-OM	8-10-2	NEEDOG_01768	Outer membrane receptor FepA
+REC051	other-OM	8-10-2	NEEDOG_02346	cellulose synthase complex outer membrane protein BcsC
+REC052	other-OM	8-10-2	NEEDOG_03343	Outer membrane protein beta-barrel domain-containing protein
+REC055	other-OM	8-10-2	NEEDOG_04082	Outer membrane lipoprotein SlyB
+REC003	porin	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_00251	Outer membrane porin
+REC009	porin	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_00790	Histidine-specific outer membrane porin D
+REC011	porin	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_00893	Porin D
+REC012	porin	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_00985	Glucose-selective porin OprB
+REC015	porin	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_01416	Porin
+REC023	porin	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_02459	carbohydrate porin
+REC024	porin	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_02727	Phenylacetic acid-specific porin
+REC025	porin	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_02792	Outer membrane porin, OprD family
+REC026	porin	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_03400	Outer membrane porin, OprD family
+REC027	porin	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_03520	Porin domain-containing protein
+REC028	porin	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_03546	Porin D
+REC032	porin	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_03851	Outer membrane porin F
+REC033	porin	9-6-2,9-2-1,10-10-2,8-5-2	BPBBIK_03877	OprD family porin
+REC035	porin	9-6-2,9-2-1,10-10-2,8-5-2	BPBBIK_04215	Porin
+REC037	porin	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_04248	Outer membrane porin
+REC039	porin	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_04368	Porin
+REC040	porin	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_04393	Outer membrane OprD family porin
+REC041	porin	9-6-2,9-2-1,10-10-2,8-5-2,8-10-2	BPBBIK_04430	Porin-like protein
+REC044	porin	9-6-2,9-2-1,10-10-2,8-5-2	BPBBIK_05275	Outer membrane porin
+REC045	porin	8-10-2	NEEDOG_00236	OprD family porin
+REC060	porin	10-10-2,8-5-2	PEMOGA_02112	OprD family porin
+REC029	usher	9-6-2,9-2-1,10-10-2,8-5-2	BPBBIK_03607	Fimbrial biogenesis outer membrane usher protein
