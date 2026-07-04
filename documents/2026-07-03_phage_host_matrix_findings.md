@@ -85,10 +85,20 @@ receptor-similar.** The 4 sp013179515 isolates give near-identical columns; 8-10
 differs slightly. (Shared-receptors is a host-level quantity, so host × strain is the honest
 axis; an RBP-level heatmap waits for the fold step.)
 
+**Candidate RBPs (Step 4–5).** Pulled from PharBP every RBP whose host shares ≥1 of our
+receptors at ≥90% — 8 hosts (the putida group + 3 marginal hosts that share 1 receptor with
+8-10-2 only). **347 RBPs → 201 unique sequences** (KT2440 204, putida/NBRC 98, plecoglossicida
+13, gessardii 10, S12 8, grimontii 8, taiwanensis 4, lactis 2); TF-heavy (TF ≫ TSP).
+`candidate_rbps_table.tsv` lists each with phage/host/type/length + per-strain shared counts;
+`rbp_by_strain_heatmap.png` shows them × our isolates (host-level colour — near-uniform across
+the 4 sp013179515 isolates, and the 3 marginal-host RBPs relate only to 8-10-2). RBP × strain
+is host-driven, so this is a sanity view; **RBP × specific receptor genuinely needs folding**.
+
 **Takeaway.** Following the receptor-overlap logic converges hard on **P. putida (especially
 KT2440) as the surrogate host** — it is the only host that is both highly receptor-similar to
-us (~99%) and phage-rich (71 phages). Its phages are the top candidates to test / to fold
-against our receptors next.
+us (~99%) and phage-rich (71 phages). Its phages' RBPs (201 unique) are the input to the final
+step: **fold them against our overlapped receptors (ColabFold ipTM on Laguna)** → the real
+RBP × receptor matrix.
 
 ---
 

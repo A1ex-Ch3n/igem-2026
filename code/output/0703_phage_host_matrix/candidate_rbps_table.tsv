@@ -1,0 +1,348 @@
+protein_id	phage	host	accession	organism	rbp_type	length	is_seq_rep	shared_9-6-2	shared_9-2-1	shared_10-10-2	shared_8-5-2	shared_8-10-2
+1e766a6b38e0ceb6eb07794b3c4800f4cb5c78924f93c57410a6951779477b34	Pseudomonas phage AF	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	340	True	52	52	52	52	54
+36651dd02a6b3a62389869af550be95987c4072b5e7eb150a418999c606333e0	Pseudomonas phage AF	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	783	True	52	52	52	52	54
+42d5bdadf9de1cabf8d65487a0fc9e8507d83e3f72f09c58f6f1ab9dd2ba7d1b	Pseudomonas phage AF	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	340	False	52	52	52	52	54
+677b9c3e8fe6c9fd9e7eb2f75c2eb7ff1047a39226956cf589181c12603ca543	Pseudomonas phage AF	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	741	True	52	52	52	52	54
+696b187edce606c8a27d4093a9b2540055fbb18feb9df2c88f503a1b413c60ba	Pseudomonas phage AF	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	98	True	52	52	52	52	54
+7cfa541a73b5fb34c7c3638388df68e0adb3403664bb548d17ede16b9041d029	Pseudomonas phage AF	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	741	False	52	52	52	52	54
+b39a44ff1361ac30686c7a2e102fea0b5f96e6a5c8dacab6efbab51a8e881c38	Pseudomonas phage AF	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	783	False	52	52	52	52	54
+b8a41adb41e42fb6c7a3e920717cf31b563fce933cdd950420b170adbf7a3f59	Pseudomonas phage AF	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	98	False	52	52	52	52	54
+1b637373160b4cef43c616db229d59aec65ec87f52fa54b1eaa9de6ded960d02	Pseudomonas phage Bosely	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	842	True	52	52	52	52	54
+f5c75562734ce583e12cb66dbd96c9a11d717c19ca4b5797ed6841719f5eee50	Pseudomonas phage Bosely	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	790	True	52	52	52	52	54
+058e4e0aff52c27e860c0891da6a29be95ee9c0614d3acdc04194f1710cb0709	Pseudomonas phage Lu11	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	675	True	52	52	52	52	54
+0cfadd2a57703eeb39dcd3a52f4f1a9a31c842ac44e46e93246da50925f60249	Pseudomonas phage Lu11	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	463	True	52	52	52	52	54
+0fe4a5132d189bbb532914bda7be6e2baefa54f4b22db3ffa0a3a7f1cacae14c	Pseudomonas phage Lu11	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	463	False	52	52	52	52	54
+1230b05ba95fdb270263c74ab0328be2d998d017e0ed7204027b3b78233b42f4	Pseudomonas phage Lu11	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	268	True	52	52	52	52	54
+1709e4914e48be3c9b8277be38281b1cea8cd5ccc16c229e6249893dabd4dac8	Pseudomonas phage Lu11	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	340	True	52	52	52	52	54
+1f6035f7a3f51a2c9938d0a9a0c06c797da3c7ada8294636da5b1ce03698a372	Pseudomonas phage Lu11	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	268	False	52	52	52	52	54
+2e1dad696a630e6d8e7ac69cc1edc01556dd5a80e525e7e34c4a5aa71bddf28a	Pseudomonas phage Lu11	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	208	True	52	52	52	52	54
+30911e370ce7bbdcfefa60aa308ae6beca7d0b6347e35303341d6243fe35ba29	Pseudomonas phage Lu11	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	358	True	52	52	52	52	54
+4ef6ba162a73a2dae3ac5c3b668c20a963b21aaa76e71bac5f7d8b2c91071d5b	Pseudomonas phage Lu11	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	228	True	52	52	52	52	54
+5cdaa5a87b791c4f879866bf68581232b9b2d9ec231e71f608c010ecf5f660f6	Pseudomonas phage Lu11	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	173	True	52	52	52	52	54
+740598aef1566e26585bc26f8565ac5f116700466ab067591a23ba03a48306bc	Pseudomonas phage Lu11	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	675	False	52	52	52	52	54
+815255229e550a67d316aba241faf36a86bcea67e1cc5438ddda2fc9f7691fac	Pseudomonas phage Lu11	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	358	False	52	52	52	52	54
+9a465b4f226699735be169f3b315e6cba9e8ab9c1694eec621bfc512cf8d0198	Pseudomonas phage Lu11	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	173	False	52	52	52	52	54
+c53d4ca5d4b7e8ecf22f0f4513ccd6cd5263d406c6b2d8cef4a68f466173d71b	Pseudomonas phage Lu11	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	228	False	52	52	52	52	54
+d23c08a59d7b1f1dd2b4426020018bc49096fda1cf6da6a09bfbc74f9745c52c	Pseudomonas phage Lu11	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	208	False	52	52	52	52	54
+f65a12eb496af475e1f750f08f81ac0a50fb37f2d31983f4d2724604e68bda7e	Pseudomonas phage Lu11	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	340	False	52	52	52	52	54
+331181d3bf60ae73ae8efb786159674ba056c9ad6765710568087e035510c715	Pseudomonas phage PCW2	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	86	True	52	52	52	52	54
+565ae45b0026c14b0ee2949707d4116182c89a9999dce8d7d47ace9681c1b300	Pseudomonas phage PCW2	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	808	True	52	52	52	52	54
+cd4d03500bd078c2049e0f12ca243504146ebea5afe6607d2a95dbe96b0f430d	Pseudomonas phage PCW2	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	118	True	52	52	52	52	54
+4c1fcef0ec64d64d03baf9cfee4d7f7b13041dd36212a0cd1232209900e53382	Pseudomonas phage Pf-10	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	807	True	52	52	52	52	54
+8a883095ed2b9c21611bdbecb06d95c9e706bc035d4cfbf32389144fe18f5f4d	Pseudomonas phage Pf-10	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	550	True	52	52	52	52	54
+903c0838381e1950698e80d46b69bfae8127957d960ff0b33bb274af6fcf5b33	Pseudomonas phage Pf-10	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	807	False	52	52	52	52	54
+93498e5c1261c718c4d8e0b75e1b9c2dadc6ec291544ba7da4628919a1cf4d39	Pseudomonas phage Pf-10	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	807	False	52	52	52	52	54
+b23f2e10302685c2cac22b9c8631c722c979955dc5fc189fd4c3a4686a7400e4	Pseudomonas phage Pf-10	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	550	False	52	52	52	52	54
+fc2968de8d1967c22ce05ebcb0fde9635ab0fd4fd6296f4a108b7aceb6995d53	Pseudomonas phage Pf-10	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	550	False	52	52	52	52	54
+9d18429304c6e6ba38ce30afff29ee0b4b9f14aacdf4f9cb13567c9e2caeb495	Pseudomonas phage Psp6	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	910	True	52	52	52	52	54
+c09ceed03ab4c0fdf5b1f7066631dcbf3e168da9109e3ac237c483c37a7cc984	Pseudomonas phage Psp6	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	658	True	52	52	52	52	54
+18fdcbfa6402cca5057e7818067511029d5f638e95f7a6b7b9a8a787db45f096	Pseudomonas phage YMC11/06/C171_PPU_BP	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	724	True	52	52	52	52	54
+1d0eff9f62c4ff5b6059466a914533b8bc9878b2178fe88eabd6f51c2325b038	Pseudomonas phage YMC11/06/C171_PPU_BP	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	626	True	52	52	52	52	54
+3c85fe62e0ef0fee09d54c8e32efdd611762f4e5b10aa6f00a90a18b46ca2b4b	Pseudomonas phage YMC11/06/C171_PPU_BP	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	777	True	52	52	52	52	54
+4ab5e694878b16393adff4b7ca6854971c40e216d82a38b035e5e50cf58c16ae	Pseudomonas phage YMC11/06/C171_PPU_BP	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	626	False	52	52	52	52	54
+6c973eb690b59a5b93dd4129952dadc6700c1a393e2ad1ef1cbe8c73c3074244	Pseudomonas phage YMC11/06/C171_PPU_BP	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	724	False	52	52	52	52	54
+a76fa811c3a9f587ee6759481d187b95b65ae3ec2ecf2e3aed48693f7d68b95e	Pseudomonas phage YMC11/06/C171_PPU_BP	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	626	False	52	52	52	52	54
+b826130507fe5ddf1eada829ae98255dae096557558553ad045e7b9373e5b606	Pseudomonas phage YMC11/06/C171_PPU_BP	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	724	False	52	52	52	52	54
+b8c61219ddca9bc60276e485f1b4d37bb750ddef1d73bef52c89b850c99aeac0	Pseudomonas phage YMC11/06/C171_PPU_BP	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	777	False	52	52	52	52	54
+c112e0a27b9df13e3ad0a533ab91425e5d1c9debede36b8f27b17396f3d0670d	Pseudomonas phage YMC11/06/C171_PPU_BP	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	777	False	52	52	52	52	54
+00628edc89d914dd798ff116c5b2732b372c103cb4e084606960af997da7eddb	Pseudomonas phage gh-1	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	808	True	52	52	52	52	54
+18cf4fb9830e63db3468edf88d4c6ad24a497c6ec98fb343656138ab86fa7e70	Pseudomonas phage gh-1	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	808	True	52	52	52	52	54
+1b093baaa22660b6e01694beaa4b6c4894e540428c18c54b1659d2c39ffc095e	Pseudomonas phage gh-1	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	119	True	52	52	52	52	54
+1bdc24f6ffcaa8db4bb3ca2e4beadc5bd08a1af56a17450a362067473893aa24	Pseudomonas phage gh-1	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	618	True	52	52	52	52	54
+2ec83c9381dc22f467c5d7ab3301d67adecaa4ab27a7d45bb31741f484f4095b	Pseudomonas phage gh-1	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	808	False	52	52	52	52	54
+41073ec2e6f0d988116d21c3b6381c07592cb1ee1194cd93a39ab8a80166e991	Pseudomonas phage gh-1	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	808	False	52	52	52	52	54
+6210a702e3ecb4b3d67e3e602a7020892ddea82988831e0c5849dc6f7ccecb9d	Pseudomonas phage gh-1	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	119	False	52	52	52	52	54
+8a70965baf7beae370d6f5d30d0834124aefa5107eae137fba60fee41a8b0509	Pseudomonas phage gh-1	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	618	True	52	52	52	52	54
+a683b9cc192126fcdc2f3668531b7c1a3c61ae66869912c337edce6312672d5b	Pseudomonas phage gh-1	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	618	False	52	52	52	52	54
+ddef97dcbe872ed7de566c1aca62d1672497977e95f5ffdc230bdebcff235bbf	Pseudomonas phage gh-1	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	618	False	52	52	52	52	54
+f55a0103a362ef53222b9f454e0de7f510fad8834de79dff543f4e8d1e6f6413	Pseudomonas phage gh-1	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	618	False	52	52	52	52	54
+1bfb7805659f953493909f87fe12d97b407a4e4a0534dacdc704ab9769f0cc7f	Pseudomonas phage pf16	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	639	True	52	52	52	52	54
+22ffec8c36a7439e7dee99074af27824d84d17289dce924aba0e626f4b973ab2	Pseudomonas phage pf16	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	659	True	52	52	52	52	54
+2d2b6d761625031944a273d68abf6b0ff46ae7b099ed3de8fbcb1c4689c7636a	Pseudomonas phage pf16	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	143	True	52	52	52	52	54
+2fcdb591646fd9bffa182454251ae7970e4c3c1f12b2899ef320b7d713862a0b	Pseudomonas phage pf16	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	591	True	52	52	52	52	54
+51f0449ea9ee6384b86b818b6314a9c07b977f0b4f3529f87ba6e851898f3c00	Pseudomonas phage pf16	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	660	True	52	52	52	52	54
+65420706e8d386d08af592b6e3e6dd8aed6365f39e5d42155536609e45b24890	Pseudomonas phage pf16	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	591	False	52	52	52	52	54
+6bf81da7432588ebf6ee85f453fdac0f1fbfd9c6df4e8ca6758fb800a64a8d65	Pseudomonas phage pf16	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	660	False	52	52	52	52	54
+7224e8e47307c4cfd7ed4b3ecc3dad587e2349c0ddc58edad247f747b5cb5810	Pseudomonas phage pf16	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	660	False	52	52	52	52	54
+81d9d0e68dabd5c6a1ff240d548f0d43004eeb871cb9fed0232d5426a7c60141	Pseudomonas phage pf16	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	659	False	52	52	52	52	54
+853afd103edd33c44e1e749dba8ff4f1c9dcf9f7e498c15727d7690585f2eb25	Pseudomonas phage pf16	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	437	True	52	52	52	52	54
+915d9e27925eaebcdea0f454321f5a6231cf9d81c546ed33b97ef41c8048282f	Pseudomonas phage pf16	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	639	False	52	52	52	52	54
+a1320c392bbc995034e726a416d9c9542d84e890ed6e1a7990be1b25b42fcccc	Pseudomonas phage pf16	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	659	False	52	52	52	52	54
+cc494103b4dc2f3a07121803661fc77cb56663c295806622a0ff34cdbf916abc	Pseudomonas phage pf16	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	639	False	52	52	52	52	54
+dacbd023b37e804869c4124f9f4ef262cb715401126e4d4ee2192dbfba67515b	Pseudomonas phage pf16	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	143	False	52	52	52	52	54
+f0b7e30387abc149b6569d2199f98d109922f3bb4d599eac89562c696b24f57a	Pseudomonas phage pf16	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	591	False	52	52	52	52	54
+018c25defd85f0b6bf91a77577f431e6dc055acbbc27ad274f8c7a977982e0d7	Pseudomonas phage phi15	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	727	True	52	52	52	52	54
+06b57f56d3bf84d97d66b98ec916abde0757368ec4b0d77c91f2c11f6b288914	Pseudomonas phage phi15	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	727	False	52	52	52	52	54
+0ad18d910cbb9d5f0fba4c13e6a22b5eab53128de38f204f641bfced7e30bf20	Pseudomonas phage phi15	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	793	True	52	52	52	52	54
+14e7582f24719ea41ba8e908d3bce5dd6d312bfa8bb848fd2d74f0dc1ddaf339	Pseudomonas phage phi15	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	793	False	52	52	52	52	54
+66c2fdc046bbf88eaee4206911ca3a2f7db2471bfb9bfb62b23bfc1aa604418f	Pseudomonas phage phi15	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	727	False	52	52	52	52	54
+93f73acdeb4047899614d7545bafef8078f4d1513b919288c883229aaa4a8320	Pseudomonas phage phi15	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	793	False	52	52	52	52	54
+3101bcb0307c9e3ba0ed9e80deb6106445828ebd4689a228c869baeae4244530	Pseudomonas phage phiPMW	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	101	True	52	52	52	52	54
+5f12f5a332bacbd11b45f0f21e5929bc1a7fd08910096f378ee771adb166a460	Pseudomonas phage phiPMW	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	520	True	52	52	52	52	54
+605b1e825ed2eaa5927caf7aff34b08b1d70039b4a8c8e3a000409f3a5a4e5a2	Pseudomonas phage phiPMW	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	520	False	52	52	52	52	54
+8f502b0ab15274438e769d6fefac7d4e16bc2cc329d7d3545f29f7d1e054b985	Pseudomonas phage phiPMW	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	1922	True	52	52	52	52	54
+a8bb5e3b698c8832bb1b2241d8464fc96f0590d33f2e7e2d1c3cc9a0e7fa7b49	Pseudomonas phage phiPMW	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	1922	False	52	52	52	52	54
+ae742aa543245435e82605e074eadcaf51e5a58af801c37d1616d86d264f7f59	Pseudomonas phage phiPMW	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	1922	False	52	52	52	52	54
+cc474f77bf7b0f81c328e6e3acabc60f26ba9495ea47f887b85a9ed63afc7d4e	Pseudomonas phage phiPMW	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	127	True	52	52	52	52	54
+ccb64ee5a1c9e953f8fec84f2e21b2fdfbe949ea35bd9fc8554d6bd91d83c9a4	Pseudomonas phage phiPMW	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	127	False	52	52	52	52	54
+e620afe31dabf39872e8cd14377c22182dbd2cd3f632ae2fe932491d9df8ae04	Pseudomonas phage phiPMW	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	520	False	52	52	52	52	54
+0118673c9773ec49ec3d7d30a891390b705271523e4bef7f2f5c39367e1da8c9	Pseudomonas phage tf	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	217	True	52	52	52	52	54
+14272995e06caa5dad67a17053e4a3bd8164b1b0d8380a4f7a00d4f013ba6fd1	Pseudomonas phage tf	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	883	True	52	52	52	52	54
+176728fac8733606e71ac774d88acec2f0b7d4b7ceb05aba7d16d59af4ce18fd	Pseudomonas phage tf	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	883	False	52	52	52	52	54
+421d0c2ef62a5ac8543f23df59ab06757e142239b6f380acc03284861bf5961f	Pseudomonas phage tf	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	519	True	52	52	52	52	54
+48b18aadfc2528c02bfea93064a1e5d18b84bcdd07251bd64194cb43c734d800	Pseudomonas phage tf	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	217	False	52	52	52	52	54
+92bbc33e1bbb2eb06e06b372911cc54073277fc1bc2d717c23e0ca8fdbca7108	Pseudomonas phage tf	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	217	False	52	52	52	52	54
+a4b125505e189feda3f2435f128981cf116e24db9de844076b87e6fc99d03861	Pseudomonas phage tf	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	883	False	52	52	52	52	54
+b5ca5b1a391a9eb1f375cea7a85811bc696f26d9ef0afff8f1e72c0ff0667ecd	Pseudomonas phage tf	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	519	False	52	52	52	52	54
+c8412ec1f37e7588b7fb185453490827d26fd4e3405e7d5eebe326ebeee1e800	Pseudomonas phage tf	Pseudomonas putida	GCF_000412675.1	Pseudomonas putida NBRC 14164	TSP	519	False	52	52	52	52	54
+149afaf56093522dbdb99c93049c6b11a847260b5dcbad81d314b9928f7b683e	Pseudomonas phage PCS5	Pseudomonas putida NBRC 14164	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF+TSP	802	True	52	52	52	52	54
+ff6300976d958ff58a0a2330f3ed74946c9ce4e1eb7cb8cad76dc2a0d05fb153	Pseudomonas phage PCS5	Pseudomonas putida NBRC 14164	GCF_000412675.1	Pseudomonas putida NBRC 14164	TF	618	True	52	52	52	52	54
+7c00b9e35c179258829645f027ebc0206936d2435a0a4720b2bbfb1ff69df5ea	Psuedomonas phage SVOphi44	Pseudomonas putida KT2440	GCF_000007565.2	Pseudomonas putida KT2440	TSP	852	True	48	48	51	51	47
+939a19308c46a95f6871435605e835bf5fdcf78ce6aab6f6ff04bea1f35aa698	Psuedomonas phage SVOphi44	Pseudomonas putida KT2440	GCF_000007565.2	Pseudomonas putida KT2440	TF	704	True	48	48	51	51	47
+0b1cf0540fd6500828af088aed843e7106b1656f7e36a735b194d32f7468aad4	Escherichia phage JNP1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF+TSP	206	True	48	48	51	51	47
+e930e1f718fbec6cad7f60d9829cefeb5fcd8369459f197804d0231d39cb1e0e	Escherichia phage JNP1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF+TSP	1118	True	48	48	51	51	47
+1bff5a1ba586e21714d689db5ac89240f07effe527afd0373be77e4689746f56	Pseudomonas phage vB_PpuM-Amme-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	544	True	48	48	51	51	47
+3564390df185ec71c3b74389ea825eda697567bf84786d66eb4f51201d3be49e	Pseudomonas phage vB_PpuM-Amme-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	1346	True	48	48	51	51	47
+a90bec2e7527e09912e7cba611bc42ac9133e7513c7241a8bca39333538088bb	Pseudomonas phage vB_PpuM-Amme-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	186	False	48	48	51	51	47
+280ce3023c11e8ab335a58c68778c842f4823686b00e480769066c02ae98f764	Pseudomonas phage vB_PpuM-Amme-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	281	True	48	48	51	51	47
+42e9f5d1e994ce3497fe2570727b4c7279b8dac2ec26ec3649052c6becd8550c	Pseudomonas phage vB_PpuM-Amme-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	494	False	48	48	51	51	47
+4f359d000a9131cec1146603cbf5d1d9b310fde2dc98d2e6e24a70fb92207940	Pseudomonas phage vB_PpuM-Amme-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	223	True	48	48	51	51	47
+558c3dd7b32eed3adbc196e0e233ea6f899224c475fff29af14b53d2e8957a8e	Pseudomonas phage vB_PpuM-Amme-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	141	True	48	48	51	51	47
+64d5932e3115ed82ac75564a38ca5be8cce50fed3576532378cccda3249181f2	Pseudomonas phage vB_PpuM-Amme-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	True	48	48	51	51	47
+66226a9978fd1b0cef319f623a06be61b4b5004058dd3341f43ac9ed2ed144e3	Pseudomonas phage vB_PpuM-Amme-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	887	True	48	48	51	51	47
+78f88abab789e3083b069e6ea3ae1d01201641e012530e2584cc8e5050841ffc	Pseudomonas phage vB_PpuM-Amme-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	141	False	48	48	51	51	47
+940e711b3e130030bb1eba909a9b0952a66b712369374225bd08fe395927471b	Pseudomonas phage vB_PpuM-Amme-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	False	48	48	51	51	47
+bbacff339cfd800bf7db3cefa83ec9d18d374ee32e07d026fae9d2cf09d02010	Pseudomonas phage vB_PpuM-Amme-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	281	False	48	48	51	51	47
+c0e58b6d3601b9f80dd82b466d37f01dc23e6fe7392a4cf03b5035e8ca14f698	Pseudomonas phage vB_PpuM-Amme-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	300	True	48	48	51	51	47
+ce227b9b05fbb6548c1f5e886e5049ae55f8e19173e85040046a19a6741e2766	Pseudomonas phage vB_PpuM-Amme-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	494	False	48	48	51	51	47
+d6d1ef36bc182f24f87bc9027ac639fc7705d32b5f4d9ccc70d0d64338b1552f	Pseudomonas phage vB_PpuM-Amme-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	887	False	48	48	51	51	47
+122cc8eec0b5259732c7143972220771b253a7a873d16759099ec1e62864fa48	Pseudomonas phage vB_PpuM-Aura	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	1346	True	48	48	51	51	47
+4a3ea1c9ca7a1a371d228cd10f44e81cde00da0749ce7c3cdecaa1b6a759e46b	Pseudomonas phage vB_PpuM-Aura	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	186	True	48	48	51	51	47
+59183c122a36931fe1a6e906c3835b8630ef747c2d8c79d793b3e141a5a03bc2	Pseudomonas phage vB_PpuM-Aura	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	226	True	48	48	51	51	47
+b1b290f1e85bbd2261f781c246dc3ec0233afafba12dcd06206edbed05443ac7	Pseudomonas phage vB_PpuM-Aura	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	575	True	48	48	51	51	47
+180ae16a84fc7f69eec4dac923c4e961a0b92b0c39c638fe15b22dc3d407b9cd	Pseudomonas phage vB_PpuM-Illi-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	948	True	48	48	51	51	47
+839e5cebec55cfd254c37371d50a1b91d24933d3b7272b4f77ed648148faec7d	Pseudomonas phage vB_PpuM-Illi-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	226	True	48	48	51	51	47
+a7c19ddacf5ae72be261208ab62c39a86bebf02cc10e3348803e6e31de90d403	Pseudomonas phage vB_PpuM-Illi-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	186	True	48	48	51	51	47
+b6092d2885ac7617e4c5c49eb73274ebcc695dda08c6ccbf957bc830c38cb2ff	Pseudomonas phage vB_PpuM-Illi-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	1346	True	48	48	51	51	47
+491f9f6df48ea7d15cca5cc80e02b9b7a4956dffce43ddaa318c7bcb75bead3f	Pseudomonas phage vB_PpuM-Kassivere	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	494	False	48	48	51	51	47
+67319f0d6cbd7bef38658ac17e1032b70d1bc02d9e31024f3196004ab9e91f7d	Pseudomonas phage vB_PpuM-Kassivere	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	281	False	48	48	51	51	47
+696c80f2c4f8be8fb8749c939d45197bcef0f54d518caa3277658f3e0ec1c5f2	Pseudomonas phage vB_PpuM-Kassivere	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	887	True	48	48	51	51	47
+9ff4587db1fd7fbd9a6d170f37bc2e09a35aae14ab63b03f0ed9ecd71f6fab04	Pseudomonas phage vB_PpuM-Kassivere	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	True	48	48	51	51	47
+ce800b97edfa794624ae36e71e7428ede5e9d046c006608a3a89d25a71ec200b	Pseudomonas phage vB_PpuM-Kassivere	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	141	True	48	48	51	51	47
+05715bcce2758459b54ac042c9040458f3ef3936ed793b1e60ccab6c6a87ff02	Pseudomonas phage vB_PpuM-KoPa-4	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	141	True	48	48	51	51	47
+6710b083bc2969a1528aa5c0f80fd0ad05e65a5fa6bebda047041c3781908acf	Pseudomonas phage vB_PpuM-KoPa-4	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	281	False	48	48	51	51	47
+689802811d37e5472893aec51760f7e42014a53d460e41cb1122f348a65cad92	Pseudomonas phage vB_PpuM-KoPa-4	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	141	False	48	48	51	51	47
+79ead4a270b229a613efe5946b91453718334d735d7c828ec546c28c71b9e51f	Pseudomonas phage vB_PpuM-KoPa-4	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	871	True	48	48	51	51	47
+86b944a25650025e07e6d0b48bd76e2fe1a476f8458a0b30915b75a85b7a7890	Pseudomonas phage vB_PpuM-KoPa-4	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	223	False	48	48	51	51	47
+9a172be92ae8350b1d1167648e00579ea93f9955e8277e4a6d6abf718978ebb5	Pseudomonas phage vB_PpuM-KoPa-4	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	True	48	48	51	51	47
+a5148c5f3da29c910cfbb0628c9a77385ed8737ea2a7f31b7293ee22144896b8	Pseudomonas phage vB_PpuM-KoPa-4	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	494	True	48	48	51	51	47
+b500f37974c96c86ea3a4a3e7b1eca0ebcc1328b78a1cbb80c5ebb7b1c21edcb	Pseudomonas phage vB_PpuM-KoPa-4	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	871	False	48	48	51	51	47
+b850663ae2d9a067337893e1dfa30c19e3550714ee4c6606ead27c96176ddaff	Pseudomonas phage vB_PpuM-KoPa-4	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	281	False	48	48	51	51	47
+b9a5c60b8731322075a55aaba72b377ac8b3321e099a8b1648d2ab5b2f059d7a	Pseudomonas phage vB_PpuM-KoPa-4	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	False	48	48	51	51	47
+e760eedaaa1b1d390e0b6ef50e722d7e27d45cc4d72aaa1e5ceb4a228fad0f38	Pseudomonas phage vB_PpuM-KoPa-4	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	494	False	48	48	51	51	47
+169e40cd3f297bd9de314723f03ff4e2a7e89e0d958d87d1c957787e6e38138f	Pseudomonas phage vB_PpuM-KoPa-5	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	561	True	48	48	51	51	47
+820e4b0e42a22e61900d97d935b4e278ad622220c398cb69b7c8ab3fa21d27f9	Pseudomonas phage vB_PpuM-KoPa-5	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	186	False	48	48	51	51	47
+84c64f84e1ad9b1f9acb0c2b32c8301637c7516a3a29743b6455151aba295524	Pseudomonas phage vB_PpuM-KoPa-5	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	1346	False	48	48	51	51	47
+87aa60fd8a94bd267f9c6d6d5abbfe5c5308cd6c200817556f7d73f29079791a	Pseudomonas phage vB_PpuM-KoPa-5	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	544	True	48	48	51	51	47
+c3f7eb0e9bf763bc4d13699ecf45eacc98e9e3fa05778195f69dad005ec7e599	Pseudomonas phage vB_PpuM-KoPa-5	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	948	True	48	48	51	51	47
+4bca5efef8b44c2b8cc13c686eeb9e245363a56b2dab6d2dd892587628e35674	Pseudomonas phage vB_PpuM-Lauda	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	186	False	48	48	51	51	47
+e74a4df61bb439e0536e212beacb885fc59e4b8b4cc5e37f5523198ad1c68a64	Pseudomonas phage vB_PpuM-Lauda	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	948	True	48	48	51	51	47
+ea3fae05d96bce49b3b0f93d4991c18f3c1920f5ddbc156f3a537e5370a61b51	Pseudomonas phage vB_PpuM-Lauda	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	1346	True	48	48	51	51	47
+064e404af031a47060ed7ded77b9614fca8b6a97451b9497aa00afa710811bd7	Pseudomonas phage vB_PpuM-NoPa	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	141	True	48	48	51	51	47
+2a47a1fc38959b0bd03bd344c5eb5f7859e6748fdb7e77493a353972b9aed981	Pseudomonas phage vB_PpuM-NoPa	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	281	False	48	48	51	51	47
+2a5c6781efcbb80f7064082160e6e2eccbf422f179198f2ec43ec45fc43fe03a	Pseudomonas phage vB_PpuM-NoPa	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	494	True	48	48	51	51	47
+3a18fe073e8fe313624205f2fda417212a3f20fda12bf76362f982bd7c6035d0	Pseudomonas phage vB_PpuM-NoPa	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	300	True	48	48	51	51	47
+678d79bf4852a6d2e9b88c36317e6ae8833076c163bf3cb7fd71b157198c9381	Pseudomonas phage vB_PpuM-NoPa	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	887	True	48	48	51	51	47
+75f43d5fe8f1445e74ac7fd28b4899b33e3bba94f4272bfb9e4f2506a58bb139	Pseudomonas phage vB_PpuM-NoPa	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	281	False	48	48	51	51	47
+7d038d0615cbe2e3647bf816ef326d0736a5bc0cc620371c7dcc42fe6a169b32	Pseudomonas phage vB_PpuM-NoPa	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	True	48	48	51	51	47
+825b9e5eb2fd0db61d942d9f17b9f0ee290049d7449c138f632699be4d4d1f4d	Pseudomonas phage vB_PpuM-NoPa	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	223	True	48	48	51	51	47
+8fd8a6ea49552fa9cbbe44bc29071c323d1b184a895d1d4563708951c35298cf	Pseudomonas phage vB_PpuM-NoPa	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	141	False	48	48	51	51	47
+c7e8850c6f42781da9d94b059fdc74b2eee3aba9c8495fd5adf7ee26fc122b10	Pseudomonas phage vB_PpuM-NoPa	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	494	False	48	48	51	51	47
+dde55d7471569e0b3684b498ba7692aad2ee48100b9c89533ac1c33d8c1a23d8	Pseudomonas phage vB_PpuM-NoPa	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	887	False	48	48	51	51	47
+f0db469daf1c8b6717f0f39df20b3ce6477d801153938ffd107a5230a700f164	Pseudomonas phage vB_PpuM-NoPa	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	False	48	48	51	51	47
+00e4424e4d974e18900d7a9cde11dc4b27bda3bf65b0c924bb8378029b3267cb	Pseudomonas phage vB_PpuM-Peetri	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	1345	True	48	48	51	51	47
+7f520fbdf02d6217cc44ebc70d403e1ab48844be638e941c0b2bd5a824af8d52	Pseudomonas phage vB_PpuM-Peetri	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	185	True	48	48	51	51	47
+4b2a22404a4a04ce8dd8cb50bcbcb456836d98e406d41d0f3a510177412b9c95	Pseudomonas phage vB_PpuM-Pori-4	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	948	True	48	48	51	51	47
+57f3529b49fdca36620876ee45846a68f56965bf2c51a8ad74d2849e911545c5	Pseudomonas phage vB_PpuM-Pori-4	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	1346	True	48	48	51	51	47
+a68cbfb92454e50396053c890ba4de35774daf01a4aba80bbd06f0f194a204f1	Pseudomonas phage vB_PpuM-Pori-4	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	544	False	48	48	51	51	47
+e8a0fad8f6d409213d2bdc79f39cb78404e8cfd7ebbe42e0be1847320bddcf3f	Pseudomonas phage vB_PpuM-Pori-4	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	186	False	48	48	51	51	47
+50d91871dd6db58a7a0bcfe7c81c3523358eebd972708af26fd6ba0344c838ad	Pseudomonas phage vB_PpuM-Roomu-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	871	True	48	48	51	51	47
+62ee80f66b25e9caa18e66b9b81dd9a3f23819cced505683e2a7a81987b388ee	Pseudomonas phage vB_PpuM-Roomu-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	494	True	48	48	51	51	47
+8f369d40927314a8239b10fe682ecd3dd9249fb508c5d0743db68199568c26f3	Pseudomonas phage vB_PpuM-Roomu-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	281	False	48	48	51	51	47
+b184fdd380c0d199de6d487ed5133e5ec17a5cf9347445a842dc840224363a11	Pseudomonas phage vB_PpuM-Roomu-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	True	48	48	51	51	47
+bc8578d4b92072d56b53dec9b45d516cce003f69b53ac0b8648cfea5d60bea88	Pseudomonas phage vB_PpuM-Roomu-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	494	False	48	48	51	51	47
+c281d212e4ff29b5966f28b4947f70f6bed17cc412fdd02f087fbe2cba847079	Pseudomonas phage vB_PpuM-Roomu-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	141	True	48	48	51	51	47
+cb8d70ce108c792a478c32c0d4ab48a27d720d51b991ff025555ae4ad16c7d35	Pseudomonas phage vB_PpuM-Roomu-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	281	False	48	48	51	51	47
+e3f4db023595b68636422e66bc6e2a5f3ea28d6d27b6fa1e6a5b132ef05cb415	Pseudomonas phage vB_PpuM-Roomu-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	141	False	48	48	51	51	47
+e62042dc6072f8f4a89bf59ddda1b1c3e84dafaa3a4e0da8a493c5d0bc044e24	Pseudomonas phage vB_PpuM-Roomu-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	False	48	48	51	51	47
+e977c3f6d9041dadccc266904dff6626af296fb6ef055c5c00e10c156485c86b	Pseudomonas phage vB_PpuM-Roomu-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	222	True	48	48	51	51	47
+f00c41dc4c6a6a074eb10f8479dcdfdf46ce35c3470a618948c70fbee716cd87	Pseudomonas phage vB_PpuM-Roomu-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	871	False	48	48	51	51	47
+31f12b80b11e66618b0f7f8d6dccfff29532c7dc804a4a25f1d5818f7f135524	Pseudomonas phage vB_PpuM-SKa-4	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	186	True	48	48	51	51	47
+94d586701c548063f7380ba5f865d705b67928bb8ab3a0b460c844783772b84f	Pseudomonas phage vB_PpuM-SKa-4	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	1346	True	48	48	51	51	47
+1c9e2e4b4fe46bc1e8221b78fe4f33bd302f11c9dc069c1f72fbd9de7c3dc976	Pseudomonas phage vB_PpuM-Voja-6	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	1346	True	48	48	51	51	47
+80d62940ed1d78fc882f27de122d89e0c40e61e9d876ea8398143fae939d765a	Pseudomonas phage vB_PpuM-Voja-6	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	186	True	48	48	51	51	47
+9bf617f564eb05b152e6c8dcbd5fad9fbaa3237780c44794308ba88b5578901e	Pseudomonas phage vB_PpuM-Voja-6	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	561	True	48	48	51	51	47
+ffbc1dcf66c2576d2a62222feb93146352ef0fa136e8f64a8342aa7ae7e58366	Pseudomonas phage vB_PpuM-Voja-6	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	948	False	48	48	51	51	47
+64056274a2b18f79ae916cf5e9325ba03bb050ed551549c12232c1ec88609eef	Pseudomonas phage vB_PpuP-AnF1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	807	True	48	48	51	51	47
+e69c2d3864cce86145611bd78b5ddf3d6a56f273b3d132a27fc75bb8bda6513f	Pseudomonas phage vB_PpuP-AnF1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	595	True	48	48	51	51	47
+0130a38b0df5abbd35b0a218a4df3f54ede50b4162a1b29a9c0e48a70da4d847	Pseudomonas phage vB_PpuP-BotAed	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	True	48	48	51	51	47
+13d06ca3f2022dc965d99505b2479c05bc089d4503402a6708415f2d2ab8413a	Pseudomonas phage vB_PpuP-BotAed	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	681	True	48	48	51	51	47
+0d2a6203265b82b39a9d2b9a5d5c08778e10185ad3155c7e5cc1dfee7e076645	Pseudomonas phage vB_PpuP-Eino	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF+TSP	595	True	48	48	51	51	47
+8a758fefcd044b247e9d422d54998062ae023d48033d4088b0920bc28cc921a8	Pseudomonas phage vB_PpuP-Eino	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	806	True	48	48	51	51	47
+45fa8e02b52822994164c3448a53251d120ff80b710fd25951b9c56bdf55a1ab	Pseudomonas phage vB_PpuP-Emajogi	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF+TSP	609	True	48	48	51	51	47
+995f4eb10c937915ec7d23233c0062e9161d506b1bcbe7c8bd54b88b8261f64c	Pseudomonas phage vB_PpuP-Emajogi	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	808	True	48	48	51	51	47
+f5f94e37ad894fe7763af7273f1dd244cc417a8bd113bacc035686206726717c	Pseudomonas phage vB_PpuP-Emajogi	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	118	True	48	48	51	51	47
+04ffe25ecc950b2c5347b1d2563a70c9089f6707f034c15c4d7e8effaee7070c	Pseudomonas phage vB_PpuP-ErraM	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+4a4e39f78f5e442018752e4bc51c7b2b0de9bf8b14cc4529a861fa445f84ccb8	Pseudomonas phage vB_PpuP-ErraM	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	682	False	48	48	51	51	47
+151c59dc9bd77add40e7fbee48199f05e4a28ba80f46bb404ddc0cd164f1e800	Pseudomonas phage vB_PpuP-ErraS	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	682	True	48	48	51	51	47
+2e55a9282aa6c4cc84268bb7b4eff1f03c28c90146c0a24fef3b719516043025	Pseudomonas phage vB_PpuP-ErraS	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+226c68ec22ab67e3e6ef2c4599991706b3ee445ceb2a97d81c5cf9e7f7dc34f6	Pseudomonas phage vB_PpuP-Haage	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	True	48	48	51	51	47
+5e2e01d5ee1e652a8bbc6c35414d6a49621e5d8219738d824867a130ce2f52a5	Pseudomonas phage vB_PpuP-Haage	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	807	True	48	48	51	51	47
+31c56906a6b7b15ff695d87b130562351ebabf1d01eab108dd96a67afbb7e3c2	Pseudomonas phage vB_PpuP-Hammaste-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	682	True	48	48	51	51	47
+7e5cc518c44e30060d2a1a88ec2a6fc7cafdf8f7439c57b369b7703c766e469e	Pseudomonas phage vB_PpuP-Hammaste-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+a73388695b9efa55a1a453dc0751dfc676610884f1f5ab69ec191c884a815771	Pseudomonas phage vB_PpuP-Hammaste-5	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	False	48	48	51	51	47
+ca6647b67865c40ad6887476172fe822f8c6c2815c8ffb1ee99aa0653f0e5a75	Pseudomonas phage vB_PpuP-Hammaste-5	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	807	False	48	48	51	51	47
+17063b035af85bdd27b2563771a66a0cd4632e9aaad6ebabd57de068eddeb265	Pseudomonas phage vB_PpuP-IPa-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	807	True	48	48	51	51	47
+8ad4d178ac31d311bfe78ce610ef8beb2e33361d26a84ed5af1e655cf754577c	Pseudomonas phage vB_PpuP-IPa-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF+TSP	595	False	48	48	51	51	47
+11e67bb3f34282ac340fecd0ab1d42af8b9d02201f93a75f2fb7ae371a4f096b	Pseudomonas phage vB_PpuP-IPa-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	843	True	48	48	51	51	47
+20396953dff0f6c8344d8fe7adcd594dfea3db22463ecf52ffed32f02d3e0c6a	Pseudomonas phage vB_PpuP-IPa-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF+TSP	633	True	48	48	51	51	47
+c36314f0e359a7572eac8e60650f4aa9093b6d3d252a70ec733667dd737a5850	Pseudomonas phage vB_PpuP-IPa-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	121	False	48	48	51	51	47
+d87754d2b4b7238351126240515a2657ce78bca0253dd1afbe608ca65ee64d7a	Pseudomonas phage vB_PpuP-Ihaste	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	681	True	48	48	51	51	47
+e52aab16f2eff1ae3a73ebe1f281901ead67d3f77efb6a4e74f7983bd9f61068	Pseudomonas phage vB_PpuP-Ihaste	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+719efff259a900e70a04b59902cf783038361e99577be808a7baa5f7a19155c2	Pseudomonas phage vB_PpuP-Illi-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	682	True	48	48	51	51	47
+f272a4c7fc82c8f4de6ce588f8425f515347ea8bed52220d7f0c8d5abfe2afad	Pseudomonas phage vB_PpuP-Illi-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+5bb282579c9c5dccdcc4061104925a9c30eb1e782384f1a1bdbcabfff242544d	Pseudomonas phage vB_PpuP-Issaku	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	806	True	48	48	51	51	47
+770f6df8bd001d5be6d0956ee51ac70c696f8ad16a938c329cb8740d3c7fe85b	Pseudomonas phage vB_PpuP-Issaku	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	True	48	48	51	51	47
+2bcf297af05af9e14ed20b844d305cf79c36863ce25622e0f2089e42f0e2bbc1	Pseudomonas phage vB_PpuP-Kaagvere	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+6fab8af71acadd087f6bd0ff75f5d8aa376f2d03659b8513df535ac13c878ba6	Pseudomonas phage vB_PpuP-Kaagvere	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	681	True	48	48	51	51	47
+7cc07d514492a7c480ed3a93914a9513a0a3e30601d654027e545fc0536ca042	Pseudomonas phage vB_PpuP-Kadastiku	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	682	True	48	48	51	51	47
+e9fe239cdf42d4fe6f5bc4bc0d1ae0e1445c779f56e306419c1171022ea5707b	Pseudomonas phage vB_PpuP-Kadastiku	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+231a202c9948d5da5c3bd7d8c0e5c07b29775beb5a9372c2144042ae2cd0174f	Pseudomonas phage vB_PpuP-Kallioja	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	800	True	48	48	51	51	47
+97d0b3df7bbfdcd6b54f48f45423a0d911d755fb1007e5f809ae1ff82cb5acd9	Pseudomonas phage vB_PpuP-Kallioja	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF+TSP	646	True	48	48	51	51	47
+c3d4d1a7c0ed03702562dd536cd0b407bba68da467203a727504ff7d1a2ff4ff	Pseudomonas phage vB_PpuP-Kallioja	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	119	True	48	48	51	51	47
+60354b8486ff9c9e8c726b05aac6f6b938d39ed2cd3c9d9723eb8362cd47c6b2	Pseudomonas phage vB_PpuP-Kanksi	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	595	True	48	48	51	51	47
+62dbe37387560094b969011ab3869992f728329df49e7db1727ad26288a9ecba	Pseudomonas phage vB_PpuP-Kanksi	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	807	True	48	48	51	51	47
+aca8a2b542f304ca99f00b3ae03f6728a19a700e90e1a30cf3bcc3e71ac1eef5	Pseudomonas phage vB_PpuP-Keeri	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	False	48	48	51	51	47
+e73cade6895e9aaae1b4861ef692078d8d9fb89110a0c4ee3ee718a32aeb65ab	Pseudomonas phage vB_PpuP-Keeri	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	806	False	48	48	51	51	47
+04733e49139baf5ad9b80cb00951b115b9eba6fcc4c01d0c859e6f8f09ca2eeb	Pseudomonas phage vB_PpuP-Keila	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	595	True	48	48	51	51	47
+c6e9cf9405a10f3b7cb5bb347be7fb2780eedc5e60610bf909e5c20b7a464728	Pseudomonas phage vB_PpuP-Keila	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	806	True	48	48	51	51	47
+0f6c07428aa3d5719b38dd1d852926272f5621b785ebfe6a22dc182dd93c140c	Pseudomonas phage vB_PpuP-KiKu	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	682	True	48	48	51	51	47
+b5d2a567a4b1a2a0a8a38e3a98f0f4998d7f79c23d64b1f1a62f851b5cd946e6	Pseudomonas phage vB_PpuP-KiKu	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+68a0604c969e9675991f594355d25b5eccf958646f528587dfdc36b75e5073e5	Pseudomonas phage vB_PpuP-KoPa-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	807	True	48	48	51	51	47
+b7f1ed16fd51ef9a926265b82b47164933525830b3e24690de406a669be99a57	Pseudomonas phage vB_PpuP-KoPa-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF+TSP	595	True	48	48	51	51	47
+58c178b61715ce29ba0366e12d925d1cd92274a92bc146933253fc8a666917f6	Pseudomonas phage vB_PpuP-Kompost-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+65eded7bd61ea012ed672d373edb805a36ac6e428675f2c7c18526ced6aa3feb	Pseudomonas phage vB_PpuP-Kompost-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	681	False	48	48	51	51	47
+43fc527effeb49378b2e83bfa4cac53e96e15c455e48a0f46055b43f745e0d31	Pseudomonas phage vB_PpuP-Kompost-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	669	True	48	48	51	51	47
+8ddefef914c931330fe5c66c8b5cf8ab5d6744eb3dc797a639fa768824b25603	Pseudomonas phage vB_PpuP-Kompost-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	800	True	48	48	51	51	47
+a6fe035042c940ada6f0d43ccb82d77fce5d73289c7d5a77bfc534ea326e2cc8	Pseudomonas phage vB_PpuP-Kompost-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	115	True	48	48	51	51	47
+2a2905bd79ce79af50de629d4390f2ba077ee06282c7670250934b195581d19f	Pseudomonas phage vB_PpuP-Konnatiik	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+c253ed2be3dd3648bb285097f4f06e7a791f6953e4c5363154ea50f5f7c815a6	Pseudomonas phage vB_PpuP-Konnatiik	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	681	False	48	48	51	51	47
+5f7836ef6c8531753603dafcc24acd1b86f7d7965b9f0250bb54cd2e853fb632	Pseudomonas phage vB_PpuP-Kriimani	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF+TSP	595	True	48	48	51	51	47
+91b65533cb0dd55b00bc0ac1576ccd9c28599e68097bf346aeb193839306b396	Pseudomonas phage vB_PpuP-Kriimani	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	807	True	48	48	51	51	47
+5b12dc5a71c1c3e532c909f9f421bdbf9a57abd2fbbeca424483414fb6f145fd	Pseudomonas phage vB_PpuP-Kurenuki	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	681	True	48	48	51	51	47
+8b75e936ae1e45005bf637c6c1e53a8502073192af53d1612452bd85e480cf47	Pseudomonas phage vB_PpuP-Kurenuki	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+346db7d4f77f839f8a0b2869cfa0fa8384f1247ce4c36d2ebcfdf5f29eb89ed6	Pseudomonas phage vB_PpuP-Kurepalu-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	852	True	48	48	51	51	47
+d992f56550032339aa70cf6c07165a38cc64c15723cbe4945f8139ef6feace5f	Pseudomonas phage vB_PpuP-Kurepalu-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	704	True	48	48	51	51	47
+018bcc27da55f79674773c2d32d45ff265b7a02e2799fa9ceb66a7a1a9eee5b4	Pseudomonas phage vB_PpuP-Kurepalu-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	119	True	48	48	51	51	47
+3542fcb278fc38b287f11b30f779355c7db7014fed4694088044a67ca6185f80	Pseudomonas phage vB_PpuP-Kurepalu-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	806	True	48	48	51	51	47
+e096a47a9a0fd15529b761591dc8d712a27492fa8f047facf34c91183d75a5f8	Pseudomonas phage vB_PpuP-Kurepalu-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF+TSP	612	True	48	48	51	51	47
+0c30d713df73a6936a704e3d0e3638fc540a02a898b607a80f2d1ac2317aa100	Pseudomonas phage vB_PpuP-Laguja-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	682	True	48	48	51	51	47
+36f75c0d1259ea0fc96b557086cef9fb10b21be14eee7eee91e6879254485e56	Pseudomonas phage vB_PpuP-Laguja-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+db0d488d419936ece6cddab0b89b18872db5a2b893109bdef344d0f13a5f50fa	Pseudomonas phage vB_PpuP-Laguja-5	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+ebe6f23c8bba1480f8a5e44744e0c601afcfb32c30752c2ff77a48ef4d6a2ee0	Pseudomonas phage vB_PpuP-Laguja-5	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	682	True	48	48	51	51	47
+0139c35fb511a60b0a8a311546e6a7670c14f81e5066ba8b91941f9fb73f1a5f	Pseudomonas phage vB_PpuP-Luke-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	119	True	48	48	51	51	47
+53da971b36b459cfca9c2d3e5e99d2e01350de8e59baecd79754666d7c26aba2	Pseudomonas phage vB_PpuP-Luke-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF+TSP	626	True	48	48	51	51	47
+d609c5230a270ded9119a9015df2e2a6d52f004dec02ee08299984105c8a96c7	Pseudomonas phage vB_PpuP-Luke-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	808	True	48	48	51	51	47
+30d27050e8e79176832e7c9670803ad2ff4055de1f36d833b53bf545744968af	Pseudomonas phage vB_PpuP-Luke-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF+TSP	633	True	48	48	51	51	47
+79cb9937bea6b013eec47d507f1431b2ffe7fe126821338f1238d992a9636a53	Pseudomonas phage vB_PpuP-Luke-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	121	True	48	48	51	51	47
+9b9a734a2bd94805560645fbca1688ec091223df0894607cdd3f0f642f181a85	Pseudomonas phage vB_PpuP-Luke-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	843	False	48	48	51	51	47
+98489fc345bb131042794bcd7f0d960b46e71cdd4f47c3a2be86675edc3c1c08	Pseudomonas phage vB_PpuP-Luutsna-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	681	True	48	48	51	51	47
+cc61813f50dae766863a37447a81e4d25c58576e7646045af66c922cd927d316	Pseudomonas phage vB_PpuP-Luutsna-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+814293987c692eb95ad06e5e6db16b94ea50ac9049f8fc4d3b042523f8c0e0f8	Pseudomonas phage vB_PpuP-Luutsna-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	681	True	48	48	51	51	47
+984d19b856d796f219e444f6e1e112b6357a6ea9e1cc8ef23715fc2a252c3487	Pseudomonas phage vB_PpuP-Luutsna-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+7faac6198aec0b4852e4f86b5156f0bb729011d28269cd387310a9e72d257c08	Pseudomonas phage vB_PpuP-Luutsna-6	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	682	True	48	48	51	51	47
+d64fd1a34e7e13a15ce4434723e2e683b3abb0c4b5f713771d4ecae3c5cd8239	Pseudomonas phage vB_PpuP-Luutsna-6	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+7bd3ce5f78944416212f0889b53949928ca50c3b00cc4849517512676ec9a0e8	Pseudomonas phage vB_PpuP-Maksa	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	False	48	48	51	51	47
+aa821d960b27f865a318e97cfad97e42ebadf244a7d735cb36ab23423b62e89f	Pseudomonas phage vB_PpuP-Maksa	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	807	True	48	48	51	51	47
+55f0a3a60c3b2f717e345c8f8459f798763f665c95bbd74a42296a3414a616d7	Pseudomonas phage vB_PpuP-Mora-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+a69825b77d46c5e981825160e39b2aa66b2c82bd806cc3ba78ad7b93385525dc	Pseudomonas phage vB_PpuP-Mora-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	682	True	48	48	51	51	47
+50f80b63bb971f6ca5bf0b1145dd821f9e2d6ceb568d1abfc5a2b3a5536e4831	Pseudomonas phage vB_PpuP-Mora-5	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	681	False	48	48	51	51	47
+631265f77b09548b7bebf6bb014ddb0d624cc074195d69160a1cc0eda0085191	Pseudomonas phage vB_PpuP-Mora-5	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+38de386abb1b57cc5a4aa63a0d0be3c052e8bcad310dce53a7b4ff5e5dc48b17	Pseudomonas phage vB_PpuP-Mudajogi	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF+TSP	631	True	48	48	51	51	47
+7318cd9f6ef58a69287d38d5d71ff8c66afe58fb9964ab978e5f22c78afbd97e	Pseudomonas phage vB_PpuP-Mudajogi	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF+TSP	631	False	48	48	51	51	47
+7cb9d4f8d4751866fd647f3a7b2cded6ad43ca8ff4fd5cb2b938656f35c4b406	Pseudomonas phage vB_PpuP-Mudajogi	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	806	True	48	48	51	51	47
+9a59e7f7650936666880fb5449441be73393552cfb5be5bddf46c1a7dca6288f	Pseudomonas phage vB_PpuP-Mudajogi	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	120	True	48	48	51	51	47
+f07a46547b6de767ecd136a258d5c3dd8684b65f02cf073d35ce262a3ff412be	Pseudomonas phage vB_PpuP-Mudajogi	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	120	False	48	48	51	51	47
+facd6613a1642c007c4f638810b01766ded66a7a348fcf8b034099445031602b	Pseudomonas phage vB_PpuP-Mudajogi	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	806	False	48	48	51	51	47
+97e4df09d52b39166d25593a287386c106dd1249445f4b84aba47c191bca5015	Pseudomonas phage vB_PpuP-Nouni	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	807	True	48	48	51	51	47
+cee9cba013dba6b1d9d4b0653a780c40ff822a1162bb9e611d4106cd1c00b6c7	Pseudomonas phage vB_PpuP-Nouni	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	595	True	48	48	51	51	47
+602ae0e85c0c3521276c690a17c86721182d82c7fd7b76016ab3c46d69cdd715	Pseudomonas phage vB_PpuP-Paidla	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	681	True	48	48	51	51	47
+74ec6d24bd914e7b4e22446c458116b4bb11bc8c2eaf8ef29b4c50c371895ec5	Pseudomonas phage vB_PpuP-Paidla	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+61be6cbd51a3ce93e16aa34ba963830454999e9764b2a1a61be7bfbfe3e03f9c	Pseudomonas phage vB_PpuP-Pori-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+a8ad1493daff64ab36c49c56bb2418ecc6b2adc85cac5d234353d3f7e72ef563	Pseudomonas phage vB_PpuP-Pori-2	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	682	True	48	48	51	51	47
+17cbccded16b28f13f1eb12a6c9a69a7cb866485899b95a0ae3c28a51a05c3da	Pseudomonas phage vB_PpuP-Pori-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	119	True	48	48	51	51	47
+40157a524aaa87e2dfaddf847f64128c2630936e17eaf93992258ef3355c62cd	Pseudomonas phage vB_PpuP-Pori-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF+TSP	612	True	48	48	51	51	47
+465a19c9293d5e79cf334a386142e038ec54e905ee1288c819405f2e24cfb79e	Pseudomonas phage vB_PpuP-Pori-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	806	True	48	48	51	51	47
+9c9fca7f97a56a8495126fc23a27040837cc50b7f00a6f710ddedc2fea8af8c2	Pseudomonas phage vB_PpuP-Roomu-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	807	True	48	48	51	51	47
+c59a1014b2e1e1b8090d56217d870f855c14e08a62bd8bd5d395defd269292a9	Pseudomonas phage vB_PpuP-Roomu-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	True	48	48	51	51	47
+2486c7c616af84e22ee8e01536138bcd186a793e0dcdc264b052b01956eef390	Pseudomonas phage vB_PpuP-SKa-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	681	True	48	48	51	51	47
+e8ce939214f86ab964ec3e61ce8d40ff42ee7a8a9f7b65ef25bc0bd41f0dd887	Pseudomonas phage vB_PpuP-SKa-3	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+1d27e1fd93b96f99337d546535bbdd1704801ab6fb6579f34495ee249177e4e2	Pseudomonas phage vB_PpuP-SaviPeeda	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	681	True	48	48	51	51	47
+76be110bebce8c670b8a8943d358089d3c12688b3063fe36a5cba241e4f1f362	Pseudomonas phage vB_PpuP-SaviPeeda	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+9107a2efbceba6032da09090565010e1d61e3f4aef542361ab4edd58cd08a457	Pseudomonas phage vB_PpuP-Torvandi	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	806	True	48	48	51	51	47
+cf10799c7266751651cb4e7d1acd31d8b46bb03a16724b15a5ca8e2d37948609	Pseudomonas phage vB_PpuP-Torvandi	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	False	48	48	51	51	47
+848399074775c814ebb9b65588dd85a4e807096003629fbeb06a233be6359460	Pseudomonas phage vB_PpuP-Torve	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	True	48	48	51	51	47
+fdf9493dc6a03acbafc7743fadaea987261b194449fe25849c61d9d298bdf81b	Pseudomonas phage vB_PpuP-Torve	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	806	False	48	48	51	51	47
+09f05f94612c1c367c47975de6779b0c6e0dfa03261e2dfdc09cce8c08698a72	Pseudomonas phage vB_PpuP-Vanda	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	681	True	48	48	51	51	47
+62daadbff5220328477b2fe3e83c048e9348d0fb683cb8f1aff84eac95f48fcd	Pseudomonas phage vB_PpuP-Vanda	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+820e4c44f5b3c6beeee31095c252d314156f7c633c163f3c1fa56c7c59fa946c	Pseudomonas phage vB_PpuP-Vasula	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	805	True	48	48	51	51	47
+908007b0c79ef3d477ff79f5264410dfd20d8088240fa67e918f35eaca39cc10	Pseudomonas phage vB_PpuP-Vasula	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	599	True	48	48	51	51	47
+4d306560c799490731557571bc9dc449fee14864b7d67382f89edec67127f4c1	Pseudomonas phage vB_PpuP-Villemi	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	681	True	48	48	51	51	47
+fa267a5d4c5bd7479ffedbc15d57584a9e394fec48477aac9db759875dec421e	Pseudomonas phage vB_PpuP-Villemi	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	199	False	48	48	51	51	47
+2d41d8f59c4656a1ecfd4565448a6cf92ee20cc1b9514d8bb4f51d335fe2ac82	Pseudomonas phage vB_PpuP-Voja-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TSP	807	True	48	48	51	51	47
+35c95389f3d8e6cd260ec516a74743df33828ca4d36960af8f2fb26d403bd0f8	Pseudomonas phage vB_PpuP-Voja-1	Pseudomonas putida KT2440 and	GCF_000007565.2	Pseudomonas putida KT2440	TF	589	True	48	48	51	51	47
+37b6185dd19ae847362084e16921d6d0af55e66dc947e3e7a29831ddb337da8a	Pseudomonas phage MiCath	Pseudomonas putida S12	GCF_000495455.2	Pseudomonas putida S12	TF	229	True	48	48	52	52	45
+5c3de449aff9c2a3a34ab93ff609b8c9a5e3dc2d8853f098f4cbad2453560808	Pseudomonas phage MiCath	Pseudomonas putida S12	GCF_000495455.2	Pseudomonas putida S12	TF	229	False	48	48	52	52	45
+9c4ca81f3e8dc66208885ced67e4f1828e49221ea96c1ddd17ec73c92aa8b6c1	Pseudomonas phage MiCath	Pseudomonas putida S12	GCF_000495455.2	Pseudomonas putida S12	TF	465	True	48	48	52	52	45
+a0df8ca7f8696e2444321523daf61c1ee73ad0ac2e6456861f7575a1b4079821	Pseudomonas phage MiCath	Pseudomonas putida S12	GCF_000495455.2	Pseudomonas putida S12	TF	465	False	48	48	52	52	45
+bc91864e7c8601a1461fc1853f0f71b05faa82c1a0ba7a7751f3c563a6cbe390	Pseudomonas phage MiCath	Pseudomonas putida S12	GCF_000495455.2	Pseudomonas putida S12	TF	465	False	48	48	52	52	45
+de00b69ff6730100de8b3b09481c47e416220d519f2542d66067dc8fd53ba030	Pseudomonas phage MiCath	Pseudomonas putida S12	GCF_000495455.2	Pseudomonas putida S12	TF	84	True	48	48	52	52	45
+f16a4c860f421b13fc5db278634c3aa274881635426d7c0c385e93a49859eb26	Pseudomonas phage MiCath	Pseudomonas putida S12	GCF_000495455.2	Pseudomonas putida S12	TF	229	False	48	48	52	52	45
+fa2f34d97aa36d8238e3e0293d1b67c428b2c5b03e3aa23053d947cac295d6a1	Pseudomonas phage MiCath	Pseudomonas putida S12	GCF_000495455.2	Pseudomonas putida S12	TF	192	True	48	48	52	52	45
+a647257461f332817424757c977b705d9e758373ce1ea8b3192b04598e1214ab	Escherichia phage Halfdan_Juelich_variant	Pseudomonas taiwanensis	GCF_000425785.1	Pseudomonas taiwanensis DSM 21245	TF	821	True	22	22	22	22	26
+710434ca6162bfa42ac016f0b1017cb340b45b4967a6d323644b629773818174	Pseudomonas phage Lebethron	Pseudomonas taiwanensis	GCF_000425785.1	Pseudomonas taiwanensis DSM 21245	TF	815	True	22	22	22	22	26
+90945d82aa1bf20fc914743eaaceb60a20bc6cca1d3958d5d4bc7333e7a46127	Pseudomonas phage Lebethron	Pseudomonas taiwanensis	GCF_000425785.1	Pseudomonas taiwanensis DSM 21245	TSP	895	True	22	22	22	22	26
+eb4f8ff6dc00fbd5be560ede3db4f35eb73032ecea24f1ca869900b95d758a8b	Pseudomonas phage Oiolarie	Pseudomonas taiwanensis	GCF_000425785.1	Pseudomonas taiwanensis DSM 21245	TSP	795	True	22	22	22	22	26
+624c90e9352ded69d09b56d7c64ea91cc98b3c444d4be465ebbaefedd2c54162	Pseudomonas phage PPpW-3	Pseudomonas plecoglossicida	GCF_052907105.1	Pseudomonas plecoglossicida	TF	184	True	19	19	19	19	23
+7d1de654b69eea8fa2306f28362e1c920101b06e55e43d8d88a218bfb5e1de98	Pseudomonas phage PPpW-3	Pseudomonas plecoglossicida	GCF_052907105.1	Pseudomonas plecoglossicida	TF	170	True	19	19	19	19	23
+8a9cc0618b2b7810899fdb4e3aa7837a9162b72bd9cf5774c5e0a480fd2b3211	Pseudomonas phage PPpW-3	Pseudomonas plecoglossicida	GCF_052907105.1	Pseudomonas plecoglossicida	TF	170	False	19	19	19	19	23
+b63ab695eb84f4e37cdbbcc1793ab90119f84b079341d1b0ca0ed94bea1b4da5	Pseudomonas phage PPpW-3	Pseudomonas plecoglossicida	GCF_052907105.1	Pseudomonas plecoglossicida	TF	170	False	19	19	19	19	23
+7dc7a0b8ef0841157d007c5ec2c933b0d26f0798454777ef910e37bd74d80d2b	Pseudomonas phage PPpW-4	Pseudomonas plecoglossicida	GCF_052907105.1	Pseudomonas plecoglossicida	TF+TSP	814	True	19	19	19	19	23
+871f9c801ded3242669d32e3834eb655b53eccf306c60d45156b436f71ae3815	Pseudomonas phage PPpW-4	Pseudomonas plecoglossicida	GCF_052907105.1	Pseudomonas plecoglossicida	TSP	794	True	19	19	19	19	23
+8b3cd881c8b1bfc05b171f5cf05f9060fccc48553618d4ec8a1b1a8181e600af	Pseudomonas phage PPpW-4	Pseudomonas plecoglossicida	GCF_052907105.1	Pseudomonas plecoglossicida	TF+TSP	814	False	19	19	19	19	23
+8d123b7810aab15f04cce44f87b053b950436f48fb4223581d1aa9b0f3c90b41	Pseudomonas phage PPpW-4	Pseudomonas plecoglossicida	GCF_052907105.1	Pseudomonas plecoglossicida	TF+TSP	814	False	19	19	19	19	23
+a6ceda7d10a53c0cc3830e2e8783bf9aa35ddfa059a824e161611c9e89e71234	Pseudomonas phage PPpW-4	Pseudomonas plecoglossicida	GCF_052907105.1	Pseudomonas plecoglossicida	TSP	794	False	19	19	19	19	23
+cf68d480e1169b8e36ddf4db19f40fce9ad8f6fded15bbc2cca5cfa0a5095f8a	Pseudomonas phage PPpW-4	Pseudomonas plecoglossicida	GCF_052907105.1	Pseudomonas plecoglossicida	TSP	794	False	19	19	19	19	23
+c4a26ba9534d2f2b26d5903a777f7ab5659929ff0b5a1928f751e01a80fc4581	Pseudomonas phage vB_PpS_SYP	Pseudomonas plecoglossicida	GCF_052907105.1	Pseudomonas plecoglossicida	TF	379	True	19	19	19	19	23
+c5a3684266695b60a50a4a24313a5209a43139033b0324eeff6e3c700de41a87	Pseudomonas phage vB_PpS_SYP	Pseudomonas plecoglossicida	GCF_052907105.1	Pseudomonas plecoglossicida	TF	205	True	19	19	19	19	23
+cba385f04e2ae393d7ffd916323c22b8a97b24974762906ca907a43264f0a285	Pseudomonas phage vB_PpS_SYP	Pseudomonas plecoglossicida	GCF_052907105.1	Pseudomonas plecoglossicida	TF	1439	True	19	19	19	19	23
+0f0dab979856b12142313f087218aee9c40340a2034d1d9eb780184680cad2b0	Pseudomonas phage vB_PseuGesM_254	Pseudomonas gessardii	GCF_900101185.1	Pseudomonas gessardii	TF	205	True	0	0	0	0	1
+4afb6b58cbb6968f39bff1d6d7d7522df632f064a46f0551498c39264c92fbb5	Pseudomonas phage vB_PseuGesM_254	Pseudomonas gessardii	GCF_900101185.1	Pseudomonas gessardii	TF+TSP	804	True	0	0	0	0	1
+682c48db8cb450cd0b64557a7b3428a9ff32ffa34e93d636e8affd76660c9057	Pseudomonas phage vB_PseuGesM_254	Pseudomonas gessardii	GCF_900101185.1	Pseudomonas gessardii	TF	255	True	0	0	0	0	1
+727d7e032e76888ea926b8f015a8913ed5762fd6434abb14907e581ea0f5f9cb	Pseudomonas phage vB_PseuGesM_254	Pseudomonas gessardii	GCF_900101185.1	Pseudomonas gessardii	TF+TSP	804	False	0	0	0	0	1
+8192d1a2120cfe6a8163765a906a5fb8e1ccecd3b898f54e48e6aa1b0fbd5f8c	Pseudomonas phage vB_PseuGesM_254	Pseudomonas gessardii	GCF_900101185.1	Pseudomonas gessardii	TF	205	False	0	0	0	0	1
+9e6dfaa9c21b6b286963d1c9eda29ba66d8acc8ecdd0f05d40fc0b9e79a34e4f	Pseudomonas phage vB_PseuGesM_254	Pseudomonas gessardii	GCF_900101185.1	Pseudomonas gessardii	TF	151	True	0	0	0	0	1
+b96386cf9702d09fffa36b090704ebc8e527cfa6d7a6b0a923f4e3cec9b6c6d5	Pseudomonas phage vB_PseuGesM_254	Pseudomonas gessardii	GCF_900101185.1	Pseudomonas gessardii	TF	129	True	0	0	0	0	1
+d8da1afe85a48fceef09a4af30411670edee8b3e608d0696ce5f12dc0a8cb694	Pseudomonas phage vB_PseuGesM_254	Pseudomonas gessardii	GCF_900101185.1	Pseudomonas gessardii	TF	255	False	0	0	0	0	1
+d9fd3e91b2431a5cb4c5d94c2cebecf240800c94087c6260cb2aafb3f3f19063	Pseudomonas phage vB_PseuGesM_254	Pseudomonas gessardii	GCF_900101185.1	Pseudomonas gessardii	TF	502	True	0	0	0	0	1
+e4ddd5f3f70a9515c3096529dd9b7b840516f8e82acb50f48534b749f305203c	Pseudomonas phage vB_PseuGesM_254	Pseudomonas gessardii	GCF_900101185.1	Pseudomonas gessardii	TF	502	False	0	0	0	0	1
+2661a709f8c19af97b33791e13c8cfd340f77ee67fe631742f1953b795b59254	Pseudomonas phage PMBT3	Pseudomonas grimontii	GCF_900101085.1	Pseudomonas grimontii	TF	272	True	0	0	0	0	1
+4ec7f7414b0c41b5c0144976e12de4ac200c615eeb18f20356a2d3580ed8fea0	Pseudomonas phage PMBT3	Pseudomonas grimontii	GCF_900101085.1	Pseudomonas grimontii	TF+TSP	1217	True	0	0	0	0	1
+6097cf939053d14019b7a21487934936d0e41dae23bcc8fec4e54478bbaaf006	Pseudomonas phage PMBT3	Pseudomonas grimontii	GCF_900101085.1	Pseudomonas grimontii	TF	495	True	0	0	0	0	1
+8d2938886836beed2e626831e59ec35dcfdbb1d9270b9e6d7560c19db205f8c5	Pseudomonas phage PMBT3	Pseudomonas grimontii	GCF_900101085.1	Pseudomonas grimontii	TF+TSP	1217	False	0	0	0	0	1
+a3d7540fdce908a6dc0646a76dccc73463bd346682d4615390e941ea4189b534	Pseudomonas phage PMBT3	Pseudomonas grimontii	GCF_900101085.1	Pseudomonas grimontii	TF	272	False	0	0	0	0	1
+c50442d7836867278ded6e1813d0ea507a10bb94faf5a5e78c761fd411c0ab7e	Pseudomonas phage PMBT3	Pseudomonas grimontii	GCF_900101085.1	Pseudomonas grimontii	TF+TSP	1217	False	0	0	0	0	1
+df8345ebc7090f2c9d57b816ff0deadc66818b86a0c5eb694c6b069c63b8c397	Pseudomonas phage PMBT3	Pseudomonas grimontii	GCF_900101085.1	Pseudomonas grimontii	TF	272	False	0	0	0	0	1
+ea3e4a2283f3a2470a52761658af0d6cc9145ffeecbe3234e8a17e1b485b0733	Pseudomonas phage PMBT3	Pseudomonas grimontii	GCF_900101085.1	Pseudomonas grimontii	TF	495	False	0	0	0	0	1
+06139399dcf1edff4aecfc3bd2a12ed9d331594f27d752cde0eadbd9841c09f5	Pseudomonas phage HU1	Pseudomonas lactis	GCF_001439845.1	Pseudomonas lactis	TF+TSP	766	True	0	0	0	0	1
+0c257b8f5587e343f30d985bbd4db65712729392fb42fa0e426fd56144cd5004	Pseudomonas phage HU1	Pseudomonas lactis	GCF_001439845.1	Pseudomonas lactis	TSP	791	True	0	0	0	0	1

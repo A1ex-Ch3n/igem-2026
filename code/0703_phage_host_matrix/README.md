@@ -35,8 +35,18 @@ that share a genome, e.g. 8 aeruginosa names → PAO1). Use 54 for "PharBP hosts
 - ✅ Step 3 viz (`step3_shared_receptor_heatmap.py`): **host × our-strain heatmap**, colour =
   # receptors shared ≥90%. Only the P. putida group lights up; phage-rich hosts (PAO1 = 767
   phages) share 0 — KT2440 (71 phages, ~48 shared) is the sweet spot. Row labels carry phage counts.
-- ⏭ Next: join PharBP RBP sequences for the top hosts (P. putida group) → the RBP × receptor
-  layer; optional fold/ipTM on the shortlist.
+- ✅ Step 4–5 (`step4_pull_rbp_sequences.py`, `step5_rbp_table_and_view.py`): pulled the
+  candidate RBPs from PharBP — every RBP whose host shares ≥1 of our receptors at ≥90%
+  (8 hosts). **347 RBPs → 201 unique sequences** (KT2440 204, NBRC 98…). Clean table +
+  a rough RBP × strain heatmap (host-level colour).
+- ⏭ Next (RBP × receptor, on Laguna): fold the 201 unique candidate RBPs against the
+  overlapped receptors (ColabFold ipTM). No RBP narrowing — use all PharBP-provided ones.
+
+## Step 4–5 outputs
+- `candidate_rbps_table.tsv` — 347 candidate RBPs: phage, host, TF/TSP, length, seq-rep flag,
+  per-strain shared-receptor counts.
+- `candidate_rbps.faa` / `candidate_rbps_meta.tsv` — sequences (for folding) + metadata.
+- `rbp_by_strain_heatmap.png` — RBPs (grouped by host) × our 5 isolates, colour = shared receptors.
 
 ## Step 3 outputs
 - `shared_receptors_heatmap.png` — host (43 genomes) × our 5 isolates, colour = shared receptors ≥90%.
