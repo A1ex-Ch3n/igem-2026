@@ -39,8 +39,11 @@ that share a genome, e.g. 8 aeruginosa names → PAO1). Use 54 for "PharBP hosts
   candidate RBPs from PharBP — every RBP whose host shares ≥1 of our receptors at ≥90%
   (8 hosts). **347 RBPs → 201 unique sequences** (KT2440 204, NBRC 98…). Clean table +
   a rough RBP × strain heatmap (host-level colour).
-- ⏭ Next (RBP × receptor, on Laguna): fold the 201 unique candidate RBPs against the
-  overlapped receptors (ColabFold ipTM). No RBP narrowing — use all PharBP-provided ones.
+- ✅ Step 6 (`fold/step6_build_fold_inputs.py`): built the RBP × receptor fold inputs —
+  201 unique RBPs → **114 families** (mmseqs 90%), overlapped receptors → **63-panel**
+  (dropped efflux/LptD) → **7,182 ColabFold pairs**. Laguna run scripts + `fold/GUIDE.md` ready.
+- ⏭ On Laguna: smoke-test (measure per-fold cost) → array fold (`%8` budget guard) → collect
+  ipTM → `rbp_receptor_iptm_heatmap.png` (the final RBP × receptor matrix).
 
 ## Step 4–5 outputs
 - `candidate_rbps_table.tsv` — 347 candidate RBPs: phage, host, TF/TSP, length, seq-rep flag,
