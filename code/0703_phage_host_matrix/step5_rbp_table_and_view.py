@@ -89,36 +89,70 @@ def main():
         w.writeheader()
         w.writerows(rbps)
 
-    # ---- rough RBP x strain heatmap (rows grouped by host) ----
+    # rows sorted so hosts form contiguous bands, most-shared host first
     order = sorted(rbps, key=lambda r: (-max((r[f"shared_{s}"] or 0) for s in STRAINS),
                                         r["organism"], r["phage"]))
     M = np.array([[(r[f"shared_{s}"] or 0) for s in STRAINS] for r in order], dtype=float)
-    # host band boundaries + labels
-    labels, bounds, prev, start = [], [], None, 0
     orgs = [r["organism"] or r["host"] for r in order]
+    # host band boundaries + centred labels
+    labels, bounds, prev, start = [], [], None, 0
     for i, o in enumerate(orgs + [None]):
         if o != prev and prev is not None:
             bounds.append(i)
             labels.append((prev, (start + i) / 2, i - start))
             start = i
         prev = o
+    vmax = M.max()
 
+    def sep_lines(ax, nrows):
+        # clean white separators between every column, and between host bands
+        for x in range(1, len(STRAINS)):
+            ax.axvline(x - 0.5, color="white", lw=1.0)
+        for b in bounds[:-1]:
+            ax.axhline(b - 0.5, color="white", lw=1.4)
+        for sp in ax.spines.values():
+            sp.set_visible(True); sp.set_edgecolor("#cccccc")
+
+    # ---- (1) SUMMARY: host-grouped bands, clean separators ----
     fig, ax = plt.subplots(figsize=(5.6, max(6, 0.022 * len(order))))
-    im = ax.imshow(M, aspect="auto", cmap="Blues", vmin=0)
-    ax.set_xticks(range(len(STRAINS)))
-    ax.set_xticklabels(STRAINS, fontsize=9)
+    im = ax.imshow(M, aspect="auto", cmap="Blues", vmin=0, vmax=vmax)
+    ax.set_xticks(range(len(STRAINS))); ax.set_xticklabels(STRAINS, fontsize=9)
     ax.set_xlabel("our isolate", fontsize=9)
     ax.set_yticks([mid for _, mid, _ in labels])
     ax.set_yticklabels([f"{name}  ({n} RBP)" for name, _, n in labels], fontsize=7)
-    for b in bounds[:-1]:
-        ax.axhline(b - 0.5, color="white", lw=1.2)
+    sep_lines(ax, len(order))
     cbar = fig.colorbar(im, ax=ax, shrink=0.35)
     cbar.set_label("receptors shared ≥90% (host-level)", fontsize=8)
-    ax.set_title(f"Candidate RBPs ({len(order)}) × our isolates\n"
+    ax.set_title(f"Candidate RBPs ({len(order)}) × our isolates — summary\n"
                  "colour = receptors that isolate shares with the RBP's host (≥90%)",
                  fontsize=9, pad=8)
     plt.tight_layout()
     fig.savefig(os.path.join(OUT, "rbp_by_strain_heatmap.png"), dpi=200, bbox_inches="tight")
+    plt.close(fig)
+
+    # ---- (2) DETAILED: one row per RBP, labelled by RBP id, clean cell borders ----
+    n = len(order)
+    fig, ax = plt.subplots(figsize=(6.0, max(8, 0.115 * n)))
+    im = ax.imshow(M, aspect="auto", cmap="Blues", vmin=0, vmax=vmax)
+    ax.set_xticks(range(len(STRAINS))); ax.set_xticklabels(STRAINS, fontsize=9)
+    ax.set_xlabel("our isolate", fontsize=9)
+    ax.set_yticks(range(n))
+    ax.set_yticklabels([f"{r['protein_id'][:8]}  {r['phage'][:26]}  [{r['rbp_type']}]"
+                        for r in order], fontsize=3.2)
+    # thin border on every cell
+    ax.set_xticks(np.arange(-0.5, len(STRAINS), 1), minor=True)
+    ax.set_yticks(np.arange(-0.5, n, 1), minor=True)
+    ax.grid(which="minor", color="white", lw=0.3)
+    ax.tick_params(which="minor", length=0)
+    for b in bounds[:-1]:
+        ax.axhline(b - 0.5, color="#d33", lw=0.8)  # red host separators
+    cbar = fig.colorbar(im, ax=ax, shrink=0.2)
+    cbar.set_label("receptors shared ≥90%", fontsize=7)
+    ax.set_title(f"Candidate RBPs (per RBP, n={n}) × our isolates — detailed\n"
+                 "red lines separate hosts; label = protein_id | phage | type", fontsize=8, pad=8)
+    plt.tight_layout()
+    fig.savefig(os.path.join(OUT, "rbp_by_strain_detailed.png"), dpi=180, bbox_inches="tight")
+    plt.close(fig)
 
     nseq = len(seen_seq)
     print(f"{len(rbps)} candidate RBPs | {nseq} unique sequences")
