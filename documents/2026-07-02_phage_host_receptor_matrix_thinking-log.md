@@ -88,10 +88,14 @@ the PI is fine with the weaker clue.
 - `code/output/0703_phage_host_matrix/receptor_by_strain.md` — repertoire summary
   (43 core groups shared by all 5; 46 capeferrum-specific; per-class counts).
 
+**Done (Step 1):** `step1_pharbp_hosts.py` → `pharbp_pseudomonas_hosts.tsv` — pulled PharBP's
+Pseudomonas-phage hosts (8,227 RBP records, 1,911 no host), cleaned the messy strings, and
+resolved **54 hosts → 43 distinct NCBI genomes** (26 strain-exact, 27 species-reference,
+1 unresolved) via the `datasets` CLI, strain-preferred. High-value near relatives:
+KT2440 (200 RBP/67 phages), fluorescens, putida, protegens Pf-5, plecoglossicida, S12, taiwanensis.
+
 **Next (planned):**
-1. Retrieve + clean the full list of Pseudomonas hosts from PharBP (resolve messy host
-   strings → downloadable NCBI genomes).
-2. Download those host genomes, annotate receptors (same rules as 0623 `receptor_fasta.py`),
+2. Download those 43 host genomes, annotate receptors (same rules as 0623 `receptor_fasta.py`),
    run locally or on Laguna, code in repo.
 3. BLAST our receptors vs each host → build the host × our-receptor overlap table
    (cells = % identity), focusing on hosts that are both phage-rich and receptor-similar.
