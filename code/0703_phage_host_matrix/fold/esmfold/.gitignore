@@ -1,6 +1,7 @@
 # generated on Laguna — regenerated from probes.fasta/receptors_panel.fasta, not tracked
 esm_pairs.tsv
 esm_pairs_smoke.tsv
+truncated_rbps.txt
 probes.fasta
 receptors_panel.fasta
 probe_map.tsv
