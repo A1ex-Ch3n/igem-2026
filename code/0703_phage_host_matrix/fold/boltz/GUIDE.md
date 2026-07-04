@@ -40,6 +40,9 @@ bash run_smoke_boltz.sh
 ```
 應看到 6 個 `confidence_*_model_0.json`,記 `time`。**若報錯**(CLI/YAML 格式),把訊息貼給 Claude。
 > Boltz 首跑會下載模型權重(~幾 GB)到 `~/.boltz`,需 egress;之後就快。
+> **`--no_kernels`(已預設在 smoke + sbatch)**:Laguna 驅動是 CUDA 12.4,`boltz[cuda]` 的優化
+> kernel(`cuequivariance`/`libcue_ops.so`)要更新的 cuBLAS 符號(`cublasGemmGroupedBatchedEx`),
+> 在這個驅動上載不進來 → 用 `--no_kernels` 走純 PyTorch 三角更新繞過(稍慢但能跑)。
 
 ## Step 6 — 切塊 + 送 array
 ```bash

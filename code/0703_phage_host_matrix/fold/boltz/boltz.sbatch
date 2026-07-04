@@ -24,5 +24,5 @@ OUT=$(printf "results/chunk_%03d" "$SLURM_ARRAY_TASK_ID")
 echo ">> task $SLURM_ARRAY_TASK_ID : $CH -> $OUT"
 boltz predict "$CH" --out_dir "$OUT" \
      --accelerator gpu --devices 1 --diffusion_samples 1 --recycling_steps 3 \
-     --output_format pdb --cache "$HOME/.boltz"
+     --output_format pdb --cache "$HOME/.boltz" --no_kernels
 echo ">> task $SLURM_ARRAY_TASK_ID done"

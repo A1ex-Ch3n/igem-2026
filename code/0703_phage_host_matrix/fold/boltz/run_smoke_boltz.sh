@@ -12,6 +12,6 @@ cd "$BASE"
 echo ">> Boltz-2 on 6 smoke pairs (MSA-free, 1 diffusion sample, 3 recycles) — timing..."
 time boltz predict smoke_input --out_dir results/smoke \
      --accelerator gpu --devices 1 --diffusion_samples 1 --recycling_steps 3 \
-     --output_format pdb --cache "$HOME/.boltz"
+     --output_format pdb --cache "$HOME/.boltz" --no_kernels
 echo ">> confidence files:"; find results/smoke -name 'confidence_*_model_0.json'
 echo ">> wall-time ÷ 6 = per-fold; × 7182 = full-run GPU-hours."
