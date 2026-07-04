@@ -6,6 +6,11 @@ homology-based — see the thinking log for the full reasoning).
 
 Full context + decisions: [`documents/2026-07-02_phage_host_receptor_matrix_thinking-log.md`](../../documents/2026-07-02_phage_host_receptor_matrix_thinking-log.md).
 
+**Counts — 54 host strains vs 43 genomes** (different units, both correct): **54** = distinct
+PharBP host *name* strings; **43** = distinct NCBI *genomes* they resolve to (53 resolved − 10
+that share a genome, e.g. 8 aeruginosa names → PAO1). Use 54 for "PharBP hosts", 43 for
+"genomes we compared". `receptor_host_presence.tsv` counts at the 54 host-strain level.
+
 ## Scripts
 - `build_receptor_by_strain.py` — clusters our 441 receptors (mmseqs 90% id / 80% cov)
   across the 5 sequenced isolates → receptor × strain presence table + repertoire summary.

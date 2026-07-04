@@ -89,9 +89,13 @@ def main():
 
     with open(os.path.join(OUT, "receptor_host_presence.md"), "w") as fh:
         fh.write("# Our receptors — presence across PharBP host strains\n\n")
-        fh.write(f"For each of our **{n}** receptor groups: which of the 54 PharBP Pseudomonas "
-                 f"host strains carry a homolog. Tiers: >=90% (essentially same receptor), "
+        fh.write(f"For each of our **{n}** receptor groups: which of the **54 PharBP host name "
+                 f"strings** carry a homolog. Tiers: >=90% (essentially same receptor), "
                  f">=70% (close), >=50% (homolog).\n\n")
+        fh.write("> **Counts are at the 54 host-*strain* level, not the 43 distinct genomes.** "
+                 "Several PharBP names share one genome (e.g. 8 aeruginosa names -> PAO1), so a "
+                 "receptor in that genome is counted once per name. This inflates aeruginosa's "
+                 ">=50 counts; negligible for the P. putida group (~1 name : 1 genome).\n\n")
         fh.write(f"- receptors present in >=1 host at **>=90%**: **{in_any90}/{n}**\n")
         fh.write(f"- receptors present in >=1 host at **>=50%**: **{in_any50}/{n}**\n")
         fh.write(f"- receptors found in **no** PharBP host (even >=50%) — potentially "

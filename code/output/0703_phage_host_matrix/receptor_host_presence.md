@@ -1,6 +1,8 @@
 # Our receptors — presence across PharBP host strains
 
-For each of our **144** receptor groups: which of the 54 PharBP Pseudomonas host strains carry a homolog. Tiers: >=90% (essentially same receptor), >=70% (close), >=50% (homolog).
+For each of our **144** receptor groups: which of the **54 PharBP host name strings** carry a homolog. Tiers: >=90% (essentially same receptor), >=70% (close), >=50% (homolog).
+
+> **Counts are at the 54 host-*strain* level, not the 43 distinct genomes.** Several PharBP names share one genome (e.g. 8 aeruginosa names -> PAO1), so a receptor in that genome is counted once per name. This inflates aeruginosa's >=50 counts; negligible for the P. putida group (~1 name : 1 genome).
 
 - receptors present in >=1 host at **>=90%**: **76/144**
 - receptors present in >=1 host at **>=50%**: **131/144**

@@ -7,6 +7,30 @@ A findings summary (results, not reasoning) for each step done so far. Goal of t
 task: predict which known Pseudomonas phages could infect our isolates, bridged by shared
 receptor repertoire (a clue, not proof — phages read variable surface loops).
 
+## ⚠️ Terminology — 54 host strains vs 43 genomes (讀之前先看)
+
+These two numbers are **different units** and both are correct:
+
+- **54 = PharBP host *name* strings** (host strains as PharBP records them, e.g.
+  `Pseudomonas aeruginosa PAO1`, `...CHA`, `...LESB58` each count as one).
+- **43 = distinct NCBI *genomes*** those strings resolve to — the unit we actually
+  download, mine receptors from, and compute overlap against.
+
+Why 54 → 43: of the 54 host strings, 53 resolve (1 unresolved, `Pseudomonas sp. 1-1-1b`),
+and several distinct names map to the **same** genome — notably **8 aeruginosa names all
+fall back to PAO1 `GCF_000006765.1`** (their own strain assembly wasn't found), plus 3
+name-pairs sharing a genome. 53 − 10 shared = **43**.
+
+**Which to use:** "how many Pseudomonas hosts in PharBP" → **54**; "how many genomes we
+compared" → **43**. *Caveat:* `receptor_host_presence.tsv` counts at the **54 host-strain**
+level, so a genome shared by 8 aeruginosa names is counted 8× there (inflates the aeruginosa
+`n_ge50`; negligible for the P. putida group, which is ~1 name : 1 genome).
+
+**中文:** 54 = PharBP 記的 host **名稱字串**(host strains);43 = 這些名字對應到的 distinct
+NCBI **基因體**(我們實際下載/比對的單位)。54→43 是因為有些不同名字對到同一個基因體(最明顯:
+8 個 aeruginosa 名字都退回 PAO1 `GCF_000006765.1`),53 個有解析 − 10 個共用 = 43。談「PharBP 有幾個
+host」用 54,談「比對了幾個基因體」用 43。
+
 ## Output files (`code/output/0703_phage_host_matrix/`)
 | file | what |
 |---|---|
