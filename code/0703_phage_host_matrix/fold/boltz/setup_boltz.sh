@@ -15,6 +15,9 @@ conda env list | grep -q "^boltz " || conda create -n boltz python=3.11 -y
 conda activate boltz
 pip install --upgrade pip
 pip install "boltz[cuda]" -U
+# Laguna GPU driver is CUDA 12.4 (found version 12040); boltz[cuda] pulls a too-new torch
+# -> "NVIDIA driver too old". Pin torch to the cu124 build (known-good on this cluster).
+pip install torch --index-url https://download.pytorch.org/whl/cu124
 
 echo ">> verifying:"; boltz predict --help >/dev/null 2>&1 && echo ">> boltz OK ($(boltz --version 2>/dev/null || echo installed))" \
     || echo ">> boltz --help FAILED — paste output to Claude"
