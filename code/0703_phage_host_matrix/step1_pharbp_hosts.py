@@ -2,10 +2,16 @@
 Step 1 of the phage-host receptor matrix: retrieve + clean PharBP's Pseudomonas host
 list and resolve each to a downloadable NCBI assembly accession.
 
+We filter by the HOST field (host contains Pseudomonas — the authoritative universe:
+`host=Pseudomonas` reproduces PharBP's 6,376 host-containing records), plus the
+reclassified-Pseudomonas genus Stutzerimonas (which the substring misses). NOT by phage
+name — that would miss Pseudomonas hosts of phages not named "Pseudomonas phage" and
+undercount per-host records.
+
 PharBP only gives host NAME strings (and messy ones: multi-host, species-only, junk,
-mixed strain levels). We pull the hosts of Pseudomonas-named phages, clean the strings,
-and resolve each to an NCBI RefSeq assembly via the `datasets` CLI (strain-preferred:
-use the named strain's assembly when PharBP gives one, else the species reference).
+mixed strain levels). We clean the strings and resolve each to an NCBI RefSeq assembly
+via the `datasets` CLI (strain-preferred: use the named strain's assembly when PharBP
+gives one, else the species reference).
 
 Does NOT download genomes (that's Step 2) — only resolves accessions.
 
@@ -39,7 +45,13 @@ PUTIDA_GROUP = ("putida", "capeferrum", "protegens", "fluorescens", "monteilii",
                 "plecoglossicida", "entomophila", "asplenii", "taiwanensis", "alloputida",
                 "hunanensis", "fortuita", "chlororaphis")
 
-# lowercased host strings to drop entirely (not a resolvable Pseudomonas genome)
+# host field is queried by substring on the server; these terms cover Pseudomonas +
+# reclassified-Pseudomonas genera (Stutzerimonas = P. stutzeri; Aquipseudomonas comes
+# free via the "pseudomonas" substring).
+HOST_TERMS = ["Pseudomonas", "Stutzerimonas"]
+ACCEPT_GENERA = ("pseudomonas", "aquipseudomonas", "stutzerimonas")
+
+# lowercased host strings to drop entirely (not a resolvable genome)
 JUNK = {"pseudomonas", "pseudomonas sp.", "carbapenem-resistant pseudomonas", ""}
 
 
@@ -52,7 +64,9 @@ def clean_host_string(raw):
             p = p[:-4].strip()
         if p.lower() in JUNK:
             continue
-        if not (p.lower().startswith("pseudomonas") or p.lower().startswith("stutzerimonas")):
+        # keep only Pseudomonas / reclassified-Pseudomonas genera (drop E. coli,
+        # Lactobacillus, etc. that appear in multi-host strings)
+        if not p.lower().startswith(ACCEPT_GENERA):
             continue
         out.append(p)
     return out
@@ -131,11 +145,15 @@ def resolve(genus, species, strain, cache):
 
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
-    print("fetching PharBP Pseudomonas-phage records...")
-    r = requests.get(EXPORT, params={"phage": "Pseudomonas", "download": "csv"},
-                     timeout=180, headers={"User-Agent": "iGEM6317-pharbp-client/1.0"})
-    r.raise_for_status()
-    rows = list(csv.reader(io.StringIO(r.text)))[1:]
+    rows = []
+    for term in HOST_TERMS:
+        print(f"fetching PharBP records with host={term} ...")
+        r = requests.get(EXPORT, params={"host": term, "download": "csv"},
+                         timeout=180, headers={"User-Agent": "iGEM6317-pharbp-client/1.0"})
+        r.raise_for_status()
+        part = list(csv.reader(io.StringIO(r.text)))[1:]
+        print(f"  {len(part)} records")
+        rows += part
 
     rbp = Counter()
     phages = defaultdict(set)
@@ -193,8 +211,8 @@ def main():
     by_level = Counter(r["resolution_level"] for r in out_rows)
     with open(os.path.join(OUT_DIR, "pharbp_pseudomonas_hosts.md"), "w") as fh:
         fh.write("# PharBP Pseudomonas hosts -> NCBI genomes (Step 1)\n\n")
-        fh.write(f"Source: `{EXPORT}?phage=Pseudomonas` ({len(rows)} RBP records; "
-                 f"{no_host} had no host).\n\n")
+        fh.write(f"Source: `{EXPORT}?host=Pseudomonas` (+ host=Stutzerimonas) — "
+                 f"{len(rows)} RBP records whose HOST is Pseudomonas / reclassified-Pseudomonas.\n\n")
         fh.write(f"- distinct cleaned hosts: **{len(out_rows)}**\n")
         fh.write(f"- resolved to a genome: **{len(resolved)}** "
                  f"({by_level.get('strain-exact',0)} strain-exact, "

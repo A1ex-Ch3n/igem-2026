@@ -1,6 +1,6 @@
 # PharBP Pseudomonas hosts -> NCBI genomes (Step 1)
 
-Source: `https://pharbp.ugent.be/export/results/?phage=Pseudomonas` (8227 RBP records; 1911 had no host).
+Source: `https://pharbp.ugent.be/export/results/?host=Pseudomonas` (+ host=Stutzerimonas) — 6382 RBP records whose HOST is Pseudomonas / reclassified-Pseudomonas.
 
 - distinct cleaned hosts: **54**
 - resolved to a genome: **53** (26 strain-exact, 27 species-reference)
@@ -11,7 +11,7 @@ Source: `https://pharbp.ugent.be/export/results/?phage=Pseudomonas` (8227 RBP re
 
 | host | accession | level | RBPs | phages |
 |---|---|---|---|---|
-| Pseudomonas putida KT2440 | GCF_000007565.2 | strain-exact | 200 | 67 |
+| Pseudomonas putida KT2440 | GCF_000007565.2 | strain-exact | 227 | 71 |
 | Pseudomonas fluorescens | GCF_900215245.1 | species-reference | 137 | 23 |
 | Pseudomonas putida | GCF_000412675.1 | species-reference | 96 | 12 |
 | Pseudomonas chlororaphis | GCF_036689615.1 | species-reference | 18 | 1 |
@@ -20,25 +20,26 @@ Source: `https://pharbp.ugent.be/export/results/?phage=Pseudomonas` (8227 RBP re
 | Pseudomonas protegens | GCF_900560965.1 | species-reference | 8 | 3 |
 | Pseudomonas putida S12 | GCF_000495455.2 | strain-exact | 8 | 1 |
 | Pseudomonas asplenii | GCF_900105475.1 | species-reference | 4 | 2 |
+| Pseudomonas taiwanensis | GCF_000425785.1 | species-reference | 4 | 3 |
 | Pseudomonas fluorescens strain 22 | GCF_900215245.1 | species-reference | 4 | 1 |
-| Pseudomonas taiwanensis | GCF_000425785.1 | species-reference | 3 | 2 |
 | Pseudomonas putida NBRC 14164 | GCF_000412675.1 | strain-exact | 2 | 1 |
 
 ## All hosts by PharBP RBP-record count
 
 | host | accession | level | RBPs | phages |
 |---|---|---|---|---|
-| Pseudomonas aeruginosa | GCF_000006765.1 | species-reference | 3100 | 589 |
+| Pseudomonas aeruginosa | GCF_000006765.1 | species-reference | 3106 | 590 |
 | Pseudomonas aeruginosa PAO1 | GCF_000006765.1 | strain-exact | 1043 | 154 |
 | Pseudomonas syringae pv. actinidiae | GCF_001913215.1 | strain-exact | 328 | 27 |
-| Pseudomonas putida KT2440 | GCF_000007565.2 | strain-exact | 200 | 67 |
-| Pseudomonas syringae | GCF_018394375.1 | species-reference | 188 | 30 |
+| Pseudomonas putida KT2440 | GCF_000007565.2 | strain-exact | 227 | 71 |
+| Pseudomonas syringae | GCF_018394375.1 | species-reference | 192 | 34 |
 | Pseudomonas fluorescens | GCF_900215245.1 | species-reference | 137 | 23 |
 | Pseudomonas aeruginosa PA14 | GCF_030264075.1 | strain-exact | 130 | 40 |
 | Pseudomonas putida | GCF_000412675.1 | species-reference | 96 | 12 |
 | Pseudomonas syringae pv. avii | GCF_900235835.1 | strain-exact | 96 | 10 |
 | Pseudomonas syringae pv. porri | GCF_001275725.1 | strain-exact | 84 | 6 |
 | Pseudomonas aeruginosa PAK | GCF_902172305.2 | strain-exact | 73 | 10 |
+| Pseudomonas aeruginosa HIM-6 | GCF_000006765.1 | species-reference | 41 | 12 |
 | Pseudomonas syringae pv. actinidiae ICMP 18800 | GCF_000344375.1 | strain-exact | 35 | 2 |
 | Pseudomonas syringae pv. phaseolicola | GCF_001294025.1 | strain-exact | 24 | 5 |
 | Pseudomonas syringae pv. tomato str. DC3000 | GCF_000007805.1 | strain-exact | 22 | 5 |
@@ -49,7 +50,6 @@ Source: `https://pharbp.ugent.be/export/results/?phage=Pseudomonas` (8227 RBP re
 | Pseudomonas syringae pv. tomato | GCF_002966555.1 | strain-exact | 15 | 4 |
 | Pseudomonas aeruginosa ATCC9027 | GCF_000006765.1 | species-reference | 14 | 2 |
 | Pseudomonas protegens Pf-5 | GCF_000012265.1 | strain-exact | 14 | 6 |
-| Pseudomonas aeruginosa HIM-6 | GCF_000006765.1 | species-reference | 13 | 3 |
 | Pseudomonas plecoglossicida | GCF_052907105.1 | species-reference | 13 | 3 |
 | Pseudomonas aeruginosa LESB58 | GCF_000026645.1 | strain-exact | 11 | 3 |
 | Pseudomonas tolaasii | GCF_002813445.1 | species-reference | 10 | 2 |
@@ -72,10 +72,10 @@ Source: `https://pharbp.ugent.be/export/results/?phage=Pseudomonas` (8227 RBP re
 | Pseudomonas asplenii | GCF_900105475.1 | species-reference | 4 | 2 |
 | Pseudomonas alcaligenes | GCF_001597285.1 | species-reference | 4 | 1 |
 | Pseudomonas syringae pv. actinidiae CFBP 7286 | GCF_000245415.1 | strain-exact | 4 | 1 |
+| Pseudomonas taiwanensis | GCF_000425785.1 | species-reference | 4 | 3 |
 | Pseudomonas fluorescens strain 22 | GCF_900215245.1 | species-reference | 4 | 1 |
 | Pseudomonas otitidis | GCF_011397855.1 | species-reference | 3 | 1 |
 | Pseudomonas aeruginosa strain 1-13 | GCF_000006765.1 | species-reference | 3 | 3 |
-| Pseudomonas taiwanensis | GCF_000425785.1 | species-reference | 3 | 2 |
 | Pseudomonas cichorii | GCF_018343775.1 | species-reference | 3 | 1 |
 | Pseudomonas lactis | GCF_001439845.1 | species-reference | 2 | 1 |
 | Pseudomonas putida NBRC 14164 | GCF_000412675.1 | strain-exact | 2 | 1 |

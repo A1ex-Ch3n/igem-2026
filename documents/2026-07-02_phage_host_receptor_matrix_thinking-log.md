@@ -88,11 +88,17 @@ the PI is fine with the weaker clue.
 - `code/output/0703_phage_host_matrix/receptor_by_strain.md` — repertoire summary
   (43 core groups shared by all 5; 46 capeferrum-specific; per-class counts).
 
-**Done (Step 1):** `step1_pharbp_hosts.py` → `pharbp_pseudomonas_hosts.tsv` — pulled PharBP's
-Pseudomonas-phage hosts (8,227 RBP records, 1,911 no host), cleaned the messy strings, and
-resolved **54 hosts → 43 distinct NCBI genomes** (26 strain-exact, 27 species-reference,
-1 unresolved) via the `datasets` CLI, strain-preferred. High-value near relatives:
-KT2440 (200 RBP/67 phages), fluorescens, putida, protegens Pf-5, plecoglossicida, S12, taiwanensis.
+**Done (Step 1):** `step1_pharbp_hosts.py` → `pharbp_pseudomonas_hosts.tsv` — cleaned PharBP's
+Pseudomonas hosts and resolved **54 hosts → 43 distinct NCBI genomes** (26 strain-exact,
+27 species-reference, 1 unresolved) via the `datasets` CLI, strain-preferred. High-value near
+relatives: KT2440 (227 RBP/71 phages), fluorescens, putida, protegens Pf-5, plecoglossicida, S12, taiwanensis.
+
+*Reliability check (user-prompted):* first cut filtered by **phage name** (`phage=Pseudomonas`),
+which slightly undercounts. Re-did it by **host field** (`host=Pseudomonas` → **6,376 records**,
+reproducing the DB's own count, + `host=Stutzerimonas`). Result: same **~54 hosts / 43 genomes**
+— the small "missed" host strings were junk (`Pseudomonas sp.`) or multi-host entries whose
+Pseudomonas part (KT2440) was already captured. Lesson: filter PharBP by HOST, not phage name;
+its host field is coarse (6k+ RBP records collapse to ~54 host names, dominated by lab strains).
 
 **Next (planned):**
 2. Download those 43 host genomes, annotate receptors (same rules as 0623 `receptor_fasta.py`),
