@@ -100,12 +100,18 @@ reproducing the DB's own count, + `host=Stutzerimonas`). Result: same **~54 host
 Pseudomonas part (KT2440) was already captured. Lesson: filter PharBP by HOST, not phage name;
 its host field is coarse (6k+ RBP records collapse to ~54 host names, dominated by lab strains).
 
+**Done (Step 2):** `step2_host_receptors.py` — downloaded the 43 host proteomes (datasets CLI),
+mined **3,850 receptors** (reusing 0623 `classify()`), and mmseqs'd our **144 receptor reps**
+vs each → **host × our-receptor overlap matrix** (144 × 43). Cross-validates 0623:
+**P. putida max 99.4% id** (57–68 receptors shared ≥90%; KT2440 = 71 phages), plecoglossicida/
+taiwanensis secondary, **P. aeruginosa far (81.7%, 0 shared ≥90%)** despite ~108 receptors.
+Outputs: `host_overlap_matrix.tsv`, `host_overlap_summary.{tsv,md}`, `host_receptor_overlap.tsv`,
+`host_receptor_counts.tsv`. (Big proteomes stay in job tmp, not git.)
+
 **Next (planned):**
-2. Download those 43 host genomes, annotate receptors (same rules as 0623 `receptor_fasta.py`),
-   run locally or on Laguna, code in repo.
-3. BLAST our receptors vs each host → build the host × our-receptor overlap table
-   (cells = % identity), focusing on hosts that are both phage-rich and receptor-similar.
-4. Join PharBP RBP sequences for the top hosts; optional fold/ipTM on the shortlist.
+3. Join PharBP RBP sequences for the top hosts (P. putida group: KT2440 etc.) → the RBP ×
+   receptor layer; the giant matrix's phage side.
+4. Optional fold/ipTM on the shortlist for a direct binding signal.
 
 ## Related files
 - PharBP-query report: `documents/2026-07-01_pharbp_query_report.md`

@@ -21,7 +21,16 @@ Full context + decisions: [`documents/2026-07-02_phage_host_receptor_matrix_thin
 
 ## Progress
 - ✅ receptor × strain reference table (our isolates)
-- ✅ Step 1: PharBP hosts → NCBI genomes (54 hosts, 43 genomes; KT2440/putida/protegens
-  the high-value near relatives)
-- ⏭ Step 2: download the 43 genomes + annotate receptors (local or Laguna) → BLAST vs our
-  receptors → host × our-receptor overlap table → join PharBP RBPs for top hosts.
+- ✅ Step 1: PharBP hosts → NCBI genomes (54 hosts, 43 genomes; filter by HOST not phage,
+  reproduces PharBP's 6,376 records)
+- ✅ Step 2 (`step2_host_receptors.py`): downloaded the 43 genomes, mined 3,850 host
+  receptors, mmseqs'd our 144 receptor reps vs each → **host × our-receptor overlap matrix**.
+  Validates 0623: P. putida max 99.4% id (57–68 receptors shared ≥90%, KT2440 = 71 phages);
+  aeruginosa far (81.7%, 0 shared ≥90%).
+- ⏭ Next: join PharBP RBP sequences for the top hosts (P. putida group) → the RBP × receptor
+  layer; optional fold/ipTM on the shortlist.
+
+## Step 2 outputs
+- `host_overlap_matrix.tsv` — 144 our-receptors × 43 host genomes, cell = best % identity.
+- `host_overlap_summary.{tsv,md}` — hosts ranked by receptors shared with us + PharBP RBP/phages.
+- `host_receptor_overlap.tsv` (long) · `host_receptor_counts.tsv` (per-host repertoire).
