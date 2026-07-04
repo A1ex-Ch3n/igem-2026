@@ -1,57 +1,119 @@
-# RBP × receptor fold on Laguna — run guide
+# RBP × receptor fold on Laguna — 完整操作指南
 
-Fold **114 candidate RBP families × 63 of our overlapped receptors = 7,182 ColabFold
-multimer predictions** → ipTM per pair → the final RBP × receptor matrix + heatmap.
-Reuses the `binding_screen` ColabFold pattern. ~same scale as the 7,884 they ran.
+Fold **114 candidate RBP families × 63 overlapped receptors = 7,182 ColabFold multimer**
+預測 → 每對 ipTM → 最終 RBP × receptor 矩陣 + 熱圖。程式碼透過 git branch
+`rbp-receptor-fold` 上 Laguna,結果在 Laguna 上 **commit + push** 回來。
 
-Inputs (built locally by `step6_build_fold_inputs.py`, in `code/output/0703_phage_host_matrix/fold/`):
-`probes.fasta` (114), `receptors_panel.fasta` (63), `all_pairs.csv` (7,182), `smoke.csv` (6),
-`probe_map.tsv`, `receptor_map.tsv`.
+路徑:
+- Clone:`/project/jespinoza_1541/$USER/igem-2026/`
+- 工作區:`/project/jespinoza_1541/$USER/rbp_receptor_fold/`(組裝腳本+輸入)
+- ColabFold:`/project/jespinoza_1541/$USER/localcolabfold`(一次性安裝,共用)
 
-## Step 0 — prerequisite
-LocalColabFold at `/project/jespinoza_1541/$USER/localcolabfold` (already installed for
-binding_screen — reuse it). If missing: run `binding_screen/cluster/setup_colabfold.sh`.
+---
 
-## Step 1 — stage to Laguna
-Copy the fold folder into `/project/jespinoza_1541/$USER/rbp_receptor_fold/`:
+## Step 1 — 開哪個 session + 資源設定
+
+用 **Code Server (VS Code)**。OnDemand 表單填:
+
+| 欄位 | 值 |
+|---|---|
+| Account / Allocation | `jespinoza@kgi.edu_1541` |
+| Partition | `gpu` |
+| GPUs | `1`(type `l40s`) |
+| CPUs / cores | `8` |
+| Memory | `40 GB` |
+| Wall time | `4:00:00`(ColabFold 安裝 ~30min + smoke + 送出 array) |
+
+> ⚠️ **Step A/B/D(clone、colabfold 安裝)需要對外網路**。若 GPU compute 節點沒 egress,
+> 就在 **login node**(SSH 或 OnDemand shell)跑 A/B/D,再回 GPU session 跑 smoke。
+> array job 是 `sbatch` 丟出去在別的節點跑,不佔這個 session。
+
+## Step A — GitHub Token(一次性,要能 push)
+github.com → Settings → Developer settings → **Personal access tokens → Fine-grained tokens**:
+- Repository access:`A1ex-Ch3n/igem-2026`
+- Permissions → **Contents: Read and write**(等下 clone 和 push 結果都用)
+- 複製 token。
+
+## Step B — sparse clone 這個 branch(只抓 fold 相關資料夾)
 ```bash
-mkdir -p /project/jespinoza_1541/$USER/rbp_receptor_fold
-# from the repo clone on Laguna, or scp from your Mac:
-cp code/0703_phage_host_matrix/fold/* \
-   code/output/0703_phage_host_matrix/fold/{probes.fasta,receptors_panel.fasta,all_pairs.csv,smoke.csv,probe_map.tsv,receptor_map.tsv} \
-   /project/jespinoza_1541/$USER/rbp_receptor_fold/
+cd /project/jespinoza_1541/$USER
+git clone --filter=blob:none --no-checkout --branch rbp-receptor-fold \
+  https://github.com/A1ex-Ch3n/igem-2026.git igem-2026
+cd igem-2026
+git sparse-checkout set code/0703_phage_host_matrix/fold code/output/0703_phage_host_matrix/fold
+git checkout rbp-receptor-fold
 ```
-(If `all_pairs.csv` wasn't committed, regenerate it: `python3 step6_build_fold_inputs.py` locally.)
+帳密:Username `A1ex-Ch3n`,Password 貼 token。確認:
+```bash
+ls code/0703_phage_host_matrix/fold code/output/0703_phage_host_matrix/fold
+```
 
-## Step 2 — smoke (measure per-fold cost FIRST)
-Grab a GPU (`salloc … --gres=gpu:l40s:1` or OnDemand GPU terminal), then:
+## Step C — 組裝工作區(腳本 + 輸入放一起,重生 all_pairs.csv)
+```bash
+WORK=/project/jespinoza_1541/$USER/rbp_receptor_fold
+mkdir -p "$WORK"
+cd /project/jespinoza_1541/$USER/igem-2026
+cp code/0703_phage_host_matrix/fold/{make_pairs.py,split_input.py,rbp_receptor.sbatch,run_smoke.sh,setup_colabfold.sh,collect_results.py,fold_heatmap.py} "$WORK/"
+cp code/output/0703_phage_host_matrix/fold/{probes.fasta,receptors_panel.fasta,probe_map.tsv,receptor_map.tsv} "$WORK/"
+cd "$WORK"
+python3 make_pairs.py     # 重生 all_pairs.csv(7,182 對)+ smoke.csv(gitignore 沒帶)
+```
+
+## Step D — 安裝 LocalColabFold(一次性,需網路的節點)
+```bash
+bash /project/jespinoza_1541/$USER/rbp_receptor_fold/setup_colabfold.sh
+```
+下載 ~5GB、約 15–30 分鐘;裝到 `/project/jespinoza_1541/$USER/localcolabfold`。已裝就自動跳過。
+
+## Step E — smoke(先量每對成本!)
+在 GPU 節點:
 ```bash
 cd /project/jespinoza_1541/$USER/rbp_receptor_fold
 bash run_smoke.sh
 ```
-Note the wall-time; ÷6 = per-fold; ×7,182 = full-run GPU-hours. Budget against the shared
-10k-hour allocation. If the remote MMseqs2 MSA is slow or blocked (no compute-node egress),
-add `--msa-mode single_sequence` to `MSA_FLAGS` in `rbp_receptor.sbatch`.
+記 `time` 的 wall-time ÷ 6 = 每對成本;× 7,182 = 全跑 GPU-hr,對照共用 10k-hour 額度。
+> **MSA**:預設走遠端 MMseqs2(需 compute node egress、較慢)。若 smoke 顯示太慢或被擋,
+> 編輯 `rbp_receptor.sbatch` 把 `MSA_FLAGS=""` 改成 `MSA_FLAGS="--msa-mode single_sequence"`(快、離線)。
 
-## Step 3 — split + submit the array
+## Step F — 切塊 + 送出 array
 ```bash
-python3 split_input.py 40           # 7,182 pairs -> 180 chunks; prints: --array=0-179%8
+cd /project/jespinoza_1541/$USER/rbp_receptor_fold
+python3 split_input.py 40           # 7,182 對 → 180 塊;印出 --array=0-179%8
 sbatch --array=0-179%8 rbp_receptor.sbatch
+squeue -u $USER                     # 看進度
 ```
-`%8` caps concurrent tasks (budget guard). Resumable per chunk (re-submit missing chunks).
+`%8` = 最多同時 8 個 task(共用額度保護)。array 在別的節點跑,可關掉 session,之後再回來收。
 
-## Step 4 — collect + heatmap
+## Step G — 收集 + 熱圖(array 跑完後)
 ```bash
+cd /project/jespinoza_1541/$USER/rbp_receptor_fold
 python3 collect_results.py results binding_matrix.csv
-python3 fold_heatmap.py binding_matrix.csv        # -> rbp_receptor_iptm_heatmap.png
+python3 fold_heatmap.py binding_matrix.csv        # → rbp_receptor_iptm_heatmap.png
 ```
 
-## Step 5 — bring results back
-Copy `binding_matrix.csv` + `rbp_receptor_iptm_heatmap.png` into
-`code/output/0703_phage_host_matrix/fold/` and commit. (Large ColabFold structure outputs
-stay on Laguna — regenerable.)
+## Step H — 在 Laguna 上 commit + push 回來
+把結果放進 clone 的 output 資料夾再 push(token 要有 write):
+```bash
+cd /project/jespinoza_1541/$USER/igem-2026
+cp /project/jespinoza_1541/$USER/rbp_receptor_fold/{binding_matrix.csv,rbp_receptor_iptm_heatmap.png} \
+   code/output/0703_phage_host_matrix/fold/
+git config user.name "CChen29"; git config user.email "CChen29@cmc.edu"
+git pull --rebase origin rbp-receptor-fold
+git add code/output/0703_phage_host_matrix/fold/binding_matrix.csv \
+        code/output/0703_phage_host_matrix/fold/rbp_receptor_iptm_heatmap.png
+git commit -m "results(0703): RBP × receptor ColabFold ipTM matrix + heatmap
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>"
+git push origin rbp-receptor-fold
+```
+(若 push 出現 403 → token 沒有寫入權限,重產一顆 Read and write 的。)
 
-## Caveats
-- **Monomer×monomer approximation** — RBPs are usually homotrimers; ipTM here is an
-  approximate signal, so treat high ipTM as a wet-lab priority, not proof.
-- No fixed ipTM hit threshold; inspect the distribution (binding_screen smoke ipTM ~0.25–0.41).
+---
+
+## 之後
+跑完通知 Claude(貼 smoke 的每對時間、或 push 完的 commit),我會把 `binding_matrix.csv` 拉下來、
+把 branch 併回 main,並解讀熱圖(哪些 RBP–receptor 高 ipTM = 濕實驗優先)。
+
+## 限制
+- **Monomer×monomer 近似**:RBP 多為同源三聚體,ipTM 是近似訊號,高分當候選、非定論。
+- ipTM 無公定門檻;先看分布(binding_screen smoke ipTM ~0.25–0.41)。
+- ColabFold 結構輸出(results/)很大,留 Laguna,不進 git(只回傳 matrix + 熱圖)。

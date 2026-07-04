@@ -5,7 +5,7 @@
 #          --cpus-per-task=8 --mem=32G --time=2:00:00
 #   bash run_smoke.sh
 set -euo pipefail
-BASE="/project/jespinoza_1541/${USER}/rbp_receptor_fold"
+BASE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"   # this script's workspace
 CF="/project/jespinoza_1541/${USER}/localcolabfold/colabfold-conda"
 export PATH="$CF/bin:$PATH"
 export LD_LIBRARY_PATH="$CF/lib:${LD_LIBRARY_PATH:-}"

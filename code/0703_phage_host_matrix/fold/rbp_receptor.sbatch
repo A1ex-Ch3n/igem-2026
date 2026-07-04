@@ -14,8 +14,9 @@
 # %8 = at most 8 array tasks at once (budget guard on the shared 10k-hour allocation).
 set -euo pipefail
 
-BASE="/project/jespinoza_1541/${USER}/rbp_receptor_fold"
-CF="/project/jespinoza_1541/${USER}/localcolabfold/colabfold-conda"   # reuse binding_screen's install
+# workspace = the dir you ran `sbatch` from (holds chunks/, results/)
+BASE="${SLURM_SUBMIT_DIR:-$PWD}"
+CF="/project/jespinoza_1541/${USER}/localcolabfold/colabfold-conda"
 export PATH="$CF/bin:$PATH"
 export LD_LIBRARY_PATH="$CF/lib:${LD_LIBRARY_PATH:-}"   # conda libstdc++ (GLIBCXX); do NOT module-load system cuda
 cd "$BASE"
