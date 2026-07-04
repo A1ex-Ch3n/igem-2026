@@ -44,6 +44,8 @@ def main():
     ap.add_argument("--chunk-size", type=int, default=64, help="ESMFold trunk chunk size (lower = less VRAM)")
     ap.add_argument("--max-len", type=int, default=1600, help="skip pairs whose total length exceeds this "
                     "(1600 drops the most expensive/least-reliable ~11.5%% as SKIP_TOOLONG, re-foldable later)")
+    ap.add_argument("--num-recycles", type=int, default=None, help="ESMFold trunk recycles (model default is 4; "
+                    "lower = faster + coarser). Use 1 for a fast proof-of-concept bulk run.")
     a = ap.parse_args()
 
     import torch
@@ -89,7 +91,7 @@ def main():
         try:
             ids = tok([seq], return_tensors="pt", add_special_tokens=False)["input_ids"].to(dev)
             with torch.no_grad():
-                out = model(ids)
+                out = model(ids, num_recycles=a.num_recycles) if a.num_recycles is not None else model(ids)
             pae = out.predicted_aligned_error[0].float().cpu().numpy()   # [L, L]
             ptm = float(out.ptm)
             plddt_mean = float(out.plddt.float().mean())

@@ -22,5 +22,5 @@ cd "$BASE"; mkdir -p logs results
 CH=$(printf "chunks/chunk_%03d.tsv" "$SLURM_ARRAY_TASK_ID")
 OUT=$(printf "results/chunk_%03d.csv" "$SLURM_ARRAY_TASK_ID")
 echo ">> task $SLURM_ARRAY_TASK_ID : $CH -> $OUT"
-python3 esmfold_run.py "$CH" "$OUT"
+python3 esmfold_run.py "$CH" "$OUT" --num-recycles 1   # fast PoC bulk run; re-fold top hits with more recycles
 echo ">> task $SLURM_ARRAY_TASK_ID done"
