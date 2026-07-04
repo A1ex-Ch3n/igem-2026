@@ -154,8 +154,65 @@ def main():
     fig.savefig(os.path.join(OUT, "rbp_by_strain_detailed.png"), dpi=180, bbox_inches="tight")
     plt.close(fig)
 
+    # ---- (3)(4) RBP x PharBP host: each RBP lit only in its own host column, ----
+    # ----        coloured by that host's receptors shared with us (max over strains) ----
+    org_acc = {r["organism"]: r["accession"] for r in rbps if r["organism"]}
+    relevance = {org: max((shared.get(acc, {}).get(s, 0) for s in STRAINS), default=0)
+                 for org, acc in org_acc.items()}
+    host_cols = sorted(relevance, key=lambda o: -relevance[o])          # columns by relevance
+    col_idx = {o: j for j, o in enumerate(host_cols)}
+    col_short = [o.replace("Pseudomonas ", "P. ") for o in host_cols]
+    P = np.full((len(order), len(host_cols)), np.nan)
+    for i, r in enumerate(order):
+        j = col_idx.get(r["organism"])
+        if j is not None:
+            P[i, j] = relevance[r["organism"]]
+    cmap = plt.get_cmap("Blues").copy(); cmap.set_bad("#f5f5f5")
+    pvmax = max(relevance.values())
+
+    def host_axes(ax):
+        ax.set_xticks(range(len(host_cols)))
+        ax.set_xticklabels(col_short, fontsize=6.5, rotation=40, ha="right")
+        ax.set_xlabel("PharBP host strain (the RBP's own host is coloured)", fontsize=8)
+        for x in range(1, len(host_cols)):
+            ax.axvline(x - 0.5, color="white", lw=1.0)
+        for b in bounds[:-1]:
+            ax.axhline(b - 0.5, color="#d33", lw=0.8)
+
+    # summary (host-grouped rows -> staircase)
+    fig, ax = plt.subplots(figsize=(6.4, max(6, 0.02 * len(order))))
+    im = ax.imshow(P, aspect="auto", cmap=cmap, vmin=0, vmax=pvmax)
+    ax.set_yticks([mid for _, mid, _ in labels])
+    ax.set_yticklabels([f"{name}  ({n} RBP)" for name, _, n in labels], fontsize=7)
+    host_axes(ax)
+    fig.colorbar(im, ax=ax, shrink=0.35).set_label("host's receptors shared with us ≥90%", fontsize=8)
+    ax.set_title(f"Candidate RBPs ({len(order)}) × PharBP host — summary\n"
+                 "each RBP lit in its own host column; colour = host↔us shared receptors",
+                 fontsize=9, pad=8)
+    plt.tight_layout()
+    fig.savefig(os.path.join(OUT, "rbp_by_pharbp_host_heatmap.png"), dpi=200, bbox_inches="tight")
+    plt.close(fig)
+
+    # detailed (per RBP)
+    nn = len(order)
+    fig, ax = plt.subplots(figsize=(6.6, max(8, 0.115 * nn)))
+    im = ax.imshow(P, aspect="auto", cmap=cmap, vmin=0, vmax=pvmax)
+    ax.set_yticks(range(nn))
+    ax.set_yticklabels([f"{r['protein_id'][:8]}  {r['phage'][:24]}  [{r['rbp_type']}]"
+                        for r in order], fontsize=3.2)
+    ax.set_xticks(np.arange(-0.5, len(host_cols), 1), minor=True)
+    ax.set_yticks(np.arange(-0.5, nn, 1), minor=True)
+    ax.grid(which="minor", color="white", lw=0.3); ax.tick_params(which="minor", length=0)
+    host_axes(ax)
+    fig.colorbar(im, ax=ax, shrink=0.2).set_label("host↔us shared receptors ≥90%", fontsize=7)
+    ax.set_title(f"Candidate RBPs (per RBP, n={nn}) × PharBP host — detailed\n"
+                 "each RBP lit in its own host column; red lines separate hosts", fontsize=8, pad=8)
+    plt.tight_layout()
+    fig.savefig(os.path.join(OUT, "rbp_by_pharbp_host_detailed.png"), dpi=180, bbox_inches="tight")
+    plt.close(fig)
+
     nseq = len(seen_seq)
-    print(f"{len(rbps)} candidate RBPs | {nseq} unique sequences")
+    print(f"{len(rbps)} candidate RBPs | {nseq} unique sequences | {len(host_cols)} host columns")
     print("per host:")
     byhost = defaultdict(int)
     for r in rbps:
