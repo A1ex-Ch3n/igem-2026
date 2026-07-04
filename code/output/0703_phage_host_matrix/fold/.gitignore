@@ -1,0 +1,5 @@
+all_pairs.csv
+chunks/
+results/
+logs/
+*.log

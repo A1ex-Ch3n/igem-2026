@@ -1,0 +1,115 @@
+rbp_id	rep_protein_id	n_members	len	types	phages	hosts
+RBP0001	0f6c07428aa3d5719b38dd1d852926272f5621b785ebfe6a22dc182dd93c140c	25	682	TF	Pseudomonas phage vB_PpuP-BotAed; Pseudomonas phage vB_PpuP-ErraM; Pseudomonas phage vB_PpuP-ErraS; Pseudomonas phage vB_PpuP-Hammaste-2; Pseudomonas phage vB_PpuP-Ihaste; Pseudomonas phage vB_PpuP-Illi-1; Pseudomonas phage vB_PpuP-Kaagvere; Pseudomonas phage vB_PpuP-Kadastiku; Pseudomonas phage vB_PpuP-KiKu; Pseudomonas phage vB_PpuP-Kompost-1; Pseudomonas phage vB_PpuP-Konnatiik; Pseudomonas phage vB_PpuP-Kurenuki; Pseudomonas phage vB_PpuP-Laguja-2; Pseudomonas phage vB_PpuP-Laguja-5; Pseudomonas phage vB_PpuP-Luutsna-1; Pseudomonas phage vB_PpuP-Luutsna-3; Pseudomonas phage vB_PpuP-Luutsna-6; Pseudomonas phage vB_PpuP-Mora-3; Pseudomonas phage vB_PpuP-Mora-5; Pseudomonas phage vB_PpuP-Paidla; Pseudomonas phage vB_PpuP-Pori-2; Pseudomonas phage vB_PpuP-SKa-3; Pseudomonas phage vB_PpuP-SaviPeeda; Pseudomonas phage vB_PpuP-Vanda; Pseudomonas phage vB_PpuP-Villemi	Pseudomonas putida KT2440
+RBP0002	8a758fefcd044b247e9d422d54998062ae023d48033d4088b0920bc28cc921a8	20	806	TSP	Pseudomonas phage Pf-10; Pseudomonas phage vB_PpuP-AnF1; Pseudomonas phage vB_PpuP-Eino; Pseudomonas phage vB_PpuP-Haage; Pseudomonas phage vB_PpuP-Hammaste-5; Pseudomonas phage vB_PpuP-IPa-1; Pseudomonas phage vB_PpuP-Issaku; Pseudomonas phage vB_PpuP-Kanksi; Pseudomonas phage vB_PpuP-Keeri; Pseudomonas phage vB_PpuP-Keila; Pseudomonas phage vB_PpuP-KoPa-1; Pseudomonas phage vB_PpuP-Kriimani; Pseudomonas phage vB_PpuP-Maksa; Pseudomonas phage vB_PpuP-Nouni; Pseudomonas phage vB_PpuP-Roomu-1; Pseudomonas phage vB_PpuP-Torvandi; Pseudomonas phage vB_PpuP-Torve; Pseudomonas phage vB_PpuP-Voja-1	Pseudomonas putida KT2440; Pseudomonas putida NBRC 14164
+RBP0003	04733e49139baf5ad9b80cb00951b115b9eba6fcc4c01d0c859e6f8f09ca2eeb	8	595	TF,TF+TSP	Pseudomonas phage vB_PpuP-AnF1; Pseudomonas phage vB_PpuP-Eino; Pseudomonas phage vB_PpuP-IPa-1; Pseudomonas phage vB_PpuP-Kanksi; Pseudomonas phage vB_PpuP-Keila; Pseudomonas phage vB_PpuP-KoPa-1; Pseudomonas phage vB_PpuP-Kriimani; Pseudomonas phage vB_PpuP-Nouni	Pseudomonas putida KT2440
+RBP0004	122cc8eec0b5259732c7143972220771b253a7a873d16759099ec1e62864fa48	8	1346	TF	Pseudomonas phage vB_PpuM-Amme-1; Pseudomonas phage vB_PpuM-Aura; Pseudomonas phage vB_PpuM-Illi-2; Pseudomonas phage vB_PpuM-KoPa-5; Pseudomonas phage vB_PpuM-Lauda; Pseudomonas phage vB_PpuM-Pori-4; Pseudomonas phage vB_PpuM-SKa-4; Pseudomonas phage vB_PpuM-Voja-6	Pseudomonas putida KT2440
+RBP0005	00628edc89d914dd798ff116c5b2732b372c103cb4e084606960af997da7eddb	7	808	TSP	Pseudomonas phage PCW2; Pseudomonas phage gh-1; Pseudomonas phage vB_PpuP-Emajogi; Pseudomonas phage vB_PpuP-Luke-2	Pseudomonas putida KT2440; Pseudomonas putida NBRC 14164
+RBP0006	064e404af031a47060ed7ded77b9614fca8b6a97451b9497aa00afa710811bd7	9	141	TF	Pseudomonas phage vB_PpuM-Amme-3; Pseudomonas phage vB_PpuM-Kassivere; Pseudomonas phage vB_PpuM-KoPa-4; Pseudomonas phage vB_PpuM-NoPa; Pseudomonas phage vB_PpuM-Roomu-2	Pseudomonas putida KT2440
+RBP0007	226c68ec22ab67e3e6ef2c4599991706b3ee445ceb2a97d81c5cf9e7f7dc34f6	9	589	TF	Pseudomonas phage vB_PpuP-Haage; Pseudomonas phage vB_PpuP-Hammaste-5; Pseudomonas phage vB_PpuP-Issaku; Pseudomonas phage vB_PpuP-Keeri; Pseudomonas phage vB_PpuP-Maksa; Pseudomonas phage vB_PpuP-Roomu-1; Pseudomonas phage vB_PpuP-Torvandi; Pseudomonas phage vB_PpuP-Torve; Pseudomonas phage vB_PpuP-Voja-1	Pseudomonas putida KT2440
+RBP0008	7d038d0615cbe2e3647bf816ef326d0736a5bc0cc620371c7dcc42fe6a169b32	9	589	TF	Pseudomonas phage vB_PpuM-Amme-3; Pseudomonas phage vB_PpuM-Kassivere; Pseudomonas phage vB_PpuM-KoPa-4; Pseudomonas phage vB_PpuM-NoPa; Pseudomonas phage vB_PpuM-Roomu-2	Pseudomonas putida KT2440
+RBP0009	31f12b80b11e66618b0f7f8d6dccfff29532c7dc804a4a25f1d5818f7f135524	8	186	TF	Pseudomonas phage vB_PpuM-Amme-1; Pseudomonas phage vB_PpuM-Aura; Pseudomonas phage vB_PpuM-Illi-2; Pseudomonas phage vB_PpuM-KoPa-5; Pseudomonas phage vB_PpuM-Lauda; Pseudomonas phage vB_PpuM-Pori-4; Pseudomonas phage vB_PpuM-SKa-4; Pseudomonas phage vB_PpuM-Voja-6	Pseudomonas putida KT2440
+RBP0010	4b2a22404a4a04ce8dd8cb50bcbcb456836d98e406d41d0f3a510177412b9c95	5	948	TF	Pseudomonas phage vB_PpuM-Illi-2; Pseudomonas phage vB_PpuM-KoPa-5; Pseudomonas phage vB_PpuM-Lauda; Pseudomonas phage vB_PpuM-Pori-4; Pseudomonas phage vB_PpuM-Voja-6	Pseudomonas putida KT2440
+RBP0011	2a5c6781efcbb80f7064082160e6e2eccbf422f179198f2ec43ec45fc43fe03a	9	494	TF	Pseudomonas phage vB_PpuM-Amme-3; Pseudomonas phage vB_PpuM-Kassivere; Pseudomonas phage vB_PpuM-KoPa-4; Pseudomonas phage vB_PpuM-NoPa; Pseudomonas phage vB_PpuM-Roomu-2	Pseudomonas putida KT2440
+RBP0012	3542fcb278fc38b287f11b30f779355c7db7014fed4694088044a67ca6185f80	4	806	TSP	Pseudomonas phage vB_PpuP-Kurepalu-2; Pseudomonas phage vB_PpuP-Mudajogi; Pseudomonas phage vB_PpuP-Pori-3	Pseudomonas putida KT2440
+RBP0013	696c80f2c4f8be8fb8749c939d45197bcef0f54d518caa3277658f3e0ec1c5f2	5	887	TF	Pseudomonas phage vB_PpuM-Amme-3; Pseudomonas phage vB_PpuM-Kassivere; Pseudomonas phage vB_PpuM-NoPa	Pseudomonas putida KT2440
+RBP0014	e977c3f6d9041dadccc266904dff6626af296fb6ef055c5c00e10c156485c86b	4	222	TF	Pseudomonas phage vB_PpuM-Amme-3; Pseudomonas phage vB_PpuM-KoPa-4; Pseudomonas phage vB_PpuM-NoPa; Pseudomonas phage vB_PpuM-Roomu-2	Pseudomonas putida KT2440
+RBP0015	17cbccded16b28f13f1eb12a6c9a69a7cb866485899b95a0ae3c28a51a05c3da	2	119	TF	Pseudomonas phage vB_PpuP-Kurepalu-2; Pseudomonas phage vB_PpuP-Pori-3	Pseudomonas putida KT2440
+RBP0016	1b093baaa22660b6e01694beaa4b6c4894e540428c18c54b1659d2c39ffc095e	3	119	TF	Pseudomonas phage gh-1; Pseudomonas phage vB_PpuP-Luke-2	Pseudomonas putida KT2440; Pseudomonas putida NBRC 14164
+RBP0017	30d27050e8e79176832e7c9670803ad2ff4055de1f36d833b53bf545744968af	2	633	TF+TSP	Pseudomonas phage vB_PpuP-IPa-2; Pseudomonas phage vB_PpuP-Luke-3	Pseudomonas putida KT2440
+RBP0018	79ead4a270b229a613efe5946b91453718334d735d7c828ec546c28c71b9e51f	4	871	TF	Pseudomonas phage vB_PpuM-KoPa-4; Pseudomonas phage vB_PpuM-Roomu-2	Pseudomonas putida KT2440
+RBP0019	839e5cebec55cfd254c37371d50a1b91d24933d3b7272b4f77ed648148faec7d	2	226	TF,TSP	Pseudomonas phage vB_PpuM-Aura; Pseudomonas phage vB_PpuM-Illi-2	Pseudomonas putida KT2440
+RBP0020	87aa60fd8a94bd267f9c6d6d5abbfe5c5308cd6c200817556f7d73f29079791a	3	544	TSP	Pseudomonas phage vB_PpuM-Amme-1; Pseudomonas phage vB_PpuM-KoPa-5; Pseudomonas phage vB_PpuM-Pori-4	Pseudomonas putida KT2440
+RBP0021	8a70965baf7beae370d6f5d30d0834124aefa5107eae137fba60fee41a8b0509	5	618	TF+TSP	Pseudomonas phage gh-1	Pseudomonas putida NBRC 14164
+RBP0022	9bf617f564eb05b152e6c8dcbd5fad9fbaa3237780c44794308ba88b5578901e	2	561	TF	Pseudomonas phage vB_PpuM-KoPa-5; Pseudomonas phage vB_PpuM-Voja-6	Pseudomonas putida KT2440
+RBP0023	c0e58b6d3601b9f80dd82b466d37f01dc23e6fe7392a4cf03b5035e8ca14f698	2	300	TF	Pseudomonas phage vB_PpuM-Amme-3; Pseudomonas phage vB_PpuM-NoPa	Pseudomonas putida KT2440
+RBP0024	e096a47a9a0fd15529b761591dc8d712a27492fa8f047facf34c91183d75a5f8	2	612	TF+TSP	Pseudomonas phage vB_PpuP-Kurepalu-2; Pseudomonas phage vB_PpuP-Pori-3	Pseudomonas putida KT2440
+RBP0025	f5f94e37ad894fe7763af7273f1dd244cc417a8bd113bacc035686206726717c	2	118	TF	Pseudomonas phage PCW2; Pseudomonas phage vB_PpuP-Emajogi	Pseudomonas putida KT2440; Pseudomonas putida NBRC 14164
+RBP0026	00e4424e4d974e18900d7a9cde11dc4b27bda3bf65b0c924bb8378029b3267cb	1	1345	TF	Pseudomonas phage vB_PpuM-Peetri	Pseudomonas putida KT2440
+RBP0027	0118673c9773ec49ec3d7d30a891390b705271523e4bef7f2f5c39367e1da8c9	3	217	TF	Pseudomonas phage tf	Pseudomonas putida NBRC 14164
+RBP0028	0130a38b0df5abbd35b0a218a4df3f54ede50b4162a1b29a9c0e48a70da4d847	25	199	TF	Pseudomonas phage vB_PpuP-BotAed; Pseudomonas phage vB_PpuP-ErraM; Pseudomonas phage vB_PpuP-ErraS; Pseudomonas phage vB_PpuP-Hammaste-2; Pseudomonas phage vB_PpuP-Ihaste; Pseudomonas phage vB_PpuP-Illi-1; Pseudomonas phage vB_PpuP-Kaagvere; Pseudomonas phage vB_PpuP-Kadastiku; Pseudomonas phage vB_PpuP-KiKu; Pseudomonas phage vB_PpuP-Kompost-1; Pseudomonas phage vB_PpuP-Konnatiik; Pseudomonas phage vB_PpuP-Kurenuki; Pseudomonas phage vB_PpuP-Laguja-2; Pseudomonas phage vB_PpuP-Laguja-5; Pseudomonas phage vB_PpuP-Luutsna-1; Pseudomonas phage vB_PpuP-Luutsna-3; Pseudomonas phage vB_PpuP-Luutsna-6; Pseudomonas phage vB_PpuP-Mora-3; Pseudomonas phage vB_PpuP-Mora-5; Pseudomonas phage vB_PpuP-Paidla; Pseudomonas phage vB_PpuP-Pori-2; Pseudomonas phage vB_PpuP-SKa-3; Pseudomonas phage vB_PpuP-SaviPeeda; Pseudomonas phage vB_PpuP-Vanda; Pseudomonas phage vB_PpuP-Villemi	Pseudomonas putida KT2440
+RBP0029	018c25defd85f0b6bf91a77577f431e6dc055acbbc27ad274f8c7a977982e0d7	3	727	TF+TSP	Pseudomonas phage phi15	Pseudomonas putida NBRC 14164
+RBP0030	058e4e0aff52c27e860c0891da6a29be95ee9c0614d3acdc04194f1710cb0709	2	675	TF+TSP	Pseudomonas phage Lu11	Pseudomonas putida NBRC 14164
+RBP0031	0ad18d910cbb9d5f0fba4c13e6a22b5eab53128de38f204f641bfced7e30bf20	3	793	TSP	Pseudomonas phage phi15	Pseudomonas putida NBRC 14164
+RBP0032	0b1cf0540fd6500828af088aed843e7106b1656f7e36a735b194d32f7468aad4	1	206	TF+TSP	Escherichia phage JNP1	Pseudomonas putida KT2440
+RBP0033	0cfadd2a57703eeb39dcd3a52f4f1a9a31c842ac44e46e93246da50925f60249	2	463	TSP	Pseudomonas phage Lu11	Pseudomonas putida NBRC 14164
+RBP0034	11e67bb3f34282ac340fecd0ab1d42af8b9d02201f93a75f2fb7ae371a4f096b	2	843	TSP	Pseudomonas phage vB_PpuP-IPa-2; Pseudomonas phage vB_PpuP-Luke-3	Pseudomonas putida KT2440
+RBP0035	1230b05ba95fdb270263c74ab0328be2d998d017e0ed7204027b3b78233b42f4	2	268	TF	Pseudomonas phage Lu11	Pseudomonas putida NBRC 14164
+RBP0036	14272995e06caa5dad67a17053e4a3bd8164b1b0d8380a4f7a00d4f013ba6fd1	3	883	TSP	Pseudomonas phage tf	Pseudomonas putida NBRC 14164
+RBP0037	149afaf56093522dbdb99c93049c6b11a847260b5dcbad81d314b9928f7b683e	1	802	TF+TSP	Pseudomonas phage PCS5	Pseudomonas putida NBRC 14164
+RBP0038	1709e4914e48be3c9b8277be38281b1cea8cd5ccc16c229e6249893dabd4dac8	2	340	TF	Pseudomonas phage Lu11	Pseudomonas putida NBRC 14164
+RBP0039	18fdcbfa6402cca5057e7818067511029d5f638e95f7a6b7b9a8a787db45f096	3	724	TF+TSP	Pseudomonas phage YMC11/06/C171_PPU_BP	Pseudomonas putida NBRC 14164
+RBP0040	1b637373160b4cef43c616db229d59aec65ec87f52fa54b1eaa9de6ded960d02	1	842	TF+TSP	Pseudomonas phage Bosely	Pseudomonas putida NBRC 14164
+RBP0041	1bfb7805659f953493909f87fe12d97b407a4e4a0534dacdc704ab9769f0cc7f	3	639	TF+TSP	Pseudomonas phage pf16	Pseudomonas putida NBRC 14164
+RBP0042	1d0eff9f62c4ff5b6059466a914533b8bc9878b2178fe88eabd6f51c2325b038	3	626	TF+TSP	Pseudomonas phage YMC11/06/C171_PPU_BP	Pseudomonas putida NBRC 14164
+RBP0043	1e766a6b38e0ceb6eb07794b3c4800f4cb5c78924f93c57410a6951779477b34	2	340	TF	Pseudomonas phage AF	Pseudomonas putida NBRC 14164
+RBP0044	22ffec8c36a7439e7dee99074af27824d84d17289dce924aba0e626f4b973ab2	3	659	TF+TSP	Pseudomonas phage pf16	Pseudomonas putida NBRC 14164
+RBP0045	231a202c9948d5da5c3bd7d8c0e5c07b29775beb5a9372c2144042ae2cd0174f	1	800	TSP	Pseudomonas phage vB_PpuP-Kallioja	Pseudomonas putida KT2440
+RBP0046	280ce3023c11e8ab335a58c68778c842f4823686b00e480769066c02ae98f764	9	281	TF	Pseudomonas phage vB_PpuM-Amme-3; Pseudomonas phage vB_PpuM-Kassivere; Pseudomonas phage vB_PpuM-KoPa-4; Pseudomonas phage vB_PpuM-NoPa; Pseudomonas phage vB_PpuM-Roomu-2	Pseudomonas putida KT2440
+RBP0047	2d2b6d761625031944a273d68abf6b0ff46ae7b099ed3de8fbcb1c4689c7636a	2	143	TF	Pseudomonas phage pf16	Pseudomonas putida NBRC 14164
+RBP0048	2e1dad696a630e6d8e7ac69cc1edc01556dd5a80e525e7e34c4a5aa71bddf28a	2	208	TF	Pseudomonas phage Lu11	Pseudomonas putida NBRC 14164
+RBP0049	2fcdb591646fd9bffa182454251ae7970e4c3c1f12b2899ef320b7d713862a0b	3	591	TF+TSP	Pseudomonas phage pf16	Pseudomonas putida NBRC 14164
+RBP0050	30911e370ce7bbdcfefa60aa308ae6beca7d0b6347e35303341d6243fe35ba29	2	358	TSP	Pseudomonas phage Lu11	Pseudomonas putida NBRC 14164
+RBP0051	3101bcb0307c9e3ba0ed9e80deb6106445828ebd4689a228c869baeae4244530	1	101	TF	Pseudomonas phage phiPMW	Pseudomonas putida NBRC 14164
+RBP0052	331181d3bf60ae73ae8efb786159674ba056c9ad6765710568087e035510c715	1	86	TF	Pseudomonas phage PCW2	Pseudomonas putida NBRC 14164
+RBP0053	346db7d4f77f839f8a0b2869cfa0fa8384f1247ce4c36d2ebcfdf5f29eb89ed6	1	852	TSP	Pseudomonas phage vB_PpuP-Kurepalu-1	Pseudomonas putida KT2440
+RBP0054	36651dd02a6b3a62389869af550be95987c4072b5e7eb150a418999c606333e0	2	783	TSP	Pseudomonas phage AF	Pseudomonas putida NBRC 14164
+RBP0055	37b6185dd19ae847362084e16921d6d0af55e66dc947e3e7a29831ddb337da8a	3	229	TF	Pseudomonas phage MiCath	Pseudomonas putida S12
+RBP0056	38de386abb1b57cc5a4aa63a0d0be3c052e8bcad310dce53a7b4ff5e5dc48b17	2	631	TF+TSP	Pseudomonas phage vB_PpuP-Mudajogi	Pseudomonas putida KT2440
+RBP0057	3c85fe62e0ef0fee09d54c8e32efdd611762f4e5b10aa6f00a90a18b46ca2b4b	3	777	TSP	Pseudomonas phage YMC11/06/C171_PPU_BP	Pseudomonas putida NBRC 14164
+RBP0058	421d0c2ef62a5ac8543f23df59ab06757e142239b6f380acc03284861bf5961f	3	519	TSP	Pseudomonas phage tf	Pseudomonas putida NBRC 14164
+RBP0059	43fc527effeb49378b2e83bfa4cac53e96e15c455e48a0f46055b43f745e0d31	1	669	TF	Pseudomonas phage vB_PpuP-Kompost-2	Pseudomonas putida KT2440
+RBP0060	45fa8e02b52822994164c3448a53251d120ff80b710fd25951b9c56bdf55a1ab	1	609	TF+TSP	Pseudomonas phage vB_PpuP-Emajogi	Pseudomonas putida KT2440
+RBP0061	4ef6ba162a73a2dae3ac5c3b668c20a963b21aaa76e71bac5f7d8b2c91071d5b	2	228	TF	Pseudomonas phage Lu11	Pseudomonas putida NBRC 14164
+RBP0062	51f0449ea9ee6384b86b818b6314a9c07b977f0b4f3529f87ba6e851898f3c00	3	660	TF+TSP	Pseudomonas phage pf16	Pseudomonas putida NBRC 14164
+RBP0063	53da971b36b459cfca9c2d3e5e99d2e01350de8e59baecd79754666d7c26aba2	1	626	TF+TSP	Pseudomonas phage vB_PpuP-Luke-2	Pseudomonas putida KT2440
+RBP0064	5cdaa5a87b791c4f879866bf68581232b9b2d9ec231e71f608c010ecf5f660f6	2	173	TF	Pseudomonas phage Lu11	Pseudomonas putida NBRC 14164
+RBP0065	5f12f5a332bacbd11b45f0f21e5929bc1a7fd08910096f378ee771adb166a460	3	520	TF	Pseudomonas phage phiPMW	Pseudomonas putida NBRC 14164
+RBP0066	624c90e9352ded69d09b56d7c64ea91cc98b3c444d4be465ebbaefedd2c54162	1	184	TF	Pseudomonas phage PPpW-3	Pseudomonas plecoglossicida
+RBP0067	677b9c3e8fe6c9fd9e7eb2f75c2eb7ff1047a39226956cf589181c12603ca543	2	741	TF+TSP	Pseudomonas phage AF	Pseudomonas putida NBRC 14164
+RBP0068	d9fd3e91b2431a5cb4c5d94c2cebecf240800c94087c6260cb2aafb3f3f19063	2	502	TF	Pseudomonas phage vB_PseuGesM_254	Pseudomonas gessardii
+RBP0069	696b187edce606c8a27d4093a9b2540055fbb18feb9df2c88f503a1b413c60ba	2	98	TF	Pseudomonas phage AF	Pseudomonas putida NBRC 14164
+RBP0070	710434ca6162bfa42ac016f0b1017cb340b45b4967a6d323644b629773818174	1	815	TF	Pseudomonas phage Lebethron	Pseudomonas taiwanensis DSM 21245
+RBP0071	79cb9937bea6b013eec47d507f1431b2ffe7fe126821338f1238d992a9636a53	2	121	TF	Pseudomonas phage vB_PpuP-IPa-2; Pseudomonas phage vB_PpuP-Luke-3	Pseudomonas putida KT2440
+RBP0072	7c00b9e35c179258829645f027ebc0206936d2435a0a4720b2bbfb1ff69df5ea	1	852	TSP	Psuedomonas phage SVOphi44	Pseudomonas putida KT2440
+RBP0073	7d1de654b69eea8fa2306f28362e1c920101b06e55e43d8d88a218bfb5e1de98	3	170	TF	Pseudomonas phage PPpW-3	Pseudomonas plecoglossicida
+RBP0074	7dc7a0b8ef0841157d007c5ec2c933b0d26f0798454777ef910e37bd74d80d2b	3	814	TF+TSP	Pseudomonas phage PPpW-4	Pseudomonas plecoglossicida
+RBP0075	7f520fbdf02d6217cc44ebc70d403e1ab48844be638e941c0b2bd5a824af8d52	1	185	TF	Pseudomonas phage vB_PpuM-Peetri	Pseudomonas putida KT2440
+RBP0076	820e4c44f5b3c6beeee31095c252d314156f7c633c163f3c1fa56c7c59fa946c	1	805	TSP	Pseudomonas phage vB_PpuP-Vasula	Pseudomonas putida KT2440
+RBP0077	853afd103edd33c44e1e749dba8ff4f1c9dcf9f7e498c15727d7690585f2eb25	1	437	TF	Pseudomonas phage pf16	Pseudomonas putida NBRC 14164
+RBP0078	871f9c801ded3242669d32e3834eb655b53eccf306c60d45156b436f71ae3815	3	794	TSP	Pseudomonas phage PPpW-4	Pseudomonas plecoglossicida
+RBP0079	8a883095ed2b9c21611bdbecb06d95c9e706bc035d4cfbf32389144fe18f5f4d	3	550	TF+TSP	Pseudomonas phage Pf-10	Pseudomonas putida NBRC 14164
+RBP0080	8ddefef914c931330fe5c66c8b5cf8ab5d6744eb3dc797a639fa768824b25603	1	800	TSP	Pseudomonas phage vB_PpuP-Kompost-2	Pseudomonas putida KT2440
+RBP0081	8f502b0ab15274438e769d6fefac7d4e16bc2cc329d7d3545f29f7d1e054b985	3	1922	TF	Pseudomonas phage phiPMW	Pseudomonas putida NBRC 14164
+RBP0082	908007b0c79ef3d477ff79f5264410dfd20d8088240fa67e918f35eaca39cc10	1	599	TF	Pseudomonas phage vB_PpuP-Vasula	Pseudomonas putida KT2440
+RBP0083	90945d82aa1bf20fc914743eaaceb60a20bc6cca1d3958d5d4bc7333e7a46127	1	895	TSP	Pseudomonas phage Lebethron	Pseudomonas taiwanensis DSM 21245
+RBP0084	939a19308c46a95f6871435605e835bf5fdcf78ce6aab6f6ff04bea1f35aa698	1	704	TF	Psuedomonas phage SVOphi44	Pseudomonas putida KT2440
+RBP0085	97d0b3df7bbfdcd6b54f48f45423a0d911d755fb1007e5f809ae1ff82cb5acd9	1	646	TF+TSP	Pseudomonas phage vB_PpuP-Kallioja	Pseudomonas putida KT2440
+RBP0086	9a59e7f7650936666880fb5449441be73393552cfb5be5bddf46c1a7dca6288f	2	120	TF	Pseudomonas phage vB_PpuP-Mudajogi	Pseudomonas putida KT2440
+RBP0087	9c4ca81f3e8dc66208885ced67e4f1828e49221ea96c1ddd17ec73c92aa8b6c1	3	465	TF	Pseudomonas phage MiCath	Pseudomonas putida S12
+RBP0088	9d18429304c6e6ba38ce30afff29ee0b4b9f14aacdf4f9cb13567c9e2caeb495	1	910	TF+TSP	Pseudomonas phage Psp6	Pseudomonas putida NBRC 14164
+RBP0089	a647257461f332817424757c977b705d9e758373ce1ea8b3192b04598e1214ab	1	821	TF	Escherichia phage Halfdan_Juelich_variant	Pseudomonas taiwanensis DSM 21245
+RBP0090	a6fe035042c940ada6f0d43ccb82d77fce5d73289c7d5a77bfc534ea326e2cc8	1	115	TF	Pseudomonas phage vB_PpuP-Kompost-2	Pseudomonas putida KT2440
+RBP0091	b1b290f1e85bbd2261f781c246dc3ec0233afafba12dcd06206edbed05443ac7	1	575	TF	Pseudomonas phage vB_PpuM-Aura	Pseudomonas putida KT2440
+RBP0092	c09ceed03ab4c0fdf5b1f7066631dcbf3e168da9109e3ac237c483c37a7cc984	1	658	TSP	Pseudomonas phage Psp6	Pseudomonas putida NBRC 14164
+RBP0093	c3d4d1a7c0ed03702562dd536cd0b407bba68da467203a727504ff7d1a2ff4ff	1	119	TF	Pseudomonas phage vB_PpuP-Kallioja	Pseudomonas putida KT2440
+RBP0094	c4a26ba9534d2f2b26d5903a777f7ab5659929ff0b5a1928f751e01a80fc4581	1	379	TF	Pseudomonas phage vB_PpS_SYP	Pseudomonas plecoglossicida
+RBP0095	c5a3684266695b60a50a4a24313a5209a43139033b0324eeff6e3c700de41a87	1	205	TF	Pseudomonas phage vB_PpS_SYP	Pseudomonas plecoglossicida
+RBP0096	cba385f04e2ae393d7ffd916323c22b8a97b24974762906ca907a43264f0a285	1	1439	TF	Pseudomonas phage vB_PpS_SYP	Pseudomonas plecoglossicida
+RBP0097	cc474f77bf7b0f81c328e6e3acabc60f26ba9495ea47f887b85a9ed63afc7d4e	2	127	TF	Pseudomonas phage phiPMW	Pseudomonas putida NBRC 14164
+RBP0098	d992f56550032339aa70cf6c07165a38cc64c15723cbe4945f8139ef6feace5f	1	704	TF	Pseudomonas phage vB_PpuP-Kurepalu-1	Pseudomonas putida KT2440
+RBP0099	de00b69ff6730100de8b3b09481c47e416220d519f2542d66067dc8fd53ba030	1	84	TF	Pseudomonas phage MiCath	Pseudomonas putida S12
+RBP0100	e930e1f718fbec6cad7f60d9829cefeb5fcd8369459f197804d0231d39cb1e0e	1	1118	TF+TSP	Escherichia phage JNP1	Pseudomonas putida KT2440
+RBP0101	eb4f8ff6dc00fbd5be560ede3db4f35eb73032ecea24f1ca869900b95d758a8b	1	795	TSP	Pseudomonas phage Oiolarie	Pseudomonas taiwanensis DSM 21245
+RBP0102	f5c75562734ce583e12cb66dbd96c9a11d717c19ca4b5797ed6841719f5eee50	1	790	TSP	Pseudomonas phage Bosely	Pseudomonas putida NBRC 14164
+RBP0103	fa2f34d97aa36d8238e3e0293d1b67c428b2c5b03e3aa23053d947cac295d6a1	1	192	TF	Pseudomonas phage MiCath	Pseudomonas putida S12
+RBP0104	ff6300976d958ff58a0a2330f3ed74946c9ce4e1eb7cb8cad76dc2a0d05fb153	1	618	TF	Pseudomonas phage PCS5	Pseudomonas putida NBRC 14164
+RBP0105	06139399dcf1edff4aecfc3bd2a12ed9d331594f27d752cde0eadbd9841c09f5	1	766	TF+TSP	Pseudomonas phage HU1	Pseudomonas lactis
+RBP0106	0c257b8f5587e343f30d985bbd4db65712729392fb42fa0e426fd56144cd5004	1	791	TSP	Pseudomonas phage HU1	Pseudomonas lactis
+RBP0107	0f0dab979856b12142313f087218aee9c40340a2034d1d9eb780184680cad2b0	2	205	TF	Pseudomonas phage vB_PseuGesM_254	Pseudomonas gessardii
+RBP0108	2661a709f8c19af97b33791e13c8cfd340f77ee67fe631742f1953b795b59254	3	272	TF	Pseudomonas phage PMBT3	Pseudomonas grimontii
+RBP0109	4afb6b58cbb6968f39bff1d6d7d7522df632f064a46f0551498c39264c92fbb5	2	804	TF+TSP	Pseudomonas phage vB_PseuGesM_254	Pseudomonas gessardii
+RBP0110	4ec7f7414b0c41b5c0144976e12de4ac200c615eeb18f20356a2d3580ed8fea0	3	1217	TF+TSP	Pseudomonas phage PMBT3	Pseudomonas grimontii
+RBP0111	6097cf939053d14019b7a21487934936d0e41dae23bcc8fec4e54478bbaaf006	2	495	TF	Pseudomonas phage PMBT3	Pseudomonas grimontii
+RBP0112	682c48db8cb450cd0b64557a7b3428a9ff32ffa34e93d636e8affd76660c9057	2	255	TF	Pseudomonas phage vB_PseuGesM_254	Pseudomonas gessardii
+RBP0113	9e6dfaa9c21b6b286963d1c9eda29ba66d8acc8ecdd0f05d40fc0b9e79a34e4f	1	151	TF	Pseudomonas phage vB_PseuGesM_254	Pseudomonas gessardii
+RBP0114	b96386cf9702d09fffa36b090704ebc8e527cfa6d7a6b0a923f4e3cec9b6c6d5	1	129	TF	Pseudomonas phage vB_PseuGesM_254	Pseudomonas gessardii
