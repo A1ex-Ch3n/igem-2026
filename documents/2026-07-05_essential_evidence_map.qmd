@@ -1,0 +1,216 @@
+---
+title: "Essential Evidence Map"
+subtitle: "Phage receptor / host-range analysis — *Pseudomonas* phage therapy (iGEM)"
+date: "2026-07-05"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    embed-resources: true
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    fig-align: center
+    theme: cosmo
+  pdf:
+    toc: true
+    number-sections: true
+    fig-cap-location: bottom
+    fig-align: center
+    geometry: margin=1in
+    keep-tex: false
+execute:
+  echo: false
+---
+
+::: {.callout-note title="What this document is"}
+A standalone walkthrough of the key files behind our phage–host analysis: what each is, what it shows, and how they chain together. Figures and table snippets are embedded and numbered. Source files: `code/output/0703_phage_host_matrix/`.
+:::
+
+# What we are doing
+
+We are a phage-therapy project working with several **sequenced *Pseudomonas* isolates**
+(`9-6-2`, `9-2-1`, `10-10-2`, `8-5-2`, `8-10-2`). The goal is to determine **which surface
+receptor our phages target** on these bacteria. Our own lytic phages are isolated (plaques) but
+**not yet sequenced**, so we cannot read their receptor-binding proteins (RBPs) directly.
+
+We therefore bridge indirectly:
+
+1. **Catalogue** each isolate's surface receptors (@sec-catalogue).
+2. Ask which known *Pseudomonas* phages (from the **PharBP** database) infect strains that
+   **share those receptors** (@sec-hosts, @sec-presence) — a clue for which phages / RBP classes
+   could target our isolates.
+3. **Attempt structural folding** (RBP × receptor) to sharpen the clue (@sec-fold) — which proved
+   non-informative and is reported as a controlled negative result (@sec-control).
+
+# Part A — Our receptors and who shares them {#sec-partA}
+
+*The primary, clue-level evidence. Does not depend on the folding step in Part B.*
+
+## Our receptor catalogue {#sec-catalogue}
+
+`receptor_by_strain.tsv` organizes all isolates' receptors into **144 unique receptor groups**,
+marking overlap across isolates. Groups present in **all 5 isolates (core) = 43**; groups present
+**only in 8-10-2 = 46** — a candidate driver of a difference in host range (@tbl-receptor).
+
+| cluster_rep | category | n_strains | product |
+|---|---|:--:|---|
+| BPBBIK_01263 | FadL | 5 (core) | Long-chain fatty acid transporter |
+| BPBBIK_00419 | LptD | 5 (core) | LPS-assembly protein LptD |
+| BPBBIK_01078 | OmpA | 5 (core) | OmpA-like domain-containing protein |
+| NEEDOG_02224 | FadL | 1 (8-10-2 only) | Long-chain fatty acid transport protein |
+
+: Receptor catalogue (snippet; 144 groups total, 43 core / 46 unique to 8-10-2). {#tbl-receptor}
+
+## The PharBP host list {#sec-hosts}
+
+`pharbp_pseudomonas_hosts.tsv`: from **6,376 *Pseudomonas* host entries** on PharBP there are
+**43 unique genomes** (54 named strains; the rest are unspecified "*Pseudomonas*" and unusable).
+*P. putida* KT2440 stands out — many phages (@tbl-hosts).
+
+| host | genome | # PharBP RBPs | # phages |
+|---|---|:--:|:--:|
+| *P. aeruginosa* PAO1 | GCF_000006765.1 | 3106 | 590 |
+| *P. putida* KT2440 | GCF_000007565.2 | 227 | **71** |
+| *P. aeruginosa* PA14 | GCF_030264075.1 | 130 | 40 |
+| *P. syringae* | GCF_018394375.1 | 192 | 34 |
+
+: PharBP *Pseudomonas* hosts (snippet; 54 named strains / 43 unique genomes). {#tbl-hosts}
+
+## Our receptors × PharBP strains {#sec-presence}
+
+`receptor_host_presence.tsv` combines @tbl-receptor and @tbl-hosts: how **our** receptors are
+present across the 54 PharBP strains (# host strains matching at ≥90 / ≥70 / ≥50 % identity, best
+host, etc.). This is the key intermediate for indirectly predicting the RBP range for our isolates
+(@tbl-presence).
+
+| our_rep | category | hosts ≥90 % id | max identity | best host |
+|---|---|:--:|:--:|---|
+| BPBBIK_01078 | OmpA | 6 | 97.7 % | *Pseudomonas putida* |
+| NEEDOG_04082 | other-OM | 7 | 98.7 % | *Pseudomonas putida* |
+
+: Our-receptor presence across PharBP strains (snippet). {#tbl-presence}
+
+![Our receptors × 54 PharBP host strains. Only the *P. putida* group and a few others share a
+large number of receptors; row labels also give the number of phages infecting each strain.
+***P. putida* KT2440** is notable: broad shared-receptor range **and** many infecting phages.](../code/output/0703_phage_host_matrix/shared_receptors_heatmap.png){#fig-shared width=85%}
+
+::: {.callout-tip title="Part A takeaway"}
+We now know **the list of our receptors that appear in PharBP, and the hosts that share the same
+receptors** — the clue-level readout our PI accepted.
+:::
+
+## The RBP-side view {#sec-rbpview}
+
+The same information from the RBP angle (@fig-rbp): reference strains from PharBP (left) and the
+exact RBPs that bind a given strain (right).
+
+::: {#fig-rbp layout-ncol=2}
+![Reference strains (summary)](../code/output/0703_phage_host_matrix/rbp_by_strain_heatmap.png){#fig-rbp-a}
+
+![Exact RBPs per strain (detailed)](../code/output/0703_phage_host_matrix/rbp_by_strain_detailed.png){#fig-rbp-b}
+
+RBP × strain views — the other angle on @fig-shared.
+:::
+
+# Part B — The folding attempt and why it is a negative result {#sec-fold}
+
+Because both candidate lists were large, we condensed them: for RBPs we kept a representative of
+each highly-similar cluster (>90 %); for receptors we kept only plausible phage targets (removed
+efflux pumps etc.).
+
+## Condensed candidate lists {#sec-condensed}
+
+`condensed_rbps.tsv` → **114 RBPs**; `condensed_receptors.tsv` → **63 receptors**
+(@tbl-rbps, @tbl-recs).
+
+| rbp_id | type | # members | length | host |
+|---|:--:|:--:|:--:|---|
+| RBP0001 | TF | 25 | 682 | *P. putida* KT2440 |
+| RBP0002 | TSP | 20 | 806 | *P. putida* KT2440 / NBRC 14164 |
+
+: Condensed RBPs (snippet; 114 total). {#tbl-rbps}
+
+| rec_id | category | our strains | product |
+|---|---|---|---|
+| REC014 | FadL | all 5 | Long-chain fatty acid transporter |
+| REC006 | Omp-porin | all 5 | OmpW family protein |
+
+: Condensed receptors (snippet; 63 total). {#tbl-recs}
+
+![Blank scaffold before any simulation — 114 RBPs × 63 receptors = **7,182** pairs.](../code/output/0703_phage_host_matrix/fold/rbp_receptor_iptm_heatmap_EMPTY.png){#fig-empty width=80%}
+
+## The simulation {#sec-sim}
+
+`binding_matrix.csv` holds all **7,182** pairs predicted by ESMFold (6,358 folded OK + 824 skipped
+for length). `iptm` = interaction/binding score; `ptm` = folding quality; `status` = skipped-or-not
+(@tbl-matrix). Large biases follow.
+
+| rbp_id | rec_id | iptm | ptm | status |
+|---|---|:--:|:--:|:--:|
+| RBP0001 | REC001 | 0.145 | 0.524 | OK |
+| RBP0001 | REC002 | 0.137 | 0.534 | OK |
+
+: `binding_matrix.csv` (snippet; 7,182 rows). {#tbl-matrix}
+
+![Final ESMFold pseudo-ipTM matrix. **Left:** rows/cols sorted by length — nearly uniform, with the
+brightest cells at smallest-RBP × smallest-receptor (a size artifact, red box). **Right:** the score
+correlates with complex length (**r = +0.58**) — it tracks size, not
+binding.](../code/output/0703_phage_host_matrix/fold/rbp_receptor_iptm_heatmap.png){#fig-heatmap width=95%}
+
+## Control test for ESMFold {#sec-control}
+
+The matrix gave suspiciously flat scores (everything near 0.13) and the top "hits" tracked protein
+size, not any specific pairing. A screen is only meaningful if it can separate a real binder from a
+non-binder, so we tested the method against pairs with **known answers**.
+
+**Hypothesis.**
+
+- **H1 (method works):** documented binders should score **above** their scrambled/mismatched
+  controls and above the screen background.
+- **H0 (null):** the score reflects generic foldability/size, so real ≈ scrambled ≈ background.
+
+**The three positive controls** — experimentally documented pairs, prioritizing solved co-structures
+(ground truth) plus one in our own organism; sequences from UniProt/NCBI (@tbl-positives).
+
+| positive pair | RBP accession | receptor accession | evidence |
+|---|---|---|---|
+| T5 **pb5** × *E. coli* **FhuA** | P23207 | P06971 | cryo-EM co-structure, PDB **8A8C** |
+| λ **gpJ** (C-term RBD) × *E. coli* **LamB** | P03749 | P02943 | co-structure, PDB **8XCJ** |
+| DEV **gp54** × *P. aeruginosa* **LptD** | ASZ72261.1 | Q9I5U2 | genetics + AlphaFold, mBio 2026 (our organism) |
+
+: Positive controls and provenance. {#tbl-positives}
+
+For each positive we also folded a **length-matched scrambled** receptor (same residues, shuffled —
+removes the size confound) and a **mismatched** receptor, through the identical pipeline
+(@fig-control, @tbl-control).
+
+![Control test. **Left:** positives (green) do not exceed scrambled (red) or the screen background
+(grey band). **Right:** the clincher — when the receptor is scrambled, whole-complex **pTM collapses**
+(the model detects the fake), **but the interface ipTM barely moves** (it is not reading a real
+interface).](../code/output/0703_phage_host_matrix/fold/control_validation.png){#fig-control width=95%}
+
+| positive pair | real | scrambled | mismatch | background |
+|---|:--:|:--:|:--:|:--:|
+| T5 pb5 × FhuA (8A8C) | 0.137 | **0.136** | 0.129 | median 0.127 |
+| λ gpJ × LamB (8XCJ) | 0.112 | 0.102 | 0.129 | (sd 0.026) |
+| DEV gp54 × LptD | 0.159 | 0.129 | 0.112 | |
+
+: Control scores — positives do not separate from negatives or background. {#tbl-control}
+
+::: {.callout-important title="Conclusion — H0 supported, H1 rejected"}
+Known binders did not separate from controls (the gold-standard pb5 × FhuA differs from its own
+scrambled receptor by **0.001**). Whole-complex **pTM collapses** on scrambling but the interface
+**ipTM does not move** → the score is not reading a real interface. **The folding screen is not
+informative for RBP–receptor binding, and we do not use it as evidence.** Our receptor-repertoire
+overlap (Part A) remains the primary, clue-level readout and does not depend on this step.
+:::
+
+---
+
+::: {.callout-note appearance="minimal"}
+**Render:** `quarto render 2026-07-05_essential_evidence_map.qmd` → self-contained HTML (images
+embedded) or `--to pdf`. **Method history:** `2026-07-04_folding_tool_odyssey.md`,
+`2026-07-04_folding_tool_recommendation.md`, `2026-07-05_esmfold_matrix_note_for_PI_EN.md`,
+`2026-07-05_phage_host_matrix_reasoning_summary.md`.
+:::
