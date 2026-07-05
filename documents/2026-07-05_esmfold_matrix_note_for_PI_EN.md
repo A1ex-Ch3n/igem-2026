@@ -1,6 +1,6 @@
 # Why the ESMFold RBP × receptor matrix is not a usable binding readout
 
-*Short note for Cesar. Figure: `code/output/0703_phage_host_matrix/fold/rbp_receptor_iptm_heatmap_partial.png`.*
+*Short note for Cesar. Figures: `code/output/0703_phage_host_matrix/fold/rbp_receptor_iptm_heatmap.png` (screen) and `control_validation.png` (control test).*
 
 To go beyond the receptor-repertoire overlap, we tried to predict, for all 7,182 phage RBP ×
 *Pseudomonas* receptor pairs, whether each RBP structurally docks onto each receptor. Because
@@ -29,10 +29,30 @@ protein) has no coevolutionary signal to locate a real interface; and the RBPs a
 whose true receptor-binding tip we did not model (we folded monomers). So the model defaults to
 generic packing confidence, which is governed by size and foldability — exactly what we observe.
 
-**Control test — this is now confirmed, not just suspected.** We pushed three documented phage
-RBP–receptor pairs (two with experimental co-structures) through the identical pipeline, each
-against its real receptor, a length-matched **scrambled** receptor (same residues, shuffled), and
-a **mismatched** receptor (Figure: `control_validation.png`):
+## Control test — why, how, and the result
+
+**Why.** A screen is only meaningful if it can tell a real binder from a non-binder. Because the
+matrix above looked suspicious, we tested the method against pairs with **known answers** before
+trusting or discarding it.
+
+**Hypothesis.**
+- **H1 (method works):** if the pseudo-ipTM reflects real binding, documented binders should score
+  *above* their scrambled/mismatched controls and above the screen background.
+- **H0 (null):** the score reflects generic foldability/size, so real ≈ scrambled ≈ background.
+
+**The three positive controls, and where they came from.** We took experimentally documented
+phage RBP–receptor pairs from the literature, prioritizing ones with **solved co-structures**
+(ground truth) plus one in **our own organism**; sequences pulled from UniProt/NCBI:
+
+| Positive pair | Evidence | Note |
+|---|---|---|
+| T5 **pb5** × *E. coli* **FhuA** | cryo-EM co-structure, PDB **8A8C** (Degroux 2023) | gold standard |
+| λ **gpJ** (C-terminal RBD) × *E. coli* **LamB** | co-structure, PDB **8XCJ** (2024) | gold standard |
+| DEV **gp54** × *P. aeruginosa* **LptD** | genetics + AlphaFold, mBio 2026 | our organism |
+
+For each positive we also folded a length-matched **scrambled** receptor (same residues, shuffled —
+removes the size confound) and a **mismatched** receptor, through the *identical* ESMFold pipeline
+(Figure: `control_validation.png`):
 
 | positive pair | real | scrambled | mismatch | background |
 |---|---|---|---|---|
@@ -40,7 +60,7 @@ a **mismatched** receptor (Figure: `control_validation.png`):
 | λ gpJ × LamB (PDB 8XCJ) | 0.112 | 0.102 | 0.129 | (sd 0.026) |
 | DEV gp54 × LptD (*Pseudomonas*) | 0.159 | 0.129 | 0.112 | |
 
-The known binders do **not** separate from scrambled/mismatched controls or from the screen
+**Result — H0 supported, H1 rejected.** The known binders do **not** separate from scrambled/mismatched controls or from the screen
 background — the gold-standard pair with a solved co-structure (pb5×FhuA) differs from its own
 scrambled receptor by **0.001**. The mean real-vs-scrambled gap (+0.014) is smaller than the
 background noise (sd 0.026). Crucially, the whole-complex **pTM** *does* collapse when the receptor
