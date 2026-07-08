@@ -61,11 +61,17 @@ if [ ! -f work/nohost_R1.fastq.gz ]; then
   echo "  --- host-removal summary (compare 'aligned concordantly' to vendor 1.9%) ---"; cat work/bowtie2_host.log
 fi
 
-echo "===== [3/6] bbnorm — normalize coverage to ~100x ====="
+echo "===== [3/6] downsample reads (seqtk) ====="
+# bowtie2's multi-thread --un-conc-gz writes a MULTI-MEMBER gzip. bbnorm mis-reads it (only ~5700
+# of the 8.4M reads) then crashes in downsample. seqtk reads the whole concatenated stream reliably.
+# A random subsample to a fixed pair count is plenty of depth for a single phage and light for SPAdes.
+# Same -s seed on R1/R2 keeps mates paired.
+SUB=600000
 if [ ! -f work/norm_R1.fastq.gz ]; then
-  # -Xmx caps the JVM heap under the SLURM cgroup — without it bbnorm can overshoot --mem and get OOM-killed.
-  bbnorm.sh -Xmx44g in1=work/nohost_R1.fastq.gz in2=work/nohost_R2.fastq.gz \
-    out1=work/norm_R1.fastq.gz out2=work/norm_R2.fastq.gz target=100 min=2 threads="$T"
+  n=$(( $(zcat work/nohost_R1.fastq.gz | wc -l) / 4 ))
+  echo "  nohost pairs: $n ; subsampling to $SUB (seqtk takes all if fewer)"
+  seqtk sample -s100 work/nohost_R1.fastq.gz "$SUB" | gzip > work/norm_R1.fastq.gz
+  seqtk sample -s100 work/nohost_R2.fastq.gz "$SUB" | gzip > work/norm_R2.fastq.gz
 else echo "  skip — work/norm_R1.fastq.gz exists"; fi
 
 echo "===== [4/6] SPAdes — assemble ====="
