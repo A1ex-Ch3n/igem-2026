@@ -6,7 +6,8 @@ run on Laguna. **Host removal was redone from raw** (we did not trust the vendor
 
 ## Headline result
 The whole phage assembled as **one complete 62,338 bp contig** (no gaps, full module set) — a clean,
-safe, novel phage. **Likely circular but not yet positively confirmed** (see Completeness below).
+safe, novel phage. **Read coverage indicates a circular genome** (uniform, no linear-DTR spike);
+PhageTerm on the full reads will confirm the exact packaging (see Completeness below).
 
 ## Read processing (our own, from raw)
 | Step | Number |
@@ -35,14 +36,22 @@ safe, novel phage. **Likely circular but not yet positively confirmed** (see Com
 - Functional modules (PHROGs): head & packaging 11 (portal, terminase), tail 4 (tail spike ×2,
   tail fiber, tail protein), DNA/RNA/nucleotide metabolism 9, transcription regulation 3,
   moron/host-takeover 3, lysis 1, **integration & excision 2**, unknown 45.
-- **Completeness / circularity (nuanced):** the genome is **one contig, 62,338 bp, 0 gaps (no N)**,
-  with a full module set + reorientable terminase (dnaapler reoriented to terL start — top hit
-  `phrog_2_MF042361_p3`, 97.7% cov, 64.7% id) + 96% coding density. That all points to a **complete
-  genome, likely circular**. BUT: there is **no exact terminal redundancy** (suffix==prefix = 0 bp) and
-  SPAdes did not flag the contig circular, so circularity is **not positively proven** here — it could
-  be a headful/circularly-permuted genome (fits Podoviridae) or a clean circle SPAdes trimmed.
-  **To settle it:** run CheckV (quantitative completeness %) and inspect the SPAdes assembly graph /
-  terminal-repeat structure. Both are UNDONE (see below).
+- **Completeness / topology — read coverage points to CIRCULAR:** the genome is **one contig,
+  62,338 bp, 0 gaps**, full module set + reorientable terminase (dnaapler → terL start, phrog hit 97.7%
+  cov / 64.7% id) + 96% coding density → **complete genome**. For topology we ran a k-mer read-coverage
+  check ([`../../../code/0708_phage_assembly/check_terminal_redundancy.py`](../../../code/0708_phage_assembly/check_terminal_redundancy.py),
+  300k reads): coverage is **uniform (~357×, max/median 1.63×) across the whole genome including both
+  ends, with no ~2× spike**. That is the **circular** signature and argues *against* a T7-style linear
+  Direct Terminal Repeat (a real short DTR, collapsed by the assembler, would show a sharp ~2× coverage
+  spike over the repeat — absent here). No terminal redundancy in the contig sequence either.
+- **Reconciling the PI group's reported ~70 bp terminal repeat:** most consistent with a
+  **circularization overlap** (the redundant sequence an assembler keeps at the circular join, ~ its
+  k-mer length ≈70 bp) — i.e. it *confirms circular*, and our SPAdes contig simply has that overlap
+  trimmed (clean 62,338 bp, 0 terminal redundancy). It is unlikely to be a biological linear DTR given
+  the flat coverage. **To settle packaging definitively:** run **PhageTerm** on the full reads (Laguna)
+  — it classifies DTR vs cos vs pac/headful vs circular from read-end distributions and gives the exact
+  repeat — and confirm which tool/method gave the PI group's 70 bp. Plus CheckV for a completeness %.
+  (All UNDONE — see below.)
 
 ## Three things that matter for the project
 1. **Temperate phage.** The `integration & excision` genes (integrase/excisionase) mean it can
