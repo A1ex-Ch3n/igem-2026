@@ -5,9 +5,11 @@ First assembled phage genome of the project. Isolate **Φ8** propagated on host 
 run on Laguna. **Host removal was redone from raw** (we did not trust the vendor's host-removed files).
 
 ## Headline result
-The whole phage assembled as **one complete 62,338 bp contig** (no gaps, full module set) — a clean,
-safe, novel phage. **Read coverage indicates a circular genome** (uniform, no linear-DTR spike);
-PhageTerm on the full reads will confirm the exact packaging (see Completeness below).
+The whole phage assembled as **one complete ~62.4 kb genome** with a **~77 bp Direct Terminal Repeat
+(DTR)** — a clean, safe, novel **linear DTR podovirus** (T7/Autographiviridae-style). Our SPAdes contig
+is 62,338 bp (one DTR copy trimmed + reverse-complemented + rotated); the PI group's assembly
+(`PI_assembly/`, 62,416 bp) keeps the DTR at both ends and is the canonical reference. Confirmed by
+direct comparison of the two assemblies (see Completeness below).
 
 ## Read processing (our own, from raw)
 | Step | Number |
@@ -36,22 +38,17 @@ PhageTerm on the full reads will confirm the exact packaging (see Completeness b
 - Functional modules (PHROGs): head & packaging 11 (portal, terminase), tail 4 (tail spike ×2,
   tail fiber, tail protein), DNA/RNA/nucleotide metabolism 9, transcription regulation 3,
   moron/host-takeover 3, lysis 1, **integration & excision 2**, unknown 45.
-- **Completeness / topology — read coverage points to CIRCULAR:** the genome is **one contig,
-  62,338 bp, 0 gaps**, full module set + reorientable terminase (dnaapler → terL start, phrog hit 97.7%
-  cov / 64.7% id) + 96% coding density → **complete genome**. For topology we ran a k-mer read-coverage
-  check ([`../../../code/0708_phage_assembly/check_terminal_redundancy.py`](../../../code/0708_phage_assembly/check_terminal_redundancy.py),
-  300k reads): coverage is **uniform (~357×, max/median 1.63×) across the whole genome including both
-  ends, with no ~2× spike**. That is the **circular** signature and argues *against* a T7-style linear
-  Direct Terminal Repeat (a real short DTR, collapsed by the assembler, would show a sharp ~2× coverage
-  spike over the repeat — absent here). No terminal redundancy in the contig sequence either.
-- **Reconciling the PI group's reported ~70 bp terminal repeat:** most consistent with a
-  **circularization overlap** (the redundant sequence an assembler keeps at the circular join, ~ its
-  k-mer length ≈70 bp) — i.e. it *confirms circular*, and our SPAdes contig simply has that overlap
-  trimmed (clean 62,338 bp, 0 terminal redundancy). It is unlikely to be a biological linear DTR given
-  the flat coverage. **To settle packaging definitively:** run **PhageTerm** on the full reads (Laguna)
-  — it classifies DTR vs cos vs pac/headful vs circular from read-end distributions and gives the exact
-  repeat — and confirm which tool/method gave the PI group's 70 bp. Plus CheckV for a completeness %.
-  (All UNDONE — see below.)
+- **Completeness / topology — RESOLVED by comparing to the PI assembly:** the genome is complete with a
+  **~77 bp Direct Terminal Repeat (DTR)**. The PI group's assembly (`PI_assembly/PI_Phage_Assembly_Version1.fa`,
+  62,416 bp) has an **exact 77 bp prefix==suffix** — a real DTR — at both ends. Direct comparison
+  ([`../../../code/0708_phage_assembly/compare_to_PI_assembly.py`](../../../code/0708_phage_assembly/compare_to_PI_assembly.py))
+  confirms: **100% of our k-mers are in the PI assembly (same genome)**; the DTR is present in ours once
+  (RC, at pos 17703); `62,416 − 77 = 62,339 ≈ our 62,338` → **our SPAdes run trimmed one DTR copy** and
+  output the sequence **reverse-complemented + rotated** (why our raw ends looked different).
+  A 77 bp DTR = **linear genome with Direct Terminal Repeats** (T7/Autographiviridae), fitting the
+  podovirus morphology. My earlier read-only guesses (circular↔linear) were unreliable — the PI
+  assembly settles it. See [`PI_assembly/README.md`](PI_assembly/README.md). *(Optional: PhageTerm on
+  the full reads can formally classify DTR vs headful; CheckV for a completeness %.)*
 
 ## Three things that matter for the project
 1. **Temperate phage.** The `integration & excision` genes (integrase/excisionase) mean it can
@@ -76,10 +73,13 @@ mash vs INPHARED: **`no_inphared_mash_hit`** (no known phage within mash distanc
 - `bowtie2_host.log`, `readback.log`, `fastp.html` — QC.
 
 ## UNDONE
-- **CheckV completeness + circularity** — CheckV DB download failed on Laguna (NERSC SSL drop); retry
-  for a quantitative completeness %. Also confirm circularity from the SPAdes assembly graph /
-  terminal-repeat structure (the contig has no exact terminal redundancy, so "circular" is inferred,
-  not proven). Evidence above indicates a complete genome; circularity is likely but unconfirmed.
+- **Topology — RESOLVED:** linear genome with a ~77 bp DTR (confirmed against the PI assembly). Optional:
+  PhageTerm on the full reads to formally classify the packaging (DTR vs headful); CheckV for a
+  quantitative completeness % (DB download failed on Laguna — NERSC SSL drop — retry).
+- **Adopt the PI assembly as canonical + re-annotate** — for submission/consistency, re-run pharokka on
+  `PI_assembly/PI_Phage_Assembly_Version1.fa` (62,416 bp, DTR both ends, reference orientation) so the
+  annotation coordinates match the PI reference. Our current pharokka/RBP coords are on the RC+rotated,
+  DTR-trimmed contig (biologically valid, different frame).
 - **Formal taxonomy** — terL phylogeny / VIRIDIC vs NCBI to place genus/family and confirm novelty.
 - **Companion `9-6-2 Φ8`** — same 06/05 plaque batch, not yet sequenced.
 
