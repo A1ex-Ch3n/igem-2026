@@ -52,7 +52,13 @@ code/0623_metagenome_rbp/out_finding_rbps/ani/refs.zip
 code/output/**/mmseqs_tmp/
 code/output/**/mmseqs_tmp_search/
 data/bacteria_genome/**/*.fasta
-# 0708 phage assembly: Laguna-side databases + working intermediates (keep only pulled-back results)
+# 0708 phage assembly: Laguna-side data / envs / DBs / intermediates (git tracks scripts only —
+# the workspace doubles as the clone dir on Laguna, so ignore everything the run creates there)
+code/0708_phage_assembly/reads/
+code/0708_phage_assembly/ref/
+code/0708_phage_assembly/envs/
+code/0708_phage_assembly/.conda_pkgs/
 code/0708_phage_assembly/db/
 code/0708_phage_assembly/**/work/
 code/0708_phage_assembly/**/logs/
+code/0708_phage_assembly/*.out
