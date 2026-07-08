@@ -46,8 +46,9 @@ binned quality (most bases Q41 — high quality).
 (P. putida group).
 
 **Assembly + annotation (done 2026-07-08)** — see [`9-2-1/assembly/NOTES.md`](9-2-1/assembly/NOTES.md).
-A single **62,338 bp, circular, novel phage genome** (SPAdes `NODE_13`, cov 1014× vs 3–6× background;
-read-back 98.44%). pharokka: 80 CDS, GC 62%, 96.3% coding density, complete structural modules
+The whole phage in **one complete 62,338 bp contig** (SPAdes `NODE_13`, cov 1014× vs 3–6× background;
+read-back 98.44%; no gaps) — novel, **likely circular but not yet positively confirmed** (no terminal
+redundancy; CheckV + assembly-graph check UNDONE). pharokka: 80 CDS, GC 62%, 96.3% coding density, complete structural modules
 (portal/terminase/tail spike+fiber), **temperate** (integrase present), **safe** (0 virulence, 0 AMR),
 **novel** (no INPHARED mash hit). Our own host removal found **~15% host vs the vendor's 1.9%**.
 Reference genome to use: `9-2-1/assembly/pharokka_phage/pharokka_dnaapler_reoriented.fasta`.

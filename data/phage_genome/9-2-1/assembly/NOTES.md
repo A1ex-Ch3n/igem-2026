@@ -5,7 +5,8 @@ First assembled phage genome of the project. Isolate **Φ8** propagated on host 
 run on Laguna. **Host removal was redone from raw** (we did not trust the vendor's host-removed files).
 
 ## Headline result
-A single **62,338 bp, circular, novel phage genome** — clean, complete, and safe.
+The whole phage assembled as **one complete 62,338 bp contig** (no gaps, full module set) — a clean,
+safe, novel phage. **Likely circular but not yet positively confirmed** (see Completeness below).
 
 ## Read processing (our own, from raw)
 | Step | Number |
@@ -34,10 +35,14 @@ A single **62,338 bp, circular, novel phage genome** — clean, complete, and sa
 - Functional modules (PHROGs): head & packaging 11 (portal, terminase), tail 4 (tail spike ×2,
   tail fiber, tail protein), DNA/RNA/nucleotide metabolism 9, transcription regulation 3,
   moron/host-takeover 3, lysis 1, **integration & excision 2**, unknown 45.
-- **Circular / complete:** dnaapler reoriented the genome using the large terminase (terL) — top
-  hit `phrog_2_MF042361_p3`, 97.7% coverage, 64.7% identity — and the reoriented genome now starts
-  at the terminase ATG. A full structural module set + reorientable terminase + 96% coding density
-  all point to a complete circular genome. (Quantitative CheckV completeness still pending — see below.)
+- **Completeness / circularity (nuanced):** the genome is **one contig, 62,338 bp, 0 gaps (no N)**,
+  with a full module set + reorientable terminase (dnaapler reoriented to terL start — top hit
+  `phrog_2_MF042361_p3`, 97.7% cov, 64.7% id) + 96% coding density. That all points to a **complete
+  genome, likely circular**. BUT: there is **no exact terminal redundancy** (suffix==prefix = 0 bp) and
+  SPAdes did not flag the contig circular, so circularity is **not positively proven** here — it could
+  be a headful/circularly-permuted genome (fits Podoviridae) or a clean circle SPAdes trimmed.
+  **To settle it:** run CheckV (quantitative completeness %) and inspect the SPAdes assembly graph /
+  terminal-repeat structure. Both are UNDONE (see below).
 
 ## Three things that matter for the project
 1. **Temperate phage.** The `integration & excision` genes (integrase/excisionase) mean it can
@@ -62,8 +67,10 @@ mash vs INPHARED: **`no_inphared_mash_hit`** (no known phage within mash distanc
 - `bowtie2_host.log`, `readback.log`, `fastp.html` — QC.
 
 ## UNDONE
-- **CheckV completeness** — the CheckV DB download failed on Laguna (NERSC SSL drop). Retry to get a
-  quantitative completeness %. Evidence above already strongly indicates a complete genome.
+- **CheckV completeness + circularity** — CheckV DB download failed on Laguna (NERSC SSL drop); retry
+  for a quantitative completeness %. Also confirm circularity from the SPAdes assembly graph /
+  terminal-repeat structure (the contig has no exact terminal redundancy, so "circular" is inferred,
+  not proven). Evidence above indicates a complete genome; circularity is likely but unconfirmed.
 - **Formal taxonomy** — terL phylogeny / VIRIDIC vs NCBI to place genus/family and confirm novelty.
 - **Companion `9-6-2 Φ8`** — same 06/05 plaque batch, not yet sequenced.
 

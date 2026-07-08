@@ -137,7 +137,7 @@ Results returned 2026-07-08 (raw + host-removed paired-end fastq, now in [`phage
 |---|---|---|---|
 | 9-2-1 Φ8 | Phage pick / lysate (plaque-picked into phage buffer) — week-1 hit | 2026-06-10 | **sent — assembled + annotated** |
 
-*Vendor submission code `3NKSC3`. Only the `9-2-1` Φ8 pick has come back so far — the companion `9-6-2 Φ8` pick (same 06/05 plate pair, still listed as "not sent" above) has not. **Assembled + annotated 2026-07-08**: one 62,338 bp circular novel phage genome — temperate, safe (0 virulence / 0 AMR), carries RBPs; our own host removal found ~15% host vs the vendor's 1.9%. Full write-up: [`phage_genome/9-2-1/assembly/NOTES.md`](phage_genome/9-2-1/assembly/NOTES.md).*
+*Vendor submission code `3NKSC3`. Only the `9-2-1` Φ8 pick has come back so far — the companion `9-6-2 Φ8` pick (same 06/05 plate pair, still listed as "not sent" above) has not. **Assembled + annotated 2026-07-08**: the whole phage in one complete 62,338 bp contig (novel, likely circular but not yet confirmed) — temperate, safe (0 virulence / 0 AMR), carries RBPs; our own host removal found ~15% host vs the vendor's 1.9%. Full write-up: [`phage_genome/9-2-1/assembly/NOTES.md`](phage_genome/9-2-1/assembly/NOTES.md).*
 
 ---
 
