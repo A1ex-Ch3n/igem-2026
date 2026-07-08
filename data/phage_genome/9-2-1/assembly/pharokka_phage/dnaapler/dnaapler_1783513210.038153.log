@@ -1,0 +1,38 @@
+2026-07-08 05:20:10.046 | INFO     | dnaapler.utils.util:begin_dnaapler:74 - You are using dnaapler version 1.4.0
+2026-07-08 05:20:10.046 | INFO     | dnaapler.utils.util:begin_dnaapler:75 - Repository homepage is https://github.com/gbouras13/dnaapler
+2026-07-08 05:20:10.047 | INFO     | dnaapler.utils.util:begin_dnaapler:76 - Written by George Bouras: george.bouras@adelaide.edu.au
+2026-07-08 05:20:10.047 | INFO     | dnaapler.utils.util:begin_dnaapler:77 - Your input file is work/phage_genome.fasta
+2026-07-08 05:20:10.047 | INFO     | dnaapler.utils.util:begin_dnaapler:78 - Your output directory  is work/pharokka_phage/dnaapler
+2026-07-08 05:20:10.047 | INFO     | dnaapler.utils.util:begin_dnaapler:79 - You have specified 8 threads to use with MMseqs2
+2026-07-08 05:20:10.047 | INFO     | dnaapler.utils.util:begin_dnaapler:80 - You have specified terL gene(s) to reorient your sequence
+2026-07-08 05:20:10.048 | INFO     | dnaapler.utils.util:check_mmseqs2_version:122 - Checking MMseqs2 installation.
+2026-07-08 05:20:10.064 | INFO     | dnaapler.utils.util:check_mmseqs2_version:142 - MMseqs2 version found is 18.8cc5c
+2026-07-08 05:20:10.064 | INFO     | dnaapler.utils.util:check_mmseqs2_version:156 - MMseqs2 version is ok.
+2026-07-08 05:20:10.064 | INFO     | dnaapler.utils.util:check_pyrodigal_version:95 - Checking pyrodigal installation.
+2026-07-08 05:20:10.065 | INFO     | dnaapler.utils.util:check_pyrodigal_version:106 - Pyrodigal version is v3.7.1
+2026-07-08 05:20:10.065 | INFO     | dnaapler.utils.util:check_pyrodigal_version:107 - Pyrodigal version is ok.
+2026-07-08 05:20:10.065 | INFO     | dnaapler.utils.util:begin_dnaapler:85 - Parameter: --input work/phage_genome.fasta
+2026-07-08 05:20:10.065 | INFO     | dnaapler.utils.util:begin_dnaapler:85 - Parameter: --output work/pharokka_phage/dnaapler
+2026-07-08 05:20:10.065 | INFO     | dnaapler.utils.util:begin_dnaapler:85 - Parameter: --threads 8
+2026-07-08 05:20:10.065 | INFO     | dnaapler.utils.util:begin_dnaapler:85 - Parameter: --force False
+2026-07-08 05:20:10.066 | INFO     | dnaapler.utils.util:begin_dnaapler:85 - Parameter: --prefix dnaapler
+2026-07-08 05:20:10.066 | INFO     | dnaapler.utils.util:begin_dnaapler:85 - Parameter: --evalue 1e-10
+2026-07-08 05:20:10.066 | INFO     | dnaapler.utils.util:begin_dnaapler:85 - Parameter: --autocomplete none
+2026-07-08 05:20:10.066 | INFO     | dnaapler.utils.util:begin_dnaapler:85 - Parameter: --seed_value 13
+2026-07-08 05:20:10.066 | INFO     | dnaapler:phage:448 - You have chosen none method to reorient your sequence if the MMseqs2 based method fails.
+2026-07-08 05:20:10.067 | INFO     | dnaapler.utils.validation:validate_input:130 - Checking that the input file work/phage_genome.fasta is in FASTA or GFA format and has only 1 entry.
+2026-07-08 05:20:10.068 | INFO     | dnaapler.utils.validation:check_file_format:105 - work/phage_genome.fasta is in FASTA format.
+2026-07-08 05:20:10.070 | INFO     | dnaapler.utils.validation:validate_input:135 - work/phage_genome.fasta has only one entry.
+2026-07-08 05:20:10.070 | INFO     | dnaapler.utils.validation:check_evalue:228 - You have specified an evalue of 1e-10.
+2026-07-08 05:20:10.073 | INFO     | dnaapler.utils.external_tools:run:52 - Started running mmseqs easy-search work/phage_genome.fasta /project/jespinoza_1541/cchen_phage/igem-2026/code/0708_phage_assembly/envs/pharokka/lib/python3.13/site-packages/dnaapler/db/terL_db work/pharokka_phage/dnaapler/dnaapler_MMseqs2_output.txt work/pharokka_phage/dnaapler/tmp_MMseqs2_output --search-type 2 --threads 8 -e 1e-10 --format-output query,qlen,target,tlen,alnlen,qstart,qend,tstart,tend,fident,nident,gapopen,mismatch,evalue,bits,qaln,taln ...
+2026-07-08 05:20:11.301 | INFO     | dnaapler.utils.external_tools:run:54 - Done running mmseqs easy-search work/phage_genome.fasta /project/jespinoza_1541/cchen_phage/igem-2026/code/0708_phage_assembly/envs/pharokka/lib/python3.13/site-packages/dnaapler/db/terL_db work/pharokka_phage/dnaapler/dnaapler_MMseqs2_output.txt work/pharokka_phage/dnaapler/tmp_MMseqs2_output --search-type 2 --threads 8 -e 1e-10 --format-output query,qlen,target,tlen,alnlen,qstart,qend,tstart,tend,fident,nident,gapopen,mismatch,evalue,bits,qaln,taln
+2026-07-08 05:20:11.306 | WARNING  | dnaapler.utils.processing:process_MMseqs2_output_and_reorient:212 - The top terL MMseqs2 hit did not have a MMseqs2 alignment beginning with a valid start codon M, V or L.
+2026-07-08 05:20:11.307 | WARNING  | dnaapler.utils.processing:process_MMseqs2_output_and_reorient:215 - The CDS with the most overlap with this MMseqs2 hit according to Pyrodigal will instead be used to reorient the genome.
+2026-07-08 05:20:11.308 | INFO     | dnaapler.utils.processing:reorient_sequence:314 - The top MMseqs2 hit for terL is phrog_2_MF042361_p3, which has length of 522 AAs.  The alignment did not begin with a valid start codon.
+2026-07-08 05:20:11.308 | INFO     | dnaapler.utils.processing:reorient_sequence:317 - 510 AAs were covered in the best hit, with an overall coverage of 97.7%.
+2026-07-08 05:20:11.308 | INFO     | dnaapler.utils.processing:reorient_sequence:320 - 330 AAs were identical, with an overall identity of 64.71%.
+2026-07-08 05:20:11.449 | INFO     | dnaapler.utils.processing:reorient_sequence:360 - The CDS most overlapping the tophit has a start coordinate of 47300.
+2026-07-08 05:20:11.450 | INFO     | dnaapler.utils.processing:reorient_sequence:363 - The CDS most overlapping the tophit is on the forward strand.
+2026-07-08 05:20:11.450 | INFO     | dnaapler.utils.processing:reorient_sequence:366 - Re-orienting.
+2026-07-08 05:20:11.453 | INFO     | dnaapler.utils.util:end_dnaapler:173 - dnaapler has finished
+2026-07-08 05:20:11.454 | INFO     | dnaapler.utils.util:end_dnaapler:174 - Elapsed time: 1.42 seconds

@@ -1,0 +1,5 @@
+##gff-version 3
+NODE_13_length_62338_cov_1014.294454	tRNAscan-SE	tRNA	57616	57692	78.9	+	.	ID=NODE_13_length_62338_cov_1014.294454.trna1;Name=NODE_13_length_62338_cov_1014.294454.tRNA1-AspGTC;isotype=Asp;anticodon=GTC;gene_biotype=tRNA;
+NODE_13_length_62338_cov_1014.294454	tRNAscan-SE	exon	57616	57692	.	+	.	ID=NODE_13_length_62338_cov_1014.294454.trna1.exon1;Parent=NODE_13_length_62338_cov_1014.294454.trna1;
+NODE_13_length_62338_cov_1014.294454	tRNAscan-SE	tRNA	57699	57774	73.2	+	.	ID=NODE_13_length_62338_cov_1014.294454.trna2;Name=NODE_13_length_62338_cov_1014.294454.tRNA2-AsnGTT;isotype=Asn;anticodon=GTT;gene_biotype=tRNA;
+NODE_13_length_62338_cov_1014.294454	tRNAscan-SE	exon	57699	57774	.	+	.	ID=NODE_13_length_62338_cov_1014.294454.trna2.exon1;Parent=NODE_13_length_62338_cov_1014.294454.trna2;

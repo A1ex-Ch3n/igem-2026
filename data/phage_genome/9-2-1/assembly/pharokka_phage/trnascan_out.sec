@@ -1,0 +1,12 @@
+NODE_13_length_62338_cov_1014.294454.trna1 (57616-57692)	Length: 77 bp
+Type: Asp	Anticodon: GTC at 35-37 (57650-57652)	Score: 78.9
+         *    |    *    |    *    |    *    |    *    |    *    |    *    |    * 
+Seq: GCTGCCGTAGCTCAGTCGGTtAGAGCGCTTGCCTGTCACGCAAGAGGcCACGGGTTCGAGTCCCGTCGGTGGCGCCA
+Str: >>>>>>>..>>>>.........<<<<.>>>>>.......<<<<<.....>>>>>.......<<<<<<<<<<<<....
+
+NODE_13_length_62338_cov_1014.294454.trna2 (57699-57774)	Length: 76 bp
+Type: Asn	Anticodon: GTT at 34-36 (57732-57734)	Score: 73.2
+         *    |    *    |    *    |    *    |    *    |    *    |    *    |    *
+Seq: TGGCGTGTAGCTCAATTGGTAGAGCACCCGGCTGTTAACCGGGCGGtTGCAGGTTCGAGTCCTGCCTTGCCAGCCA
+Str: >>>>>.>..>>>>........<<<<.>>>>>.......<<<<<.....>>>>>.......<<<<<<.<<<<<....
+

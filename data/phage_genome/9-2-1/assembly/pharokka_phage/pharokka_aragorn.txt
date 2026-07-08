@@ -1,0 +1,2 @@
+>NODE_13_length_62338_cov_1014.294454
+0 genes found

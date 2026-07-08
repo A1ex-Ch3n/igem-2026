@@ -57,7 +57,7 @@ See [[metagenomic_dna_extraction]] and [[bacteria_genome_extraction]] for method
 | Metagenome site 9 (1st batch) | Metagenome extract | 2026-05-20 | not sent |
 | Metagenome site 10 (1st batch) | Metagenome extract | 2026-05-20 | not sent |
 | 9-6-2 Φ8 | Phage pick / lysate (plaque-picked into phage buffer) — week-1 hit | 2026-06-10 | not sent |
-| 9-2-1 Φ8 | Phage pick / lysate (plaque-picked into phage buffer) — week-1 hit | 2026-06-10 | not sent |
+| 9-2-1 Φ8 | Phage pick / lysate (plaque-picked into phage buffer) — week-1 hit | 2026-06-10 | **sent** — see [Sent for sequencing — phage](#sent-for-sequencing--phage-results-back-2026-07-08) |
 
 *The two phage picks are the "two successful 06/05 plates" (Φ8 on hosts `9-6-2` and `9-2-1`), cored and eluted on [2026-06-10](../lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md) ⑤. The hosts `9-6-2`/`9-2-1` also have bacterial genome extracts (sent for sequencing — see below) and remain as −80 glycerol stocks.*
 
@@ -126,6 +126,18 @@ Results returned ~2026-06-12 (in [`bacteria_genome/`](bacteria_genome/) — Cal_
 | 10-10-2 | Bacteria genome extract (Round 1) | 2026-06-05 | **sent** |
 
 *Submission details (conc / volume / mass) in the [Quantification details](#quantification-details-reference) appendix. Metagenomes #8/#9 were diluted (38 µL DNA + 50 µL kit buffer); the 3 bacterial genomes — see Discrepancy #3.*
+
+---
+
+## Sent for sequencing — phage (results back 2026-07-08)
+
+Results returned 2026-07-08 (raw + host-removed paired-end fastq, now in [`phage_genome/9-2-1/`](phage_genome/9-2-1/)). `[TBD: exact submission date — not recorded anywhere; only the results-back date is known.]`
+
+| ID | What it is | Date created | Status |
+|---|---|---|---|
+| 9-2-1 Φ8 | Phage pick / lysate (plaque-picked into phage buffer) — week-1 hit | 2026-06-10 | **sent — assembled + annotated** |
+
+*Vendor submission code `3NKSC3`. Only the `9-2-1` Φ8 pick has come back so far — the companion `9-6-2 Φ8` pick (same 06/05 plate pair, still listed as "not sent" above) has not. **Assembled + annotated 2026-07-08**: one 62,338 bp circular novel phage genome — temperate, safe (0 virulence / 0 AMR), carries RBPs; our own host removal found ~15% host vs the vendor's 1.9%. Full write-up: [`phage_genome/9-2-1/assembly/NOTES.md`](phage_genome/9-2-1/assembly/NOTES.md).*
 
 ---
 
@@ -212,3 +224,5 @@ All sites quantified [2026-05-27](../lab_notebook/digitalized/2026-05-27_dna-qua
 - 2026-06-10 — Corrected the 6-5 bacterial Set A: the 26,136.76 RFU reading is `8-3-1` (not a second `8-3-2`), per user.
 - 2026-06-12 — Added Bacterial Round 2 (6-10): 8 extracted + 2 pellets; spin-column note.
 - 2026-06-13 — **Restructured to a by-storage-location layout** (4 °C / −20 °C / −80 °C / sent), each a single table (ID · what · date · status), from the user's physical re-check. Added the −80 glycerol-stock table (all 28), the 2 week-1 phage picks (`9-6-2 Φ8` / `9-2-1 Φ8`) at 4 °C, and the older metagenome extracts (1st-batch sites 2/5/6/8/9/10, mixes mix_1/3/4/7). Moved per-sample conc/mass into a **Quantification details** appendix (nothing lost). Added a **Discrepancies** section (8-3-1≈8-5-1 — label kept per user; 6/3 `8-5-2 ×2`; bacterial "diluted" wording; 5/20 "all 10"→6). Added sources (5-29 OD, 6-3 entry, `0529_OD.xlsx`, `bacteria_genome/`). Created companion [[week_3_bacteria_list]].
+- 2026-07-08 — First phage sequencing results back: `9-2-1 Φ8` (vendor code `3NKSC3`, raw + host-removed paired-end fastq) landed in `data/phage_genome/9-2-1/`. Marked `9-2-1 Φ8` **sent** in the 4 °C table and added a new **Sent for sequencing — phage** section. Submission date not recorded anywhere in the notebook/inventory — flagged `[TBD]` rather than guessed. Companion `9-6-2 Φ8` pick still shows "not sent" — no data for it yet.
+- 2026-07-08 — `9-2-1 Φ8` **assembled + annotated** (Laguna, [`code/0708_phage_assembly/`](../code/0708_phage_assembly/)): one 62,338 bp circular novel phage genome (temperate, safe, carries RBPs). Updated its status to "assembled + annotated" in both phage tables. Write-up: [`phage_genome/9-2-1/assembly/NOTES.md`](phage_genome/9-2-1/assembly/NOTES.md).
