@@ -34,6 +34,8 @@ env/
 
 # ===== large genome / metagenome sequence data (kept on disk, not in git) =====
 data/metagenomes/*.faa
+# raw phage sequencing reads (paired-end fastq, ~600 MB each; vendor-delivered)
+data/phage_genome/**/*.fastq.gz
 # bulky per-genome annotation formats (keep the compact .faa/.tsv/plots instead)
 data/bacteria_genome/**/*.json
 data/bacteria_genome/**/*.gbff
@@ -50,3 +52,7 @@ code/0623_metagenome_rbp/out_finding_rbps/ani/refs.zip
 code/output/**/mmseqs_tmp/
 code/output/**/mmseqs_tmp_search/
 data/bacteria_genome/**/*.fasta
+# 0708 phage assembly: Laguna-side databases + working intermediates (keep only pulled-back results)
+code/0708_phage_assembly/db/
+code/0708_phage_assembly/**/work/
+code/0708_phage_assembly/**/logs/
