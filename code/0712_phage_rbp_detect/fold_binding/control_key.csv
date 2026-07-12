@@ -1,0 +1,10 @@
+id,class
+pb5__FhuA,positive
+gpJrbd__LamB,positive
+gp54__LptD,positive
+pb5__FhuA_scr,scrambled
+gpJrbd__LamB_scr,scrambled
+gp54__LptD_scr,scrambled
+pb5__LamB,mismatch
+gpJrbd__FhuA,mismatch
+gp54__FhuA,mismatch

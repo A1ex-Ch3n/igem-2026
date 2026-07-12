@@ -1,0 +1,9 @@
+gene	pharokka_annot	pharokka_category	rbp_detect_pred	rbp_detect_score	in_pharokka_curated	evidence	in_union
+FHABPWTM_CDS_0002	hypothetical protein	unknown function	1	0.997924	no	detect_only	yes
+FHABPWTM_CDS_0014	hypothetical protein	unknown function	0	0.031713	yes	pharokka_only	yes
+FHABPWTM_CDS_0015	tail spike protein	tail	0	0.000224	yes	pharokka_only	yes
+FHABPWTM_CDS_0016	tail spike protein	tail	1	0.996809	yes	both	yes
+FHABPWTM_CDS_0017	tail protein	tail	0	0.437803	yes	pharokka_only	yes
+FHABPWTM_CDS_0018	tail fiber protein	tail	0	0.000014	yes	pharokka_only	yes
+FHABPWTM_CDS_0019	internal virion protein	head and packaging	0	0.000165	yes	pharokka_only	yes
+FHABPWTM_CDS_0020	virion structural protein	head and packaging	0	0.000051	yes	pharokka_only	yes
