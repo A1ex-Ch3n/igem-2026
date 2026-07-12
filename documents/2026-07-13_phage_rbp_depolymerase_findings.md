@@ -43,6 +43,56 @@ Three tasks, all done with real-MSA ColabFold on Laguna + local analysis.
 
 ---
 
+## 術語與我們怎麼判定 / Key terms & how we know
+
+**中文：**
+
+- **pLDDT** —— AlphaFold 對「每個胺基酸位置**預測得多準**」的自信分數，0–100。>90 非常可信、70–90 可信、50–70 偏低、<50 基本是亂折的。這就是為什麼 single_sequence（pLDDT≈30）的結果**不能用**、真 MSA（多數 >80）才能用。
+
+- **MSA（多序列比對）** —— 把目標蛋白跟演化上的一堆同源序列排在一起。AlphaFold 靠「哪些位置會一起突變」來推結構，**沒有 MSA 就等於沒線索**（所以 single_sequence 崩掉）。而 **paired MSA** 是把「兩條會互相結合的鏈」在同一物種裡配對起來，用來抓**界面**的共演化訊號——這正是 phage（病毒）× 細菌**跨界配對缺的東西**（兩者不在同一基因組共同演化），所以 binding 篩選才會失敗。
+
+- **ipTM / pTM** —— TM-score 型的自信分數（0–1）。**pTM** = 整體 fold 折得多有信心；**ipTM = 兩條鏈相對位置（界面）多有信心**，binding 篩選看的就是它。對照組 ipTM 分不開（正對照 ≤0.31、亂配 0.50）= 沒有可信的界面訊號。
+
+- **β-helix / β-solenoid（β 螺旋 / β 螺線體）** —— 一種胺基酸鏈**一圈一圈盤成長柱狀**的立體結構（不是 DNA 那種雙螺旋，是 β-股一層層堆疊成的柱子，表面常有一條長溝槽）。
+
+- **為什麼我們在找 β-helix？** —— 因為**分解多醣的酵素（depolymerase / 醣解酶）幾乎都長成 β-helix**，那條表面長溝槽就是它切醣的活性位。噬菌體的 tail spike 若是 β-helix depolymerase，就代表它辨識並**切割的是宿主表面的醣（LPS O-antigen）而不是蛋白質**。所以「tail spike 是不是 β-helix」這一題，**直接回答了「受體是醣還是蛋白」**——這就是它的價值。
+
+- **我們怎麼知道它是 β-helix？** —— β-helix 每盤一圈，就跟**上一圈**用骨架氫鍵扣在一起；這些氫鍵在序列上會**固定間隔「一圈的殘基數」（約 16–24 個）**規律出現。相對地，α-helix 的氫鍵間隔固定是 4。我們就統計骨架氫鍵的「序列間隔」分布：**在 16–24 出現尖峰 = β-helix**、在 4 出現尖峰 = α-helix，再用「β-股含量高、形狀細長、pLDDT 夠高」佐證。CDS_0016 的峰在 **16–18**、CDS_0002 在 **22–24** → 都是 β-helix。
+
+**EN:**
+
+- **pLDDT** — AlphaFold's per-residue **confidence** score (0–100) in how accurately it placed each
+  amino acid. >90 very high, 70–90 confident, 50–70 low, <50 essentially unreliable. This is exactly
+  why the single_sequence run (pLDDT≈30) was **unusable** and the real-MSA run (mostly >80) was trustworthy.
+
+- **MSA (multiple sequence alignment)** — the target protein stacked with its evolutionary homologs.
+  AlphaFold infers structure from **which positions co-vary**; no MSA = no signal (why single_sequence
+  collapsed). A **paired MSA** matches the two binding chains within the same species to capture
+  **interface** co-evolution — precisely what phage × bacterium (cross-kingdom) pairs **lack**, which
+  is why the binding screen failed.
+
+- **ipTM / pTM** — TM-score-type confidence (0–1). **pTM** = confidence in the overall fold; **ipTM =
+  confidence in the relative placement of the two chains (the interface)** — the number a binding
+  screen relies on. The controls' ipTM did not separate (positives ≤0.31, a mismatch 0.50) = no
+  trustworthy interface signal.
+
+- **β-helix / β-solenoid** — a fold where the chain **coils into a long prism**, one rung per turn
+  (not a DNA-style double helix — a column of stacked β-strands, usually with a long surface groove).
+
+- **Why β-helix is what we're looking for** — enzymes that **degrade polysaccharides (depolymerases)
+  almost always adopt the β-helix fold**, with that surface groove as the sugar-cleaving active site.
+  If a phage tail spike is a β-helix depolymerase, its receptor is a **host-surface sugar (LPS
+  O-antigen), not a protein**. So "is the tail spike a β-helix?" **directly answers "is the receptor
+  a sugar or a protein?"** — that is the value of the question.
+
+- **How we know it's a β-helix** — each coil H-bonds to the **previous coil**, so backbone H-bonds
+  recur at a **fixed sequence spacing = one coil's worth of residues (~16–24)**. (An α-helix instead
+  H-bonds at a fixed spacing of 4.) We histogram the sequence-spacing of backbone H-bonds: **a peak at
+  16–24 = β-helix**, a peak at 4 = α-helix; corroborated by high β-strand content, an elongated shape,
+  and adequate pLDDT. CDS_0016 peaks at **16–18**, CDS_0002 at **22–24** → both β-helices.
+
+---
+
 ## 結果 / Results
 
 | RBP | pLDDT | fold | 判定 / call |
