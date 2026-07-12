@@ -1,0 +1,12 @@
+structure	n	plddt	beta	helix	a4	period	peak	core	core_n	elong	verdict
+CDS_0002__monomer	650	81.7	0.62	0.16	24	23	28	44-649	117	2.1	beta-helix
+CDS_0014__monomer	477	92.5	0.48	0.35	88	34	7	17-348	24	1.5	alpha-rich
+CDS_0015__monomer	547	64.7	0.52	0.28	67	17	14	28-528	67	2.3	beta-helix
+CDS_0016__monomer	402	93.2	0.56	0.23	45	16	17	21-367	71	2.7	beta-helix
+CDS_0017__monomer	917	89.1	0.49	0.36	201	7	8	115-915	44	1.2	alpha-rich
+CDS_0018__monomer	118	91.3	0.61	0.19	10	12	4	0-0	0	2.3	beta-other
+CDS_0019__monomer	577	96.1	0.67	0.17	38	7	24	31-531	49	2.3	beta-other
+CDS_0020__monomer	212	92.8	0.09	0.89	179	6	1	0-0	0	10.3	alpha-fiber
+CDS_0015__trimer	547	49.8	0.48	0.29	75	17	19	28-528	87	4.3	beta-helix
+CDS_0016__trimer	402	84.6	0.55	0.24	45	16	16	21-367	65	2.8	beta-helix
+CDS_0018__trimer	118	87.0	0.66	0.16	9	12	4	0-0	0	2.5	beta-other
