@@ -1,0 +1,234 @@
+---
+title: "Why protein–protein binding simulation does not work?"
+subtitle: "為什麼蛋白–蛋白結合模擬行不通 — a controlled negative result for our phage RBP × receptor screen (iGEM)"
+date: "2026-07-13"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    embed-resources: true
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    fig-align: center
+    theme: cosmo
+  pdf:
+    toc: true
+    number-sections: true
+    fig-cap-location: bottom
+    fig-align: center
+    geometry: margin=1in
+    keep-tex: false
+execute:
+  echo: false
+---
+
+::: {.callout-note title="What this document is / 這份文件是什麼"}
+**EN:** A standalone account of why we could **not** rank phage RBP × bacterial receptor binding by
+folding the complex and reading its ipTM. We tried it twice, with different tools, and it failed both
+times — but for two different reasons, one practical and one fundamental. This is a **controlled
+negative result** (we gated on positive/negative controls) and its lesson. Source files are cited inline
+and mapped in the last section.
+
+**中文：** 這份文件說明：我們為什麼**無法**用「把 RBP×受體折成複合物、看 ipTM 分數」來判斷結合。我們用不同工具
+試了兩次，兩次都失敗——但失敗的原因不同，一個是技術面、一個是根本科學面。這是一個**有對照組把關的負面結果**，
+以及它教我們的事。所有引用的檔案在內文標註、並在最後一節彙整。
+:::
+
+# TL;DR — the short answer / 一句話答案
+
+::: {.callout-important}
+**EN — two independent reasons:**
+
+1. **The science.** A phage RBP and a bacterial receptor are a **cross-kingdom** pair with **no shared
+   evolutionary history**, so there is **no "paired MSA"** — the co-evolution signal that AlphaFold2/3
+   and ESMFold rely on to place an interface. Without it, the interface score (ipTM) is **noise**. We
+   proved this **twice**, with two different tools, using known-binder positive controls that failed to
+   beat scrambled negatives.
+2. **It is moot anyway.** Our tail spikes are **β-helix depolymerases**, so the phage's primary receptor
+   is the **LPS O-antigen — a sugar, not a protein.** There is no protein partner to dock in the first place.
+
+**中文 — 兩個獨立原因：**
+
+1. **科學面。** 噬菌體 RBP 和細菌受體是**跨界（cross-kingdom）**配對、**沒有共同演化史**，因此沒有
+   **paired MSA**——那正是 AlphaFold2/3、ESMFold 用來擺放「界面」的共演化訊號。缺了它，界面分數（ipTM）就是
+   **雜訊**。我們用兩種不同工具、用「已知會結合」的正對照**證明了兩次**：正對照贏不過打亂的負對照。
+2. **反正也白搭。** 我們的 tail spike 是 **β-helix depolymerase（醣解酶）**，所以噬菌體的主要受體是
+   **LPS O-antigen——是醣、不是蛋白。** 根本沒有蛋白 partner 可以 dock。
+:::
+
+# What we tried, and why it seemed reasonable / 我們原本想做什麼、為何看似合理
+
+**EN.** The plan was standard: computationally **fold each phage RBP together with each candidate
+bacterial receptor** and rank the pairs by **ipTM** (an interface-confidence score, 0–1), producing a
+candidate-binder heatmap to prioritise wet-lab tests. The original screen was **7,182 pairs** (114 RBP
+families × 63 receptors) on the Laguna **L40S / CUDA 12.4** GPUs. This is a reasonable first move — it is
+exactly how AlphaFold-Multimer is used for protein–protein interaction screens.
+
+**中文.** 計畫很標準：把**每一條噬菌體 RBP 跟每一個候選細菌受體折在一起**，用 **ipTM**（界面信心分數，0–1）
+排序，做成候選結合熱圖來排濕實驗優先序。原始篩選是 **7,182 對**（114 RBP × 63 受體），跑在 Laguna 的
+**L40S / CUDA 12.4** GPU 上。這一步本身合理——AlphaFold-Multimer 做蛋白交互作用篩選就是這樣用的。
+
+# Timeline of attempts / 嘗試時間線
+
+| Date | Tool / step | What happened | Verdict | Source |
+|---|---|---|---|---|
+| 2026-06-16 | ColabFold gen-1 | first RBP × receptor screen built | superseded | `data/processed_genome/binding_screen/` |
+| 2026-07-03/04 | **The "odyssey":** ColabFold → Boltz-2 → ESMFold | 6 CUDA/MSA pitfalls; settled on ESMFold as the only tool that ran | tool works; *signal* still unproven | `documents/2026-07-04_folding_tool_odyssey.md`, `..._recommendation.md` |
+| 2026-07-05/06 | **ESMFold** full run (7,182) **+ controls** | matrix built, but positives (0.137) ≈ scrambled (0.136) | **non-informative** (size artifact) | `documents/2026-07-05_esmfold_matrix_note_for_PI_EN.md` |
+| 2026-07-12/13 | **ColabFold AF2 + REAL MSA + controls** | positives ≤0.31, a mismatch hit 0.50 | **non-informative** (OVERLAP) | `code/0712_phage_rbp_detect/fold_binding/` |
+| 2026-07-13 | **Structure prediction** of the RBPs | tail spikes = β-helix depolymerases → sugar receptor | protein–protein docking was **moot** | `code/0712_phage_rbp_detect/fold_structure/CONCLUSIONS.md` |
+
+**EN.** Note the shape of the story: months of effort were spent on *infrastructure* (getting a folder to
+run at all), and only the **controls** — added late — revealed that the output never carried signal.
+
+**中文.** 注意這個故事的形狀：大量時間花在**基礎設施**（讓折疊工具「能跑」），而真正揭穿「輸出從頭到尾沒有訊號」的，
+是後來才加上的**對照組**。
+
+# Two layers of "why it fails" / 兩層失敗原因
+
+## Layer 1 — practical / infrastructure (surmountable) / 表層：基礎設施（可繞過）
+
+**EN.** These are real but **not** the reason it fails — we worked around all of them (`odyssey.md`):
+
+- **ColabFold:** the remote MSA server is rate-limited (a few thousand/day, GPU idles on `Sleeping…
+  RUNNING`); switching to `--msa-mode single_sequence` went offline but **collapsed accuracy to pLDDT≈28
+  (garbage)** and recompiled per length (~3.5 min/fold).
+- **Boltz-2:** its optimized kernels need **cuBLAS 12.5+**, but Laguna's driver is **CUDA 12.4** → missing
+  symbol; the pure-PyTorch fallback (`--no_kernels`) ran but at **403 s/fold (~13× too slow)**.
+- **ESMFold:** finally ran (pure PyTorch, no MSA, no CUDA kernels) — which is why it was adopted.
+
+The lesson of Layer 1: **"the tool runs" is not "the answer is real."**
+
+**中文.** 這些是真的坑，但**不是**失敗的原因——我們全都繞過了（`odyssey.md`）：
+
+- **ColabFold：** 遠端 MSA server 限流（一天幾千個、GPU 卡在 `Sleeping… RUNNING`）；改
+  `--msa-mode single_sequence` 雖離線，但**精度崩到 pLDDT≈28（垃圾）**、每個長度重編譯（~3.5 分鐘/折）。
+- **Boltz-2：** 加速 kernel 需要 **cuBLAS 12.5+**，但 Laguna 是 **CUDA 12.4** → 缺符號；純 PyTorch 後備
+  （`--no_kernels`）能跑但 **403 秒/折（慢 ~13×）**。
+- **ESMFold：** 最後跑起來了（純 PyTorch、無 MSA、無 CUDA kernel），所以被採用。
+
+Layer 1 的教訓：**「工具能跑」不等於「答案是真的」。**
+
+## Layer 2 — fundamental / scientific (not surmountable) / 根本：科學（繞不過）
+
+**EN.** AlphaFold-type models place an **interface** mainly from a **paired MSA** — homologs of the *two*
+chains taken **from the same organism**, so the model can see which residues on chain A co-evolve with
+residues on chain B. A phage RBP's homologs are other phage proteins; a bacterial receptor's homologs are
+other bacterial proteins; **they never co-occur in one genome**, so the paired MSA is essentially empty.
+Real MSA still improves each chain's *own* fold (monomers get better), but the **interface has no
+evolutionary evidence to reconstruct** → ipTM ranks ~randomly. This is a property of **phage × host
+pairs in general**, not a bug we can tune away.
+
+**中文.** AlphaFold 這類模型擺放「**界面**」主要靠 **paired MSA**——把**兩條鏈**的同源序列在**同一個生物體**裡配對，
+模型才看得到「A 鏈的哪個殘基跟 B 鏈的哪個殘基一起突變」。但噬菌體 RBP 的同源是其他噬菌體蛋白、細菌受體的同源是其他
+細菌蛋白，**兩者不會出現在同一個基因組裡**，所以 paired MSA 幾乎是空的。真 MSA 仍能讓**各自單體**折得更好，但
+**界面沒有演化證據可重建** → ipTM 排序接近隨機。這是**噬菌體×宿主配對的通性**，不是能調參救回來的 bug。
+
+# The proof: controls, run twice, two tools / 證據：對照組跑了兩次、兩種工具
+
+**EN.** Both runs used the same **positive controls** — three characterised phage-RBP × receptor
+complexes: **T5 pb5 × FhuA** (cryo-EM PDB **8A8C**), **λ gpJ × LamB** (PDB **8XCJ**), and the in-organism
+Pseudomonas pair **DEV gp54 × LptD** — plus **scrambled** (same receptor, shuffled sequence) and
+**mismatch** (wrong receptor) negatives. If a method can rank binding, positives must beat negatives.
+Neither did.
+
+**中文.** 兩次都用同一組**正對照**——三個已知的噬菌體 RBP×受體複合物：**T5 pb5 × FhuA**（cryo-EM PDB **8A8C**）、
+**λ gpJ × LamB**（PDB **8XCJ**）、以及 Pseudomonas 體內配對 **DEV gp54 × LptD**——加上**打亂**（同受體、序列洗牌）
+與**錯配**（配錯受體）負對照。若方法能排結合，正對照就該贏過負對照。結果兩次都沒有。
+
+| metric | ESMFold (MSA-free, 07-05) | ColabFold AF2 (real MSA, 07-12/13) |
+|---|---|---|
+| positive ipTM | 0.112–0.159 (mean **0.136**) | 0.130–0.310 (mean **0.243**) |
+| scrambled ipTM | 0.102–0.136 (mean 0.122) | 0.150–0.210 (mean 0.173) |
+| mismatch ipTM | 0.112–0.129 (mean 0.123) | 0.210–**0.500** (mean 0.320) |
+| positive − negative gap | **+0.014** (< noise sd 0.026) | **−0.37** (a mismatch beat every positive) |
+| failure signature | size artifact (score–length r **+0.58**; 63% of variance is per-protein) | no paired-MSA interface signal |
+| verdict | **non-informative** | **non-informative (OVERLAP)** |
+
+**EN.** The single most damning number: the gold-standard **pb5 × FhuA** (a real, co-crystallised
+complex) scored **0.137**, while **the very same receptor with its sequence scrambled** scored **0.136** —
+a **0.001** difference. The whole-complex pTM *does* collapse on scrambling (e.g. 0.55 → 0.17), i.e. the
+model knows the scramble is unphysical — but the **interface ipTM barely moves**, i.e. it was never
+reading a real interface. In the later real-MSA run a **mismatched** pair even scored **0.50**, above every
+true binder. Because both control sets failed, **the 120-pair real screen was never run** — there was no
+trustworthy ranking to compute.
+
+**中文.** 最致命的一個數字：黃金標準 **pb5 × FhuA**（真實共結晶複合物）得 **0.137**，而**同一個受體、序列打亂後**
+得 **0.136**——差 **0.001**。整體複合物 pTM 在打亂後確實崩掉（如 0.55 → 0.17），代表模型知道打亂是不合理的——但
+**界面 ipTM 幾乎不動**，代表它從來沒有在讀真正的界面。後來真 MSA 那輪，一個**錯配**對甚至得 **0.50**，高過每一個真
+結合對。因為兩組對照都失敗，**那 120 對的正式篩選從未執行**——沒有可信的排序可算。
+
+![Positive controls do not separate from negatives in either run. Left: ESMFold (MSA-free) — everything
+compressed near 0.13. Right: ColabFold AF2 (real MSA) — a mismatch (0.50) beats every positive (≤0.31).
+Data: `control_scores.csv` (ESMFold) and `collect_binding.py` control output (ColabFold).](2026-07-13_binding_controls_comparison.png){#fig-controls width=95%}
+
+![The original ESMFold control diagnostic (2026-07-05): positive, scrambled and mismatch pseudo-ipTM are
+indistinguishable, and score tracks complex length. Source: `code/output/0703_phage_host_matrix/fold/control_validation.png`.](../code/output/0703_phage_host_matrix/fold/control_validation.png){#fig-esm width=85%}
+
+# Even if it worked, it is the wrong tool / 就算成功，也是錯的工具
+
+**EN.** On 2026-07-13 we folded the RBPs themselves (real MSA; single_sequence again gave pLDDT≈30
+garbage). The tail spikes are **right-handed β-helix depolymerases** — CDS_0016 (pLDDT **93**, H-bond
+period 16–18), CDS_0002 (pLDDT **82**, period 22–24; a depolymerase the annotation had missed). A
+depolymerase **degrades a polysaccharide**, so the phage's primary receptor is the **LPS O-antigen — a
+sugar**. Protein–protein docking has **no protein partner to model**; it was mismatched to the biology
+from the start. (`code/0712_phage_rbp_detect/fold_structure/CONCLUSIONS.md`)
+
+**中文.** 2026-07-13 我們改折 RBP 本身（真 MSA；single_sequence 又是 pLDDT≈30 垃圾）。tail spike 是**右手
+β-helix depolymerase**——CDS_0016（pLDDT **93**，氫鍵週期 16–18）、CDS_0002（pLDDT **82**，週期 22–24；
+一個註解漏掉的 depolymerase）。depolymerase **分解的是多醣**，所以噬菌體的主要受體是 **LPS O-antigen——是醣**。
+蛋白–蛋白 docking **根本沒有蛋白 partner 可模擬**；從一開始就跟生物學錯配。
+（`code/0712_phage_rbp_detect/fold_structure/CONCLUSIONS.md`）
+
+# What we learned / 學到什麼
+
+**EN.**
+
+1. **Gate every in-silico screen on positive/negative controls _before_ trusting it.** ~10 control folds
+   decided the fate of 7,182 — the cheapest, highest-value step, and the one added last.
+2. **No co-evolution → don't use interface docking.** For cross-kingdom / host–pathogen pairs, ipTM is
+   not a binding signal. Use **structure / fold-recognition** of the RBP instead.
+3. **The receptor identity came from the RBP's _fold_, not from docking** — a β-helix depolymerase names
+   its receptor class (a sugar) directly.
+4. **Right next steps (sugar path):** foldseek family-ID of the tail spike → predict the host O-antigen
+   locus → a wet-lab **O-antigen / rhamnose knockout adsorption assay** (the real proof).
+
+**中文.**
+
+1. **任何電腦模擬篩選，先用正/負對照把關再相信。** ~10 個對照折疊決定了 7,182 對的命運——最便宜、最高價值，卻最晚才加。
+2. **沒有共演化 → 別用界面 docking。** 跨界 / 宿主–病原配對的 ipTM 不是結合訊號，改用 RBP 的**結構 / fold 辨識**。
+3. **受體身分來自 RBP 的「摺疊」，不是來自 docking**——β-helix depolymerase 直接指名受體類別（是醣）。
+4. **正確的下一步（醣路線）：** 對 tail spike 做 foldseek 命名 → 預測宿主 O-antigen locus → 濕實驗
+   **O-antigen / rhamnose knockout 吸附實驗**（真正的證明）。
+
+# Glossary / 術語表
+
+- **pLDDT** — AlphaFold's per-residue confidence (0–100). >90 very high, 70–90 confident, <50 unreliable.
+  單一位置的預測自信分數；<50 基本不可信。
+- **pTM / ipTM** — TM-score-type confidence (0–1). **pTM** = overall fold; **ipTM** = the *interface* (chain
+  placement) — the number a binding screen reads. pTM=整體 fold 自信；ipTM=界面自信。
+- **MSA / paired MSA** — a stack of evolutionary homologs. A **paired** MSA aligns the two chains within one
+  organism to expose interface co-evolution — the thing cross-kingdom phage×host pairs lack.
+  同源序列堆疊；paired MSA 抓界面共演化，跨界配對缺這個。
+- **β-helix / β-solenoid** — a fold where the chain coils into a long prism; the hallmark of polysaccharide
+  **depolymerases**. 鏈盤成長柱狀的摺疊，是醣解酶的招牌。
+
+# Source map / 來源對照表
+
+| File / code | Date | What it shows |
+|---|---|---|
+| `documents/2026-07-04_folding_tool_odyssey.md` | 07-04 | ColabFold→Boltz-2→ESMFold, the 6 CUDA/MSA pitfalls |
+| `documents/2026-07-04_folding_tool_recommendation.md` | 07-04 | ranked tool comparison; controls made mandatory |
+| `documents/2026-07-05_esmfold_matrix_note_for_PI_EN.md` | 07-05 | ESMFold matrix is artifact-dominated; control analysis |
+| `code/output/0703_phage_host_matrix/fold/control_scores.csv` | 07-05 | exact ESMFold control ipTM/pTM values |
+| `code/output/0703_phage_host_matrix/fold/control_validation.png` | 07-05 | ESMFold control diagnostic figure |
+| `code/0712_phage_rbp_detect/fold_binding/` | 07-12/13 | real-MSA screen + control gate; `collect_binding.py` prints SEPARATE/OVERLAP |
+| `code/0712_phage_rbp_detect/fold_structure/CONCLUSIONS.md` | 07-13 | β-helix depolymerase → LPS O-antigen |
+| `code/0712_phage_rbp_detect/fold_structure/beta_helix_analysis.tsv` | 07-13 | H-bond-period fold classification |
+| `documents/2026-07-13_phage_rbp_depolymerase_findings.md` | 07-13 | full findings + plain-language glossary |
+
+---
+*Log — 2026-07-13：整合噬菌體 RBP×受體 binding 模擬的完整時間線與兩次對照組實驗。核心結論：跨界配對無 paired MSA →
+界面 ipTM 無訊號（兩種工具、兩次對照組證實）；且受體為 LPS O-antigen（醣），蛋白–蛋白 docking 本就錯配。
+Figure: `fig_binding_controls.py` → `2026-07-13_binding_controls_comparison.png`. Render: `quarto render` (HTML / --to pdf).*
