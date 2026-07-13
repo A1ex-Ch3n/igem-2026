@@ -1,0 +1,12 @@
+Version_1.trna1 (37543-37470)	Length: 74 bp
+Type: Asp	Anticodon: GTC at 35-37 (37509-37507)	Score: 78.9
+         *    |    *    |    *    |    *    |    *    |    *    |    *    |   
+Seq: GCTGCCGTAGCTCAGTCGGTtAGAGCGCTTGCCTGTCACGCAAGAGGcCACGGGTTCGAGTCCCGTCGGTGGCG
+Str: >>>>>>>..>>>>.........<<<<.>>>>>.......<<<<<.....>>>>>.......<<<<<<<<<<<<.
+
+Version_1.trna2 (37460-37388)	Length: 73 bp
+Type: Asn	Anticodon: GTT at 34-36 (37427-37425)	Score: 73.2
+         *    |    *    |    *    |    *    |    *    |    *    |    *    |  
+Seq: TGGCGTGTAGCTCAATTGGTAGAGCACCCGGCTGTTAACCGGGCGGtTGCAGGTTCGAGTCCTGCCTTGCCAG
+Str: >>>>>.>..>>>>........<<<<.>>>>>.......<<<<<.....>>>>>.......<<<<<<.<<<<<.
+

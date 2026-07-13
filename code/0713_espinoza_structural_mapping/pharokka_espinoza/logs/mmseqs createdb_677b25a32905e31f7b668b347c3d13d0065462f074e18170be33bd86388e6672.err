@@ -1,0 +1,1 @@
+Command line: mmseqs createdb pharokka_output/phanotate_aas_tmp.fasta pharokka_output/target_dir/target_seqs

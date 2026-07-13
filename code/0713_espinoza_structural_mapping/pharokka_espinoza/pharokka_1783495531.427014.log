@@ -1,0 +1,89 @@
+2026-07-08 00:25:31.430 | INFO     | pharokka.run:main:123 - Starting Pharokka v1.10.0
+2026-07-08 00:25:31.431 | INFO     | pharokka.run:main:124 - Command executed: Namespace(infile='Phage_Assembly.fa', outdir='pharokka_output', database='/project/jespinoza_1541/carowang/pharokka_db', threads=2, force=False, prefix='Default', locustag='Default', gene_predictor='default', meta=False, split=False, coding_table='11', evalue='1E-05', fast=False, mmseqs2_only=False, meta_hmm=False, dnaapler=False, custom_hmm='', genbank=False, terminase=False, terminase_strand='nothing', terminase_start='nothing', skip_extra_annotations=False, skip_mash=False, minced_args='', mash_distance=0.2, trna_scan_model='general', keep_raw_prodigal=False, reverse_mmseqs2=False, sensitivity=8.5, citation=False)
+2026-07-08 00:25:31.431 | INFO     | pharokka.run:main:125 - Repository homepage is https://github.com/gbouras13/pharokka
+2026-07-08 00:25:31.432 | INFO     | pharokka.run:main:126 - Written by George Bouras: george.bouras@adelaide.edu.au
+2026-07-08 00:25:31.432 | INFO     | pharokka.run:main:128 - Checking database installation in /project/jespinoza_1541/carowang/pharokka_db.
+2026-07-08 00:25:31.444 | INFO     | pharokka.run:main:131 - All databases have been successfully checked.
+2026-07-08 00:25:31.445 | INFO     | pharokka.run:main:147 - Checking dependencies.
+2026-07-08 00:25:31.602 | INFO     | pharokka.input_commands:check_dependencies:441 - Phanotate version found is v1.6.7
+2026-07-08 00:25:31.602 | INFO     | pharokka.input_commands:check_dependencies:450 - Phanotate version is ok.
+2026-07-08 00:25:31.616 | INFO     | pharokka.input_commands:check_dependencies:506 - MMseqs2 version found is v18.8cc5c
+2026-07-08 00:25:31.617 | INFO     | pharokka.input_commands:check_dependencies:509 - MMseqs2 version is ok.
+2026-07-08 00:25:31.721 | INFO     | pharokka.input_commands:check_dependencies:532 - tRNAscan-SE version found is v2.0.12
+2026-07-08 00:25:31.722 | INFO     | pharokka.input_commands:check_dependencies:543 - tRNAscan-SE version is ok.
+2026-07-08 00:25:31.830 | INFO     | pharokka.input_commands:check_dependencies:566 - MinCED version found is v0.4.2
+2026-07-08 00:25:31.830 | INFO     | pharokka.input_commands:check_dependencies:577 - MinCED version is ok.
+2026-07-08 00:25:31.833 | INFO     | pharokka.input_commands:check_dependencies:601 - ARAGORN version found is v1.2.41
+2026-07-08 00:25:31.833 | INFO     | pharokka.input_commands:check_dependencies:612 - ARAGORN version is ok.
+2026-07-08 00:25:31.852 | INFO     | pharokka.input_commands:check_dependencies:629 - mash version found is v2.3
+2026-07-08 00:25:31.852 | INFO     | pharokka.input_commands:check_dependencies:636 - mash version is ok.
+2026-07-08 00:25:32.843 | INFO     | pharokka.input_commands:check_dependencies:654 - Dnaapler version found is v1.4.0
+2026-07-08 00:25:32.844 | INFO     | pharokka.input_commands:check_dependencies:663 - Dnaapler version is ok.
+2026-07-08 00:25:32.844 | INFO     | pharokka.input_commands:check_dependencies:674 - Pyrodigal version is v3.7.1
+2026-07-08 00:25:32.844 | INFO     | pharokka.input_commands:check_dependencies:675 - Pyrodigal version is ok.
+2026-07-08 00:25:32.844 | INFO     | pharokka.input_commands:check_dependencies:686 - Pyrodigal_gv version is v0.3.2
+2026-07-08 00:25:32.845 | INFO     | pharokka.input_commands:check_dependencies:687 - Pyrodigal_gv version is ok.
+2026-07-08 00:25:32.845 | INFO     | pharokka.input_commands:check_dependencies:698 - Pyrodigal_rv version is v0.1.0
+2026-07-08 00:25:32.845 | INFO     | pharokka.input_commands:check_dependencies:699 - Pyrodigal_rv version is ok.
+2026-07-08 00:25:32.845 | INFO     | pharokka.input_commands:validate_fasta:266 - Checking input Phage_Assembly.fa.
+2026-07-08 00:25:32.846 | INFO     | pharokka.input_commands:validate_fasta:292 - Input Phage_Assembly.fa is in FASTA format.
+2026-07-08 00:25:32.846 | INFO     | pharokka.input_commands:validate_fasta:293 - All headers in Phage_Assembly.fa are unique.
+2026-07-08 00:25:32.847 | INFO     | pharokka.input_commands:validate_gene_predictor:319 - Phanotate will be used for gene prediction.
+2026-07-08 00:25:32.847 | INFO     | pharokka.run:main:309 - Running Phanotate.
+2026-07-08 00:25:32.850 | INFO     | pharokka.external_tools:run:47 - Started running phanotate.py -f fasta -o pharokka_output/phanotate_out_tmp.fasta Phage_Assembly.fa ...
+2026-07-08 00:25:45.904 | INFO     | pharokka.external_tools:run:49 - Done running phanotate.py -f fasta -o pharokka_output/phanotate_out_tmp.fasta Phage_Assembly.fa
+2026-07-08 00:25:45.906 | INFO     | pharokka.external_tools:run:47 - Started running phanotate.py -f tabular -o pharokka_output/phanotate_out.txt Phage_Assembly.fa ...
+2026-07-08 00:25:58.468 | INFO     | pharokka.external_tools:run:49 - Done running phanotate.py -f tabular -o pharokka_output/phanotate_out.txt Phage_Assembly.fa
+2026-07-08 00:25:58.519 | INFO     | pharokka.run:main:344 - Starting tRNA-scanSE.
+2026-07-08 00:25:58.521 | INFO     | pharokka.external_tools:run:47 - Started running tRNAscan-SE --thread 2 -G -f pharokka_output/trnascan_out.sec -Q -j pharokka_output/trnascan_out.gff Phage_Assembly.fa ...
+2026-07-08 00:25:58.850 | INFO     | pharokka.external_tools:run:49 - Done running tRNAscan-SE --thread 2 -G -f pharokka_output/trnascan_out.sec -Q -j pharokka_output/trnascan_out.gff Phage_Assembly.fa
+2026-07-08 00:25:58.851 | INFO     | pharokka.processes:run_minced:832 - Running MinCED.
+2026-07-08 00:25:58.853 | INFO     | pharokka.external_tools:run:47 - Started running minced Phage_Assembly.fa pharokka_output/pharokka_minced_spacers.txt pharokka_output/pharokka_minced.gff ...
+2026-07-08 00:25:58.979 | INFO     | pharokka.external_tools:run:49 - Done running minced Phage_Assembly.fa pharokka_output/pharokka_minced_spacers.txt pharokka_output/pharokka_minced.gff
+2026-07-08 00:25:58.980 | INFO     | pharokka.processes:run_aragorn:864 - Running Aragorn.
+2026-07-08 00:25:58.982 | INFO     | pharokka.external_tools:run:47 - Started running aragorn -l -gcbact -w -m -o pharokka_output/pharokka_aragorn.txt Phage_Assembly.fa ...
+2026-07-08 00:25:59.007 | INFO     | pharokka.external_tools:run:49 - Done running aragorn -l -gcbact -w -m -o pharokka_output/pharokka_aragorn.txt Phage_Assembly.fa
+2026-07-08 00:25:59.008 | INFO     | pharokka.run:main:354 - Starting MMseqs2.
+2026-07-08 00:25:59.008 | INFO     | pharokka.processes:run_mmseqs:652 - Running MMseqs2 on PHROG Database.
+2026-07-08 00:25:59.010 | INFO     | pharokka.external_tools:run:47 - Started running mmseqs createdb pharokka_output/phanotate_aas_tmp.fasta pharokka_output/target_dir/target_seqs ...
+2026-07-08 00:25:59.210 | INFO     | pharokka.external_tools:run:49 - Done running mmseqs createdb pharokka_output/phanotate_aas_tmp.fasta pharokka_output/target_dir/target_seqs
+2026-07-08 00:25:59.212 | INFO     | pharokka.external_tools:run:47 - Started running mmseqs search -e 1E-05 /project/jespinoza_1541/carowang/pharokka_db/phrogs_profile_db pharokka_output/target_dir/target_seqs pharokka_output/mmseqs/results_mmseqs pharokka_output/tmp_dir/ -s 8.5 --threads 2 ...
+2026-07-08 00:30:05.187 | INFO     | pharokka.external_tools:run:49 - Done running mmseqs search -e 1E-05 /project/jespinoza_1541/carowang/pharokka_db/phrogs_profile_db pharokka_output/target_dir/target_seqs pharokka_output/mmseqs/results_mmseqs pharokka_output/tmp_dir/ -s 8.5 --threads 2
+2026-07-08 00:30:05.190 | INFO     | pharokka.external_tools:run:47 - Started running mmseqs createtsv /project/jespinoza_1541/carowang/pharokka_db/phrogs_profile_db pharokka_output/target_dir/target_seqs pharokka_output/mmseqs/results_mmseqs pharokka_output/mmseqs_results.tsv --full-header --threads 2 ...
+2026-07-08 00:30:05.246 | INFO     | pharokka.external_tools:run:49 - Done running mmseqs createtsv /project/jespinoza_1541/carowang/pharokka_db/phrogs_profile_db pharokka_output/target_dir/target_seqs pharokka_output/mmseqs/results_mmseqs pharokka_output/mmseqs_results.tsv --full-header --threads 2
+2026-07-08 00:30:05.250 | INFO     | pharokka.processes:run_mmseqs:652 - Running MMseqs2 on CARD Database.
+2026-07-08 00:30:05.254 | INFO     | pharokka.external_tools:run:47 - Started running mmseqs createdb pharokka_output/phanotate_aas_tmp.fasta pharokka_output/CARD_target_dir/target_seqs ...
+2026-07-08 00:30:05.434 | INFO     | pharokka.external_tools:run:49 - Done running mmseqs createdb pharokka_output/phanotate_aas_tmp.fasta pharokka_output/CARD_target_dir/target_seqs
+2026-07-08 00:30:05.436 | INFO     | pharokka.external_tools:run:47 - Started running mmseqs search --min-seq-id 0.8 -c 0.4 /project/jespinoza_1541/carowang/pharokka_db/CARD pharokka_output/CARD_target_dir/target_seqs pharokka_output/CARD/results_mmseqs pharokka_output/CARD_dir/ -s 8.5 --threads 2 ...
+2026-07-08 00:31:10.629 | INFO     | pharokka.external_tools:run:49 - Done running mmseqs search --min-seq-id 0.8 -c 0.4 /project/jespinoza_1541/carowang/pharokka_db/CARD pharokka_output/CARD_target_dir/target_seqs pharokka_output/CARD/results_mmseqs pharokka_output/CARD_dir/ -s 8.5 --threads 2
+2026-07-08 00:31:10.631 | INFO     | pharokka.external_tools:run:47 - Started running mmseqs createtsv /project/jespinoza_1541/carowang/pharokka_db/CARD pharokka_output/CARD_target_dir/target_seqs pharokka_output/CARD/results_mmseqs pharokka_output/CARD_results.tsv --full-header --threads 2 ...
+2026-07-08 00:31:10.667 | INFO     | pharokka.external_tools:run:49 - Done running mmseqs createtsv /project/jespinoza_1541/carowang/pharokka_db/CARD pharokka_output/CARD_target_dir/target_seqs pharokka_output/CARD/results_mmseqs pharokka_output/CARD_results.tsv --full-header --threads 2
+2026-07-08 00:31:10.671 | INFO     | pharokka.processes:run_mmseqs:652 - Running MMseqs2 on VFDB Database.
+2026-07-08 00:31:10.672 | INFO     | pharokka.external_tools:run:47 - Started running mmseqs createdb pharokka_output/phanotate_aas_tmp.fasta pharokka_output/VFDB_target_dir/target_seqs ...
+2026-07-08 00:31:10.849 | INFO     | pharokka.external_tools:run:49 - Done running mmseqs createdb pharokka_output/phanotate_aas_tmp.fasta pharokka_output/VFDB_target_dir/target_seqs
+2026-07-08 00:31:10.851 | INFO     | pharokka.external_tools:run:47 - Started running mmseqs search --min-seq-id 0.8 -c 0.4 /project/jespinoza_1541/carowang/pharokka_db/vfdb pharokka_output/VFDB_target_dir/target_seqs pharokka_output/VFDB/results_mmseqs pharokka_output/VFDB_dir/ -s 8.5 --threads 2 ...
+2026-07-08 00:32:58.182 | INFO     | pharokka.external_tools:run:49 - Done running mmseqs search --min-seq-id 0.8 -c 0.4 /project/jespinoza_1541/carowang/pharokka_db/vfdb pharokka_output/VFDB_target_dir/target_seqs pharokka_output/VFDB/results_mmseqs pharokka_output/VFDB_dir/ -s 8.5 --threads 2
+2026-07-08 00:32:58.184 | INFO     | pharokka.external_tools:run:47 - Started running mmseqs createtsv /project/jespinoza_1541/carowang/pharokka_db/vfdb pharokka_output/VFDB_target_dir/target_seqs pharokka_output/VFDB/results_mmseqs pharokka_output/vfdb_results.tsv --full-header --threads 2 ...
+2026-07-08 00:32:58.228 | INFO     | pharokka.external_tools:run:49 - Done running mmseqs createtsv /project/jespinoza_1541/carowang/pharokka_db/vfdb pharokka_output/VFDB_target_dir/target_seqs pharokka_output/VFDB/results_mmseqs pharokka_output/vfdb_results.tsv --full-header --threads 2
+2026-07-08 00:32:58.232 | INFO     | pharokka.run:main:391 - Running PyHMMER on PHROGs.
+2026-07-08 00:33:15.102 | INFO     | pharokka.run:main:407 - Post Processing Output.
+2026-07-08 00:33:15.111 | INFO     | pharokka.post_processing:create_mmseqs_tophits:2307 - Processing MMseqs2 outputs.
+2026-07-08 00:33:15.112 | INFO     | pharokka.post_processing:create_mmseqs_tophits:2308 - Processing PHROGs output.
+2026-07-08 00:33:15.164 | INFO     | pharokka.post_processing:process_vfdb_results:2589 - Processing VFDB output.
+2026-07-08 00:33:15.167 | INFO     | pharokka.post_processing:process_vfdb_results:2786 - 0 VFDB virulence factors identified.
+2026-07-08 00:33:15.167 | INFO     | pharokka.post_processing:process_card_results:2809 - Processing CARD output.
+2026-07-08 00:33:15.169 | INFO     | pharokka.post_processing:process_card_results:2997 - 0 CARD AMR genes identified.
+2026-07-08 00:33:15.208 | INFO     | pharokka.run:main:480 - Converting gff to genbank.
+2026-07-08 00:33:15.233 | INFO     | pharokka.run:main:498 - Finding the closest match for each contig in INPHARED using mash.
+2026-07-08 00:33:15.234 | INFO     | pharokka.external_tools:run:47 - Started running mash sketch Phage_Assembly.fa -o pharokka_output/input_mash_sketch.msh -i ...
+2026-07-08 00:33:15.259 | INFO     | pharokka.external_tools:run:49 - Done running mash sketch Phage_Assembly.fa -o pharokka_output/input_mash_sketch.msh -i
+2026-07-08 00:33:15.260 | INFO     | pharokka.external_tools:run_to_stdout:54 - Started running mash dist pharokka_output/input_mash_sketch.msh /project/jespinoza_1541/carowang/pharokka_db/9Aug2025_genomes.fa.msh -d 0.2 -i ...
+2026-07-08 00:33:16.481 | INFO     | pharokka.external_tools:run_to_stdout:56 - Done running mash dist pharokka_output/input_mash_sketch.msh /project/jespinoza_1541/carowang/pharokka_db/9Aug2025_genomes.fa.msh -d 0.2 -i
+2026-07-08 00:33:16.545 | INFO     | pharokka.run:main:520 - Pharokka has finished.
+2026-07-08 00:33:16.545 | INFO     | pharokka.run:main:521 - Elapsed time: 465.12 seconds
+2026-07-08 00:33:16.545 | INFO     | pharokka.run:main:523 - If you use Pharokka in your research, please cite:
+2026-07-08 00:33:16.545 | INFO     | pharokka.run:main:524 - George Bouras, Roshan Nepal, Ghais Houtak, Alkis James Psaltis, Peter-John Wormald, Sarah Vreugde.
+2026-07-08 00:33:16.546 | INFO     | pharokka.run:main:527 - Pharokka: a fast scalable bacteriophage annotation tool.
+2026-07-08 00:33:16.546 | INFO     | pharokka.run:main:528 - Bioinformatics, Volume 39, Issue 1, January 2023, btac776.
+2026-07-08 00:33:16.546 | INFO     | pharokka.run:main:529 - https://doi.org/10.1093/bioinformatics/btac776.
+2026-07-08 00:33:16.546 | INFO     | pharokka.run:main:530 - You should also cite the full list of tools Pharokka uses, which can be found at https://github.com/gbouras13/pharokka#citation.

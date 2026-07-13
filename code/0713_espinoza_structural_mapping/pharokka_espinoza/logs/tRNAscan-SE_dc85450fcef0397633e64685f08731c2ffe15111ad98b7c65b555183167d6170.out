@@ -1,0 +1,6 @@
+Status: Running Infernal analysis
+Sequence  		tRNA 	Bounds	tRNA	Anti	Intron Bounds	Inf	      
+Name      	tRNA #	Begin	End  	Type	Codon	Begin	End	Score	Note
+--------  	------	-----	------	----	-----	-----	----	------	------
+Version_1 	1	37543	37470	Asp	GTC	0	0	78.9	
+Version_1 	2	37460	37388	Asn	GTT	0	0	73.2	

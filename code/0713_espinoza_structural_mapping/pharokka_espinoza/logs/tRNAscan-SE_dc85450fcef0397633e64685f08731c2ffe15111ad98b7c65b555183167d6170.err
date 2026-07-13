@@ -1,0 +1,22 @@
+
+tRNAscan-SE v.2.0.12 (Nov 2022) - scan sequences for transfer RNAs
+Copyright (C) 2022 Patricia Chan and Todd Lowe
+                   University of California Santa Cruz
+Freely distributed under the GNU General Public License (GPLv3)
+
+------------------------------------------------------------
+Sequence file(s) to search:        Phage_Assembly.fa
+Search Mode:                       General
+Results written to:                Standard output
+Output format:                     Tabular
+Searching with:                    Infernal single-pass scan
+                                   Fast mode
+Covariance model:                  /project/jespinoza_1541/carowang/envs/phagework/lib/tRNAscan-SE/models/TRNAinf.cm
+
+Temporary directory:               /tmp/SLURM_73049
+tRNA secondary structure
+    predictions saved to:          pharokka_output/trnascan_out.sec
+tRNA predictions saved to:         pharokka_output/trnascan_out.gff
+------------------------------------------------------------
+
+Command line: tRNAscan-SE --thread 2 -G -f pharokka_output/trnascan_out.sec -Q -j pharokka_output/trnascan_out.gff Phage_Assembly.fa

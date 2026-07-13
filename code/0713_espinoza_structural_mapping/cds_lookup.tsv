@@ -1,0 +1,81 @@
+prof_CDS	our_CDS	match	prof_annot	aa
+CDS_0001	(genome-origin split)	split/origin	DarB-like antirestriction	2520
+CDS_0002	CDS_0025	identical	hypothetical protein	37
+CDS_0003	CDS_0024	identical	virion structural protein	425
+CDS_0004	CDS_0023	identical	hypothetical protein	121
+CDS_0005	CDS_0022	identical	virion structural protein	379
+CDS_0006	CDS_0021	identical	acyl-CoA N-acyltransferase	144
+CDS_0007	CDS_0020	identical	virion structural protein	212
+CDS_0008	CDS_0019	identical	internal virion protein	577
+CDS_0009	CDS_0018	identical	tail fiber protein	118
+CDS_0010	CDS_0017	identical	tail protein	917
+CDS_0011	CDS_0016	merged	tail spike protein	941
+CDS_0012	CDS_0014	identical	hypothetical protein	477
+CDS_0013	CDS_0013	identical	virion structural protein	201
+CDS_0014	CDS_0012	identical	structural protein	232
+CDS_0015	CDS_0011	identical	hypothetical protein	178
+CDS_0016	CDS_0010	identical	virion structural protein	158
+CDS_0017	CDS_0009	identical	major head protein	368
+CDS_0018	CDS_0008	identical	CsrA-like regulator	40
+CDS_0019	CDS_0007	identical	hypothetical protein	333
+CDS_0020	CDS_0006	identical	portal protein	742
+CDS_0021	CDS_0005	identical	DNA methyltransferase	154
+CDS_0022	CDS_0004	identical	hypothetical protein	105
+CDS_0023	CDS_0003	identical	hypothetical protein	120
+CDS_0024	CDS_0002	identical	hypothetical protein	650
+CDS_0025	CDS_0001	identical	hypothetical protein	528
+CDS_0026	CDS_0080	identical	hypothetical protein	128
+CDS_0027	CDS_0079	identical	terminase small subunit	245
+CDS_0028	CDS_0078	identical	hypothetical protein	77
+CDS_0029	CDS_0077	identical	hypothetical protein	44
+CDS_0030	CDS_0076	identical	hypothetical protein	43
+CDS_0031	CDS_0075	identical	hypothetical protein	118
+CDS_0032	CDS_0074	identical	hypothetical protein	109
+CDS_0033	CDS_0073	identical	hypothetical protein	187
+CDS_0034	CDS_0072	identical	hypothetical protein	89
+CDS_0035	CDS_0071	identical	hypothetical protein	210
+CDS_0036	CDS_0070	identical	hypothetical protein	48
+CDS_0037	CDS_0069	identical	hypothetical protein	65
+CDS_0038	CDS_0068	identical	hypothetical protein	45
+CDS_0039	CDS_0067	identical	hypothetical protein	161
+CDS_0040	CDS_0066	identical	hypothetical protein	52
+CDS_0041	CDS_0065	identical	hypothetical protein	165
+CDS_0042	CDS_0064	identical	hypothetical protein	293
+CDS_0043	CDS_0063	identical	DNA binding protein	112
+CDS_0044	CDS_0062	identical	hypothetical protein	68
+CDS_0045	CDS_0061	identical	hypothetical protein	60
+CDS_0046	CDS_0060	identical	hypothetical protein	154
+CDS_0047	CDS_0059	identical	DnaC-like helicase loader	334
+CDS_0048	CDS_0058	identical	replication initiation protein	232
+CDS_0049	CDS_0057	identical	hypothetical protein	78
+CDS_0050	CDS_0056	identical	hypothetical protein	82
+CDS_0051	CDS_0055	identical	2OG-Fe(II) oxygenase	248
+CDS_0052	CDS_0054	identical	hypothetical protein	153
+CDS_0053	CDS_0053	identical	Ref-like RecA filament endonuclease	119
+CDS_0054	CDS_0052	identical	NinB/ Orf homologous recombination mediator	109
+CDS_0055	CDS_0051	identical	hypothetical protein	33
+CDS_0056	CDS_0050	identical	exonuclease recombination-associated	377
+CDS_0057	CDS_0049	identical	hypothetical protein	145
+CDS_0058	CDS_0048	identical	transcriptional regulator	115
+CDS_0059	CDS_0047	identical	transcriptional regulator	225
+CDS_0060	CDS_0046	identical	Erf-like ssDNA annealing protein	236
+CDS_0061	CDS_0045	identical	RecE-like recombination exonuclease	566
+CDS_0062	CDS_0044	identical	excisionase and transcriptional regulator	71
+CDS_0063	CDS_0043	identical	RusA-like Holliday junction resolvase	233
+CDS_0064	CDS_0042	identical	hypothetical protein	33
+CDS_0065	CDS_0041	identical	hypothetical protein	152
+CDS_0066	CDS_0040	identical	hypothetical protein	79
+CDS_0067	CDS_0039	identical	hypothetical protein	147
+CDS_0068	CDS_0038	identical	hypothetical protein	57
+CDS_0069	CDS_0037	identical	hypothetical protein	100
+CDS_0070	CDS_0036	identical	excisionase	86
+CDS_0071	CDS_0035	identical	hypothetical protein	42
+CDS_0072	CDS_0034	identical	hypothetical protein	32
+CDS_0073	CDS_0033	identical	hypothetical protein	396
+CDS_0074	CDS_0032	identical	hypothetical protein	54
+CDS_0075	CDS_0031	identical	Rz-like spanin	123
+CDS_0076	CDS_0030	identical	hypothetical protein	106
+CDS_0077	CDS_0029	identical	hol-like chemotaxis	120
+CDS_0078	CDS_0028	identical	endolysin	197
+CDS_0079	CDS_0027	identical	hypothetical protein	48
+CDS_0080	(genome-origin split)	split/origin	DarB-like antirestriction	1698

@@ -1,0 +1,1 @@
+Command line: phanotate.py -f fasta -o pharokka_output/phanotate_out_tmp.fasta Phage_Assembly.fa

@@ -1,0 +1,1 @@
+Command line: mmseqs createtsv /project/jespinoza_1541/carowang/pharokka_db/phrogs_profile_db pharokka_output/target_dir/target_seqs pharokka_output/mmseqs/results_mmseqs pharokka_output/mmseqs_results.tsv --full-header --threads 2
