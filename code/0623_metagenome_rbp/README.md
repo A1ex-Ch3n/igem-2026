@@ -5,8 +5,8 @@ No known phage infects them, so we work protein-wise: extract receptor proteins,
 find named bacteria that share them and *do* have phages (surrogate hosts), then
 (next) mine those phages' RBPs in environmental metagenomes.
 
-Decision flow: `../../documents/phage_decision_tree.html`
-Running conclusions: `../../documents/strain_phage_conclusions.md`
+Decision flow: `../../documents/2026-06-24_phage_decision_tree.html`
+Running conclusions: `../../documents/2026-06-24_strain_phage_conclusions.md`
 
 ## Inputs
 - 3 ONT bacterial genomes (Bakta), `data/bacteria_genome/` — all *Pseudomonas* sp. (P. putida group, ≈ sp. CM27).

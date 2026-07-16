@@ -100,7 +100,7 @@
 
 > ⚠️ **Everything on this form — text *and* uploads — becomes public and indexable** (the form states this explicitly). Attach only what you are comfortable publishing.
 >
-> **Do NOT upload `documents/MRA_Pseudomonas.docx`.** It is an unpublished genome-announcement manuscript with named co-authors and pending GenBank/SRA accessions; posting it to a public form would disclose co-authors' unpublished work and create a prior-public-disclosure footprint before the paper is submitted. The committee needs the *species-ID evidence*, not the manuscript.
+> **Do NOT upload `documents/2026-06-27_MRA_Pseudomonas.docx`.** It is an unpublished genome-announcement manuscript with named co-authors and pending GenBank/SRA accessions; posting it to a public form would disclose co-authors' unpublished work and create a prior-public-disclosure footprint before the paper is submitted. The committee needs the *species-ID evidence*, not the manuscript.
 
 Attach only what supports the safety case:
 - **Species / ANI evidence (recommended):** a single species-ID figure, or the ANI matrix showing ~80% ANI to *P. aeruginosa* PAO1 and the sp013179515 / CM27 assignment — **or** simply cite those numbers in the Organism description above and attach nothing.
@@ -111,11 +111,11 @@ Attach only what supports the safety case:
 
 ## Evidence appendix (repo sources)
 
-- Species truth: `data/bacteria_genome/*/…_sourmash-genome-species.csv`; ANI matrix `code/0623_metagenome_rbp/out_finding_rbps/ani/ani_matrix.csv`; `documents/strain_phage_conclusions.md`; genome-announcement drafts `documents/MRA_Pseudomonas*.docx`.
+- Species truth: `data/bacteria_genome/*/…_sourmash-genome-species.csv`; ANI matrix `code/0623_metagenome_rbp/out_finding_rbps/ani/ani_matrix.csv`; `documents/2026-06-24_strain_phage_conclusions.md`; genome-announcement drafts `documents/2026-06-26_MRA_Pseudomonas_Annotation.docx`, `documents/2026-06-27_MRA_Pseudomonas.docx`.
 - Organism / material inventory incl. the "likely aeruginosa" flags: `data/dna_extraction_inventory.md`, `data/week_3_bacteria_list.md`.
 - Wet-lab record: `scheme/20260604_confirmed_scheme_CLAUDE.md`; `lab_notebook/digitalized/2026-*.md`.
 - Disposal / PPE: `protocol/md/workflows/media_disposal.md`.
-- Project framing: `documents/village_and_description.md`; `README.md`.
+- Project framing: `documents/2026-06-22_village_and_description.md`; `README.md`.
 
 ---
 

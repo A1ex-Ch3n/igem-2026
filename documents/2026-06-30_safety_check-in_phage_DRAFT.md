@@ -101,7 +101,7 @@
 - Phage isolation + plaque record: `scheme/20260604_confirmed_scheme_CLAUDE.md` (Plaque Assay section); `lab_notebook/digitalized/2026-06-01…`, `…-06-02…`, `…-06-03…`, `…-06-04…`, `…-06-05…`, `…-06-10…`.
 - Phage inventory (ϕ8 picks on 9-6-2 / 9-2-1, 4 °C): `data/dna_extraction_inventory.md`.
 - Lysis-challenge assays: `data/assays/0624_*`, `0625_*`, `0629_*`.
-- Host identity (P. putida group; *P. aeruginosa* excluded): companion bacteria form; `documents/strain_phage_conclusions.md`; ANI matrix `code/0623_metagenome_rbp/out_finding_rbps/ani/ani_matrix.csv`.
+- Host identity (P. putida group; *P. aeruginosa* excluded): companion bacteria form; `documents/2026-06-24_strain_phage_conclusions.md`; ANI matrix `code/0623_metagenome_rbp/out_finding_rbps/ani/ani_matrix.csv`.
 
 ---
 

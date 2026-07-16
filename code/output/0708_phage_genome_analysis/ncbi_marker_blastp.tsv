@@ -1,0 +1,21 @@
+marker	title	accession	pct_identity	evalue
+major_capsid	ref|WP_370144466.1| N4-gp56 family major capsid protein [Bradyrhizobium elkanii]	WP_370144466	68.9	0.0
+major_capsid	ref|YP_010671610.1| hypothetical protein PQC19_gp21 [Pseudomonas phage Itty13] >	YP_010671610	67.4	0.0
+major_capsid	ref|WP_288075946.1| N4-gp56 family major capsid protein [Pseudomonas sp.]	WP_288075946	66.3	0.0
+major_capsid	ref|WP_174076623.1| N4-gp56 family major capsid protein [Agrobacterium tumefacie	WP_174076623	66.3	8.06699e-180
+major_capsid	ref|WP_154384652.1| N4-gp56 family major capsid protein [Aminobacter sp. MDW-2] 	WP_154384652	65.5	2.19797e-179
+major_capsid	ref|WP_185705370.1| N4-gp56 family major capsid protein [Sphingobium yanoikuyae]	WP_185705370	65.4	2.76595e-179
+major_capsid	gb|MBB76623.1| N4-gp56 family major capsid protein [Planctomycetaceae bacterium]	MBB76623	64.1	5.74067e-179
+major_capsid	ref|WP_037510399.1| MULTISPECIES: N4-gp56 family major capsid protein [Sphingobi	WP_037510399	65.4	6.01638e-179
+major_capsid	ref|WP_234151464.1| N4-gp56 family major capsid protein [Sphingobium sufflavum] 	WP_234151464	63.1	6.93631e-179
+major_capsid	gb|UZV40820.1| putative major capsid protein [Erwinia phage Stean]	UZV40820	65.3	7.97196e-179
+terminase	ref|YP_010671619.1| terminase small subunit [Pseudomonas phage Itty13] >gb|QRE00	YP_010671619	65.5	4.53578e-113
+terminase	ref|WP_174076631.1| terminase small subunit [Agrobacterium tumefaciens] >gb|NTE9	WP_174076631	63.4	1.73824e-109
+terminase	ref|WP_288075961.1| terminase small subunit, partial [Pseudomonas sp.]	WP_288075961	73.2	1.00632e-102
+terminase	ref|WP_341959205.1| terminase small subunit [Pseudomonas bambusae] >gb|WZO60313.	WP_341959205	64.1	3.60952e-99
+terminase	ref|YP_010655373.1| small terminase subunit [Pseudomonas phage Skulduggery] >gb|	YP_010655373	57.7	6.91523e-95
+terminase	ref|WP_315961421.1| terminase small subunit [Pseudomonas sp. DTU_2021_1001937_2_	WP_315961421	60.7	2.49094e-94
+terminase	ref|WP_449296662.1| terminase small subunit [Pseudomonas caspiana] >gb|MGV639452	WP_449296662	66.5	5.9453e-94
+terminase	ref|WP_053137479.1| terminase small subunit [Pseudomonas sp. CMR5c] >gb|AZC19554	WP_053137479	64.0	7.35509e-94
+terminase	ref|WP_191998442.1| terminase small subunit [Pseudomonas syringae] >gb|MBD849384	WP_191998442	64.9	3.02263e-93
+terminase	ref|WP_220222991.1| terminase small subunit [Pseudomonas protegens] >gb|QYM99519	WP_220222991	63.1	1.69008e-91

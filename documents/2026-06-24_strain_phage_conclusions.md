@@ -13,3 +13,4 @@
 *Log: 2026-06-23 — created. Based on ANI results in `code/0623_metagenome_rbp/out_finding_rbps/ani/`.*
 *Log: 2026-06-24 — added receptor-mining conclusion (264 receptors via `code/0623_metagenome_rbp/receptor_fasta.py`).*
 *Log: 2026-06-24 — added surrogate-host search (P. putida standout; `receptor_ncbi_search.py`).*
+*Log: 2026-07-03 — renamed `strain_phage_conclusions.md` → `2026-06-24_strain_phage_conclusions.md` (date prefix, matching the last substantive edit above); updated referencing paths in `code/0623_metagenome_rbp/README.md` and the safety-form drafts.*
