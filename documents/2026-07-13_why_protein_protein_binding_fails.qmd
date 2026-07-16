@@ -231,4 +231,4 @@ from the start. (`code/0712_phage_rbp_detect/fold_structure/CONCLUSIONS.md`)
 ---
 *Log — 2026-07-13：整合噬菌體 RBP×受體 binding 模擬的完整時間線與兩次對照組實驗。核心結論：跨界配對無 paired MSA →
 界面 ipTM 無訊號（兩種工具、兩次對照組證實）；且受體為 LPS O-antigen（醣），蛋白–蛋白 docking 本就錯配。
-Figure: `fig_binding_controls.py` → `2026-07-13_binding_controls_comparison.png`. Render: `quarto render` (HTML / --to pdf).*
+Figure: `2026-07-13_fig_binding_controls.py` → `2026-07-13_binding_controls_comparison.png`. Render: `quarto render` (HTML / --to pdf).*

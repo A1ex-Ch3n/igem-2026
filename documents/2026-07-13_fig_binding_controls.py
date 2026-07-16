@@ -6,7 +6,7 @@ neither separates real binders from scrambled/mismatched negatives.
 Data (exact, from the source files):
   ESMFold (2026-07-05, MSA-free): code/output/0703_phage_host_matrix/fold/control_scores.csv
   ColabFold (2026-07-12/13, real MSA): per-class min/mean/max from collect_binding.py (control mode)
-Run: python3 documents/fig_binding_controls.py  ->  2026-07-13_binding_controls_comparison.png
+Run: python3 documents/2026-07-13_fig_binding_controls.py  ->  2026-07-13_binding_controls_comparison.png
 """
 import os
 import numpy as np
