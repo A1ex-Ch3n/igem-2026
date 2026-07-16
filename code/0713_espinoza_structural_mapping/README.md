@@ -51,15 +51,27 @@ Full 80-row map: `cds_lookup.tsv`.
 Also note: our **CDS_0002** (a 3rd β-helix depolymerase, RBP-Detect-only) = **his CDS_0024** — a
 separate depolymerase **outside** his tail cluster.
 
-## The one thing to reconcile now
-Numbering is solved — the remaining question is **biological**: his **CDS10/12 = our CDS_0017/CDS_0014**,
-which he calls **glycosidases** but our simple H-bond-period test flagged as **α-rich (not β-helix)**.
-That is not a contradiction (many glycoside hydrolases are α/β or TIM-barrel, not β-helix), but it needs
-his evidence. **What to ask him for:** his **foldseek hit tables** (which PDB / glycoside-hydrolase family
-each CDS matched) — that settles whether CDS_0017/0014 are truly sugar-active enzymes.
+## ✅ The glycosidase question — RESOLVED on 0716 (no foldseek tables needed)
+The AF3 templates in his 0714/15 folds answered it — see **`../0716_espinoza_fiber_construct/`**:
+
+- **CDS_0012 = glycosidase: confirmed.** All four templates are **GH5 endoglucanases** (1ECE
+  *Acidothermus* endocellulase E1 with cellotetraose bound, 1VRX, 4TUF, 2ZUM) over res 118–475.
+  Our "α-rich" call was **never a contradiction** — a **TIM barrel is α/β**, and correctly is not a
+  β-helix. Both methods agree.
+- **CDS_0010 = glycosidase: not supported.** Its only body template is a weak IspD hit (4MYB,
+  res 361–456); the other ~460 aa have none. **This is the one to press him on**, not CDS_0012.
+
+## ⚠️ Numbering: his index is now canonical
+As of **2026-07-16** the repo uses **his `UUAIURNK_` numbering only**; our `FHABPWTM_` numbers are
+deprecated — convert on sight via `cds_lookup.tsv`. Note his **CDS_0011 single ORF is also the
+biologically correct one**: our `CDS_0015`'s last 17 aa (`RTPRSGPMPCLAPLQPA`) are a frame-error
+artifact, and our `CDS_0016` = his res 540–941 exactly. **Clone/fold from his 941 aa ORF**
+(`pharokka_espinoza/phanotate.{faa,ffn}`), never from ours.
 
 ---
 *Log — 2026-07-13: filed Prof. Espinoza's GP4 structural-mapping notebook + his Pharokka run. Numbering
 reconciled by sequence (genome reversed; 77/80 identical; tail spike = his 1 ORF vs our 2). His RBP
 CDS_0011 = our CDS_0015+0016 (β-helix depolymerase — we agree). His glycosidase calls (CDS10/12 = our
 CDS_0017/0014) vs our α-rich reading: pending his foldseek output. UNDONE: get his foldseek tables.*
+*Log — 2026-07-16: glycosidase question RESOLVED from his AF3 templates (0716) — CDS_0012 confirmed
+GH5, CDS_0010 unsupported; the foldseek tables are no longer needed. His numbering adopted repo-wide.*

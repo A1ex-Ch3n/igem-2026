@@ -1,0 +1,4 @@
+name	aa_start	aa_end	n_aa	n_bp_incl_stop	peptide_starts	rationale
+CDS_0011_111-941	111	941	831	2496	VIPKGEKGERGY	prof's words: remove the first ~300 bases = the Calx-beta anchor (res 1-110)
+CDS_0011_301-941	301	941	641	1926	VGVGDRFTELAS	clean cut: start of the rigid, self-trimerizing beta-helix body
+CDS_0011_391-941	391	941	551	1656	FNGQWLMGGTTY	his 0713 claim: the RBD is 'the C-terminal ~550 aa'

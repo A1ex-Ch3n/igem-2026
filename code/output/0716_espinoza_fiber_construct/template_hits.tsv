@@ -1,0 +1,13 @@
+cds	pdb	q_start	q_end	n_aligned	keywords	title
+CDS_0010	3US9	4	104	101	METAL BINDING PROTEIN	Crystal Structure of the NCX1 Intracellular Tandem Calcium Binding Domains(CBD12)
+CDS_0010	3RB5	5	103	99	METAL BINDING PROTEIN	Crystal structure of calcium binding domain CBD12 of CALX1.1
+CDS_0010	2KLT	4	103	99	METAL BINDING PROTEIN	Second Ca2+ binding domain of NCX1.3
+CDS_0010	4MYB	361	456	93	TRANSFERASE	Crystal Structure of Francisella tularensis 2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase (IspD)
+CDS_0011	3US9	12	110	99	METAL BINDING PROTEIN	Crystal Structure of the NCX1 Intracellular Tandem Calcium Binding Domains(CBD12)
+CDS_0011	3EAD	9	103	95	MEMBRANE PROTEIN	Crystal structure of CALX-CBD1
+CDS_0011	2FWU	11	110	100	METAL TRANSPORT REGULATOR	Second Ca2+ binding domain of the Na,Ca-exchanger (NCX1)
+CDS_0011	2KLT	11	109	98	METAL BINDING PROTEIN	Second Ca2+ binding domain of NCX1.3
+CDS_0012	1ECE	118	475	333	GLYCOSYL HYDROLASE	ACIDOTHERMUS CELLULOLYTICUS ENDOCELLULASE E1 CATALYTIC DOMAIN IN COMPLEX WITH A CELLOTETRAOSE
+CDS_0012	1VRX	118	475	333	HYDROLASE	Endocellulase e1 from acidothermus cellulolyticus mutant y245g
+CDS_0012	4TUF	124	476	326	HYDROLASE	Catalytic domain of the major endoglucanase from Xanthomonas campestris pv. campestris
+CDS_0012	2ZUM	130	475	323	HYDROLASE	Functional Analysis of Hyperthermophilic Endocellulase from the Archaeon Pyrococcus horikoshii
