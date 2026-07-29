@@ -53,7 +53,8 @@ def fig2() -> None:
     ax.axvline(n_core - 0.5, color="#c0392b", lw=2.5)
     # axes-relative so the label cannot fall outside the drawn area
     ax.text(n_core / len(pres) + 0.012, 1.06,
-            f"← 只有 {n_core} 個 cluster 是三株共有的（全部是通用糖化學，沒有組裝機械）",
+            f"left of the red line: the only {n_core} clusters shared by all "
+            "three (all generic sugar chemistry, none of the assembly machinery)",
             transform=ax.transAxes, fontsize=10.5, color="#c0392b",
             ha="left", va="bottom")
     for spine in ax.spines.values():
@@ -62,7 +63,8 @@ def fig2() -> None:
                        Patch(fc="#ecf0f1", ec="grey", label="absent")],
               loc="upper right", bbox_to_anchor=(1.0, 1.42), ncols=2,
               frameon=False, fontsize=9)
-    ax.set_title("每一格 = 一個 ortholog cluster；三株之間幾乎不重疊",
+    ax.set_title("Each column is one ortholog cluster — "
+                 "the three strains barely overlap",
                  fontsize=13, pad=46)
     fig.savefig(OUT / "fig2_cluster_presence.png", dpi=300, bbox_inches="tight")
     print("wrote fig2_cluster_presence.png")
@@ -72,7 +74,9 @@ def fig3() -> None:
     labels = ["Strain 2\n9-2-1 / 9-6-2", "Strain 1\n8-5-2 / 10-10-2", "Strain 3\n8-10-2"]
     # 0 = tested & infects, 1 = untested (predicted negative)
     state = np.array([[0, 1, 1]])
-    cell_text = ["已測試\n會裂解", "未測試\n預測不裂解", "未測試\n預測不裂解"]
+    cell_text = ["TESTED\nlyses this strain",
+                 "NOT TESTED\npredicted: no lysis",
+                 "NOT TESTED\npredicted: no lysis"]
 
     fig, ax = plt.subplots(figsize=(9, 2.9))
     ax.imshow(state, aspect="auto", interpolation="nearest",
@@ -84,20 +88,22 @@ def fig3() -> None:
     ax.set_xticks(range(3))
     ax.set_xticklabels(labels, fontsize=10)
     ax.set_yticks([0])
-    ax.set_yticklabels(["噬菌體\n9-2-1 Φ8"], fontsize=10)
+    ax.set_yticklabels(["phage\n9-2-1 Φ8"], fontsize=10)
     ax.tick_params(length=0)
     for spine in ax.spines.values():
         spine.set_visible(False)
-    ax.set_title("宿主範圍：目前只測過一株\n"
-                 "灰色格子是「預測」，不是結果 — 一次 spot assay 就能驗",
+    ax.set_title("Host range: only one strain has actually been challenged\n"
+                 "grey cells are PREDICTIONS, not results — "
+                 "one spot assay settles it",
                  fontsize=12, pad=14)
     fig.savefig(OUT / "fig3_hostrange_prediction.png", dpi=300, bbox_inches="tight")
     print("wrote fig3_hostrange_prediction.png")
 
 
 if __name__ == "__main__":
-    plt.rcParams["font.sans-serif"] = [
-        "Heiti TC", "PingFang TC", "Arial Unicode MS", "DejaVu Sans"]
+    # figures are English-only so that they can go straight to the PI,
+    # the manuscripts and the iGEM wiki without relabelling
+    plt.rcParams["font.sans-serif"] = ["Helvetica Neue", "Arial", "DejaVu Sans"]
     plt.rcParams["axes.unicode_minus"] = False
     fig2()
     fig3()
