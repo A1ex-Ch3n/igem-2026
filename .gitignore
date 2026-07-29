@@ -56,6 +56,9 @@ code/0623_metagenome_rbp/out_finding_rbps/ani/refs.zip
 # mmseqs scratch dirs
 code/output/**/mmseqs_tmp/
 code/output/**/mmseqs_tmp_search/
+# 0729 figures: the per-panel PyMOL / pyCirclize renders are intermediates that the
+# assembled figures are tiled from — regenerate with the scripts, don't version them
+code/output/0729_prof_figures/panels/
 data/bacteria_genome/**/*.fasta
 # 0708 phage assembly: Laguna-side data / envs / DBs / intermediates (git tracks scripts only —
 # the workspace doubles as the clone dir on Laguna, so ignore everything the run creates there)
