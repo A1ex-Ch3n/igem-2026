@@ -35,21 +35,38 @@
 | # | 事項 | 為什麼 |
 |:--|:-------------------------------|:--------------------------|
 | C1 | **把 CDS_0010 改成 "unknown protein"** ——全 repo 與兩份 synthesis 文件 | 教授已明確放棄 glycosidase 說法（見下） |
-| C2 | **做 synteny + similarity 的證據**來支撐 group D 歸類 | 教授指定，且是 cartoon 的前提 |
-| C3 | 確認 CDS_20/08/09/13/14 的結構模組指認 | 教授說這幾條「沒有 TEM 也能說是 podo/T7-like」 |
-| C4 | 待 host range 表到手後，更新 E4 / E5 / §4.5 | 我們現在寫的「從未測試」其實是「我們手上沒有」 |
+| C2 | **改三個構築的檔名／記錄**，並在下游實驗設計中排除 C 端標籤偵測 | 教授確認全部走 N 端、不要 C 端；檔名與內容相反 |
+| C3 | **做 synteny + similarity 的證據**來支撐 group D 歸類 | 教授指定，且是 cartoon 的前提 |
+| C4 | 確認 CDS_20/08/09/13/14 的結構模組指認 | 教授說這幾條「沒有 TEM 也能說是 podo/T7-like」 |
+| C5 | 查 **CDS_0010 有沒有 T4gp10-like 片段** | group D 定義的直接檢驗點（見下） |
+| C6 | 待 host range 表到手後，更新 E4 / E5 / §4.5 | 我們現在寫的「從未測試」其實是「我們手上沒有」 |
 
 ---
 
 # 教授回答了什麼
 
-## 1. 構築 —— 已經下單，但標籤問題沒有正面回覆 ⚠️
+## 1. 構築 —— 標籤是刻意的，檔名才是錯的 ✅
 
 > **Cesar:** I have placed the order for the first 3 constructs
+> **Cesar:** Yeah I don't want a c terminal tag on any of them
+> **Cesar:** All of them have an n terminal tag
+> **Cesar:** Cleaved by two different enzymes
 
-**他沒有回應「檔名與序列不符」那一段。** 對話裡有兩則被截斷的訊息（`g on any of them`、`er group soon`），其中第一則看起來可能是在講構築，但**內容無法確認**。
+**結案：設計是刻意的。** 他明確表示三個都不要 C 端標籤、全部走 N 端。
 
-→ 目前狀態：**N 端雙 His6、無 C 端標籤**這件事仍未經他確認是否為刻意設計。序列本身是對的（res 305–941 是乾淨的 β-helix body，N 端標籤也是我們建議的），所以影響有限，但**檔名要不要改、他知不知道，仍是開放的**。
+「cleaved by two different enzymes」與序列對得上：
+
+| 構築 | N 端組成 | 可切位點 |
+|:-----------|:-----------------------------------------|:-----------------------------|
+| CDS_0011 | pET-28a leader + 設計的 `GGSGGGGS`-His6-`ENLYFQ` | **thrombin**（載體 LVPR↓GS）+ **TEV**（ENLYFQ↓） |
+| CDS_0010 | pET-28a leader 單獨 | thrombin |
+| CDS_0012 | pET-28a leader 單獨 | thrombin |
+
+→ 兩種酵素指的是 **CDS_0011 身上那兩個**（載體自帶的 thrombin 位點，加上他設計的 TEV 位點），讓標籤可以分兩段移除。
+
+**所以唯一的問題是檔名。** `CDS11_WT_CTERM_HIS6TAG` 這個名字與內容相反，兩個 `NOTAG` 也其實有 N 端標籤。這與我們 0716 分析的建議一致（res 921–941 是 trimerization foldon，N 端標籤較安全）。
+
+→ **行動：改我們這邊的檔名／記錄，不要改構築。** 並且在下游實驗設計時記得**不要**用 C 端標籤做偵測。
 
 ## 2. CDS_0010 —— 確定是未知蛋白 ✅
 
@@ -163,11 +180,18 @@ cartoon 的出處是 **Latka, Leiman, Drulis-Kawa & Briers (2019), *Front. Micro
 
 | 問題 | 狀態 |
 |:----------------------------------|:--------------------------------|
-| 「our three isolates」指哪三株？ | **完全沒回答**（訊息似乎被截斷） |
-| 構築檔名 vs 序列的標籤不符，是刻意的嗎？ | **沒有正面回覆** |
-| 變異區要 (a) 保守度 還是 (b) 有標籤的 SDP？ | 他同意 metagenome 沒宿主就沒用，但沒選 |
+| 「our three isolates」指哪三株？ | **他沒回答。** Alex 判斷應該是他先前提供給教授的「最具代表性的三株」——但**沒有明說是哪一組**，見下方警告 |
+| 變異區要 (a) 保守度 還是 (b) 有標籤的 SDP？ | 他同意 metagenome 沒宿主就沒用，但**沒有選** |
 | MGnify 那批序列裡有沒有值得注意的東西？ | 他說還沒消化 |
-| 我們找到的**第二個 depolymerase CDS_0024** 在他的模型裡是什麼？ | **沒提過** —— 它不在 10/11/12 那個 cluster 裡 |
+| 我們找到的**第二個 depolymerase CDS_0024** 在他的模型裡是什麼？ | **完全沒提過** —— 它不在 10/11/12 那個 cluster 裡 |
+
+> **⚠️ 三株的歧義還沒真正消失。**
+> 「最具代表性的三株」有兩種可能的解讀，而且它們**不是同一組**：
+>
+> - **三個菌株代表**（8-5-2 / 9-2-1 / 8-10-2）—— 每個 ANI 相異菌株各一，這是我們 O-antigen 分析採用的。
+> - **最早定序的三個 site isolate**（9-6-2 / 9-2-1 / 10-10-2）—— 但這組裡 **9-2-1 與 9-6-2 是 100% ANI 的同一株**，等於只有兩株。
+>
+> 我們的分析涵蓋全部五個 isolate，所以結論不受影響，**但圖說的標示會不一樣**。放進對外簡報前值得再問一句。
 
 ---
 
@@ -175,7 +199,7 @@ cartoon 的出處是 **Latka, Leiman, Drulis-Kawa & Briers (2019), *Front. Micro
 
 ![Latka et al. 2019 Front. Microbiol. 10:2649, Figure 2 — depolymerase 型 RBP 的域架構（A）與四種 virion 排列（B）。教授說我們的噬菌體像 **group D**。](images/frontiers_2019_rbp_architecture_groups.png)
 
-![教授貼的結構渲染圖。多條鏈（黑／藍／綠／黃／紅）疊在一個半透明表面上。**來源與內容尚未確認** —— 見文末待確認事項。](images/virion_structure_render.png)
+![結構渲染圖，**推測為教授自己做的**（Alex 記憶如此，未經他本人確認）。多條鏈（黑／藍／綠／黃／紅）疊在一個半透明表面上，看起來像 virion 的組裝模型。要引用前請跟他確認來源與內容。](images/virion_structure_render.png)
 
 第一張出自 Latka *et al.* 2019（Frontiers，開放取用），僅供內部參考；若要用於對外簡報或 wiki，需依 CC-BY 標註原作者與出處。
 

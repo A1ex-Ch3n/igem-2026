@@ -3,6 +3,7 @@
 原始對話，未編輯。摘要與判讀見 [`README.md`](README.md)。
 
 ⚠️ 標記 `[截斷]` 的幾則在貼上時就是不完整的，內容未知。
+10:52 那三則原本也被截斷，2026-07-29 由 Alex 補上完整內容。
 
 ---
 
@@ -16,7 +17,11 @@ I think the sequences are what we want: res 305–941 is the clean self-containe
 
 **10:51:30 Alex** — I've saw the email, thank you so much for reaching Twist out!
 
-**10:52:03 Cesar** — `[截斷]` g on any of them
+**10:52:03 Cesar** — Yeah I don't want a c terminal tag on any of them
+
+**10:52:17 Cesar** — All of them have an n terminal tag
+
+**10:52:38 Cesar** — Cleaved by two different enzymes
 
 **10:52:51 Alex** — `[截斷]` illustration in few minutes.
 
