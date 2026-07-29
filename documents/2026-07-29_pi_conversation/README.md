@@ -41,7 +41,7 @@
 | C2 | **Rename our copies of the three constructs**, and keep C-terminal-tag detection out of downstream design | tags are N-terminal by design; the filenames say otherwise |
 | C3 | Build the **synteny + similarity evidence** for the group D assignment | required before the cartoon |
 | C4 | Confirm the structural-module assignment of CDS_20/08/09/13/14 | these are what make the podovirus call without TEM |
-| C5 | Check whether **CDS_0010 carries a T4gp10-like fragment** | the direct test of the group D reading (below) |
+| C5 | ~~Check whether CDS_0010 carries a T4gp10-like fragment~~ → **done: it does not** | `code/0729_t4gp10_check/`; group D now rests on architecture + synteny |
 | C6 | Update the host-range statements once the table arrives | we currently record "never tested", which is really "we do not have it" |
 
 ---
@@ -93,10 +93,10 @@ Agreed, and this is the same conclusion our 07-12 methodology review reached.
 > **Cesar:** and I did MGnify … to search for more sequences
 > **Cesar:** a lot of sequences! have not been able to digest
 
-⚠️ One thing to flag: **a larger search does not by itself fix the host-label
-problem.** MGnify sequences are unlabelled too, so more of them make the
-alignment deeper but still do not say which positions decide what the fibre
-binds. See the open question below.
+For our own planning we are treating the MGnify set as a way to deepen the
+alignment rather than as a route to host assignment, since those sequences are
+unlabelled too — but you may well have other uses for it in mind, so we have not
+assumed either way. Which analysis to run is still open (below).
 
 ---
 
@@ -175,11 +175,25 @@ Mapped onto our genes:
 enzymatic domain** — which is where our template analysis and your own reading
 independently arrived.
 
-Two caveats. The paper describes *Klebsiella* KP32 podoviruses and ours is a
-*Pseudomonas* phage, so this is applied by analogy — which is exactly why the
-synteny and similarity evidence is needed. And **we have not yet checked whether
-CDS_0010 actually carries the T4gp10-like fragment**, which is the most direct
-test of the reading.
+**We have now tested the T4gp10 part of that definition, and it does not hold**
+([`code/0729_t4gp10_check/`](../../code/0729_t4gp10_check/)). Neither `phmmer`
+against T4 gp10 and gp9 (nothing at E ≤ 10 across all 80 proteins) nor
+structural superposition against gp10 D2/D3 (5iv5, fully modelled) finds
+anything: every gp10 comparison lands at 5.6–8.7 Å RMSD, inside the band set by
+deliberate negative controls (6.7–7.6 Å), while a true positive control against
+a real Calx-β structure gives 1.54 Å over 88 residues.
+
+So our anchors are **Calx-β, not the T4gp10-bearing anchor family** those
+*Klebsiella* phages use — two different domain families doing the same job,
+which is unsurprising across that phylogenetic distance.
+
+This does not refute group D. Group D is defined by an *architecture* —
+truncated first RBP, full-featured second — and that still holds. It does mean
+**the assignment has to be argued from architecture and synteny rather than
+from the T4gp10 marker**, which is what you asked for anyway. One caveat before
+this goes in print: Latka used HHpred, a profile method, and we could only run
+sequence search and rigid-body structural alignment, so an HHpred or foldseek
+run would be worth doing to match their method exactly.
 
 ---
 
@@ -223,7 +237,7 @@ test of the reading.
 
 ![Latka et al. 2019, *Front. Microbiol.* 10:2649, Figure 2 — domain architecture of depolymerase-containing RBPs (A) and the four virion arrangements (B). Our phage was described as resembling **group D**. Reproduced for internal reference; CC-BY attribution required for any external use.](images/frontiers_2019_rbp_architecture_groups.png)
 
-![Structure render shared in the conversation, understood to be Prof. Espinoza's own — several chains (black / blue / green / yellow / red) over a translucent surface. **Source and content not yet confirmed.**](images/virion_structure_render.png)
+![Structure render shared in the conversation — several chains (black / blue / green / yellow / red) over a translucent surface. **Is this the assembled virion model, and how was it put together?** If so it would feed directly into the cartoon (A3) and the printable set (A4), so we would like to know how you built it.](images/virion_structure_render.png)
 
 ---
 

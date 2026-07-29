@@ -1,0 +1,17 @@
+  gp10_d2d3         196 residues
+  gp10_all          602 residues
+  calx              249 residues
+  cds0010           917 residues
+  cds0010_anchor    120 residues
+  cds0011_anchor    120 residues
+  cds0012           477 residues
+=== TEST — is there a T4gp10 D2/D3-like piece in our proteins? ===
+  gp10 D2/D3  vs  CDS_0010 (full, 917 aa)              RMSD  6.88 A over  96 res   [cds0010 176-326]
+  gp10 D2/D3  vs  CDS_0010 anchor (1-120)              RMSD  8.67 A over  56 res   [cds0010_anchor 6-74]
+  gp10 D2/D3  vs  CDS_0011 anchor (1-120)              RMSD  5.61 A over  64 res   [cds0011_anchor 43-113]
+  gp10 FULL   vs  CDS_0010 (full)                      RMSD  6.88 A over  96 res   [cds0010 176-326]
+=== CONTROLS ===
+  POSITIVE: Calx-beta 3US9  vs  CDS_0010 anchor        RMSD  1.54 A over  88 res   [cds0010_anchor 6-93]
+  POSITIVE: Calx-beta 3US9  vs  CDS_0011 anchor        RMSD  1.99 A over  96 res   [cds0011_anchor 6-101]
+  NEGATIVE: gp10 D2/D3  vs  CDS_0012 (GH5)             RMSD  6.72 A over  64 res   [cds0012 13-84]
+  NEGATIVE: Calx-beta 3US9  vs  CDS_0012 (GH5)         RMSD  7.58 A over 112 res   [cds0012 3-139]

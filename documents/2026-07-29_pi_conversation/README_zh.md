@@ -39,7 +39,7 @@
 | C2 | **改三個構築的檔名／記錄**，並在下游實驗設計中排除 C 端標籤偵測 | 教授確認全部走 N 端、不要 C 端；檔名與內容相反 |
 | C3 | **做 synteny + similarity 的證據**來支撐 group D 歸類 | 教授指定，且是 cartoon 的前提 |
 | C4 | 確認 CDS_20/08/09/13/14 的結構模組指認 | 教授說這幾條「沒有 TEM 也能說是 podo/T7-like」 |
-| C5 | 查 **CDS_0010 有沒有 T4gp10-like 片段** | group D 定義的直接檢驗點（見下） |
+| C5 | ~~查 CDS_0010 有沒有 T4gp10-like 片段~~ → **已查：沒有** | `code/0729_t4gp10_check/`；group D 改由架構 + synteny 支撐 |
 | C6 | 待 host range 表到手後，更新 E4 / E5 / §4.5 | 我們現在寫的「從未測試」其實是「我們手上沒有」 |
 
 ---
@@ -90,7 +90,8 @@
 > **Cesar:** and I did MGnify … to search for more sequences
 > **Cesar:** a lot of sequences! have not been able to digest
 
-⚠️ **注意：擴大搜尋並不解決宿主標註的問題。** MGnify 的序列同樣沒有宿主資訊，所以「更多序列」讓 MSA 更深，但仍然到不了「哪些位點決定結合」。他**沒有明確選擇**我們提的 (a) 保守度剖面 或 (b) 有標籤的 SDP 分析。這點需要再確認一次。
+我們自己這邊把 MGnify 那批當成「加深 MSA」的材料，而不是取得宿主歸屬的途徑——因為那些序列同樣沒有標註。
+但他可能有別的用途在想，所以**不預設立場，讓他去做**。他**沒有明確選擇**我們提的 (a) 保守度剖面 或 (b) 有標籤的 SDP 分析，這點仍待確認。
 
 ---
 
@@ -159,7 +160,18 @@ cartoon 的出處是 **Latka, Leiman, Drulis-Kawa & Briers (2019), *Front. Micro
 
 **如果成立，group D 的歸類本身就預測了 CDS_0010 沒有酵素域** —— 這與我們的模板分析（~460 aa 無模板）和教授自己的「I don't know what CDS 10 is」是三條獨立證據指向同一件事。
 
-⚠️ 但要注意兩點：(1) 該文研究的是 *Klebsiella* KP32 podovirus，我們是 *Pseudomonas*，所以是**類比套用**——這正是他要求「justify with synteny and similarity」的原因；(2) 我還**沒有檢查 CDS_0010 是否真的帶 T4gp10-like 片段**，那是這個假說最直接的檢驗點。
+## 已驗證：T4gp10 那一半不成立
+
+見 [`code/0729_t4gp10_check/`](../../code/0729_t4gp10_check/)。兩種方法都測不到：
+
+- **序列**：`phmmer` 用 T4 gp10 與 gp9 打我們全部 80 條蛋白，門檻放寬到 E ≤ 10，**零命中**。
+- **結構**：對 gp10 D2/D3（5iv5，完整建模 196/196）做 `cealign`，所有 gp10 比對落在 **5.6–8.7 Å**，而刻意設的**負對照是 6.7–7.6 Å**，**正對照（真的 Calx-β 結構）是 1.54 Å / 88 殘基**。訊號帶完全不重疊，gp10 那組就在雜訊裡。
+
+→ 我們的錨定是 **Calx-β，不是那些 Klebsiella 噬菌體用的 T4gp10 系錨定**。兩個不同的域家族做同一件事，跨這麼遠的親緣距離並不意外。
+
+**但這不推翻 group D。** group D 的定義是**架構**（第一條 RBP 被截短、第二條完整），那部分仍然成立。它的意思是**這個歸類必須用架構 + synteny 去論證，不能靠 T4gp10 標記** —— 而那正是教授本來就要求的。
+
+⚠️ 兩個限制：(1) 該文研究的是 *Klebsiella* KP32 podovirus，我們是 *Pseudomonas*，本來就是類比套用；(2) Latka 用的是 **HHpred**（profile 對 profile），我們只有序列搜尋和剛體結構疊合 —— 要正式寫進論文前，應該跑一次 HHpred 或 foldseek 來對齊他們的方法。
 
 ---
 
@@ -200,7 +212,8 @@ cartoon 的出處是 **Latka, Leiman, Drulis-Kawa & Briers (2019), *Front. Micro
 
 ![Latka et al. 2019 Front. Microbiol. 10:2649, Figure 2 — depolymerase 型 RBP 的域架構（A）與四種 virion 排列（B）。教授說我們的噬菌體像 **group D**。](images/frontiers_2019_rbp_architecture_groups.png)
 
-![結構渲染圖，**推測為教授自己做的**（Alex 記憶如此，未經他本人確認）。多條鏈（黑／藍／綠／黃／紅）疊在一個半透明表面上，看起來像 virion 的組裝模型。要引用前請跟他確認來源與內容。](images/virion_structure_render.png)
+![對話中貼出的結構渲染圖。多條鏈（黑／藍／綠／黃／紅）疊在一個半透明表面上。**要問他：這是組裝完的 virion 模型嗎？怎麼組起來的？**
+如果是，這對 A3（cartoon）和 A4（3D 列印）都直接有用。](images/virion_structure_render.png)
 
 第一張出自 Latka *et al.* 2019（Frontiers，開放取用），僅供內部參考；若要用於對外簡報或 wiki，需依 CC-BY 標註原作者與出處。
 
