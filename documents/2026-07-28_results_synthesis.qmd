@@ -13,6 +13,16 @@ format:
     tbl-cap-location: top
     fig-align: center
     theme: cosmo
+    include-in-header:
+      text: |
+        <style>
+        /* The results tables are wide. Column proportions come from the
+           pipe-table separator rows; table-layout:fixed makes the browser
+           honour them instead of letting a long cell push the table past the
+           body column and run underneath the right-hand table of contents. */
+        main table { table-layout: fixed; width: 100%; }
+        main table th, main table td { overflow-wrap: break-word; }
+        </style>
   pdf:
     toc: true
     number-sections: true
@@ -42,7 +52,7 @@ execute:
 ## 原文與拆解
 
 | # | 教授原文 | 他要的是什麼 | 我們實際在看什麼 | 現況 |
-|---|---|---|---|---|
+|:-|:--------------|:------------|:-------------|:-----|
 | **1** | *Let's start synthesizing our results so we can begin preparing figures for your presentation(s) and manuscript(s).* | 把散落的結果收攏成可用的圖表 | 兩個受眾：**論文**（MRA + 之後的噬菌體論文）與 **iGEM 簡報／wiki** | 🟢 **這份文件就是** |
 | **2** | *I suggest creating a graphical abstract that summarizes the overall project.* | 一張圖講完整個專案 | 需要第 1 題先收斂，而且核心主張還缺濕實驗 | 🔴 未開始（等 §3 定稿） |
 | **3** | *Prepare a diagram of the bacterial genomes we sequenced.* | 細菌基因體的視覺呈現 | 五個 isolate → 三個菌株，每株一張環狀圖 | 🟢 **已完成 → 附錄 A5** |
@@ -91,7 +101,7 @@ tail spike 是 β-helix depolymerase（會分解醣的酵素）
 `data/bacteria_genome/` 有**五個** isolate，依 `code/0627_unique_strain_table.ipynb` 收斂成**三個 ANI 相異的菌株**：
 
 | 菌株 | 包含的 isolates | 物種（GTDB） | 基因體 | 備註 |
-|---|---|---|---|---|
+|:-----|:------------|:-----------|:------|:-----------|
 | **Strain 1** | 8-5-2、10-10-2 | *Pseudomonas_E* sp013179515 | ~5.93 Mb | 兩者 ANI 99.997% |
 | **Strain 2** | 9-2-1、9-6-2 | *Pseudomonas_E* sp013179515 | ~6.18 Mb | 兩者 ANI **100.000%**；**噬菌體的宿主** |
 | **Strain 3** | 8-10-2 | ***P. capeferrum*** | ~5.70 Mb | 對前兩株僅 87.4–87.7% ANI，**不同種** |
@@ -121,7 +131,7 @@ Strain 1 與 Strain 2 之間 ANI 99.38–99.42%——同種、不同株，但基
 
 ::: {.callout-tip title="證據等級怎麼讀"}
 | 記號 | 意思 |
-|---|---|
+|:-----|:-------------------------------------------|
 | ✅ | **已確認** —— 有資料，且有對照組或多方法佐證 |
 | 🟡 | **暫定** —— 計算推論、單一方法，未經實驗驗證 |
 | 🔴 | **未完成／明確標為預測** —— 不可當結果引用 |
@@ -131,7 +141,7 @@ Strain 1 與 Strain 2 之間 ANI 99.38–99.42%——同種、不同株，但基
 ## A. 細菌宿主
 
 | # | 結果 | 證據 | 來源 | 用途 |
-|---|---|---|---|---|
+|:-|:-------------------------|:---|:-----------|:-----|
 | A1 | **五個 isolate 全部完成完整封閉基因體**：單 contig、環狀、ONT + Autocycler；CheckM 完整度 99.74–100.00% | ✅ | `data/bacteria_genome/` | 論文·簡報·wiki |
 | A2 | 基因體大小 5.70–6.18 Mb；GC 62.4–62.6%；定序深度 67–96× | ✅ | `code/output/0626_genome_comparison/table1_genome_summary.csv` | 論文 |
 | A3 | **五個 isolate 收斂成三個 ANI 相異菌株**（見 §2.1） | ✅ | `code/0627_unique_strain_table.ipynb` | 論文·簡報·wiki |
@@ -148,7 +158,7 @@ Strain 1 與 Strain 2 之間 ANI 99.38–99.42%——同種、不同株，但基
 ## B. 噬菌體基因體
 
 | # | 結果 | 證據 | 來源 | 用途 |
-|---|---|---|---|---|
+|:-|:-------------------------|:---|:-----------|:-----|
 | B1 | **9-2-1 Φ8 完整基因體**：單 contig **62,338 bp**（教授版 62,416 bp），GC 62%，覆蓋度 ~1014× | ✅ | `data/phage_genome/9-2-1/assembly/` | 論文·簡報·wiki |
 | B2 | **拓樸確定：線性 + 77 bp Direct Terminal Repeat**（非環狀） | ✅ | `.../assembly/NOTES.md` | 論文 |
 | B3 | Pharokka 註解 **80 個 CDS**，coding density 96.3%，2 tRNA，0 CRISPR | ✅ | `code/0713_espinoza_structural_mapping/pharokka_espinoza/` | 論文 |
@@ -164,7 +174,7 @@ Strain 1 與 Strain 2 之間 ANI 99.38–99.42%——同種、不同株，但基
 ## C. Tail spike 與酵素域
 
 | # | 結果 | 證據 | 來源 | 用途 |
-|---|---|---|---|---|
+|:-|:-------------------------|:---|:-----------|:-----|
 | C1 | **Tail spike CDS_0011（941 aa）是右手 β-helix depolymerase** —— 骨架氫鍵週期 15–18，pLDDT 88–94 | ✅ | `code/0712_phage_rbp_detect/`、`0716_espinoza_fiber_construct/` | **論文·簡報·wiki** |
 | C2 | **→ 主要受體是 LPS O-antigen（醣），不是蛋白質** —— 全專案的關鍵轉折 | ✅ | `documents/2026-07-13_phage_rbp_depolymerase_findings.md` | **論文·簡報·wiki** |
 | C3 | **CDS_0011 domain map**：Calx-β β-sandwich 1–110（接 capsid 底座）／shaft 111–300（AF3 擺不定，模型間 RMSD 41–52 Å）／**body 301–941 剛性三聚體**（RMSD 0.44–0.99 Å） | ✅ | `code/0716_espinoza_fiber_construct/domain_map.tsv` | 論文·簡報 |
@@ -179,7 +189,7 @@ Strain 1 與 Strain 2 之間 ANI 99.38–99.42%——同種、不同株，但基
 ## D. RBP 資料庫與 metagenome
 
 | # | 結果 | 證據 | 來源 | 用途 |
-|---|---|---|---|---|
+|:-|:-------------------------|:---|:-----------|:-----|
 | D1 | **文獻 RBP 資料庫：1,673 條 unique 序列**（3 篇論文、2,447 筆原始記錄），其中 **115 條 Pseudomonas** | ✅ | `code/0619_literature_rbp_database/` | 論文·wiki |
 | D2 | 依受體分類的 RBP 對照表 1,215 列；高信心（實驗／AF3 驗證）**173 條**；*E. coli* OMP 類 362 條 | ✅ | `rbp_by_receptor_class.tsv` | 論文 |
 | D3 | **metagenome 從頭 RBP 偵測**（PhageRBPdetect v4 / ESM-2）：MG08 **632 條**、MG09 **661 條** | ✅ | `code/0701_phagerbp_metagenome/` | 論文 |
@@ -190,7 +200,7 @@ Strain 1 與 Strain 2 之間 ANI 99.38–99.42%——同種、不同株，但基
 ## E. 濕實驗
 
 | # | 結果 | 證據 | 來源 | 用途 |
-|---|---|---|---|---|
+|:-|:-------------------------|:---|:-----------|:-----|
 | E1 | **DNA 定量標準曲線 × 5 個批次**（Portelite / Qubit BDR）：0605、0608、0622、0629、0710 | ✅ | `code/output/*_quantification/` | 論文（方法）·wiki |
 | E2 | **OD600 噬菌體挑戰時序（0624）**：9-9-2 宿主 × 兩個 plaque pick（#2/#4），OD 0.4 時投菌，逐時 24 h，以偏離對照的 ΔOD 判定感染 | ✅ | `code/0624_od600_phage.ipynb` | 論文·簡報·wiki |
 | E3 | **OD600 噬菌體挑戰時序（0625）**：9-6-2 與 9-2-1 各 × p8，改為固定時間投菌（20:08），含 3/4 稀釋校正 | ✅ | `code/0625_od600_phage.ipynb` | 論文·簡報·wiki |
@@ -200,7 +210,7 @@ Strain 1 與 Strain 2 之間 ANI 99.38–99.42%——同種、不同株，但基
 ## F. 負面結果（可以寫，而且值得寫）
 
 | # | 結果 | 證據 | 來源 | 用途 |
-|---|---|---|---|---|
+|:-|:-------------------------|:---|:-----------|:-----|
 | F1 | **RBP × OMP 蛋白–蛋白 docking 篩選失效**：9 組對照中正對照 ipTM ≤0.31，錯配卻到 0.50 → **完全無鑑別力**，120 對正式篩選未執行 | ⛔ | `documents/2026-07-13_why_protein_protein_binding_fails.qmd` | **論文·簡報** |
 | F2 | 原因已釐清：**跨界（噬菌體×細菌）沒有 paired MSA**，界面共演化訊號不存在 | ⛔ | 同上 | 論文（方法學貢獻） |
 | F3 | ESMFold 版 7,182 對篩選：分數其實在讀**蛋白大小**，不是結合（score–length r = +0.58） | ⛔ | `code/0703_phage_host_matrix/` | 論文 |
@@ -211,7 +221,7 @@ Strain 1 與 Strain 2 之間 ANI 99.38–99.42%——同種、不同株，但基
 ## G. 手稿與交付
 
 | # | 結果 | 證據 | 來源 | 用途 |
-|---|---|---|---|---|
+|:-|:-------------------------|:---|:-----------|:-----|
 | G1 | **MRA 草稿已成形**（Chen, Wang, Yan, Escobar, Ignacio-Espinoza）：四個 isolate、兩個菌株、完整方法段與 Table 1 | 🟡 | `documents/2026-06-27_MRA_Pseudomonas.docx` | 論文 |
 | G2 | ⚠️ **GenBank / SRA accession 全部為 `pending`**，data availability 仍是 `XXX` → **投稿卡在上傳，不是卡在分析** | 🔴 | 同上 | 阻擋 G1 |
 | G3 | MRA 範圍**排除 8-10-2**，故 MRA 說「兩株」、本文說「三株」——範圍不同，非矛盾 | ✅ | §2.1 | 內部一致性 |
@@ -231,7 +241,7 @@ Strain 1 與 Strain 2 之間 ANI 99.38–99.42%——同種、不同株，但基
 O-PS（O-polysaccharide，又叫 O-antigen）是革蘭氏陰性菌 LPS 最外層那段重複糖鏈，是菌株之間差異最大的表面結構之一。做 in-silico 血清型的工具都是**先有一個物種的參考血清型資料庫**再去比對——所以能不能用，完全取決於物種。
 
 | 工具 | 涵蓋範圍 | 為什麼不能用 |
-|---|---|---|
+|:---------|:-------------|:-------------------------|
 | **PAst / PAst2.0** | *P. aeruginosa* 的 OSA cluster O1–O20 | 我們的菌對 PAO1 只有 **~80% ANI**，是不同物種 |
 | **Kaptive**（含 v3） | *Klebsiella*、*A. baumannii*、第三方的 *V. parahaemolyticus* | **沒有任何 Pseudomonas 資料庫** |
 
@@ -264,7 +274,7 @@ Bakta 會把兩個**完全無關**的醣基轉移酶都叫做「Glycosyltransfer
 ## 結果：三株、三套卡匣、同一個插槽
 
 | 菌株 | locus tags | 基因數 | 長度 |
-|---|---|---|---|
+|:---------|:---------------------|:-------|:---------|
 | **Strain 2**（9-2-1, 9-6-2） | `OHPLIO_01276–01298` / `PICBEH_01275–01297` | 23 | 26.5 kb |
 | **Strain 1**（8-5-2, 10-10-2） | `PEMOGA_01378–01392` / `BPBBIK_01378–01392` | 15 | 17.0 kb |
 | **Strain 3**（8-10-2） | `NEEDOG_01333–01357` | 25 | 38.2 kb |
@@ -291,7 +301,7 @@ Bakta 會把兩個**完全無關**的醣基轉移酶都叫做「Glycosyltransfer
 **跨菌株幾乎對不上：**
 
 | 比較 | 有 best hit 的基因數 | 平均相似度 | 中位數 |
-|---|---|---|---|
+|:---------------|:-------------|:---------|:---------|
 | Strain 2 ↔ Strain 1 | 9 / 23 | 71.9% | 67.4% |
 | Strain 2 ↔ Strain 3 | 10 / 23 | 54.7% | 49.4% |
 | Strain 1 ↔ Strain 3 | 6 / 15 | 63.5% | 61.7% |
@@ -329,7 +339,7 @@ Bakta 會把兩個**完全無關**的醣基轉移酶都叫做「Glycosyltransfer
 # 下一步
 
 | 優先 | 事項 | 誰做 | 為什麼 |
-|---|---|---|---|
+|:----|:---------------------|:-------|:--------------|
 | 1 | 寄信問教授 **CDS11 標籤是否刻意**（C9） | Alex | Twist 尚未確認處理，這是窗口 |
 | 2 | **GenBank / SRA 上傳**（G2） | Alex | 擋住 MRA 投稿 |
 | 3 | **Spot assay**：Φ8 × 8-5-2 / 10-10-2 / 8-10-2（E5） | 濕實驗 | 全清單 CP 值最高，兩種結果都能寫 |
@@ -371,7 +381,7 @@ Bakta 會把兩個**完全無關**的醣基轉移酶都叫做「Glycosyltransfer
 
 ::: {.callout-note title="製圖工具與版本（給論文 Methods 用）"}
 | 用途 | 工具 | 版本 |
-|---|---|---|
+|:---------------------|:-----------------|:---------|
 | 環狀基因體圖 | pyCirclize | 1.10.1 |
 | 線性基因簇圖 | pyGenomeViz | 1.7.0 |
 | 蛋白結構渲染 | PyMOL（open-source，headless） | 3.1.0 |
@@ -507,7 +517,7 @@ Bakta 會把兩個**完全無關**的醣基轉移酶都叫做「Glycosyltransfer
 repo 內共 **51 張圖**（含 2026-07-29 新增的 4 張）。上面嵌入的是可直接用於論文／簡報的部分；其餘多為 QC 與中間產物。
 
 | 目錄 | 張數 | 內容 |
-|---|---|---|
+|:-----------------|:-----|:-------------------------|
 | `0605/0608/0622/0629/0710_quantification/` | 14 | DNA 定量標準曲線與樣品濃度 |
 | `0617_receptor_similarity/` | 5 | 受體相似度熱圖 ×3、Venn ×2 |
 | `0624/0625_od600_phage*/` | 11 | OD600 生長／裂解曲線 |
@@ -521,7 +531,7 @@ repo 內共 **51 張圖**（含 2026-07-29 新增的 4 張）。上面嵌入的�
 ## 來源對照表
 
 | 檔案 / 程式 | 日期 | 內容 |
-|---|---|---|
+|:-------------------|:-----|:-----------------------|
 | `code/0729_prof_figures/` | 07-29 | **第 3、4、6 題三張圖**（細菌環狀圖、噬菌體基因體圖、酵素域 3D） |
 | `code/0727_o_antigen_comparison/` | 07-27 | **§4 全部**：卡匣抽取、MMseqs 同源、三張圖 |
 | `code/0716_espinoza_fiber_construct/` | 07-16 | CDS_0011 domain map、GH5 確認、構築選項 |

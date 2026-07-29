@@ -12,6 +12,16 @@ format:
     tbl-cap-location: top
     fig-align: center
     theme: cosmo
+    include-in-header:
+      text: |
+        <style>
+        /* The results tables are wide. Column proportions come from the
+           pipe-table separator rows; table-layout:fixed makes the browser
+           honour them instead of letting a long cell push the table past the
+           body column and run underneath the right-hand table of contents. */
+        main table { table-layout: fixed; width: 100%; }
+        main table th, main table td { overflow-wrap: break-word; }
+        </style>
   pdf:
     toc: true
     number-sections: true
@@ -45,7 +55,7 @@ are kept in sync.
 ## What was asked, and what it requires
 
 | # | The PI's words | What is actually being asked for | What we are really looking at | Status |
-|---|---|---|---|---|
+|:-|:--------------|:------------|:-------------|:-----|
 | **1** | *Let's start synthesizing our results so we can begin preparing figures for your presentation(s) and manuscript(s).* | Pull scattered results into usable figures and tables | Two audiences: **manuscripts** (the MRA, and a later phage paper) and the **iGEM presentation / wiki** | 🟢 **this document** |
 | **2** | *I suggest creating a graphical abstract that summarizes the overall project.* | One figure for the whole project | Needs §3 to settle first, and the central claim still lacks wet-lab support | 🔴 not started |
 | **3** | *Prepare a diagram of the bacterial genomes we sequenced.* | A visual of the bacterial genomes | Five isolates → three strains, one circular map each | 🟢 **done → Appendix A5** |
@@ -115,7 +125,7 @@ Everything downstream rests on this section.
 strains**:
 
 | Strain | Isolates | Species (GTDB) | Genome | Note |
-|---|---|---|---|---|
+|:-----|:------------|:-----------|:------|:-----------|
 | **Strain 1** | 8-5-2, 10-10-2 | *Pseudomonas_E* sp013179515 | ~5.93 Mb | 99.997% ANI to each other |
 | **Strain 2** | 9-2-1, 9-6-2 | *Pseudomonas_E* sp013179515 | ~6.18 Mb | **100.000%** ANI to each other; **the phage host** |
 | **Strain 3** | 8-10-2 | ***P. capeferrum*** | ~5.70 Mb | 87.4–87.7% ANI to the others — a different species |
@@ -161,7 +171,7 @@ the tail spike splits into two ORFs.
 
 ::: {.callout-tip title="How to read the evidence grades"}
 | Mark | Meaning |
-|---|---|
+|:-----|:-------------------------------------------|
 | ✅ | **Confirmed** — data plus controls or agreement between independent methods |
 | 🟡 | **Provisional** — computational inference, single method, no experimental test |
 | 🔴 | **Incomplete, or explicitly a prediction** — must not be cited as a result |
@@ -171,7 +181,7 @@ the tail spike splits into two ORFs.
 ## A. Bacterial hosts
 
 | # | Result | Evidence | Source | Use |
-|---|---|---|---|---|
+|:-|:-------------------------|:---|:-----------|:-----|
 | A1 | **Complete closed genomes for all five isolates**: single circular contig each, ONT + Autocycler; CheckM completeness 99.74–100.00% | ✅ | `data/bacteria_genome/` | paper·talk·wiki |
 | A2 | Genome sizes 5.70–6.18 Mb; GC 62.4–62.6%; sequencing depth 67–96× | ✅ | `code/output/0626_genome_comparison/table1_genome_summary.csv` | paper |
 | A3 | **Five isolates collapse to three ANI-distinct strains** (§2.1) | ✅ | `code/0627_unique_strain_table.ipynb` | paper·talk·wiki |
@@ -188,7 +198,7 @@ the tail spike splits into two ORFs.
 ## B. Phage genome
 
 | # | Result | Evidence | Source | Use |
-|---|---|---|---|---|
+|:-|:-------------------------|:---|:-----------|:-----|
 | B1 | **Complete 9-2-1 Φ8 genome**: single contig **62,338 bp** (PI's assembly 62,416 bp), GC 62%, ~1014× coverage | ✅ | `data/phage_genome/9-2-1/assembly/` | paper·talk·wiki |
 | B2 | **Topology resolved: linear with a 77 bp direct terminal repeat** (not circular) | ✅ | `.../assembly/NOTES.md` | paper |
 | B3 | Pharokka annotation: **80 CDS**, coding density 96.3%, 2 tRNA, 0 CRISPR | ✅ | `code/0713_espinoza_structural_mapping/pharokka_espinoza/` | paper |
@@ -204,7 +214,7 @@ the tail spike splits into two ORFs.
 ## C. Tail spike and enzymatic domains
 
 | # | Result | Evidence | Source | Use |
-|---|---|---|---|---|
+|:-|:-------------------------|:---|:-----------|:-----|
 | C1 | **The tail spike CDS_0011 (941 aa) is a right-handed β-helix depolymerase** — backbone H-bond rung period 15–18, pLDDT 88–94 | ✅ | `code/0712_phage_rbp_detect/`, `0716_espinoza_fiber_construct/` | **paper·talk·wiki** |
 | C2 | **→ the primary receptor is the LPS O-antigen (a sugar), not a protein** — the pivot of the whole project | ✅ | `2026-07-13_phage_rbp_depolymerase_findings.md` | **paper·talk·wiki** |
 | C3 | **CDS_0011 domain map**: Calx-β β-sandwich 1–110 (joins the capsid base) / shaft 111–300 (AF3 cannot place it; 41–52 Å RMSD between models) / **rigid trimeric body 301–941** (0.44–0.99 Å RMSD) | ✅ | `code/0716_espinoza_fiber_construct/domain_map.tsv` | paper·talk |
@@ -219,7 +229,7 @@ the tail spike splits into two ORFs.
 ## D. RBP databases and metagenomes
 
 | # | Result | Evidence | Source | Use |
-|---|---|---|---|---|
+|:-|:-------------------------|:---|:-----------|:-----|
 | D1 | **Literature RBP database: 1,673 unique sequences** (3 papers, 2,447 source records), of which **115 are Pseudomonas** | ✅ | `code/0619_literature_rbp_database/` | paper·wiki |
 | D2 | RBP-by-receptor table, 1,215 rows; **173** high-confidence (experimentally or AF3 validated); 362 in the *E. coli* OMP class | ✅ | `rbp_by_receptor_class.tsv` | paper |
 | D3 | **De novo RBP detection in the metagenomes** (PhageRBPdetect v4 / ESM-2): MG08 **632**, MG09 **661** | ✅ | `code/0701_phagerbp_metagenome/` | paper |
@@ -230,7 +240,7 @@ the tail spike splits into two ORFs.
 ## E. Wet lab
 
 | # | Result | Evidence | Source | Use |
-|---|---|---|---|---|
+|:-|:-------------------------|:---|:-----------|:-----|
 | E1 | **DNA quantification standard curves, 5 batches** (Portelite / Qubit BDR): 0605, 0608, 0622, 0629, 0710 | ✅ | `code/output/*_quantification/` | paper (methods)·wiki |
 | E2 | **OD600 phage-challenge time course (0624)**: host 9-9-2 × two plaque picks, phage added at OD 0.4, hourly to 24 h, infection scored by divergence of ΔOD from the control | ✅ | `code/0624_od600_phage.ipynb` | paper·talk·wiki |
 | E3 | **OD600 phage-challenge time course (0625)**: 9-6-2 and 9-2-1 each × p8, phage added at a fixed time (20:08), with a 3/4 dilution correction | ✅ | `code/0625_od600_phage.ipynb` | paper·talk·wiki |
@@ -240,7 +250,7 @@ the tail spike splits into two ORFs.
 ## F. Negative results (publishable, and worth publishing)
 
 | # | Result | Evidence | Source | Use |
-|---|---|---|---|---|
+|:-|:-------------------------|:---|:-----------|:-----|
 | F1 | **The RBP × OMP protein–protein docking screen does not work**: across a 9-fold control gate, positives scored ipTM ≤0.31 while a mismatched pair scored 0.50 → **no discriminating power**; the 120-pair screen was never run | ⛔ | [`2026-07-13_why_protein_protein_binding_fails.qmd`](2026-07-13_why_protein_protein_binding_fails.qmd) | **paper·talk** |
 | F2 | The reason is understood: **phage × bacterium is cross-kingdom, so there is no paired MSA** and no interface co-evolution signal | ⛔ | as above | paper (methodological contribution) |
 | F3 | The earlier 7,182-pair ESMFold screen was reading **protein size**, not binding (score–length r = +0.58) | ⛔ | `code/0703_phage_host_matrix/` | paper |
@@ -251,7 +261,7 @@ the tail spike splits into two ORFs.
 ## G. Manuscripts and deliverables
 
 | # | Result | Evidence | Source | Use |
-|---|---|---|---|---|
+|:-|:-------------------------|:---|:-----------|:-----|
 | G1 | **The MRA draft is written** (Chen, Wang, Yan, Escobar, Ignacio-Espinoza): four isolates, two strains, full methods section and Table 1 | 🟡 | [`2026-06-27_MRA_Pseudomonas.docx`](2026-06-27_MRA_Pseudomonas.docx) | paper |
 | G2 | ⚠️ **Every GenBank / SRA accession is still `pending`** and data availability is still `XXX` → **submission is blocked on deposition, not on analysis** | 🔴 | as above | blocks G1 |
 | G3 | The MRA excludes 8-10-2, which is why it says "two strains" where this document says three — scope, not contradiction | ✅ | §2.1 | internal consistency |
@@ -282,7 +292,7 @@ against a **species-specific reference database of serotypes** — so whether a
 tool is usable is entirely a question of species.
 
 | Tool | Scope | Why it does not apply |
-|---|---|---|
+|:---------|:-------------|:-------------------------|
 | **PAst / PAst2.0** | *P. aeruginosa* OSA clusters O1–O20 | our isolates are ~**80% ANI** to PAO1 — a different species |
 | **Kaptive** (all versions) | *Klebsiella*, *A. baumannii*, third-party *V. parahaemolyticus* | **no Pseudomonas database exists** |
 
@@ -326,7 +336,7 @@ homologous — comparing by name would have missed it.
 ## Results: three strains, three cassettes, one slot
 
 | Strain | Locus tags | Genes | Span |
-|---|---|---|---|
+|:---------|:---------------------|:-------|:---------|
 | **Strain 2** (9-2-1, 9-6-2) | `OHPLIO_01276–01298` / `PICBEH_01275–01297` | 23 | 26.5 kb |
 | **Strain 1** (8-5-2, 10-10-2) | `PEMOGA_01378–01392` / `BPBBIK_01378–01392` | 15 | 17.0 kb |
 | **Strain 3** (8-10-2) | `NEEDOG_01333–01357` | 25 | 38.2 kb |
@@ -361,7 +371,7 @@ share this locus; it had to be measured.
 **Across strain groups the cassettes barely correspond:**
 
 | Comparison | Genes with a best hit | Mean identity | Median |
-|---|---|---|---|
+|:---------------|:-------------|:---------|:---------|
 | Strain 2 ↔ Strain 1 | 9 of 23 | 71.9% | 67.4% |
 | Strain 2 ↔ Strain 3 | 10 of 23 | 54.7% | 49.4% |
 | Strain 1 ↔ Strain 3 | 6 of 15 | 63.5% | 61.7% |
@@ -424,7 +434,7 @@ at this stage.
 # Next steps
 
 | Priority | Item | Who | Why |
-|---|---|---|---|
+|:----|:---------------------|:-------|:--------------|
 | 1 | Ask the PI whether the **CDS11 tagging is deliberate** (C9) | Alex | Twist has not confirmed processing yet — this is the window |
 | 2 | **GenBank / SRA deposition** (G2) | Alex | blocks the MRA submission |
 | 3 | **Spot assay**: Φ8 × 8-5-2 / 10-10-2 / 8-10-2 (E5) | wet lab | highest value on the list; either outcome is publishable |
@@ -487,7 +497,7 @@ reuse it.**
 
 ::: {.callout-note title="Software and versions (ready for a Methods section)"}
 | Purpose | Tool | Version |
-|---|---|---|
+|:---------------------|:-----------------|:---------|
 | Circular genome maps | pyCirclize | 1.10.1 |
 | Linear gene-cluster maps | pyGenomeViz | 1.7.0 |
 | Protein structure rendering | PyMOL (open-source, headless) | 3.1.0 |
@@ -710,7 +720,7 @@ The repository contains **51 figures**. Those embedded above are the ones usable
 directly in a paper or a talk; the rest are QC and intermediate output.
 
 | Directory | Count | Content |
-|---|---|---|
+|:-----------------|:-----|:-------------------------|
 | `0605/0608/0622/0629/0710_quantification/` | 14 | DNA quantification standard curves and sample concentrations |
 | `0617_receptor_similarity/` | 5 | receptor similarity heatmaps ×3, Venn ×2 |
 | `0624/0625_od600_phage*/` | 11 | OD600 growth / lysis curves |
@@ -724,7 +734,7 @@ directly in a paper or a talk; the rest are QC and intermediate output.
 ## Source map
 
 | File / code | Date | What it shows |
-|---|---|---|
+|:-------------------|:-----|:-----------------------|
 | `code/0729_prof_figures/` | 07-29 | **items 3, 4 and 6** — bacterial circular maps, phage genome map, enzymatic domain 3D |
 | `code/0727_o_antigen_comparison/` | 07-27 | **all of §4** — cassette extraction, MMseqs orthology, three figures |
 | `code/0716_espinoza_fiber_construct/` | 07-16 | CDS_0011 domain map, GH5 confirmation, construct options |
