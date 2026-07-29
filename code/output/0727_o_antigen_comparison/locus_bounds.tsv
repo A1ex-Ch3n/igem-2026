@@ -1,0 +1,6 @@
+isolate	strain_group	upstream_flank	first_gene	last_gene	downstream_flank	downstream_flank_product	n_genes	start_bp	end_bp	span_bp
+9-2-1	Strain 2	OHPLIO_01274	OHPLIO_01276	OHPLIO_01298	OHPLIO_01299	Beta-ketoacyl synthase	23	1409400	1435896	26497
+9-6-2	Strain 2	PICBEH_01273	PICBEH_01275	PICBEH_01297	PICBEH_01298	Beta-ketoacyl synthase	23	1409400	1435896	26497
+10-10-2	Strain 1	BPBBIK_01376	BPBBIK_01378	BPBBIK_01392	BPBBIK_01393	Beta-ketoacyl synthase	15	1488368	1505319	16952
+8-5-2	Strain 1	PEMOGA_01376	PEMOGA_01378	PEMOGA_01392	PEMOGA_01393	Beta-ketoacyl synthase	15	1486343	1503294	16952
+8-10-2	Strain 3	NEEDOG_01331	NEEDOG_01333	NEEDOG_01357	NEEDOG_01358	Competence protein ComEA	25	1436195	1474434	38240

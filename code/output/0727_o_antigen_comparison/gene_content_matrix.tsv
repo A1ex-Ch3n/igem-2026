@@ -1,0 +1,46 @@
+cluster	product	9-2-1	9-6-2	8-5-2	10-10-2	8-10-2
+OG001	Glycosyltransferase 2-like domain-containing protein	0	0	1	1	0
+OG002	Polysaccharide biosynthesis protein	0	0	1	1	0
+OG003	dTDP-4-dehydrorhamnose reductase	0	0	1	1	1
+OG004	UDP-glucose 4-epimerase	1	1	1	1	1
+OG005	Glycosyltransferase family 2 protein	0	0	1	1	0
+OG006	EpsG family protein	0	0	1	1	0
+OG007	NAD-dependent epimerase/dehydratase domain-containing protein	0	0	1	1	0
+OG008	Glycosyltransferase family 1 protein	0	0	1	1	0
+OG009	NAD-dependent epimerase/dehydratase family protein	0	0	0	0	1
+OG010	Glycosyltransferase	0	0	0	0	1
+OG011	Polymerase	0	0	0	0	1
+OG012	O-antigen ligase domain-containing protein	0	0	0	0	1
+OG013	Glycosyltransferase	0	0	0	0	1
+OG014	Oligosaccharide flippase family protein	0	0	0	0	1
+OG015	DUF6270 domain-containing protein	0	0	0	0	1
+OG016	hypothetical protein	0	0	0	0	1
+OG017	D-glucuronyl C5-epimerase family protein	0	0	0	0	1
+OG018	hypothetical protein	0	0	0	0	1
+OG019	glycosyltransferase family 4 protein	0	0	0	0	1
+OG020	glycosyltransferase family 4 protein	0	0	0	0	1
+OG021	hypothetical protein	0	0	0	0	1
+OG022	hypothetical protein	0	0	0	0	1
+OG023	glycosyltransferase	0	0	0	0	1
+OG024	Spore maturation protein CgeB	0	0	0	0	1
+OG025	UDP-N-acetyl-D-glucosamine 6-dehydrogenase	1	1	0	0	1
+OG026	Glycosyltransferase family 4 protein	1	1	1	1	1
+OG027	Polysaccharide biosynthesis protein CapD-like domain-containing protein	1	1	1	1	1
+OG028	dTDP-glucose 4,6-dehydratase	1	1	1	1	0
+OG029	dTDP-4-dehydrorhamnose reductase	1	1	1	1	0
+OG030	glucose-1-phosphate thymidylyltransferase RfbA	1	1	1	1	0
+OG031	O-antigen chain length regulator	1	1	1	1	0
+OG032	UDP-N-acetyl-2-amino-2-deoxy-D-glucuronate oxidase	1	1	0	0	0
+OG033	acyltransferase family protein	1	1	0	0	0
+OG034	UDP-2-acetamido-3-amino-2,3-dideoxy-D-glucuronate N-acetyltransferase	1	1	0	0	0
+OG035	DegT/DnrJ/EryC1/StrS family aminotransferase	1	1	0	0	0
+OG036	Oligosaccharide flippase family protein	1	1	0	0	0
+OG037	non-hydrolyzing UDP-N-acetylglucosamine 2-epimerase	2	2	0	0	2
+OG038	Oligosaccharide repeat unit polymerase	1	1	0	0	0
+OG039	Glycosyltransferase	1	1	0	0	0
+OG040	N-acetyl sugar amidotransferase	1	1	0	0	0
+OG041	imidazole glycerol phosphate synthase subunit HisH	1	1	0	0	0
+OG042	AglZ/HisF2 family acetamidino modification protein	1	1	0	0	0
+OG043	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	1	1	0	0	0
+OG044	Glycosyltransferase WbuB	1	1	0	0	1
+OG045	SDR family oxidoreductase	1	1	1	1	1

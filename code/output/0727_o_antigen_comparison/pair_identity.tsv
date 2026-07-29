@@ -1,0 +1,11 @@
+isolate_a	isolate_b	strain_a	strain_b	n_best_hits	mean_identity	median_identity
+9-2-1	9-6-2	Strain 2	Strain 2	23	1.0	1.0
+9-2-1	8-5-2	Strain 2	Strain 1	9	0.719	0.674
+9-2-1	10-10-2	Strain 2	Strain 1	9	0.719	0.674
+9-2-1	8-10-2	Strain 2	Strain 3	10	0.547	0.494
+9-6-2	8-5-2	Strain 2	Strain 1	9	0.714	0.674
+9-6-2	10-10-2	Strain 2	Strain 1	9	0.714	0.674
+9-6-2	8-10-2	Strain 2	Strain 3	10	0.537	0.494
+8-5-2	10-10-2	Strain 1	Strain 1	15	1.0	1.0
+8-5-2	8-10-2	Strain 1	Strain 3	6	0.635	0.617
+10-10-2	8-10-2	Strain 1	Strain 3	6	0.635	0.617
