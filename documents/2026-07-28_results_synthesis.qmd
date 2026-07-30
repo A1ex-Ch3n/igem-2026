@@ -481,6 +481,8 @@ Bakta 會把兩個**完全無關**的醣基轉移酶都叫做「Glycosyltransfer
 
 ![**附錄 B6．**RBP 的 domain 組成。](../code/output/0708_phage_genome_analysis/fig4_rbp_domains.png)
 
+![**附錄 B7（C11–C13）．**9-2-1 Φ8 對三個培養 T7-like podophage 的 synteny + similarity —— T7（`NC_001604`）、φKMV（`NC_005045`，*Pseudomonas*）、KP32（`NC_013647`）。四條基因體軌道，基因依功能分類上色；灰色連線是相鄰軌道間的 reciprocal-best-hit ortholog。**看兩件事。**（一）三個培養 T7-like 之間有保守核心互相牽連（RBH：T7↔KP32 = 40、T7↔φKMV = 6），但 **9-2-1 Φ8 一個都不共享**（RBH 0；只有 DarB 基因上一個 82-aa 的假命中）—— 對照組通過（φKMV↔T7 = 6，25–33% id；self-search 80/80），所以這個 0 是真的。（二）即便如此，9-2-1 Φ8 仍保有**典型 podovirus virion 模組**（方括號：portal → capsid → tail → fibers），這正是確認 CDS_20/08/09/13/14 指認的依據。它同時是 ~62 kb（參考 ~40 kb）且帶 lysogeny/recombination 模組 —— 一個**新穎、可能溫和的 podovirus**，「T7-like」只在組織層級成立。程式見 `code/0730_synteny_group_d/`（mmseqs RBH + PHROG synteny）。](../code/output/0730_synteny_group_d/fig_synteny_4genome.png)
+
 ### C. 宿主範圍
 
 ![**附錄 C1．**目前的宿主範圍證據。綠色＝實際測過（`data/assays/` 只有 Strain 2 的 OD600）；灰色＝**預測，不是結果**。](../code/output/0727_o_antigen_comparison/fig3_hostrange_prediction.png)
