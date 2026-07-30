@@ -47,6 +47,20 @@ execute:
 §1–§3、§5 是**索引與現況**；§4 是**完整分析**。分析程式在 `code/0727_o_antigen_comparison/`。
 :::
 
+::: {.callout-tip title="重點速覽 —— 七題直接回答"}
+先給答案，細節在 §1 與附錄。
+
+1. **統整結果** → 就是這份文件。**已完成。**
+2. **Graphical abstract** → **未開始。** 只剩這題與第 5 題。
+3. **細菌基因體圖** → **已完成。** 附錄 A5 —— 三株封閉基因體、O-antigen 卡匣標紅。
+4. **噬菌體基因體圖、標出 tail spike** → **已完成。** 附錄 B1/B2 —— CDS_0011 紅框。
+5. **Tail spike 3D + metagenome variable region** → 3D **已完成**（附錄 B3）。variable-region 那半**卡住**：MGnify contig 沒有宿主標註，找不出決定專一性的位點（variable ≠ specificity）。可搶救的是用教授 15,775 條序列 MSA 做 **per-residue conservation** profile —— 絕不能講成「決定結合的位點」。
+6. **酵素域 3D** → **已完成。** 附錄 B3。確證的 GH5 是 CDS_0012，**另一條蛋白**，不是 tail spike 的 domain。
+7. **O-PS typing + 比較三株** → **已完成**（§4）。三株在同一個 ihfB 側翼 slot 裡帶**三套非同源 O-antigen 卡匣** → 預測 Φ8 不會打 Strain 1/3（未測）。且**沒有任何 serotyping 工具適用**此分類群（PAst 只限 *P. aeruginosa*；Kaptive 無 Pseudomonas DB）—— 可發表的負面結果。
+
+**2026-07-29 對話（C1–C6）：** CDS_0010 現為*未知蛋白*（撤回 glycosidase，C1）；三個構築全 N 端、無 C 端（C2）；**9-2-1 Φ8 是新穎 ~62 kb、可能溫和的 podovirus** —— podovirus virion synteny 確認結構模組（C4，附錄 B7），但與培養 T7-like 共享 ~0 ortholog，「T7-like」只在組織層級成立；tail 是 **group-D-*like***，但缺 T4gp10 anchor（附錄 B8；C11–C13）。C6（host range 表）等教授。
+:::
+
 # 教授的七個問題
 
 ## 原文與拆解
@@ -483,6 +497,8 @@ Bakta 會把兩個**完全無關**的醣基轉移酶都叫做「Glycosyltransfer
 
 ![**附錄 B7（C11–C13）．**9-2-1 Φ8 對三個培養 T7-like podophage 的 synteny + similarity —— T7（`NC_001604`）、φKMV（`NC_005045`，*Pseudomonas*）、KP32（`NC_013647`）。四條基因體軌道，基因依功能分類上色；灰色連線是相鄰軌道間的 reciprocal-best-hit ortholog。**看兩件事。**（一）三個培養 T7-like 之間有保守核心互相牽連（RBH：T7↔KP32 = 40、T7↔φKMV = 6），但 **9-2-1 Φ8 一個都不共享**（RBH 0；只有 DarB 基因上一個 82-aa 的假命中）—— 對照組通過（φKMV↔T7 = 6，25–33% id；self-search 80/80），所以這個 0 是真的。（二）即便如此，9-2-1 Φ8 仍保有**典型 podovirus virion 模組**（方括號：portal → capsid → tail → fibers），這正是確認 CDS_20/08/09/13/14 指認的依據。它同時是 ~62 kb（參考 ~40 kb）且帶 lysogeny/recombination 模組 —— 一個**新穎、可能溫和的 podovirus**，「T7-like」只在組織層級成立。程式見 `code/0730_synteny_group_d/`（mmseqs RBH + PHROG synteny）。](../code/output/0730_synteny_group_d/fig_synteny_4genome.png)
 
+![**附錄 B8（C13）．**Latka & Briers 2019 的 RBP 架構分組 —— 教授引用的那張 cartoon。group D（最右）＝第一根 fiber 是**沒有酵素域的 T4gp10-like anchor**（粉紅）＋第二根 depolymerase RBP。9-2-1 Φ8 有這個*排列*（anchor 位置的 CDS_0010 + depolymerase tail spike CDS_0011），但 **CDS_0010 沒有 T4gp10 片段**（`code/0729_t4gp10_check/`），所以是 **group-D-*like*，不是 group D**。圖 © Latka *et al.* 2019, *Front. Microbiol.* 10:2649（CC BY）。](2026-07-29_pi_conversation/images/frontiers_2019_rbp_architecture_groups.png)
+
 ### C. 宿主範圍
 
 ![**附錄 C1．**目前的宿主範圍證據。綠色＝實際測過（`data/assays/` 只有 Strain 2 的 OD600）；灰色＝**預測，不是結果**。](../code/output/0727_o_antigen_comparison/fig3_hostrange_prediction.png)
@@ -511,15 +527,25 @@ Bakta 會把兩個**完全無關**的醣基轉移酶都叫做「Glycosyltransfer
 
 ![**附錄 E2．**ESMFold 版的 ipTM 對照驗證：正對照、打亂、錯配三組分不開，且分數隨複合物長度走。](../code/output/0703_phage_host_matrix/fold/control_validation.png)
 
-::: {.callout-caution title="「怎麼畫的」只涵蓋我們自己畫的圖"}
-上面的製圖 callout 只寫了 **A3、A4、A5、B1、B2、B3、C1** ——這幾張是 0727／0729 兩批分析產出的，作圖決策我們清楚。
+![**附錄 E3．**E1/E2 背後的完整 ESMFold RBP × receptor 矩陣（7,182 對，折了 6,358）。pseudo-ipTM 與複合物長度相關（corr = +0.60）：分數追的是大小與可折疊性，**不是結合**。這就是被上面對照組否決的那個篩選，作為負面結果保留。](../code/output/0703_phage_host_matrix/fold/rbp_receptor_iptm_heatmap.png)
 
-其餘嵌入的圖（**A1、A2、B4–B6、C2、D1、D2、E1、E2**）出自更早的分析，方法記在各自的目錄裡（見下方索引與「來源對照表」）。**沒有替它們補寫決策說明，因為那會變成事後追認。** 要引用進論文 Methods 前請回去讀原目錄的 README。
+::: {.callout-caution title="「怎麼畫的」只涵蓋我們自己畫的圖"}
+上面的製圖 callout 只寫了 **A3、A4、A5、B1、B2、B3、C1** ——這幾張是 0727／0729 兩批分析產出的，作圖決策我們清楚。**B7**（synteny）完整記在 `code/0730_synteny_group_d/README.md`。
+
+其餘嵌入的圖（**A1、A2、B4–B6、B8、C2、D1、D2、E1–E3、F1、F2**）出自更早的分析或外部來源，方法記在各自的目錄裡（見下方索引與「來源對照表」）。**沒有替它們補寫決策說明，因為那會變成事後追認。** 要引用進論文 Methods 前請回去讀原目錄的 README。
 :::
+
+### F. 定量 / QC（示意）
+
+DNA 螢光定量做過很多次（0605、0608、0622、0629、0710）；這裡放一組代表，其餘為 QC、留在各自目錄。
+
+![**附錄 F1．**代表性 DNA 標準曲線（Portelite BDR 綠光螢光定量，2026-07-10）：扣除空白的 RFU vs DNA 濃度，線性擬合 R² = 0.99。](../code/output/0710_quantification/2026-07-10_standard-curve.png)
+
+![**附錄 F2．**噬菌體 DNA 樣品（9-2-1、9-6-2 重複）投影到同一條曲線上。⚠️ 多數樣品落在**外插**區（粉紅底），高於最高的 30 ng/µL 標準點 —— 這些濃度只當數量級看。](../code/output/0710_quantification/2026-07-10_samples-on-standard-curve.png)
 
 ### 全部圖檔索引
 
-repo 內共 **51 張圖**（含 2026-07-29 新增的 4 張）。上面嵌入的是可直接用於論文／簡報的部分；其餘多為 QC 與中間產物。
+repo 內共 **52 張圖**（含 2026-07-30 新增的 synteny 圖）。上面嵌入的是可直接用於論文／簡報的部分；其餘多為 QC 與中間產物。
 
 | 目錄 | 張數 | 內容 |
 |:-----------------|:-----|:-------------------------|
@@ -531,7 +557,8 @@ repo 內共 **51 張圖**（含 2026-07-29 新增的 4 張）。上面嵌入的�
 | `0708_phage_genome_analysis/` | 5 | 噬菌體基因體圖、分類、GC、RBP domain |
 | `0727_o_antigen_comparison/` | 3 | O-antigen 卡匣比較、cluster 矩陣、宿主範圍預測 |
 | `0729_prof_figures/` | 4 | **細菌環狀基因體圖、噬菌體基因體圖 + tail 模組、酵素域 3D**（另有 `panels/` 內的單張渲染） |
-| `documents/` | 1 | binding 對照組比較 |
+| `0730_synteny_group_d/` | 1 | 4 基因體 synteny + ortholog ribbons（附錄 B7） |
+| `documents/` + `2026-07-29_pi_conversation/images/` | 3 | binding 對照組比較；Latka 分組 cartoon（B8）；virion render |
 
 ## 來源對照表
 
@@ -567,6 +594,12 @@ python code/0727_o_antigen_comparison/plot_summary_figs.py
 python code/0729_prof_figures/plot_bacterial_genomes.py     # 第 3 題
 python code/0729_prof_figures/plot_phage_genome_map.py      # 第 4 題
 python code/0729_prof_figures/render_enzymatic_domains.py   # 第 6 題
+
+# C3/C4 — 對 T7-like podophage 的 synteny + similarity（2026-07-30）
+WORK=/tmp/syn/work                                          # mmseqs 需無空白路徑
+python code/0730_synteny_group_d/extract_proteomes.py "$WORK"
+WORK="$WORK" bash code/0730_synteny_group_d/run_mmseqs.sh
+python code/0730_synteny_group_d/analyze_and_plot.py "$WORK"
 ```
 
 ---
@@ -578,5 +611,7 @@ python code/0729_prof_figures/render_enzymatic_domains.py   # 第 6 題
 *Log — 2026-07-29：完成第 3、4、6 題三張圖（`code/0729_prof_figures/`），三題狀態由 🟡 轉 🟢，附錄 A5／B1／B2／B3 新增。舊的噬菌體基因體圖（0708，鏡像 + 廢棄編號）明確標為作廢並由附錄 B1 取代。細菌圖的 CDS 數改用 Bakta 摘要 `.txt`，因為直接數 `.gbff` 的 CDS feature 會固定多 4 個（Bakta 把 sORF 寫成 CDS 但分開計數）。七題現況：1、3、4、6、7 完成，2 可以開始，5 仍卡住。*
 
 *本文由 `2026-07-28_o_antigen_locus_comparison.qmd`（O-antigen 深入分析）與 `2026-07-28_results_synthesis.qmd`（結果總表）合併而成，兩份原始檔已移除；O-antigen 內容成為 §4。*
+
+*Log — 2026-07-30：併入 2026-07-29 與教授對話的後續。CDS_0010 →「未知蛋白」（C1）；三個構築記錄對齊、下游不做 C 端標籤偵測（C2）；新的 synteny/similarity 分析（`code/0730_synteny_group_d/`）新增結果 **C11–C13** 與**附錄 B7** —— 9-2-1 Φ8 是新穎 ~62 kb、可能溫和的 podovirus，「T7-like」只在 virion 模組 synteny 層級成立，tail group-D-like 但缺 T4gp10 anchor。文件最上方加了一段「重點速覽」直接回答七題；嵌入 Latka 分組 cartoon（**B8**）、ESMFold RBP × receptor 矩陣（**E3**）、一組代表性 DNA 標準曲線（**F1/F2**，0605–0710 重複定量的其一）。`.qmd` 為正本；`.html`/`.pdf` 仍需重 render（pandoc 3.8 或 quarto）。*
 
 *註：本機未安裝 Quarto，隨附 `.html` 由 pandoc 3.8 + 模擬 `theme: cosmo` 的自訂 CSS 產生（淺色、圖片以 data URI 內嵌）。`.qmd` 為正本；日後 `quarto render` 會得到標準 cosmo 輸出。*

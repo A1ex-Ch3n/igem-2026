@@ -50,6 +50,20 @@ This is the English counterpart of
 are kept in sync.
 :::
 
+::: {.callout-tip title="Bottom line — the seven questions, answered (terse)"}
+Answers up front; detail in §1 and the appendix.
+
+1. **Synthesize results** → this document. **Done.**
+2. **Graphical abstract** → **not started.** Only this and #5 remain open.
+3. **Bacterial genome diagram** → **done.** App A5 — three closed genomes, O-antigen cassette ringed.
+4. **Phage genome map, tail spike highlighted** → **done.** App B1/B2 — CDS_0011 outlined.
+5. **Tail spike 3D + metagenomic variable regions** → 3D **done** (App B3). Variable-region half **blocked**: MGnify contigs carry no host labels, so specificity-determining positions can't be found (variable ≠ specificity). Salvageable = a per-residue *conservation* profile from the PI's 15,775-seq MSA — never "what determines binding".
+6. **3D of enzymatic domains** → **done.** App B3. The confirmed GH5 is CDS_0012, a **separate protein**, not a domain of the tail spike.
+7. **O-PS typing + compare 3 isolates** → **done** (§4). Three strains carry **three non-homologous O-antigen cassettes in one ihfB-flanked slot** → predicts Φ8 won't plaque Strain 1/3 (untested). And **no serotyping tool applies** to this taxon (PAst is *P. aeruginosa*-only; Kaptive has no Pseudomonas DB) — a publishable negative.
+
+**2026-07-29 conversation (C1–C6):** CDS_0010 is now *unknown protein* (glycosidase withdrawn, C1); constructs are all N-terminal, no C-tag (C2); **9-2-1 Φ8 is a novel ~62 kb, likely-temperate podovirus** — podovirus virion synteny confirms the structural module (C4, App B7), but it shares ~0 orthologs with cultured T7-likes, so "T7-like" is organizational only; the tail is **group-D-*like*** but lacks the T4gp10 anchor (App B8; C11–C13). C6 (host-range table) is pending the PI.
+:::
+
 # The seven questions
 
 ## What was asked, and what it requires
@@ -675,6 +689,8 @@ tiling.
 
 ![**Appendix B7 (C11–C13).** Synteny + similarity of 9-2-1 Φ8 against three cultured T7-like podophages — T7 (`NC_001604`), φKMV (`NC_005045`, *Pseudomonas*), KP32 (`NC_013647`). Four genome tracks, genes coloured by functional class; grey ribbons are reciprocal-best-hit orthologs between adjacent tracks. **Read it two ways.** (i) The three cultured T7-likes are tied together by a conserved core (RBH: T7↔KP32 = 40, T7↔φKMV = 6), but **9-2-1 Φ8 shares none** (RBH 0; one spurious 82-aa hit on the DarB gene) — positive controls pass (φKMV↔T7 = 6 at 25–33 % id; self-search 80/80), so the zero is real. (ii) Despite that, 9-2-1 Φ8 keeps the **canonical podovirus virion module** (bracketed: portal → capsid → tail → fibers), which is what confirms the CDS_20/08/09/13/14 assignments. It is also ~62 kb (vs ~40 kb) and carries a lysogeny/recombination module — a **novel, likely-temperate podovirus**, "T7-like" by organization only. Built in `code/0730_synteny_group_d/` (mmseqs RBH + PHROG synteny).](../code/output/0730_synteny_group_d/fig_synteny_4genome.png)
 
+![**Appendix B8 (C13).** The RBP-architecture groups of Latka & Briers 2019 — the cartoon the PI referenced. Group D (far right) = a first fiber that is a **T4gp10-like anchor with no enzymatic domain** (pink) + a second depolymerase RBP. 9-2-1 Φ8 has the *arrangement* — anchor-position CDS_0010 + depolymerase tail spike CDS_0011 — but **CDS_0010 carries no T4gp10 segment** (`code/0729_t4gp10_check/`), so it is **group-D-*like*, not group D**. Figure © Latka *et al.* 2019, *Front. Microbiol.* 10:2649 (CC BY).](2026-07-29_pi_conversation/images/frontiers_2019_rbp_architecture_groups.png)
+
 ### C. Host range
 
 ![**Appendix C1.** The current state of host-range evidence. Green = actually tested (`data/assays/` contains OD600 for Strain 2 only); grey = **prediction, not result**.](../code/output/0727_o_antigen_comparison/fig3_hostrange_prediction.png)
@@ -710,21 +726,35 @@ tiling.
 
 ![**Appendix E2.** The ESMFold control diagnostic: positive, scrambled and mismatch pseudo-ipTM are indistinguishable, and the score tracks complex length.](../code/output/0703_phage_host_matrix/fold/control_validation.png)
 
+![**Appendix E3.** The full ESMFold RBP × receptor matrix (7,182 pairs) behind E1/E2 — 6,358 folded. Pseudo-ipTM correlates with complex length (corr = +0.60): the score tracks size and foldability, **not binding**. This is the screen the controls invalidate; the retired approach is recorded here as a negative result.](../code/output/0703_phage_host_matrix/fold/rbp_receptor_iptm_heatmap.png)
+
 ::: {.callout-caution title="The \"how it was made\" notes cover only our own figures"}
 The method callouts above cover **A3, A4, A5, B1, B2, B3 and C1** — the figures
 produced by the 0727 and 0729 analyses, whose drawing decisions we can state
-accurately.
+accurately. **B7** (synteny) is fully documented in
+`code/0730_synteny_group_d/README.md`.
 
-The remaining embedded figures (**A1, A2, B4–B6, C2, D1, D2, E1, E2**) come from
-earlier analyses and their methods are recorded in their own directories (see the
-index and source map below). **No decision notes were written for them, because
-doing so retrospectively would amount to inventing a rationale after the fact.**
-Read the original directory README before citing them in a Methods section.
+The remaining embedded figures (**A1, A2, B4–B6, B8, C2, D1, D2, E1–E3, F1, F2**)
+come from earlier analyses or external sources, and their methods are recorded in
+their own directories (see the index and source map below). **No decision notes
+were written for them, because doing so retrospectively would amount to inventing
+a rationale after the fact.** Read the original directory README before citing
+them in a Methods section.
 :::
+
+### F. Quantification / QC (illustrative)
+
+DNA fluorometric quantification was run repeatedly (0605, 0608, 0622, 0629,
+0710); one representative pair is shown — the rest are QC and live in their
+directories.
+
+![**Appendix F1.** Representative DNA standard curve (Portelite BDR green-channel fluorometry, 2026-07-10): blank-subtracted RFU vs DNA concentration, linear fit R² = 0.99.](../code/output/0710_quantification/2026-07-10_standard-curve.png)
+
+![**Appendix F2.** Phage-DNA samples (9-2-1, 9-6-2 replicates) projected onto the same curve. ⚠️ Most samples fall in the **extrapolated** region (pink shading), above the highest 30 ng/µL standard — treat those concentrations as order-of-magnitude.](../code/output/0710_quantification/2026-07-10_samples-on-standard-curve.png)
 
 ### Figure index
 
-The repository contains **51 figures**. Those embedded above are the ones usable
+The repository contains **52 figures**. Those embedded above are the ones usable
 directly in a paper or a talk; the rest are QC and intermediate output.
 
 | Directory | Count | Content |
@@ -737,7 +767,8 @@ directly in a paper or a talk; the rest are QC and intermediate output.
 | `0708_phage_genome_analysis/` | 5 | phage genome map (obsolete), categories, GC, RBP domains |
 | `0727_o_antigen_comparison/` | 3 | O-antigen cassette comparison, cluster matrix, host-range prediction |
 | `0729_prof_figures/` | 4 | bacterial circular maps, phage genome map + tail module, enzymatic domains |
-| `documents/` | 1 | binding control comparison |
+| `0730_synteny_group_d/` | 1 | 4-genome synteny + ortholog ribbons (App B7) |
+| `documents/` + `2026-07-29_pi_conversation/images/` | 3 | binding control comparison; Latka group cartoon (B8); virion render |
 
 ## Source map
 
@@ -773,6 +804,12 @@ python code/0727_o_antigen_comparison/plot_summary_figs.py
 python code/0729_prof_figures/plot_bacterial_genomes.py     # item 3
 python code/0729_prof_figures/plot_phage_genome_map.py      # item 4
 python code/0729_prof_figures/render_enzymatic_domains.py   # item 6
+
+# C3/C4 — synteny + similarity vs T7-like podophages (2026-07-30)
+WORK=/tmp/syn/work                                          # mmseqs needs a no-space path
+python code/0730_synteny_group_d/extract_proteomes.py "$WORK"
+WORK="$WORK" bash code/0730_synteny_group_d/run_mmseqs.sh
+python code/0730_synteny_group_d/analyze_and_plot.py "$WORK"
 ```
 
 ---
@@ -782,3 +819,14 @@ iGEM wiki rather than translated line by line. Same structure, same numbers, sam
 figures; internal environment notes were dropped and the tool table kept in a
 form usable directly in a Methods section. The two documents are to be kept in
 sync — if a number changes in one, change it in the other.*
+
+*Log — 2026-07-30: folded in the 2026-07-29 PI-conversation follow-up. CDS_0010 →
+"unknown protein" (C1); construct records reconciled with no C-terminal-tag
+detection downstream (C2); new synteny/similarity analysis
+(`code/0730_synteny_group_d/`) adds results **C11–C13** and **Appendix B7** —
+9-2-1 Φ8 is a novel ~62 kb, likely-temperate podovirus, "T7-like" by virion-module
+synteny only, tail group-D-like without the T4gp10 anchor. Added a terse
+"bottom line" answer block at the top; embedded the Latka group cartoon (**B8**),
+the ESMFold RBP × receptor matrix (**E3**) and a representative DNA standard curve
+(**F1/F2**, one of the repeated 0605–0710 quantification runs). The `.qmd` is the
+source of truth; the `.html`/`.pdf` still need a re-render (pandoc 3.8 or quarto).*
