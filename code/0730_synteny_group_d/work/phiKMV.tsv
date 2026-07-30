@@ -1,0 +1,50 @@
+id	start	end	strand	product
+phiKMVp01	1746	2030	+	hypothetical protein
+phiKMVp02	2030	2257	+	hypothetical protein
+phiKMVp03	2268	2801	+	hypothetical protein
+phiKMVp04	2805	3173	+	hypothetical protein
+phiKMVp05	3160	3387	+	hypothetical protein
+phiKMVp06	3434	3745	+	hypothetical protein
+phiKMVp07	3745	4032	+	hypothetical protein
+phiKMVp08	4029	4265	+	hypothetical protein
+phiKMVp09	4281	4574	+	hypothetical protein
+phiKMVp10	4653	5072	+	hypothetical protein
+phiKMVp11	5141	5500	+	hypothetical protein
+phiKMVp12	5503	6312	+	DNA polymerase
+phiKMVp49	6392	6811	+	hypothetical protein
+phiKMVp13	6582	7124	+	hypothetical protein
+phiKMVp14	7310	8134	+	DNA primase
+phiKMVp15	8178	9371	+	AAA family ATPase
+phiKMVp16	9361	9978	+	nucleotidyltransferase
+phiKMVp17	9978	10925	+	DNA ligase
+phiKMVp18	10922	11257	+	hypothetical protein
+phiKMVp19	11254	13677	+	DNA polymerase
+phiKMVp20	13674	13985	+	hypothetical protein
+phiKMVp21	14042	15091	+	hypothetical protein
+phiKMVp22	15091	16032	+	exonuclease
+phiKMVp23	16022	16462	+	endonuclease VII
+phiKMVp24	16459	17505	+	DNA polymerase exonuclease subunit
+phiKMVp25	17515	17883	+	dATP / dGTP pyrophosphohydrolase
+phiKMVp26	18035	20485	+	RNA polymerase
+phiKMVp27	20646	20897	+	hypothetical protein
+phiKMVp28	20897	21370	+	GNAT family N-acetyltransferase
+phiKMVp29	21315	21611	+	virion structural protein
+phiKMVp30	21623	23155	+	head-tail adaptor
+phiKMVp31	23159	24127	+	head scaffolding protein
+phiKMVp32	24180	25187	+	major head protein
+phiKMVp33	25284	25838	+	tail tubular protein A
+phiKMVp34	25841	28321	+	tail protein
+phiKMVp35	28321	28866	+	internal virion protein
+phiKMVp36	28866	31562	+	internal virion lysozyme motif
+phiKMVp37	31566	35579	+	internal virion protein with endolysin domain
+phiKMVp38	35581	36336	+	tail fiber protein
+phiKMVp39	36336	36776	+	hypothetical protein
+phiKMVp40	36766	37644	+	tail fiber protein
+phiKMVp41	37839	38231	+	tail fiber protein
+phiKMVp42	38231	38536	+	terminase small subunit
+phiKMVp43	38546	40351	+	terminase large subunit
+phiKMVp44	40348	40548	+	holin
+phiKMVp45	40545	41027	+	lysozyme
+phiKMVp46	40985	41314	+	phage lambda Rz1-like protein
+phiKMVp47	41404	41718	+	minor head protein
+phiKMVp48	41768	41962	+	minor head protein

@@ -13,8 +13,10 @@ So this renders both, labelled for what they actually are:
     the tail spike.  Fold called by H-bond rung period, no named homolog yet.
   * CDS_0012 res 118-475  -- the GH5 TIM barrel, template-confirmed (1ECE with
     cellotetraose bound, 1VRX, 4TUF, 2ZUM), but its own protein.
-CDS_0010 is deliberately NOT drawn as an enzyme: its glycosidase assignment is
-unsupported (one weak IspD hit; ~460 aa with no template).
+CDS_0010 is deliberately NOT drawn as an enzyme: our template analysis never
+supported the glycosidase call (one weak IspD hit; ~460 aa with no template),
+and on 2026-07-29 the PI withdrew it -- CDS_0010 is now an unknown protein
+(being expressed for functional characterization).
 
 PyMOL renders the panels; matplotlib assembles them with a colour key.
 

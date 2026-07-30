@@ -44,16 +44,38 @@ This also **closes the 0716 open question** about where to cut CDS_0011: the PI'
 two earlier statements disagreed by 280 residues ("bases" vs residues, and 111 vs
 391). He went with 305.
 
-## Open question for the PI
+### Accurate descriptive names (for our records)
+
+The `.gb` files **keep their as-sent filenames** for provenance (that is what was
+ordered from Twist). These are aliases for internal use:
+
+| As-sent filename | Accurate name |
+|---|---|
+| `CDS11_WT_CTERM_HIS6TAG.gb` | `CDS11_305-941_NTERM_His6` |
+| `CDS10_WT_NOTAG.gb` | `CDS10_105-917_NTERM_His6` |
+| `CDS12_WT_NOTAG.gb` | `CDS12_117-477_NTERM_His6` |
+
+The PI **confirmed on 2026-07-29** that all three use N-terminal tags and that he
+wants **no C-terminal tag on any construct** — so the sequences are right and only
+the filenames mislead.
+
+## CDS_0010 — resolved (2026-07-29)
 
 `CDS10_WT_NOTAG` was ordered on the basis that CDS_0010 is a glycosidase, but our
-template analysis does not support that — the body has one weak IspD hit and
-~460 aa with no template at all. One of the three sponsored constructs is
-therefore a bet. Worth asking him for his evidence before the protein work
-starts.
+template analysis did not support that — the body has one weak IspD hit and
+~460 aa with no template at all. **On 2026-07-29 the PI withdrew the glycosidase
+call:** he confirmed he does not know what CDS_0010 is and is expressing it for
+functional characterization. It is now an **unknown protein**. Expressing the
+construct is still worthwhile — it may let us characterize the protein — but no
+glycosidase function should be assumed downstream.
 
 ---
 *Log — 2026-07-29: filed. Moved here from a loose `new mails/` directory at the
 repo root and renamed to the `YYYY-MM-DD_slug` convention. Construct contents
 verified by translating each plasmid; the filename/sequence mismatch and the
 resolved cut site are recorded above.*
+*Log — 2026-07-30: after the 2026-07-29 PI conversation (`../2026-07-29_pi_conversation/`).
+C1 — the PI withdrew the CDS_0010 glycosidase call; "Open question for the PI"
+rewritten as "CDS_0010 — resolved". C2 — the PI confirmed all-N-terminal / no
+C-terminal tag; `.gb` filenames kept as-sent for provenance, accurate-name aliases
+added, and the no-C-terminal-tag-detection note above reaffirmed.*

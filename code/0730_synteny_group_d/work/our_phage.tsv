@@ -1,0 +1,81 @@
+id	start	end	strand	product
+UUAIURNK_CDS_0001	2	7561	-	DarB-like antirestriction
+UUAIURNK_CDS_0002	7561	7674	-	hypothetical protein
+UUAIURNK_CDS_0003	7709	8986	-	virion structural protein
+UUAIURNK_CDS_0004	8999	9364	-	hypothetical protein
+UUAIURNK_CDS_0005	9361	10500	-	virion structural protein
+UUAIURNK_CDS_0006	10490	10924	-	acyl-CoA N-acyltransferase
+UUAIURNK_CDS_0007	10985	11623	-	virion structural protein
+UUAIURNK_CDS_0008	11623	13356	-	internal virion protein
+UUAIURNK_CDS_0009	13353	13709	-	tail fiber protein
+UUAIURNK_CDS_0010	13709	16462	-	tail protein
+UUAIURNK_CDS_0011	16547	19372	-	tail spike protein
+UUAIURNK_CDS_0012	19376	20809	-	hypothetical protein
+UUAIURNK_CDS_0013	20894	21499	-	virion structural protein
+UUAIURNK_CDS_0014	21496	22194	-	structural protein
+UUAIURNK_CDS_0015	22194	22730	-	hypothetical protein
+UUAIURNK_CDS_0016	22743	23219	-	virion structural protein
+UUAIURNK_CDS_0017	23235	24341	-	major head protein
+UUAIURNK_CDS_0018	24440	24562	-	CsrA-like regulator
+UUAIURNK_CDS_0019	24635	25636	-	hypothetical protein
+UUAIURNK_CDS_0020	25647	27875	-	portal protein
+UUAIURNK_CDS_0021	27934	28398	-	DNA methyltransferase
+UUAIURNK_CDS_0022	28395	28712	-	hypothetical protein
+UUAIURNK_CDS_0023	28709	29071	-	hypothetical protein
+UUAIURNK_CDS_0024	29139	31091	-	hypothetical protein
+UUAIURNK_CDS_0025	31234	32820	-	hypothetical protein
+UUAIURNK_CDS_0026	32820	33206	-	hypothetical protein
+UUAIURNK_CDS_0027	33203	33940	-	terminase small subunit
+UUAIURNK_CDS_0028	34090	34323	-	hypothetical protein
+UUAIURNK_CDS_0029	34400	34534	-	hypothetical protein
+UUAIURNK_CDS_0030	34531	34662	-	hypothetical protein
+UUAIURNK_CDS_0031	34659	35015	-	hypothetical protein
+UUAIURNK_CDS_0032	35012	35341	-	hypothetical protein
+UUAIURNK_CDS_0033	35338	35901	-	hypothetical protein
+UUAIURNK_CDS_0034	35898	36167	-	hypothetical protein
+UUAIURNK_CDS_0035	36288	36920	-	hypothetical protein
+UUAIURNK_CDS_0036	36980	37126	-	hypothetical protein
+UUAIURNK_CDS_0037	37126	37323	-	hypothetical protein
+UUAIURNK_CDS_0038	37653	37790	+	hypothetical protein
+UUAIURNK_CDS_0039	37790	38275	+	hypothetical protein
+UUAIURNK_CDS_0040	38268	38426	+	hypothetical protein
+UUAIURNK_CDS_0041	38445	38942	+	hypothetical protein
+UUAIURNK_CDS_0042	38843	39724	+	hypothetical protein
+UUAIURNK_CDS_0043	39721	40059	+	DNA binding protein
+UUAIURNK_CDS_0044	40056	40262	+	hypothetical protein
+UUAIURNK_CDS_0045	40246	40428	+	hypothetical protein
+UUAIURNK_CDS_0046	40441	40905	-	hypothetical protein
+UUAIURNK_CDS_0047	40967	41971	-	DnaC-like helicase loader
+UUAIURNK_CDS_0048	41943	42641	-	replication initiation protein
+UUAIURNK_CDS_0049	42725	42961	-	hypothetical protein
+UUAIURNK_CDS_0050	42958	43206	-	hypothetical protein
+UUAIURNK_CDS_0051	43305	44051	-	2OG-Fe(II) oxygenase
+UUAIURNK_CDS_0052	44048	44509	-	hypothetical protein
+UUAIURNK_CDS_0053	44506	44865	-	Ref-like RecA filament endonuclease
+UUAIURNK_CDS_0054	44862	45191	-	NinB/ Orf homologous recombination mediator
+UUAIURNK_CDS_0055	45329	45430	-	hypothetical protein
+UUAIURNK_CDS_0056	45441	46574	-	exonuclease recombination-associated
+UUAIURNK_CDS_0057	46604	47041	-	hypothetical protein
+UUAIURNK_CDS_0058	47031	47378	-	transcriptional regulator
+UUAIURNK_CDS_0059	47411	48088	+	transcriptional regulator
+UUAIURNK_CDS_0060	48225	48935	+	Erf-like ssDNA annealing protein
+UUAIURNK_CDS_0061	48932	50632	+	RecE-like recombination exonuclease
+UUAIURNK_CDS_0062	50632	50847	+	excisionase and transcriptional regulator
+UUAIURNK_CDS_0063	50859	51560	+	RusA-like Holliday junction resolvase
+UUAIURNK_CDS_0064	51582	51683	+	hypothetical protein
+UUAIURNK_CDS_0065	51699	52157	+	hypothetical protein
+UUAIURNK_CDS_0066	52210	52449	+	hypothetical protein
+UUAIURNK_CDS_0067	52494	52937	+	hypothetical protein
+UUAIURNK_CDS_0068	52958	53131	+	hypothetical protein
+UUAIURNK_CDS_0069	53186	53488	+	hypothetical protein
+UUAIURNK_CDS_0070	53620	53880	+	excisionase
+UUAIURNK_CDS_0071	53885	54013	+	hypothetical protein
+UUAIURNK_CDS_0072	54069	54167	+	hypothetical protein
+UUAIURNK_CDS_0073	54191	55381	+	hypothetical protein
+UUAIURNK_CDS_0074	55382	55546	-	hypothetical protein
+UUAIURNK_CDS_0075	55491	55862	-	Rz-like spanin
+UUAIURNK_CDS_0076	55859	56179	-	hypothetical protein
+UUAIURNK_CDS_0077	56160	56522	-	hol-like chemotaxis
+UUAIURNK_CDS_0078	56522	57115	-	endolysin
+UUAIURNK_CDS_0079	57176	57322	-	hypothetical protein
+UUAIURNK_CDS_0080	57319	62415	-	DarB-like antirestriction

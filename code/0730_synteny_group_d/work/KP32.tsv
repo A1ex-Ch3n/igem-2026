@@ -1,0 +1,45 @@
+id	start	end	strand	product
+KP-KP32_gp01	808	1275	+	SAM-dependent methyltransferase
+KP-KP32_gp02	1432	1629	+	hypothetical protein
+KP-KP32_gp03	1652	2656	+	serine-threonine kinase
+KP-KP32_gp04	2745	5465	+	RNA polymerase
+KP-KP32_gp05	5554	6114	+	fusion protein
+KP-KP32_gp06	6171	6380	+	hypothetical protein
+KP-KP32_gp07	6384	6641	+	dGTPase inhibitor
+KP-KP32_gp08	6742	7767	+	DNA ligase
+KP-KP32_gp09	7610	8164	+	endonuclease
+KP-KP32_gp10	8277	8540	+	BC10 family protein
+KP-KP32_gp11	8533	8964	+	nucleotide kinase
+KP-KP32_gp12	8840	9274	-	hypothetical protein
+KP-KP32_gp13	9273	9968	+	Gp2.5-like ssDNA binding protein and ssDNA annealing protein
+KP-KP32_gp14	9968	10417	+	endonuclease
+KP-KP32_gp15	10420	10875	+	amidase
+KP-KP32_gp16	11037	12785	+	DNA primase/helicase
+KP-KP32_gp17	12508	12861	+	hypothetical protein
+KP-KP32_gp18	12910	13119	+	hypothetical protein
+KP-KP32_gp19	13119	13418	+	hypothetical protein
+KP-KP32_gp20	13503	13889	+	hypothetical protein
+KP-KP32_gp21	13906	16020	+	DNA polymerase I
+KP-KP32_gp22	16037	16417	+	hypothetical protein
+KP-KP32_gp23	16390	16674	+	Gp5.5-like host HNS inhibition
+KP-KP32_gp24	17046	17951	+	exonuclease
+KP-KP32_gp25	18129	18374	+	DUF2717 domain-containing protein
+KP-KP32_gp26	18377	18598	+	DUF5476 domain-containing protein
+KP-KP32_gp27	18600	18860	+	host range and adsorption protein
+KP-KP32_gp28	19094	20479	+	head-tail adaptor
+KP-KP32_gp29	20583	21542	+	head assembly
+KP-KP32_gp30	21681	22718	+	major head protein
+KP-KP32_gp31	23058	23636	+	tail protein
+KP-KP32_gp32	23659	26034	+	tail protein
+KP-KP32_gp33	26108	26515	+	internal virion protein
+KP-KP32_gp34	26518	27108	+	internal virion protein
+KP-KP32_gp35	27108	29378	+	internal virion protein
+KP-KP32_gp36	29394	33359	+	internal virion protein with endolysin domain
+KP-KP32_gp37	33420	36029	+	tail protein
+KP-KP32_gp38	36040	37770	+	tail spike protein
+KP-KP32_gp39	37780	37983	+	holin
+KP-KP32_gp40	37987	38244	+	terminase small subunit
+KP-KP32_gp41	38219	38710	+	phage lambda Rz1-like protein
+KP-KP32_gp42	38341	38787	+	Rz-like spanin
+KP-KP32_gp43	38910	40541	+	terminase large subunit
+KP-KP32_gp44	39496	39801	+	hypothetical protein

@@ -1,0 +1,11 @@
+CDS	PHROG_product	position_bp	strand	length_aa	T7_canonical_role	best_ref_hit
+CDS_0020	portal protein	25647–27875	-	742	portal / head-tail connector (T7 gp8)	none
+CDS_0017	major head protein	23235–24341	-	368	major capsid protein (T7 gp10)	none
+CDS_0016	virion structural protein	22743–23219	-	158	head/adaptor structural protein	none
+CDS_0014	structural protein	21496–22194	-	232	tail/adaptor structural protein	none
+CDS_0013	virion structural protein	20894–21499	-	201	tail/adaptor structural protein	none
+CDS_0012	hypothetical protein	19376–20809	-	477	GH5 depolymerase (our AF3 call; PHROG: hypothetical)	none
+CDS_0011	tail spike protein	16547–19372	-	941	tail spike RBP — β-helix depolymerase	none
+CDS_0010	tail protein	13709–16462	-	917	tail protein (anchor-fiber position; unknown, group-D-like anchor)	none
+CDS_0009	tail fiber protein	13353–13709	-	118	tail fiber	none
+CDS_0008	internal virion protein	11623–13356	-	577	internal virion / ejection protein (T7 gp14–16)	none

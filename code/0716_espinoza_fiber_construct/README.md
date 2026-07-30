@@ -100,3 +100,8 @@ where other podoviruses have one or two.
 res ~111–941; two ambiguities flagged for him (bases-vs-residues, 111-vs-391). 0713's open question
 RESOLVED: CDS_0012 is a GH5 TIM barrel (confirmed), CDS_0010 unsupported. Adopted his `UUAIURNK_`
 numbering repo-wide. UNDONE: cut site confirmation, CDS_0010 evidence.*
+*Log — 2026-07-30: both remaining UNDONE items are now closed by the 2026-07-29 PI conversation.
+Cut site = res **305** (he chose it; see `documents/2026-07-27_twist_construct_order/`). CDS_0010
+evidence: the PI **withdrew the glycosidase call** — it is an **unknown protein**, being expressed
+for functional characterization. Body text left as the 0716 record. See
+`documents/2026-07-29_pi_conversation/`.*

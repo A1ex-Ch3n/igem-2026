@@ -181,10 +181,13 @@ Strain 1 與 Strain 2 之間 ANI 99.38–99.42%——同種、不同株，但基
 | C4 | **CDS_0012 = GH5 醣苷水解酶 TIM barrel**（4 個模板皆 GH5，含 **1ECE 帶 cellotetraose**，res 118–475，pLDDT 95–98） | ✅ | 同上 | 論文·簡報 |
 | C5 | **CDS_0024 是第二個 β-helix depolymerase**（週期 22–24），**Pharokka 漏標為 hypothetical**，由 RBP Detect 抓到（score 0.998） | ✅ | `code/0712_phage_rbp_detect/` | 論文·簡報 |
 | C6 | CDS_0010 與 CDS_0011 **共用同一個 Calx-β 錨定模組**（42% id / 107 aa）→ paralogous fibers | ✅ | `code/0716_espinoza_fiber_construct/` | 論文 |
-| C7 | **教授「CDS_0010 也是 glycosidase」的主張不被支持** —— body 只有一個弱 IspD 命中，其餘 ~460 aa 無模板 | 🔴 | 同上 | 需向教授求證（§5） |
+| C7 | **CDS_0010 是未知蛋白 —— 教授已撤回 glycosidase 主張**（2026-07-29）：他確認不知道這條是什麼，正在表現以待功能鑑定。我們的模板分析與此一致 —— body 只有一個弱 IspD 命中，其餘 ~460 aa 無模板 | ✅ | 同上；教授對話 `documents/2026-07-29_pi_conversation/` | 論文 |
 | C8 | **三個構築已於 2026-07-27 送 Twist**（rush + 甘油菌）：CDS_0011 **res 305–941**、CDS_0010 res 105–917、CDS_0012 res 117–477，皆在 pET-28a(+) | ✅ | `documents/2026-07-27_twist_construct_order/` | 論文·wiki |
-| C9 | ⚠️ **三個構築的檔名與序列不符**：`CDS11_WT_CTERM_HIS6TAG` 實際是 **N 端雙 His6、無 C 端標籤**（插入片段自帶終止密碼子擋在載體標籤前）；兩個 `NOTAG` 實際都有 pET-28a 的 N 端 His6 | ✅ | 同上（逐條轉譯驗證） | 內部必須修正 |
+| C9 | ⚠️ **三個構築的檔名與序列不符**：`CDS11_WT_CTERM_HIS6TAG` 實際是 **N 端雙 His6、無 C 端標籤**（插入片段自帶終止密碼子擋在載體標籤前）；兩個 `NOTAG` 實際都有 pET-28a 的 N 端 His6。**教授已確認（2026-07-29）三個構築全走 N 端標籤、不要任何 C 端標籤** —— 序列是對的，只有檔名誤導。檔名保留送 Twist 原名以存 provenance，正確身分已在 `documents/2026-07-27_twist_construct_order/README.md` 加註。**下游實驗設計不得包含 C 端標籤偵測步驟。** | ✅ | 同上（逐條轉譯驗證）；教授對話 | 已解決 |
 | C10 | β-helix 判定尚未用 **foldseek/DALI 命名同源家族**（本機無 foldseek） | 🔴 | UNDONE | — |
+| C11 | **virion 模組是典型 podovirus 模組、且照典型順序排列** —— portal（CDS_0020）→ major capsid（0017）→ head/tail adaptor（0016/0014/0013）→ tail spike（0011）→ tail（0010）→ tail fiber（0009）→ internal virion/ejection protein（0008）。這確認了教授點名的 CDS_20/08/09/13/14 結構指認，且**不需 TEM 就能稱 podo/T7-like** | ✅ | `code/0730_synteny_group_d/`（synteny + PHROG） | **論文·簡報** |
+| C12 | **……但 9-2-1 Φ8 是新穎、~62 kb、可能溫和（temperate）的 podovirus —— 不是 Autographiviridae/T7 *sensu stricto***：與 T7、φKMV、KP32 **偵測不到任何 ortholog**（RBH 0；三個參考彼此有 6–40；對照組通過），且帶有大段 recombination + **excisionase/lysogeny** 模組。「T7-like」是 virion 模組的**組織層級類比**，不是系統發生歸屬 | ✅ | `code/0730_synteny_group_d/`（mmseqs RBH；`fig_synteny_4genome`） | **論文** |
+| C13 | **tail 是 group-D-*like*，不是 group D**：具備 Latka & Briers 2019 的排列（anchor 位置的 fiber CDS_0010 + depolymerase tail spike CDS_0011 + 第二個 GH5 depolymerase CDS_0012），但 **CDS_0010 沒有定義 group D 的 T4gp10 anchor** | ✅ | `code/0729_t4gp10_check/`、`0730_synteny_group_d/` | 論文 |
 
 ## D. RBP 資料庫與 metagenome
 
@@ -351,9 +354,9 @@ Bakta 會把兩個**完全無關**的醣基轉移酶都叫做「Glycosyltransfer
 
 **已完成（2026-07-29）**：第 3、4、6 題三張圖，見 `code/0729_prof_figures/`。
 
-::: {.callout-important title="三個必須跟教授確認的事"}
+::: {.callout-important title="跟教授確認的事項"}
 1. **「three isolates」指的是哪三株？** 我們預設是三個菌株代表（8-5-2 / 9-2-1 / 8-10-2），但沒確認過。
-2. **CDS_0010 是 glycosidase 的證據是什麼？**（C7）—— 我們的模板分析不支持，但它已經被下單了。
+2. ~~**CDS_0010 是 glycosidase 的證據是什麼？**~~ **已解決（2026-07-29）：** 教授撤回 glycosidase 主張 —— CDS_0010 是**未知蛋白**，他正在表現以待功能鑑定。我們的模板分析（一個弱 IspD 命中、其餘 ~460 aa 無模板）與此一致。（C7）
 3. **「enzymatic domains *within* the tail spike」是什麼意思？**（第 6 題）—— GH5 是 CDS_0012，是**另一條蛋白**，不在 CDS_0011 裡面。
 :::
 
@@ -463,7 +466,7 @@ Bakta 會把兩個**完全無關**的醣基轉移酶都叫做「Glycosyltransfer
 **做了哪些判斷：**
 
 1. **直接處理教授用詞的歧義，而不是繞過去。** 他要「the enzymatic domains ***within*** the tail spike」，但**模板確證**的醣苷水解酶（GH5）是 **CDS_0012，一條獨立的蛋白**，不是 CDS_0011 的 domain。所以 D 面板照畫，但標題明寫「a separate protein」。真正在 tail spike 裡面的酵素是 B / C 的 β-helix 本體。
-2. **CDS_0010 刻意不畫成酵素。** 教授說它也是 glycosidase，但 AF3 模板不支持（body 只有一個弱 IspD 命中，其餘 ~460 aa 無模板）。畫進去等於替一個未證實的主張背書。這列為要問他的三件事之一。
+2. **CDS_0010 刻意不畫成酵素。** 教授原說它也是 glycosidase，但 AF3 模板不支持（body 只有一個弱 IspD 命中，其餘 ~460 aa 無模板）；**2026-07-29 教授已撤回此說，改為未知蛋白（正在表現以待鑑定）**。所以不畫成酵素是正確的。
 3. **Domain 邊界來自量測，不是目測。** 1–110 / 111–300 / 301–941 的切法出自 `0716` 的 `template_hits.tsv`（4 個模板只蓋 res 9–110）與 `model_rmsd.tsv`（5 個模型疊合：本體 RMSD 0.44–0.99 Å，錨定 50–92 Å，shaft 41–52 Å）。
 4. **A 面板本身就是構築決策的證據。** 它讓人一眼看到錨定和 shaft 在每個模型被擺到不同位置、本體卻是剛性的——這正是下單構築從**殘基 305** 起始的理由。所以標題把構築範圍寫上去。
 5. **加了 C 面板（沿三重軸端視）。** 側視看不出這是三聚體交錯的柱狀體；端視才看得到三葉排列，也才說明得了為什麼 C 端 foldon 不能截掉。

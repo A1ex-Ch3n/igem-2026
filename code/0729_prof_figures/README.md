@@ -87,9 +87,10 @@ from H-bond rung geometry, **not** from a named structural homolog — no foldse
 match has been run.
 :::
 
-`CDS_0010` is deliberately **not** drawn as an enzyme: the PI's glycosidase
-assignment for it is unsupported (one weak IspD hit; ~460 aa with no template).
-That remains an open question to put to him.
+`CDS_0010` is deliberately **not** drawn as an enzyme: our template analysis
+never supported the glycosidase call (one weak IspD hit; ~460 aa with no
+template), and on **2026-07-29 the PI withdrew it** — `CDS_0010` is now an
+**unknown protein**, being expressed for functional characterization.
 
 Panel A also shows *why* the ordered construct starts at residue 305: the
 Calx-β anchor and shaft are placed differently in every AF3 model (RMSD 41–92 Å),

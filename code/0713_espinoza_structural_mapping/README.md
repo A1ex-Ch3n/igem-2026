@@ -75,3 +75,7 @@ CDS_0011 = our CDS_0015+0016 (β-helix depolymerase — we agree). His glycosida
 CDS_0017/0014) vs our α-rich reading: pending his foldseek output. UNDONE: get his foldseek tables.*
 *Log — 2026-07-16: glycosidase question RESOLVED from his AF3 templates (0716) — CDS_0012 confirmed
 GH5, CDS_0010 unsupported; the foldseek tables are no longer needed. His numbering adopted repo-wide.*
+*Log — 2026-07-30: in the 2026-07-29 PI conversation the PI **withdrew the CDS_0010 glycosidase call**
+("I dont know what CDS 10 is … assume unknown protein"). Body text above is left as the 0713/0716
+record; going forward **CDS_0010 = unknown protein** (being expressed for functional characterization).
+CDS_0012 = GH5 stands. See `documents/2026-07-29_pi_conversation/`.*
