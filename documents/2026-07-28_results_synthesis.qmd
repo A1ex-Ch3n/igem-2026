@@ -56,7 +56,7 @@ execute:
 4. **噬菌體基因體圖、標出 tail spike** → **已完成。** 附錄 B1/B2 —— CDS_0011 紅框。
 5. **Tail spike 3D + metagenome variable region** → 3D **已完成**（附錄 B3）。variable-region 那半**卡住**：MGnify contig 沒有宿主標註，找不出決定專一性的位點（variable ≠ specificity）。可搶救的是用教授 15,775 條序列 MSA 做 **per-residue conservation** profile —— 絕不能講成「決定結合的位點」。
 6. **酵素域 3D** → **已完成。** 附錄 B3。確證的 GH5 是 CDS_0012，**另一條蛋白**，不是 tail spike 的 domain。
-7. **O-PS typing + 比較三株** → **已完成**（§4）。三株在同一個 ihfB 側翼 slot 裡帶**三套非同源 O-antigen 卡匣** → 預測 Φ8 不會打 Strain 1/3（未測）。且**沒有任何 serotyping 工具適用**此分類群（PAst 只限 *P. aeruginosa*；Kaptive 無 Pseudomonas DB）—— 可發表的負面結果。
+7. **O-PS typing + 比較三株** → **已完成**（§4）。三株在同一個 ihfB 側翼 slot 裡帶**三套非同源 O-antigen 卡匣** → 預測 Φ8 不會打 Strain 1/3（教授已於 2026-07-04 對這幾株做過 host-range assay，結果等他的 notebook）。且**沒有任何 serotyping 工具適用**此分類群（PAst 只限 *P. aeruginosa*；Kaptive 無 Pseudomonas DB）—— 可發表的負面結果。
 
 **2026-07-29 對話（C1–C6）：** CDS_0010 現為*未知蛋白*（撤回 glycosidase，C1）；三個構築全 N 端、無 C 端（C2）；**9-2-1 Φ8 是新穎 ~62 kb、可能溫和的 podovirus** —— podovirus virion synteny 確認結構模組（C4，附錄 B7），但與培養 T7-like 共享 ~0 ortholog，「T7-like」只在組織層級成立；tail 是 **group-D-*like***，但缺 T4gp10 anchor（附錄 B8；C11–C13）。C6（host range 表）等教授。
 :::
@@ -221,8 +221,8 @@ Strain 1 與 Strain 2 之間 ANI 99.38–99.42%——同種、不同株，但基
 | E1 | **DNA 定量標準曲線 × 5 個批次**（Portelite / Qubit BDR）：0605、0608、0622、0629、0710 | ✅ | `code/output/*_quantification/` | 論文（方法）·wiki |
 | E2 | **OD600 噬菌體挑戰時序（0624）**：9-9-2 宿主 × 兩個 plaque pick（#2/#4），OD 0.4 時投菌，逐時 24 h，以偏離對照的 ΔOD 判定感染 | ✅ | `code/0624_od600_phage.ipynb` | 論文·簡報·wiki |
 | E3 | **OD600 噬菌體挑戰時序（0625）**：9-6-2 與 9-2-1 各 × p8，改為固定時間投菌（20:08），含 3/4 稀釋校正 | ✅ | `code/0625_od600_phage.ipynb` | 論文·簡報·wiki |
-| E4 | **宿主範圍只測過 Strain 2**（9-2-1、9-6-2）—— 8-5-2 / 10-10-2 / 8-10-2 **從未測試** | 🔴 | `data/assays/` | 決定下一步 |
-| E5 | **預測：Φ8 打不出 Strain 1 與 Strain 3 的 plaque**（源自 A9 + C2） | 🔴 **預測** | **§4.5** | 下一個實驗 |
+| E4 | **宿主範圍：目前只有 Strain 2（9-2-1、9-6-2）的資料在手。** 8-5-2 / 10-10-2 / 8-10-2 **已在教授 2026-07-04 的 assay 中被 challenge，但那批資料我們還沒拿到**（等他的 notebook） | 🟡 | `data/assays/`；教授 2026-07-04 host-range 表（未到） | notebook 到手後讀出 E5 |
+| E5 | **預測：Φ8 打不出 Strain 1 與 Strain 3 的 plaque**（源自 A9 + C2）—— 實測已做（2026-07-04），只是結果還沒讀出 | 🟡 **預測，待讀出** | **§4.5** | notebook 到手後確認或推翻 |
 
 ## F. 負面結果（可以寫，而且值得寫）
 
@@ -335,19 +335,19 @@ Bakta 會把兩個**完全無關**的醣基轉移酶都叫做「Glycosyltransfer
 
 那麼——如果這隻噬菌體的 depolymerase 讀的是 Strain 2 的那套糖，它就**不應該**能感染另外兩株。目前的證據狀態見**附錄 C1**。
 
-::: {.callout-important title="建議的下一個實驗"}
-**用 9-2-1 Φ8 對 8-5-2、10-10-2、8-10-2 做 spot assay。**
+::: {.callout-important title="關鍵讀出 —— 2026-07-04 已做，資料待到手"}
+教授**已於 2026-07-04 用 9-2-1 Φ8 對 8-5-2、10-10-2、8-10-2 做過 spot assay**；我們在等他的 notebook 把結果讀出來。兩種結果各代表什麼：
 
 - **打不出 plaque** → O-antigen 決定宿主範圍的機制得到確認，整條故事線接起來。
 - **打得出 plaque** → 更有意思：代表第二個 depolymerase（`CDS_0024`，C5）在起作用，噬菌體有兩種醣特異性。
 
-**兩種結果都能寫。** 這是這個階段投入產出比最高的一次實驗。
+**兩種結果都能寫**，也是我們現在最等的一個讀出。notebook 到手前，E5 仍是預測。
 :::
 
 ## 限制：哪些話現在不能說
 
 ::: {.callout-caution}
-1. **不能說「O-antigen 的差異解釋了我們觀察到的宿主範圍」。** 目前沒有任何交叉菌株的 plaque 資料——這是**預測**，不是解釋。
+1. **不能說「O-antigen 的差異解釋了我們觀察到的宿主範圍」。** 交叉菌株的 assay 已於 2026-07-04 做過，但資料還沒到我們手上——在拿到之前，這仍是**預測**，不是解釋。
 2. **不能指定血清型名稱。** 所有結論建立在 Bakta 的 product 字串上，那是**基因註解**，不是實際測定的糖結構；這個物種也沒有參考血清型方案。
 3. **Strain 1 看起來「缺少 flippase 和 polymerase」，那八成是註解假象。** 它的 `Polysaccharide biosynthesis protein` 和 `EpsG family protein` 通常就是 Wzx 和 Wzy 家族，但 Bakta 在這裡沒給 Pfam/InterPro domain（只有 UniRef50），所以附錄 A3 把它們留成灰色「未指定」，而不是憑猜上色。要確認得跑 InterProScan。
 4. **糖的實際結構完全沒有測。** 基因組成 ≠ 糖結構。要講結構得做 LPS 萃取 + 質譜。
@@ -359,7 +359,7 @@ Bakta 會把兩個**完全無關**的醣基轉移酶都叫做「Glycosyltransfer
 |:----|:---------------------|:-------|:--------------|
 | 1 | 寄信問教授 **CDS11 標籤是否刻意**（C9） | Alex | Twist 尚未確認處理，這是窗口 |
 | 2 | **GenBank / SRA 上傳**（G2） | Alex | 擋住 MRA 投稿 |
-| 3 | **Spot assay**：Φ8 × 8-5-2 / 10-10-2 / 8-10-2（E5） | 濕實驗 | 全清單 CP 值最高，兩種結果都能寫 |
+| 3 | **取回教授 2026-07-04 的 host-range notebook**（Φ8 × 8-5-2 / 10-10-2 / 8-10-2，E5） | Alex + 教授 | assay 已做——這是讀出 E5、我們最等的結果 |
 | 4 | 保守度剖面上色（第 5 題可救的一半） | 分析 | 15,775 條 MSA 現成 |
 | 5 | Graphical abstract（第 2 題） | 待定 | 現在七題只剩它和第 5 題，可以動了 |
 | 6 | 9-6-2 Φ8 送定序（B11） | 濕實驗 | 第二隻噬菌體 |
@@ -501,16 +501,16 @@ Bakta 會把兩個**完全無關**的醣基轉移酶都叫做「Glycosyltransfer
 
 ### C. 宿主範圍
 
-![**附錄 C1．**目前的宿主範圍證據。綠色＝實際測過（`data/assays/` 只有 Strain 2 的 OD600）；灰色＝**預測，不是結果**。](../code/output/0727_o_antigen_comparison/fig3_hostrange_prediction.png)
+![**附錄 C1．**目前**手上**的宿主範圍資料。綠色＝我們持有的資料（`data/assays/` OD600，只有 Strain 2）；灰色＝**還沒到手**——8-5-2 / 10-10-2 / 8-10-2 已在教授 2026-07-04 的 assay 中被 challenge，但資料等他的 notebook，所以 E5 的讀出還沒畫進來。⚠️ 灰色是*等資料*，不是*沒測*；notebook 到手後重畫此圖。](../code/output/0727_o_antigen_comparison/fig3_hostrange_prediction.png)
 
 ::: {.callout-note title="C1 怎麼畫的"}
 **程式** `code/0729_prof_figures/../0727_o_antigen_comparison/plot_summary_figs.py`　**工具** matplotlib
 
 **做了哪些判斷：**
 
-1. **刻意做得很陽春。** 這張圖唯一的工作是**防止預測被讀成資料**。灰格子上直接寫「未測試／預測不裂解」，標題也寫「灰色格子是『預測』，不是結果」——不用漂亮的視覺化去掩蓋只有一格有資料的事實。
+1. **刻意做得很陽春。** 這張圖唯一的工作是**防止預測被讀成資料**。灰色代表「我們手上還沒有資料」——8-5-2 / 10-10-2 / 8-10-2 已由教授在 2026-07-04 測過，但那本 notebook 還沒到我們手上，所以讀出還沒畫；這裡只有 Strain 2 有資料。
 2. **只有一格是綠的，因為只有一格有資料。** `data/assays/` 裡只有 9-2-1_p8 和 9-6-2_p8 的 OD600，兩者都屬 Strain 2。不做任何插補或推論上色。
-3. **不用色階。** 色階會暗示「可能性高低」，但我們沒有任何量化的可能性——只有「測過」和「沒測過」兩種狀態。
+3. **不用色階。** 色階會暗示「可能性高低」，但我們沒有任何量化的可能性——只有「資料在手」和「還沒到手」兩種狀態。
 :::
 
 ![**附錄 C2．**我們的受體與 PharBP 宿主基因體的共有熱圖（surrogate host 分析）。](../code/output/0703_phage_host_matrix/shared_receptors_heatmap.png)
@@ -612,6 +612,6 @@ python code/0730_synteny_group_d/analyze_and_plot.py "$WORK"
 
 *本文由 `2026-07-28_o_antigen_locus_comparison.qmd`（O-antigen 深入分析）與 `2026-07-28_results_synthesis.qmd`（結果總表）合併而成，兩份原始檔已移除；O-antigen 內容成為 §4。*
 
-*Log — 2026-07-30：併入 2026-07-29 與教授對話的後續。CDS_0010 →「未知蛋白」（C1）；三個構築記錄對齊、下游不做 C 端標籤偵測（C2）；新的 synteny/similarity 分析（`code/0730_synteny_group_d/`）新增結果 **C11–C13** 與**附錄 B7** —— 9-2-1 Φ8 是新穎 ~62 kb、可能溫和的 podovirus，「T7-like」只在 virion 模組 synteny 層級成立，tail group-D-like 但缺 T4gp10 anchor。文件最上方加了一段「重點速覽」直接回答七題；嵌入 Latka 分組 cartoon（**B8**）、ESMFold RBP × receptor 矩陣（**E3**）、一組代表性 DNA 標準曲線（**F1/F2**，0605–0710 重複定量的其一）。`.qmd` 為正本；`.html`/`.pdf` 仍需重 render（pandoc 3.8 或 quarto）。*
+*Log — 2026-07-30：併入 2026-07-29 與教授對話的後續。CDS_0010 →「未知蛋白」（C1）；三個構築記錄對齊、下游不做 C 端標籤偵測（C2）；新的 synteny/similarity 分析（`code/0730_synteny_group_d/`）新增結果 **C11–C13** 與**附錄 B7** —— 9-2-1 Φ8 是新穎 ~62 kb、可能溫和的 podovirus，「T7-like」只在 virion 模組 synteny 層級成立，tail group-D-like 但缺 T4gp10 anchor。文件最上方加了一段「重點速覽」直接回答七題；嵌入 Latka 分組 cartoon（**B8**）、ESMFold RBP × receptor 矩陣（**E3**）、一組代表性 DNA 標準曲線（**F1/F2**，0605–0710 重複定量的其一）。另修正宿主範圍用詞（E4/E5、§4.5、附錄 C1）：8-5-2 / 10-10-2 / 8-10-2 已在教授 2026-07-04 的 assay 中被 challenge——是「等 notebook」，不是「從未測試」。`.qmd` 為正本；`.html`/`.pdf` 仍需重 render（pandoc 3.8 或 quarto）。*
 
 *註：本機未安裝 Quarto，隨附 `.html` 由 pandoc 3.8 + 模擬 `theme: cosmo` 的自訂 CSS 產生（淺色、圖片以 data URI 內嵌）。`.qmd` 為正本；日後 `quarto render` 會得到標準 cosmo 輸出。*

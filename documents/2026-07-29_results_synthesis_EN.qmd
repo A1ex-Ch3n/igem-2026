@@ -59,7 +59,7 @@ Answers up front; detail in §1 and the appendix.
 4. **Phage genome map, tail spike highlighted** → **done.** App B1/B2 — CDS_0011 outlined.
 5. **Tail spike 3D + metagenomic variable regions** → 3D **done** (App B3). Variable-region half **blocked**: MGnify contigs carry no host labels, so specificity-determining positions can't be found (variable ≠ specificity). Salvageable = a per-residue *conservation* profile from the PI's 15,775-seq MSA — never "what determines binding".
 6. **3D of enzymatic domains** → **done.** App B3. The confirmed GH5 is CDS_0012, a **separate protein**, not a domain of the tail spike.
-7. **O-PS typing + compare 3 isolates** → **done** (§4). Three strains carry **three non-homologous O-antigen cassettes in one ihfB-flanked slot** → predicts Φ8 won't plaque Strain 1/3 (untested). And **no serotyping tool applies** to this taxon (PAst is *P. aeruginosa*-only; Kaptive has no Pseudomonas DB) — a publishable negative.
+7. **O-PS typing + compare 3 isolates** → **done** (§4). Three strains carry **three non-homologous O-antigen cassettes in one ihfB-flanked slot** → predicts Φ8 won't plaque Strain 1/3 (the PI's 2026-07-04 host-range assay covering these strains was run; the readout is pending his notebook). And **no serotyping tool applies** to this taxon (PAst is *P. aeruginosa*-only; Kaptive has no Pseudomonas DB) — a publishable negative.
 
 **2026-07-29 conversation (C1–C6):** CDS_0010 is now *unknown protein* (glycosidase withdrawn, C1); constructs are all N-terminal, no C-tag (C2); **9-2-1 Φ8 is a novel ~62 kb, likely-temperate podovirus** — podovirus virion synteny confirms the structural module (C4, App B7), but it shares ~0 orthologs with cultured T7-likes, so "T7-like" is organizational only; the tail is **group-D-*like*** but lacks the T4gp10 anchor (App B8; C11–C13). C6 (host-range table) is pending the PI.
 :::
@@ -261,8 +261,8 @@ the tail spike splits into two ORFs.
 | E1 | **DNA quantification standard curves, 5 batches** (Portelite / Qubit BDR): 0605, 0608, 0622, 0629, 0710 | ✅ | `code/output/*_quantification/` | paper (methods)·wiki |
 | E2 | **OD600 phage-challenge time course (0624)**: host 9-9-2 × two plaque picks, phage added at OD 0.4, hourly to 24 h, infection scored by divergence of ΔOD from the control | ✅ | `code/0624_od600_phage.ipynb` | paper·talk·wiki |
 | E3 | **OD600 phage-challenge time course (0625)**: 9-6-2 and 9-2-1 each × p8, phage added at a fixed time (20:08), with a 3/4 dilution correction | ✅ | `code/0625_od600_phage.ipynb` | paper·talk·wiki |
-| E4 | **Host range has only ever been tested on Strain 2** (9-2-1, 9-6-2) — 8-5-2, 10-10-2 and 8-10-2 have **never been challenged** | 🔴 | `data/assays/` | determines the next step |
-| E5 | **Prediction: Φ8 should not plaque on Strain 1 or Strain 3** (from A9 + C2) | 🔴 **prediction** | **§4.5** | the next experiment |
+| E4 | **Host range: only Strain 2 (9-2-1, 9-6-2) data is in hand.** 8-5-2, 10-10-2 and 8-10-2 **were challenged in the PI's 2026-07-04 assay, but we do not yet hold that data** (awaiting his notebook) | 🟡 | `data/assays/`; PI 2026-07-04 host-range table (pending) | reads out E5 once the notebook arrives |
+| E5 | **Prediction: Φ8 should not plaque on Strain 1 or Strain 3** (from A9 + C2) — the empirical test exists (2026-07-04); its readout is pending | 🟡 **prediction, readout pending** | **§4.5** | confirmed or refuted once the notebook arrives |
 
 ## F. Negative results (publishable, and worth publishing)
 
@@ -417,24 +417,26 @@ cassettes are non-homologous (A9).
 If this phage's depolymerase reads Strain 2's sugar, it should **not** infect the
 other two. Current evidence is shown in **Appendix C1**.
 
-::: {.callout-important title="The experiment we recommend next"}
-**Spot-assay 9-2-1 Φ8 against 8-5-2, 10-10-2 and 8-10-2.**
+::: {.callout-important title="The key readout — already assayed 2026-07-04, data pending"}
+The PI **already spot-assayed 9-2-1 Φ8 against 8-5-2, 10-10-2 and 8-10-2** on
+2026-07-04; we are waiting on his notebook to read out the result. What each
+outcome will mean:
 
 - **No plaques** → the O-antigen mechanism of host range is confirmed and the
   storyline closes.
 - **Plaques** → more interesting still: the second depolymerase (`CDS_0024`, C5)
   is acting, and the phage has two sugar specificities.
 
-**Either outcome is publishable.** This is the highest-value experiment available
-at this stage.
+**Either outcome is publishable**, and it is the highest-value readout we are
+waiting on. Until the notebook arrives, E5 stays a prediction.
 :::
 
 ## Limits — what cannot be said yet
 
 ::: {.callout-caution}
 1. **Do not say the O-antigen difference explains our observed host range.**
-   There is no cross-strain plaque data at all. This is a **prediction**, not an
-   explanation.
+   The cross-strain assay was run on 2026-07-04, but the data is not yet in our
+   hands — until we have it, this remains a **prediction**, not an explanation.
 2. **No serotype can be named.** Every conclusion rests on Bakta product
    strings — gene annotation, not determined sugar structure — and this species
    has no reference serotype scheme.
@@ -454,7 +456,7 @@ at this stage.
 |:----|:---------------------|:-------|:--------------|
 | 1 | Ask the PI whether the **CDS11 tagging is deliberate** (C9) | Alex | Twist has not confirmed processing yet — this is the window |
 | 2 | **GenBank / SRA deposition** (G2) | Alex | blocks the MRA submission |
-| 3 | **Spot assay**: Φ8 × 8-5-2 / 10-10-2 / 8-10-2 (E5) | wet lab | highest value on the list; either outcome is publishable |
+| 3 | **Retrieve the PI's 2026-07-04 host-range notebook** (Φ8 × 8-5-2 / 10-10-2 / 8-10-2, E5) | Alex + PI | the assay is already run — this reads out E5, the highest-value result we are waiting on |
 | 4 | Conservation profile painted on the structure (the salvageable half of item 5) | analysis | the 15,775-sequence MSA already exists |
 | 5 | Graphical abstract (item 2) | TBD | only items 2 and 5 remain open, so this can start |
 | 6 | Sequence 9-6-2 Φ8 (B11) | wet lab | the second phage |
@@ -693,7 +695,7 @@ tiling.
 
 ### C. Host range
 
-![**Appendix C1.** The current state of host-range evidence. Green = actually tested (`data/assays/` contains OD600 for Strain 2 only); grey = **prediction, not result**.](../code/output/0727_o_antigen_comparison/fig3_hostrange_prediction.png)
+![**Appendix C1.** Host-range data **in hand**. Green = data we hold (`data/assays/` OD600, Strain 2 only); grey = **not yet in hand** — 8-5-2 / 10-10-2 / 8-10-2 were challenged in the PI's 2026-07-04 assay, but the data is pending his notebook, so the readout of E5 is not shown here yet. ⚠️ Grey is *awaiting data*, not *untested*; the figure is regenerated once the notebook arrives.](../code/output/0727_o_antigen_comparison/fig3_hostrange_prediction.png)
 
 ::: {.callout-note title="How C1 was made"}
 **Code** `code/0727_o_antigen_comparison/plot_summary_figs.py`　**Tool** matplotlib
@@ -701,15 +703,15 @@ tiling.
 **Judgements made:**
 
 1. **It is deliberately plain.** The only job of this figure is to **stop a
-   prediction being read as data**. The grey cells say "not tested / predicted
-   not to lyse" in the cell itself, and the title repeats that grey means
-   prediction — no attractive visualisation is used to paper over the fact that
-   only one cell has data behind it.
+   prediction being read as data**. Grey means "no data in our hands yet" — the
+   8-5-2 / 10-10-2 / 8-10-2 cells were assayed by the PI on 2026-07-04, but that
+   notebook has not reached us, so their readout is not shown; only Strain 2 has
+   data behind it here.
 2. **Only one cell is green because only one cell has data.** `data/assays/`
    contains OD600 for 9-2-1_p8 and 9-6-2_p8, both Strain 2. Nothing is
    interpolated or inferred.
 3. **No colour gradient.** A gradient would imply graded likelihood, and we have
-   no quantified likelihood — only "tested" and "not tested".
+   no quantified likelihood — only "data in hand" and "not yet in hand".
 :::
 
 ![**Appendix C2.** Receptor sharing between our isolates and the PharBP host genomes (the surrogate-host analysis).](../code/output/0703_phage_host_matrix/shared_receptors_heatmap.png)
@@ -813,7 +815,24 @@ python code/0730_synteny_group_d/analyze_and_plot.py "$WORK"
 ```
 
 ---
-*Log — 2026-07-29: created as the English counterpart of
+*Log — 2026-07-28: built as the results synthesis in response to the PI's
+2026-07-27 seven-item email; inventoried 11 analysis dirs / 20 output dirs / 47
+figures into 53 results across 7 groups with evidence grades. Seven-item status
+then: item 7 done (§4), item 1 = this document, items 3/4/6 material-ready,
+item 2 to converge, item 5 blocked. (Recorded in the zh original; carried here so
+both documents share one history.)*
+
+*Log — 2026-07-29 (a): added a "how it was made" callout under each home-made
+appendix figure (tool, version, decisions, pitfalls) for direct reuse in a
+Methods section; added the tool-version table; noted the method callouts cover
+only the 0727/0729 home-made figures, and that no notes are written retrospectively
+for the earlier ones.*
+
+*Log — 2026-07-29 (b): completed items 3, 4 and 6 (`code/0729_prof_figures/`),
+those three 🟡→🟢; appendices A5/B1/B2/B3 added; the old mirrored 0708 phage
+genome map (deprecated numbering) marked obsolete and replaced by B1.*
+
+*Log — 2026-07-29 (c): created as the English counterpart of
 `2026-07-28_results_synthesis.qmd`, written for the PI, the manuscripts and the
 iGEM wiki rather than translated line by line. Same structure, same numbers, same
 figures; internal environment notes were dropped and the tool table kept in a
@@ -828,5 +847,13 @@ detection downstream (C2); new synteny/similarity analysis
 synteny only, tail group-D-like without the T4gp10 anchor. Added a terse
 "bottom line" answer block at the top; embedded the Latka group cartoon (**B8**),
 the ESMFold RBP × receptor matrix (**E3**) and a representative DNA standard curve
-(**F1/F2**, one of the repeated 0605–0710 quantification runs). The `.qmd` is the
-source of truth; the `.html`/`.pdf` still need a re-render (pandoc 3.8 or quarto).*
+(**F1/F2**, one of the repeated 0605–0710 quantification runs). Also corrected the
+host-range wording (E4/E5, §4.5, App C1): the 8-5-2 / 10-10-2 / 8-10-2 strains
+were challenged in the PI's 2026-07-04 assay — "awaiting his notebook", not
+"never tested". The `.qmd` is the source of truth; the `.html`/`.pdf` still need
+a re-render (pandoc 3.8 or quarto).*
+
+*Note: no Quarto locally; the bundled `.html` was produced with pandoc 3.8 plus
+custom CSS emulating `theme: cosmo` (light, images inlined as data URIs). The
+`.qmd` is the source of truth; a later `quarto render` gives standard cosmo
+output.*
