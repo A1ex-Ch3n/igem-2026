@@ -102,6 +102,25 @@ agnostic platform.
 Until 1–3 land, the central loop stays schematic/dashed. The figure can be drafted
 now with placeholders and finalised as each input arrives.
 
+## 7. Tooling — how it gets built (filtered by "Claude can iterate")
+
+Selection filter (Alex's): the tool must let Claude help **execute *and* iterate**,
+not just hand back a one-shot image.
+
+| Tool | Claude can drive it? | Medium fit | Verdict |
+|---|---|---|---|
+| **Claude-authored SVG** (drawsvg to write, cairosvg to rasterise so Claude can *see* and correct its own output) | ✅ full loop — write → render → view → edit | vector, reflowable, wiki + manuscript ready | **primary** |
+| **HTML + inline SVG as a claude.ai Artifact** | ✅ authors + republishes; you watch it update live at one URL | same SVG, live shareable preview | **complement** (your live view) |
+| **PaperBanana** (`paperbanana.me` — the one Alex used; text→figure, five-agent, **exports editable SVG**) | ⚠️ no — web GUI, Claude can't drive it | fast, pretty first pass | **optional seeder**: generate a draft there → export SVG → Claude refines it |
+| **matplotlib** (already installed) | ✅ but wrong medium | data plots, not designed illustration | fallback only |
+| **BioRender / Inkscape / Canva** | ❌ GUI, Claude can't drive (fails the filter) | best icon libraries if *you* build it by hand | not for a Claude-driven loop |
+
+**Recommendation:** primary = **Claude-authored SVG** (`drawsvg` + `cairosvg` for
+self-check — one `python -m pip install drawsvg cairosvg`, the only setup),
+complemented by an **HTML/SVG Artifact** so Alex gets a live preview. PaperBanana
+is a useful *seeder* only because it exports editable SVG that Claude can then take
+over — Claude cannot iterate inside it.
+
 ---
 *Log — 2026-07-30: brainstormed with Alex. Locked thesis (engineering host-range
 platform), Layout A (horizontal DBTL), the GH5-Learn → in-trans-Test →
