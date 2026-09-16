@@ -69,6 +69,14 @@ functional characterization. It is now an **unknown protein**. Expressing the
 construct is still worthwhile — it may let us characterize the protein — but no
 glycosidase function should be assumed downstream.
 
+## Expressed protein masses
+
+Computed from sequence in [`../../code/0910_construct_protein_mw.ipynb`](../../code/0910_construct_protein_mw.ipynb):
+**CDS10 91.63 kDa** (834 aa), **CDS11 72.02 kDa** (688 aa), **CDS12 41.84 kDa** (382 aa),
+each including the 21 aa vector leader. The three ancestral CDS_0012 variants of the
+second set ([`../2026-09-10_twist_construct_order_second_set/`](../2026-09-10_twist_construct_order_second_set/))
+are all within 0.43 kDa of CDS12_WT and **cannot be separated from it by SDS-PAGE**.
+
 ---
 *Log — 2026-07-29: filed. Moved here from a loose `new mails/` directory at the
 repo root and renamed to the `YYYY-MM-DD_slug` convention. Construct contents
@@ -79,3 +87,7 @@ C1 — the PI withdrew the CDS_0010 glycosidase call; "Open question for the PI"
 rewritten as "CDS_0010 — resolved". C2 — the PI confirmed all-N-terminal / no
 C-terminal tag; `.gb` filenames kept as-sent for provenance, accurate-name aliases
 added, and the no-C-terminal-tag-detection note above reaffirmed.*
+*Log — 2026-09-10: added the expressed-mass section; an independent re-translation in
+`code/0910_construct_protein_mw.ipynb` reproduced the residue ranges and the N-terminal-tag
+finding recorded above. A second Twist order was filed at
+`../2026-09-10_twist_construct_order_second_set/`.*
