@@ -1,0 +1,652 @@
+{
+ "genome": "9-2-1 Phi8",
+ "length": 62416,
+ "tailZoom": [
+  11500,
+  21200
+ ],
+ "star": "CDS_0011",
+ "source": "Pharokka annotation of the canonical Version_1 assembly",
+ "genes": [
+  {
+   "cds": "CDS_0001",
+   "s": 2,
+   "e": 7561,
+   "strand": -1,
+   "category": "moron, auxiliary metabolic gene and host takeover",
+   "label": null
+  },
+  {
+   "cds": "CDS_0002",
+   "s": 7561,
+   "e": 7674,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0003",
+   "s": 7709,
+   "e": 8986,
+   "strand": -1,
+   "category": "head and packaging",
+   "label": null
+  },
+  {
+   "cds": "CDS_0004",
+   "s": 8999,
+   "e": 9364,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0005",
+   "s": 9361,
+   "e": 10500,
+   "strand": -1,
+   "category": "head and packaging",
+   "label": null
+  },
+  {
+   "cds": "CDS_0006",
+   "s": 10490,
+   "e": 10924,
+   "strand": -1,
+   "category": "moron, auxiliary metabolic gene and host takeover",
+   "label": null
+  },
+  {
+   "cds": "CDS_0007",
+   "s": 10985,
+   "e": 11623,
+   "strand": -1,
+   "category": "head and packaging",
+   "label": null
+  },
+  {
+   "cds": "CDS_0008",
+   "s": 11623,
+   "e": 13356,
+   "strand": -1,
+   "category": "head and packaging",
+   "label": null
+  },
+  {
+   "cds": "CDS_0009",
+   "s": 13353,
+   "e": 13709,
+   "strand": -1,
+   "category": "tail",
+   "label": "tail fiber"
+  },
+  {
+   "cds": "CDS_0010",
+   "s": 13709,
+   "e": 16462,
+   "strand": -1,
+   "category": "tail",
+   "label": "tail protein"
+  },
+  {
+   "cds": "CDS_0011",
+   "s": 16547,
+   "e": 19372,
+   "strand": -1,
+   "category": "tail",
+   "label": "TAIL SPIKE"
+  },
+  {
+   "cds": "CDS_0012",
+   "s": 19376,
+   "e": 20809,
+   "strand": -1,
+   "category": "unknown function",
+   "label": "glycoside hydrolase"
+  },
+  {
+   "cds": "CDS_0013",
+   "s": 20894,
+   "e": 21499,
+   "strand": -1,
+   "category": "head and packaging",
+   "label": null
+  },
+  {
+   "cds": "CDS_0014",
+   "s": 21496,
+   "e": 22194,
+   "strand": -1,
+   "category": "head and packaging",
+   "label": null
+  },
+  {
+   "cds": "CDS_0015",
+   "s": 22194,
+   "e": 22730,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0016",
+   "s": 22743,
+   "e": 23219,
+   "strand": -1,
+   "category": "head and packaging",
+   "label": null
+  },
+  {
+   "cds": "CDS_0017",
+   "s": 23235,
+   "e": 24341,
+   "strand": -1,
+   "category": "head and packaging",
+   "label": "major head"
+  },
+  {
+   "cds": "CDS_0018",
+   "s": 24440,
+   "e": 24562,
+   "strand": -1,
+   "category": "transcription regulation",
+   "label": null
+  },
+  {
+   "cds": "CDS_0019",
+   "s": 24635,
+   "e": 25636,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0020",
+   "s": 25647,
+   "e": 27875,
+   "strand": -1,
+   "category": "head and packaging",
+   "label": "portal"
+  },
+  {
+   "cds": "CDS_0021",
+   "s": 27934,
+   "e": 28398,
+   "strand": -1,
+   "category": "other",
+   "label": null
+  },
+  {
+   "cds": "CDS_0022",
+   "s": 28395,
+   "e": 28712,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0023",
+   "s": 28709,
+   "e": 29071,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0024",
+   "s": 29139,
+   "e": 31091,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0025",
+   "s": 31234,
+   "e": 32820,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0026",
+   "s": 32820,
+   "e": 33206,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0027",
+   "s": 33203,
+   "e": 33940,
+   "strand": -1,
+   "category": "head and packaging",
+   "label": null
+  },
+  {
+   "cds": "CDS_0028",
+   "s": 34090,
+   "e": 34323,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0029",
+   "s": 34400,
+   "e": 34534,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0030",
+   "s": 34531,
+   "e": 34662,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0031",
+   "s": 34659,
+   "e": 35015,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0032",
+   "s": 35012,
+   "e": 35341,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0033",
+   "s": 35338,
+   "e": 35901,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0034",
+   "s": 35898,
+   "e": 36167,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0035",
+   "s": 36288,
+   "e": 36920,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0036",
+   "s": 36980,
+   "e": 37126,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0037",
+   "s": 37126,
+   "e": 37323,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0038",
+   "s": 37653,
+   "e": 37790,
+   "strand": 1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0039",
+   "s": 37790,
+   "e": 38275,
+   "strand": 1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0040",
+   "s": 38268,
+   "e": 38426,
+   "strand": 1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0041",
+   "s": 38445,
+   "e": 38942,
+   "strand": 1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0042",
+   "s": 38843,
+   "e": 39724,
+   "strand": 1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0043",
+   "s": 39721,
+   "e": 40059,
+   "strand": 1,
+   "category": "DNA, RNA and nucleotide metabolism",
+   "label": null
+  },
+  {
+   "cds": "CDS_0044",
+   "s": 40056,
+   "e": 40262,
+   "strand": 1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0045",
+   "s": 40246,
+   "e": 40428,
+   "strand": 1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0046",
+   "s": 40441,
+   "e": 40905,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0047",
+   "s": 40967,
+   "e": 41971,
+   "strand": -1,
+   "category": "DNA, RNA and nucleotide metabolism",
+   "label": null
+  },
+  {
+   "cds": "CDS_0048",
+   "s": 41943,
+   "e": 42641,
+   "strand": -1,
+   "category": "DNA, RNA and nucleotide metabolism",
+   "label": null
+  },
+  {
+   "cds": "CDS_0049",
+   "s": 42725,
+   "e": 42961,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0050",
+   "s": 42958,
+   "e": 43206,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0051",
+   "s": 43305,
+   "e": 44051,
+   "strand": -1,
+   "category": "moron, auxiliary metabolic gene and host takeover",
+   "label": null
+  },
+  {
+   "cds": "CDS_0052",
+   "s": 44048,
+   "e": 44509,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0053",
+   "s": 44506,
+   "e": 44865,
+   "strand": -1,
+   "category": "DNA, RNA and nucleotide metabolism",
+   "label": null
+  },
+  {
+   "cds": "CDS_0054",
+   "s": 44862,
+   "e": 45191,
+   "strand": -1,
+   "category": "DNA, RNA and nucleotide metabolism",
+   "label": null
+  },
+  {
+   "cds": "CDS_0055",
+   "s": 45329,
+   "e": 45430,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0056",
+   "s": 45441,
+   "e": 46574,
+   "strand": -1,
+   "category": "DNA, RNA and nucleotide metabolism",
+   "label": null
+  },
+  {
+   "cds": "CDS_0057",
+   "s": 46604,
+   "e": 47041,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0058",
+   "s": 47031,
+   "e": 47378,
+   "strand": -1,
+   "category": "transcription regulation",
+   "label": null
+  },
+  {
+   "cds": "CDS_0059",
+   "s": 47411,
+   "e": 48088,
+   "strand": 1,
+   "category": "transcription regulation",
+   "label": null
+  },
+  {
+   "cds": "CDS_0060",
+   "s": 48225,
+   "e": 48935,
+   "strand": 1,
+   "category": "DNA, RNA and nucleotide metabolism",
+   "label": null
+  },
+  {
+   "cds": "CDS_0061",
+   "s": 48932,
+   "e": 50632,
+   "strand": 1,
+   "category": "DNA, RNA and nucleotide metabolism",
+   "label": null
+  },
+  {
+   "cds": "CDS_0062",
+   "s": 50632,
+   "e": 50847,
+   "strand": 1,
+   "category": "integration and excision",
+   "label": null
+  },
+  {
+   "cds": "CDS_0063",
+   "s": 50859,
+   "e": 51560,
+   "strand": 1,
+   "category": "DNA, RNA and nucleotide metabolism",
+   "label": null
+  },
+  {
+   "cds": "CDS_0064",
+   "s": 51582,
+   "e": 51683,
+   "strand": 1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0065",
+   "s": 51699,
+   "e": 52157,
+   "strand": 1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0066",
+   "s": 52210,
+   "e": 52449,
+   "strand": 1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0067",
+   "s": 52494,
+   "e": 52937,
+   "strand": 1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0068",
+   "s": 52958,
+   "e": 53131,
+   "strand": 1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0069",
+   "s": 53186,
+   "e": 53488,
+   "strand": 1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0070",
+   "s": 53620,
+   "e": 53880,
+   "strand": 1,
+   "category": "integration and excision",
+   "label": null
+  },
+  {
+   "cds": "CDS_0071",
+   "s": 53885,
+   "e": 54013,
+   "strand": 1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0072",
+   "s": 54069,
+   "e": 54167,
+   "strand": 1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0073",
+   "s": 54191,
+   "e": 55381,
+   "strand": 1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0074",
+   "s": 55382,
+   "e": 55546,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0075",
+   "s": 55491,
+   "e": 55862,
+   "strand": -1,
+   "category": "lysis",
+   "label": null
+  },
+  {
+   "cds": "CDS_0076",
+   "s": 55859,
+   "e": 56179,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0077",
+   "s": 56160,
+   "e": 56522,
+   "strand": -1,
+   "category": "other",
+   "label": null
+  },
+  {
+   "cds": "CDS_0078",
+   "s": 56522,
+   "e": 57115,
+   "strand": -1,
+   "category": "head and packaging",
+   "label": "endolysin"
+  },
+  {
+   "cds": "CDS_0079",
+   "s": 57176,
+   "e": 57322,
+   "strand": -1,
+   "category": "unknown function",
+   "label": null
+  },
+  {
+   "cds": "CDS_0080",
+   "s": 57319,
+   "e": 62415,
+   "strand": -1,
+   "category": "moron, auxiliary metabolic gene and host takeover",
+   "label": null
+  }
+ ]
+}

@@ -75,3 +75,8 @@ code/0708_phage_assembly/*.out
 # His 3 zips (51 MB) + their 460 MB of unpacked MSAs/PAE matrices stay on disk, like the raw
 # reads above; git keeps only the compact derived evidence in code/output/0716_*.
 data/phage_genome/9-2-1/folds_espinoza/
+
+# ===== 0811 promo video: node deps and renders (regenerate with npm i / npm run render) =====
+code/0811_promo_video/node_modules/
+code/0811_promo_video/out/
+code/0811_promo_video/public/audio/
