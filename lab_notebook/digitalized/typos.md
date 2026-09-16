@@ -57,6 +57,74 @@ Handwritten errors and unclear items identified during digitization. Tick off ea
 - [x] **p.19** — Right-margin OD data lives in `data/assays/0529_OD.xlsx` and has been transcribed into the 2026-05-29 entry.
 - [x] **p.10** — Six enrichment samples are **#2, #5, #6, #8, #9, #10** (of the 10 total sites collected on 2026-05-19).
 
+### Carried over from elsewhere (added 2026-08-29, updated after digitizing p.44–p.81)
+
+- [x] **Sequencing submission concentration** → **corroborated by p.53 (2026-06-22)**, which reads
+  *"20 µL for sequencing (~50 ng/µL)"*. Note the provenance: p.53 documents the **6-22** batch, so it
+  shows 50 ng/µL is the team's submission practice; for the **6-08** batch itself the correction still
+  rests on **Alex's 2026-08-08 statement + the MRA methods**, against the 6-08 entry's "NOT diluted". Still `[ ]` open:
+  **`data/dna_extraction_inventory.md`** (Quantification appendix) still carries the superseded
+  submitted-concentration figures 139.29 / 194.53 / 140.44 — corrected 2026-08-29, verify.
+- [x] **`8-5-2` / `8-10-2` had no submission record** → **RESOLVED by p.53**: chosen on 2026-06-22
+  from the 18-sample Qubit run, diluted 1:1 with water (70 µL + 70 µL) to ~50 ng/µL, 20 µL submitted;
+  assemblies returned 6/26–6/27.
+- [ ] **Phage `9-2-1 Φ8` submission date** — still unrecorded on any page (extraction is p.64–66,
+  6/29; results back 2026-07-08).
+- [ ] **Entry authors for 2026-06-09 (p.37) and 2026-06-11 (p.42)** — still `[TBD]`; add the same
+  question for **p.55–p.59 (6/24)** and **p.60–p.61 (6/25)**, which carry no author line either.
+
+### 2026-06-15 → 2026-07-16 (p.44–p.81) — open
+
+Full review agenda: [`documents/2026-08-29_notebook_open_questions.md`](../../documents/2026-08-29_notebook_open_questions.md).
+
+**Physical typos to fix**
+- [ ] **p.62** — header written **`2025`-06-26**; the year should be **2026**.
+- [ ] **p.69** — host list for the first host-range test has **`8-3-2` written twice**, `8-7-1` struck
+  through and `9-9-2` added in the margin; the 8 hosts actually plated are unclear.
+- [ ] **p.76** — the EOP "NOs" list has **`8-5-1` twice** and three struck-through entries.
+
+**Resolved 2026-08-29 (Alex)**
+- [x] **`8-5-2` host range (p.71 vs p.72)** — not a conflict. The plates were **not clearly readable**,
+  so the ambiguous strains were carried forward for **repeat testing by EOP** instead of being scored;
+  that is why `8-5-2` sits in the 13-strain EOP panel from 7/6 onward. Host-range calls for those
+  strains come from the EOP series (7/8 → 7/15), not from p.71/p.72.
+- [x] **"Yes, X webbed" (p.71)** — `X` is the shorthand for ***not* webbed**.
+- [x] **Ditto marks (p.71)** — a `〃` **carries the cell above it**.
+- [x] **`8-10-2` dilution arithmetic (p.53)** — a **bench rough estimate**, not an error; recorded as
+  written with a callout in the 6/22 entry and in `data/dna_extraction_inventory.md`.
+
+**Values / labels to confirm**
+- [ ] **p.53** — Std 100 reads like **10434.66**; `code/0622_quantification.ipynb` has **16434.66**
+  (the value consistent with the curve). *(The loose figures **245.5 / 280** are resolved: the `8-5-2`
+  dilution — 245.51 ng/µL, 70 µL + 280 µL water = 5× → 49.1.)*
+- [ ] **p.65** — round-2 phage reading **3116.13** (page) vs **3116.15** (notebook).
+- [ ] **p.45 / p.37** — centrifuge **"5.0 ×g"**: the same notation on both pages, so it is the team's
+  shorthand for the machine setting rather than a misread. Confirm the real units.
+- [ ] **p.44** — header day-digit (`2026.6.15`, could read 6.16).
+- [ ] **p.56** — the four `9-9-2` overnight readings (0.837 / 0.546 / 0.397 / 0.740).
+- [ ] **p.61** — header ratio annotation "bac 3 : Φ 1".
+- [ ] **p.67** — the **24 streaked strains** are not listed on the page.
+- [ ] **p.69** — the dilution/volume row (8 dilutions, 7 volumes; "3.3 µL").
+- [ ] **p.72** — circled `Φ` marks, the `?` on `9-2-2` / `9-10-1`, and "#9 stronger than #8"
+  (soil sites or phages?).
+- [ ] **p.78** — titres "1:20 W / 1:30 W / 1:40 W" (W = thousand?).
+
+**Gaps in the record itself**
+- [ ] **p.46 (6/17)** — "quantification for 8 bacteria samples" is listed as a goal but no data
+  appears; next Qubit page is p.53 (6/22). Skipped, or rolled into 6/22?
+- [ ] **p.62 (6/26)** — the **Procedure section is blank**.
+- [ ] **p.77 (7/9)** — every sample read **above the 30 ng/µL top standard**; the
+  **dilute-and-re-read is UNDONE**.
+- [ ] **p.80 / p.81 (7/15, 7/16)** — the EOP plates and the site-6 soft lawns have **no recorded
+  readout**; the notebook stops at p.81.
+- [ ] **p.82+** — confirm nothing was written after 2026-07-16.
+- [ ] **Quantification page (9/4)** — the `e1` reading is written `339.8` with the last digit
+  overwritten; read as **339.87** in [`code/0904_quantification.ipynb`](../../code/0904_quantification.ipynb)
+  (immaterial: <0.001 ng/µL either way). Same page: **`5 µL` load applies to the standards as well
+  as the samples** (Alex, 2026-09-04) — resolved, so no volume correction. Volume budget also
+  resolved: ~45 µL per tube at the read, 5 µL per sample to the transformation, ~40 µL left.
+  **Still open: what are `e1` / `e40` / `e281`?**
+
 ## Log
 - 2026-06-04 — Initial cataloging during digitization of `pre_0604.pdf` + `0604/` photos.
 - 2026-06-04 — All three pending-clarification items resolved (p.27 margin illustration described; p.19 OD data added from `data/assays/0529_OD.xlsx`; p.10 enrichment samples confirmed as #2/5/6/8/9/10).
@@ -66,3 +134,23 @@ Handwritten errors and unclear items identified during digitization. Tick off ea
 - 2026-06-12 — Added p.39–43 pending-clarification blocks during digitization of the 0610 / 0611 / 0612 sessions (phage-buffer "2 mL"→likely 1 mL; "pellets loose" wording; Zymo 4 °C protocol-update note; 0611 authors + "10 out of >8" isolate count; 0612 picked-plaque labels). Resolved: 0610 extraction list = 8 extracted + 2 pellets from the 10 revived stocks (user). Noted the 6/11 phage source as inferred (`==CONFIRM==` in entries).
 - 2026-06-12 — **User corrections:** (1) spin columns were all *used up* by the 8 extractions (not "8 left over"); (2) *both* this week's plaque assays ran on the 10 newly revived hosts (not old hosts) — updated the 0610 resolved item + replaced the "two-thread" continuity note with the corrected host/phage framing.
 - 2026-06-13 — **User physical re-check (inventory restructure):** named the 2 week-1 phage hits (`9-6-2 Φ8` + `9-2-1 Φ8`); flagged `8-3-1` ≈ `8-5-1` (not in the 28-stock list — verify/relabel tube). Both folded into `data/dna_extraction_inventory.md` (now storage-based) + new `data/week_3_bacteria_list.md`.
+- 2026-08-29 — **Coverage audit** (see [`README.md`](README.md) "Coverage & gaps"): digitization stops at p.43 / 2026-06-12; 8 later bench sessions have no entry. Added the four carried-over open items above (50 ng/µL propagation into `data/dna_extraction_inventory.md`, the unrecorded 8-5-2/8-10-2 submission, the phage submission date, the two `[TBD]` author fields). All 9 physical-notebook typos are still unticked — they need the notebook in hand.
+- 2026-08-29 — **p.44–p.81 digitized** (26 entries, 2026-06-15 → 2026-07-16). Two carried-over items
+  resolved by p.53 (the 50 ng/µL normalisation and the `8-5-2`/`8-10-2` submission). New blocking
+  item: the **p.71 vs p.72 `8-5-2` host-range conflict**, which touches a prediction in the synthesis
+  documents — left unreconciled by design. Full agenda in
+  `documents/2026-08-29_notebook_open_questions.md`.
+- 2026-08-29 — **Alex answered the p.71/p.72 questions:** `X` = not webbed; `〃` carries the cell above;
+  the plates were unclear so those strains went to EOP for repeat testing — no reconciliation needed.
+  The p.53 `~50 ng/µL` figures are bench rough estimates. Per Alex, digitization records everything as
+  written; only genuine handwriting typos get flagged here.
+- 2026-09-04 — Added the 9/4 quantification-page items (the `e1` overwritten digit, the 5 µL vs
+  10 µL standard-load question, and the unidentified `e1`/`e40`/`e281` sample names) while writing
+  `code/0904_quantification.ipynb`. That page is not yet digitized — digitization still stops at p.81.
+- 2026-09-04 — **Alex confirmed the standards were also loaded at 5 µL**, so the 9/4 load-volume
+  question is closed and `code/0904_quantification.ipynb` applies no volume correction
+  (`VOL_CORRECTION = 1`).
+- 2026-09-04 — Alex supplied the volume budget (45 µL per tube at the read, 5 µL per sample drawn
+  for the transformation, 40 µL left) and confirmed the LOWEND (S0/S1/S3) fit as the one to quote.
+  `code/0904_quantification.ipynb` Section 3 now reports DNA mass at all three stages; ≈356 ng left
+  across the five tubes.

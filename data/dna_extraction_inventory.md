@@ -33,12 +33,12 @@ See [[metagenomic_dna_extraction]] and [[bacteria_genome_extraction]] for method
 | 6-8-1 | Bacteria genome extract (Round 2) | 2026-06-10 | not sent |
 | 9-10-1 | Bacteria genome extract (Round 2) | 2026-06-10 | not sent |
 | 6-2-1 | Bacteria genome extract (Round 2) | 2026-06-10 | not sent |
-| 8-10-2 | Bacteria genome extract (Round 2) | 2026-06-10 | not sent |
+| 8-10-2 | Bacteria genome extract (Round 2) | 2026-06-10 | **sent 2026-06-22** — see [2nd batch](#sent-for-sequencing--2026-06-22-2nd-bacterial-batch) |
 | 9-9-2 | Bacteria genome extract (Round 2) | 2026-06-10 | not sent |
 | 6-8-2 | Bacteria genome extract (Round 2) | 2026-06-10 | not sent |
 | 6-10-2 | Bacteria genome extract (Round 2) | 2026-06-10 | not sent |
 | 6-3-2 | Bacteria genome extract (Round 1) | 2026-06-05 | not sent |
-| 8-5-2 | Bacteria genome extract (Round 1) | 2026-06-05 | not sent |
+| 8-5-2 | Bacteria genome extract (Round 1) | 2026-06-05 | **sent 2026-06-22** — see [2nd batch](#sent-for-sequencing--2026-06-22-2nd-bacterial-batch) |
 | 8-2-2 | Bacteria genome extract (Round 1) | 2026-06-05 | not sent |
 | 10-9-2 | Bacteria genome extract (Round 1) | 2026-06-05 | not sent |
 | 9-2-2 | Bacteria genome extract (Round 1) | 2026-06-05 | not sent |
@@ -125,7 +125,20 @@ Results returned ~2026-06-12 (in [`bacteria_genome/`](bacteria_genome/) — Cal_
 | 9-6-2 | Bacteria genome extract (Round 1) | 2026-06-05 | **sent** |
 | 10-10-2 | Bacteria genome extract (Round 1) | 2026-06-05 | **sent** |
 
-*Submission details (conc / volume / mass) in the [Quantification details](#quantification-details-reference) appendix. Metagenomes #8/#9 were diluted (38 µL DNA + 50 µL kit buffer); the 3 bacterial genomes — see Discrepancy #3.*
+*Submission details (conc / volume / mass) in the [Quantification details](#quantification-details-reference) appendix. Metagenomes #8/#9 were diluted (38 µL DNA + 50 µL kit buffer); the 3 bacterial genomes were **normalised to 50 ng/µL, ~20 µL submitted** — see Discrepancy #3.*
+
+---
+
+## Sent for sequencing — 2026-06-22 (2nd bacterial batch)
+
+Decided on [2026-06-22](../lab_notebook/digitalized/2026-06-22_streaking-culture-dilution-plaque-quantification.md) (p.53) after the 18-sample Qubit run. Assemblies returned **2026-06-26/27** (in [`bacteria_genome/`](bacteria_genome/) — `8-5-2`, `8-10-2`).
+
+| ID | What it is | Date created | Prep | Status |
+|---|---|---|---|---|
+| 8-5-2 | Bacteria genome extract (Round 1) | 2026-06-05 | diluted to ~50 ng/µL, **20 µL sent** | **sent** |
+| 8-10-2 | Bacteria genome extract (Round 2) | 2026-06-10 | p.53: `70 µL + 70 µL water`, aiming at ~50 ng/µL — a **bench rough estimate** (the page's own curve puts it at ≈ 70.7 ng/µL, so the result is nearer ~35). **20 µL sent** | **sent** |
+
+*Candidates considered and dropped on the same page: `8-7-1`, `9-9-2` (both "today"), and `9-6-2` / `9-2-1` (already sent 6-08).*
 
 ---
 
@@ -171,9 +184,9 @@ Per-sample numbers behind the tables above. Concentrations marked **⚠** are **
 | 6-3-2 | 101.66 ⚠ | 9.15 |
 | 8-3-2 | 93.34 | 8.40 |
 
-### Bacteria genome — Round 2 (extracted 2026-06-10) — **not yet quantified**
+### Bacteria genome — Round 2 (extracted 2026-06-10) — quantified 2026-06-22, [`0622_quantification.ipynb`](../code/0622_quantification.ipynb)
 
-8 extracts at 4 °C (`9-1-1, 6-8-1, 9-10-1, 6-2-1, 8-10-2, 9-9-2, 6-8-2, 6-10-2`); conc/volume/mass *pending* (deferred to "next week"). 2 pellets (`8-1-2`, `9-1-2`) at −20 °C. ([2026-06-10](../lab_notebook/digitalized/2026-06-10_pellet-prep-genome-extraction-plaque-assay.md))
+8 extracts at 4 °C (`9-1-1, 6-8-1, 9-10-1, 6-2-1, 8-10-2, 9-9-2, 6-8-2, 6-10-2`) plus the 2 banked pellets (`8-1-2`, `9-1-2`, extracted [2026-06-17](../lab_notebook/digitalized/2026-06-17_pellet-extraction-quantification-plaque-assays.md) on IIC-XLR columns) and the 8 week-3 strains extracted the same day — **all 18 quantified 2026-06-22** ([p.53](../lab_notebook/digitalized/2026-06-22_streaking-culture-dilution-plaque-quantification.md)). Raw RFU and fitted concentrations: [`code/0622_quantification.ipynb`](../code/0622_quantification.ipynb).
 
 ### Metagenome — Round 2 (extracted 2026-05-28, ~80 µL each) — quantified [2026-06-05](../lab_notebook/digitalized/2026-06-05_plaque-assay-r3-dna-extraction-quantification.md)
 
@@ -211,11 +224,11 @@ All sites quantified [2026-05-27](../lab_notebook/digitalized/2026-05-27_dna-qua
 | ------------- | ---------------- | ---------------------------------- | ---------------------: | ----------: | ------------: |
 | Metagenome #8 | metagenome       | yes (38 µL DNA + 50 µL kit buffer) |                 125.33 |          88 |         11.03 |
 | Metagenome #9 | metagenome       | yes (38 µL DNA + 50 µL kit buffer) |                  69.39 |          88 |          6.11 |
-| 9-2-1         | bacterial genome | no (see Discrepancy #3)            |                 139.29 |        ≈ 90 |         12.54 |
-| 9-6-2         | bacterial genome | no (see Discrepancy #3)            |                 194.53 |        ≈ 90 |         17.51 |
-| 10-10-2       | bacterial genome | no (see Discrepancy #3)            |                 140.44 |        ≈ 90 |         12.64 |
+| 9-2-1         | bacterial genome | **yes — normalised to 50 ng/µL**   |                  50.00 |        ≈ 20 |          1.00 |
+| 9-6-2         | bacterial genome | **yes — normalised to 50 ng/µL**   |                  50.00 |        ≈ 20 |          1.00 |
+| 10-10-2       | bacterial genome | **yes — normalised to 50 ng/µL**   |                  50.00 |        ≈ 20 |          1.00 |
 
-*Metagenome mass sent = pre-dilution conc × 38 µL; bacterial = conc × ≈ 90 µL (`[TBD]` if less than full eluate).*
+*Metagenome mass sent = pre-dilution conc × 38 µL. **Bacterial rows corrected 2026-08-29**: the extracts were normalised to **50 ng/µL** and **~20 µL** submitted (~1 µg each) — for this 6-08 batch that rests on **Alex's 2026-08-08 statement + the MRA methods**; p.53 is the independent 6-22 evidence that 50 ng/µL is the team's submission practice, not a record of this batch — not the undiluted 139.29 / 194.53 / 140.44 at ≈ 90 µL recorded earlier. Those extraction concentrations are still listed above under Round 1.*
 
 ---
 
@@ -226,3 +239,4 @@ All sites quantified [2026-05-27](../lab_notebook/digitalized/2026-05-27_dna-qua
 - 2026-06-13 — **Restructured to a by-storage-location layout** (4 °C / −20 °C / −80 °C / sent), each a single table (ID · what · date · status), from the user's physical re-check. Added the −80 glycerol-stock table (all 28), the 2 week-1 phage picks (`9-6-2 Φ8` / `9-2-1 Φ8`) at 4 °C, and the older metagenome extracts (1st-batch sites 2/5/6/8/9/10, mixes mix_1/3/4/7). Moved per-sample conc/mass into a **Quantification details** appendix (nothing lost). Added a **Discrepancies** section (8-3-1≈8-5-1 — label kept per user; 6/3 `8-5-2 ×2`; bacterial "diluted" wording; 5/20 "all 10"→6). Added sources (5-29 OD, 6-3 entry, `0529_OD.xlsx`, `bacteria_genome/`). Created companion [[week_3_bacteria_list]].
 - 2026-07-08 — First phage sequencing results back: `9-2-1 Φ8` (vendor code `3NKSC3`, raw + host-removed paired-end fastq) landed in `data/phage_genome/9-2-1/`. Marked `9-2-1 Φ8` **sent** in the 4 °C table and added a new **Sent for sequencing — phage** section. Submission date not recorded anywhere in the notebook/inventory — flagged `[TBD]` rather than guessed. Companion `9-6-2 Φ8` pick still shows "not sent" — no data for it yet.
 - 2026-07-08 — `9-2-1 Φ8` **assembled + annotated** (Laguna, [`code/0708_phage_assembly/`](../code/0708_phage_assembly/)): one 62,338 bp circular novel phage genome (temperate, safe, carries RBPs). Updated its status to "assembled + annotated" in both phage tables. Write-up: [`phage_genome/9-2-1/assembly/NOTES.md`](phage_genome/9-2-1/assembly/NOTES.md).
+- 2026-08-29 — **Second bacterial submission recorded, and the submitted concentrations corrected.** Digitizing p.44–p.81 surfaced p.53 (2026-06-22): *"20 µL for sequencing (~50 ng/µL)"* plus the decision to send **`8-5-2`** and **`8-10-2`** (assemblies back 6/26–6/27). Added a **Sent for sequencing — 2026-06-22** section, flipped both 4 °C rows to *sent*, and rewrote the submission-mass table from the superseded undiluted figures (139.29 / 194.53 / 140.44 × ≈ 90 µL) to **50 ng/µL × ~20 µL ≈ 1 µg**. Round-2 extracts are no longer "pending quantification" — all 18 were read on 2026-06-22. The phage `9-2-1 Φ8` submission date remains `[TBD]`.
