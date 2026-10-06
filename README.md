@@ -73,7 +73,7 @@ iGEM 26/
 │                                 drafts, PI notes, rendered .qmd → .html/.pdf reports
 │
 ├── data/                      ← datasets, organized by category
-│   ├── bacteria_genome/             ← vendor genome bundles per strain (9-2-1, 9-6-2, 10-10-2, 8-5-2)
+│   ├── bacteria_genome/             ← vendor genome bundles per strain (9-2-1, 9-6-2, 10-10-2, 8-5-2, 8-10-2)
 │   ├── phage_genome/                ← per host site. 9-2-1 Φ8: raw reads (3NKSC3) + assembly +
 │   │                                  the PI's AlphaFold3 folds (bulk files on disk, not in git)
 │   ├── processed_genome/            ← extracted receptors + phage-binding screen
