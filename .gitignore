@@ -80,3 +80,11 @@ data/phage_genome/9-2-1/folds_espinoza/
 code/0811_promo_video/node_modules/
 code/0811_promo_video/out/
 code/0811_promo_video/public/audio/
+
+# ===== 0924 Paris reimbursement: receipts stay on disk =====
+# Flight and hotel bookings plus visa paperwork carry passport numbers, booking
+# references and payment details. The repo is private today, but git history is
+# permanent and iGEM repos are often opened up at the end of a season, so the
+# receipts are kept local. request.md and the generated .docx cite them by
+# filename; the office receives the .docx with the receipts attached separately.
+documents/2026-09-24_paris_travel_reimbursement/receipts/
