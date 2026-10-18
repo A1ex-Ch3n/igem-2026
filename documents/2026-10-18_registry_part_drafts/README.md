@@ -5,11 +5,14 @@ One file per part, written in the Registry's five documentation sections
 pasted straight in. Workflow, deadlines and the permanence rules:
 [`../2026-10-18_registry_submission_guide.md`](../2026-10-18_registry_submission_guide.md).
 
+Chinese versions sit beside each file as `*_zh.md` (team reading and review only — **the
+Registry gets the English text**). Index: [`README_zh.md`](README_zh.md).
+
 | Draft | Part | Written? |
 |---|---|---|
-| [`CDS10_WT.md`](CDS10_WT.md) | CDS_0010 res 105–917 — unknown-function fiber | ✅ |
-| [`CDS11_WT.md`](CDS11_WT.md) | CDS_0011 res 305–941 — tail-spike β-helix depolymerase body | ✅ |
-| [`CDS12_WT.md`](CDS12_WT.md) | CDS_0012 res 117–477 — GH5 glycoside hydrolase | ✅ |
+| [`CDS10_WT.md`](CDS10_WT.md) · [中文](CDS10_WT_zh.md) | CDS_0010 res 105–917 — unknown-function fiber | ✅ |
+| [`CDS11_WT.md`](CDS11_WT.md) · [中文](CDS11_WT_zh.md) | CDS_0011 res 305–941 — tail-spike β-helix depolymerase body | ✅ |
+| [`CDS12_WT.md`](CDS12_WT.md) · [中文](CDS12_WT_zh.md) | CDS_0012 res 117–477 — GH5 glycoside hydrolase | ✅ |
 | `CDS12_ANC_Node1/40/281.md` | the three reconstructed ancestors | ⬜ UNDONE — blocked on the PI telling us the reconstruction program and where the nodes sit on the tree |
 | collection page | the six parts as one toolbox | ⬜ UNDONE |
 
