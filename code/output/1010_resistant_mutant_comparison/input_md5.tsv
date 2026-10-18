@@ -1,0 +1,6 @@
+label	fasta	md5
+921_wt	data/bacteria_genome/9-2-1/XH254M_1_sample_1_1_reference.fasta	9e56661d6cd78c5d9565e291efca4533
+962_wt	data/bacteria_genome/9-6-2/rerun_QB9Y48/QB9Y48_1_rerun_sample_2_2_1_reference.fasta	6abe245651050ef760cc529ed497b65d
+962_wt_orig	data/bacteria_genome/9-6-2/original_XH254M/XH254M_2_sample_2_1_reference.fasta	2da8b061bd6c0d5efcada6c3f9e0e868
+921_mut	data/bacteria_genome/9-2-1/resistant_r1_SBYK6W/SBYK6W_1_sample_1_921_mut_1_reference.fasta	6f76700de12509f7fecb503fc0c8cfb8
+962_mut	data/bacteria_genome/9-6-2/resistant_r1_SBYK6W/SBYK6W_2_sample_2_962_mut_1_reference.fasta	ef7aed81b9b683234be7d210286b8d4c

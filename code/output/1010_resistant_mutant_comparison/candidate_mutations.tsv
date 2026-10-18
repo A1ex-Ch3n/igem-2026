@@ -1,0 +1,5 @@
+mutant	source	pos	allele	site_class	homopolymer	locus	gene	product	effect	aa_change	verdict	AF_921_wt	AF_921_wt_illumina	AF_921_mut	AF_962_mut	in_cassette
+962_mut	assembly	4643730	T>C	one lineage only	3.0	OHPLIO_04215		Stealth protein CR3, conserved region 3	missense	F126L (of 490)	real mutation	0.0	0.0	0.0	0.996	Capsule-type
+921_mut	read scan	782104	G>A			OHPLIO_00709	pth	aminoacyl-tRNA hydrolase	missense	S75F (of 194)	low-AF read-only call	0.067	0.0	0.315		
+962_mut	read scan	3521037	G>A			OHPLIO_03157	lysR	HTH lysR-type domain-containing protein	missense	D10N (of 304)	low-AF read-only call	0.097	0.0		0.302	
+962_mut	read scan	3777719	C>T			OHPLIO_03401	caiA	Acyl-CoA dehydrogenase	missense	D262N (of 386)	low-AF read-only call	0.09	0.0		0.303	

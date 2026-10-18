@@ -1,0 +1,2 @@
+query_name,status,rank,fraction,lineage,query_md5,query_filename,f_weighted_at_rank,bp_match_at_rank,query_ani_at_rank
+contig_1 length=6178774 circular=true topology=circular,match,species,0.8640533778148457,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Pseudomonadales;f__Pseudomonadaceae;g__Pseudomonas_E;s__Pseudomonas_E sp013179515,c99fbc87,SBYK6W_2_1_reference.fasta,0.8640533778148457,5180000,0.9952975194401978

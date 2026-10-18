@@ -1,0 +1,71 @@
+pos	allele	carried_by	AF_921_wt	DP_921_wt	AF_921_wt_illumina	DP_921_wt_illumina	AF_921_mut	DP_921_mut	AF_962_mut	DP_962_mut	verdict_921_mut	verdict_962_mut	lineage_change	site_class	homopolymer	locus	gene	product	effect	aa_change
+161723	G>A	962_wt	0.393	349	0.0	57	0.405	351	0.435	237	ONT systematic error	ONT systematic error	962	parents disagree	1	OHPLIO_00138		Surface adhesion protein	missense	D4861N (of 10262)
+165683	G>A	962_wt_orig	0.401	352	0.0	78	0.417	367	0.367	215	ONT systematic error	ONT systematic error	-	parent-only difference	1	OHPLIO_00138		Surface adhesion protein	missense	D6181N (of 10262)
+311836	C>T	921_mut	0.374	340	0.0	122	0.418	510	0.377	239	ONT systematic error	ONT systematic error	921	one lineage only	1				intergenic	
+311837	T>C	921_mut	0.274	340	0.0	119	0.316	510	0.305	239	ONT systematic error	ONT systematic error	921	one lineage only	2				intergenic	
+341676	insA	962_wt_orig	0.052	403	0.0	109	0.039	568	0.03	302	no change in reads	no change in reads	-	parent-only difference	3	OHPLIO_00289	proX	ABC-type glycine betaine transport system substrate-binding domain-containing protein	frameshift	fs at aa 130/314
+446686	insC	962_wt_orig	0.046	304	0.0	120	0.109	339	0.063	223	no change in reads	no change in reads	-	parent-only difference	2				intergenic	
+542713	C>T	962_wt_orig	0.445	290	0.0	72	0.503	334	0.376	242	ONT systematic error	ONT systematic error	-	parent-only difference	1	OHPLIO_00482	rplO	50S ribosomal protein L15	synonymous	
+724895	C>T	962_wt_orig	0.331	317	0.0	97	0.296	406	0.331	239	ONT systematic error	ONT systematic error	-	parent-only difference	1	OHPLIO_00655	eAL	Diguanylate phosphodiesterase	synonymous	
+1005661	insT	962_wt_orig	0.006	313	0.0	61	0.044	386	0.056	234	no change in reads	no change in reads	-	parent-only difference	3	OHPLIO_00900	mlaE	lipid asymmetry maintenance ABC transporter permease subunit MlaE	frameshift	fs at aa 253/265
+1005662	C>T	962_mut	0.476	313	0.0	59	0.409	386	0.421	233	ONT systematic error	ONT systematic error	962	one lineage only	1	OHPLIO_00900	mlaE	lipid asymmetry maintenance ABC transporter permease subunit MlaE	synonymous	
+1728334	C>T	962_wt_orig	0.362	287	0.0	54	0.369	325	0.294	180	ONT systematic error	ONT systematic error	-	parent-only difference	1				intergenic	
+2114812	G>A	962_wt_orig	0.379	206	0.0	76	0.458	393	0.472	229	ONT systematic error	ONT systematic error	-	parent-only difference	1	OHPLIO_01890		hypothetical protein	missense	D107N (of 387)
+2263785	T>C	962_wt,962_wt_orig,921_mut,962_mut	0.5	102	1.0	69	0.517	207	0.521	165	parent assembly error	parent assembly error	921	parents disagree	3				intergenic	
+2265430	G>A	921_mut	0.1	80	0.0	105	0.331	181	0.34	144	ONT systematic error	ONT systematic error	921	one lineage only	1	OHPLIO_02049		hypothetical protein	synonymous	
+2462586	T>C	921_mut,962_mut	0.537	380	1.0	58	0.55	427	0.515	266	parent assembly error	parent assembly error	921+962	both mutants, no parent	3	OHPLIO_02219		Toxin with a H, D/N and C signature	synonymous	
+2495379	delC	962_wt_orig	0.128	352	0.0	41	0.2	444	0.2	275	no change in reads	no change in reads	-	parent-only difference	1	OHPLIO_02242		3-oxoadipate CoA-transferase	frameshift	fs at aa 196/293
+2585252	insA	962_wt_orig,921_mut	0.166	235	0.0	57	0.23	396	0.298	188	ONT systematic error	ONT systematic error	921	parents disagree	3	OHPLIO_02326	yliI	L-sorbosone dehydrogenase	frameshift	fs at aa 32/430
+2629441	delT	962_wt_orig,962_mut	0.216	310	0.0	44	0.254	394	0.208	231	ONT systematic error	ONT systematic error	962	parents disagree	8				intergenic	
+2750745	G>A	962_wt_orig	0.344	291	0.0	40	0.236	377	0.243	255	ONT systematic error	ONT systematic error	-	parent-only difference	2	OHPLIO_02467	pilO	Pilus assembly protein PilO	missense	D161N (of 187)
+2974889	insA	962_wt_orig	0.027	292	0.0	44	0.059	376	0.023	265	no change in reads	no change in reads	-	parent-only difference	2	OHPLIO_02669		helix-turn-helix transcriptional regulator	frameshift	fs at aa 109/270
+3270503	A>G	962_wt_orig	0.0	51	0.0	63	0.0	90	0.0	89	no change in reads	no change in reads	-	parent-only difference	2	OHPLIO_02931		Nucleotidyltransferase family protein	missense	L212P (of 266)
+3270612	insC	962_wt_orig	0.042	48	0.0	78	0.022	92	0.068	88	no change in reads	no change in reads	-	parent-only difference	4	OHPLIO_02931		Nucleotidyltransferase family protein	frameshift	fs at aa 176/266
+3270687	insG	962_wt_orig	0.0	47	0.0	82	0.011	93	0.0	89	no change in reads	no change in reads	-	parent-only difference	4	OHPLIO_02931		Nucleotidyltransferase family protein	frameshift	fs at aa 151/266
+3270759	insA	962_wt_orig	0.0	49	0.0	65	0.043	92	0.034	88	no change in reads	no change in reads	-	parent-only difference	1	OHPLIO_02931		Nucleotidyltransferase family protein	frameshift	fs at aa 127/266
+3270856	insG	962_wt_orig	0.0	50	0.0	67	0.0	98	0.044	91	no change in reads	no change in reads	-	parent-only difference	2	OHPLIO_02931		Nucleotidyltransferase family protein	frameshift	fs at aa 95/266
+3270859	insG	962_wt_orig	0.0	50	0.0	67	0.02	98	0.044	91	no change in reads	no change in reads	-	parent-only difference	1	OHPLIO_02931		Nucleotidyltransferase family protein	frameshift	fs at aa 94/266
+3271759	insA	962_wt_orig	0.0	44	0.0	93	0.0	104	0.0	101	no change in reads	no change in reads	-	parent-only difference	2				intergenic	
+3271923	insT	962_wt_orig	0.023	44	0.0	94	0.047	106	0.02	98	no change in reads	no change in reads	-	parent-only difference	8				intergenic	
+3272128	T>A	962_wt_orig	0.023	43	0.0	88	0.0	109	0.0	100	no change in reads	no change in reads	-	parent-only difference	5	OHPLIO_02933		hypothetical protein	missense	N77I (of 77)
+3272633	insG	962_wt_orig	0.0	43	0.0	97	0.018	112	0.0	103	no change in reads	no change in reads	-	parent-only difference	2				intergenic	
+3272677	insG	962_wt_orig	0.024	42	0.0	98	0.063	111	0.03	101	no change in reads	no change in reads	-	parent-only difference	2				intergenic	
+3272975	A>G	962_wt_orig	0.0	52	0.0	89	0.0	113	0.0	102	no change in reads	no change in reads	-	parent-only difference	3	OHPLIO_02934	cdiI	CdiI immunity protein domain-containing protein	missense	F74L (of 124)
+3272982	insTT	962_wt_orig	0.0	52	0.0	97	0.0	113	0.0	102	no change in reads	no change in reads	-	parent-only difference	1	OHPLIO_02934	cdiI	CdiI immunity protein domain-containing protein	frameshift	fs at aa 72/124
+3277166	delTC	962_wt_orig	0.016	64	0.0	72	0.007	149	0.023	130	no change in reads	no change in reads	-	parent-only difference	3	OHPLIO_02936		hypothetical protein	frameshift	fs at aa 3/184
+3277295	G>A	962_wt_orig	0.0	60	0.0	72	0.007	148	0.008	131	no change in reads	no change in reads	-	parent-only difference	1				intergenic	
+3277337	delT	962_wt_orig	0.016	61	0.0	59	0.027	150	0.023	133	no change in reads	no change in reads	-	parent-only difference	3				intergenic	
+3307938	insT	962_wt_orig	0.012	321	0.0	55	0.012	325	0.004	223	no change in reads	no change in reads	-	parent-only difference	2	OHPLIO_02958	tssM	type VI secretion system membrane subunit TssM	frameshift	fs at aa 48/831
+3307939	C>T	921_mut	0.388	320	0.0	55	0.495	325	0.455	222	ONT systematic error	ONT systematic error	921	one lineage only	1	OHPLIO_02958	tssM	type VI secretion system membrane subunit TssM	synonymous	
+3401192	delA	962_wt_orig,921_mut,962_mut	0.934	271	0.882	68	0.899	397	0.926	229	parent assembly error	parent assembly error	921+962	parents disagree	2	OHPLIO_03046	icmH	type IVB secretion system protein IcmH/DotU	frameshift	fs at aa 17/248
+3812887	C>T	962_wt_orig,962_mut	0.436	335	0.0	51	0.453	417	0.505	279	ONT systematic error	ONT systematic error	962	parents disagree	1	OHPLIO_03423	bioA	aspartate aminotransferase family protein	synonymous	
+3871671	G>A	962_wt,921_mut	0.368	356	0.0	64	0.454	456	0.417	271	ONT systematic error	ONT systematic error	921+962	parents disagree	1				intergenic	
+3934227	insT	921_mut	0.054	312	0.0	88	0.055	452	0.111	261	no change in reads	no change in reads	921	one lineage only	3	OHPLIO_03549		Membrane-bound redox modulator Alx	frameshift	fs at aa 355/354
+3934228	C>T	962_mut	0.391	312	0.0	88	0.487	452	0.414	261	ONT systematic error	ONT systematic error	962	one lineage only	1	OHPLIO_03549		Membrane-bound redox modulator Alx	synonymous	
+3979631	A>G	962_wt_orig	0.312	372	0.0	55	0.339	434	0.317	243	ONT systematic error	ONT systematic error	-	parent-only difference	2	OHPLIO_03590		GNAT family N-acetyltransferase	missense	W155R (of 165)
+3979632	G>A	962_wt_orig	0.387	372	0.0	56	0.4	433	0.366	243	ONT systematic error	ONT systematic error	-	parent-only difference	1	OHPLIO_03590		GNAT family N-acetyltransferase	synonymous	
+3982778	C>T	921_mut	0.364	341	0.0	45	0.357	415	0.386	246	ONT systematic error	ONT systematic error	921	one lineage only	1	OHPLIO_03593	pncA	Isochorismatase-like domain-containing protein	synonymous	
+3996513	delT	962_wt,962_wt_orig	0.981	323	0.963	54	0.974	425	0.98	246	parent assembly error	parent assembly error	962	parents disagree	2	OHPLIO_03597	arpD	Alkaline protease secretion transporter ATP-binding protein	frameshift	fs at aa 469/498
+4047571	delA	962_wt,962_wt_orig,921_mut,962_mut	0.917	276	0.947	57	0.907	365	0.866	254	parent assembly error	parent assembly error	921	parents disagree	2	OHPLIO_03644		Sulfite reductase	frameshift	fs at aa 36/563
+4295391	G>A	921_mut	0.353	295	0.0	53	0.434	445	0.408	267	ONT systematic error	ONT systematic error	921	one lineage only	1				intergenic	
+4546338	delC	962_mut	0.302	318	0.0	87	0.287	541	0.32	281	ONT systematic error	ONT systematic error	962	one lineage only	8	OHPLIO_04123		hypothetical protein	frameshift	fs at aa 102/173
+4553508	C>T	962_wt_orig	0.395	342	0.0	88	0.389	488	0.409	281	ONT systematic error	ONT systematic error	-	parent-only difference	2	OHPLIO_04126		Ig-like domain-containing protein	synonymous	
+4574079	G>A	962_mut	0.385	348	0.0	55	0.39	462	0.423	286	ONT systematic error	ONT systematic error	962	one lineage only	1	OHPLIO_04142	msrB	Peptide methionine sulfoxide reductase MsrB	synonymous	
+4632163	insT	962_wt_orig	0.073	288	0.0	48	0.143	447	0.143	294	no change in reads	no change in reads	-	parent-only difference	1				intergenic	
+4643730	T>C	962_mut	0.0	181	0.0	60	0.0	428	0.996	264	no change in reads	real mutation	962	one lineage only	3	OHPLIO_04215		Stealth protein CR3, conserved region 3	missense	F126L (of 490)
+4822947	delC	962_wt_orig,962_mut	0.105	247	0.0	54	0.085	423	0.109	258	no change in reads	no change in reads	962	parents disagree	8	OHPLIO_04358		hypothetical protein	frameshift	fs at aa 85/187
+4840919	delG	962_wt,962_wt_orig	0.18	133	0.083	84	0.163	332	0.23	213	no change in reads	ONT systematic error	962	parents disagree	10	OHPLIO_04373		CBASS cGAMP-activated phospholipase	frameshift	fs at aa 231/336
+4938794	insA	921_mut	0.094	331	0.0	92	0.044	340	0.066	241	no change in reads	no change in reads	921	one lineage only	1	OHPLIO_04462	quiP	Acyl-homoserine lactone acylase QuiP	frameshift	fs at aa 30/813
+5066171	G>A	962_mut	0.292	305	0.0	65	0.438	368	0.474	196	ONT systematic error	ONT systematic error	962	one lineage only	1	OHPLIO_04570		Metallo-beta-lactamase domain-containing protein	synonymous	
+5214584	G>A	962_wt_orig	0.098	255	0.0	65	0.155	381	0.14	242	no change in reads	no change in reads	-	parent-only difference	2	OHPLIO_04710	yaaA	peroxide stress protein YaaA	synonymous	
+5380172	insA	962_wt_orig	0.066	244	0.0	56	0.114	394	0.104	221	no change in reads	no change in reads	-	parent-only difference	2	OHPLIO_04860	gloA	Glyoxalase/bleomycin resistance protein/dioxygenase	frameshift	fs at aa 138/137
+5406010	insT	962_mut	0.031	262	0.0	93	0.039	385	0.014	210	no change in reads	no change in reads	962	one lineage only	1	OHPLIO_04885	dnaK	molecular chaperone DnaK	frameshift	fs at aa 388/641
+5448021	delG	962_wt	0.99	299	0.937	63	0.949	488	0.964	248	parent assembly error	parent assembly error	962	parents disagree	2	OHPLIO_04925	eamA	EamA domain-containing protein	frameshift	fs at aa 202/264
+5448022	delA	962_wt_orig,921_mut,962_mut	0.99	299	0.894	66	0.949	488	0.96	248	parent assembly error	parent assembly error	921+962	parents disagree	2	OHPLIO_04925	eamA	EamA domain-containing protein	frameshift	fs at aa 201/264
+5612910	C>T	962_wt	0.384	354	0.026	38	0.401	561	0.398	241	ONT systematic error	ONT systematic error	962	parents disagree	1				intergenic	
+5612911	T>C	962_wt	0.325	354	0.0	37	0.323	561	0.303	241	ONT systematic error	ONT systematic error	962	parents disagree	1				intergenic	
+5612912	insC	962_wt_orig	0.037	354	0.0	38	0.066	561	0.037	241	no change in reads	no change in reads	-	parent-only difference	1				intergenic	
+5648401	delA	962_wt,962_wt_orig,962_mut	0.997	373	0.94	83	0.971	519	0.979	280	parent assembly error	parent assembly error	-	parent-only difference	2	OHPLIO_05115	putA	trifunctional transcriptional regulator/proline dehydrogenase/L-glutamate gamma-semialdehyde dehydrogenase	frameshift	fs at aa 1127/1217
+6085036	C>T	962_wt_orig,962_mut	0.378	429	0.0	115	0.404	628	0.447	291	ONT systematic error	ONT systematic error	962	parents disagree	1	OHPLIO_05502	pstB	phosphate ABC transporter ATP-binding protein PstB	synonymous	
+6138065	delC	921_mut	0.283	428	0.0	118	0.376	662	0.336	345	ONT systematic error	ONT systematic error	921	parents disagree	6	OHPLIO_05553		Oxaloacetate decarboxylase 2	frameshift / frameshift	fs at aa 258/262 / fs at aa 259/262
+6138065	insC	962_wt,962_wt_orig,962_mut	0.339	428	0.856	118	0.316	662	0.281	345	parent assembly error	parent assembly error	921	parents disagree	6	OHPLIO_05553		Oxaloacetate decarboxylase 2	frameshift / frameshift	fs at aa 258/262 / fs at aa 259/262

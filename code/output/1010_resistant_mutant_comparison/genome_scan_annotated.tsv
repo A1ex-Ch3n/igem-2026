@@ -1,0 +1,85 @@
+mutant	pos	ref	alt	depth	AF	also_in_other_mutant	AF_921_wt	DP_921_wt	AF_921_wt_illumina	DP_921_wt_illumina	parent_clean	verdict	in_assembly_table	locus	gene	product	effect	aa_change
+921_mut	150399	G	A	399	0.366	True	0.264	337	0.0	115	False	ONT systematic error	False	OHPLIO_00138		Surface adhesion protein	missense	R1086K (of 10262)
+921_mut	260534	C	T	460	0.359	True	0.281	235	0.0	81	False	ONT systematic error	False	OHPLIO_00211	tauA	taurine ABC transporter substrate-binding protein	missense	D306N (of 323)
+921_mut	311837	T	C	510	0.316	True	0.274	340	0.0	119	False	ONT systematic error	True				intergenic	
+921_mut	644494	A	G	359	0.331	True	0.222	293	0.0	105	False	ONT systematic error	False	OHPLIO_00574	pbpC	peptidoglycan glycosyltransferase PbpC	synonymous	
+921_mut	644495	G	A	359	0.357	True	0.276	293	0.0	105	False	ONT systematic error	False	OHPLIO_00574	pbpC	peptidoglycan glycosyltransferase PbpC	missense	D752N (of 784)
+921_mut	782104	G	A	390	0.315	False	0.067	314	0.0	98	True	low-AF read-only call	False	OHPLIO_00709	pth	aminoacyl-tRNA hydrolase	missense	S75F (of 194)
+921_mut	928874	G	A	385	0.384	False	0.297	343	0.0	55	False	ONT systematic error	False	OHPLIO_00831	rlmN	23S rRNA (adenine(2503)-C(2))-methyltransferase RlmN	missense	D371N (of 381)
+921_mut	1153253	C	delG	453	0.313	True	0.286	304	0.0	77	False	ONT systematic error	False	OHPLIO_01036	prfB	peptide chain release factor 2	frameshift	fs at aa 23/24
+921_mut	1177671	T	G	418	0.309	True	0.28	346	0.0	66	False	ONT systematic error	False	OHPLIO_01061		Lipoprotein	synonymous	
+921_mut	1569334	C	T	351	0.37	True	0.296	243	0.0	57	False	ONT systematic error	False				intergenic	
+921_mut	1695212	A	delG	355	0.313	False	0.278	288	0.0	88	False	ONT systematic error	False	OHPLIO_01526	gckA	Hydroxypyruvate reductase	frameshift	fs at aa 63/424
+921_mut	2165909	C	T	429	0.308	True	0.233	317	0.0	53	False	ONT systematic error	False	OHPLIO_01941		SDR family oxidoreductase	synonymous	
+921_mut	2265430	G	A	181	0.331	True	0.1	80	0.0	105	True	low-AF read-only call	True	OHPLIO_02049		hypothetical protein	synonymous	
+921_mut	2278170	C	T	421	0.304	True	0.201	344	0.0	60	False	ONT systematic error	False	OHPLIO_02064		Uracil-DNA glycosylase	missense	D18N (of 288)
+921_mut	2285568	T	delCCC	472	0.309	False	0.248	391	0.0	54	False	ONT systematic error	False	OHPLIO_02072		Alpha/beta hydrolase	in-frame indel	G218E (of 284)
+921_mut	2437999	G	A	417	0.372	True	0.251	438	0.0	43	False	ONT systematic error	False	OHPLIO_02200		Short-chain alcohol dehydrogenase	missense	D102N (of 255)
+921_mut	2551818	G	A	437	0.35	True	0.284	334	0.0	49	False	ONT systematic error	False	OHPLIO_02292		NAD(P)/FAD-dependent oxidoreductase	synonymous	
+921_mut	2608479	C	T	387	0.326	True	0.295	261	0.0	43	False	ONT systematic error	False	OHPLIO_02349	tyrB	Aminotransferase	synonymous	
+921_mut	3028967	G	A	378	0.347	True	0.26	308	0.0	31	False	ONT systematic error	False	OHPLIO_02727		histidine kinase	missense	D620N (of 689)
+921_mut	3216752	G	A	255	0.31	True	0.141	283	0.0	35	False	ONT systematic error	False	OHPLIO_02880	dadA	FAD dependent oxidoreductase	missense	D296N (of 431)
+921_mut	3287681	C	T	324	0.306	True	0.252	206	0.0	45	False	ONT systematic error	False	OHPLIO_02942	vgrG	Type VI secretion system tip protein VgrG	synonymous	
+921_mut	3407193	C	delG	373	0.316	False	0.168	161	0.0	43	False	ONT systematic error	False	OHPLIO_03051		Pre-toxin TG domain-containing protein	frameshift	fs at aa 263/383
+921_mut	3447302	G	A	402	0.4	True	0.158	349	0.0	37	False	ONT systematic error	False	OHPLIO_03084	pvdQ	Acyl-homoserine lactone acylase PvdQ	synonymous	
+921_mut	3548355	C	T	476	0.303	False	0.125	368	0.0	75	False	ONT systematic error	False	OHPLIO_03180		gamma-aminobutyraldehyde dehydrogenase	synonymous	
+921_mut	3664759	A	G	345	0.342	True	0.244	344	0.0	60	False	ONT systematic error	False	OHPLIO_03291		FAD-dependent oxidoreductase	synonymous	
+921_mut	4012907	C	T	442	0.342	True	0.233	360	0.0	40	False	ONT systematic error	False	OHPLIO_03612	tam	trans-aconitate 2-methyltransferase	missense	D160N (of 258)
+921_mut	4025148	C	T	365	0.321	True	0.234	303	0.0	44	False	ONT systematic error	False	OHPLIO_03623		DNA polymerase II	synonymous	
+921_mut	4077050	C	T	354	0.367	True	0.244	295	0.0	46	False	ONT systematic error	False	OHPLIO_03664	acs	Propionate--CoA ligase	synonymous	
+921_mut	4155990	G	A	411	0.404	True	0.207	246	0.0	37	False	ONT systematic error	False	OHPLIO_03741		putative membrane transporter protein	missense	D214N (of 261)
+921_mut	4179011	C	T	439	0.437	True	0.273	300	0.0	52	False	ONT systematic error	False	OHPLIO_03763	rhaT	EamA domain-containing protein	missense	S106F (of 316)
+921_mut	4561380	C	T	524	0.412	True	0.271	332	0.0	64	False	ONT systematic error	False	OHPLIO_04128		RHS repeat-associated core domain-containing protein	missense	S1607F (of 1660)
+921_mut	4707865	T	delC	439	0.308	True	0.272	371	0.017	58	False	ONT systematic error	False	OHPLIO_04245		Cyclic peptide transporter	frameshift	fs at aa 8/550
+921_mut	5005213	G	A	351	0.328	False	0.206	272	0.0	83	False	ONT systematic error	False	OHPLIO_04516		TonB-dependent receptor	synonymous	
+921_mut	5066171	G	A	368	0.438	True	0.292	305	0.0	65	False	ONT systematic error	True	OHPLIO_04570		Metallo-beta-lactamase domain-containing protein	synonymous	
+921_mut	5157784	C	T	369	0.328	True	0.286	255	0.0	99	False	ONT systematic error	False				intergenic	
+921_mut	5168584	G	A	376	0.314	False	0.226	270	0.0	72	False	ONT systematic error	False	OHPLIO_04663	murD	UDP-N-acetylmuramoyl-L-alanine--D-glutamate ligase	missense	L447F (of 448)
+921_mut	5406012	T	C	385	0.327	True	0.26	262	0.011	95	False	ONT systematic error	True	OHPLIO_04885	dnaK	molecular chaperone DnaK	synonymous	
+921_mut	5583521	C	T	487	0.302	True	0.175	331	0.0	65	False	ONT systematic error	False	OHPLIO_05060	hisZ	ATP phosphoribosyltransferase regulatory subunit	missense	D39N (of 429)
+962_mut	150399	G	A	227	0.344	True	0.264	337	0.0	115	False	ONT systematic error	False	OHPLIO_00138		Surface adhesion protein	missense	R1086K (of 10262)
+962_mut	260534	C	T	244	0.352	True	0.281	235	0.0	81	False	ONT systematic error	False	OHPLIO_00211	tauA	taurine ABC transporter substrate-binding protein	missense	D306N (of 323)
+962_mut	311837	T	C	239	0.305	True	0.274	340	0.0	119	False	ONT systematic error	True				intergenic	
+962_mut	644494	A	G	234	0.355	True	0.222	293	0.0	105	False	ONT systematic error	False	OHPLIO_00574	pbpC	peptidoglycan glycosyltransferase PbpC	synonymous	
+962_mut	644495	G	A	234	0.38	True	0.276	293	0.0	105	False	ONT systematic error	False	OHPLIO_00574	pbpC	peptidoglycan glycosyltransferase PbpC	missense	D752N (of 784)
+962_mut	1153253	C	delG	225	0.342	True	0.286	304	0.0	77	False	ONT systematic error	False	OHPLIO_01036	prfB	peptide chain release factor 2	frameshift	fs at aa 23/24
+962_mut	1177671	T	G	248	0.31	True	0.28	346	0.0	66	False	ONT systematic error	False	OHPLIO_01061		Lipoprotein	synonymous	
+962_mut	1569334	C	T	217	0.323	True	0.296	243	0.0	57	False	ONT systematic error	False				intergenic	
+962_mut	1701013	C	T	220	0.336	False	0.208	303	0.0	69	False	ONT systematic error	False	OHPLIO_01532		DUF808 domain-containing protein	synonymous	
+962_mut	1732835	A	delCCC	218	0.312	False	0.222	315	0.0	51	False	ONT systematic error	False	OHPLIO_01556		Transporter substrate-binding domain-containing protein	in-frame indel	G115V (of 251)
+962_mut	1845196	C	T	209	0.306	False	0.249	281	0.0	45	False	ONT systematic error	False	OHPLIO_01650		DUF4892 domain-containing protein	synonymous	
+962_mut	2165909	C	T	251	0.386	True	0.233	317	0.0	53	False	ONT systematic error	False	OHPLIO_01941		SDR family oxidoreductase	synonymous	
+962_mut	2190610	C	T	282	0.309	False	0.284	324	0.0	81	False	ONT systematic error	False				intergenic	
+962_mut	2265430	G	A	144	0.34	True	0.1	80	0.0	105	True	low-AF read-only call	True	OHPLIO_02049		hypothetical protein	synonymous	
+962_mut	2278170	C	T	275	0.305	True	0.201	344	0.0	60	False	ONT systematic error	False	OHPLIO_02064		Uracil-DNA glycosylase	missense	D18N (of 288)
+962_mut	2437999	G	A	288	0.347	True	0.251	438	0.0	43	False	ONT systematic error	False	OHPLIO_02200		Short-chain alcohol dehydrogenase	missense	D102N (of 255)
+962_mut	2551818	G	A	273	0.403	True	0.284	334	0.0	49	False	ONT systematic error	False	OHPLIO_02292		NAD(P)/FAD-dependent oxidoreductase	synonymous	
+962_mut	2608479	C	T	256	0.324	True	0.295	261	0.0	43	False	ONT systematic error	False	OHPLIO_02349	tyrB	Aminotransferase	synonymous	
+962_mut	2918717	G	delA	195	0.313	False	0.115	139	0.0	74	False	ONT systematic error	False	OHPLIO_02621		AAA family ATPase	frameshift	fs at aa 158/808
+962_mut	3028967	G	A	250	0.344	True	0.26	308	0.0	31	False	ONT systematic error	False	OHPLIO_02727		histidine kinase	missense	D620N (of 689)
+962_mut	3216752	G	A	213	0.324	True	0.141	283	0.0	35	False	ONT systematic error	False	OHPLIO_02880	dadA	FAD dependent oxidoreductase	missense	D296N (of 431)
+962_mut	3287681	C	T	181	0.304	True	0.252	206	0.0	45	False	ONT systematic error	False	OHPLIO_02942	vgrG	Type VI secretion system tip protein VgrG	synonymous	
+962_mut	3447302	G	A	250	0.4	True	0.158	349	0.0	37	False	ONT systematic error	False	OHPLIO_03084	pvdQ	Acyl-homoserine lactone acylase PvdQ	synonymous	
+962_mut	3505656	A	G	252	0.341	False	0.266	349	0.0	61	False	ONT systematic error	False	OHPLIO_03145		phosphodiesterase I	synonymous	
+962_mut	3521037	G	A	258	0.302	False	0.097	329	0.0	57	True	low-AF read-only call	False	OHPLIO_03157	lysR	HTH lysR-type domain-containing protein	missense	D10N (of 304)
+962_mut	3664759	A	G	237	0.35	True	0.244	344	0.0	60	False	ONT systematic error	False	OHPLIO_03291		FAD-dependent oxidoreductase	synonymous	
+962_mut	3675873	C	T	263	0.319	False	0.233	356	0.0	64	False	ONT systematic error	False	OHPLIO_03304		Response regulator	synonymous	
+962_mut	3777719	C	T	261	0.303	False	0.09	335	0.0	49	True	low-AF read-only call	False	OHPLIO_03401	caiA	Acyl-CoA dehydrogenase	missense	D262N (of 386)
+962_mut	4012907	C	T	231	0.338	True	0.233	360	0.0	40	False	ONT systematic error	False	OHPLIO_03612	tam	trans-aconitate 2-methyltransferase	missense	D160N (of 258)
+962_mut	4025148	C	T	246	0.321	True	0.234	303	0.0	44	False	ONT systematic error	False	OHPLIO_03623		DNA polymerase II	synonymous	
+962_mut	4077050	C	T	208	0.332	True	0.244	295	0.0	46	False	ONT systematic error	False	OHPLIO_03664	acs	Propionate--CoA ligase	synonymous	
+962_mut	4155990	G	A	240	0.408	True	0.207	246	0.0	37	False	ONT systematic error	False	OHPLIO_03741		putative membrane transporter protein	missense	D214N (of 261)
+962_mut	4179011	C	T	255	0.365	True	0.273	300	0.0	52	False	ONT systematic error	False	OHPLIO_03763	rhaT	EamA domain-containing protein	missense	S106F (of 316)
+962_mut	4561380	C	T	282	0.369	True	0.271	332	0.0	64	False	ONT systematic error	False	OHPLIO_04128		RHS repeat-associated core domain-containing protein	missense	S1607F (of 1660)
+962_mut	4643730	T	C	264	0.996	False	0.0	181	0.0	60	True	real mutation	True	OHPLIO_04215		Stealth protein CR3, conserved region 3	missense	F126L (of 490)
+962_mut	4707865	T	delC	278	0.353	True	0.272	371	0.017	58	False	ONT systematic error	False	OHPLIO_04245		Cyclic peptide transporter	frameshift	fs at aa 8/550
+962_mut	4909393	T	C	220	0.355	False	0.296	274	0.0	62	False	ONT systematic error	False	OHPLIO_04434	rapA	RNA polymerase-associated protein RapA	missense	C545R (of 948)
+962_mut	5066171	G	A	196	0.474	True	0.292	305	0.0	65	False	ONT systematic error	True	OHPLIO_04570		Metallo-beta-lactamase domain-containing protein	synonymous	
+962_mut	5134041	C	T	212	0.34	False	0.243	276	0.0	105	False	ONT systematic error	False	OHPLIO_04631	inaA	InaA protein	synonymous	
+962_mut	5157784	C	T	243	0.387	True	0.286	255	0.0	99	False	ONT systematic error	False				intergenic	
+962_mut	5157785	T	C	243	0.309	False	0.149	255	0.0	95	False	ONT systematic error	False				intergenic	
+962_mut	5308915	T	delC	233	0.309	False	0.184	282	0.0	76	False	ONT systematic error	False				intergenic	
+962_mut	5406012	T	C	210	0.343	True	0.26	262	0.011	95	False	ONT systematic error	True	OHPLIO_04885	dnaK	molecular chaperone DnaK	synonymous	
+962_mut	5583521	C	T	263	0.308	True	0.175	331	0.0	65	False	ONT systematic error	False	OHPLIO_05060	hisZ	ATP phosphoribosyltransferase regulatory subunit	missense	D39N (of 429)
+962_mut	5836038	G	A	267	0.311	False	0.195	364	0.0	70	False	ONT systematic error	False	OHPLIO_05263		PilT/PilU family type 4a pilus ATPase	missense	S137F (of 332)
+962_mut	6080581	C	delT	292	0.308	False	0.247	430	0.0	103	False	ONT systematic error	False				intergenic	

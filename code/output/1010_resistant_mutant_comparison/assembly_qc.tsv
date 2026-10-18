@@ -1,0 +1,6 @@
+label	length_bp	contigs	topology	raw_cov	est_cov	read_N50	median_phred	checkm_compl	checkm_contam	gtdb_species	ani_to_gtdb	CDS	tRNA	rRNA	pseudogenes	hypotheticals
+921_wt	6178779	1	circular	313.1	94.0	66805	25.79	99.74	1.94	s__Pseudomonas_E sp013179515	0.9953	5449	74	22	11	233
+962_wt	6178775	1	circular	70.4	66.9	51165	24.16	99.74	1.94	s__Pseudomonas_E sp013179515	0.9953	5448	74	22	11	232
+962_wt_orig	6178790	1	circular	25.5	24.2	48206	24.5	99.74	1.94	s__Pseudomonas_E sp013179515	0.9953	5448	74	22	11	238
+921_mut	6178778	1	circular	415.2	95.1	63344	24.56	99.74	1.94	s__Pseudomonas_E sp013179515	0.9953	5452	74	22	11	236
+962_mut	6178774	1	circular	248.3	95.8	62255	24.4	99.7	1.94	s__Pseudomonas_E sp013179515	0.9953	5451	74	22	11	235

@@ -1,0 +1,70 @@
+pos	921_wt	962_wt	962_wt_orig	921_mut	962_mut	lineage_change	site_class	homopolymer	context	locus	gene	product	effect	aa_change	nearby
+161723	.	G>A	.	.	.	962	parents disagree	1	ggtcagcgcaGacccgaccct	OHPLIO_00138		Surface adhesion protein	missense	D4861N (of 10262)	
+165683	.	.	G>A	.	.	-	parent-only difference	1	ggtcagcgcaGacccgaccct	OHPLIO_00138		Surface adhesion protein	missense	D6181N (of 10262)	
+311836	.	.	.	C>T	.	921	one lineage only	1	agacttcggtCtggccgaggc				intergenic		OHPLIO_00258  (Lipoprotein) 372 bp | OHPLIO_00260  (DUF3077 domain-containing protein) 115 bp UPSTREAM
+311837	.	.	.	T>C	.	921	one lineage only	2	gacttcggtcTggccgaggct				intergenic		OHPLIO_00258  (Lipoprotein) 373 bp | OHPLIO_00260  (DUF3077 domain-containing protein) 114 bp UPSTREAM
+341676	.	.	insA	.	.	-	parent-only difference	3	aggtcttcagAcccttgtctg	OHPLIO_00289	proX	ABC-type glycine betaine transport system substrate-binding domain-containing protein	frameshift	fs at aa 130/314	
+446686	.	.	insC	.	.	-	parent-only difference	2	agtgttgtctGaatgtagctt				intergenic		OHPLIO_00374 yobN (Tryptophan 2-monooxygenase) 111 bp UPSTREAM | OHPLIO_00375  (Transcriptional regulator) 51 bp
+542713	.	.	C>T	.	.	-	parent-only difference	1	agaagtgcgtCtgtccgagct	OHPLIO_00482	rplO	50S ribosomal protein L15	synonymous		
+724895	.	.	C>T	.	.	-	parent-only difference	1	agcccagggtCtggccgaggt	OHPLIO_00655	eAL	Diguanylate phosphodiesterase	synonymous		
+1005661	.	.	insT	.	.	-	parent-only difference	3	cagtgctgggTctggacttta	OHPLIO_00900	mlaE	lipid asymmetry maintenance ABC transporter permease subunit MlaE	frameshift	fs at aa 253/265	
+1005662	.	.	.	.	C>T	962	one lineage only	1	agtgctgggtCtggactttat	OHPLIO_00900	mlaE	lipid asymmetry maintenance ABC transporter permease subunit MlaE	synonymous		
+1728334	.	.	C>T	.	.	-	parent-only difference	1	agatccaggtCtgcggggttt				intergenic		OHPLIO_01551 ligA (NAD-dependent DNA ligase LigA) 756 bp | OHPLIO_01553  (hypothetical protein) 229 bp
+2114812	.	.	G>A	.	.	-	parent-only difference	1	tgcgcctgcaGacggagagct	OHPLIO_01890		hypothetical protein	missense	D107N (of 387)	
+2263785	.	T>C	T>C	T>C	T>C	921	parents disagree	3	agctacgggtTtgaaatttat				intergenic		OHPLIO_02048  (type I site-specific deoxyribonuclease) 283 bp | OHPLIO_02049  (hypothetical protein) 122 bp
+2265430	.	.	.	G>A	.	921	one lineage only	1	taagggcttaGactggttgct	OHPLIO_02049		hypothetical protein	synonymous		
+2462586	.	.	.	T>C	T>C	921+962	both mutants, no parent	3	aggccagggtTtgttcccgct	OHPLIO_02219		Toxin with a H, D/N and C signature	synonymous		
+2495379	.	.	delC	.	.	-	parent-only difference	1	agtgtttcgtCtcgtgcgagc	OHPLIO_02242		3-oxoadipate CoA-transferase	frameshift	fs at aa 196/293	
+2585252	.	.	insA	insA	.	921	parents disagree	3	cgtggcccagAcccgaaactg	OHPLIO_02326	yliI	L-sorbosone dehydrogenase	frameshift	fs at aa 32/430	
+2629441	.	.	delT	.	delT	962	parents disagree	8	ggctgtccccTtttttttcct				intergenic		OHPLIO_02362  (DUF4880 domain-containing protein) 11 bp | OHPLIO_02363 fiu (TonB-dependent siderophore receptor) 56 bp UPSTREAM
+2750745	.	.	G>A	.	.	-	parent-only difference	2	ggtgctggaaGacctggaact	OHPLIO_02467	pilO	Pilus assembly protein PilO	missense	D161N (of 187)	
+2974889	.	.	insA	.	.	-	parent-only difference	2	cttccaccagAccgactacta	OHPLIO_02669		helix-turn-helix transcriptional regulator	frameshift	fs at aa 109/270	
+3270503	.	.	A>G	.	.	-	parent-only difference	2	actatcacttAggatccactc	OHPLIO_02931		Nucleotidyltransferase family protein	missense	L212P (of 266)	
+3270612	.	.	insC	.	.	-	parent-only difference	4	tatcgctctgCccctttgtac	OHPLIO_02931		Nucleotidyltransferase family protein	frameshift	fs at aa 176/266	
+3270687	.	.	insG	.	.	-	parent-only difference	4	accagattttCaccttctgcg	OHPLIO_02931		Nucleotidyltransferase family protein	frameshift	fs at aa 151/266	
+3270759	.	.	insA	.	.	-	parent-only difference	1	aacgagtccgAcggataaatg	OHPLIO_02931		Nucleotidyltransferase family protein	frameshift	fs at aa 127/266	
+3270856	.	.	insG	.	.	-	parent-only difference	2	caaattcgttAgtcgagtatc	OHPLIO_02931		Nucleotidyltransferase family protein	frameshift	fs at aa 95/266	
+3270859	.	.	insG	.	.	-	parent-only difference	1	attcgttagtCgagtatccaa	OHPLIO_02931		Nucleotidyltransferase family protein	frameshift	fs at aa 94/266	
+3271759	.	.	insA	.	.	-	parent-only difference	2	aatcgagaatAacaggatcac				intergenic		OHPLIO_02932  (hypothetical protein) 10 bp | OHPLIO_02933  (hypothetical protein) 365 bp
+3271923	.	.	insT	.	.	-	parent-only difference	8	ccgaccctgaTtttttttaag				intergenic		OHPLIO_02932  (hypothetical protein) 174 bp | OHPLIO_02933  (hypothetical protein) 201 bp
+3272128	.	.	T>A	.	.	-	parent-only difference	5	acaacgtcagTttttgttcgt	OHPLIO_02933		hypothetical protein	missense	N77I (of 77)	
+3272633	.	.	insG	.	.	-	parent-only difference	2	ataacaaaacGgagcaacagc				intergenic		OHPLIO_02933  (hypothetical protein) 276 bp | OHPLIO_02934 cdiI (CdiI immunity protein domain-containing ) 187 bp
+3272677	.	.	insG	.	.	-	parent-only difference	2	gaacacttgaGttcagctcta				intergenic		OHPLIO_02933  (hypothetical protein) 320 bp | OHPLIO_02934 cdiI (CdiI immunity protein domain-containing ) 143 bp
+3272975	.	.	A>G	.	.	-	parent-only difference	3	atttttttaaAcactgactca	OHPLIO_02934	cdiI	CdiI immunity protein domain-containing protein	missense	F74L (of 124)	
+3272982	.	.	insTT	.	.	-	parent-only difference	1	taaacactgaCtcacgaatgt	OHPLIO_02934	cdiI	CdiI immunity protein domain-containing protein	frameshift	fs at aa 72/124	
+3277166	.	.	delTC	.	.	-	parent-only difference	3	atataaaattTctaatcaaaa	OHPLIO_02936		hypothetical protein	frameshift	fs at aa 3/184	
+3277295	.	.	G>A	.	.	-	parent-only difference	1	aaaaaagcgaGtacctataag				intergenic		OHPLIO_02936  (hypothetical protein) 121 bp UPSTREAM | OHPLIO_02937  (Sugar-binding protein) 448 bp
+3277337	.	.	delT	.	.	-	parent-only difference	3	atactgaaccTttcatatcgc				intergenic		OHPLIO_02936  (hypothetical protein) 163 bp | OHPLIO_02937  (Sugar-binding protein) 406 bp
+3307938	.	.	insT	.	.	-	parent-only difference	2	caggcatcggTctgttcctgc	OHPLIO_02958	tssM	type VI secretion system membrane subunit TssM	frameshift	fs at aa 48/831	
+3307939	.	.	.	C>T	.	921	one lineage only	1	aggcatcggtCtgttcctgct	OHPLIO_02958	tssM	type VI secretion system membrane subunit TssM	synonymous		
+3401192	.	.	delA	delA	delA	921+962	parents disagree	2	gccgacccagAacttccagct	OHPLIO_03046	icmH	type IVB secretion system protein IcmH/DotU	frameshift	fs at aa 17/248	
+3812887	.	.	C>T	.	C>T	962	parents disagree	1	agtcacgggtCtggcgttgcg	OHPLIO_03423	bioA	aspartate aminotransferase family protein	synonymous		
+3871671	.	G>A	.	G>A	.	921+962	parents disagree	1	cctgtgcataGacggatatct				intergenic		OHPLIO_03479  (hypothetical protein) 378 bp | OHPLIO_03480 ligD (DNA ligase D) 227 bp
+3934227	.	.	.	insT	.	921	one lineage only	3	cagatgcgggTctgaaatcaa	OHPLIO_03549		Membrane-bound redox modulator Alx	frameshift	fs at aa 355/354	
+3934228	.	.	.	.	C>T	962	one lineage only	1	agatgcgggtCtgaaatcaag	OHPLIO_03549		Membrane-bound redox modulator Alx	synonymous		
+3979631	.	.	A>G	.	.	-	parent-only difference	2	gtggtctgccAgaccgggtcc	OHPLIO_03590		GNAT family N-acetyltransferase	missense	W155R (of 165)	
+3979632	.	.	G>A	.	.	-	parent-only difference	1	tggtctgccaGaccgggtcct	OHPLIO_03590		GNAT family N-acetyltransferase	synonymous		
+3982778	.	.	.	C>T	.	921	one lineage only	1	aggtttcggtCtgcagcccac	OHPLIO_03593	pncA	Isochorismatase-like domain-containing protein	synonymous		
+3996513	.	delT	delT	.	.	962	parents disagree	2	cagcccgctgTtctggcggcc	OHPLIO_03597	arpD	Alkaline protease secretion transporter ATP-binding protein	frameshift	fs at aa 469/498	
+4047571	.	delA	delA	delA	delA	921	parents disagree	2	ccgggatcagAacccgccgct	OHPLIO_03644		Sulfite reductase	frameshift	fs at aa 36/563	
+4295391	.	.	.	G>A	.	921	one lineage only	1	cggcaaggcaGacggccagct				intergenic		OHPLIO_03900 rssB (two-component system response regulator ) 50 bp UPSTREAM | OHPLIO_03901 pilZ (PilZ domain-containing protein) 221 bp
+4546338	.	.	.	.	delC	962	one lineage only	8	aacgtccagtCcccccccgag	OHPLIO_04123		hypothetical protein	frameshift	fs at aa 102/173	
+4553508	.	.	C>T	.	.	-	parent-only difference	2	agctaaatgtCttgcgctctg	OHPLIO_04126		Ig-like domain-containing protein	synonymous		
+4574079	.	.	.	.	G>A	962	one lineage only	1	tcaggcggcaGacctggtact	OHPLIO_04142	msrB	Peptide methionine sulfoxide reductase MsrB	synonymous		
+4632163	.	.	insT	.	.	-	parent-only difference	1	cagacttctgTctggccgagc				intergenic		OHPLIO_04202  (Competence protein ComEA) 804 bp | OHPLIO_04204  (DUF3077 domain-containing protein) 107 bp UPSTREAM
+4643730	.	.	.	.	T>C	962	one lineage only	3	acggccagacTttgtcgttga	OHPLIO_04215		Stealth protein CR3, conserved region 3	missense	F126L (of 490)	
+4822947	.	.	delC	.	delC	962	parents disagree	8	actgccgcttCcccccccgtg	OHPLIO_04358		hypothetical protein	frameshift	fs at aa 85/187	
+4840919	.	delG	delG	.	.	962	parents disagree	10	gctttggattGggggggggga	OHPLIO_04373		CBASS cGAMP-activated phospholipase	frameshift	fs at aa 231/336	
+4938794	.	.	.	insA	.	921	one lineage only	1	cggctgccagAcgggcggcta	OHPLIO_04462	quiP	Acyl-homoserine lactone acylase QuiP	frameshift	fs at aa 30/813	
+5066171	.	.	.	.	G>A	962	one lineage only	1	cggggttgtaGacctccagct	OHPLIO_04570		Metallo-beta-lactamase domain-containing protein	synonymous		
+5214584	.	.	G>A	.	.	-	parent-only difference	2	cccccgccaaGaccctcgact	OHPLIO_04710	yaaA	peroxide stress protein YaaA	synonymous		
+5380172	.	.	insA	.	.	-	parent-only difference	2	caggcttcagAccagccgctg	OHPLIO_04860	gloA	Glyoxalase/bleomycin resistance protein/dioxygenase	frameshift	fs at aa 138/137	
+5406010	.	.	.	.	insT	962	one lineage only	1	cagcagcacgTctttcacgtc	OHPLIO_04885	dnaK	molecular chaperone DnaK	frameshift	fs at aa 388/641	
+5448021	.	delG	.	.	.	962	parents disagree	2	gcgctcgccaGaacagcacac	OHPLIO_04925	eamA	EamA domain-containing protein	frameshift	fs at aa 202/264	
+5448022	.	.	delA	delA	delA	921+962	parents disagree	2	cgctcgccagAacagcacact	OHPLIO_04925	eamA	EamA domain-containing protein	frameshift	fs at aa 201/264	
+5612910	.	C>T	.	.	.	962	parents disagree	1	agcacagggtCtgaggccggc				intergenic		OHPLIO_05086 ycfP (Esterase) 199 bp | OHPLIO_05087 cpdA (3',5'-cyclic-AMP phosphodiesterase) 66 bp
+5612911	.	T>C	.	.	.	962	parents disagree	1	gcacagggtcTgaggccggcg				intergenic		OHPLIO_05086 ycfP (Esterase) 200 bp | OHPLIO_05087 cpdA (3',5'-cyclic-AMP phosphodiesterase) 65 bp
+5612912	.	.	insC	.	.	-	parent-only difference	1	cacagggtctGaggccggcgc				intergenic		OHPLIO_05086 ycfP (Esterase) 201 bp | OHPLIO_05087 cpdA (3',5'-cyclic-AMP phosphodiesterase) 64 bp
+5648401	.	delA	delA	.	delA	-	parent-only difference	2	ggcaagccagAaccgcgccct	OHPLIO_05115	putA	trifunctional transcriptional regulator/proline dehydrogenase/L-glutamate gamma-semialdehyde dehydrogenase	frameshift	fs at aa 1127/1217	
+6085036	.	.	C>T	.	C>T	962	parents disagree	1	agtcttcggtCtgcttcttcg	OHPLIO_05502	pstB	phosphate ABC transporter ATP-binding protein PstB	synonymous		
+6138065	.	insC	insC	delC	insC	921	parents disagree	6	agggagagctCccccctgaga	OHPLIO_05553		Oxaloacetate decarboxylase 2	frameshift / frameshift	fs at aa 258/262 / fs at aa 259/262	
