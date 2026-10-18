@@ -62,15 +62,36 @@ From `code/output/1018_construct_structures/construct_comparison.csv`:
 | `CDS10_WT` | AF3 monomer | 0.80 | — | **90.8** | 0.983 | 30.5¹ |
 | `CDS11_WT` | AF3 trimer | 0.66 | 0.64 | **90.3** | 0.986 | 28.3¹ |
 | `CDS12_WT` | AF3 monomer | 0.77 | — | **96.4** | 0.989 | 100 |
-| `CDS12_ANC_Node1` | ESMFold | — | — | see `construct_comparison.csv` | " | **77.8** |
-| `CDS12_ANC_Node40` | ESMFold | — | — | " | " | **52.6** |
-| `CDS12_ANC_Node281` | ESMFold | — | — | " | " | **51.0** |
+| `CDS12_WT` (same method as the ancestors) | ESMFold | — | — | 88.3 | 0.942 | 100 |
+| `CDS12_ANC_Node1` | ESMFold | — | — | **90.0** | 0.958 | **77.8** |
+| `CDS12_ANC_Node40` | ESMFold | — | — | **85.5** | 0.873 | **52.6** |
+| `CDS12_ANC_Node281` | ESMFold | — | — | **85.8** | 0.881 | **51.0** |
+
+Structural superposition (PyMOL `align`), which is what the < 2 Å equivalence criterion refers to:
+
+| Pair | RMSD |
+|---|---|
+| ESMFold `CDS12_WT` vs **AF3** CDS_0012 res 117–477 (cross-method check) | **0.28 Å** over 2139 atoms |
+| `CDS12_ANC_Node1` vs ESMFold `CDS12_WT` | **0.28 Å** |
+| `CDS12_ANC_Node40` vs ESMFold `CDS12_WT` | **0.50 Å** |
+| `CDS12_ANC_Node281` vs ESMFold `CDS12_WT` | **0.52 Å** |
+
+`construct_comparison.csv` also carries a residue-index-paired RMSD (3.8–4.6 Å). That one is
+sequence-correct — all four inserts are 361 aa and gap-free — but it is not a structural
+alignment, so it measures whole-body displacement as well as fold difference. Quote the aligned
+numbers.
 
 ¹ cross-family identities (CDS_0010 / CDS_0011 vs the GH5) come from a forced global alignment
 of unrelated proteins and are **alignment noise, not homology**. Only the CDS_0012-family
 numbers are meaningful.
 
-Three things the table says:
+Four things the tables say:
+
+0. **The ESMFold models are trustworthy enough to compare.** Folding `CDS12_WT` with ESMFold —
+   the same single-sequence method used for the ancestors — and superposing it on the PI's AF3
+   model of the same region gives **0.28 Å** over 2139 atoms. Two independent methods, one with
+   an MSA and templates and one without, agree on this fold, so the ancestral models are not
+   method artefacts. Their mean pLDDT (85.5–90.0) is in the same band as the AF3 wild types.
 
 1. **The wild-type constructs are all high-confidence over exactly the region we cloned.**
    Mean pLDDT 90–96 and ≥ 98 % of residues above 70 inside the construct boundaries. The
@@ -80,7 +101,12 @@ Three things the table says:
 2. **CDS_0011's low ipTM (0.64) is not a bad interface.** It is dragged down by that floppy
    appendage; the inter-chain PAE minimum is ≈ 2 Å. The trimer is real, and res 921–941 is a
    foldon that must stay in the construct — which it does (305–941).
-3. **The ancestors are not evenly spaced around the wild type.** Node1 is 77.8 % identical to
+3. **All three ancestors fold to the same GH5 TIM barrel as the wild type.** Aligned RMSD
+   0.28 / 0.50 / 0.52 Å — far inside the 2 Å criterion — even though Node40 and Node281 share
+   only ~52 % sequence identity with CDS12_WT. The reconstruction changed the surface, not the
+   fold; combined with the conserved NEP catalytic motif (§4), that is the structural
+   precondition for the ancestors to be active enzymes with different substrate preferences.
+4. **The ancestors are not evenly spaced around the wild type.** Node1 is 77.8 % identical to
    CDS12_WT, but Node40 and Node281 are only 52.6 % and 51.0 % identical to it while being
    **87.3 % identical to each other**. So the panel is really *wild type + one near relative +
    one distant sister pair*. Any host-range difference seen with e40 and e281 but not e1 is

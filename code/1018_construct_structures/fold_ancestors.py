@@ -54,9 +54,8 @@ def main(names: list[str]) -> None:
             out = model.infer_pdb(seq)
         out = rescale_bfactors(out)
         (OUT / f"{name}.pdb").write_text(out)
-        # transformers' infer_pdb writes pLDDT on a 0-1 scale into the B-factor
-        # column; rescale to the 0-100 scale everything else in this project uses
-        plddt = [float(l[60:66]) * 100 for l in out.splitlines()
+        # out has already been rescaled to AlphaFold's 0-100 pLDDT scale
+        plddt = [float(l[60:66]) for l in out.splitlines()
                  if l.startswith("ATOM") and l[12:16].strip() == "CA"]
         (OUT / f"{name}_plddt.json").write_text(json.dumps(
             {"name": name, "length": len(seq), "plddt": plddt,

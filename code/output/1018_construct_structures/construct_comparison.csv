@@ -1,7 +1,7 @@
-name,twist_file,insert_len,full_len,mw_kda,pi,parent,parent_residues,af3_ptm,af3_iptm,af3_ranking,af3_fraction_disordered,af3_mean_plddt_construct,af3_mean_plddt_full,af3_frac_plddt70_construct,esmfold_rmsd_to_CDS12_WT,identity_to_CDS12_WT
-CDS10_WT,CDS10_WT_NOTAG,813,834,91.63,6.82,CDS_0010,105-917,0.8,,0.8,0.0,90.8,89.8,0.983,,30.5
-CDS11_WT,CDS11_WT_CTERM_HIS6TAG,667,688,72.02,6.65,CDS_0011,305-941,0.66,0.64,0.7,0.1,90.3,80.2,0.986,,28.3
-CDS12_ANC_Node1,CDS12_ANC_Node1,361,382,41.91,6.34,CDS_0012 (ancestral reconstruction),117-477 equivalent,,,,,,,,,77.8
-CDS12_ANC_Node281,CDS12_ANC_Node281,361,382,42.27,5.82,CDS_0012 (ancestral reconstruction),117-477 equivalent,,,,,,,,,51.0
-CDS12_ANC_Node40,CDS12_ANC_Node40,361,382,42.2,5.3,CDS_0012 (ancestral reconstruction),117-477 equivalent,,,,,,,,,52.6
-CDS12_WT,CDS12_WT_NOTAG,361,382,41.84,7.25,CDS_0012,117-477,0.77,,0.77,0.0,96.4,92.6,0.989,,100.0
+name,twist_file,insert_len,full_len,mw_kda,pi,parent,parent_residues,af3_ptm,af3_iptm,af3_ranking,af3_fraction_disordered,af3_mean_plddt_construct,af3_mean_plddt_full,af3_frac_plddt70_construct,esmfold_rmsd_to_CDS12_WT,identity_to_CDS12_WT,esmfold_mean_plddt,esmfold_frac_plddt70,esmfold_rmsd_aligned_to_CDS12_WT
+CDS10_WT,CDS10_WT_NOTAG,813,834,91.63,6.82,CDS_0010,105-917,0.8,,0.8,0.0,90.8,89.8,0.983,,30.5,,,
+CDS11_WT,CDS11_WT_CTERM_HIS6TAG,667,688,72.02,6.65,CDS_0011,305-941,0.66,0.64,0.7,0.1,90.3,80.2,0.986,,28.3,,,
+CDS12_ANC_Node1,CDS12_ANC_Node1,361,382,41.91,6.34,CDS_0012 (ancestral reconstruction),117-477 equivalent,,,,,,,,3.77,77.8,90.0,0.958,0.28
+CDS12_ANC_Node281,CDS12_ANC_Node281,361,382,42.27,5.82,CDS_0012 (ancestral reconstruction),117-477 equivalent,,,,,,,,4.56,51.0,85.8,0.881,0.52
+CDS12_ANC_Node40,CDS12_ANC_Node40,361,382,42.2,5.3,CDS_0012 (ancestral reconstruction),117-477 equivalent,,,,,,,,4.61,52.6,85.5,0.873,0.5
+CDS12_WT,CDS12_WT_NOTAG,361,382,41.84,7.25,CDS_0012,117-477,0.77,,0.77,0.0,96.4,92.6,0.989,,100.0,88.3,0.942,

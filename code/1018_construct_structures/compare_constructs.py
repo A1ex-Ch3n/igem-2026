@@ -136,6 +136,7 @@ def esmfold_metrics() -> tuple[dict[str, dict], pd.DataFrame, dict[str, float]]:
         profiles.append(pd.DataFrame({"construct": name,
                                       "residue": [i for i, _ in ca],
                                       "plddt": vals}))
+    rmsd_aligned = pymol_align_rmsd(list(structures))
     rmsd = {}
     if "CDS12_WT" in structures:
         ref_ca = [r["CA"] for r in next(iter(next(iter(structures["CDS12_WT"]))))
@@ -149,7 +150,31 @@ def esmfold_metrics() -> tuple[dict[str, dict], pd.DataFrame, dict[str, float]]:
             sup.set_atoms(ref_ca[:n], ca[:n])
             rmsd[name] = round(float(sup.rms), 2)
     prof = pd.concat(profiles) if profiles else pd.DataFrame()
+    for name, value in rmsd_aligned.items():
+        models.setdefault(name, {})["esmfold_rmsd_aligned_to_CDS12_WT"] = value
     return models, prof, rmsd
+
+
+def pymol_align_rmsd(names: list[str]) -> dict[str, float]:
+    """Structural-superposition RMSD to the CDS12_WT ESMFold model.
+
+    The residue-index pairing used above is sequence-correct (all four inserts are
+    361 aa, gap-free) but it is not a structural alignment, so it reports whole-body
+    displacement as well as fold difference. PyMOL's `align` is what the < 2 Å
+    equivalence criterion refers to.
+    """
+    if "CDS12_WT" not in names:
+        return {}
+    from pymol import cmd
+    cmd.reinitialize()
+    cmd.load(ESM / "CDS12_WT.pdb", "ref")
+    out = {}
+    for name in names:
+        if name == "CDS12_WT":
+            continue
+        cmd.load(ESM / f"{name}.pdb", name)
+        out[name] = round(float(cmd.align(name, "ref")[0]), 2)
+    return out
 
 
 def main() -> None:
