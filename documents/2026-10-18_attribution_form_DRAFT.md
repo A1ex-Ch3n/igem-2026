@@ -7,11 +7,10 @@ Companion file: `2026-10-18_pi_contribution_questionnaire.md` — sent to the PI
 
 ## Still open
 
-1. **PI questionnaire** — sent 2026-10-18, awaiting reply. PI entry below is our best reconstruction until then.
-2. **Project timeline dates** — recruit / project-development / wiki start dates, and "actual weeks worked" per phase. Only the team lead can set these.
-3. **Weitao's human practices** — the entry is still abstract. What did he concretely do: meetings, interviews, outreach events, a presentation, written material? Judges score Public Engagement on activities, not intentions.
-4. **Ashley's surname and job title** at the California Botanic Garden.
-5. **AI tools** — anything besides Claude, ElevenLabs and Suno (translation, slides, image generation)? ElevenLabs/Suno account tier.
+1. **PI questionnaire** — sent 2026-10-18, awaiting reply. The PI entry below is our best reconstruction until then.
+2. **The stakeholder interview is tomorrow (2026-10-19)** — Weitao wrote the guide and will conduct it. The interviewee's name and affiliation are not yet known; once the interview happens, add them to External Contributions and make Weitao's entry concrete.
+3. **Two spring timeline dates** — when the team formed, and when dry-lab work actually began. See the timeline section.
+4. **ElevenLabs / Suno account tier** — needed only if we want to state commercial rights; not required by the form.
 
 ---
 
@@ -41,7 +40,7 @@ Tasks: Conceptualization, Investigation, Analysis
 
 ### Weitao Ke — Student
 Tasks: Public Engagement, Conceptualization, Investigation
-> (1) Public Engagement — led the team's human practices work, which centred on how our scientific results should be communicated to an audience outside the laboratory and how to present the project so that it is intelligible and useful to non-specialists. [待確認: 他具體做了什麼 — 開了什麼會、訪談了誰、產出了什麼？目前這段太抽象，評審會看不出實際做了什麼] (2) Investigation — prepared PMM agar plates on 2026-05-21. (3) Conceptualization — contributed to early project discussions.
+> (1) Public Engagement — led the team's human practices work. He wrote the interview guide for our stakeholder interview and conducted the interview himself, and worked through the question of how our scientific results should be presented so that they are intelligible and useful to an audience outside the laboratory. (2) Investigation — prepared PMM agar plates on 2026-05-21. (3) Conceptualization — contributed to early project discussions.
 
 ### Ryan — Student
 Tasks: Conceptualization, Analysis
@@ -65,7 +64,7 @@ Tasks: Visualization
 | ElevenLabs | Visualization | AI voice narration for the promotional video. The script was written by the team. [待確認 account tier] |
 | Suno | Visualization | AI-generated background music for the promotional video. [待確認 account tier] |
 
-*[待確認: 還有用其他 AI 工具嗎？翻譯、簡報、圖像生成？]*
+No other AI tools were used.
 
 ## 3. iGEM & Partner Offers
 
@@ -87,20 +86,25 @@ Tasks: Visualization
 | Prof. Ran Libeskind-Hadas | University (Claremont McKenna College) | Chair, Kravis Department of Integrated Sciences; faculty supporter | Conceptualization, Project Administration | Administrative support for the team at Claremont McKenna College, and help with the early conceptualisation of the project. |
 | Plasmidsaurus | Company | Paid sequencing service | Investigation | Performed all of the project's sequencing: Oxford Nanopore whole-genome sequencing of the bacterial isolates and of the two phage-resistant clones, and the Illumina sequencing of phage 9-2-1 Φ8. |
 | Keck Graduate Institute (Laguna HPC) | University | Host institution's research computing | Software | Provided the compute allocation on which the team's genome assembly, protein structure prediction and RBP detection were run. |
-| Ashley [姓氏待補] | Non-profit (California Botanic Garden) | Garden staff member who hosted the team | Investigation, Public Engagement | Received the team at the California Botanic Garden and took us into the grounds for the soil sampling on 2026-05-19, which supplied the ten environmental samples that every isolate and phage in this project came from. |
+| Ashley Armstrong | Non-profit (California Botanic Garden) | Director of Horticulture; hosted the team on site | Investigation, Public Engagement | Received the team at the California Botanic Garden and took us into the grounds for the soil sampling on 2026-05-19, which supplied the ten environmental samples that every bacterial isolate and every phage in this project came from. |
 | California Botanic Garden | Non-profit | Sampling site | Other | Granted the team access to its grounds for soil sampling. |
 
 ## 5. Project Timeline
 
 Each phase needs a start date, an end date, and "actual time worked (weeks)" which must not exceed the calendar duration.
 
-| Phase | Start | End | Actual weeks |
-|---|---|---|---|
-| Recruit | 待填 | 待填 | 待填 |
-| Project development | 待填 | 2026-05-18 | 待填 |
-| Wet lab | 2026-05-18 | 2026-10-21 | 待填 |
-| Dry lab | 2026-06-17 | 2026-10-21 | 待填 |
-| Wiki | 待填 | 2026-10-21 | 待填 |
+Proposed from the notebook and the repository. Check the two spring dates — they predate both.
+
+| Phase | Start | End | Calendar wks | Actual wks |
+|---|---|---|---|---|
+| Recruit | 2026-02-01 [待確認] | 2026-05-07 | 14 | 6 [待確認] |
+| Project development | 2026-02-01 [待確認] | 2026-05-18 | 15 | 8 [待確認] |
+| Wet lab | 2026-05-18 | 2026-10-21 | 22 | 18 [待確認] |
+| Dry lab | 2026-06-05 | 2026-10-21 | 20 | 18 [待確認] |
+| Wiki | 2026-09-01 [待確認] | 2026-10-21 | 7 | 5 [待確認] |
+
+Anchors: general proposal 2026-05-07 · lab kickoff at KGI and first notebook page 2026-05-18 · soil sampling 2026-05-19 · first analysis notebook `0605_quantification.ipynb` 2026-06-05 · repository initialised 2026-06-08 · last notebook page 2026-07-16 · freeze 2026-10-21.
+"Actual time worked" must not exceed the calendar duration. Wet lab ran continuously from May to the freeze, so 18 of 22 weeks is a fair claim; dry lab likewise. The two spring phases are guesses — when did the team actually form, and when did Ryan and the others start on the dry-lab pipeline?
 
 ---
 Log: 2026-10-18 created from repo sweep + live form structure; same day updated with Alex's answers (Ryan, Weitao, Sarah, autumn bench work, Camille, Christan, offers, external contributors, sequencing provider), the all-plasmids-from-Twist correction, and Ashley/Anthropic account details. Not yet entered into the form.
