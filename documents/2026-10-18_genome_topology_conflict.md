@@ -143,6 +143,37 @@ None of these has been run. The reads are on disk at
    circularisation-overlap reading gains a lot; if the k-list was the megahit
    default and the contig came out of k = 141, his stated reason does not survive.
 
+## 5b. Four further gaps in the record
+
+1. **Neither assembler's graph is in this repository.** No SPAdes
+   `assembly_graph.fastg`, `contigs.paths` or `spades.log` was pulled back from
+   Laguna, and there is no megahit log or output file at all — the only trace of
+   the PI's run is his prose. So the graph-closure state, which is what both
+   sides are really arguing about, cannot be inspected here by either party.
+   Commit `e10dd9b` had named the assembly-graph check as the way to settle it;
+   it was never done.
+2. **The PI's own annotation treats the genome as circular, and it shows.**
+   `code/0713_espinoza_structural_mapping/README.md:39` records a coordinate
+   artefact between his CDS set and ours: "genome-origin split | CDS_0001 +
+   CDS_0080 | CDS_0026 (4193 aa) | **circular-genome origin cut differently**".
+   A 4193 aa CDS is not a real protein; it is what happens when an origin is cut
+   in a different place. This is not evidence about the molecule — but it does
+   mean his circular reading is already baked into the CDS numbering we adopted
+   as canonical, so if the topology changes, that numbering needs re-checking.
+3. **A read-count discrepancy to raise with him.** A2 says Plasmidsaurus
+   delivered "approximately 20 M read pairs". `data/phage_genome/README.md:25`
+   records **9,933,775** raw pairs in the delivered `3NKSC3` FASTQs, and his D2
+   answer confirms `3NKSC3` is the same Plasmidsaurus order. Either two different
+   deliveries exist or one of the numbers is wrong.
+4. **Our own file calls his assembly authoritative.**
+   `PI_assembly/README.md:3` files his sequence as "the **canonical complete
+   genome** (it retains the terminal repeat)". That is the assumption the linear
+   call rests on, and he reads the same sequence as circular.
+
+The software provenance error in §4 also appears in a third place:
+`software/docs/architecture.md:19-22` labels the `phagecheck.dtr` pipeline box
+output `LINEAR+DTR | CIRCULAR`.
+
 ## 6. What to write in the meantime
 
 On the wiki, in the Judging Form, and in anything shown to the PI:
