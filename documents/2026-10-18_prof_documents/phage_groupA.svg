@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 470" width="460" height="470" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <!-- diagonal hatch for the collar nodes -->
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(35)">
+      <rect width="7" height="7" fill="#d6dade"/>
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#8d969e" stroke-width="2.4"/>
+    </pattern>
+    <style>
+      .ink   { stroke: #111111; stroke-width: 2.6; stroke-linejoin: round; }
+      .cap   { fill: #45a9dd; }
+      .lite  { fill: #8fd3f0; }
+      .white { fill: #ffffff; }
+      .pink  { fill: #f6c4c2; }
+      .ttl   { font-size: 21px; fill: #111111; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect width="460" height="470" fill="#ffffff"/>
+  <text class="ttl" x="230" y="34">group A</text>
+
+  <!-- ===== tail (drawn first, sits behind the baseplate) ===== -->
+  <path class="ink cap" d="M207 215 L253 215 L243 322 L217 322 Z"/>
+
+  <!-- ===== capsid ===== -->
+  <path class="ink cap" d="M165 62 L295 62 L335 152 L280 237 L180 237 L125 152 Z"/>
+
+  <!-- ===== long horizontal tail fibers ===== -->
+  <rect class="ink white" x="34"  y="252" width="124" height="27" rx="13.5"/>
+  <rect class="ink white" x="302" y="252" width="124" height="27" rx="13.5"/>
+
+  <!-- ===== baseplate nodes ===== -->
+  <circle class="ink pink" cx="166" cy="265" r="14"/>
+  <circle class="ink pink" cx="294" cy="265" r="14"/>
+  <circle class="ink" fill="url(#hatch)" cx="207" cy="265" r="16"/>
+  <circle class="ink" fill="url(#hatch)" cx="253" cy="265" r="16"/>
+
+  <!-- ===== short blue connectors ===== -->
+  <rect class="ink lite" x="172" y="281" width="27" height="29" rx="8"/>
+  <rect class="ink lite" x="261" y="281" width="27" height="29" rx="8"/>
+
+  <!-- ===== long legs ===== -->
+  <g transform="translate(185,304) rotate(14)">
+    <rect class="ink white" x="-14" y="0" width="28" height="118" rx="14"/>
+  </g>
+  <g transform="translate(275,304) rotate(-14)">
+    <rect class="ink white" x="-14" y="0" width="28" height="118" rx="14"/>
+  </g>
+</svg>
