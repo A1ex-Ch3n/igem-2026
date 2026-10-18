@@ -212,41 +212,50 @@ def assemble_overview(paths: dict[str, Path]) -> None:
          "Calx-β anchor 1–110 in blue is partly outside the plasmid.\n"
          "No enzymatic template support — deliberately not called a glycosidase."),
         ("CDS11_WT",
-         "B  CDS11_WT — tail-spike depolymerase (72.0 kDa)",
+         "B  CDS11_WT — tail-spike β-helix body (72.0 kDa)",
          "AF3 trimer of full-length CDS_0011. Construct = res 305–941:\n"
-         "the β-helix body (teal) + foldon (red). Calx-β (blue) and shaft\n"
-         "are pale = removed from the construct."),
+         "the β-helix body (teal) + foldon (red). Calx-β (blue) and shaft are\n"
+         "pale = removed from the construct. Depolymerase call is fold-level\n"
+         "(β-helix, no named homolog), and this is the virion-attached one."),
         ("CDS12_WT",
          "C  CDS12_WT — GH5 glycoside hydrolase (41.8 kDa)",
-         "AF3, full-length CDS_0012. Construct = res 117–477, essentially\n"
-         "the whole GH5 TIM barrel (purple, pLDDT 95–98).\n"
-         "4/4 AF3 templates are GH5 endoglucanases (1ECE, 1VRX, 4TUF, 2ZUM)."),
+         "AF3, full-length CDS_0012. Construct = res 117–477, essentially the\n"
+         "whole GH5 TIM barrel (purple, pLDDT 95–98). 4/4 AF3 templates are GH5\n"
+         "endoglucanases (1ECE, 1VRX, 4TUF, 2ZUM) — our strongest structural\n"
+         "call. Not a domain of the tail spike; a free, standalone enzyme."),
         ("CDS12_ANC_Node1",
-         "D  CDS12_ANC_Node1 — reconstructed ancestor (41.9 kDa)",
+         "D  CDS12_ANC_Node1 — ancestor (41.9 kDa)",
          "ESMFold v1, single sequence, coloured by pLDDT.\n"
          "78 % identical to CDS12_WT — the closest of the three."),
         ("CDS12_ANC_Node40",
-         "E  CDS12_ANC_Node40 — reconstructed ancestor (42.2 kDa)",
+         "E  CDS12_ANC_Node40 — ancestor (42.2 kDa)",
          "ESMFold v1, single sequence, coloured by pLDDT.\n"
          "53 % identical to CDS12_WT, 87 % to Node281."),
         ("CDS12_ANC_Node281",
-         "F  CDS12_ANC_Node281 — reconstructed ancestor (42.3 kDa)",
+         "F  CDS12_ANC_Node281 — ancestor (42.3 kDa)",
          "ESMFold v1, single sequence, coloured by pLDDT.\n"
          "51 % identical to CDS12_WT, 87 % to Node40."),
     ]
-    fig, axes = plt.subplots(2, 3, figsize=(16.5, 11.5))
-    for ax, (key, title, sub) in zip(axes.ravel(), spec):
+    # Each panel gets its own caption row, so a long caption can never run into the
+    # title of the panel below it.
+    fig = plt.figure(figsize=(16.5, 13.0))
+    grid = fig.add_gridspec(4, 3, height_ratios=[1.0, 0.30, 1.0, 0.30],
+                            hspace=0.08, wspace=0.05)
+    for i, (key, title, sub) in enumerate(spec):
+        row, col = divmod(i, 3)
+        ax = fig.add_subplot(grid[row * 2, col])
         if key in paths:
             ax.imshow(mpimg.imread(paths[key]))
         else:
             ax.text(0.5, 0.5, "model not available", ha="center", va="center",
                     transform=ax.transAxes, color="#b2bec3")
-        ax.set_title(title, fontsize=11.5, fontweight="bold", loc="left", pad=8)
-        ax.set_xlabel(sub, fontsize=8.5, color="#2d3436", loc="left")
-        ax.set_xticks([])
-        ax.set_yticks([])
-        for s in ax.spines.values():
-            s.set_visible(False)
+        ax.set_title(title, fontsize=11, fontweight="bold", loc="left", pad=8)
+        ax.axis("off")
+
+        cap = fig.add_subplot(grid[row * 2 + 1, col])
+        cap.axis("off")
+        cap.text(0, 1, sub, fontsize=8.5, color="#2d3436", va="top", ha="left",
+                 linespacing=1.45, transform=cap.transAxes)
 
     key_items = [
         Patch(facecolor=C["calx"], label="Calx-β anchor (res 1–110)"),
@@ -263,7 +272,9 @@ def assemble_overview(paths: dict[str, Path]) -> None:
     fig.legend(handles=key_items, loc="lower center", ncol=5, frameon=False, fontsize=9)
     fig.suptitle("iGEM 2026 Claremont — 3D models of the six expressed parts",
                  fontsize=14, fontweight="bold")
-    fig.tight_layout(rect=(0, 0.07, 1, 0.97))
+    # not tight_layout: it would discard the gridspec spacing that keeps each
+    # caption inside its own row
+    fig.subplots_adjust(left=0.02, right=0.98, top=0.93, bottom=0.07)
     for ext in ("png", "svg"):
         fig.savefig(OUT / f"fig_constructs_overview.{ext}", dpi=220)
     plt.close(fig)
