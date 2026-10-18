@@ -8,10 +8,17 @@ computational write-up is `2026-10-18_prof_documents/LooseEndsiGEM.docx` (A1–A
 and Jasmin's letter is `2026-10-18_prof_documents/IBCReviewLetter.docx`. Nothing
 is blocked on him for the 10/21 items — except the people/sponsor questions below.
 
-**Verify the wiki freeze time before planning around it.** Everything below is
-anchored to the Parts/Attributions freeze, 2026-10-21 08:00 PDT = 15:00 UTC.
-The wiki and Safety Form deadlines were not confirmed in this session; check
-`api.igem.org/v1/competitions/<uuid>/deliverables`.
+**Superseded in part — read
+[`2026-10-18_deliverables_gap_report.md`](2026-10-18_deliverables_gap_report.md) first.**
+The live deliverables API was checked after this document was written and three
+things here are wrong or missing: the **Judging Form** is required and freezes
+with everything else on 10/21 but is absent below; the **Presentation Video** is
+required on 10/28 and is absent below; and the **Project Safety Form already
+closed on 2026-10-07**, so Tier 2.5 is moot. The wiki freeze is confirmed as
+2026-10-21 15:00 UTC, the same as Parts and Attributions.
+
+Also now resolved: the six UNDONE fields in the ancestral part drafts (Tier 0.2)
+were written in on 2026-10-18 from the PI's handover.
 
 ---
 
