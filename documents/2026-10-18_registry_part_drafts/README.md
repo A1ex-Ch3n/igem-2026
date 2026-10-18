@@ -13,8 +13,15 @@ Registry gets the English text**). Index: [`README_zh.md`](README_zh.md).
 | [`CDS10_WT.md`](CDS10_WT.md) · [中文](CDS10_WT_zh.md) | CDS_0010 res 105–917 — unknown-function fiber | ✅ |
 | [`CDS11_WT.md`](CDS11_WT.md) · [中文](CDS11_WT_zh.md) | CDS_0011 res 305–941 — tail-spike β-helix depolymerase body | ✅ |
 | [`CDS12_WT.md`](CDS12_WT.md) · [中文](CDS12_WT_zh.md) | CDS_0012 res 117–477 — GH5 glycoside hydrolase | ✅ |
-| `CDS12_ANC_Node1/40/281.md` | the three reconstructed ancestors | ⬜ UNDONE — blocked on the PI telling us the reconstruction program and where the nodes sit on the tree |
+| [`CDS12_ANC_Node1.md`](CDS12_ANC_Node1.md) · [中文](CDS12_ANC_Node1_zh.md) | reconstructed ancestral GH5, node 1 (`e1`) | ✅ with 2 UNDONE fields |
+| [`CDS12_ANC_Node40.md`](CDS12_ANC_Node40.md) · [中文](CDS12_ANC_Node40_zh.md) | reconstructed ancestral GH5, node 40 (`e40`) | ✅ with 2 UNDONE fields |
+| [`CDS12_ANC_Node281.md`](CDS12_ANC_Node281.md) · [中文](CDS12_ANC_Node281_zh.md) | reconstructed ancestral GH5, node 281 (`e281`) | ✅ with 2 UNDONE fields |
 | collection page | the six parts as one toolbox | ⬜ UNDONE |
+
+**The two UNDONE fields in every ancestral draft**, both needing the PI: (1) the reconstruction
+program, alignment and tree, for the `source` field; (2) where nodes 1 / 40 / 281 sit on that
+tree — until he answers, the drafts describe the nodes only by sequence identity and never as
+"deep", "mid" or "shallow". Everything else in those three pages is written and can be pasted.
 
 ## The distinction these drafts exist to protect
 

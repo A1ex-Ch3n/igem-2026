@@ -11,8 +11,14 @@ application / discussion**），可以直接貼。流程、截止日與「送出
 | [`CDS10_WT.md`](CDS10_WT.md) ／ [中文](CDS10_WT_zh.md) | CDS_0010 res 105–917 — 功能未知的 fiber | ✅ |
 | [`CDS11_WT.md`](CDS11_WT.md) ／ [中文](CDS11_WT_zh.md) | CDS_0011 res 305–941 — tail spike 的 β-helix depolymerase body | ✅ |
 | [`CDS12_WT.md`](CDS12_WT.md) ／ [中文](CDS12_WT_zh.md) | CDS_0012 res 117–477 — GH5 glycoside hydrolase | ✅ |
-| `CDS12_ANC_Node1/40/281.md` | 三個重建的祖先 | ⬜ **UNDONE** — 卡在教授告訴我們 ASR 用的程式，以及這三個節點在樹上的位置 |
+| [`CDS12_ANC_Node1.md`](CDS12_ANC_Node1.md) ／ [中文](CDS12_ANC_Node1_zh.md) | 重建祖先 GH5，node 1（`e1`） | ✅ 含 2 個 UNDONE 欄位 |
+| [`CDS12_ANC_Node40.md`](CDS12_ANC_Node40.md) ／ [中文](CDS12_ANC_Node40_zh.md) | 重建祖先 GH5，node 40（`e40`） | ✅ 含 2 個 UNDONE 欄位 |
+| [`CDS12_ANC_Node281.md`](CDS12_ANC_Node281.md) ／ [中文](CDS12_ANC_Node281_zh.md) | 重建祖先 GH5，node 281（`e281`） | ✅ 含 2 個 UNDONE 欄位 |
 | collection 頁 | 六個 part 當成一套工具組 | ⬜ **UNDONE** |
+
+**每個祖先草稿裡的兩個 UNDONE 欄位**都需要教授：(1) 重建所用的程式、比對與樹，填進 `source`；
+(2) node 1 / 40 / 281 在那棵樹上的位置 — 在他回覆之前，草稿只用序列 identity 描述節點，絕不寫
+「深」「中」「淺」。那三頁的其餘內容都已寫好，可以直接貼。
 
 ## 這些草稿要守住的區分
 
