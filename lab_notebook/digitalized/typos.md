@@ -117,13 +117,62 @@ Full review agenda: [`documents/2026-08-29_notebook_open_questions.md`](../../do
   **dilute-and-re-read is UNDONE**.
 - [ ] **p.80 / p.81 (7/15, 7/16)** — the EOP plates and the site-6 soft lawns have **no recorded
   readout**; the notebook stops at p.81.
-- [ ] **p.82+** — confirm nothing was written after 2026-07-16.
+- [x] **p.82+** — resolved 2026-10-18: bench work **did** continue. p.82–p.100 (2026-09-01 → 2026-09-27) plus a second notebook (p.06–p.08, 9/28 → 10/14) are now digitized; see the block below.
 - [ ] **Quantification page (9/4)** — the `e1` reading is written `339.8` with the last digit
   overwritten; read as **339.87** in [`code/0904_quantification.ipynb`](../../code/0904_quantification.ipynb)
   (immaterial: <0.001 ng/µL either way). Same page: **`5 µL` load applies to the standards as well
   as the samples** (Alex, 2026-09-04) — resolved, so no volume correction. Volume budget also
   resolved: ~45 µL per tube at the read, 5 µL per sample to the transformation, ~40 µL left.
   **Still open: what are `e1` / `e40` / `e281`?**
+
+### 2026-09-01 → 2026-10-14 (p.82–p.100, notebook 2 p.06–p.08) — open
+
+The protein-expression block. Digitized 2026-10-18.
+
+**Physical typos to fix**
+- [ ] **p.95** — step 1 lists the constructs as "`e1`, `e40`, **`e81`**, `CDS11`, `CDS12`" → should read
+  **`e281`**.
+- [ ] **p.82** — the margin question "kanamycin will not denature if below **220 °C**?" — likely a slip
+  for a much lower temperature (the step itself says add at ~40 °C). Confirm what was meant.
+- [ ] **nb2 p.08** — "100 µL of BugBuster instead of 2 mL (**more diluted** than the protocol)", but the
+  arithmetic on the same line goes 25:1 → 20:1, i.e. **less** diluted. Confirm which was meant.
+
+**Structural / page questions**
+- [x] **A second notebook** — confirmed (Alex, 2026-10-18): notebook 1 ends at **p.100**, a second
+  notebook is used from **2026-09-27** onward, and its **p.01–p.05 are reserved for a table of contents**
+  to be written later. Hence the printed `06`/`07`/`08` on the 9/28, 10/01 and 10/14 pages.
+- [x] **p.98 / p.101+** — nothing missing to photograph. **9/18–9/23 was a note-keeping lapse** while the
+  team repeated protein-expression rounds (Alex, 2026-10-18).
+- [x] **2026-09-29 and 2026-10-10 have no notebook page** — same cause. The `code/` gel analyses
+  (`0915_`, `0929_`, `1010_gel_annotation.ipynb`) are to be read as the record for those days.
+- [ ] **p.93 has no date and no authors** — filed as **2026-09-09** by position (between 9/8 and the 9/10
+  entry, which refers to "the SDS gel from yesterday"). Confirm.
+- [ ] **nb2 p.06 (9/28) has no author line.**
+
+**Values / labels to confirm**
+- [ ] **p.82** — LB agar "(1 %)"; earlier plates in this notebook were 1.5 %.
+- [ ] **p.84** — "`CDS10 WT xAG`": what **xAG** denotes, and the Ⓚ shorthand used throughout.
+- [ ] **p.85** — the **"Results (OD600)" heading is empty**; no values were recorded that day.
+- [ ] **p.89** — colony labels `T2 / T4 / T5 / T8` and `e1 ⑥`; and whether the **cells-only control
+  plates** were among the "~43" that grew (growth there would be a problem).
+- [ ] **p.94** — the gel-lane table: lane 2 reads like "G1" (almost certainly `e1`), the X/V induction
+  marks on lanes 4–5 and 9 are overwritten, and the dilution row may start at lane 5 rather than lane 6.
+  Also "**100 mL +**" — 100 mL of what.
+- [ ] **p.96** — induction was done at **OD ≈ 1.4–2.0**, while p.94 sets the rule "**till 0.8 for OD to
+  add IPTG**". Was that deliberate?
+- [ ] **p.99** — stocks labelled **DH5α**, while p.82 records the streaked host as "DH10-B like" and p.88
+  transforms into **BL21**. Which host is which.
+- [ ] **p.99** — `e1` quantification reads **173.57** against an S0 blank of **161.14**, i.e. effectively
+  no plasmid; was that miniprep repeated?
+- [ ] **p.100** — the "OD600 at 4 hrs" block has one struck label and a ⊕ value (**1.938**) with no
+  construct in line with it; `e40` has no ⊕ value.
+- [ ] **nb2 p.06** — was a **BCA standard series** run? Without standards the OD562 values cannot be
+  converted to mg/mL. Also `CDS11` 1:20 non-induced = **0.394**, the only pair that breaks the
+  half-of-1:10 pattern.
+- [ ] **nb2 p.07** — the protocol note says "**8 samples**" but the loading plan has 10 sample lanes;
+  and whether the 1:1 / 1:2 lanes are the crude load or the flow-through.
+- [ ] **nb2 p.08** — which constructs were extracted on 10/14 (not written).
+
 
 ## Log
 - 2026-06-04 — Initial cataloging during digitization of `pre_0604.pdf` + `0604/` photos.
@@ -154,3 +203,8 @@ Full review agenda: [`documents/2026-08-29_notebook_open_questions.md`](../../do
   for the transformation, 40 µL left) and confirmed the LOWEND (S0/S1/S3) fit as the one to quote.
   `code/0904_quantification.ipynb` Section 3 now reports DNA mass at all three stages; ≈356 ng left
   across the five tubes.
+- 2026-10-18 — Added the p.82–p.100 / notebook 2 p.06–p.08 block during digitization of the
+  `0901-1014` photo set (protein-expression block, 9/1 → 10/14).
+- 2026-10-18 — Alex resolved the structural questions: second notebook from 9/27 (p.01–05 = TOC),
+  notebook 1 ends at p.100, and the 9/18–9/23 / 9/29 / 10/10 gaps are a note-keeping lapse covered by
+  the `code/*_gel_annotation.ipynb` analyses.

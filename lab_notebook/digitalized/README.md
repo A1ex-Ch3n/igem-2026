@@ -51,11 +51,36 @@ Digital copies of all entries from the physical lab notebook. Page images in `im
 | 2026-07-14 | [Repeat the site-6 negative control (contamination check)](2026-07-14_negative-control-site6.md) | p.79 | Carol, Maggie |
 | 2026-07-15 | [EOP titre finding (1:10⁶–1:10⁸) & site-6 contamination / prophage check](2026-07-15_eop-titer-site6-check.md) | p.80 | Carol, Maggie |
 | 2026-07-16 | [Soft lawn of site-6 bacteria; summer plates stored at 4 °C](2026-07-16_soft-lawn-site6.md) | p.81 | Carol, Maggie |
+| 2026-09-01 | [Media, kanamycin plates & streaking the Twist constructs](2026-09-01_media-plates-kanamycin-streaking.md) | p.82–83 | Alex C., Carol W. |
+| 2026-09-02 | [Bacteria inoculation of the streaked construct plates](2026-09-02_bacteria-inoculation.md) | p.84 | Olivia |
+| 2026-09-03 | [Stock prep, plasmid extraction (miniprep) & OD600](2026-09-03_stock-prep-plasmid-extraction-od600.md) | p.85 | Rafael, Alex |
+| 2026-09-04 | [Re-streak, plasmid quantification & **transformation into BL21**](2026-09-04_restreak-quantification-transformation.md) | p.86–88 | Olivia, Alex, Carol |
+| 2026-09-06 | [Inoculate transformed colonies; ~43 plates grew](2026-09-06_inoculate-transformed-colonies.md) | p.89 | Carol, Alex, Olivia, Rafael |
+| 2026-09-07 | [LB broth, `CDS10` stocked, marked colonies inoculated](2026-09-07_stock-prep-transformed-colonies-inoculation.md) | p.90 | Alex, Olivia |
+| 2026-09-08 | [OD600 screen of the transformant cultures & stock prep](2026-09-08_od600-stock-prep.md) | p.91–92 | Alex |
+| 2026-09-09 | [OD600 time-course of the 25 mL flasks (**date inferred**)](2026-09-09_od600-flask-timecourse.md) | p.93 | [TBD] |
+| 2026-09-10 | [Destaining the first SDS gel; reviving the cultures](2026-09-10_destain-sds-gel-revive-culture.md) | p.94 | Rafael, Alex, Carol |
+| 2026-09-11 | [Pellets for the gel; re-streak and restart the cultures](2026-09-11_pellet-gel-restart-culture.md) | p.95 | Carol, Olivia |
+| 2026-09-15 | [Redo induction — morning and new-batch OD600](2026-09-15_redo-induction.md) | p.96 | Rafael, Alex |
+| 2026-09-17 | [Daily passing — OD600 of the overnight flasks](2026-09-17_daily-passing.md) | p.97 | Alex |
+| 2026-09-24 | [Plasmid extraction, stocks & DNA quantification (6 constructs)](2026-09-24_passing-plasmid-extraction-stock-quantification.md) | p.99 | Alex |
+| 2026-09-27 | [Induction, crude-lysate OD562 & gel prep](2026-09-27_protein-extraction-gel.md) | p.100 | Alex, Olivia |
+| 2026-09-28 | [Protein dilution & BCA quantification (1:10, 1:20)](2026-09-28_protein-dilution-bca-quantification.md) | nb2 p.06 | [TBD] |
+| 2026-10-01 | [His-tag protein purification (NEB S1427) & gel loading plan](2026-10-01_protein-purification.md) | nb2 p.07 | Alex, Rafael |
+| 2026-10-14 | [Protein extraction — BugBuster scaled for 2 mL cultures](2026-10-14_protein-extraction-bugbuster-scaling.md) | nb2 p.08 | Alex |
 
-## Coverage & gaps — updated 2026-08-29
+## Coverage & gaps — updated 2026-10-18
 
-**Digitized:** 45 entries, **2026-05-18 → 2026-07-16**, physical pages **p.01, p.09–p.12, p.14–p.81**.
-Page images for p.44–p.81 come from `lab_notebook/0615-0716/` (`IMG_8518`–`IMG_8555` → `p44.jpg`–`p81.jpg`).
+**Digitized:** 62 entries, **2026-05-18 → 2026-10-14**, physical pages **p.01, p.09–p.12, p.14–p.97,
+p.99–p.100**, plus **notebook 2 p.06–p.08**.
+Page images for p.44–p.81 come from `lab_notebook/0615-0716/` (`IMG_8518`–`IMG_8555` → `p44.jpg`–`p81.jpg`);
+p.82–p.100 and nb2 p.06–p.08 come from `lab_notebook/0901-1014/` (`IMG_6576`–`IMG_6596`).
+
+> [!note] A second notebook starts on 2026-09-27 — confirmed by Alex, 2026-10-18
+> Notebook 1 ends at **p.100** (2026-09-27); everything from then on is in a **second physical
+> notebook**, whose **p.01–p.05 are reserved for a table of contents** (to be written later), so its
+> first written page is **p.06** (2026-09-28). Filed as `nb2_p06`–`nb2_p08`.
+> Notebook 1 has no p.101+ content.
 
 ### Pages never photographed
 
@@ -63,12 +88,23 @@ Page images for p.44–p.81 come from `lab_notebook/0615-0716/` (`IMG_8518`–`I
 |---|---|---|
 | p.02–p.08 | Not photographed; **content unknown**. `pre_0604.pdf` (18 leaves = p.01 + p.09–p.12 + p.14–p.26; p.27–p.28 came separately from `0604/`) jumps leaf 1 (p.01 = Table of Contents) straight to p.09. The photographed TOC lists entries only up to **26/6/3**, so either the TOC continued onto p.02 with the later days, or p.02–p.08 were left blank as TOC space. | Confirm which; photograph anything written |
 | p.13 | Not in `images/`. TOC skips p.12 → p.14, so probably blank (5/23–5/25 weekend). | Confirm blank |
-| p.82+ | Unknown — the photo set ends at p.81 (2026-07-16). No bench work after 7/16 is recorded anywhere in the repo, so this may simply be where the summer's bench work stopped. | Confirm nothing was written after p.81 |
+| p.98 | **Resolved (Alex, 2026-10-18): note-keeping lapsed.** 9/18–9/23 was a busy stretch of repeated protein-expression rounds that were not written up properly. The record for those days is the gel analyses in `code/` (see "Days with no page"). | None — nothing to photograph |
+| p.101+ | **Resolved: notebook 1 ends at p.100.** Work moves to notebook 2 on 2026-09-27. | None |
+| notebook 2, p.01–p.05 | **Resolved: reserved for the table of contents**, to be written later. | Photograph once the TOC is filled in |
+| notebook 2, p.09+ | Unknown — the photo set ends at nb2 p.08 (2026-10-14). | Confirm whether later bench days were written up |
 
 ### Days with no page
 
 - **2026-06-27 / 06-28**, **07-05**, **07-10 / 07-11 / 07-12** — weekend/gap days with no page. The 07/05 line ("make LB tubes for 07/06 titre finding") is written in the margin of p.72 rather than on its own page.
 - **The `9-2-1 Φ8` phage sequencing submission** (results back 2026-07-08) still has **no recorded date** on any page.
+- **2026-07-17 → 2026-08-31** — the summer gap. No pages; bench work resumes 9/1 on p.82 with the protein-expression block.
+- **2026-09-18 → 2026-09-23**, **2026-09-29**, **2026-10-10** — **no notebook page exists** for these
+  bench days. Per Alex (2026-10-18), the team was running **repeated protein-expression rounds** through
+  this period and note-keeping lapsed. The standing record for those days is the gel analyses in `code/`,
+  which are to be read as the notebook entries for them:
+  [`0915_gel_annotation.ipynb`](../../code/0915_gel_annotation.ipynb) (9/15 gels, inconclusive),
+  [`0929_gel_annotation.ipynb`](../../code/0929_gel_annotation.ipynb) (9/29 gels, two unassigned bands),
+  [`1010_gel_annotation.ipynb`](../../code/1010_gel_annotation.ipynb) (10/10 `e281` Ni-NTA, failed).
 
 Open clarifications for all entries live in [`typos.md`](typos.md); the consolidated question list for Alex is
 [`documents/2026-08-29_notebook_open_questions.md`](../../documents/2026-08-29_notebook_open_questions.md).
@@ -83,3 +119,13 @@ Open clarifications for all entries live in [`typos.md`](typos.md); the consolid
   "20 µL @ ~50 ng/µL" note** on p.53; the **host-range matrix** on p.71–p.72; the **EOP series**
   (7/8 → 7/15); and the **phage-resistant colony** line that re-identifies the samples in
   `code/0710_quantification.ipynb`.
+- 2026-10-18 — **p.82–p.100 + notebook 2 p.06–p.08 digitized** (17 new entries, 2026-09-01 → 2026-10-14)
+  from the `0901-1014/` photo set. This is the **protein-expression block**: Twist constructs streaked,
+  BL21 transformation (9/4, ~43 plates grew), four induction rounds (9/9, 9/10, 9/15, 9/27), BCA
+  quantification (9/28) and the first purification (10/01). New gaps logged: **p.98**, **p.101–p.105**,
+  **notebook 2 p.01–p.05**, and no notebook page for the **9/29** or **10/10** gels. One date (p.93,
+  2026-09-09) is **inferred, not written**, and two entries have no author line.
+- 2026-10-18 — **Alex answered the structural questions:** notebook 1 ends at **p.100**; a **second
+  notebook starts 2026-09-27**, with **p.01–p.05 held for its table of contents**. The 9/18–9/23 gap
+  (and the missing 9/29 / 10/10 pages) is a **note-keeping lapse during repeated protein-expression
+  rounds** — the `code/*_gel_annotation.ipynb` analyses stand in as the record for those days.
