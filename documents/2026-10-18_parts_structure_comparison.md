@@ -127,7 +127,10 @@ For 9-2-1 Φ8 the relevant facts we established:
   the virion, a shaft, and a **right-handed β-helix / β-solenoid body (res 301–941)** that
   trimerises. A β-helix of that kind is the canonical fold of a **depolymerase** — an RBP that
   does not merely bind the host surface sugar but cleaves it.
-- **CDS_0010 shares the same Calx-β anchor** (42 % identity over 107 aa) — a paralogous fiber
+- **CDS_0010 shares the same Calx-β anchor** — 42 % sequence identity over 107 aa, and
+  superposing the two anchors gives **RMSD 0.50 Å over 446 atoms**
+  (`fig_virion_context.png`, panel A), so the module is structurally the same, not merely
+  similar in sequence — a paralogous fiber
   using the same virion-attachment module. Its remaining ~800 aa have **no template at all**.
   The PI withdrew the glycosidase call for CDS_0010 on 2026-07-29; our part page must call it
   **unknown function**, which is also why it is the one construct we express purely to find out

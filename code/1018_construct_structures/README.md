@@ -9,6 +9,7 @@ conda activate igem2026
 python code/1018_construct_structures/fold_ancestors.py      # ESMFold, base env (transformers)
 python code/1018_construct_structures/render_constructs.py   # PyMOL panels + figures
 python code/1018_construct_structures/compare_constructs.py  # tables
+python code/1018_construct_structures/render_virion_context.py   # the three WT parts together
 ```
 
 > `fold_ancestors.py` needs `transformers`, which lives in the **base** conda env, not
@@ -35,6 +36,7 @@ so each wild-type panel greys out the part of the fold that is **not** in the co
 | `panels/*.png` | individual PyMOL renders |
 | `fig_constructs_overview.{png,svg}` | 6-panel figure, one per construct |
 | `fig_cds12_family.{png,svg}` | WT vs the three ancestors + superposition |
+| `fig_virion_context.{png,svg}` | CDS_0010 + CDS_0011 + CDS_0012 together: the shared Calx-β anchor superposition (real, RMSD 0.50 Å) and the three proteins to scale (placement illustrative) |
 | `construct_comparison.csv` | one row per construct: length, MW, pI, AF3/ESMFold confidence, RMSD |
 | `sequence_identity.csv` | pairwise % identity of the mature inserts |
 | `plddt_profiles.csv` | per-residue pLDDT of the ESMFold models |
