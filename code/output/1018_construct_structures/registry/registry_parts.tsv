@@ -1,0 +1,7 @@
+name	description	insert_bp_ordered	linker_trimmed_aa	start_codon_added	registry_bp	protein_aa	clean_single_orf
+CDS10_WT	CDS_0010 res 105-917, unknown-function virion fiber sharing the Calx-beta anchor of the tail spike	2442	0	yes	2445	814	yes
+CDS11_WT	CDS_0011 res 305-941, tail-spike beta-helix depolymerase body + foldon	2004	30	yes	1917	638	yes
+CDS12_WT	CDS_0012 res 117-477, GH5 glycoside hydrolase (TIM barrel)	1086	0	yes	1089	362	yes
+CDS12_ANC_Node1	reconstructed ancestor of CDS_0012 (GH5), node 1	1086	0	yes	1089	362	yes
+CDS12_ANC_Node40	reconstructed ancestor of CDS_0012 (GH5), node 40	1086	0	yes	1089	362	yes
+CDS12_ANC_Node281	reconstructed ancestor of CDS_0012 (GH5), node 281	1086	0	yes	1089	362	yes

@@ -126,7 +126,11 @@ specific to that sequence.
 1. **Today — everyone, including the PI:** sign in to registry.igem.org, opt in as an author,
    accept the CLA. Nothing else can proceed until this is done.
 2. **Decide the His6 policy once** (recommended: CDS only, no vector, no pET-28a leader) and
-   freeze the six final nucleotide strings.
+   freeze the six final nucleotide strings. Candidate sequences are already generated —
+   `ATG` + the protein's own CDS + stop, vector leader and CDS11's designed purification linker
+   removed — by
+   [`../code/1018_construct_structures/registry_sequences.py`](../code/1018_construct_structures/registry_sequences.py)
+   → `code/output/1018_construct_structures/registry/registry_parts.{ffn,faa,tsv}`.
 3. Create all six as **basic** parts, role **CDS**, with title / description / `source`. Leave
    them in **Draft**.
 4. **Triple-check sequence, authors + contribution roles, and licence** — these three lock
@@ -136,7 +140,8 @@ specific to that sequence.
 6. Create the **Part Collection** — the GH5 plus its three ancestors plus the two fibers, as one
    targeting-and-lysis toolbox. Shared content on the collection page, sequence-specific content
    on the part pages, no duplication.
-7. Fill the five section types per part, using
+7. Fill the five section types per part. Drafts for the three wild-type parts are written:
+   [`2026-10-18_registry_part_drafts/`](2026-10-18_registry_part_drafts/). Use
    [`2026-10-18_parts_structure_comparison.md`](2026-10-18_parts_structure_comparison.md) for the
    *design* sections and saying plainly where the wet lab stands.
 8. Submit the **Attributions Form** — same 2026-10-21 15:00 UTC deadline. Draft:

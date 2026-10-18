@@ -10,6 +10,7 @@ python code/1018_construct_structures/fold_ancestors.py      # ESMFold, base env
 python code/1018_construct_structures/render_constructs.py   # PyMOL panels + figures
 python code/1018_construct_structures/compare_constructs.py  # tables
 python code/1018_construct_structures/render_virion_context.py   # the three WT parts together
+python code/1018_construct_structures/registry_sequences.py      # Registry-ready sequences
 ```
 
 > `fold_ancestors.py` needs `transformers`, which lives in the **base** conda env, not
@@ -40,6 +41,7 @@ so each wild-type panel greys out the part of the fold that is **not** in the co
 | `construct_comparison.csv` | one row per construct: length, MW, pI, AF3/ESMFold confidence, RMSD |
 | `sequence_identity.csv` | pairwise % identity of the mature inserts |
 | `plddt_profiles.csv` | per-residue pLDDT of the ESMFold models |
+| `registry/registry_parts.{ffn,faa,tsv}` | Registry-ready sequences: `ATG` + the protein's own CDS + stop, vector leader and CDS11's designed purification linker removed |
 
 The written comparison lives in
 [`documents/2026-10-18_parts_structure_comparison.md`](../../documents/2026-10-18_parts_structure_comparison.md).
