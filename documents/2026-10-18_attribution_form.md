@@ -36,12 +36,12 @@ Tasks: Conceptualization · Investigation · Analysis · Software · Data Curati
 > Project administration (co-founded the team, led planning and scheduling, coordinated with the PI and iGEM); conceptualization (the students led the idea of investigating phage receptor-binding proteins, and brought the team methods from the literature for expression and for validating the expression results); investigation (soil sampling through to the autumn protein work, with Yan Yan and Xiaokuan Wang); software and analysis (all of the team's analysis code); data curation (1,673-sequence RBP database, notebook pages 1–81); writing (first author of the genome announcement, the revision and the reviewer response); visualization; fundraising; wiki.
 
 ### Yan (Olivia) Yan — Student
-Tasks: Investigation · Notebook/record keeping · Writing · Wiki Coding · Public Engagement · Project Administration · Fundraising · Data Curation
-> Summer bench work and the autumn protein work with Alex and Carol; ~20 notebook entries; co-author of the genome announcement; built the wiki framework and coordinated deliverables; organised the stakeholder interview; team photograph and judging presentation; personally covered part of the competition fees.
+Tasks: Conceptualization · Investigation · Notebook/record keeping · Writing · Wiki Coding · Public Engagement · Project Administration · Fundraising · Data Curation
+> Conceptualization (the students led the idea of investigating phage receptor-binding proteins, and brought the team methods from the literature for expression and for validating the expression results); summer bench work and the autumn protein work with Alex and Carol; ~20 notebook entries; co-author of the genome announcement; built the wiki framework and coordinated deliverables; organised the stakeholder interview; team photograph and judging presentation; personally covered part of the competition fees.
 
 ### Xiaokuan (Carol) Wang — Student
-Tasks: Investigation · Notebook/record keeping · Writing · Data Curation · Analysis
-> The largest share of the bench work, summer and autumn; recorded most of the summer experiments; co-author of the genome announcement; now also researches in the Ignacio-Espinoza Lab at KGI.
+Tasks: Conceptualization · Investigation · Notebook/record keeping · Writing · Data Curation · Analysis
+> Conceptualization (the students led the idea of investigating phage receptor-binding proteins, and brought the team methods from the literature for expression and for validating the expression results); the largest share of the bench work, summer and autumn; recorded most of the summer experiments; co-author of the genome announcement; now also researches in the Ignacio-Espinoza Lab at KGI.
 
 ### Yuhui (Sarah) Liu — Student
 Tasks: Conceptualization · Investigation · Analysis
