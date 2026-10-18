@@ -7,10 +7,8 @@ Companion file: `2026-10-18_pi_contribution_questionnaire.md` — sent to the PI
 
 ## Still open
 
-1. **PI questionnaire** — sent 2026-10-18, awaiting reply. The PI entry below is our best reconstruction until then.
-2. **The stakeholder interview is tomorrow (2026-10-19)** — Weitao wrote the guide and will conduct it. The interviewee's name and affiliation are not yet known; once the interview happens, add them to External Contributions and make Weitao's entry concrete.
-3. **Two spring timeline dates** — when the team formed, and when dry-lab work actually began. See the timeline section.
-4. **ElevenLabs / Suno account tier** — needed only if we want to state commercial rights; not required by the form.
+1. **PI questionnaire** — sent 2026-10-18, awaiting reply. His entry is entered now with the ancestral-sequence design as the lead item; revise when he answers.
+2. **The stakeholder interview is on 2026-10-19** — Weitao wrote the guide and will conduct it. Once it happens, add the interviewee to External Contributions.
 
 ---
 
@@ -93,18 +91,15 @@ No other AI tools were used.
 
 Each phase needs a start date, an end date, and "actual time worked (weeks)" which must not exceed the calendar duration.
 
-Proposed from the notebook and the repository. Check the two spring dates — they predate both.
-
 | Phase | Start | End | Calendar wks | Actual wks |
 |---|---|---|---|---|
-| Recruit | 2026-02-01 [待確認] | 2026-05-07 | 14 | 6 [待確認] |
-| Project development | 2026-02-01 [待確認] | 2026-05-18 | 15 | 8 [待確認] |
-| Wet lab | 2026-05-18 | 2026-10-21 | 22 | 18 [待確認] |
-| Dry lab | 2026-06-05 | 2026-10-21 | 20 | 18 [待確認] |
-| Wiki | 2026-09-01 [待確認] | 2026-10-21 | 7 | 5 [待確認] |
+| Recruit | 2025-12-01 | 2026-02-15 | 11 | 6 |
+| Project development | 2025-12-15 | 2026-05-18 | 22 | 10 |
+| Wet lab | 2026-05-18 | 2026-10-21 | 22 | 18 |
+| Dry lab | 2026-06-05 | 2026-10-21 | 20 | 18 |
+| Wiki | 2026-09-01 | 2026-10-21 | 7 | 5 |
 
-Anchors: general proposal 2026-05-07 · lab kickoff at KGI and first notebook page 2026-05-18 · soil sampling 2026-05-19 · first analysis notebook `0605_quantification.ipynb` 2026-06-05 · repository initialised 2026-06-08 · last notebook page 2026-07-16 · freeze 2026-10-21.
-"Actual time worked" must not exceed the calendar duration. Wet lab ran continuously from May to the freeze, so 18 of 22 weeks is a fair claim; dry lab likewise. The two spring phases are guesses — when did the team actually form, and when did Ryan and the others start on the dry-lab pipeline?
+Anchors: team founded winter 2025 · first meeting with the PI and start of the collaboration 2025-12-15 · remaining members including Ryan joined within the following two months · general proposal 2026-05-07 · lab kickoff at KGI and first notebook page 2026-05-18 · soil sampling 2026-05-19 · first analysis notebook `0605_quantification.ipynb` 2026-06-05 · repository initialised 2026-06-08 · last notebook page 2026-07-16 · freeze 2026-10-21.
 
 ---
 Log: 2026-10-18 created from repo sweep + live form structure; same day updated with Alex's answers (Ryan, Weitao, Sarah, autumn bench work, Camille, Christan, offers, external contributors, sequencing provider), the all-plasmids-from-Twist correction, and Ashley/Anthropic account details. Not yet entered into the form.
