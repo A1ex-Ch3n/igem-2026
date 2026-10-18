@@ -28,6 +28,43 @@ organisation who have opted-in will appear."*
 > Espinoza** — must sign in to registry.igem.org themselves, opt in as an author, and accept the
 > CLA. Nobody can be added to a part otherwise. Do this first, today.
 
+### Where the opt-in and the CLA actually are
+
+**`https://registry.igem.org/profile` → nav `Profile → Account` → scroll to the bottom card**,
+below the ORCID and Community Uptake widgets. The card reads *"Opt-in to be an author in the new
+iGEM Registry"*, with a checkbox *"I agree to the Contributor License Agreement"* (the link goes
+to `https://registry.igem.org/about/cla`) and an **Opt In** button.
+
+- It is easy to miss because it is **below the fold** and is not a menu item of its own. If you
+  are not opted in, a banner also appears site-wide: *"You have not opted-in to be an author in
+  the iGEM Registry"*, with an `opt-in` link to the same page.
+- **If the card instead says "You've Opted In" with an Opt Out button, you are already done** —
+  the Status field at the top of the profile then reads `Opted in`. In that case the real problem
+  is affiliation, not the CLA.
+- `/cla`, `/account`, `/profile/settings`, `/authors` are **not** routes; they fall through to
+  the SPA catch-all and render something that looks like a page. Only `/profile` and
+  `/about/cla` are real.
+- Prerequisite to opt in: just a signed-in iGEM account. Prerequisite to be **addable as an
+  author**: opt-in *plus* membership of the organisation the person adding selects. The help
+  text: *"Select their affiliation. This must currently be one of the organisations (e.g. iGEM
+  Teams) you belong to… Only members of the selected organisation who have opted-in will
+  appear."* The author picker spells out the failure mode — *"No opted-in colleague matches.
+  They may still need to sign in to the Registry and opt in from their Profile page."*
+- **The PI opts in exactly the same way** — there is no separate advisor flow. He needs an iGEM
+  account and an active membership of the team organisation. The CRediT role to give him is
+  **Supervision**.
+- There is a **second, different CLA checkbox** inside the part form itself (the Licence
+  section of `/parts/create` and `/parts/<slug>/modify`): *"I confirm that this submission
+  constitutes a scientific contribution"* + *"I agree to the Contributor License Agreement"*.
+  Accepting that one does **not** replace the account-level opt-in, and vice versa.
+- Help page: `https://registry.igem.org/help/how-to-submit-a-part` — *"Go to your profile, then
+  read and accept our Contributor Licence Agreement."*
+
+⚠️ **Authorship is permanent**: *"The authorship of a part can only be modified while the part
+is in Draft mode. Once it has been submitted to Biosafety Screening, authorship can no longer be
+changed."* So everyone, the PI included, must be opted in **and added to the part** before
+anyone clicks Send for Screening.
+
 ## 2. The workflow, and what locks forever
 
 Create Part → part type (Sequence Ontology role; ours is **CDS**, `SO:0000316`) → Title, Source,
