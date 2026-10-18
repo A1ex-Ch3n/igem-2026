@@ -10,7 +10,9 @@ derived/usable material has been filed elsewhere in the repo.
    (`code/0708_phage_assembly`, `data/phage_genome`) resolved the topology as
    **linear with a 77 bp direct terminal repeat (DTR)** — same 77 bp, opposite
    interpretation. Do not paste A2 into the wiki or a form until this is settled
-   with him.
+   with him. Full evidentiary record, and why our own "resolved" is weaker than
+   it looks, in
+   [`../2026-10-18_genome_topology_conflict.md`](../2026-10-18_genome_topology_conflict.md).
 2. A2 has an unfilled placeholder: "input **XX** ng".
 3. A3 has an unfilled placeholder: "AlphaFold **weserver version**", plus
    "all ORFs with were annotated" and "to identify structural" (sentence cut off).
