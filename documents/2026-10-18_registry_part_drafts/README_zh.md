@@ -11,14 +11,18 @@ application / discussion**），可以直接貼。流程、截止日與「送出
 | [`CDS10_WT.md`](CDS10_WT.md) ／ [中文](CDS10_WT_zh.md) | CDS_0010 res 105–917 — 功能未知的 fiber | ✅ |
 | [`CDS11_WT.md`](CDS11_WT.md) ／ [中文](CDS11_WT_zh.md) | CDS_0011 res 305–941 — tail spike 的 β-helix depolymerase body | ✅ |
 | [`CDS12_WT.md`](CDS12_WT.md) ／ [中文](CDS12_WT_zh.md) | CDS_0012 res 117–477 — GH5 glycoside hydrolase | ✅ |
-| [`CDS12_ANC_Node1.md`](CDS12_ANC_Node1.md) ／ [中文](CDS12_ANC_Node1_zh.md) | 重建祖先 GH5，node 1（`e1`） | ✅ 含 2 個 UNDONE 欄位 |
-| [`CDS12_ANC_Node40.md`](CDS12_ANC_Node40.md) ／ [中文](CDS12_ANC_Node40_zh.md) | 重建祖先 GH5，node 40（`e40`） | ✅ 含 2 個 UNDONE 欄位 |
-| [`CDS12_ANC_Node281.md`](CDS12_ANC_Node281.md) ／ [中文](CDS12_ANC_Node281_zh.md) | 重建祖先 GH5，node 281（`e281`） | ✅ 含 2 個 UNDONE 欄位 |
+| [`CDS12_ANC_Node1.md`](CDS12_ANC_Node1.md) ／ [中文](CDS12_ANC_Node1_zh.md) | 重建祖先 GH5，node 1（`e1`） | ✅ |
+| [`CDS12_ANC_Node40.md`](CDS12_ANC_Node40.md) ／ [中文](CDS12_ANC_Node40_zh.md) | 重建祖先 GH5，node 40（`e40`） | ✅ |
+| [`CDS12_ANC_Node281.md`](CDS12_ANC_Node281.md) ／ [中文](CDS12_ANC_Node281_zh.md) | 重建祖先 GH5，node 281（`e281`） | ✅ |
 | collection 頁 | 六個 part 當成一套工具組 | ⬜ **UNDONE** |
 
-**每個祖先草稿裡的兩個 UNDONE 欄位**都需要教授：(1) 重建所用的程式、比對與樹，填進 `source`；
-(2) node 1 / 40 / 281 在那棵樹上的位置 — 在他回覆之前，草稿只用序列 identity 描述節點，絕不寫
-「深」「中」「淺」。那三頁的其餘內容都已寫好，可以直接貼。
+**祖先草稿等的那兩個欄位，教授 2026-10-18 的交付資料都答了**，現在已經補進去。(1) 重建方法：
+CDS_0012 對 NCBI nr 取前 1000 hits、SeaView 內 MUSCLE 比對並人工修剪、PhyML 建樹（WAG，p-inv 0.1，
+100 bootstrap）、IQ-TREE 以同一矩陣 midpoint-rooted 推祖先。(2) 節點順序：CDS_0012 到樹根這條路徑上
+每個節點都重建了，編號是任意識別碼而非深度，順序 1, 2, 38, 39, 40, 42, 267, 277, 281 由最晚近到最古老，
+與草稿原本就有的 identity 數字一致。出處：
+[`../2026-10-18_pi_questionnaire_answers.md`](../2026-10-18_pi_questionnaire_answers.md) A1。
+那三頁可以直接貼。
 
 ## 這些草稿要守住的區分
 

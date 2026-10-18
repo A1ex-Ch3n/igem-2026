@@ -7,7 +7,7 @@
 | Part type / role | CDS（`SO:0000316`），**basic part** |
 | Title | `Phi8-GH5-ancN281` — reconstructed ancestral GH5 glycoside hydrolase (node 281) |
 | Sequence | 1089 bp = `ATG` + CDS + stop → 362 aa。取自 `registry_parts.ffn` |
-| Source | **電腦設計序列 — 自然界不存在。** 以噬菌體 9-2-1 Φ8 的 CDS_0012 為核心建立的 GH5 系統發育樹，在 node 281 做 ancestral-state reconstruction，由 Espinoza 教授完成。⬜ **UNDONE：送件前要補上重建所用的程式、比對與樹。** |
+| Source | **電腦設計序列 — 自然界不存在。** 以噬菌體 9-2-1 Φ8 的 CDS_0012 為核心建立的 GH5 系統發育樹，在 node 281 做 ancestral-state reconstruction，由 Espinoza 教授完成。重建方法：以 CDS_0012 查詢 NCBI nr 取前 1000 個 hits，在 SeaView 內以 MUSCLE 比對並人工修剪至現存序列覆蓋的區段；以 PhyML 建樹（WAG，不變位點比例固定 0.1，100 次 bootstrap）；再於 IQ-TREE 以同一 WAG 矩陣、midpoint-rooted 推論祖先序列。 |
 | Designed for | *Escherichia coli*（表現宿主） |
 | 序列中**不**包含 | pET-28a 的 `MGSSHHHHHHSSGLVPRGSHM` N 端 His6 leader |
 | 團隊簡稱 | `e281` |
@@ -33,8 +33,10 @@
 **三者中離現代酵素最遠（51.0%）**，而與 Node40 有 87.3%。兩者表現為一對，讓面板在最遠端
 有了內部重複。
 
-> ⬜ **UNDONE — 在教授說明 node 281 在樹上的位置之前，不要用樹深度描述它**（「淺」「晚近」
-> 「最接近現生分支」）。只有上面的 identity 是我們能講的。
+> **樹上位置（2026-10-18 已確認）。** 教授重建了 CDS_0012 到樹根這條路徑上的每一個祖先節點。
+> 編號是任意識別碼、不是深度，但順序是 1, 2, 38, 39, 40, 42, 267, 277, 281，由最晚近排到最古老。
+> 因此 node 281 是我們三個之中最深、最接近樹根的一個。重建順序與序列 identity 一致，所以這三個祖先 part 是真正的深度序列，
+> 不是三個任意點。
 
 **結構。** ESMFold v1，單序列、無 MSA、無 template：**mean pLDDT 85.8**，88.1% 的殘基高於 70。
 疊到 CDS12_WT 的 ESMFold 模型上，主鏈 **RMSD 0.52 Å**。序列變了一半，GH5 TIM barrel 卻紋風
@@ -107,4 +109,5 @@ codon usage 是實際風險。結構證據是單序列模型。
 ---
 *草稿 — 2026-10-18。數字：`code/output/1018_construct_structures/`。證據等級：
 [`../2026-10-18_parts_structure_comparison.md`](../2026-10-18_parts_structure_comparison.md)。
-上面兩個 UNDONE 必須先與教授確認，這個 part 才能離開 Draft。*
+上面兩個待補項目已於 2026-10-18 依教授交付的資料解決，見
+[`../2026-10-18_pi_questionnaire_answers.md`](../2026-10-18_pi_questionnaire_answers.md) A1。*

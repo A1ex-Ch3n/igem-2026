@@ -13,15 +13,20 @@ Registry gets the English text**). Index: [`README_zh.md`](README_zh.md).
 | [`CDS10_WT.md`](CDS10_WT.md) · [中文](CDS10_WT_zh.md) | CDS_0010 res 105–917 — unknown-function fiber | ✅ |
 | [`CDS11_WT.md`](CDS11_WT.md) · [中文](CDS11_WT_zh.md) | CDS_0011 res 305–941 — tail-spike β-helix depolymerase body | ✅ |
 | [`CDS12_WT.md`](CDS12_WT.md) · [中文](CDS12_WT_zh.md) | CDS_0012 res 117–477 — GH5 glycoside hydrolase | ✅ |
-| [`CDS12_ANC_Node1.md`](CDS12_ANC_Node1.md) · [中文](CDS12_ANC_Node1_zh.md) | reconstructed ancestral GH5, node 1 (`e1`) | ✅ with 2 UNDONE fields |
-| [`CDS12_ANC_Node40.md`](CDS12_ANC_Node40.md) · [中文](CDS12_ANC_Node40_zh.md) | reconstructed ancestral GH5, node 40 (`e40`) | ✅ with 2 UNDONE fields |
-| [`CDS12_ANC_Node281.md`](CDS12_ANC_Node281.md) · [中文](CDS12_ANC_Node281_zh.md) | reconstructed ancestral GH5, node 281 (`e281`) | ✅ with 2 UNDONE fields |
+| [`CDS12_ANC_Node1.md`](CDS12_ANC_Node1.md) · [中文](CDS12_ANC_Node1_zh.md) | reconstructed ancestral GH5, node 1 (`e1`) | ✅ |
+| [`CDS12_ANC_Node40.md`](CDS12_ANC_Node40.md) · [中文](CDS12_ANC_Node40_zh.md) | reconstructed ancestral GH5, node 40 (`e40`) | ✅ |
+| [`CDS12_ANC_Node281.md`](CDS12_ANC_Node281.md) · [中文](CDS12_ANC_Node281_zh.md) | reconstructed ancestral GH5, node 281 (`e281`) | ✅ |
 | collection page | the six parts as one toolbox | ⬜ UNDONE |
 
-**The two UNDONE fields in every ancestral draft**, both needing the PI: (1) the reconstruction
-program, alignment and tree, for the `source` field; (2) where nodes 1 / 40 / 281 sit on that
-tree — until he answers, the drafts describe the nodes only by sequence identity and never as
-"deep", "mid" or "shallow". Everything else in those three pages is written and can be pasted.
+**The two fields the ancestral drafts were waiting on were both answered by the PI's
+2026-10-18 handover** and are now written in. (1) The reconstruction: top 1000 NCBI nr hits to
+CDS_0012, MUSCLE in SeaView, manually curated; PhyML (WAG, p-inv 0.1, 100 bootstraps);
+ancestral states in IQ-TREE, same matrix, midpoint-rooted. (2) The node ordering: every node on
+the path from CDS_0012 to the root was reconstructed, and the labels — arbitrary identifiers,
+not depths — run 1, 2, 38, 39, 40, 42, 267, 277, 281 from most recent to most ancestral, which
+agrees with the sequence identities the drafts already carried. Source:
+[`../2026-10-18_pi_questionnaire_answers.md`](../2026-10-18_pi_questionnaire_answers.md), A1.
+All three pages can be pasted as they stand.
 
 ## The distinction these drafts exist to protect
 

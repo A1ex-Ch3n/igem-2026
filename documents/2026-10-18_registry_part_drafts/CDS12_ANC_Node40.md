@@ -5,7 +5,7 @@
 | Part type / role | CDS (`SO:0000316`), **basic part** |
 | Title | `Phi8-GH5-ancN40` — reconstructed ancestral GH5 glycoside hydrolase (node 40) |
 | Sequence | 1089 bp = `ATG` + CDS + stop → 362 aa. From `registry_parts.ffn` |
-| Source | **Computationally designed sequence — not found in nature.** Ancestral-state reconstruction at node 40 of a GH5 phylogeny built around CDS_0012 of bacteriophage 9-2-1 Φ8, by Prof. J. Espinoza. ⬜ **UNDONE: name the reconstruction program, the alignment and the tree before submitting.** |
+| Source | **Computationally designed sequence — not found in nature.** Ancestral-state reconstruction at node 40 of a GH5 phylogeny built around CDS_0012 of bacteriophage 9-2-1 Φ8, by Prof. J. Espinoza. Reconstruction: the top 1000 NCBI nr hits to CDS_0012 were aligned with MUSCLE in SeaView and manually curated to the region covered by the extant query; the tree was built with PhyML (WAG, invariant-site proportion fixed at 0.1, 100 bootstrap replicates); ancestral states were inferred in IQ-TREE under the same WAG matrix with the tree midpoint-rooted. |
 | Designed for | *Escherichia coli* (expression host) |
 | Not included in the sequence | pET-28a's `MGSSHHHHHHSSGLVPRGSHM` N-terminal His6 leader |
 | Team shorthand | `e40` |
@@ -36,9 +36,11 @@ and Node281 therefore behave as a *pair*: a difference seen with both of them, a
 Node1, is the pattern this design predicts most strongly. A difference seen with Node40 alone
 would need explaining.
 
-> ⬜ **UNDONE — do not describe this node by tree depth** ("mid node", "intermediate ancestor")
-> until the PI tells us where node 40 sits on his tree. Only the identities above are ours to
-> state.
+> **Tree position (resolved 2026-10-18).** The PI reconstructed every ancestral node on the path
+> from CDS_0012 to the root. The labels are arbitrary identifiers, not depths, but their order is
+> 1, 2, 38, 39, 40, 42, 267, 277, 281, running from the most recent ancestor to the most ancestral.
+> Node 40 is therefore an intermediate node on that path. Reconstruction order and sequence identity agree, so the three ancestral parts
+> form a genuine depth series and not three arbitrary points.
 
 **Structure.** ESMFold v1, single sequence, no MSA, no template: **mean pLDDT 85.5**, 87.3 % of
 residues above 70. Superposed on the ESMFold model of CDS12_WT it gives **0.50 Å** backbone
@@ -109,4 +111,5 @@ replicate that Node1 does not have.
 ---
 *Draft — 2026-10-18. Numbers: `code/output/1018_construct_structures/`. Evidence grades:
 [`../2026-10-18_parts_structure_comparison.md`](../2026-10-18_parts_structure_comparison.md).
-Two UNDONE items above must be resolved with the PI before this part leaves Draft.*
+Both open items above were resolved on 2026-10-18 from the PI's handover — see
+[`../2026-10-18_pi_questionnaire_answers.md`](../2026-10-18_pi_questionnaire_answers.md), A1.*
