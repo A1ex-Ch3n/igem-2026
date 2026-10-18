@@ -1,0 +1,31 @@
+# Environment for the iGEM 2026 Claremont software tools.
+#   conda env create -f environment.yml && conda activate igem2026-software
+name: igem2026-software
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  # core analysis
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - biopython
+  - pillow
+  - openpyxl
+  # genome / structure visualisation
+  - pycirclize
+  - pygenomeviz
+  - pymol-open-source
+  # command-line tools the scripts shell out to
+  - mmseqs2
+  - blast
+  - minimap2
+  - samtools
+  # tests
+  - pytest
+  - pip
+  - pip:
+      - pytest-cov

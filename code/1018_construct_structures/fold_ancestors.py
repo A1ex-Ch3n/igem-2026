@@ -26,6 +26,17 @@ OUT = ROOT / "code/output/1018_construct_structures/esmfold"
 LEADER = "MGSSHHHHHHSSGLVPRGSHM"
 
 
+def rescale_bfactors(pdb: str) -> str:
+    """transformers writes pLDDT on a 0-1 scale; everything downstream (PyMOL
+    colouring, the AF3 comparison) assumes AlphaFold's 0-100 scale."""
+    lines = []
+    for line in pdb.splitlines():
+        if line.startswith(("ATOM", "HETATM")):
+            line = f"{line[:60]}{float(line[60:66]) * 100:6.2f}{line[66:]}"
+        lines.append(line)
+    return "\n".join(lines) + "\n"
+
+
 def main(names: list[str]) -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     tok = AutoTokenizer.from_pretrained("facebook/esmfold_v1")
@@ -41,8 +52,11 @@ def main(names: list[str]) -> None:
         print(f"[fold] {name} {len(seq)} aa", flush=True)
         with torch.no_grad():
             out = model.infer_pdb(seq)
+        out = rescale_bfactors(out)
         (OUT / f"{name}.pdb").write_text(out)
-        plddt = [float(l[60:66]) for l in out.splitlines()
+        # transformers' infer_pdb writes pLDDT on a 0-1 scale into the B-factor
+        # column; rescale to the 0-100 scale everything else in this project uses
+        plddt = [float(l[60:66]) * 100 for l in out.splitlines()
                  if l.startswith("ATOM") and l[12:16].strip() == "CA"]
         (OUT / f"{name}_plddt.json").write_text(json.dumps(
             {"name": name, "length": len(seq), "plddt": plddt,
