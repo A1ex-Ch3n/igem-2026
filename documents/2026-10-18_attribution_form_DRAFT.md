@@ -7,11 +7,11 @@ Companion file: `2026-10-18_pi_contribution_questionnaire.md` — sent to the PI
 
 ## Still open
 
-1. **PI questionnaire** — sent, awaiting reply. PI entry below is our best reconstruction until then.
-2. **Project timeline dates** — recruit / project-development start dates, and "actual weeks worked" per phase. Only you can set these.
-3. **Human practices** — Weitao's actual HP activities, and whether the Ashley interview happened. Needed for his entry.
-4. **Anthropic** — which two members held the accounts, and what they used Claude for (so the AI-tool and Offers entries match).
-5. **AI tools** — anything besides Claude, ElevenLabs and Suno? ElevenLabs/Suno account tier.
+1. **PI questionnaire** — sent 2026-10-18, awaiting reply. PI entry below is our best reconstruction until then.
+2. **Project timeline dates** — recruit / project-development / wiki start dates, and "actual weeks worked" per phase. Only the team lead can set these.
+3. **Weitao's human practices** — the entry is still abstract. What did he concretely do: meetings, interviews, outreach events, a presentation, written material? Judges score Public Engagement on activities, not intentions.
+4. **Ashley's surname and job title** at the California Botanic Garden.
+5. **AI tools** — anything besides Claude, ElevenLabs and Suno (translation, slides, image generation)? ElevenLabs/Suno account tier.
 
 ---
 
@@ -41,7 +41,7 @@ Tasks: Conceptualization, Investigation, Analysis
 
 ### Weitao Ke — Student
 Tasks: Public Engagement, Conceptualization, Investigation
-> (1) Public Engagement — led the team's human practices work. [待補: 具體做了什麼] (2) Investigation — prepared PMM agar plates on 2026-05-21. (3) Conceptualization — contributed to early project discussions.
+> (1) Public Engagement — led the team's human practices work, which centred on how our scientific results should be communicated to an audience outside the laboratory and how to present the project so that it is intelligible and useful to non-specialists. [待確認: 他具體做了什麼 — 開了什麼會、訪談了誰、產出了什麼？目前這段太抽象，評審會看不出實際做了什麼] (2) Investigation — prepared PMM agar plates on 2026-05-21. (3) Conceptualization — contributed to early project discussions.
 
 ### Ryan — Student
 Tasks: Conceptualization, Analysis
@@ -61,7 +61,7 @@ Tasks: Visualization
 
 | Tool | Tasks | Specific use and review |
 |---|---|---|
-| Claude (Anthropic), via Claude Code | Software, Analysis, Writing, Visualization, Wiki Coding | Used as a programming assistant for the team's analysis code and documentation: analysis notebooks (assembly and annotation wrappers, RBP detection, genome comparison, gel and assay quantification), HPC job scripts, drafting and editing of written material, and the wiki structure. Two team members held Anthropic accounts. Review: every computational result was checked by a student against the underlying data — mutation calls were confirmed at the level of the sequencing reads, and the protein-binding screen was tested against a control set, which is how we discovered it was uninformative and retired it. All code was run and inspected by the student who owned the analysis, all text was edited by team members before use, and the PI reviewed the scientific claims. |
+| Claude (Anthropic), via Claude Code | Software, Analysis, Writing, Visualization, Wiki Coding | Used as a programming assistant for the team's analysis code and documentation: analysis notebooks (assembly and annotation wrappers, RBP detection, genome comparison, gel and assay quantification), HPC job scripts, drafting and editing of written material, and the wiki structure. The team's two Anthropic accounts were held by Yan Yan and Xiaokuan Wang. Review: every computational result was checked by a student against the underlying data — mutation calls were confirmed at the level of the sequencing reads, and the protein-binding screen was tested against a control set, which is how we discovered it was uninformative and retired it. All code was run and inspected by the student who owned the analysis, all text was edited by team members before use, and the PI reviewed the scientific claims. |
 | ElevenLabs | Visualization | AI voice narration for the promotional video. The script was written by the team. [待確認 account tier] |
 | Suno | Visualization | AI-generated background music for the promotional video. [待確認 account tier] |
 
@@ -72,7 +72,7 @@ Tasks: Visualization
 | Offer | Used? | Entry |
 |---|---|---|
 | **Twist** | Yes | Every plasmid used in this project came from Twist. All six pET-28a expression constructs were synthesised by Twist in two orders, on 2026-07-27 and 2026-09-10: the CDS_0011 tail-fibre fragment (residues 305–941, N-terminal His6), the CDS_0012 GH5 depolymerase, three ancestral-reconstruction variants of CDS_0012 (Node1, Node40 and Node281), and CDS_0010. They arrived as sequence-verified clones with glycerol stocks, which we transformed into BL21 and used for all expression, purification and activity work. The entire protein arm of the project rests on this offer. |
-| **Anthropic** | Yes | Two team members used Anthropic accounts for Claude, which supported the computational work and writing described in the AI Tool Use table above. [待補: 這兩位是誰、主要用在什麼] |
+| **Anthropic** | Yes | Two members of the team, Yan Yan and Xiaokuan Wang, held Anthropic accounts and used Claude for the computational and written work described in the AI Tool Use table above. |
 | IDT | No | We did not need this type of support — all synthesis for the project was done through Twist, and no additional oligonucleotides or gene fragments were required. |
 | GenScript | No | We did not need this type of support — all constructs were synthesised through Twist. |
 | Distribution Kit | No | Not relevant to our project. Our work is based on phages and bacterial isolates that the team collected from soil and on constructs synthesised from those genomes, so we did not use standard registry parts. |
@@ -87,9 +87,8 @@ Tasks: Visualization
 | Prof. Ran Libeskind-Hadas | University (Claremont McKenna College) | Chair, Kravis Department of Integrated Sciences; faculty supporter | Conceptualization, Project Administration | Administrative support for the team at Claremont McKenna College, and help with the early conceptualisation of the project. |
 | Plasmidsaurus | Company | Paid sequencing service | Investigation | Performed all of the project's sequencing: Oxford Nanopore whole-genome sequencing of the bacterial isolates and of the two phage-resistant clones, and the Illumina sequencing of phage 9-2-1 Φ8. |
 | Keck Graduate Institute (Laguna HPC) | University | Host institution's research computing | Software | Provided the compute allocation on which the team's genome assembly, protein structure prediction and RBP detection were run. |
-| California Botanic Garden | Non-profit | Sampling site | Other | Allowed the soil sampling from which all ten environmental samples, and therefore every isolate and phage in this project, were obtained. |
-
-*[Ashley — human-practices interviewee. Include if the interview took place; need affiliation and role.]*
+| Ashley [姓氏待補] | Non-profit (California Botanic Garden) | Garden staff member who hosted the team | Investigation, Public Engagement | Received the team at the California Botanic Garden and took us into the grounds for the soil sampling on 2026-05-19, which supplied the ten environmental samples that every isolate and phage in this project came from. |
+| California Botanic Garden | Non-profit | Sampling site | Other | Granted the team access to its grounds for soil sampling. |
 
 ## 5. Project Timeline
 
@@ -104,4 +103,4 @@ Each phase needs a start date, an end date, and "actual time worked (weeks)" whi
 | Wiki | 待填 | 2026-10-21 | 待填 |
 
 ---
-Log: 2026-10-18 created from repo sweep + live form structure; same day updated with Alex's answers (Ryan, Weitao, Sarah, autumn bench work, Camille, Christan, offers, external contributors, sequencing provider) and the all-plasmids-from-Twist correction. Not yet entered into the form.
+Log: 2026-10-18 created from repo sweep + live form structure; same day updated with Alex's answers (Ryan, Weitao, Sarah, autumn bench work, Camille, Christan, offers, external contributors, sequencing provider), the all-plasmids-from-Twist correction, and Ashley/Anthropic account details. Not yet entered into the form.
