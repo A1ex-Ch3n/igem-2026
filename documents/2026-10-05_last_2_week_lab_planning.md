@@ -97,7 +97,7 @@ Bench time < 1 day on every path. The wait is the risk.
 - [ ] Check previous submission's actual turnaround in the digitised notebook
 
 ## Analysis — 4–8 h once data lands
-assemble → annotate → locate surface sugar biosynthetic cassettes → circle-plot them on the genome figure. **UNDONE**
+assemble → annotate → locate surface sugar biosynthetic cassettes → circle-plot them on the genome figure. **DONE 2026-10-10 for R1 of each host** → `code/1010_resistant_mutant_comparison/` (9-6-2 R1: Stealth CR3 F126L in the capsule-type cluster; 9-2-1 R1: no confirmed mutation; O-antigen + LPS core unchanged). R2/R3 still unsequenced.
 
 ---
 
