@@ -857,3 +857,19 @@ a re-render (pandoc 3.8 or quarto).*
 custom CSS emulating `theme: cosmo` (light, images inlined as data URIs). The
 `.qmd` is the source of truth; a later `quarto render` gives standard cosmo
 output.*
+
+
+*Log — 2026-10-19: **genome topology superseded; body text above left as the
+2026-07/08 record.** This document reports 9-2-1 Φ8 as **linear, 62,338 bp, with
+a 77 bp direct terminal repeat** (§B1, §3, App. B7). On **2026-10-18** the call was
+settled the other way for all outward-facing work: the PI's assembly governs, and
+the genome is reported as a **circular contig of 62,339 bp** (62,416 bp before the
+77 bp overhang is trimmed). The deciding points were that the PI reads his own
+assembly as circular, and that our one read-level test — the k-mer coverage
+profile, the only check that looked outside the assembly graph — returned
+`CIRCULAR / no short linear DTR`; the linear call rested on a string comparison of
+the contig ends. The evidence on both sides, the two caveats on the coverage test,
+and what is still untested are in
+[`2026-10-18_genome_topology_conflict.md`](2026-10-18_genome_topology_conflict.md).
+Nothing else in this document changes — CDS content, annotation, synteny and the
+O-antigen analysis are all topology-independent.*

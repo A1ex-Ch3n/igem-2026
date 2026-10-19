@@ -118,3 +118,14 @@ Thank you for funding a summer in which I got to find out I was wrong about some
 ---
 
 *Log: 2026-08-08 — Drafted by Claude from the project docs and lab notebook, following the five-section structure of the sponsorship form (Overview · Outcomes · Impact · Highlight · Thank You) and the point outline agreed in conversation. Traditional Chinese version alongside at `2026-08-08_sponsor_summer_report_DRAFT_zh.md`. The failed binding screen appears in three sections by design, each time doing a different job — contribution in §1, method lesson in §2, self-knowledge in §3 — and is stated at full length only in §1. Host range is written as a prediction, not a result, since the 2026-07-04 assay data has not reached us. The Highlight describes the β-helix as running down "most of" CDS_0011 rather than its full 941 aa, per the domain map in `code/0716_espinoza_fiber_construct/domain_map.tsv` (Calx-β 1–110, unplaceable shaft 111–300, rigid β-helix body 301–941) — which is also why the ordered construct starts at residue 305. The §3 control is both clone pairs at 100.0% (A10), not one pair. Four items flagged as needing Alex's input, attribution of first-person claims first among them.*
+
+
+*Log: 2026-10-19 — **two numbers in this draft are superseded; the text is left as
+the 2026-08-08 record.** The evidence list cites the phage genome as "62,338 bp …
+linear with 77 bp terminal repeat", and the narrative sections give 62,338 bp. As
+of **2026-10-18** the project reports **circular, 62,339 bp**, following the PI's
+assembly — see
+[`2026-10-18_genome_topology_conflict.md`](2026-10-18_genome_topology_conflict.md).
+If any of this text is reused for a donor-facing document, update both the length
+and the topology first. Everything else — 80 CDS, no database match, zero VFDB and
+zero CARD hits — is unaffected.*

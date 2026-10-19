@@ -615,3 +615,15 @@ python code/0730_synteny_group_d/analyze_and_plot.py "$WORK"
 *Log — 2026-07-30：併入 2026-07-29 與教授對話的後續。CDS_0010 →「未知蛋白」（C1）；三個構築記錄對齊、下游不做 C 端標籤偵測（C2）；新的 synteny/similarity 分析（`code/0730_synteny_group_d/`）新增結果 **C11–C13** 與**附錄 B7** —— 9-2-1 Φ8 是新穎 ~62 kb、可能溫和的 podovirus，「T7-like」只在 virion 模組 synteny 層級成立，tail group-D-like 但缺 T4gp10 anchor。文件最上方加了一段「重點速覽」直接回答七題；嵌入 Latka 分組 cartoon（**B8**）、ESMFold RBP × receptor 矩陣（**E3**）、一組代表性 DNA 標準曲線（**F1/F2**，0605–0710 重複定量的其一）。另修正宿主範圍用詞（E4/E5、§4.5、附錄 C1）：8-5-2 / 10-10-2 / 8-10-2 已在教授 2026-07-04 的 assay 中被 challenge——是「等 notebook」，不是「從未測試」。`.qmd` 為正本；`.html`/`.pdf` 仍需重 render（pandoc 3.8 或 quarto）。*
 
 *註：本機未安裝 Quarto，隨附 `.html` 由 pandoc 3.8 + 模擬 `theme: cosmo` 的自訂 CSS 產生（淺色、圖片以 data URI 內嵌）。`.qmd` 為正本；日後 `quarto render` 會得到標準 cosmo 輸出。*
+
+
+*Log — 2026-10-19：**基因體拓樸已被推翻；以上內文保留為 2026-07/08 當時的記錄。**
+本文將 9-2-1 Φ8 記為**線性、62,338 bp、兩端 77 bp direct terminal repeat**（§B1、
+§3、附錄 B7）。**2026-10-18** 對外一律改成相反的口徑：以教授的 assembly 為準，
+基因體報為 **circular、62,339 bp**（未切掉 77 bp overhang 前為 62,416 bp）。決定的
+兩個理由：教授本人就把自己的 assembly 讀成環狀；而我們唯一一個 read-level 檢驗——
+k-mer 覆蓋度分布，也是唯一跑出 assembly graph 之外的檢驗——回傳的是
+`CIRCULAR / no short linear DTR`；線性的說法只建立在 contig 兩端的字串比對上。
+兩邊的證據、覆蓋度檢驗的兩個保留，以及還沒測的部分，全在
+[`2026-10-18_genome_topology_conflict.md`](2026-10-18_genome_topology_conflict.md)。
+本文其餘內容不變——CDS 內容、註解、synteny 與 O-antigen 分析都不依賴拓樸。*
