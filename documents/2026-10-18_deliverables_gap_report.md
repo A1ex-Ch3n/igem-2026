@@ -14,8 +14,9 @@ because the pages themselves are a JS SPA.
    and no document in this repository mentions it.** It carries the project
    title, the project abstract, the medal-criteria declarations with their
    standard URLs, and the special-award self-nominations.
-2. **`https://2026.igem.wiki/claremont-ca/contribution` returns 404.** That page
-   is the standard URL for a **Bronze** medal criterion. Bronze needs it.
+2. ~~`/contribution` returns 404~~ — **corrected 2026-10-19: it now returns 200**,
+   as does `/software`. Both were created after this report was written. The
+   Bronze blocker is cleared. Still 404: `/safety` and `/measurement`.
 3. **Gold changed in 2026.** It is no longer judged directly. Gold is decided by
    the three Special Awards you name on the Judging Form, so the Judging Form is
    now the single document that determines the medal ceiling.
@@ -95,19 +96,22 @@ Practices)**.
 
 ## Wiki pages — live status
 
-Checked by HTTP on 2026-10-18. Present with real content: `/`, `/description`,
-`/engineering`, `/human-practices`, `/results`, `/model`, `/parts`, `/notebook`,
-`/team`. **404: `/contribution`, `/measurement`, `/safety`, `/software`.**
+Re-checked by HTTP on 2026-10-19. Present with real content: `/`,
+`/description`, `/engineering` (13.1 kB), `/human-practices` (6.5 kB, thinnest),
+`/results`, `/model` (11.7 kB), `/parts` (16.9 kB, largest), `/notebook`,
+`/team`, **`/contribution` (6.9 kB)** and **`/software` (6.4 kB)**.
+**Still 404: `/measurement`, `/safety`.**
 
-`/contribution` is the one that costs a medal level. `/safety` is not a medal
-standard URL but its absence is odd given the Safety Form is already submitted.
+Neither of the remaining two is a medal standard URL. `/measurement` would only
+be needed if Best Measurement were nominated. `/safety` appears in the wiki's own
+navigation, so it is probably served under a different slug — worth checking, but
+it costs nothing at judging.
 
 ## What is owed, in order
 
-1. **`/contribution` page** — Bronze criterion, currently 404.
-2. **Judging Form** — project title, abstract, medal declarations with standard
+1. **Judging Form** — project title, abstract, medal declarations with standard
    URLs, three special-award nominations. Freezes 10/21.
-3. **Decide the three special awards.** Everything about Gold follows from it.
+2. **Decide the three special awards.** Everything about Gold follows from it.
 4. **Human practices rewrite** — Silver criterion, in hand for tonight.
 5. **Parts upload and the collection page** — in hand elsewhere.
 6. **Presentation Video** — required, 2026-10-28, nothing started. One week after

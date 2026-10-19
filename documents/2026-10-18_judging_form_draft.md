@@ -65,10 +65,9 @@ useful contribution for future iGEM teams."
 - **required link: `https://2026.igem.wiki/claremont-ca/contribution`**
 - checkbox: "I confirm that the required link presents the evidences…"
 
-→ **BLOCKED. That page returns 404.** The form marks it "Unseen required link"
-and will not let the criterion count until the link has been opened. This is the
-one thing standing between us and Bronze. The page needs to exist before the
-freeze.
+→ **Unblocked as of 2026-10-19: the page now returns 200** (6.9 kB). The form
+still marks the link "Unseen" until someone opens it from inside the form — that
+is a click, not a piece of work.
 
 What it should contain, from material we already have: the `phagecheck` package
 (the DTR-versus-circularity check and the rest of the software inventory), the
@@ -163,9 +162,7 @@ press **Save and submit**.
 
 ## Blockers, in order
 
-1. **`/contribution` does not exist.** Bronze depends on it. Without Bronze there
-   is no Silver and no Gold, so this is the single highest-priority item on the
-   whole submission.
+1. ~~`/contribution` does not exist~~ — **resolved 2026-10-19**, the page is live.
 2. **G1 needs a `BBa_` part number**, which the Registry upload has to produce
    first. Without it the Best New Basic Part selection cannot be confirmed.
 3. The **three special prizes** need the team's agreement before the form is
