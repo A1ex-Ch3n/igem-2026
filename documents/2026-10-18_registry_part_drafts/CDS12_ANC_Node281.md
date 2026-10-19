@@ -98,6 +98,12 @@ the baseline for a liquid drop landing on these lawns. Against that baseline the
 
 The crude `e281` lysate reduced colony counts only slightly, from a median of 14 to 9.
 
+Every plate carried its own sterile-PBS drop, and that baseline varied between plates (7–17
+colonies), so the comparable figure is **each drop as a percentage of the PBS drop on the same
+plate**. On that scale the medians are **Φ8 0 %, `e1` 12 %, `e281` 53 %, `e40` 67 %**
+(`spot_percent_of_pbs.tsv`). This variant sits at **53 %**, close to the
+no-effect line.
+
 **What this does and does not establish.**
 - The `e281` preparation is a **crude lysate**, not purified protein, so the
   enzyme is not enriched in it. A weak effect here is **not** evidence that this variant is
@@ -114,8 +120,12 @@ The crude `e281` lysate reduced colony counts only slightly, from a median of 14
 - No clearing means no halo, so this is not depolymerase activity in the classical sense.
 - **Cannot be distinguished from CDS12_WT or the other two ancestors by SDS-PAGE** — all four
   are within 0.43 kDa (1.0 %). Identification needs sequencing or intact-mass MS.
+- Note for anyone reading the `e1` result beside this one: that activity is **not yet
+  attributed to the protein** either. `e1` tracks phage Φ8 strain by strain, so carry-over of
+  infectious phage from the Φ8 stock remains the leading alternative, and a plaque assay of
+  the preparation is the experiment that would settle it.
 - Planned next: purify this variant, equalise protein against the others, and re-spot with an
-  imidazole-vehicle control and CDS12_WT on the same plate.
+  elution-buffer-only control and CDS12_WT on the same plate.
 
 ## application
 

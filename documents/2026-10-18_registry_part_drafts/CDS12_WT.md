@@ -69,8 +69,7 @@ this construct.
 
 ## characterisation
 
-**Preliminary and incomplete** — reported as such, per the Registry's note that inconclusive
-results still have value.
+**Preliminary and incomplete.**
 
 - One induction-dependent band at the predicted mass (above). **Not** confirmed to be this
   protein: no western, no mass spectrometry, and the control lane that would exclude a host

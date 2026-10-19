@@ -64,14 +64,14 @@ ipTM 偏低不代表界面不好 — 是被 N 端鬆散附屬拖低的，鏈間 
 
 ## characterisation
 
-**目前沒有。** 照 Registry 自己的說法誠實記錄：*"Negative or inconclusive results are still
-valuable."*
+**沒有。** 未確認表現（見 *experiment*）、沒有純化蛋白，因此沒有活性試驗。
 
-- 未確認表現（見 *experiment*）。
-- 沒有純化蛋白，因此沒有活性試驗。
-- 預定的讀值是**在宿主菌苔上做 spot assay**：純化蛋白產生 halo 而 buffer 對照沒有，就是
-  depolymerase 活性的直接證據。對照組事先定好：imidazole vehicle、PBS、phage-positive、
-  同批的敏感親代菌株。
+這個 part 需要的讀值是**在宿主菌苔上做 spot assay**：純化蛋白產生 halo 而 buffer 對照沒有，
+就是 depolymerase 活性的直接證據。對照組事先定好：imidazole vehicle、PBS、phage-positive，
+以及同批的敏感親代菌株。2026-10-16 做了第一次 spot test，但只涵蓋三個祖先 GH5 變體 —
+**這個 part 不在裡面**。
+
+在那個試驗完成之前，本 part 的 depolymerase 身分是**結構上的假說，不是量到的活性**。
 
 ## application
 

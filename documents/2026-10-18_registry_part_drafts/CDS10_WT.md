@@ -32,7 +32,9 @@ Everything else about it is open:
 
 > **This part is deliberately *not* called a glycosidase.** An early annotation suggested one;
 > our template analysis never supported it, and the PI withdrew the call on 2026-07-29. The
-> honest statement is **unknown function**, and that is why the protein is being expressed.
+> honest statement is **unknown function**. We cloned and expressed it for exactly that reason:
+> the function of a tail-module protein with no structural template can only be settled
+> experimentally.
 >
 > Keep the three wild-type parts distinct: **CDS_0010 = unknown function**; **CDS_0011** = the
 > virion-attached tail spike, a depolymerase on **fold evidence only** (β-helix, no template,

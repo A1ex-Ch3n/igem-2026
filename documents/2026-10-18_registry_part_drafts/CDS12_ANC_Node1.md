@@ -98,12 +98,26 @@ The `e1` drops suppressed colony growth almost completely, as did the phage, on 
 seven strains. The `e1` drop was 90 % the same sterile PBS, so the difference comes from the
 `e1` preparation itself.
 
+Every plate carried its own sterile-PBS drop, and that baseline varied between plates (7–17
+colonies), so the comparable figure is **each drop as a percentage of the PBS drop on the same
+plate**. On that scale the medians are **Φ8 0 %, `e1` 12 %, `e281` 53 %, `e40` 67 %**
+(`spot_percent_of_pbs.tsv`).
+
+
 **What this does and does not establish.**
 - It is the first evidence that the `e1` preparation carries an activity against *Pseudomonas*,
   and the strongest signal of the three ancestral variants.
 - It does **not** identify the active agent as this protein. Expression is still unconfirmed
   (see *experiment*), and the elution buffer the preparation sits in (imidazole) was not
-  spotted on its own — that vehicle control is the next experiment.
+  spotted on its own.
+- **The largest remaining confound is phage carried over from the Φ8 stock.** Across the seven
+  strains `e1` tracks the phage almost exactly — both fall below 40 % on six strains, and the
+  single strain where the phage failed (9-1-1, at 157 %) is also the one where `e1` failed
+  (114 %). An infectious contaminant would produce precisely that agreement. **The deciding
+  experiment is a plaque assay of the `e1` preparation itself on a 9-2-1 lawn**; it has not
+  been done. Suppression in this assay does not require infection either — Φ8 cleared colonies
+  on two of the three strains it cannot plaque — so the fact that `e1` works on non-hosts does
+  *not* resolve this.
 - The wild-type enzyme CDS12_WT was **not** spotted in this run, so the ancestor-versus-modern
   comparison the design asks for has not been made yet.
 - One concentration, one plate per strain, colonies counted by automated image segmentation;
@@ -111,8 +125,9 @@ seven strains. The `e1` drop was 90 % the same sterile PBS, so the difference co
 - No clearing means no halo, so this is not depolymerase activity in the classical sense.
 - **Cannot be distinguished from CDS12_WT or the other two ancestors by SDS-PAGE** — all four
   are within 0.43 kDa (1.0 %). Identification needs sequencing or intact-mass MS.
-- Planned next: the imidazole-vehicle drop, a dilution series of `e1`, and the same plate run
-  with CDS12_WT and the Φ8-resistant mutants side by side.
+- Planned next, in order: (1) plaque assay of the `e1` preparation on a 9-2-1 lawn, (2) an
+  elution-buffer-only drop, (3) a dilution series of `e1`, (4) the same plate run with
+  CDS12_WT alongside. Full reasoning in `code/output/1016_spot_test_result/figure_caption.md`.
 
 ## application
 

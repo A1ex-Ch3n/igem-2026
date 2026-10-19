@@ -14,7 +14,7 @@ application / discussion**），可以直接貼。流程、截止日與「送出
 | [`CDS12_ANC_Node1.md`](CDS12_ANC_Node1.md) ／ [中文](CDS12_ANC_Node1_zh.md) | 重建祖先 GH5，node 1（`e1`） | ✅ |
 | [`CDS12_ANC_Node40.md`](CDS12_ANC_Node40.md) ／ [中文](CDS12_ANC_Node40_zh.md) | 重建祖先 GH5，node 40（`e40`） | ✅ |
 | [`CDS12_ANC_Node281.md`](CDS12_ANC_Node281.md) ／ [中文](CDS12_ANC_Node281_zh.md) | 重建祖先 GH5，node 281（`e281`） | ✅ |
-| collection 頁 | 六個 part 當成一套工具組 | ⬜ **UNDONE** |
+| [`COLLECTION.md`](COLLECTION.md) · [中文](COLLECTION_zh.md) | 六個 part 當成一套工具組 | ✅ 已寫，尚未在 registry.igem.org 建立 |
 
 **2026-10-18 依 2026-10-16 的 spot test 更新。** 三個祖先草稿與 `CDS12_WT.md` 的
 *characterisation* 段已寫入該結果。線上 registry 頁面仍是舊版文字，要重貼的內容列在

@@ -25,13 +25,23 @@ with CRediT roles (PI: Conceptualisation · Methodology · Supervision). Sequenc
 Sequence, authors and licence lock permanently at screening, and authorship can only be edited
 while the part is in Draft.
 
-- **Licence** — left at the default CC BY 4.0 on all six. Change it now if the team wants
-  CC0 / MIT / Apache-2.0.
-- **His6 policy** — the drafts assume the tag is *not* part of the part. Confirm.
-- **Two UNDONE fields in each ancestral part** — the reconstruction program, alignment and tree,
-  and where nodes 1 / 40 / 281 sit on that tree. Both are flagged in the *design* entry of each
-  ancestral part as "still to be filled in by the PI".
-- **Collection page** for the six parts as one toolbox — not created.
+- **His6 policy — DECIDED 2026-10-18: the tag is *not* part of any part.** The vector's
+  N-terminal `MGSSHHHHHHSSGLVPRGSHM` leader stays out of all six sequences, and no part carries
+  a C-terminal tag. Every draft and the collection page state this. Nothing to change on the
+  entered sequences — they were already submitted this way.
+- **Licence — recommendation: CC0 1.0 on all six parts.** Reasons: (1) a part is a DNA
+  sequence, and CC BY's attribution requirement is unenforceable and awkward once a sequence is
+  copied into someone else's construct, which is why CC0 is the norm for biological parts;
+  (2) it removes any licence-compatibility question for a team that wants to combine our parts
+  with theirs; (3) judges read maximal openness as a contribution, and we lose nothing — the
+  Attributions form and the part page credit us regardless. If the Registry form does not offer
+  CC0, CC BY 4.0 is acceptable and no worse than the default. **This is separate from the
+  repository's code licence**, which must become OSI-approved (MIT or Apache-2.0) for Best
+  Software; CC BY 4.0 does not qualify there.
+- **Two UNDONE fields in each ancestral part** — RESOLVED 2026-10-18 from the PI's handover.
+- **Collection page** — drafted 2026-10-18:
+  [`2026-10-18_registry_part_drafts/COLLECTION.md`](2026-10-18_registry_part_drafts/COLLECTION.md)
+  (中文：`COLLECTION_zh.md`). Not yet created on registry.igem.org.
 
 ## Documentation to re-paste on registry.igem.org
 
@@ -48,7 +58,18 @@ Draft; only sequence, authorship and licence lock at screening.
 | CDS12_ANC_Node281 (`e281`) | `BBa_26LHLSLW` | "None" → same, median 9 vs 14 |
 | CDS12_WT | `BBa_267WQM51` | adds that the wild type was **not** in this run and is the missing ancestor-versus-modern comparator |
 
-CDS10_WT and CDS11_WT were not spotted; their pages are unchanged.
+Three further edits came out of the 2026-10-18 team review of the live pages:
+
+| Part | Registry ID | What changed |
+|---|---|---|
+| CDS10_WT | `BBa_269KJB8G` | *design*: the sentence "…and that is why the protein is being expressed" did not follow from what precedes it. Rewritten so the reason is explicit: the function of a tail-module protein with no structural template can only be settled experimentally. The rest of that paragraph stays — the withdrawn glycosidase call is worth recording. |
+| CDS11_WT | `BBa_26DKNAEC` | *characterisation*: dropped the "we report this honestly, as the Registry asks" framing, which reads as filler. Added that the 2026-10-16 spot test covered only the three ancestral variants and **not** this part, so the planned assay is still only planned. |
+| CDS12_WT | `BBa_267WQM51` | *characterisation*: same filler sentence removed. |
+
+**On "planned" entries:** a planned readout is a statement of intent, not a commitment to
+upload a follow-up. Nothing has to be added later for those sentences to stay accurate. What
+*would* need an edit is a planned assay that has since been run — which is why CDS11_WT now
+says explicitly that it was not in the 2026-10-16 run.
 
 **Wording that must survive the paste:** the active agent is **not** claimed to be the protein.
 Expression is still unconfirmed, and the imidazole elution buffer was never spotted on its own,

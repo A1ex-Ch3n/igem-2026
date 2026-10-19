@@ -30,8 +30,8 @@ CDS_0010 位於噬菌體 9-2-1 Φ8 的 tail 模組，與 tail spike CDS_0011 共
   高於 70 — 但對摺疊有信心並不等於知道功能。
 
 > **這個 part 刻意*不*被稱為 glycosidase。** 早期註解曾這樣建議；我們的 template 分析從來不支持，
-> 教授也已於 2026-07-29 撤回該說法。誠實的敘述是 **unknown function**，而這正是我們要表現它的
-> 原因。
+> 教授也已於 2026-07-29 撤回該說法。誠實的敘述是 **unknown function**。我們選擇把它選殖、表現，正是因為如此：
+> 一個沒有結構 template 的 tail-module 蛋白，功能只能靠實驗決定。
 >
 > 三個野生型 part 要分清楚：**CDS_0010 = 功能未知**；**CDS_0011** = 附著於 virion 的 tail spike，
 > 其 depolymerase 身分**只有摺疊層級證據**（β-helix、無 template、無具名同源蛋白）；

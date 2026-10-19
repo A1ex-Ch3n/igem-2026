@@ -74,15 +74,17 @@ assigned either way.
 
 ## characterisation
 
-**None yet.** Reporting this honestly, as the Registry asks: *"Negative or inconclusive results
-are still valuable."*
+**None.** No confirmed expression (see *experiment*), no purified protein, and therefore no
+activity assay.
 
-- No confirmed expression (see *experiment*).
-- No purified protein, so no activity assay.
-- The planned readout is a **spot assay on a host lawn**: a halo from purified protein where
-  the buffer control gives none would be direct evidence of depolymerase activity. Controls
-  fixed in advance: imidazole vehicle, PBS, phage-positive, sensitive parent strain from the
-  same batch.
+The readout this part needs is a **spot assay on a host lawn**: a halo from purified protein
+where the buffer control gives none would be direct evidence of depolymerase activity.
+Controls fixed in advance: imidazole vehicle, PBS, a phage-positive spot, and the sensitive
+parent strain from the same batch. A first spot test was run on 2026-10-16, but it covered only
+the three ancestral GH5 variants — **this part was not in it**.
+
+Until that assay exists, the depolymerase assignment for this part is a **structural
+hypothesis, not a measured activity**.
 
 ## application
 
