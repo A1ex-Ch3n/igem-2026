@@ -39,9 +39,19 @@ while the part is in Draft.
   repository's code licence**, which must become OSI-approved (MIT or Apache-2.0) for Best
   Software; CC BY 4.0 does not qualify there.
 - **Two UNDONE fields in each ancestral part** — RESOLVED 2026-10-18 from the PI's handover.
+- **Licence — reported changed to CC0 by Alex on 2026-10-19.** Not independently verified; if
+  anyone re-checks the six pages before the freeze, confirm it there.
 - **Collection page** — drafted 2026-10-18:
   [`2026-10-18_registry_part_drafts/COLLECTION.md`](2026-10-18_registry_part_drafts/COLLECTION.md)
-  (中文：`COLLECTION_zh.md`). Not yet created on registry.igem.org.
+  (中文：`COLLECTION_zh.md`). **Created on registry.igem.org 2026-10-19**, UUID
+  `3edc6bca-7c2b-4c01-b38f-c6ed3b6743ad`
+  (registry.igem.org/collections/3edc6bca-7c2b-4c01-b38f-c6ed3b6743ad), curated by Chun-Yu Chen
+  under Claremont CA (2026). All five documentation entries are live: Design "Why these six
+  parts are one set", Experiment "Cloning, expression trials and the first spot test",
+  Characterisation "One activity signal, and what it is not yet attributed to", Application
+  "How to reuse this collection", Discussion "What this set does and does not yet show".
+  **Parts list is still empty** — the six parts go in once the PI's review is done and they are
+  submitted.
 
 ## Documentation to re-paste on registry.igem.org
 
