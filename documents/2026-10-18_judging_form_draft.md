@@ -103,7 +103,7 @@ judges or Gold is lost; fewer than three forfeits Gold outright.
 | | prize | list | why |
 |---|---|---|---|
 | G1 | **Best New Basic Part** | General Bio Engineering | Six documented parts, three of them computationally designed ancestral sequences that exist nowhere in nature, with structure predictions and a stated design rationale. Our strongest claim. **Selecting it opens a required `Part Name*` field that only accepts a BioBrick name (`BBa_…`) — so it is blocked until the Registry upload produces part numbers.** The form asks for "your one best Basic Part"; the criterion text says winning parts come with "thorough documentation and experimental data showing the part works". |
-| G2 | **Best Integrated Human Practices** | Specializations | The only Specialization we can realistically reach in three days. Depends entirely on tonight's rewrite, and the criterion wants stakeholder input that visibly changed the project — which we have: the shift away from purification toward small-scale targeted blots. |
+| G2 | ~~Best Integrated Human Practices~~ → **Best Software** (swapped 2026-10-19) | Specializations | The only Specialization we can realistically reach in three days. Depends entirely on tonight's rewrite, and the criterion wants stakeholder input that visibly changed the project — which we have: the shift away from purification toward small-scale targeted blots. |
 | G3 | **Best Model** | General Bio Engineering | AlphaFold/ESMFold structures, the ZymCTRL perplexity series across ancestral nodes, the Foldseek structural taxonomy — and a modelling result that genuinely redirected the project, which is exactly what the criterion rewards. Required link `https://2026.igem.wiki/claremont-ca/model` **exists**. |
 
 Alternatives considered and rejected for now: **Best Part Collection** (needs the
@@ -146,6 +146,11 @@ Every team is scored on these, whether or not they appear on the form:
 Questions 7 and 8 are both Human Practices. Question 10 is why the Attributions
 Form frames the PI as funding and support.
 
+**Update 2026-10-19.** G2 is now **Best Software**, and `BBa_26DKNAEC` is entered
+as the Best New Basic Part. Reasoning and what each prize still needs:
+[`2026-10-19_special_prize_assessment.md`](2026-10-19_special_prize_assessment.md)
+and [`2026-10-19_special_prize_gaps.md`](2026-10-19_special_prize_gaps.md).
+
 ## What is in the form right now
 
 Title, abstract and the three prize selections are entered. **Nothing has been
@@ -163,8 +168,9 @@ press **Save and submit**.
 ## Blockers, in order
 
 1. ~~`/contribution` does not exist~~ — **resolved 2026-10-19**, the page is live.
-2. **G1 needs a `BBa_` part number**, which the Registry upload has to produce
-   first. Without it the Best New Basic Part selection cannot be confirmed.
+2. **The six Registry parts are still in Draft** — numbers exist
+   (`BBa_26DKNAEC` is entered on the form) but a Draft part is not screened and
+   not publicly visible. They must be submitted before the freeze.
 3. The **three special prizes** need the team's agreement before the form is
    saved.
 4. **Human Practices** rewrite (tonight) before S2 and G2 are honest — the same

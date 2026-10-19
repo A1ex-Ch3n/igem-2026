@@ -127,7 +127,14 @@ Without `git lfs pull`, the LFS files appear as small text pointers instead of r
 
 ## Attribution — third-party source materials in this repo
 
-The team's own original content (lab notebook `.md` files, scheme docs, protocol `.md` files, analysis code, photos taken by team members) is licensed **CC BY 4.0** — see [LICENSE](LICENSE).
+The team's own original content (lab notebook `.md` files, scheme docs, protocol `.md` files, the
+analysis notebooks under `code/`, photos taken by team members) is licensed **CC BY 4.0** — see
+[LICENSE](LICENSE).
+
+**The packaged software under [`software/`](software/) is MIT instead** — see
+[`software/LICENSE`](software/LICENSE). The split is deliberate: CC BY 4.0 is a content licence
+and is not OSI-approved, and iGEM's Best Software rules require an OSI-approved licence for the
+code.
 
 The following files in this repo were **authored by third parties** and are included under fair-use / educational-use assumptions:
 

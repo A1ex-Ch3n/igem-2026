@@ -13,12 +13,10 @@ Assessed 2026-10-19 against the live wiki and the repository, not from memory.
 | | prize | list | confidence |
 |---|---|---|---|
 | **1** | **Best Model** | General Bio Engineering | **high** |
-| **2** | **Best Software** | Specializations | **medium-high — two mechanical blockers, both fixable today** |
+| **2** | **Best Software** | Specializations | **high — the licence objection was wrong; one upload left** |
 | **3** | **Best New Basic Part** | General Bio Engineering | medium |
 
-If the licence change for Best Software is refused, swap it for **Best
-Integrated Human Practices** — but that is a bet on tonight's rewrite, not on
-work already done.
+Confirmed by Alex on 2026-10-19. The Judging Form has been updated accordingly.
 
 ---
 
@@ -68,18 +66,17 @@ estimate; only PIL, NumPy, SciPy), the O-antigen locus comparator (works from an
 Bakta or Prokka annotation, where PAst is *P. aeruginosa*-only and Kaptive has no
 *Pseudomonas* database), the resistant-mutant workflow, and `phagecheck`.
 
-**Two blockers, neither of which needs new science:**
+**The licence objection was wrong** (checked 2026-10-19): `software/LICENSE` is
+already **MIT**, and `software/README.md` already explains that the split from the
+repository's CC BY 4.0 exists precisely because Best Software requires an
+OSI-approved licence. Earlier notes in this repository, and the memory entry
+behind them, said the CC BY 4.0 licence blocked this award. It does not. The root
+`README.md` wording has been corrected to stop implying that the analysis code is
+CC BY 4.0 across the board.
 
-1. **The licence.** The rules say software "must be documented and released under
-   an **OSI-approved open-source license**". Our `LICENSE` is CC BY 4.0, which is
-   not one. This is an eligibility requirement, not a scoring matter — change it
-   to MIT or Apache-2.0 and it is solved.
-2. **The code is not submitted.** The Software deliverable on the dashboard reads
-   **"No Submissions"**. The rules require the source on the dedicated iGEM
-   repository, `gitlab.igem.org`.
-
-Both are decisions plus an upload. Compare that against Best Integrated Human
-Practices, which needs a page rewritten from material we have not yet collected.
+**One blocker remains: the code is not submitted.** The Software deliverable on
+the dashboard reads **"No Submissions"**, and the rules require the source on the
+dedicated iGEM repository at `gitlab.igem.org`. That is an upload, not work.
 
 **One correction to make first.** `software/README.md`, `phagecheck/dtr.py` and
 `software/docs/architecture.md` all claim the DTR check "corrected our own call
@@ -141,7 +138,7 @@ Best Model, entered 2026-10-18 and **not saved**. The recommendation swaps
 Integrated Human Practices for Best Software. Still legal: Model and Basic Part
 are General Bio Engineering, Software is a Specialization.
 
-Do not make the swap until someone agrees to relicense the code.
+Swap made 2026-10-19. The form still holds the selections unsaved.
 
 ---
 
