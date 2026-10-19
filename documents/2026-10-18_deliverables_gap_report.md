@@ -83,9 +83,11 @@ This is the team's decision, not mine. What the repository supports:
   perplexity series across the ancestral nodes, the Foldseek structural taxonomy,
   and a modelling result that genuinely redirected the project. Requires `/model`
   to tell that story as *what we learned*, which was precisely the PI's note.
-- **Best Software** — blocked twice over: `/software` 404s, and the repository
-  licence (CC BY 4.0) is not OSI-approved, which the criteria require. Fixable,
-  but it is two fixes, not one.
+- **Best Software** — ~~blocked twice over~~ **corrected 2026-10-19: neither
+  blocker stands.** `/software` is live (6.4 kB) and `software/LICENSE` is MIT,
+  i.e. OSI-approved; only the non-code content is CC BY 4.0. The sole remaining
+  requirement is uploading the code to `gitlab.igem.org`. This is now nominated
+  as G2 — see [`2026-10-19_special_prize_assessment.md`](2026-10-19_special_prize_assessment.md).
 - **Best Integrated Human Practices** — depends entirely on tonight's rewrite.
 - **Best Measurement** — would need `/measurement`, which 404s. Not realistic in
   three days.

@@ -29,8 +29,9 @@ text now in the form is 142 words:
 
 > Phage therapy's bottleneck is host range: each phage binds a specific receptor
 > on a specific strain, so matching phage to target means screening, not design.
-> We isolated our own system, *Pseudomonas capeferrum* and *P. putida* with their
-> co-occurring phages, from soil at the California Botanic Garden. Phage Φ8 is
+> We isolated our own system from soil at the California Botanic Garden:
+> *Pseudomonas capeferrum* and an unnamed relative in the *P. putida* group, with
+> their co-occurring phages. Phage Φ8 is
 > novel: 62,339 bp, 80 CDS, no database match, no virulence or resistance genes.
 > Modelling then redirected the project. Structure prediction and protein
 > language models showed the recognition step is not protein–protein: the
@@ -42,7 +43,22 @@ text now in the form is 142 words:
 > and ancestral enzymes in *E. coli*, reporting what worked and what did not.
 
 (Typed without the Greek Φ and en dashes, to avoid encoding surprises in the
-form: "Phi8", "protein-protein", "protein-sugar".)
+form: "Phi8", "protein-protein", "protein-sugar".) The corrected text is **148
+words**, still under the 150-word limit.
+
+> ⚠️ **Corrected 2026-10-19 — species misassignment. The text above is the fixed
+> version; what is currently typed into the form is not.** The abstract said
+> *"Pseudomonas capeferrum* and *P. putida*". **We have no *P. putida*.** Our own
+> data says so twice over: sourmash/GTDB places four of the five isolates in
+> ***Pseudomonas_E* sp013179515**, an *unnamed* species, and only 8-10-2 in
+> *P. capeferrum* (`data/bacteria_genome/*/*sourmash-genome-species.csv`); and
+> synthesis row A5 records **89.4 % ANI to *P. putida***, far below the 95 %
+> species threshold, with the closest public relative being *Pseudomonas* sp.
+> CM27 at ~99.2 %. *P. putida* enters this project only as the **surrogate host**
+> in the receptor-overlap analysis (row D4, KT2440) — that is almost certainly
+> where the drift came from. It also matters for the story: the phage's host is
+> **Strain 2 (9-2-1 / 9-6-2) = sp013179515**, not *capeferrum*, which is
+> Strain 3. **Whoever saves the form must re-type the abstract.**
 
 ### Medals — Bronze (all three required)
 
@@ -106,11 +122,17 @@ judges or Gold is lost; fewer than three forfeits Gold outright.
 | G2 | ~~Best Integrated Human Practices~~ → **Best Software** (swapped 2026-10-19) | Specializations | The only Specialization we can realistically reach in three days. Depends entirely on tonight's rewrite, and the criterion wants stakeholder input that visibly changed the project — which we have: the shift away from purification toward small-scale targeted blots. |
 | G3 | **Best Model** | General Bio Engineering | AlphaFold/ESMFold structures, the ZymCTRL perplexity series across ancestral nodes, the Foldseek structural taxonomy — and a modelling result that genuinely redirected the project, which is exactly what the criterion rewards. Required link `https://2026.igem.wiki/claremont-ca/model` **exists**. |
 
-Alternatives considered and rejected for now: **Best Part Collection** (needs the
-collection page, which does not exist), **Best Software** (`/software` 404s and
-the CC BY 4.0 licence is not OSI-approved — two blockers), **Best Measurement**
+Alternatives considered and rejected for now: **Best Measurement**
 (`/measurement` 404s), **Safety and Security** (the Safety Check-in Form shows
 "Deadline Missed", which a judge can see).
+
+> **Superseded 2026-10-19.** This paragraph also listed **Best Software**
+> ("`/software` 404s and the CC BY 4.0 licence is not OSI-approved") and **Best
+> Part Collection** ("needs the collection page, which does not exist"). Both
+> readings were wrong by the time they were written: `/software` is live and
+> `software/LICENSE` is MIT, and the collection page now exists. Best Software
+> is the **G2 nomination** in the table above. Kept here so the reasoning trail
+> is legible, not as a current statement.
 
 ### Awards we are already in, no action needed
 

@@ -73,7 +73,9 @@ is generated results, not a code unit.
    that killed this project's own false positives.
 4. **Small "phage genome sanity checks" toolkit** —
    `0708_phage_assembly/check_terminal_redundancy.py` (DTR vs circularity from coverage shape,
-   66 lines, stdlib; it corrected our own topology call) plus
+   66 lines, stdlib; on Φ8 it returned *circular*, which is the topology we now report — it
+   did **not** "correct" a circular call to linear, see
+   [`2026-10-18_genome_topology_conflict.md`](2026-10-18_genome_topology_conflict.md) §4) plus
    `0712_phage_rbp_detect/fold_structure/beta_helix_analysis.py` (DB-free β-helix classification
    from a PDB).
 
@@ -110,10 +112,12 @@ That honest benchmark is a better Best Software story than a fourth copy of a fa
 
 **Blockers**
 
-- [ ] **Licence.** `LICENSE` is currently **CC BY 4.0** — a content licence, which Creative
-      Commons itself says not to use for code, and **not OSI-approved**, which the 2026 Best
-      Software text requires. Dual-license: keep CC BY 4.0 for the wiki, docs and figures, add
-      **MIT or Apache-2.0** for `code/`, and say so in the root README. Also replace the
+- [x] **Licence — DONE 2026-10-19.** The root `LICENSE` is CC BY 4.0 for content, and
+      `software/LICENSE` is **MIT** (OSI-approved) for the packaged code; `software/README.md`
+      and the root `README.md` both state the split. **The earlier claim that the CC BY 4.0
+      licence blocks Best Software was wrong.** The one remaining Best Software blocker is that
+      the code has not been uploaded to `gitlab.igem.org` (the deliverable reads "No
+      Submissions"). Also replace the
       placeholder holder string "iGEM 2026 team" with the real team name.
 - [ ] **Dependency manifest.** There is none — no `environment.yml`, no `requirements.txt`, no
       `pyproject.toml` anywhere, while four READMEs tell the reader to `conda activate igem2026`,

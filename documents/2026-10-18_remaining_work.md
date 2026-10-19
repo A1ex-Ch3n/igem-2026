@@ -107,9 +107,11 @@ only on teams.igem.org, so it cannot be reviewed here:
   `phage_groupA.svg` (editable virion schematic),
   `2026-07-30_graphical_abstract_design.md`, and `photos/`.
 - Links from the wiki to the code repository and the quantification notebooks.
-  This is also what the Best Software entry needs — note the separate blocker
-  recorded in `project_igem_submission_prep`: the CC BY 4.0 LICENSE is not an
-  OSI-approved software licence.
+  This is also what the Best Software entry needs. **Correction 2026-10-19:** the
+  blocker recorded earlier — "the CC BY 4.0 LICENSE is not an OSI-approved
+  software licence" — was wrong. `software/LICENSE` is MIT; only the non-code
+  content is CC BY 4.0. The real remaining blocker is the `gitlab.igem.org`
+  upload.
 - Negative results stated plainly as evidence of current limits — the meeting
   explicitly endorsed this. We have real ones: the failed e281 Ni-NTA
   purification, the retired binding screen, three inconclusive gels.

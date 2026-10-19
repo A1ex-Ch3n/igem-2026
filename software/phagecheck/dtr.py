@@ -12,8 +12,11 @@ Distinguishes two cases that an assembler reports identically:
 No aligner and no database: the contig's canonical k-mer set is counted against a
 read subsample and profiled along the contig. Everything stays on the machine.
 
-This is the check that corrected our own call on phage 9-2-1 Φ8 — reported as
-circular by the assembler, actually linear with a 77 bp DTR.
+On our own phage 9-2-1 Φ8 this check returned ``CIRCULAR / no short linear
+DTR`` (median ~357x, max/median 1.63x, no qualifying run >= 15 bp), against a
+string-level reading of the contig ends that had been taken as linear with a
+77 bp DTR. The circular call is the topology the project now reports; see
+``documents/2026-10-18_genome_topology_conflict.md``.
 """
 from __future__ import annotations
 

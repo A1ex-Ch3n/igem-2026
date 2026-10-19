@@ -46,8 +46,12 @@ Both print a table; both take `--help`. `phagecheck` is importable as a library
 **`phagecheck.dtr`** — assemblers report a phage contig as "circular" whenever the ends overlap,
 which is also exactly what a **direct terminal repeat** on a linear genome looks like. The two
 are distinguishable from coverage alone: a collapsed DTR receives reads from both genome ends and
-shows a ~2× k-mer coverage spike, while a truly circular genome is flat. This is the check that
-corrected our own call on phage 9-2-1 Φ8 — reported circular, actually **linear with a 77 bp DTR**.
+shows a ~2× k-mer coverage spike, while a truly circular genome is flat. On our own phage
+9-2-1 Φ8 it returned **`CIRCULAR / no short linear DTR`** (median ~357×, max/median 1.63×, no
+qualifying run ≥ 15 bp), against a string-level reading of the contig ends that had been taken as
+linear with a 77 bp DTR. The circular call is the one the project now reports, in agreement with
+the PI's assembly; the disagreement and what is still untested are written up in
+[`2026-10-18_genome_topology_conflict.md`](../documents/2026-10-18_genome_topology_conflict.md).
 No aligner, no database, pure Python.
 
 **`phagecheck.betahelix`** — tail-spike depolymerases are built on a right-handed β-helix, and
@@ -67,9 +71,9 @@ a β-helix without Foldseek or a structure database.
 2. **How well is it validated?** `phagecheck` ships 11 unit tests, including simulated linear-with-
    DTR and circular genomes where the right answer is known by construction, and a regression test
    on the real Φ8 tail spike. Both tools are also validated against the project's own wet-lab
-   record: the DTR check overturned an assembler's circularity call, and the β-helix call is
-   consistent with the AlphaFold3 template evidence. `benchmarks/` goes further and publishes a
-   method of ours that **failed** its controls, with the control data.
+   record: the DTR check's circular verdict on Φ8 is the topology the project now reports, and
+   the β-helix call is consistent with the AlphaFold3 template evidence. `benchmarks/` goes
+   further and publishes a method of ours that **failed** its controls, with the control data.
 3. **Useful to other projects?** Any team sequencing a phage faces the circular-vs-DTR question,
    and any team predicting a tail fiber faces the fold question. Neither tool contains anything
    specific to our phage or our host.
