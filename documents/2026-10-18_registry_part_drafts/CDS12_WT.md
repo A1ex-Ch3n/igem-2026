@@ -79,6 +79,12 @@ results still have value.
 - Note for anyone reusing these parts: this protein and its three ancestral variants differ by
   at most 0.43 kDa (1.0 %) and **cannot be distinguished by SDS-PAGE**. Identity needs
   sequencing or intact-mass MS.
+- **Not included in the 2026-10-16 spot test.** That run compared the three ancestral
+  variants against phage Φ8 and a sterile-PBS control on seven *Pseudomonas* lawns
+  (`code/1016_spot_test_result.ipynb`); the `e1` preparation suppressed colony growth inside
+  the drop almost as completely as the phage. **This wild-type enzyme is the missing
+  comparator** — without it on the same plate, no ancestor-versus-modern claim can be made.
+  Putting CDS12_WT into that assay is the highest-value next experiment for this part.
 - Planned readout: spot assay on a host lawn, halo versus imidazole-vehicle control.
 
 ## application
@@ -116,3 +122,8 @@ host's purified LPS and against resistant mutants, side by side with the three a
 ---
 *Draft — 2026-10-18. Numbers: `code/output/1018_construct_structures/`. Evidence grades:
 [`../2026-10-18_parts_structure_comparison.md`](../2026-10-18_parts_structure_comparison.md).*
+
+*Log — 2026-10-18: characterisation updated with the 2026-10-16 spot test
+([`../../code/1016_spot_test_result.ipynb`](../../code/1016_spot_test_result.ipynb)).
+**This edit still has to be made on registry.igem.org** — the part page there was
+transcribed from the earlier version of this draft.*

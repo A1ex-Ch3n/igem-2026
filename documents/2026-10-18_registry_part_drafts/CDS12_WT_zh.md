@@ -69,6 +69,10 @@ kanamycin、16–20 °C IPTG 誘導 16 小時。
 - 沒有純化蛋白，因此**沒有活性資料**。
 - 給重用者的提醒：本蛋白與三個祖先變體彼此質量差距最多 0.43 kDa（1.0%），
   **SDS-PAGE 無法區分**。要確認身分必須靠定序或 intact-mass MS。
+- **沒有納入 2026-10-16 的 spot test。** 那次是在 7 株 *Pseudomonas* 菌苔上，把三個祖先變體
+  與 Φ8 phage、滅菌 PBS 對照並排比較（`code/1016_spot_test_result.ipynb`）；`e1` 製備液把滴內
+  菌落壓制的程度幾乎和 phage 一樣。**這個野生型酵素正是缺席的對照組** — 沒有它在同一盤上，
+  就不能下任何「祖先 vs 現代」的結論。把 CDS12_WT 放進這個 assay，是這個 part 下一步最有價值的實驗。
 - 預定讀值：宿主菌苔上的 spot assay，與 imidazole vehicle 對照比較 halo。
 
 ## application
@@ -101,3 +105,7 @@ kanamycin、16–20 °C IPTG 誘導 16 小時。
 ---
 *草稿 — 2026-10-18。數字：`code/output/1018_construct_structures/`。證據等級：
 [`../2026-10-18_parts_structure_comparison.md`](../2026-10-18_parts_structure_comparison.md)。*
+
+*紀錄 — 2026-10-18：characterisation 依 2026-10-16 的 spot test 更新
+（[`../../code/1016_spot_test_result.ipynb`](../../code/1016_spot_test_result.ipynb)）。
+**這筆修改還沒同步到 registry.igem.org** — 線上的 part page 是依更早的版本轉錄的。*

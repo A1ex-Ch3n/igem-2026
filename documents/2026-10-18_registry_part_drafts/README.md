@@ -18,6 +18,11 @@ Registry gets the English text**). Index: [`README_zh.md`](README_zh.md).
 | [`CDS12_ANC_Node281.md`](CDS12_ANC_Node281.md) · [中文](CDS12_ANC_Node281_zh.md) | reconstructed ancestral GH5, node 281 (`e281`) | ✅ |
 | collection page | the six parts as one toolbox | ⬜ UNDONE |
 
+**Updated 2026-10-18 with the 2026-10-16 spot test.** The *characterisation* section of the
+three ancestral drafts and of `CDS12_WT.md` now carries that result. The live registry pages
+still hold the earlier text — the edits to re-paste are listed in
+[`../2026-10-18_registry_part_ids.md`](../2026-10-18_registry_part_ids.md).
+
 **The two fields the ancestral drafts were waiting on were both answered by the PI's
 2026-10-18 handover** and are now written in. (1) The reconstruction: top 1000 NCBI nr hits to
 CDS_0012, MUSCLE in SeaView, manually curated; PhyML (WAG, p-inv 0.1, 100 bootstraps);

@@ -16,6 +16,10 @@ application / discussion**），可以直接貼。流程、截止日與「送出
 | [`CDS12_ANC_Node281.md`](CDS12_ANC_Node281.md) ／ [中文](CDS12_ANC_Node281_zh.md) | 重建祖先 GH5，node 281（`e281`） | ✅ |
 | collection 頁 | 六個 part 當成一套工具組 | ⬜ **UNDONE** |
 
+**2026-10-18 依 2026-10-16 的 spot test 更新。** 三個祖先草稿與 `CDS12_WT.md` 的
+*characterisation* 段已寫入該結果。線上 registry 頁面仍是舊版文字，要重貼的內容列在
+[`../2026-10-18_registry_part_ids.md`](../2026-10-18_registry_part_ids.md)。
+
 **祖先草稿等的那兩個欄位，教授 2026-10-18 的交付資料都答了**，現在已經補進去。(1) 重建方法：
 CDS_0012 對 NCBI nr 取前 1000 hits、SeaView 內 MUSCLE 比對並人工修剪、PhyML 建樹（WAG，p-inv 0.1，
 100 bootstrap）、IQ-TREE 以同一矩陣 midpoint-rooted 推祖先。(2) 節點順序：CDS_0012 到樹根這條路徑上

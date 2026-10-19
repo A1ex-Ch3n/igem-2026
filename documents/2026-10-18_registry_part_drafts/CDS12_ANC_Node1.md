@@ -81,15 +81,38 @@ still outstanding.
 
 ## characterisation
 
-**None yet, and the one candidate band is explicitly not claimed as this protein.**
+**First activity data, 2026-10-16 — a positive but preliminary signal.**
 
-- Expression unconfirmed (see *experiment*).
-- **This part cannot be told apart from CDS12_WT or the other two ancestors by SDS-PAGE** —
-  all four are within 0.43 kDa (1.0 %) of each other. Identification needs sequencing or
-  intact-mass MS.
-- Planned readout: purify, then spot on lawns of the sensitive host **and** of the Φ8-resistant
-  mutants, beside wild-type enzyme, imidazole-vehicle and PBS controls. A halo from the
-  ancestor where the wild type gives none is the result the whole design is aimed at.
+**Spot test, 2026-10-16** (`code/1016_spot_test_result.ipynb`; figure and caption in
+`code/output/1016_spot_test_result/`). Seven *Pseudomonas* strains were grown as double-layer
+lawns (200 µL culture in 3 mL soft agar). Each plate received five 7 µL drops: phage Φ8 stock
+(positive control), sterile 1× PBS (negative control), and the `e1`, `e40` and `e281`
+preparations, each diluted 1:10 in that same sterile PBS. Spotted 12 Oct, read 16 Oct.
+
+No drop produced a clear lysis zone, Φ8 included. The readout was colony growth inside the
+drop: sterile PBS drops reproducibly developed discrete colonies (median 14 per drop), which is
+the baseline for a liquid drop landing on these lawns. Against that baseline the medians were
+**Φ8 0, `e1` 1, `e40` 10, `e281` 9**.
+
+The `e1` drops suppressed colony growth almost completely, as did the phage, on six of the
+seven strains. The `e1` drop was 90 % the same sterile PBS, so the difference comes from the
+`e1` preparation itself.
+
+**What this does and does not establish.**
+- It is the first evidence that the `e1` preparation carries an activity against *Pseudomonas*,
+  and the strongest signal of the three ancestral variants.
+- It does **not** identify the active agent as this protein. Expression is still unconfirmed
+  (see *experiment*), and the elution buffer the preparation sits in (imidazole) was not
+  spotted on its own — that vehicle control is the next experiment.
+- The wild-type enzyme CDS12_WT was **not** spotted in this run, so the ancestor-versus-modern
+  comparison the design asks for has not been made yet.
+- One concentration, one plate per strain, colonies counted by automated image segmentation;
+  no replicates and no statistics.
+- No clearing means no halo, so this is not depolymerase activity in the classical sense.
+- **Cannot be distinguished from CDS12_WT or the other two ancestors by SDS-PAGE** — all four
+  are within 0.43 kDa (1.0 %). Identification needs sequencing or intact-mass MS.
+- Planned next: the imidazole-vehicle drop, a dilution series of `e1`, and the same plate run
+  with CDS12_WT and the Φ8-resistant mutants side by side.
 
 ## application
 
@@ -126,3 +149,8 @@ unlikely to be a sequence-distance artefact. Node40 and Node281 probe much furth
 [`../2026-10-18_parts_structure_comparison.md`](../2026-10-18_parts_structure_comparison.md).
 Both open items above were resolved on 2026-10-18 from the PI's handover — see
 [`../2026-10-18_pi_questionnaire_answers.md`](../2026-10-18_pi_questionnaire_answers.md), A1.*
+
+*Log — 2026-10-18: characterisation updated with the 2026-10-16 spot test
+([`../../code/1016_spot_test_result.ipynb`](../../code/1016_spot_test_result.ipynb)).
+**This edit still has to be made on registry.igem.org** — the part page there was
+transcribed from the earlier version of this draft.*

@@ -83,13 +83,39 @@ BL21(DE3) lane, or an anti-His western.
 
 ## characterisation
 
-**None, and one documented negative result** (the failed purification above), reported because
-the Registry states that negative and inconclusive results are still valuable.
+**First activity data, 2026-10-16 — essentially negative for this variant.**
 
-- **Cannot be distinguished from CDS12_WT or the other ancestors by SDS-PAGE** — all four are
-  within 0.43 kDa (1.0 %). Identification needs sequencing or intact-mass MS.
-- Planned readout: establish expression first, then spot on sensitive and Φ8-resistant lawns
-  beside the wild-type enzyme, with imidazole-vehicle and PBS controls.
+**Spot test, 2026-10-16** (`code/1016_spot_test_result.ipynb`; figure and caption in
+`code/output/1016_spot_test_result/`). Seven *Pseudomonas* strains were grown as double-layer
+lawns (200 µL culture in 3 mL soft agar). Each plate received five 7 µL drops: phage Φ8 stock
+(positive control), sterile 1× PBS (negative control), and the `e1`, `e40` and `e281`
+preparations, each diluted 1:10 in that same sterile PBS. Spotted 12 Oct, read 16 Oct.
+
+No drop produced a clear lysis zone, Φ8 included. The readout was colony growth inside the
+drop: sterile PBS drops reproducibly developed discrete colonies (median 14 per drop), which is
+the baseline for a liquid drop landing on these lawns. Against that baseline the medians were
+**Φ8 0, `e1` 1, `e40` 10, `e281` 9**.
+
+The crude `e281` lysate reduced colony counts only slightly, from a median of 14 to 9.
+
+**What this does and does not establish.**
+- The `e281` preparation is a **crude lysate**, not purified protein, so the
+  enzyme is not enriched in it. A weak effect here is **not** evidence that this variant is
+  inactive; the experiment cannot tell a missing activity from a diluted one.
+- Expression of this part is still unconfirmed (see *experiment*), so there may be no enzyme
+  in the drop at all.
+- By contrast the `e1` preparation, the only one that had been through a purification step,
+  suppressed colonies almost completely in the same experiment (median 1). That difference
+  tracks the preparation, not necessarily the sequence.
+- The wild-type enzyme CDS12_WT was **not** spotted in this run, so the ancestor-versus-modern
+  comparison the design asks for has not been made yet.
+- One concentration, one plate per strain, colonies counted by automated image segmentation;
+  no replicates and no statistics.
+- No clearing means no halo, so this is not depolymerase activity in the classical sense.
+- **Cannot be distinguished from CDS12_WT or the other two ancestors by SDS-PAGE** — all four
+  are within 0.43 kDa (1.0 %). Identification needs sequencing or intact-mass MS.
+- Planned next: purify this variant, equalise protein against the others, and re-spot with an
+  imidazole-vehicle control and CDS12_WT on the same plate.
 
 ## application
 
@@ -124,3 +150,8 @@ poorly. Its near-twin Node40 is the control for both of those risks.
 [`../2026-10-18_parts_structure_comparison.md`](../2026-10-18_parts_structure_comparison.md).
 Both open items above were resolved on 2026-10-18 from the PI's handover — see
 [`../2026-10-18_pi_questionnaire_answers.md`](../2026-10-18_pi_questionnaire_answers.md), A1.*
+
+*Log — 2026-10-18: characterisation updated with the 2026-10-16 spot test
+([`../../code/1016_spot_test_result.ipynb`](../../code/1016_spot_test_result.ipynb)).
+**This edit still has to be made on registry.igem.org** — the part page there was
+transcribed from the earlier version of this draft.*

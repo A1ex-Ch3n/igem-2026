@@ -71,13 +71,32 @@ band，四個 lane（誘導與未誘導）都有**，比預測的 41.9 kDa 高 7
 
 ## characterisation
 
-**目前沒有；而且那條候選 band 明確不宣稱是這個蛋白。**
+**第一筆活性資料，2026-10-16 — 正向但初步。**
 
-- 表現未確認（見 *experiment*）。
-- **本 part 與 CDS12_WT 及另外兩個祖先在 SDS-PAGE 上無法區分** — 四者彼此相差最多 0.43 kDa
-  （1.0%）。要鑑定必須靠定序或 intact-mass MS。
-- 預定讀值：純化後，在敏感宿主**以及** Φ8 抗性突變株的菌苔上點樣，與野生型酵素、imidazole
-  vehicle、PBS 對照並列。**祖先有 halo 而野生型沒有**，就是整個設計瞄準的結果。
+**Spot test，2026-10-16**（`code/1016_spot_test_result.ipynb`；圖與 caption 在
+`code/output/1016_spot_test_result/`）。7 株 *Pseudomonas* 以 double-layer 方式鋪菌苔
+（200 µL 菌液 + 3 mL soft agar）。每盤點 5 滴、各 7 µL：Φ8 phage 原液（陽性對照）、
+滅菌 1× PBS（陰性對照），以及 `e1`、`e40`、`e281` 製備液，都用同一管滅菌 PBS 稀釋 1:10。
+10/12 點盤，10/16 判讀。
+
+沒有任何一滴出現透明的裂解區，Φ8 也沒有。看得到的讀值是**滴內長出的菌落數**：滅菌 PBS 滴
+穩定長出獨立菌落（中位數 14），這是一滴液體落在這種菌苔上的基準。以此為基準，各處理的中位數為
+**Φ8 0、`e1` 1、`e40` 10、`e281` 9**。
+
+`e1` 滴幾乎完全壓住了菌落生長，程度和 phage 相當，7 株中有 6 株如此。`e1` 滴有 90% 是同一管
+滅菌 PBS，所以差別來自 `e1` 製備液本身。
+
+**這能說什麼、不能說什麼**
+- 這是第一個證據，顯示 `e1` 製備液帶有對 *Pseudomonas* 的活性，也是三個祖先變體中最強的訊號。
+- 這**不能**指認活性來自這個蛋白。表現仍未確認（見 *experiment*），而且製備液所在的
+  elution buffer（imidazole）沒有單獨點過 — 那個 vehicle 對照是下一個實驗。
+- 這次**沒有**點野生型 CDS12_WT，所以設計要問的「祖先 vs 現代」比較還沒做。
+- 單一濃度、每株一盤，菌落由影像自動分割計數；沒有重複、沒有統計。
+- 沒有透明區就沒有 halo，所以這還不是傳統意義上的 depolymerase 活性。
+- **與 CDS12_WT 及另外兩個祖先在 SDS-PAGE 上無法區分** — 四者相差最多 0.43 kDa（1.0%）。
+  要鑑定需定序或 intact-mass MS。
+- 下一步：imidazole vehicle 單獨一滴、`e1` 稀釋系列，以及把 CDS12_WT 和 Φ8 抗性突變株
+  排在同一盤上重跑。
 
 ## application
 
@@ -107,3 +126,7 @@ CDS12_WT 不同，那效應就不太可能只是序列距離造成的假象。No
 [`../2026-10-18_parts_structure_comparison.md`](../2026-10-18_parts_structure_comparison.md)。
 上面兩個待補項目已於 2026-10-18 依教授交付的資料解決，見
 [`../2026-10-18_pi_questionnaire_answers.md`](../2026-10-18_pi_questionnaire_answers.md) A1。*
+
+*紀錄 — 2026-10-18：characterisation 依 2026-10-16 的 spot test 更新
+（[`../../code/1016_spot_test_result.ipynb`](../../code/1016_spot_test_result.ipynb)）。
+**這筆修改還沒同步到 registry.igem.org** — 線上的 part page 是依更早的版本轉錄的。*

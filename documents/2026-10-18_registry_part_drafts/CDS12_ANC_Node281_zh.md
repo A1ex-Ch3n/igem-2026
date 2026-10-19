@@ -74,13 +74,32 @@ BL21-CodonPlus。
 
 ## characterisation
 
-**沒有，但有一個記錄在案的負面結果**（上述失敗的純化）。之所以寫進來，是因為 Registry 明講
-負面與不確定的結果仍有價值。
+**第一筆活性資料，2026-10-16 — 對這個變體而言基本上是負面的。**
 
-- **與 CDS12_WT 及其他祖先在 SDS-PAGE 上無法區分** — 四者相差最多 0.43 kDa（1.0%）。
+**Spot test，2026-10-16**（`code/1016_spot_test_result.ipynb`；圖與 caption 在
+`code/output/1016_spot_test_result/`）。7 株 *Pseudomonas* 以 double-layer 方式鋪菌苔
+（200 µL 菌液 + 3 mL soft agar）。每盤點 5 滴、各 7 µL：Φ8 phage 原液（陽性對照）、
+滅菌 1× PBS（陰性對照），以及 `e1`、`e40`、`e281` 製備液，都用同一管滅菌 PBS 稀釋 1:10。
+10/12 點盤，10/16 判讀。
+
+沒有任何一滴出現透明的裂解區，Φ8 也沒有。看得到的讀值是**滴內長出的菌落數**：滅菌 PBS 滴
+穩定長出獨立菌落（中位數 14），這是一滴液體落在這種菌苔上的基準。以此為基準，各處理的中位數為
+**Φ8 0、`e1` 1、`e40` 10、`e281` 9**。
+
+`e281` crude lysate 只讓菌落數略為減少，中位數從 14 降到 9。
+
+**這能說什麼、不能說什麼**
+- `e281` 製備液是 **crude lysate**，不是純化蛋白，酵素沒有被濃縮。這裡效果弱
+  **不代表**這個變體沒有活性；這個實驗分不出「沒有活性」和「被稀釋掉的活性」。
+- 這個 part 的表現仍未確認（見 *experiment*），滴裡也可能根本沒有酵素。
+- 相對地，唯一經過純化步驟的 `e1` 製備液在同一個實驗裡幾乎完全壓住菌落（中位數 1）。這個差別
+  對應的是製備方式，不一定是序列。
+- 這次**沒有**點野生型 CDS12_WT，所以設計要問的「祖先 vs 現代」比較還沒做。
+- 單一濃度、每株一盤，菌落由影像自動分割計數；沒有重複、沒有統計。
+- 沒有透明區就沒有 halo，所以這還不是傳統意義上的 depolymerase 活性。
+- **與 CDS12_WT 及另外兩個祖先在 SDS-PAGE 上無法區分** — 四者相差最多 0.43 kDa（1.0%）。
   要鑑定需定序或 intact-mass MS。
-- 預定讀值：先確立表現，再於敏感與 Φ8 抗性菌苔上點樣，與野生型酵素並列，含 imidazole
-  vehicle 與 PBS 對照。
+- 下一步：純化這個變體、與其他樣品等量後，連同 imidazole vehicle 對照與 CDS12_WT 一起重點。
 
 ## application
 
@@ -111,3 +130,7 @@ codon usage 是實際風險。結構證據是單序列模型。
 [`../2026-10-18_parts_structure_comparison.md`](../2026-10-18_parts_structure_comparison.md)。
 上面兩個待補項目已於 2026-10-18 依教授交付的資料解決，見
 [`../2026-10-18_pi_questionnaire_answers.md`](../2026-10-18_pi_questionnaire_answers.md) A1。*
+
+*紀錄 — 2026-10-18：characterisation 依 2026-10-16 的 spot test 更新
+（[`../../code/1016_spot_test_result.ipynb`](../../code/1016_spot_test_result.ipynb)）。
+**這筆修改還沒同步到 registry.igem.org** — 線上的 part page 是依更早的版本轉錄的。*
