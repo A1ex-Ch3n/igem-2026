@@ -4,9 +4,20 @@ The PI's A2 text (2026-10-18) calls the genome **circular**. This repository has
 said **linear with a 77 bp direct terminal repeat** since 2026-07-08 and treats
 it as resolved. Both versions are kept here side by side.
 
+> **DECISION, 2026-10-19 (Alex).** Where the two disagree, **the PI's assembly
+> governs**. For iGEM we report the genome as a **circular contig of 62,339 bp**
+> (62,416 bp before the 77 bp overhang is removed). The rest of this note is kept
+> because the question is not scientifically settled and will matter for the
+> manuscript — but it no longer blocks anything for the competition.
+>
+> **Still to change:** the wiki's `/description` page says "linear, 62,338 bp,
+> with a 77 bp direct terminal repeat" and must be brought into line. So do the
+> repo documents listed at the end of this note.
+
 **The short version: our "RESOLVED" is weaker than it looks, and the one
-read-level test we actually ran agreed with the PI.** Nothing here settles the
-question. Do not state a topology on the wiki until PhageTerm or CheckV has run.
+read-level test we actually ran agreed with the PI** — which is a second reason
+the decision above is the safe one. Nothing here settles the question
+scientifically; PhageTerm or CheckV still would.
 
 ---
 
