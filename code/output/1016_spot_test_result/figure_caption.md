@@ -46,3 +46,51 @@ a first indication that the purified e1 fraction contains a biologically active 
   For that, show it alongside the gel / anti-His western.
 - Φ8 gave no visible clearing on its parental hosts either, so this plate does not address R1 resistance.
 - On 9-1-1, colonies grew in the Φ8 and e1 drops as well (sector map confirmed).
+
+---
+
+# Second figure — grouped by Φ8 host range
+
+Files: `fig_spot_test_hostrange.png` (300 dpi), `fig_spot_test_hostrange.pdf`.
+Made by `code/1016_spot_test_result.ipynb`, section 7.
+
+**Figure Y. The same spot test, arranged by whether Φ8 can infect the strain.**
+Each cell is one 7 µL drop; the number is the colony count inside it and the shading follows
+that number. Rows are grouped by the host range of phage Φ8, scored independently in a
+plaque assay of 18 strains against two Φ8 lysates
+(`lab_notebook/digitalized/2026-07-04_host-range-results-matrix.md`): 9-2-1 and 9-6-2 are the
+strains Φ8 was isolated on, and 8-10-2, 9-1-1 and 10-10-2 gave no plaques with either lysate.
+✱ marks the two Φ8-resistant isolates picked from the sensitive parents.
+Sterile PBS gave a high colony count in every row, host and non-host alike (group medians 12.5
+and 15), so the baseline does not depend on host range. **The `e1` preparation suppressed
+colony growth in every row** (group medians 1 and 4), including on strains that phage Φ8 cannot
+infect and on the two resistant isolates. This is the pattern an enzyme acting on a surface
+polysaccharide would give, and it is what the ancestral-enzyme design predicts; it also means
+the suppression cannot be explained by phage carried over in the preparation. The crude `e40`
+and `e281` lysates show no such grouping (medians 9.5–10 and 7–10, against a PBS baseline of
+12.5–15).
+Two cells should not be over-read: the 3 counted in the 9-6-2 Φ8 drop are reflections at the
+drop edge, not colonies, and 9-1-1 is the one strain where the Φ8 drop did not suppress growth
+(11 colonies), consistent with it being a non-host.
+n = 1 plate per strain, one concentration, colonies counted by automated image segmentation.
+
+## 中文說明
+
+**同一批 spot test，改用 Φ8 宿主範圍分組。** 一格 = 一滴，數字 = 滴內菌落數，顏色深淺跟著數字。
+
+分組依據是獨立做過的 plaque assay（18 株 × 2 個 Φ8 lysate，
+`lab_notebook/digitalized/2026-07-04_host-range-results-matrix.md`）：
+- **Φ8 宿主**：9-2-1、9-6-2（Φ8 就是從這兩株分離的）＋它們的抗性衍生株（✱）
+- **非宿主**：8-10-2、9-1-1、10-10-2，對兩個 lysate 都沒有 plaque
+
+重點：
+- 滅菌 PBS 在兩組都給出高菌落數（組中位數 12.5 與 15），所以基準線跟宿主範圍無關。
+- **`e1` 在每一列都壓住了菌落**（組中位數 1 與 4），包括 Φ8 感染不了的非宿主，以及兩株抗性株。
+  這正是「作用在表面多醣的酵素」會有的樣子，也是祖先酵素設計預測的結果；同時也排除了
+  「製備液裡混到 phage」這個解釋。
+- `e40`、`e281` crude lysate 看不出這種分組。
+
+兩格不要過度解讀：9-6-2 的 Φ8 那格算到的 3 是滴緣反光，不是菌落；9-1-1 是唯一 Φ8 沒有壓住的
+一株（11 顆），這跟它是非宿主一致。
+
+每株 1 盤、單一濃度，菌落以影像自動分割計數。
