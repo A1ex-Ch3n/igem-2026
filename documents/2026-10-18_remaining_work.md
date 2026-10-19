@@ -134,6 +134,17 @@ that way. Add the safety training record.
 - **Rafael continues expressing all proteins**, ongoing, no completion date. Deeper
   characterisation — affinity and biochemical assays — is aspirational and should
   be described as such, not promised.
+- **Settle whether the `e1` spot-test activity is the protein or carried-over phage.**
+  The 2026-10-16 spot test (`code/1016_spot_test_result.ipynb`) shows the `e1` preparation
+  suppressing colony growth to a median of 12 % of the same plate's PBS control, tracking
+  phage Φ8 strain by strain including their shared failure on 9-1-1 — which is also what
+  carried-over phage would look like. **The deciding experiment is one plate: a plaque assay
+  of the `e1` preparation itself on a 9-2-1 lawn.** Then the elution-buffer drop, an `e1`
+  dilution series, and CDS12_WT on the same plate. Full ranking and rationale in
+  `code/output/1016_spot_test_result/figure_caption.md`. Related: no successful purification
+  of `e1` is recorded in the notebooks, so the provenance of that tube is an open question
+  in its own right.
+
 - **CheckV and formal taxonomy** for the phage genome. A3's Foldseek assignment
   (Bcep22-like podovirus, *Gervaisevirus*, via Ralstonia phage GP4 NC_054964)
   partly closes this, tentatively.

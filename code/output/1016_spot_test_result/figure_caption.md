@@ -149,3 +149,58 @@ PBS 菌落數本來就不同（7–17），所以絕對數字不能跨株比較�
 3. `fig_spot_test_normalised.png` — 用每盤自己的對照正規化。**結論圖**，放正文。
 
 如果只能放一張，放第 3 張，再把第 1 張的照片縮成一條放在旁邊當佐證。
+
+---
+
+# Next experiments — what this result demands
+
+The one thing this data set cannot do is separate **a protein activity in the `e1`
+preparation** from **infectious phage carried over into it**. Everything else is secondary.
+`e1` tracks Φ8 strain by strain, including the shared failure on 9-1-1, which is exactly
+what carried-over phage would look like. Ranked by how much they move that question:
+
+1. **Plaque assay on the `e1` preparation itself.** One plate, one day. Spot the `e1`
+   preparation on a lawn of the sensitive parent 9-2-1 at serial dilution and look for
+   countable plaques. Plaques mean infectious phage in the preparation and the activity is not
+   attributable to the protein. No plaques at a dilution where the Φ8 stock gives a clear
+   titre means the suppression needs another explanation. **This is the experiment to run
+   first** — it is the cheapest and it gates the interpretation of everything above.
+2. **Elution-buffer drop.** The `e1` drop was 90 % sterile PBS and 10 % preparation, and that
+   10 % carries its purification buffer, imidazole included. Spot the elution buffer alone,
+   diluted 1:10 in the same PBS. Without it, buffer toxicity remains a live alternative.
+3. **Dilution series of `e1`.** 1:10, 1:100, 1:1000. A protein activity should fade with
+   dilution in a graded way; a fixed contaminant may not. This also gives a crude potency
+   figure for the part page.
+4. **CDS12_WT on the same plate.** The wild-type enzyme was not spotted on 2026-10-16, so the
+   ancestor-versus-modern comparison the whole design is built on has not been made. Until it
+   is, no claim about ancestral broadening is available.
+5. **Confirm what `e1` actually is.** No successful purification of `e1` is recorded anywhere
+   in the notebooks (2026-10-01 purified CDS10 and e40; 2026-10-10 e281 failed). Before this
+   figure is published, the provenance of that tube has to be established, and ideally the
+   protein confirmed by anti-His western or intact-mass MS.
+6. **Φ8 dilution series on the parents**, to establish a titre and a visible plaque, which is
+   also what would let a future plate say anything about the R1 resistant isolates. No
+   clearing was seen anywhere on this plate, so R1 resistance remains untested.
+
+## 中文
+
+這批資料唯一不能回答的，是**「`e1` 製備液裡的蛋白活性」還是「混進去的可感染 phage」**。
+其他問題都次要。`e1` 逐株跟著 Φ8 走、連 9-1-1 都一起失效 — 這正是 phage carryover 會有的樣子。
+按對這個問題的幫助排序：
+
+1. **直接對 `e1` 製備液做 plaque assay。** 一盤、一天。把 `e1` 製備液稀釋系列點在敏感親代
+   9-2-1 的菌苔上，看有沒有可數的 plaque。有 plaque = 製備液裡有可感染 phage，活性不能歸給蛋白；
+   在 Φ8 原液會出現清楚 titre 的稀釋度下仍然沒有 plaque，抑制就需要別的解釋。
+   **這個要先做** — 最便宜，而且上面所有解讀都卡在它。
+2. **單獨點 elution buffer。** `e1` 滴有 90% 是滅菌 PBS、10% 是製備液，而那 10% 帶著純化
+   buffer（含 imidazole）。用同一管 PBS 把 elution buffer 稀釋 1:10 點一滴。沒有這個對照，
+   buffer 毒性一直會是另一個解釋。
+3. **`e1` 稀釋系列**（1:10、1:100、1:1000）。蛋白活性應該隨稀釋呈梯度消退，固定的污染物不一定。
+   也順便給 part 頁面一個粗略的效價數字。
+4. **把 CDS12_WT 放進同一盤。** 10/16 沒點野生型，所以整個設計要問的「祖先 vs 現代」還沒被測到。
+   在那之前，沒有任何「祖先變廣效」的說法可用。
+5. **確認 `e1` 到底是什麼。** 所有 notebook 裡都沒有 `e1` 純化成功的紀錄（10/01 純化 CDS10 和
+   e40，10/10 e281 失敗）。這張圖發表前必須把那管的來源查清楚，最好再用 anti-His western 或
+   intact-mass MS 確認蛋白。
+6. **Φ8 在親代上做稀釋系列**，建立 titre 和看得見的 plaque；這也是未來那盤要能對 R1 抗性株
+   說任何話的前提。這盤哪裡都沒有透明區，所以 R1 抗性仍然未測。
