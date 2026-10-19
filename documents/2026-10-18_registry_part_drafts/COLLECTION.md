@@ -30,11 +30,14 @@ cannot reach?**
 ## Why these six belong together
 
 **The problem.** Phage therapy fails when a host changes the surface sugar the phage binds.
-The phage's depolymerases are specialists, each tuned to one host's polysaccharide. That
+The phage's depolymerases are specialists, each tuned to one host's polysaccharide — tailspike
+depolymerases are what set a phage's capsular-type range (Popova *et al.* 2021). That
 specificity is the useful property and the failure mode at once.
 
 **The hypothesis.** Reconstructed ancestors of enzyme families are repeatedly found to be more
-**promiscuous** than their modern descendants. If that holds for a phage depolymerase, an
+**promiscuous** than their modern descendants (Risso *et al.* 2018), and in at least one case a
+resurrected ancestor accepts a substrate its modern descendant cannot convert at all
+(Hendrikse *et al.* 2018). If that holds for a phage depolymerase, an
 ancestral form of it may cleave polysaccharides the modern enzyme cannot — including those of
 hosts that have escaped the phage.
 
@@ -111,6 +114,41 @@ The GH5 phylogeny, the ancestral-state reconstruction and the choice of nodes ar
 The students contributed the phage isolation and sequencing, the structural comparison of the
 variants, the cloning and expression trials, the gel densitometry, and the spot test.
 Every named author, including the PI, must opt in on registry.igem.org before being credited.
+
+
+## References (verified on PubMed, 2026-10-19)
+
+- Risso VA, Sanchez-Ruiz JM, Ozkan SB (2018). Biotechnological and protein-engineering
+  implications of ancestral protein resurrection. *Curr Opin Struct Biol* 51:106–115.
+  doi:10.1016/j.sbi.2018.02.007 — review; resurrected ancestors repeatedly show substrate and
+  catalytic promiscuity. **The core citation for this collection's hypothesis.**
+- Hendrikse NM, Charpentier G, Nordling E, Syrén P-O (2018). Ancestral diterpene cyclases show
+  increased thermostability and substrate acceptance. *FEBS J* 285:4660–4673.
+  doi:10.1111/febs.14686 — resurrected ancestors accept a substrate the extant enzyme does not
+  convert. **The closest precedent for what we are testing.**
+- Chen X, Dou Z, Luo T, Sun Z, Ma H, Xu G, Ni Y (2022). Directed reconstruction of a novel
+  ancestral alcohol dehydrogenase featuring shifted pH-profile, enhanced thermostability and
+  expanded substrate spectrum. *Bioresour Technol* 363:127886.
+  doi:10.1016/j.biortech.2022.127886 — quantified substrate-spectrum expansion in an ancestor.
+- Chiang C-H, Wang Y, Hussain A, Brooks CL, Narayan ARH (2024). Ancestral sequence
+  reconstruction to enable biocatalytic synthesis of azaphilones. *J Am Chem Soc*
+  146:30194–30203. doi:10.1021/jacs.4c08761 — ASR used to obtain a more soluble, stable and
+  promiscuous enzyme; also the solubility argument for our constructs.
+- Castro-Fernandez V, Herrera-Morande A, Zamora R, et al. (2017). Reconstructed ancestral
+  enzymes reveal that negative selection drove the evolution of substrate specificity in
+  ADP-dependent kinases. *J Biol Chem* 292:15598–15610. doi:10.1074/jbc.M117.790865 — a
+  bifunctional ancestor specialising into a narrow modern enzyme: the direction we are trying
+  to reverse.
+- Popova AV, Shneider MM, Arbatsky NP, et al. (2021). Specific interaction of novel
+  *Acinetobacter baumannii* phages encoding tailspike depolymerases with corresponding capsular
+  types. *J Virol* 95:e01714-20. doi:10.1128/JVI.01714-20 — tailspike depolymerases determine
+  phage specificity for a capsular type. **The statement of the problem.**
+- Chen C-Y, et al. (2026). *Microbiol Resour Announc* doi:10.1128/mra.00793-26 — our own genome
+  announcement for the *Pseudomonas* isolates, including 9-2-1, the host this phage was
+  isolated on.
+
+Found via PubMed. Each entry above was checked against its PubMed record; none is inferred
+from memory.
 
 ---
 *Draft — 2026-10-18. Numbers: `code/output/1018_construct_structures/` and
