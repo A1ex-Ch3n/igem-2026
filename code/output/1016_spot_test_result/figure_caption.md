@@ -64,9 +64,11 @@ strains Φ8 was isolated on, and 8-10-2, 9-1-1 and 10-10-2 gave no plaques with 
 Sterile PBS gave a high colony count in every row, host and non-host alike (group medians 12.5
 and 15), so the baseline does not depend on host range. **The `e1` preparation suppressed
 colony growth in every row** (group medians 1 and 4), including on strains that phage Φ8 cannot
-infect and on the two resistant isolates. This is the pattern an enzyme acting on a surface
-polysaccharide would give, and it is what the ancestral-enzyme design predicts; it also means
-the suppression cannot be explained by phage carried over in the preparation. The crude `e40`
+infect and on the two resistant isolates.
+**Host range does not separate this data set, and this figure should not be read as if it did.**
+Φ8 itself suppressed colonies on two of the three non-hosts (8-10-2 and 10-10-2), so suppression
+in this assay does not require infection — and therefore the fact that `e1` works on non-hosts
+does **not** rule out phage carried over in the preparation. The crude `e40`
 and `e281` lysates show no such grouping (medians 9.5–10 and 7–10, against a PBS baseline of
 12.5–15).
 Two cells should not be over-read: the 3 counted in the 9-6-2 Φ8 drop are reflections at the
@@ -86,11 +88,64 @@ n = 1 plate per strain, one concentration, colonies counted by automated image s
 重點：
 - 滅菌 PBS 在兩組都給出高菌落數（組中位數 12.5 與 15），所以基準線跟宿主範圍無關。
 - **`e1` 在每一列都壓住了菌落**（組中位數 1 與 4），包括 Φ8 感染不了的非宿主，以及兩株抗性株。
-  這正是「作用在表面多醣的酵素」會有的樣子，也是祖先酵素設計預測的結果；同時也排除了
-  「製備液裡混到 phage」這個解釋。
+- **但宿主範圍切不開這批資料，不要照這個方向解讀。** Φ8 自己在三株非宿主中的兩株
+  （8-10-2、10-10-2）也壓住了菌落，所以這個 assay 裡的抑制**不需要感染**；因此
+  「e1 在非宿主也有效 ⇒ 排除 phage carryover」這個推論**不成立**。
 - `e40`、`e281` crude lysate 看不出這種分組。
 
 兩格不要過度解讀：9-6-2 的 Φ8 那格算到的 3 是滴緣反光，不是菌落；9-1-1 是唯一 Φ8 沒有壓住的
 一株（11 顆），這跟它是非宿主一致。
 
 每株 1 盤、單一濃度，菌落以影像自動分割計數。
+
+---
+
+# Third figure — each drop against its own plate's PBS control
+
+Files: `fig_spot_test_normalised.png` (300 dpi), `fig_spot_test_normalised.pdf`,
+numbers in `spot_percent_of_pbs.tsv`. Made by `code/1016_spot_test_result.ipynb`, section 8.
+
+**Figure Z. Colony suppression in the spot test, normalised to the sterile-PBS control on the
+same plate.** Every plate carried its own 7 µL sterile-PBS drop, and the colony count in that
+drop varied between plates (7–17). Each point here is one strain, expressed as the colonies in
+that treatment's drop as a percentage of the PBS drop on the same plate; 100 % is no effect.
+Filled points are the four strains phage Φ8 can infect, two of which are Φ8-resistant isolates;
+open points are the three strains that gave no plaques with either Φ8 lysate
+(`lab_notebook/digitalized/2026-07-04_host-range-results-matrix.md`).
+Phage Φ8 (median 0 %) and the `e1` preparation (median 12 %) both suppressed colony growth
+almost completely, while the crude `e40` and `e281` lysates stayed near the no-effect line
+(medians 67 % and 53 %). **`e1` tracks the phage strain by strain**: on six of the seven strains
+both fall below 40 %, and the single strain where the phage failed — 9-1-1, at 157 % — is also
+the one strain where `e1` failed, at 114 %.
+That agreement is the strongest signal in this experiment, and it is also the strongest
+remaining confound: an activity carried over from the phage stock would behave the same way.
+Suppression here does not require infection — Φ8 also cleared colonies on two of the three
+strains it cannot plaque — so the host-range split, shown for completeness, does not separate
+the data.
+n = 1 plate per strain, one concentration, colonies counted by automated image segmentation;
+9-1-1 is a single plate and is labelled rather than treated as an established exception.
+
+## 中文說明
+
+**把每一滴換算成「佔同一盤 PBS 對照的百分比」。** 每盤都點了自己的滅菌 PBS 對照，而各盤的
+PBS 菌落數本來就不同（7–17），所以絕對數字不能跨株比較。100% = 跟 PBS 一樣、沒有效果。
+實心點 = Φ8 能感染的 4 株（其中 2 株是抗性株），空心點 = 兩個 Φ8 lysate 都不產生 plaque 的 3 株。
+
+- Φ8（中位數 0%）和 `e1`（中位數 12%）都幾乎完全壓住菌落；`e40`、`e281` crude lysate 貼近
+  無效果線（67%、53%）。
+- **`e1` 是逐株跟著 Φ8 走的**：7 株中有 6 株兩者都低於 40%；唯一 Φ8 失效的 9-1-1（157%），
+  也正是 `e1` 唯一失效的一株（114%）。
+- 這個一致性是本實驗最強的訊號，但同時也是最強的干擾：如果活性是從 phage 原液帶過來的，
+  表現會完全一樣。
+- 這個 assay 裡的抑制**不需要感染** — Φ8 在三株不能形成 plaque 的菌株中，有兩株也清掉了菌落。
+  所以宿主範圍分組切不開這批資料，圖上保留只是為了完整。
+
+每株 1 盤、單一濃度，菌落以影像自動分割計數；9-1-1 只有一盤，所以標出來而不當成已確立的例外。
+
+## 這三張圖怎麼配
+
+1. `fig_spot_test.png` — 原始照片 + 絕對菌落數。**證明資料是真的**，讀者看得到每一滴。
+2. `fig_spot_test_hostrange.png` — 逐株、逐處理的數字表。**查表用**，附錄或 supplementary。
+3. `fig_spot_test_normalised.png` — 用每盤自己的對照正規化。**結論圖**，放正文。
+
+如果只能放一張，放第 3 張，再把第 1 張的照片縮成一條放在旁邊當佐證。
