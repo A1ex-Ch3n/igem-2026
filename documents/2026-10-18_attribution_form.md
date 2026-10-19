@@ -40,8 +40,8 @@ Tasks: Conceptualization · Investigation · Notebook/record keeping · Writing 
 > Conceptualization (the students led the idea of investigating phage receptor-binding proteins, and brought the team methods from the literature for expression and for validating the expression results); summer bench work and the autumn protein work with Alex and Carol; ~20 notebook entries; co-author of the genome announcement; built the wiki framework and coordinated deliverables; organised the stakeholder interview; team photograph and judging presentation; personally covered part of the competition fees.
 
 ### Xiaokuan (Carol) Wang — Student
-Tasks: Conceptualization · Investigation · Notebook/record keeping · Writing · Data Curation · Analysis
-> Conceptualization (the students led the idea of investigating phage receptor-binding proteins, and brought the team methods from the literature for expression and for validating the expression results); the largest share of the bench work, summer and autumn; recorded most of the summer experiments; co-author of the genome announcement; now also researches in the Ignacio-Espinoza Lab at KGI.
+Tasks: Conceptualization · Investigation · Notebook/record keeping · Writing · Data Curation · Analysis · Software
+> Conceptualization (the students led the idea of investigating phage receptor-binding proteins, and brought the team methods from the literature for expression and for validating the expression results); the largest share of the bench work, summer and autumn; recorded most of the summer experiments; co-author of the genome announcement; software and analysis — worked with variant call format (VCF) output to support assembly of the phage genome out of the metagenomic read set, and ran BLAST searches of the bacterial sequences to identify the likely host of the phage; now also researches in the Ignacio-Espinoza Lab at KGI.
 
 ### Yuhui (Sarah) Liu — Student
 Tasks: Conceptualization · Investigation · Analysis
