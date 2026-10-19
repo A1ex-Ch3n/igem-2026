@@ -150,6 +150,31 @@ Every named author, including the PI, must opt in on registry.igem.org before be
 Found via PubMed. Each entry above was checked against its PubMed record; none is inferred
 from memory.
 
+## Registry documentation entries (paste-ready, 2026-10-19)
+
+The collection form takes the same five entry types as a part page. Create one entry per type.
+Field values: **Affiliation** `Claremont CA (2026)`.
+
+Collection-level fields: **Title** `Phage Phi8 surface-polysaccharide toolkit`; **Summary**
+"Six basic parts from one soil phage, 9-2-1 Phi8: three of its own virion proteins and three
+reconstructed ancestors of its GH5 glycoside hydrolase. Grouped to test one question — whether
+an ancestral enzyme can act on bacterial surface sugars that its modern descendant cannot
+reach." Parts to add: BBa_267WQM51, BBa_26DKNAEC, BBa_269KJB8G, BBa_26TWEX42, BBa_26EK89VW,
+BBa_26LHLSLW.
+
+The five entry bodies are the prose sections above, reorganised as:
+
+| Type | Title | Source section above |
+|---|---|---|
+| Design | Why these six parts are one set | *Why these six belong together* + *What is established* + reconstruction method + References |
+| Experiment | Cloning, expression trials and the first spot test | cloning/expression + the 2026-10-16 spot-test protocol |
+| Characterisation | One activity signal, and what it is not yet attributed to | the spot-test result and the carry-over question |
+| Application | How to reuse this collection | *How to reuse this collection* + practical notes |
+| Discussion | What this set does and does not yet show | limitations and ranked future directions |
+
+**Discussion ends on the ranked future directions.** An earlier draft closed with a sentence
+about deliberately reporting negative results; it was cut on 2026-10-19 as editorialising.
+
 ---
 *Draft — 2026-10-18. Numbers: `code/output/1018_construct_structures/` and
 `code/output/1016_spot_test_result/`. Evidence grades:
