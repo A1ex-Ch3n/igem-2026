@@ -86,4 +86,4 @@ Limitations. A reconstructed sequence is a hypothesis about a protein that no lo
 
 Role in the set. Being the most diverged of the three, at 51.0 percent identity to the wild type, this node is the strongest test of the promiscuity hypothesis and also the most likely to misfold or express poorly. Its near-twin node 40, 87.3 percent identical to it, is the control for both of those risks.
 
-Attribution note. The sequence is Prof. J. Espinoza's design: the GH5 phylogeny, the ancestral-state reconstruction and the node choice are his. The students contributed the structural comparison, the cloning, the expression trials, the Ni-NTA attempt and the gel densitometry.
+Attribution note. The sequence is Prof. J. Espinoza's design: the GH5 phylogeny, the ancestral-state reconstruction and the node choice are his. The students contributed the structural comparison, the cloning, the expression trials, the two Ni-NTA attempts and the gel densitometry.

@@ -26,7 +26,7 @@ Models. AlphaFold3 Server trimer, pTM 0.66 and ipTM 0.64, mean pLDDT 90.3 inside
 
 ## experiment
 
-**title:** Cloning and three expression attempts; no band yet
+**title:** Cloning, four gels, and a Ni-NTA elution 29 kDa short of the design
 
 Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience (order of 2026-07-27). Host E. coli BL21(DE3), kanamycin selection, IPTG induction at ~30 C. The expressed construct carries the pET-28a leader and the designed GGSGGGGS-His6-ENLYFQ-GGGGSGGGGS linker, giving a predicted mass of 72.0 kDa; neither is part of this part's sequence.
 
