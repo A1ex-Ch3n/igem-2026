@@ -72,9 +72,14 @@ leader and that linker described in *design* rather than included in the sequenc
 | `CDS12_WT` | 1089 bp | 362 aa | `ATG` added |
 
 ⚠️ **Sequence, authorship and licence lock permanently** when a part leaves Draft. Agree the
-His6 policy once, for all six, before anyone clicks *Send for Screening*.
+His6 policy once, for all six, before anyone clicks *Send for Screening*. **Licence settled
+2026-10-19: CC0 1.0 Universal on all six** (confirmed by Alex; verified on `BBa_26LHLSLW`'s
+live page). Check the field reads CC0 on each part before screening.
 
 ---
 *Log — 2026-10-18: drafted. Numbers from `code/output/1018_construct_structures/`; the
 structural claims and their evidence grades from
 [`../2026-10-18_parts_structure_comparison.md`](../2026-10-18_parts_structure_comparison.md).*
+*Log — 2026-10-19: folded in the 2026-10-19 dot blot (Node1, Node40, Node281, CDS12_WT; CDS10 and
+CDS11 untouched, they were not on that membrane) and recorded the Registry Functional Description
+edits it forces. Licence confirmed as CC0 1.0 Universal.*

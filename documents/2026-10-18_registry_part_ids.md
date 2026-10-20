@@ -15,8 +15,9 @@ application / discussion) written from
 | CDS12_ANC_Node281 — `Phi8-GH5-ancN281` | `BBa_26LHLSLW` | https://registry.igem.org/parts/bba-26lhlslw |
 
 Common fields as entered: role **CDS** (`SO:0000316`), topology **Linear**, composition
-**Basic Part**, host organism **_Escherichia coli_** (species, txid562), licence **CC BY 4.0**
-(the form default), authors Chun-Yu Chen, Xiaokuan Wang, Yan Yan, Julio Cesar Ignacio Espinoza
+**Basic Part**, host organism **_Escherichia coli_** (species, txid562), licence
+**CC0 1.0 Universal** (see the licence note below — this is *not* the form default),
+authors Chun-Yu Chen, Xiaokuan Wang, Yan Yan, Julio Cesar Ignacio Espinoza
 with CRediT roles (PI: Conceptualisation · Methodology · Supervision). Sequences are the
 `ATG` + own CDS + stop versions from `registry_parts.ffn`; no vector leader, no CDS11 linker.
 
@@ -29,18 +30,21 @@ while the part is in Draft.
   N-terminal `MGSSHHHHHHSSGLVPRGSHM` leader stays out of all six sequences, and no part carries
   a C-terminal tag. Every draft and the collection page state this. Nothing to change on the
   entered sequences — they were already submitted this way.
-- **Licence — recommendation: CC0 1.0 on all six parts.** Reasons: (1) a part is a DNA
+- **Licence — SETTLED 2026-10-19: CC0 1.0 Universal, confirmed by Alex.** Verified on the live
+  page for `BBa_26LHLSLW`, which reads "Creative Commons Zero v1.0 Universal". The recommendation
+  below was taken. Licence locks permanently at screening, so confirm the field reads CC0 on each
+  of the six before *Send for Screening*. Original reasoning: (1) a part is a DNA
   sequence, and CC BY's attribution requirement is unenforceable and awkward once a sequence is
   copied into someone else's construct, which is why CC0 is the norm for biological parts;
   (2) it removes any licence-compatibility question for a team that wants to combine our parts
   with theirs; (3) judges read maximal openness as a contribution, and we lose nothing — the
-  Attributions form and the part page credit us regardless. If the Registry form does not offer
-  CC0, CC BY 4.0 is acceptable and no worse than the default. **This is separate from the
+  Attributions form and the part page credit us regardless. (The form did offer CC0, so the
+  CC BY 4.0 fallback this note once described never applied.) **This is separate from the
   repository's code licence**, which must become OSI-approved (MIT or Apache-2.0) for Best
   Software; CC BY 4.0 does not qualify there.
 - **Two UNDONE fields in each ancestral part** — RESOLVED 2026-10-18 from the PI's handover.
-- **Licence — reported changed to CC0 by Alex on 2026-10-19.** Not independently verified; if
-  anyone re-checks the six pages before the freeze, confirm it there.
+- ~~**Licence — reported changed to CC0, not independently verified.**~~ **Closed 2026-10-19:**
+  verified on `BBa_26LHLSLW`'s live page and confirmed by Alex. All six should read CC0 1.0.
 - **Collection page** — drafted 2026-10-18:
   [`2026-10-18_registry_part_drafts/COLLECTION.md`](2026-10-18_registry_part_drafts/COLLECTION.md)
   (中文：`COLLECTION_zh.md`). **Created on registry.igem.org 2026-10-19**, UUID
