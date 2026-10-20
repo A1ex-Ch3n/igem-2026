@@ -8,6 +8,8 @@ Received from Prof. Espinoza on **2026-10-20**, answering the four questions in
 | `perp.csv` | **997 reconstructed nodes x 24 glycoside-hydrolase EC classes.** Values are ZymCTRL **perplexity** (his answer to Q1). Column order is the x-axis order of his figure |
 | `panelD.jpeg` | his original panel D. Pink cloud = all nodes; red circles = the nine on the CDS_0012 -> root path, shaded light (Node1) to dark (Node281) |
 | `seaview_curated_alignment.jpeg` | the curated MUSCLE alignment in SeaView — evidence for the "manually curated" step |
+| `tree_ultrametric.svg` | the PhyML tree drawn ultrametric (tips aligned). **CDS_0012 is the red mark**; the nine reconstructed nodes are the internal nodes on the path from it to the centre. The PI's preferred version: "the ultrametric is cleaner" |
+| `tree_phylogram.svg` | the same tree with branch lengths, scale bar 0.1 substitutions/site. More informative, harder to read at 997 tips |
 
 His answers, verbatim in substance:
 
@@ -67,5 +69,17 @@ ratios compare one EC against decoys *within a single run*, and the discriminati
 in this analysis is **across EC labels**, which the notebook's stored output does
 not show. `code/1018_prof_asr_zymctrl/README.md` has been corrected.
 
+## Rendering the trees
+
+Both arrived as SVG from iTOL, 1914x915 with ~1,000 tip labels and roughly 2 MB each.
+Inlining either into a wiki page would be unreasonable, so
+`code/1020_zymctrl_figure/render_trees.py` rasterises them at 2x with cairosvg,
+crops the surrounding whitespace, and labels the red mark as CDS_0012 — without
+which the one thing the figure is for is a 4-pixel dash.
+
+The wiki uses the **ultrametric** one, per the PI's preference. The phylogram is kept
+here because it is the version that carries branch lengths.
+
 ---
-*Log — 2026-10-20: received, verified against `perp.csv`, figure rebuilt as vector.*
+*Log — 2026-10-20: received, verified against `perp.csv`, figure rebuilt as vector,
+trees rasterised and annotated.*
