@@ -52,13 +52,24 @@ Node40、Node281 對野生型只有 **52.6%** 和 **51.0%**，但彼此有 **87.
   下游有保守的 SPHEY 區塊。
 - **CDS10_WT 與 CDS11_WT 共用 N 端 Calx-β anchor**（107 aa 上 42% 相同，兩個 anchor 疊合
   0.50 Å / 446 atoms）：建立在共同 virion 附著模組上的旁系 fiber。
+- **六個裡有兩個拿到陽性的 anti-His 證據。** 2026-10-19 的 dot blot 上，Node1 誘導後 lysate
+  是陰性對照的 **2.4×**，Node281 的 Ni-NTA flow-through 是 **2.9×**，陽性對照約 18×。
+  兩者都有帶標籤的產物；但 dot blot 報的是標籤，不是大小也不是活性。
 
 ## 還沒確立的
 
 直說，因為重用的人最需要知道的就是這些：
 
-- **六個 part 都還沒有確認的表現。** 三次 SDS-PAGE 只給出 CDS12_WT 一條落在預測質量上的誘導依賴 band，
-  以及 `e1` 一條未指認的 band；能分辨兩者的未轉型 BL21(DE3) 對照 lane 還沒跑。
+- **六個 part 都還沒有任何產物被「以大小」指認。** dot blot 分不出全長蛋白、截斷產物和游離標籤。
+  三次 SDS-PAGE（2026-09-15、09-29、10-10）只給出 CDS12_WT 一條落在預測質量上的誘導依賴 band，
+  以及 `e1` 一條未指認的 45–50 kDa band；而 2026-10-19 的 dot blot **沒有**重現 CDS12_WT 的
+  誘導依賴訊號。Node40 兩個點都沒訊號 —— 同一張膜上兩個姊妹構築是陽性，所以這是對等的陰性，
+  但不等於不存在：那張膜上所有 1:10 稀釋都落到背景，偵測底限很高。
+  CDS10_WT 和 CDS11_WT 不在那張膜上，**完全沒有表現證據**。
+  未轉型 BL21(DE3) 對照 lane 和 size-resolved anti-His western 兩者都還沒跑。
+- **沒有任何純化蛋白。** 唯一有膠可看的 Ni-NTA（`e281`，2026-10-10）失敗了：E1/E2 是空白膠，
+  flow-through 與 load 無法區分。dot blot 後來驗出那條 flow-through 是 His 陽性，
+  所以失敗的是**捕捉，不是表現**，下一步是改結合條件而不是重跑同一套。
 - **CDS_0012 家族的四個蛋白無法用 SDS-PAGE 區分** —— 彼此相差最多 0.43 kDa（1.0%）。
   要鑑定必須靠定序或 intact-mass MS。
 - **只有一筆活性結果，而且還沒歸因。** 2026-10-16 的 spot test 中，`e1` 製備液把滴內菌落壓到
@@ -66,6 +77,8 @@ Node40、Node281 對野生型只有 **52.6%** 和 **51.0%**，但彼此有 **87.
   但 `e1` 是逐株跟著 phage 走的，連同一株失效都一致，所以
   **「從 Φ8 原液帶過來可感染的 phage」仍然是最主要的替代解釋**。
   要排除，就要直接對製備液做 plaque assay，目前還沒做。
+  `e1` 的 anti-His 訊號補不上這一刀：lysate 裡有標籤不代表這個蛋白就是活性物種，
+  而且製備液所在的含 imidazole 沖提緩衝液從來沒有單獨點過。
 - **還沒有做過「祖先 vs 現代」的比較。** CDS12_WT 不在那次 spot test 裡。
 - **插入序列沒有 codon 最佳化**，而且帶哺乳類風格的 codon bias，這是 band 消失時第一個要懷疑的原因。
   下一個明顯的宿主是 Rosetta 或 BL21-CodonPlus。
@@ -75,7 +88,8 @@ Node40、Node281 對野生型只有 **52.6%** 和 **51.0%**，但彼此有 **87.
 這組設計成可以整組拿，也可以拆成兩半。
 
 - **做 phage therapy 的隊伍**：CDS12_WT 加三個祖先，就是一套現成的「現代 vs 祖先」panel，
-  可以接任何 depolymerase 活性試驗。摺疊和催化殘基都查過了，缺的是表現和活性，
+  可以接任何 depolymerase 活性試驗。摺疊和催化殘基都查過了，四個裡有兩個拿到帶標籤產物的
+  anti-His 證據；缺的是「以大小指認的產物」、純化材料，以及任何歸因過的活性，
   所以這是起點而不是結論。
 - **做祖先序列重建（ASR）的隊伍**：三個節點是一個完整記錄的範例 ——
   NCBI nr 前 1000 個 hit、SeaView 裡的 MUSCLE、人工整理、PhyML（WAG、p-inv 0.1、100 bootstraps）、
@@ -83,17 +97,22 @@ Node40、Node281 對野生型只有 **52.6%** 和 **51.0%**，但彼此有 **87.
 - **做噬菌體生物學的隊伍**：CDS10_WT 和 CDS11_WT 是一株新穎 62 kb 噬菌體上的兩個表面蛋白，
   一個有摺疊層級的 depolymerase 指派，一個完全未指派。
 
-六個都是選殖進 **pET-28a(+)**（NdeI/XhoI）、供 *E. coli* BL21(DE3) 表現的構築。
-**載體的 N 端 His6 leader 不屬於任何一個 part 的序列**，也沒有任何一個 part 帶 C 端標籤。
+六個都是選殖進 **pET-28a(+)**（NdeI/XhoI）、由 Twist Bioscience 合成、供 *E. coli* BL21(DE3)
+在 kanamycin 下以 IPTG 於 **~30 °C** 誘導表現的構築。
+**載體的 N 端 His6 leader 不屬於任何一個 part 的序列**，也沒有任何一個 part 帶 C 端標籤 ——
+但 anti-His dot blot 驗的正是那個 leader，所以表現證據屬於「構築」，不屬於送出的 part 序列本身。
 
 ## 貢獻歸屬
 
 GH5 phylogeny、祖先態重建、節點的選擇都是 **Espinoza 教授的工作**，不是學生的；
 三條祖先序列是他的設計。學生負責噬菌體分離與定序、變體的結構比較、選殖與表現試驗、
-膠體定量，以及 spot test。
+膠體定量、Ni-NTA 嘗試、dot blot，以及 spot test。
 所有具名作者（包含教授）都必須先在 registry.igem.org 上 opt in 才能被列名。
 
 ---
 *草稿 — 2026-10-18。數字：`code/output/1018_construct_structures/` 與
 `code/output/1016_spot_test_result/`。證據等級：
 [`../2026-10-18_parts_structure_comparison.md`](../2026-10-18_parts_structure_comparison.md)。*
+*Log — 2026-10-20：與 2026-10-19 已套用到線上的六個 part 頁面對齊。原本「六個 part 都還沒有確認的
+表現」在 dot blot 之後已經不成立，已改寫；`e281` 失敗的 Ni-NTA、~30 °C 誘導溫度、以及每個 part 的
+dot blot 結果都寫進去了。英文可貼版本在 [`paste/COLLECTION.md`](paste/COLLECTION.md)。*

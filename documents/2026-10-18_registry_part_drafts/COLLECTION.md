@@ -66,14 +66,29 @@ behaves differently, the effect is unlikely to be an artefact of sequence distan
 - **CDS10_WT and CDS11_WT share an N-terminal Calx-β anchor** (42 % identity over 107 aa,
   anchors superposing at 0.50 Å over 446 atoms): paralogous fibers on a common
   virion-attachment module.
+- **Two of the six carry positive anti-His evidence.** On the 2026-10-19 dot blot the Node1
+  induced lysate was His-positive at **2.4×** the negative control and the Node281 Ni-NTA
+  flow-through at **2.9×**, with the positive control at about 18×. A tagged product is present
+  in both; a dot blot reports the tag, not size or activity.
 
 ## What is not established
 
 Stated plainly, because it is most of what a reuser needs to know:
 
-- **No expression is confirmed for any of the six parts.** Three SDS-PAGE sessions produced one
-  induction-dependent band at the predicted mass for CDS12_WT and one unassigned band for
-  `e1`; the untransformed-BL21(DE3) control lane that would settle either is still outstanding.
+- **No product has been assigned by size for any of the six.** A dot blot cannot tell
+  full-length protein from a truncation or from free tag. Three SDS-PAGE sessions
+  (2026-09-15, 09-29, 10-10) gave one induction-dependent band at the predicted mass for
+  CDS12_WT and one unassigned 45–50 kDa band for `e1`, and the 2026-10-19 blot did **not**
+  reproduce an induction-dependent signal for CDS12_WT. Node40 gave no signal on either of its
+  two spots, on a membrane where its two siblings were positive — a like-for-like negative, but
+  not proof of absence: every 1:10 dilution on that membrane fell to background, so the
+  detection floor is high. CDS10_WT and CDS11_WT were not on it and have **no expression
+  evidence at all**. The untransformed-BL21(DE3) control lane and a size-resolved anti-His
+  western are both still outstanding.
+- **No purified protein exists.** The one Ni-NTA run we have a gel for — `e281`, 2026-10-10 —
+  failed: elutions E1/E2 were blank gel and the flow-through was indistinguishable from the
+  load. The dot blot then found that flow-through His-positive, so the failure is **capture,
+  not expression**, and the next move is binding conditions rather than a repeat.
 - **The four CDS_0012-family proteins cannot be told apart by SDS-PAGE** — all within 0.43 kDa
   (1.0 %) of each other. Identification needs sequencing or intact-mass MS.
 - **One activity result exists and it is unattributed.** In a spot test on 2026-10-16, the
@@ -82,7 +97,9 @@ Stated plainly, because it is most of what a reuser needs to know:
   `e281` lysates. But `e1` tracks the phage strain by strain, including their shared failure on
   one strain, so **carry-over of infectious phage from the Φ8 stock is still the leading
   alternative explanation**. A plaque assay of the preparation itself is the experiment that
-  would settle it, and it has not been run.
+  would settle it, and it has not been run. The anti-His signal for `e1` does not close this:
+  a tag in the lysate does not make this protein the active species, and the imidazole elution
+  buffer the preparation sits in was never spotted on its own.
 - **No ancestor-versus-modern comparison has been made.** CDS12_WT was not in that spot test.
 - **The inserts are not codon-optimised** and carry mammalian-like codon bias, which is the
   first thing to suspect behind a missing band. Rosetta or BL21-CodonPlus is the obvious next
@@ -94,8 +111,9 @@ The set is designed to be taken as a whole or in two halves.
 
 - **For a phage-therapy project:** CDS12_WT plus the three ancestors is a ready-made
   modern-versus-ancestral panel for any depolymerase activity assay. The fold and catalytic
-  residues are checked; what is missing is expression and activity, so the panel is a starting
-  point rather than a result.
+  residues are checked, and two of the four have anti-His evidence of a tagged product; what is
+  missing is a size-assigned product, purified material and any attributed activity, so the
+  panel is a starting point rather than a result.
 - **For an ancestral-sequence-reconstruction project:** the three nodes are a worked example
   with the full method recorded — top 1000 NCBI nr hits, MUSCLE in SeaView, manual curation,
   PhyML (WAG, p-inv 0.1, 100 bootstraps), ancestral states in IQ-TREE, midpoint-rooted — plus
@@ -103,9 +121,11 @@ The set is designed to be taken as a whole or in two halves.
 - **For a phage-biology project:** CDS10_WT and CDS11_WT are two surface proteins from a novel
   62 kb phage, one with a fold-level depolymerase assignment and one genuinely unassigned.
 
-All six are expression constructs cloned into **pET-28a(+)** via NdeI/XhoI, for
-*E. coli* BL21(DE3). **The vector's N-terminal His6 leader is not part of any of these parts'
-sequences**, and no part carries a C-terminal tag.
+All six are expression constructs cloned into **pET-28a(+)** via NdeI/XhoI, synthesised by
+Twist Bioscience, for *E. coli* BL21(DE3) under kanamycin, IPTG induction at **~30 °C**.
+**The vector's N-terminal His6 leader is not part of any of these parts' sequences**, and no
+part carries a C-terminal tag — but it is that leader the anti-His dot blot detects, so the
+expression evidence belongs to the construct, not to the part sequence as submitted.
 
 ## Attribution
 
@@ -167,15 +187,38 @@ The five entry bodies are the prose sections above, reorganised as:
 | Type | Title | Source section above |
 |---|---|---|
 | Design | Why these six parts are one set | *Why these six belong together* + *What is established* + reconstruction method + References |
-| Experiment | Cloning, expression trials and the first spot test | cloning/expression + the 2026-10-16 spot-test protocol |
-| Characterisation | One activity signal, and what it is not yet attributed to | the spot-test result and the carry-over question |
+| Experiment | Cloning, three gels, a failed purification and an anti-His dot blot | cloning/expression + the 2026-10-10 Ni-NTA attempt + the 2026-10-19 dot blot + the 2026-10-16 spot-test protocol |
+| Characterisation | What the dot blot settled, and the one activity signal it did not | per-part dot-blot outcome + the spot-test result and the carry-over question |
 | Application | How to reuse this collection | *How to reuse this collection* + practical notes |
 | Discussion | What this set does and does not yet show | limitations and ranked future directions |
 
 **Discussion ends on the ranked future directions.** An earlier draft closed with a sentence
 about deliberately reporting negative results; it was cut on 2026-10-19 as editorialising.
 
+The five bodies are written out, ASCII and paste-ready, in
+[`paste/COLLECTION.md`](paste/COLLECTION.md) — **that file, not this one, is what goes into
+the form**, exactly as for the six part pages.
+
+## One disagreement between the live part pages
+
+Left standing rather than quietly reconciled, because both sentences are on the Registry now:
+
+- `BBa_26LHLSLW` (Node281) *experiment* says it is **"the only construct of the six we have
+  attempted to purify"**.
+- `BBa_26LHLSLW` *characterisation* and `BBa_26TWEX42` (Node1) both describe `e1` as having
+  **"been through a purification step"** and sitting in an imidazole elution buffer.
+
+Both cannot be literally true. Most likely `e281` is the only Ni-NTA run with a *gel*, while
+`e1` went through some capture step whose record we have not found. Until Alex settles it, the
+collection text says only that **no purified protein exists** and that the `e281` run is the
+one with a gel — neither sentence depends on which reading is right.
+
 ---
 *Draft — 2026-10-18. Numbers: `code/output/1018_construct_structures/` and
 `code/output/1016_spot_test_result/`. Evidence grades:
 [`../2026-10-18_parts_structure_comparison.md`](../2026-10-18_parts_structure_comparison.md).*
+*Log — 2026-10-20: aligned with the six live part pages as applied on 2026-10-19. The
+"no expression is confirmed for any of the six" claim was false after the dot blot and is
+replaced; the failed `e281` Ni-NTA, the ~30 °C induction temperature and the per-part dot-blot
+outcomes are written in; the entry-mapping table now routes the purification and the blot into
+Experiment and Characterisation. The five bodies are written out in `paste/COLLECTION.md`.*

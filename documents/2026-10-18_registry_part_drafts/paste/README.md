@@ -8,6 +8,10 @@ already use, so nothing turns into mojibake in the form.
 Each file holds the Functional Description, then the five documentation entries
 with the **title** to use for each.
 
+[`COLLECTION.md`](COLLECTION.md) is the seventh file: the collection page, same
+convention, added 2026-10-20. It is built from the six part files above rather
+than from a live page, because the collection does not exist on the Registry yet.
+
 ## Where this came from
 
 Base is the **live Registry text, harvested 2026-10-19** (kept verbatim in

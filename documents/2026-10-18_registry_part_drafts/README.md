@@ -16,7 +16,7 @@ Registry gets the English text**). Index: [`README_zh.md`](README_zh.md).
 | [`CDS12_ANC_Node1.md`](CDS12_ANC_Node1.md) · [中文](CDS12_ANC_Node1_zh.md) | reconstructed ancestral GH5, node 1 (`e1`) | ✅ |
 | [`CDS12_ANC_Node40.md`](CDS12_ANC_Node40.md) · [中文](CDS12_ANC_Node40_zh.md) | reconstructed ancestral GH5, node 40 (`e40`) | ✅ |
 | [`CDS12_ANC_Node281.md`](CDS12_ANC_Node281.md) · [中文](CDS12_ANC_Node281_zh.md) | reconstructed ancestral GH5, node 281 (`e281`) | ✅ |
-| [`COLLECTION.md`](COLLECTION.md) · [中文](COLLECTION_zh.md) | the six parts as one toolbox | ✅ drafted, not yet created on registry.igem.org |
+| [`COLLECTION.md`](COLLECTION.md) · [中文](COLLECTION_zh.md) | the six parts as one toolbox | ✅ drafted and aligned with the live parts 2026-10-20; paste text in [`paste/COLLECTION.md`](paste/COLLECTION.md); not yet created on registry.igem.org |
 
 **Updated 2026-10-18 with the 2026-10-16 spot test.** The *characterisation* section of the
 three ancestral drafts and of `CDS12_WT.md` now carries that result. The live registry pages
