@@ -184,9 +184,11 @@ is live; the Attributions Form is submitted; `software/` is packaged under MIT w
 
 **Known-outstanding**, recorded rather than hidden:
 
-- Two Registry **Functional Descriptions** still need editing, and the parts are still in
-  **Draft** — see `REGISTRY_APPLIED.md`. Sequence, authorship and licence lock permanently at
-  *Send for Screening*.
+- The six Registry parts are still in **Draft**. Documentation, both renamed entries and all
+  three Functional Descriptions are applied and verified; authorship is confirmed. The one thing
+  left to eyeball before *Send for Screening* is that the licence reads **CC0 1.0** on each —
+  sequence, authorship and licence lock permanently at that point. See
+  [`REGISTRY_APPLIED.md`](documents/2026-10-18_registry_part_drafts/REGISTRY_APPLIED.md).
 - The **Judging Form** has not been saved; its abstract needs the species correction described in
   [`documents/2026-10-18_judging_form_draft.md`](documents/2026-10-18_judging_form_draft.md).
 - **Induction temperature** is recorded as ~30 °C on the part pages, but the notebook says 37 °C

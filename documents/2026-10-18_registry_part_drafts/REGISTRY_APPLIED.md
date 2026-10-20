@@ -25,30 +25,34 @@ All six parts are still **`draft`**. Nothing has been sent for screening.
 | | characterisation | expression supported, but the spot test used the 1:10 lysate |
 | | **titles** | experiment -> "Cloning, a failed Ni-NTA purification, and the dot blot that explains it"; characterisation -> "First activity data, and anti-His evidence that the protein was expressed" |
 
-`BBa_26LHLSLW`'s **Functional Description was already updated by Alex** before this
-session and was left alone.
+## Functional Descriptions - all three applied
 
-## Not applied - needs a human
+All three Functional Descriptions that needed the dot blot now carry it, applied by Alex through
+the **Save Part** form and verified here by reading each part back through the API on 2026-10-19:
 
-Editing a part's **Functional Description** means pressing **Save Part**, and that
-form will not submit unless the **Contributor License Agreement** box is ticked:
-*"I am the original author ... the information provided is accurate ... this
-submission will become part of the permanent scientific record ... I agree to the
-Contributor License Agreement."* That is a declaration the team makes, so it was
-left unticked and these two edits are **outstanding**:
+| part | closing sentence now reads |
+|---|---|
+| `BBa_26TWEX42` Node1 | anti-His dot blot gave a positive signal for the induced lysate at 2.4x the negative control; the product has not been assigned by size |
+| `BBa_26EK89VW` Node40 | expression has not been demonstrated: no signal on a membrane where two sibling constructs were positive |
+| `BBa_26LHLSLW` Node281 | the purification failed, but the flow-through was positive at 2.9x, so the protein was expressed and did not bind the resin |
 
-- **`BBa_26TWEX42` (Node1)** - replace the closing sentence
-  *"Expression has not been confirmed; see the documentation entries."* with:
-  > Anti-His dot blot on 2026-10-19 gave a positive signal for this construct's induced lysate, at 2.4 times the negative control; the product has not been assigned by size. See the documentation entries.
-- **`BBa_26EK89VW` (Node40)** - the existing sentence is not wrong; this only
-  strengthens it from an isolated negative to a like-for-like one:
-  > Expression has not been demonstrated: on the 2026-10-19 anti-His dot blot this construct gave no signal on a membrane where two sibling constructs were positive. See the documentation entries.
+That form cannot be submitted without ticking the **Contributor License Agreement**, which is a
+declaration the team makes, so these three were done by Alex rather than automated.
+
+**Authorship is confirmed correct** (Alex, 2026-10-19). It can only be edited while a part is in
+Draft, so nothing further is needed there.
+
+## Nothing has been reverted
+
+The thirteen documentation edits and both renamed Node281 entries were re-read through the API
+after the Functional Description round, to rule out one edit session overwriting another. All
+thirteen are intact and no entry still carries the old `16-20 C`.
 
 ## Before Send for Screening
 
-Sequence, authorship and licence lock permanently. Confirm on each of the six that
-the licence reads **CC0 1.0 Universal**, and that every author including the PI has
-opted in and signed the CLA - authorship cannot be edited once a part leaves Draft.
+Sequence, authorship and licence lock permanently. **Authorship is confirmed.** The one item left
+to eyeball is that the licence reads **CC0 1.0 Universal** on each of the six - the API does not
+expose the licence field, so it can only be checked in the web interface.
 
 ## Note on method
 
@@ -62,3 +66,6 @@ session, and every entry above was then read back through the API to confirm. Th
 
 ---
 *Log - 2026-10-19: written after applying the dot blot to the live Registry pages.*
+*Log - 2026-10-19 (later): all three Functional Descriptions applied by Alex and verified; the
+thirteen documentation entries re-checked and intact; authorship confirmed. The only pre-screening
+item left is the licence field.*
