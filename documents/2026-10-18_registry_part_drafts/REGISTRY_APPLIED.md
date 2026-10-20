@@ -4,7 +4,8 @@ Status as of **2026-10-19**, after the edit session that followed the dot blot.
 Every line below was verified by reading the part back through
 `api.registry.igem.org/v1/parts/<uuid>/documentation`, not by trusting the editor.
 
-All six parts are still **`draft`**. Nothing has been sent for screening.
+**Superseded 2026-10-20: all six were sent for screening and the API now reports every one as
+`published`.** What follows is the record of the edit session that preceded it.
 
 ## Applied and saved
 
@@ -69,3 +70,6 @@ session, and every entry above was then read back through the API to confirm. Th
 *Log - 2026-10-19 (later): all three Functional Descriptions applied by Alex and verified; the
 thirteen documentation entries re-checked and intact; authorship confirmed. The only pre-screening
 item left is the licence field.*
+*Log - 2026-10-20: all six sent for screening, status `published`, updated 07:12-07:27 UTC. The
+licence was confirmed identical across all six through `licenseUUID`. The collection's parts
+list was filled the same morning and now holds all six.*

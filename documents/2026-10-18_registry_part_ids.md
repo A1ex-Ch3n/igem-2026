@@ -1,6 +1,10 @@
 # Registry part IDs — entered 2026-10-18
 
-Six parts created on registry.igem.org, all **Draft**, none sent for screening.
+**All six were sent for screening on 2026-10-20 and the API now reports every one as
+`published`.** Sequence, authorship and licence are locked. Everything below from "Decisions
+still open" is kept as the record of how they were settled, not as a to-do list.
+
+Six parts created on registry.igem.org 2026-10-18, entered as **Draft**.
 Each carries the five documentation entries (design / experiment / characterisation /
 application / discussion) written from
 [`2026-10-18_registry_part_drafts/`](2026-10-18_registry_part_drafts/).
@@ -54,8 +58,8 @@ while the part is in Draft.
   parts are one set", Experiment "Cloning, expression trials and the first spot test",
   Characterisation "One activity signal, and what it is not yet attributed to", Application
   "How to reuse this collection", Discussion "What this set does and does not yet show".
-  **Parts list is still empty** — the six parts go in once the PI's review is done and they are
-  submitted.
+  **Parts list filled 2026-10-20** — all six are in the collection, verified through
+  `api.registry.igem.org/v1/parts/collections/<uuid>/items` (6 items, each `published`).
 
 ## Documentation to re-paste on registry.igem.org
 
@@ -91,3 +95,11 @@ so the vehicle control is outstanding.
 
 ---
 *Log — 2026-10-18: parts entered on registry.igem.org from the drafts; drafts left unsent.*
+*Log — 2026-10-20: all six sent for screening and now `published`, updated between 07:12 and
+07:27 UTC. Verified through `api.registry.igem.org/v1/parts?search=<id>`. All six share
+`licenseUUID 5b2a6fd4-f5fa-4626-a37f-35f1ea89eec7`, the licence the live page for
+`BBa_26LHLSLW` shows as CC0 1.0 Universal, which closes the last pre-screening item. The
+collection was updated at 07:33 and its parts list now holds all six. **Not verified:** whether
+the collection's five documentation entries carry the post-dot-blot text from
+`2026-10-18_registry_part_drafts/paste/COLLECTION.md` — the API exposes no documentation
+endpoint for collections and the browser extension was offline, so that one needs an eyeball.*
