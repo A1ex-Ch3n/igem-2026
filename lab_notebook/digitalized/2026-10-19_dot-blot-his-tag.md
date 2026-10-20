@@ -75,11 +75,11 @@ therefore inside the noise, not a result.
 | CDS12+ | 4.4 | 1.1× | inside the noise — no call |
 | *CDS12− (negative)* | *3.9* | — | *the noise floor — a hollow drying ring* |
 | e1+ | 3.0 | 0.8× | below the negative |
-| CDS12+ (rough lysate) | 2.8 | 0.7× | below the negative |
-| e40+ (1:10) | 0.6 | 0.2× | nothing there |
+| CDS12+ (rough lysate) | 2.6 | 0.7× | below the negative |
+| e40+ (1:10) | 0.7 | 0.2× | nothing there |
 | e281+ (1:10) | 0.2 | 0.1× | nothing there |
 | e1+ (1:10) | −0.1 | — | nothing there |
-| e40+ | −0.5 | — | nothing there |
+| e40+ | −0.2 | — | nothing there |
 
 **Three things this says.**
 
@@ -159,3 +159,10 @@ Two independent assays now point the same way for `e1`.
   spot) confirmed by Alex. Intensities measured rather than eyeballed, via
   `code/1019_dotblot/quantify_dotblot.py`. **This is the last bench day before the 2026-10-21
   freeze.**
+- 2026-10-19 — Figure added and the spot grid re-measured. The conjugate is an **anti-His HRP**
+  conjugate, not the AP/BCIP-NBT inferred earlier from the colour. Spot centres were re-read off
+  the photograph at 4x zoom: rows 1-2 share a ~90 px column pitch and tilt ~16 px down to the
+  right, row 3 has its own ~94 px pitch and sits lower and further left. Every drift is now under
+  13 px, against three positions that had previously been placed 20-28 px off. Only two table
+  cells moved (`CDS12+` rough lysate 2.8 -> 2.6, `e40+` -0.5 -> -0.2); the ranking and both calls
+  are unchanged.

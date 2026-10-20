@@ -21,10 +21,12 @@ REPO = Path(__file__).resolve().parents[2]
 OUT = REPO / "code/output/1019_dotblot"
 
 INK, MUTED = "#222222", "#8a8a8a"
-HIT, MISS = "#1b6ca8", "#c25b5b"      # clears the negative / does not
+HIT, MISS = "#15598c", "#b03a3a"      # clears the call threshold / the negative control
+BLANK = "#45484d"                     # marks a position where nothing developed
 
-CROP = (208, 432, 700, 822)           # membrane bounding box, native px
+CROP = (204, 428, 700, 826)           # membrane bounding box, native px
 SCALE = 2.5
+RADIUS = 31                           # native px; spots are ~48 px across
 
 # A spot is only called positive if it reaches this multiple of the negative
 # control. CDS12+ lands at 1.03x, i.e. inside the noise, and is not a call.
@@ -54,8 +56,8 @@ def main() -> None:
     im = Image.open(IMG).convert("RGB").crop(CROP)
     im = im.resize((int(im.width * SCALE), int(im.height * SCALE)), Image.LANCZOS)
 
-    fig = plt.figure(figsize=(12.4, 5.4))
-    gs = fig.add_gridspec(1, 2, width_ratios=[1.12, 1], wspace=0.22)
+    fig = plt.figure(figsize=(13.6, 5.4))
+    gs = fig.add_gridspec(1, 2, width_ratios=[1.05, 1], wspace=0.46)
     a = fig.add_subplot(gs[0, 0])
     b = fig.add_subplot(gs[0, 1])
 
@@ -70,40 +72,46 @@ def main() -> None:
         cx, cy = (x0 - CROP[0]) * SCALE, (y0 - CROP[1]) * SCALE
         dk = by_label[label][5]
         clears = dk >= POS_FACTOR * neg and label != "CDS12- (negative)"
-        colour = HIT if clears else MUTED
+        colour = HIT if clears else BLANK
         if label == "positive control":
             colour = INK
         if label == "CDS12- (negative)":
             colour = MISS          # the hollow drying ring, same role as panel B's line
-        radius = 26 * SCALE / 2.5 * 1.7
+        radius = RADIUS * SCALE
         a.add_patch(
             Circle((cx, cy), radius,
                    fill=False, lw=2.0 if clears else 1.2,
                    ls="-" if clears else (0, (3, 2)), edgecolor=colour)
         )
         # clear the circle itself, or the label lands on top of the spot
-        offset = radius + 15
+        offset = radius + 13
         above = label not in ("CDS12- (negative)", "e1+ (1:10)", "positive control")
         a.annotate(
             SHORT[label],
             (cx, cy - offset if above else cy + offset),
             ha="center", va="bottom" if above else "top",
-            fontsize=7.4, color=colour,
+            fontsize=8.2, color=colour,
             linespacing=1.15,
             weight="bold" if clears or label in ("positive control",
                                                  "CDS12- (negative)") else "normal",
+            # the membrane's cut corner is near-black, so every label carries a
+            # halo rather than relying on the background being pale
+            bbox=dict(facecolor="white", edgecolor="none", alpha=0.72,
+                      boxstyle="round,pad=0.22"),
         )
 
     a.annotate("cut corner",
                ((300 - CROP[0]) * SCALE, (443 - CROP[1]) * SCALE),
                xytext=((390 - CROP[0]) * SCALE, (470 - CROP[1]) * SCALE),
-               fontsize=7.5, color=MUTED,
-               arrowprops=dict(arrowstyle="->", color=MUTED, lw=0.9))
+               fontsize=8, color=BLANK,
+               bbox=dict(facecolor="white", edgecolor="none", alpha=0.72,
+                         boxstyle="round,pad=0.22"),
+               arrowprops=dict(arrowstyle="->", color=BLANK, lw=1.0))
     a.annotate("run-off from the\npositive control",
                ((545 - CROP[0]) * SCALE, (700 - CROP[1]) * SCALE),
                xytext=((635 - CROP[0]) * SCALE, (793 - CROP[1]) * SCALE),
-               fontsize=7.5, color=MUTED, linespacing=1.2, ha="center", va="top",
-               arrowprops=dict(arrowstyle="->", color=MUTED, lw=0.9))
+               fontsize=8, color=BLANK, linespacing=1.2, ha="center", va="top",
+               arrowprops=dict(arrowstyle="->", color=BLANK, lw=1.0))
 
     # ---- Panel B: measured intensity ----------------------------------------
     order = sorted(rows, key=lambda r: r[5])
@@ -112,9 +120,9 @@ def main() -> None:
         label, dk = r[0], r[5]
         is_neg = label == "CDS12- (negative)"
         clears = dk >= POS_FACTOR * neg and not is_neg
-        colour = INK if label == "positive control" else (HIT if clears else MUTED)
+        colour = INK if label == "positive control" else (HIT if clears else BLANK)
         b.barh(y, dk, height=0.62, color=colour,
-               alpha=1.0 if (clears or label == "positive control") else 0.45)
+               alpha=1.0 if (clears or label == "positive control") else 0.55)
         b.text(dk + 1.1, y, f"{dk:.1f}", va="center", fontsize=8.5,
                color=colour, weight="bold" if clears else "normal", zorder=4,
                bbox=dict(facecolor="white", edgecolor="none", pad=0.9, alpha=0.85))
@@ -125,7 +133,7 @@ def main() -> None:
     b.text(neg, len(order) - 0.30, "negative control", fontsize=7.8, color=MISS,
            ha="center", va="bottom")
     b.text(POS_FACTOR * neg, len(order) + 0.42,
-           f"{POS_FACTOR:g}x = call threshold", fontsize=7.8, color=MUTED,
+           f"{POS_FACTOR:g}x = call threshold", fontsize=7.8, color=BLANK,
            ha="center", va="bottom")
 
     b.set_yticks(ys)

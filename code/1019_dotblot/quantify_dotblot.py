@@ -27,17 +27,20 @@ SEARCH = 25          # px, allowed drift when re-centring a spot on the grid
 
 # (label, x, y) in native image pixels
 SPOTS = [
-    ("CDS12+ (rough lysate)",      330, 540),
-    ("CDS12+",                     417, 540),
-    ("e1+ (rough lysate, 10/18)",  500, 540),
-    ("e1+",                        587, 540),
-    ("e40+ (1:10)",                330, 635),
-    ("e40+",                       417, 635),
-    ("e281+ (1:10)",               500, 635),
-    ("e281 FT1",                   587, 635),
-    ("CDS12- (negative)",          261, 730),   # hollow drying ring, measured by eye
-    ("e1+ (1:10)",                 355, 740),
-    ("positive control",           450, 748),
+    # Centres read off the photograph at 4x zoom against a 20 px grid. Rows 1-2
+    # share a column pitch of ~90 px and tilt ~16 px down to the right; row 3 was
+    # spotted separately, with its own ~94 px pitch, and sits lower and further left.
+    ("CDS12+ (rough lysate)",      322, 531),
+    ("CDS12+",                     413, 537),
+    ("e1+ (rough lysate, 10/18)",  503, 537),
+    ("e1+",                        593, 547),
+    ("e40+ (1:10)",                322, 628),
+    ("e40+",                       413, 634),
+    ("e281+ (1:10)",               503, 639),
+    ("e281 FT1",                   585, 643),
+    ("CDS12- (negative)",          261, 730),   # hollow drying ring
+    ("e1+ (1:10)",                 355, 739),
+    ("positive control",           449, 748),
 ]
 
 
