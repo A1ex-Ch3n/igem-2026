@@ -30,7 +30,9 @@ Models. AlphaFold3 Server trimer, pTM 0.66 and ipTM 0.64, mean pLDDT 90.3 inside
 
 Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience (order of 2026-07-27). Host E. coli BL21(DE3), kanamycin selection, IPTG induction at ~30 C. The expressed construct carries the pET-28a leader and the designed GGSGGGGS-His6-ENLYFQ-GGGGSGGGGS linker, giving a predicted mass of 72.0 kDa; neither is part of this part's sequence.
 
-Status: expression not yet demonstrated. Across three SDS-PAGE sessions (2026-09-15, 2026-09-29, 2026-10-10) no band was seen at the expected 72.0 kDa. On 2026-09-29 no undiluted lane was run for this construct, so that absence is not interpretable. The untransformed BL21(DE3) control lane is still outstanding, so no band on these gels can be assigned either way.
+Status: expression of the full-length protein not yet demonstrated. Across four SDS-PAGE sessions (2026-09-15, 2026-09-29, 2026-10-01 and 2026-10-10) no band was seen at the expected 72.0 kDa. On 2026-09-29 no undiluted lane was run for this construct, so that absence is not interpretable. The untransformed BL21(DE3) control lane is still outstanding, so no band on these gels can be assigned either way.
+
+Ni-NTA purification, 2026-10-01. This construct was one of six purified over NEBExpress Ni spin columns (NEB S1427) in a single session. Something did elute: bands in both E1 and E2 at about 43 kDa. That is roughly 29 kDa short of the predicted 72.0 kDa, so it is not the construct as designed. Degradation, a truncation and a co-purifying host protein are all still open, and the gel alone does not settle it. Of the six, only the node 1 ancestral variant eluted at its own predicted size.
 
 Practical notes for anyone repeating this: 72 kDa of trimeric beta-solenoid is a hard expression target. A lower induction temperature, a longer induction and a soluble-versus-pellet fractionation are the next things we would try, together with a codon-optimised synthesis, since the ordered insert was not codon optimised for E. coli.
 
@@ -38,7 +40,7 @@ Practical notes for anyone repeating this: 72 kDa of trimeric beta-solenoid is a
 
 **title:** No characterisation yet, and the assay this part still needs
 
-None. No confirmed expression (see the Experiment entry), no purified protein, and therefore no activity assay.
+No activity assay has been run. Expression of the full-length protein is unconfirmed, for the reasons in the Experiment entry, and the one Ni-NTA elution for this construct produced a band about 29 kDa smaller than the design rather than purified product, so no material suitable for an activity assay has been obtained.
 
 The readout this part needs is a spot assay on a host lawn: a halo from purified protein where the buffer control gives none would be direct evidence of depolymerase activity. Controls fixed in advance: imidazole vehicle, PBS, a phage-positive spot, and the sensitive parent strain from the same batch. A first spot test was run on 2026-10-16, but it covered only the three ancestral GH5 variants - this part was not in it.
 

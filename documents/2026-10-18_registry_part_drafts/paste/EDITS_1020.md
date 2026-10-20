@@ -9,7 +9,12 @@ and `data/assays/1001_sds_page/README.md` record a **Ni-NTA round over all six c
 41 kDa against 41.9 kDa predicted. The 2026-10-10 `e281` run was the **second** round, not the
 only one.
 
-Ranked. The first one is the part nominated for Best New Basic Part.
+Ranked. The first one is the part nominated for Best New Basic Part. **Five of the six pages are
+affected** - every part except node 1 was on a 10-01 gel and none of them said so.
+
+**Two of these need the Save Part form**, which cannot be submitted without ticking the
+Contributor License Agreement, so Alex has to do them: the Functional Descriptions of node 1 and
+node 281. Everything else is a documentation entry and can be edited directly.
 
 ---
 
@@ -39,41 +44,60 @@ it does not reconcile with the 45-50 kDa band of 09-29); and that this eluate **
 now cites both the elution and the dot blot and says plainly that neither makes this protein
 the active species.
 
-## 2 - `BBa_26LHLSLW` Node281 - one false sentence
+## 2 - `BBa_26LHLSLW` Node281 - two purifications, not one
 
-Its *experiment* entry says:
+*Functional Description* (needs the Save Part form and the CLA tick, so Alex must do this one):
+"One purification of this construct was attempted and failed" becomes "Two purification
+attempts, on 2026-10-01 and 2026-10-10, both recovered nothing".
 
-> This is the only construct of the six we have attempted to purify
+*Experiment*: new title `Cloning, two Ni-NTA purifications that recovered nothing, and the dot
+blot that explains them`, and the opening sentence "This is the only construct of the six we
+have attempted to purify" is replaced by the 10-01 and 10-10 account.
 
-**False.** All six were purified on 2026-10-01; this construct was among those that eluted
-nothing, and the 2026-10-10 run was a second attempt on it alone. Suggested replacement:
+*Characterisation*: "The Ni-NTA attempt on 2026-10-10 recovered nothing" becomes "Neither
+Ni-NTA attempt, on 2026-10-01 or 2026-10-10, recovered anything".
 
-> This construct was put over Ni-NTA twice. On 2026-10-01 it was one of six constructs purified
-> in a single session and gave no band in either elution. The dedicated run of 2026-10-10
-> failed outright.
+*Discussion*: "one purification attempt failed outright" becomes "Two purification attempts
+recovered nothing".
 
-The rest of that entry - the blank elutions, the prominence figures, the flow-through matching
-the load - is accurate and should stay.
+*Design*: the two PI placeholders are replaced by the node ordering and the reconstruction
+method.
 
-## 3 - `BBa_26DKNAEC` CDS11_WT - "no purified protein" is wrong
+## 3 - `BBa_26DKNAEC` CDS11_WT - it did elute something
 
-Its *characterisation* entry opens:
+*Experiment*: three SDS-PAGE sessions becomes four, and a 10-01 paragraph is added: this
+construct eluted bands in E1 and E2 at about 43 kDa, roughly 29 kDa short of its predicted
+72.0 kDa.
 
-> None. No confirmed expression (see the Experiment entry), no purified protein, and therefore
-> no activity assay.
+*Characterisation*: "No confirmed expression, no purified protein, and therefore no activity
+assay" is replaced, because something did elute - it simply was not the construct as designed.
 
-Something did elute for this construct on 2026-10-01: a band at about 43 kDa, roughly 29 kDa
-short of its predicted 72.0 kDa. That is not the protein as designed, but "no purified protein"
-is not what the gel says. Suggested replacement:
+## 4 - `BBa_26EK89VW` Node40 - it has a gel after all
 
-> No activity assay. Expression of the full-length construct is unconfirmed: no band at the
-> predicted 72.0 kDa in three gels, and this part was not on the 2026-10-19 dot-blot membrane.
-> A Ni-NTA elution on 2026-10-01 did produce a band, at about 43 kDa, roughly 29 kDa short of
-> the prediction and unexplained - degradation, a truncation and a co-purifying contaminant are
-> all still open.
+*Experiment*: new title, the predicted mass line, and the 10-01 paragraph. The old text said
+"No usable lane has been run since" 2026-09-15; in fact this construct ran on the second 10-01
+gel as crude lysate, 1:2, wash 3 and both elutions, with nothing at the expected 42.2 kDa.
 
-Its *experiment* entry should gain the same 10-01 line, since it currently stops at the three
-SDS-PAGE sessions.
+*Discussion*: "not even a readable gel lane for this construct" is replaced for the same reason.
+
+*Design*: the two PI placeholders are replaced.
+
+## 5 - `BBa_269KJB8G` CDS10_WT - same omission
+
+*Experiment*: new title, and "No gel to date carries an interpretable lane for it" is replaced
+by the 10-01 paragraph; nothing at the expected 91.6 kDa in wash 3 or either elution.
+
+*Characterisation*: "No expression, no purification, no activity data" becomes "Expression is
+unconfirmed, the one purification attempt recovered nothing".
+
+## 6 - `BBa_267WQM51` CDS12_WT - purification is no longer "not yet done"
+
+*Experiment*: "Not yet done: ... Ni-NTA purification of this construct" was false. The 10-01
+paragraph is added - no band in either elution, Bradford E2 below the limit of quantification -
+and the to-do list now reads "a second purification attempt with reworked binding conditions".
+
+*Characterisation*: "No purified protein, therefore no activity data" gains "was recovered on
+2026-10-01".
 
 ## Not a Registry edit, but the same finding
 

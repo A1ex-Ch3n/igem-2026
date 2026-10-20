@@ -36,7 +36,9 @@ Anti-His dot blot, 2026-10-19. Eleven samples were spotted directly onto membran
 
 This construct was spotted as an induced and uninduced pair, and the two are indistinguishable, at 4.4 against 3.9, a ratio of 1.1 that sits inside the noise. The blot therefore gives no induction-dependent His signal for this construct, on a membrane where the positive control reached about 18 times the negative and two other constructs were positive. It does not overturn the 2026-09-29 band, but it does not support it either, and the two results should be read together.
 
-Not yet done: an untransformed BL21(DE3) control lane, a size-resolved anti-His western, and Ni-NTA purification of this construct. The codon usage of the synthesised insert was not optimised for E. coli, so Rosetta or BL21-CodonPlus are the obvious alternative hosts if the yield is poor.
+Ni-NTA purification, 2026-10-01. This construct was one of six purified over NEBExpress Ni spin columns (NEB S1427) in a single session and gave no band in either elution; by Bradford, its E2 fell below the lower limit of quantification. Nothing was recovered, which stands against the induction-dependent band of 2026-09-29 and is unexplained.
+
+Not yet done: an untransformed BL21(DE3) control lane, a size-resolved anti-His western, and a second purification attempt with reworked binding conditions. The codon usage of the synthesised insert was not optimised for E. coli, so Rosetta or BL21-CodonPlus are the obvious alternative hosts if the yield is poor.
 
 ## characterisation
 
@@ -46,7 +48,7 @@ Preliminary and incomplete.
 
 One induction-dependent band at the predicted mass (see the Experiment entry). Not confirmed to be this protein: no western, no mass spectrometry, and the control lane that would exclude a host band is outstanding.
 
-No purified protein, therefore no activity data. This construct was also not included in the 2026-10-16 spot test, so the ancestor-versus-modern comparison the design asks for still has no modern arm.
+No purified protein was recovered on 2026-10-01, therefore no activity data. This construct was also not included in the 2026-10-16 spot test, so the ancestor-versus-modern comparison the design asks for still has no modern arm.
 
 Note for anyone reusing these parts: this protein and its three ancestral variants differ by at most 0.43 kDa (1.0 percent) and cannot be distinguished by SDS-PAGE. Identity needs sequencing or intact-mass MS.
 

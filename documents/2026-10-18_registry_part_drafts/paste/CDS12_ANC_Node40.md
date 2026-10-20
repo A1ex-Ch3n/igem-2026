@@ -26,13 +26,15 @@ Reconstruction method. CDS\_0012 was used as a query against the NCBI non-redund
 
 ## experiment
 
-**title:** Cloned; the one gel lane for this construct was barely loaded
+**title:** Cloned; one barely loaded lane, one purification that recovered nothing, and no anti-His signal
 
-Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience; order sheet filed 2026-09-10. Host E. coli BL21(DE3), kanamycin selection, IPTG induction at ~30 C.
+Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience; order sheet filed 2026-09-10. Host E. coli BL21(DE3), kanamycin selection, IPTG induction at ~30 C. Predicted mass of the tagged protein 42.2 kDa.
 
 Codon usage warning: the insert was ordered with Codon Optimized set to No and carries a mammalian-like codon bias. That is the first suspect behind a missing band; Rosetta or BL21-CodonPlus are the alternatives.
 
-SDS-PAGE, 2026-09-15. The lane for this construct on gel 1 was essentially not loaded, so that experiment carries no information about it. No usable lane has been run since. In the project's expression plan it sits in batch 2, behind CDS12\_WT and the node 1 ancestor.
+SDS-PAGE, 2026-09-15. The lane for this construct on gel 1 was essentially not loaded, so that experiment carries no information about it. In the project's expression plan it sits in batch 2, behind CDS12\_WT and the node 1 ancestor.
+
+Ni-NTA purification, 2026-10-01. This construct was included in the project's one purification session, over NEBExpress Ni spin columns (NEB S1427), and ran on the second of that day's two gels as crude lysate, crude lysate at 1:2, the third wash and both elutions. The crude lanes carry lysate bands; wash 3 and both elutions show nothing at the expected 42.2 kDa. Nothing was recovered. Of the six constructs purified that day, only the node 1 ancestral variant eluted at its predicted size.
 
 Anti-His dot blot, 2026-10-19. Eleven samples were spotted directly onto membrane and probed with a single-step anti-His HRP conjugate; the positive control reached about 18 times the negative control, so the detection chemistry worked. A dot blot reports the His tag, not size or activity, and this membrane's detection floor is high: every 1:10 dilution on it fell to background, so an absent signal here is weak evidence of absence.
 
@@ -54,7 +56,7 @@ The e40 preparation is a crude lysate, not purified protein, so the enzyme is no
 
 Expression of this part is still unconfirmed, see the Experiment entry, so there may be no enzyme in the drop at all. On the 2026-10-19 anti-His dot blot this construct gave no signal as induced rough lysate or at 1:10.
 
-By contrast the e1 preparation, the only one that had been through a purification step, suppressed colonies almost completely in the same experiment, at 12 percent. That difference tracks the preparation, not necessarily the sequence.
+By contrast the e1 preparation, the only one of the six from which Ni-NTA recovered protein, suppressed colonies almost completely in the same experiment, at 12 percent. That difference tracks the preparation, not necessarily the sequence.
 
 For anyone reading the e1 result beside this one: that activity is not yet attributed to the protein either. e1 tracks phage Phi8 strain by strain, so carry-over of infectious phage from the Phi8 stock remains the leading alternative, and a plaque assay of the preparation is the experiment that would settle it.
 
@@ -80,7 +82,7 @@ For another team, the reusable idea is the panel design rather than this single 
 
 **title:** Limitations, and reading node 40 and node 281 as a pair
 
-Limitations. A reconstructed sequence is a hypothesis about a protein that no longer exists. There is no expression, no activity and not even a readable gel lane for this construct, and on the 2026-10-19 anti-His dot blot it was the one member of the CDS12 family that gave no signal while the node 1 lysate and the node 281 flow-through were positive on the same membrane. The non-optimised codon usage is a real risk. The structural evidence is a single-sequence model: it shows that the fold survives the reconstruction, not that the enzyme works.
+Limitations. A reconstructed sequence is a hypothesis about a protein that no longer exists. There is no demonstrated expression and no activity: the one usable gel for this construct, on 2026-10-01, shows lysate bands but nothing eluted, and on the 2026-10-19 anti-His dot blot it was the one member of the CDS12 family that gave no signal while the node 1 lysate and the node 281 flow-through were positive on the same membrane. The non-optimised codon usage is a real risk. The structural evidence is a single-sequence model: it shows that the fold survives the reconstruction, not that the enzyme works.
 
 Role in the set. Node 40 and node 281 are 87.3 percent identical to each other and about 52 percent identical to the wild type. Treating them as a pair is the honest reading of this panel and it also makes the experiment easier to interpret: two nearly identical distant ancestors provide an internal replicate that node 1 does not have.
 

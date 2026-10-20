@@ -22,11 +22,13 @@ Construct boundary. Residues 105-917 cut just inside the Calx-beta anchor (1-110
 
 ## experiment
 
-**title:** Cloned and queued; expression not yet attempted in earnest
+**title:** Cloned and queued; one purification that recovered nothing
 
 Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience (order of 2026-07-27). Host E. coli BL21(DE3), kanamycin selection, IPTG induction at ~30 C planned.
 
-Status: not yet attempted in earnest. This construct is batch 3 in the project's expression plan, behind CDS\_0012 and the three ancestral GH5 variants, and at a predicted 91.6 kDa for the tagged protein it is the hardest of the six to express. No gel to date carries an interpretable lane for it.
+Status: expression not demonstrated. This construct is batch 3 in the project's expression plan, behind CDS\_0012 and the three ancestral GH5 variants, and at a predicted 91.6 kDa for the tagged protein it is the hardest of the six to express.
+
+Ni-NTA purification, 2026-10-01. This construct was included in the project's one purification session, over NEBExpress Ni spin columns (NEB S1427), and ran on the second of that day's two gels as crude lysate, crude lysate at 1:2, the third wash and both elutions. The crude lanes carry lysate bands; wash 3 and both elutions show nothing at the expected 91.6 kDa. Nothing was recovered. That is the only gel in the project that carries lanes for this construct, and it does not establish that the protein is expressed at all, only that nothing bound and eluted.
 
 The insert was not codon optimised for E. coli, which is a live risk at this size. Anyone attempting it should plan for a soluble-versus-pellet fractionation and an untransformed-host control lane from the start.
 
@@ -34,7 +36,7 @@ The insert was not codon optimised for E. coli, which is a live risk at this siz
 
 **title:** No characterisation: submitted as a sequence and structure contribution
 
-None. No expression, no purification, no activity data. The part is submitted as a sequence-and-structure contribution with an explicitly open function.
+None. Expression is unconfirmed, the one purification attempt recovered nothing, and there is no activity data. The part is submitted as a sequence-and-structure contribution with an explicitly open function.
 
 What is measured, and belongs to this part, is the structural relationship to the tail spike CDS\_0011: 42 percent sequence identity over the 107 aa Calx-beta anchor, and 0.50 Angstrom backbone RMSD over 446 atoms between the two modelled anchors. That is a dry-lab result on predicted structures, not a wet-lab measurement.
 

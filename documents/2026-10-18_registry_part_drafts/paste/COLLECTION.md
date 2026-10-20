@@ -119,7 +119,7 @@ part carries a C-terminal tag. None of the six inserts was codon optimised for E
 carry a mammalian-like codon bias, which is the first thing to suspect behind a missing band;
 Rosetta or BL21-CodonPlus are the obvious alternative hosts.
 
-SDS-PAGE, three sessions: 2026-09-15, 2026-09-29 and 2026-10-10. Two bands came out of them and
+SDS-PAGE, four sessions: 2026-09-15, 2026-09-29, 2026-10-01 and 2026-10-10. Two bands came out of them and
 neither is an identification. CDS12_WT gave an induction-dependent band at its predicted mass,
 and the node 1 construct gave an unassigned band at 45-50 kDa. The node 40 lane on gel 1 was
 essentially not loaded and no usable lane has been run for it since. CDS11_WT showed no band at
@@ -127,16 +127,17 @@ its expected 72.0 kDa in any session, and on 2026-09-29 no undiluted lane was ru
 that absence is not interpretable. CDS10_WT, predicted at 91.6 kDa tagged, has never been
 expressed in earnest and no gel carries an interpretable lane for it. The untransformed
 BL21(DE3) control lane that would let any of these bands be assigned is still outstanding
-across all three sessions. A further caution for the CDS_0012 family: all four of those
+across all four sessions. A further caution for the CDS_0012 family: all four of those
 proteins fall within 0.43 kDa, 1.0 percent, of one another, so SDS-PAGE cannot tell them apart
 at all. Identification needs sequencing or intact-mass MS.
 
 Ni-NTA purification, two rounds. On 2026-10-01 all six constructs were run over Ni-NTA across
-two gels. Five of them eluted nothing. The one exception is the node 1 construct, which eluted
-a band at about 41 kDa against a predicted 41.9 kDa: the only purification in the project that
-recovered protein, and the reason the e1 preparation used in the spot test sits in an imidazole
-elution buffer. On the same day the CDS11_WT lane showed an eluted band at about 43 kDa, which
-is roughly 29 kDa short of its predicted 72.0 kDa and remains unexplained.
+two gels. Four of them eluted nothing at all: CDS12_WT, CDS10_WT, and the node 40 and node 281
+ancestral constructs. The node 1 construct eluted a band at about 41 kDa against a predicted
+41.9 kDa, the only material in the project recovered at its own predicted size, and the reason
+the e1 preparation used in the spot test sits in an imidazole elution buffer. CDS11_WT also
+eluted a band, at about 43 kDa, but that is roughly 29 kDa short of its predicted 72.0 kDa and
+remains unexplained: degradation, a truncation and a co-purifying host protein are all open.
 
 The second round, on 2026-10-10, was node 281 alone and failed. Elutions E1 and E2 were blank
 gel: peak prominence 0.011 against a measured noise floor of 0.020, with lane totals inside the
@@ -259,9 +260,12 @@ on a shared Calx-beta anchor.
 
 What it does not show. No activity has been attributed to any of these proteins. The single
 suppression result belongs to the e1 preparation, not demonstrably to the e1 protein, and the
-phage carry-over alternative is still open. No product has been assigned by size: the dot blot
-reports a tag, and a tag is compatible with a truncation or with free His6. The only purification that recovered
-protein is the 2026-10-01 node 1 elution, and it was never characterised further. The modern arm of the comparison the design is built on has never been run. And the
+phage carry-over alternative is still open. No product has been identified: the dot blot
+reports a tag, and a tag is compatible with a truncation or with free His6. The node 1 elution
+of 2026-10-01 did run at about its predicted size, but that figure is read off an annotated
+composite with no ladder calibration and no lane quantification behind it, and the material was
+never characterised further by western blot or mass spectrometry. The modern arm of the
+comparison the design is built on has never been run. And the
 structural evidence throughout is modelling, not experiment: it says the fold survives the
 reconstruction, not that the enzyme works.
 

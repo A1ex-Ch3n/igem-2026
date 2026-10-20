@@ -4,7 +4,7 @@ Paste-ready. Live registry text as of 2026-10-19 with the 2026-10-19 dot blot me
 
 ## Functional Description
 
-A reconstructed ancestor of the phage GH5 glycoside hydrolase CDS\_0012, the most distant of the three ancestral nodes we submit, designed to test whether an ancestral enzyme has a broader substrate range than its modern descendant. The sequence is computationally designed and does not exist in nature. It is 51.0 percent identical to the modern enzyme and 87.3 percent identical to node 40, so the two act as a pair at the far end of the panel. It is expected to fold into the same (beta/alpha)8 GH5 TIM barrel and to retain the acid/base glutamate in the conserved NEP motif. The part is a coding sequence with its own ATG and stop codon and does not include the pET-28a His6 leader used in our own expression construct. One purification of this construct was attempted and failed, but an anti-His dot blot on 2026-10-19 found the flow-through positive at 2.9 times the negative control, indicating the protein was expressed and did not bind the resin. See the documentation entries.
+A reconstructed ancestor of the phage GH5 glycoside hydrolase CDS\_0012, the most distant of the three ancestral nodes we submit, designed to test whether an ancestral enzyme has a broader substrate range than its modern descendant. The sequence is computationally designed and does not exist in nature. It is 51.0 percent identical to the modern enzyme and 87.3 percent identical to node 40, so the two act as a pair at the far end of the panel. It is expected to fold into the same (beta/alpha)8 GH5 TIM barrel and to retain the acid/base glutamate in the conserved NEP motif. The part is a coding sequence with its own ATG and stop codon and does not include the pET-28a His6 leader used in our own expression construct. Two purification attempts, on 2026-10-01 and 2026-10-10, both recovered nothing, but an anti-His dot blot on 2026-10-19 found the 10-10 flow-through positive at 2.9 times the negative control, indicating the protein was expressed and did not bind the resin. See the documentation entries.
 
 ## design
 
@@ -26,13 +26,13 @@ Reconstruction method. CDS\_0012 was used as a query against the NCBI non-redund
 
 ## experiment
 
-**title:** Cloning, a failed Ni-NTA purification, and the dot blot that explains it
+**title:** Cloning, two Ni-NTA purifications that recovered nothing, and the dot blot that explains them
 
 Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience; order sheet filed 2026-09-10. Host E. coli BL21(DE3), kanamycin selection, IPTG induction at ~30 C. Predicted mass of the tagged protein 42.3 kDa.
 
 Codon usage warning: ordered with Codon Optimized set to No, mammalian-like codon bias. First suspect behind a missing band; Rosetta or BL21-CodonPlus are the alternatives.
 
-This is the only construct of the six we have attempted to purify, and the purification failed (2026-10-10). The Ni-NTA elutions E1 and E2 were blank gel: peak prominence 0.011 against a measured noise floor of 0.020, with lane totals inside the never-loaded range. The flow-through was indistinguishable from the load, the same 40-44 kDa band in both. Nothing bound the resin, so that band, although close to the predicted 42.3 kDa, behaves like a host protein rather than a His6-tagged construct. The crude gel of 2026-09-29 had already shown no band at 42.3 kDa for this construct.
+This construct has been over a Ni-NTA column twice. On 2026-10-01 it was one of six constructs purified in a single session over NEBExpress Ni spin columns (NEB S1427); it gave no band in either elution, and by Bradford its E2 fell below the lower limit of quantification. The dedicated repeat on 2026-10-10 failed outright as well, and it is the one with quantified lanes: its elutions E1 and E2 were blank gel, peak prominence 0.011 against a measured noise floor of 0.020, with lane totals inside the never-loaded range, and the flow-through was indistinguishable from the load, the same 40-44 kDa band in both. Nothing bound the resin, so that band, although close to the predicted 42.3 kDa, behaves like a host protein rather than a His6-tagged construct. The crude gel of 2026-09-29 had already shown no band at 42.3 kDa for this construct.
 
 The 2026-10-10 gel on its own could not distinguish no expression, an insoluble product and a dead column.
 
@@ -52,11 +52,11 @@ No drop produced a clear lysis zone, Phi8 included. The readout was colony growt
 
 What this does and does not establish.
 
-The e281 preparation is a crude lysate, not purified protein, so the enzyme is not enriched in it. A weak effect here is not evidence that this variant is inactive: the experiment cannot tell a missing activity from a diluted one. The Ni-NTA attempt on 2026-10-10 recovered nothing, so no purified material existed to spot.
+The e281 preparation is a crude lysate, not purified protein, so the enzyme is not enriched in it. A weak effect here is not evidence that this variant is inactive: the experiment cannot tell a missing activity from a diluted one. Neither Ni-NTA attempt, on 2026-10-01 or 2026-10-10, recovered anything, so no purified material existed to spot.
 
 Expression is now supported: this construct's flow-through was His-positive on the 2026-10-19 dot blot. That does not rescue this result, because what was spotted here was the 1:10 crude lysate, and every 1:10 dilution on that membrane fell below its detection floor. How much enzyme was in the drop remains unknown.
 
-By contrast the e1 preparation, the only one that had been through a purification step, suppressed colonies almost completely in the same experiment, at 12 percent. That difference tracks the preparation, not necessarily the sequence.
+By contrast the e1 preparation, the only one of the six from which Ni-NTA recovered protein, suppressed colonies almost completely in the same experiment, at 12 percent. That difference tracks the preparation, not necessarily the sequence.
 
 For anyone reading the e1 result beside this one: that activity is not yet attributed to the protein either. e1 tracks phage Phi8 strain by strain, so carry-over of infectious phage from the Phi8 stock remains the leading alternative, and a plaque assay of the preparation is the experiment that would settle it.
 
@@ -82,7 +82,7 @@ For another team the reusable idea is the panel, not this sequence alone: a mode
 
 **title:** The strongest test of the promiscuity hypothesis, and the likeliest to fail
 
-Limitations. A reconstructed sequence is a hypothesis about a protein that no longer exists. Expression is unconfirmed and one purification attempt failed outright. The non-optimised codon usage is a real risk. The structural evidence is a single-sequence model.
+Limitations. A reconstructed sequence is a hypothesis about a protein that no longer exists. Two purification attempts recovered nothing, and expression rests on the dot blot rather than on any sized band. The non-optimised codon usage is a real risk. The structural evidence is a single-sequence model.
 
 Role in the set. Being the most diverged of the three, at 51.0 percent identity to the wild type, this node is the strongest test of the promiscuity hypothesis and also the most likely to misfold or express poorly. Its near-twin node 40, 87.3 percent identical to it, is the control for both of those risks.
 
