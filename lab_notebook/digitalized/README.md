@@ -68,11 +68,13 @@ Digital copies of all entries from the physical lab notebook. Page images in `im
 | 2026-09-28 | [Protein dilution & BCA quantification (1:10, 1:20)](2026-09-28_protein-dilution-bca-quantification.md) | nb2 p.06 | [TBD] |
 | 2026-10-01 | [His-tag protein purification (NEB S1427) & gel loading plan](2026-10-01_protein-purification.md) | nb2 p.07 | Alex, Rafael |
 | 2026-10-14 | [Protein extraction — BugBuster scaled for 2 mL cultures](2026-10-14_protein-extraction-bugbuster-scaling.md) | nb2 p.08 | Alex |
+| 2026-10-19 | [His-tag dot blot — e281 flow-through and e1 lysate are the only positives](2026-10-19_dot-blot-his-tag.md) | *no page* | Alex |
 
-## Coverage & gaps — updated 2026-10-18
+## Coverage & gaps — updated 2026-10-19
 
-**Digitized:** 62 entries, **2026-05-18 → 2026-10-14**, physical pages **p.01, p.09–p.12, p.14–p.97,
-p.99–p.100**, plus **notebook 2 p.06–p.08**.
+**Digitized:** 63 entries, **2026-05-18 → 2026-10-19**, physical pages **p.01, p.09–p.12, p.14–p.97,
+p.99–p.100**, plus **notebook 2 p.06–p.08**. The final entry (2026-10-19) has **no notebook page** —
+its record is a loose layout sheet and the membrane photograph.
 Page images for p.44–p.81 come from `lab_notebook/0615-0716/` (`IMG_8518`–`IMG_8555` → `p44.jpg`–`p81.jpg`);
 p.82–p.100 and nb2 p.06–p.08 come from `lab_notebook/0901-1014/` (`IMG_6576`–`IMG_6596`).
 
@@ -91,7 +93,7 @@ p.82–p.100 and nb2 p.06–p.08 come from `lab_notebook/0901-1014/` (`IMG_6576`
 | p.98 | **Resolved (Alex, 2026-10-18): note-keeping lapsed.** 9/18–9/23 was a busy stretch of repeated protein-expression rounds that were not written up properly. The record for those days is the gel analyses in `code/` (see "Days with no page"). | None — nothing to photograph |
 | p.101+ | **Resolved: notebook 1 ends at p.100.** Work moves to notebook 2 on 2026-09-27. | None |
 | notebook 2, p.01–p.05 | **Resolved: reserved for the table of contents**, to be written later. | Photograph once the TOC is filled in |
-| notebook 2, p.09+ | Unknown — the photo set ends at nb2 p.08 (2026-10-14). | Confirm whether later bench days were written up |
+| notebook 2, p.09+ | Unknown — the photo set ends at nb2 p.08 (2026-10-14). The **2026-10-19 dot blot** was run after that and has no photographed page. | Confirm whether 10/19 (or anything after 10/14) was written up |
 
 ### Days with no page
 
@@ -129,3 +131,11 @@ Open clarifications for all entries live in [`typos.md`](typos.md); the consolid
   notebook starts 2026-09-27**, with **p.01–p.05 held for its table of contents**. The 9/18–9/23 gap
   (and the missing 9/29 / 10/10 pages) is a **note-keeping lapse during repeated protein-expression
   rounds** — the `code/*_gel_annotation.ipynb` analyses stand in as the record for those days.
+- 2026-10-19 — **Final entry added: the 2026-10-19 His-tag dot blot**, the last bench day before the
+  iGEM freeze. First entry in the set with **no notebook page** — written from the membrane
+  photograph and the hand-drawn layout sheet, both archived at `data/assays/1019_dotblot/`. Spot
+  identities were transcribed from the sheet and the membrane-to-sheet orientation confirmed with
+  Alex rather than inferred. Intensities measured by `code/1019_dotblot/quantify_dotblot.py`:
+  the positive control is 16x the negative, and only `e281 FT1` and the `e1` rough lysate clear the
+  negative control. The `e281` flow-through being His-positive reframes the failed 10/10 Ni-NTA run
+  as a **capture** failure rather than an expression failure.
