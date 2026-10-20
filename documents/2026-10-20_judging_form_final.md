@@ -261,3 +261,14 @@ The summary line should stop reading *"Not eligible for any medal · no special 
   six parts report `published`. Abstract word count verified at 148. The G1 part choice is
   reopened because the 2026-10-19 dot blot gave two parts evidence that `BBa_26DKNAEC` does not
   have.
+- 2026-10-20 — **submitted**, 02:40 PDT. Entered as written here: title `Phagenomics`, the
+  148-word abstract, B1/B2/B3, S1/S2, and Best New Basic Part (`BBa_26TWEX42`) / Best Software /
+  Best Model. The B3 and S1 optional Part-name fields were left empty, which is what they are
+  for: they take an *existing* part someone else made. Filling B3 with `BBa_26LHLSLW` had made
+  that part page a required link for the Bronze contribution criterion, which is not what our
+  contribution is, so it was removed. Two notes for next year: G1's required link is generated
+  from the Part Name and points at the Registry part page, not the wiki; and the form warns that
+  a part "is not compatible with either RFC 10 and RFC 1000", which is true of all six of ours —
+  every one carries an internal PstI site and four carry BsaI — and is a compatibility notice,
+  not a blocker.
+

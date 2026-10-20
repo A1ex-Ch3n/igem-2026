@@ -12,9 +12,11 @@ only one.
 Ranked. The first one is the part nominated for Best New Basic Part. **Five of the six pages are
 affected** - every part except node 1 was on a 10-01 gel and none of them said so.
 
-**Two of these need the Save Part form**, which cannot be submitted without ticking the
-Contributor License Agreement, so Alex has to do them: the Functional Descriptions of node 1 and
-node 281. Everything else is a documentation entry and can be edited directly.
+**All of this is now applied.** The thirteen documentation entries were edited and verified
+through the API on 2026-10-20; the two Functional Descriptions, node 1 and node 281, were
+applied by Alex, who had to tick the Contributor License Agreement for each. Node 281's had to
+be shortened on the way in: that field caps at 1000 characters and the old text was already at
+986, so it now reads 963.
 
 ---
 

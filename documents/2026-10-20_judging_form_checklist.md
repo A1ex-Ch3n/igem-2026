@@ -8,9 +8,13 @@ Full reasoning: [`2026-10-20_judging_form_final.md`](2026-10-20_judging_form_fin
 
 ---
 
-**Filled already, 2026-10-20, and NOT saved:** Project Title, Abstract, and all three prize
-slots including G1's Part Name. They live in one open browser tab and exist nowhere else until
-someone presses Save and submit — close that tab and they are gone.
+> ## SUBMITTED — 2026-10-20 02:40 PDT by Chun-Yu Chen
+>
+> The form reads **Saved › Received**. All eight confirmations read **Yes**, all six required
+> links read **Seen**, and the summary is **Bronze / Silver / Gold all Eligible, 3 special
+> prizes**. Still editable until 2026-10-21 08:00 PDT.
+>
+> Everything below is kept as the record of what was entered, not as a to-do list.
 
 ## A · Text fields
 
