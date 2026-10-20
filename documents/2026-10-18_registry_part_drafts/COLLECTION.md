@@ -85,10 +85,13 @@ Stated plainly, because it is most of what a reuser needs to know:
   detection floor is high. CDS10_WT and CDS11_WT were not on it and have **no expression
   evidence at all**. The untransformed-BL21(DE3) control lane and a size-resolved anti-His
   western are both still outstanding.
-- **No purified protein exists.** The one Ni-NTA run we have a gel for — `e281`, 2026-10-10 —
-  failed: elutions E1/E2 were blank gel and the flow-through was indistinguishable from the
-  load. The dot blot then found that flow-through His-positive, so the failure is **capture,
-  not expression**, and the next move is binding conditions rather than a repeat.
+- **One purification in the project recovered protein, and it is `e1`.** On 2026-10-01 all six
+  constructs went over Ni-NTA across two gels; only the node 1 construct eluted, at ~41 kDa
+  against a predicted 41.9 kDa. That is why the `e1` spot-test preparation sits in an imidazole
+  elution buffer. CDS11_WT eluted a band at ~43 kDa the same day, ~29 kDa short of its predicted
+  72.0 kDa and unexplained. The second round, `e281` on 2026-10-10, failed: blank elutions, the
+  flow-through indistinguishable from the load. The dot blot then found that flow-through
+  His-positive, so that failure is **capture, not expression**.
 - **The four CDS_0012-family proteins cannot be told apart by SDS-PAGE** — all within 0.43 kDa
   (1.0 %) of each other. Identification needs sequencing or intact-mass MS.
 - **One activity result exists and it is unattributed.** In a spot test on 2026-10-16, the
@@ -199,19 +202,35 @@ The five bodies are written out, ASCII and paste-ready, in
 [`paste/COLLECTION.md`](paste/COLLECTION.md) — **that file, not this one, is what goes into
 the form**, exactly as for the six part pages.
 
-## One disagreement between the live part pages
+## Resolved 2026-10-20: there were two purification rounds, not one
 
-Left standing rather than quietly reconciled, because both sentences are on the Registry now:
+The live part pages contradicted each other. `BBa_26LHLSLW` (Node281) *experiment* called
+itself "the only construct of the six we have attempted to purify", while its own
+*characterisation* and `BBa_26TWEX42` (Node1) both described `e1` as having been through a
+purification step and sitting in an imidazole elution buffer.
 
-- `BBa_26LHLSLW` (Node281) *experiment* says it is **"the only construct of the six we have
-  attempted to purify"**.
-- `BBa_26LHLSLW` *characterisation* and `BBa_26TWEX42` (Node1) both describe `e1` as having
-  **"been through a purification step"** and sitting in an imidazole elution buffer.
+The lab notebook settles it. `lab_notebook/digitalized/2026-10-01_protein-purification.md`
+records a **2026-10-01 Ni-NTA round over all six constructs, on two gels**:
 
-Both cannot be literally true. Most likely `e281` is the only Ni-NTA run with a *gel*, while
-`e1` went through some capture step whose record we have not found. Until Alex settles it, the
-collection text says only that **no purified protein exists** and that the `e281` run is the
-one with a gel — neither sentence depends on which reading is right.
+- **`e1` eluted at ~41 kDa** against a predicted 41.9 kDa — the only purification in the
+  project that recovered protein, and the source of the `e1` spot-test preparation.
+- **CDS11_WT eluted a band at ~43 kDa**, about 29 kDa short of its predicted 72.0 kDa.
+  Unexplained.
+- `CDS10_WT`, `CDS12_WT`, `e40` and `e281` eluted nothing.
+
+The 2026-10-10 run was a **second** round, on `e281` alone, and is the one that failed.
+
+**Three live Registry pages now say something false and should be edited** (documentation stays
+editable after screening; only sequence, authorship and licence are locked):
+
+| part | sentence to fix |
+|---|---|
+| `BBa_26LHLSLW` Node281 | "the only construct of the six we have attempted to purify" — it is the second round, not the only one |
+| `BBa_26DKNAEC` CDS11_WT | "no purified protein" — it eluted a 43 kDa band on 2026-10-01, 29 kDa short of prediction |
+| `BBa_26TWEX42` Node1 | does not mention its own 2026-10-01 elution at all, which is the project's best expression evidence and the provenance of the spot-test material |
+
+The wiki's `/parts` page had this right all along: "the 10-01 gels show e1 eluting at its
+predicted mass".
 
 ---
 *Draft — 2026-10-18. Numbers: `code/output/1018_construct_structures/` and

@@ -131,11 +131,17 @@ across all three sessions. A further caution for the CDS_0012 family: all four o
 proteins fall within 0.43 kDa, 1.0 percent, of one another, so SDS-PAGE cannot tell them apart
 at all. Identification needs sequencing or intact-mass MS.
 
-Ni-NTA purification, 2026-10-10, node 281. This is the one purification in the project with a
-gel, and it failed. Elutions E1 and E2 were blank gel: peak prominence 0.011 against a measured
-noise floor of 0.020, with lane totals inside the never-loaded range. The flow-through was
-indistinguishable from the load, the same 40-44 kDa band in both. No purified protein from any
-of the six exists.
+Ni-NTA purification, two rounds. On 2026-10-01 all six constructs were run over Ni-NTA across
+two gels. Five of them eluted nothing. The one exception is the node 1 construct, which eluted
+a band at about 41 kDa against a predicted 41.9 kDa: the only purification in the project that
+recovered protein, and the reason the e1 preparation used in the spot test sits in an imidazole
+elution buffer. On the same day the CDS11_WT lane showed an eluted band at about 43 kDa, which
+is roughly 29 kDa short of its predicted 72.0 kDa and remains unexplained.
+
+The second round, on 2026-10-10, was node 281 alone and failed. Elutions E1 and E2 were blank
+gel: peak prominence 0.011 against a measured noise floor of 0.020, with lane totals inside the
+never-loaded range. The flow-through was indistinguishable from the load, the same 40-44 kDa
+band in both.
 
 Anti-His dot blot, 2026-10-19. Eleven samples were spotted directly onto membrane and probed
 with a single-step anti-His HRP conjugate; the positive control reached about 18 times the
@@ -234,7 +240,8 @@ the start; we did not, and it is the single reason several of our gel bands rema
 Expect the codon bias to matter and consider a codon-optimised resynthesis or a Rosetta host.
 Run a soluble-versus-pellet fractionation, particularly for the two large fibers at 72.0 and
 91.6 kDa tagged. For Ni-NTA on the ancestral variants, watch the imidazole carried into the
-load: our one purification with a gel lost the protein to the flow-through. And do not try to
+load: of two rounds only one recovered protein, and the 2026-10-10 round lost it to the
+flow-through. And do not try to
 tell the four CDS_0012-family proteins apart on a gel; they are within 1.0 percent in mass.
 
 ## discussion
@@ -253,8 +260,8 @@ on a shared Calx-beta anchor.
 What it does not show. No activity has been attributed to any of these proteins. The single
 suppression result belongs to the e1 preparation, not demonstrably to the e1 protein, and the
 phage carry-over alternative is still open. No product has been assigned by size: the dot blot
-reports a tag, and a tag is compatible with a truncation or with free His6. No purified protein
-exists. The modern arm of the comparison the design is built on has never been run. And the
+reports a tag, and a tag is compatible with a truncation or with free His6. The only purification that recovered
+protein is the 2026-10-01 node 1 elution, and it was never characterised further. The modern arm of the comparison the design is built on has never been run. And the
 structural evidence throughout is modelling, not experiment: it says the fold survives the
 reconstruction, not that the enzyme works.
 

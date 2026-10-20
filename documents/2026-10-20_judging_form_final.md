@@ -150,15 +150,14 @@ Confirmed by Alex 2026-10-19.
 ### G1 needs a part number — and the choice is worth five minutes
 
 Selecting Best New Basic Part opens a required `Part Name*` field that only accepts a `BBa_`
-name. **All six are now `published`, so any of them is accepted.** The form currently holds:
+name. **All six are now `published`, so any of them is accepted. Enter:**
 
 ```
-BBa_26DKNAEC
+BBa_26TWEX42
 ```
 
-That is CDS11_WT, the tail-spike beta-helix depolymerase body. It was chosen on 2026-10-19 as
-the project's headline part, with domain boundaries that came from structure prediction rather
-than guesswork.
+**Decided 2026-10-20 by Alex**, replacing `BBa_26DKNAEC` (CDS11_WT, the tail-spike body), which
+was entered on 2026-10-19 as the headline part but has no experimental evidence behind it.
 
 **The dot blot has since changed the evidence picture, and the criterion is explicit:**
 *"Winning parts come with thorough documentation **and experimental data showing the part
@@ -170,7 +169,7 @@ works**."*
 | `BBa_26TWEX42` Node1 | strong — full ASR method, 0.28 Å to the WT model | **the most in the project**: anti-His positive at 2.4x, and the only activity signal we have (12 % colony suppression) |
 | `BBa_267WQM51` CDS12_WT | strong — 4/4 AF3 templates are GH5 endoglucanases, pLDDT 95–98 | one induction-dependent band at the predicted mass; the dot blot did not reproduce it |
 
-**Recommendation: switch G1 to `BBa_26TWEX42`.** It is the only part with both halves of what
+**Decided: G1 is `BBa_26TWEX42`.** It is the only part with both halves of what
 the criterion asks for, and the ancestral story — a sequence that exists nowhere in nature,
 reconstructed, synthesised, expressed, and carrying the one activity signal in the project — is
 more memorable than a fiber fragment with no data. The caveat is honest and already written on
@@ -182,8 +181,9 @@ narrative leads with, so a judge following the link lands on the tail spike's st
 node 1's. If the page is not going to be re-pointed tonight, consistency may be worth more than
 evidence.
 
-**This is your call.** Both are defensible; `BBa_26DKNAEC` with no data at all is the weaker
-one on the criterion as written.
+`/parts` is still built around the tail spike, so a judge following the G1 link lands on
+CDS11_WT's story rather than node 1's. That is the cost of the switch and it is accepted: the
+page documents all six and the node 1 entry carries the evidence.
 
 ### What each nomination rests on, if a judge asks
 
