@@ -14,7 +14,7 @@ Hypothesis, shared with the other two ancestral nodes: ancestral enzymes are rep
 
 Where this sequence sits, as percent identity over the 361 aa mature insert: node 40 is 52.6 percent identical to the modern enzyme CDS\_0012, 61.8 percent to node 1 and 87.3 percent to node 281. So node 40 and node 281 act as a pair. Differences that appear in both of them, and not in node 1, are what this design predicts most strongly; a difference seen only in node 40 needs a separate explanation.
 
-We deliberately do not describe this node by tree depth until the PI states where node 40 sits on his tree. The identities above are all we can honestly say.
+Node ordering. The node labels are arbitrary identifiers, not tree depths. The reconstructed nodes, ordered from most recent to most ancestral, are 1, 2, 38, 39, 40, 42, 267, 277 and 281, so node 40 is the middle of the three we submit. That ordering agrees with the sequence identities above, which were measured independently of the tree.
 
 Structure. ESMFold v1, single sequence, no MSA, no template: mean pLDDT 85.5, with 87.3 percent of residues above 70. Superposed on the ESMFold model of CDS12\_WT it gives 0.50 Angstrom backbone RMSD. Only about half the sequence is shared with the modern enzyme and the GH5 TIM barrel is unchanged; the lower confidence, relative to node 1, is concentrated in surface loops.
 
@@ -22,7 +22,7 @@ Method validation: the wild type folded with the same single-sequence method sup
 
 Catalytic machinery. The acid/base glutamate sits in the conserved NEP motif, IGADLHNEPHG at insert position 166, with a conserved SPHDY block downstream. Note the Tyr to His substitution immediately before the motif relative to node 1 and the wild type, which node 40 shares with node 281. It sits next to the catalytic residue and is the first place to look if these two distant ancestors behave alike.
 
-Still to be filled in by the PI: the reconstruction program, the alignment and the tree, and where node 40 sits on it.
+Reconstruction method. CDS\_0012 was used as a query against the NCBI non-redundant protein database, targeting viral, bacterial and metagenome-derived sequences. The top 1,000 hits were downloaded and aligned with MUSCLE as implemented in SeaView, and the alignment was manually curated to retain the regions covered by the extant query. The curated alignment was used to build a tree with PhyML, WAG substitution matrix, proportion of invariant sites fixed at 0.1, branch support from 100 bootstrap replicates. Ancestral sequence reconstruction was performed in IQ-TREE using the same WAG matrix, with the tree rooted at the midpoint, and every ancestral node on the path from CDS\_0012 to the root was reconstructed. This work is Prof. J. Espinoza's.
 
 ## experiment
 
