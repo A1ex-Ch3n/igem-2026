@@ -25,7 +25,16 @@ PI's questionnaire answer A1 describes this as scoring *"carboxylase-likeness"*;
 his code does not. The code is right and A1's wording is wrong, so do not repeat
 the carboxylase phrasing anywhere public.
 
-**The scan does not discriminate.** Across all 998 nodes:
+> ⚠️ **Corrected 2026-10-20.** The reading below is **wrong in scope** and is kept
+> only to show what was concluded from the notebook alone. The `llr` values here
+> compare one EC against decoys *within a single run*. The PI's actual analysis
+> compares **across EC labels**, and there the scan discriminates strongly: median
+> perplexity 8.61 under 3.2.1.4 (endoglucanase) against 14.1-17.5 for the other 22
+> classes, with a monotonic fall along the ancestry path. See
+> [`../../documents/2026-10-20_prof_zymctrl/`](../../documents/2026-10-20_prof_zymctrl/)
+> for his scores table and the recomputation.
+
+**Within a single EC run, the ratios do not discriminate.** Across all 998 nodes:
 
 | metric | observed | what `zymctrl_score.py` says it means |
 |---|---|---|
@@ -42,11 +51,10 @@ the EC class was in training. A1's own closing caveat says the rest: reconstruct
 ancestors are consensus-like by construction, which can move perplexity with no
 functional signal behind it.
 
-**How the wiki states it.** `/model` Track 5 reports the method, the numbers and
-the non-result, and claims nothing about promiscuity from them. Keep it that way
-unless someone re-runs this with a positive control — a set of sequences known to
-belong to the target EC, scored the same way, to show the metric can separate
-anything at all on this data.
+**How the wiki states it.** `/model` Track 5 reports the across-EC result, the
+monotonic fall along the path, and the control that keeps it honest: the same
+direction appears in 11 of 24 classes, so magnitude rather than direction is what
+separates signal from the consensus-likeness artefact the PI flagged himself.
 
 ---
 *Log — 2026-10-20: numbers extracted from the notebook's stored outputs while
