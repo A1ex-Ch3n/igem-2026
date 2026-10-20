@@ -8,6 +8,10 @@ Full reasoning: [`2026-10-20_judging_form_final.md`](2026-10-20_judging_form_fin
 
 ---
 
+**Filled already, 2026-10-20, and NOT saved:** Project Title, Abstract, and all three prize
+slots including G1's Part Name. They live in one open browser tab and exist nowhere else until
+someone presses Save and submit — close that tab and they are gone.
+
 ## A · Text fields
 
 | # | Field | Value | Done |
@@ -46,7 +50,7 @@ confirmation checkbox. All five return 200 (checked 2026-10-20).
 | C1 | B3 Contribution | `https://2026.igem.wiki/claremont-ca/contribution` | ☐ |
 | C2 | S1 Engineering | `https://2026.igem.wiki/claremont-ca/engineering` | ☐ |
 | C3 | S2 Human Practices | `https://2026.igem.wiki/claremont-ca/human-practices` | ☐ |
-| C4 | G1 Best New Basic Part | `https://2026.igem.wiki/claremont-ca/parts` | ☐ |
+| C4 | G1 Best New Basic Part | `https://registry.igem.org/parts/bba-26twex42` — **the Registry part page, not the wiki.** The form generates it from the Part Name | ☐ |
 | C5 | G2 Best Software | `https://2026.igem.wiki/claremont-ca/software` | ☐ |
 | C6 | G3 Best Model | `https://2026.igem.wiki/claremont-ca/model` | ☐ |
 
@@ -90,7 +94,7 @@ Then **Save and submit**.
 
 | | What | Who |
 |---|---|---|
-| G-a | `/parts` still says the six parts are "still in Draft… must be submitted before the freeze" and Table 1 still reads "BBa_— pending submission". Fix is written, in the cloned wiki repo; needs a gitlab push | Alex |
+| G-a | `/parts` still says the six parts are "still in Draft… must be submitted before the freeze" and Table 1 still reads "BBa_— pending submission". Fix is written, in the cloned wiki repo; needs a gitlab push. **Not a judging-form blocker** — G1's required link turned out to be the Registry part page — but it is still wrong on a page judges read | Alex |
 | G-b | Eight wiki pages render `wiki-todo` boxes to judges, four on `/parts` alone, one of which says "confirm … before freeze". One-line kill switch documented at `static/style.css:705` | Alex decides |
 | G-c | Presentation Video, due Oct 28 — the only thing D1 promises that does not exist | team |
 
