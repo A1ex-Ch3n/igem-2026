@@ -54,6 +54,14 @@ Two things to know:
 `live_snapshot_1019/` deliberately still reads 16-20 C - it is the verbatim record
 of what the live pages said on 2026-10-19, and the live pages still need this fix.
 
+## Applied status
+
+These files are no longer a to-do list for the documentation entries: all thirteen
+were applied to the live Registry on 2026-10-19 and verified by reading them back
+through the API. What is still outstanding is the **Functional Description** on two
+parts, which cannot be saved without ticking the Contributor License Agreement.
+See [`../REGISTRY_APPLIED.md`](../REGISTRY_APPLIED.md) for the per-entry record.
+
 ## Not in these files
 
 The parent directory's drafts keep the `==CONFIRM==` / `==UNDONE==` markers, the
