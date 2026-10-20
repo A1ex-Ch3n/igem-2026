@@ -4,7 +4,7 @@ Paste-ready. Live registry text as of 2026-10-19 with the 2026-10-19 dot blot me
 
 ## Functional Description
 
-A reconstructed ancestor of the phage GH5 glycoside hydrolase CDS\_0012, designed to test whether an ancestral enzyme has a broader substrate range than its modern, specialised descendant. The sequence is computationally designed and does not exist in nature. It is 77.8 percent identical to the modern enzyme, the closest of the three ancestral nodes we submit, and it is expected to fold into the same (beta/alpha)8 GH5 TIM barrel and to retain the acid/base glutamate in the conserved NEP motif. The part is a coding sequence with its own ATG and stop codon and does not include the pET-28a His6 leader used in our own expression construct. An anti-His dot blot on 2026-10-19 gave a positive signal for this construct's induced lysate, at 2.4 times the negative control; the product has not been assigned by size. See the documentation entries.
+A reconstructed ancestor of the phage GH5 glycoside hydrolase CDS\_0012, designed to test whether an ancestral enzyme has a broader substrate range than its modern, specialised descendant. The sequence is computationally designed and does not exist in nature. It is 77.8 percent identical to the modern enzyme, the closest of the three ancestral nodes we submit, and it is expected to fold into the same (beta/alpha)8 GH5 TIM barrel and to retain the acid/base glutamate in the conserved NEP motif. The part is a coding sequence with its own ATG and stop codon and does not include the pET-28a His6 leader used in our own expression construct. It is the only one of our six constructs that eluted from a Ni-NTA column at its predicted size, at about 41 kDa against 41.9 kDa predicted on 2026-10-01, and an anti-His dot blot on 2026-10-19 gave a positive signal for its induced lysate at 2.4 times the negative control. No product has yet been assigned by size on a calibrated gel. See the documentation entries.
 
 ## design
 
@@ -26,13 +26,19 @@ We deliberately do not describe this node by tree depth. Until the PI states whe
 
 ## experiment
 
-**title:** Cloning, induction, and an unassigned 45-50 kDa band
+**title:** Cloning, the one Ni-NTA elution of the project, and an unassigned 45-50 kDa band
 
 Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience; order sheet filed 2026-09-10. Host E. coli BL21(DE3), kanamycin selection, IPTG induction at ~30 C. Predicted mass of the tagged protein 41.9 kDa.
 
 Codon usage warning. The insert was ordered with Codon Optimized set to No and carries a mammalian-like codon bias (CCC, GGG, GCC heavy) rather than an E. coli bias. This is the first thing to suspect behind a missing band; Rosetta or BL21-CodonPlus are the obvious alternative hosts.
 
 SDS-PAGE, 2026-09-29. A strong, clean band at 45-50 kDa appeared in all four lanes, induced and uninduced alike, 7-19 percent above the predicted 41.9 kDa. It is unassigned. It cannot simply be called the product, because CDS12\_WT, which has essentially the same mass, ran on the predicted mass in the same experiment. A host protein fits the data equally well, and the untransformed BL21(DE3) control lane that would settle it has still not been run.
+
+Ni-NTA purification, 2026-10-01. All six constructs of the project were put over NEBExpress Ni spin columns (NEB S1427) in one session and run on two gels. This construct is the only one that eluted protein at its predicted size: bands in both E1 and E2 at about 41 kDa against the predicted 41.9 kDa. Of the other five, CDS12\_WT and the node 281 construct gave no bands in either elution, CDS10\_WT and the node 40 construct gave nothing at the expected size in wash 3 or either elution, and CDS11\_WT eluted a band at about 43 kDa, roughly 29 kDa short of its own predicted 72.0 kDa and unexplained. A Bradford assay on the same fractions, against a quadratic BSA curve from 125 to 1500 micrograms per millilitre at R-squared 0.998, put this construct's E1 above the top standard, so it needs dilution and a re-read before any yield figure is quoted.
+
+Two cautions on that result. The gels are annotated composites: the lane map, the expected-size boxes and the tables were drawn onto the photograph, the raw images are not archived, and unlike the 2026-09-15, 09-29 and 10-10 gels there is no lane-quantification table and no ladder calibration behind the 41 kDa figure, so it is a read-off rather than a measurement. And the band does not sit where the 2026-09-29 gel put this construct, which showed 45-50 kDa in every lane; a purified product at the predicted mass and an unassigned band 7-19 percent above it are not yet reconciled, and the untransformed BL21(DE3) control lane would be the way to do it.
+
+This elution is also the provenance of the material used later: the e1 preparation spotted in the 2026-10-16 activity assay is this eluate, which is why it sits in an imidazole elution buffer.
 
 Anti-His dot blot, 2026-10-19. Eleven samples were spotted directly onto membrane and probed with a single-step anti-His HRP conjugate; the positive control reached about 18 times the negative control, so the detection chemistry worked. A dot blot reports the His tag, not size or activity, and this membrane's detection floor is high: every 1:10 dilution on it fell to background, so an absent signal here is weak evidence of absence.
 
@@ -54,7 +60,7 @@ What this does and does not establish.
 
 This is the first evidence that the e1 preparation carries an activity against Pseudomonas, and the strongest signal of the three ancestral variants.
 
-It does not identify the active agent as this protein. Expression now has positive evidence, the induced lysate being His-positive at 2.4 times the negative control on the 2026-10-19 dot blot, but a His tag in the lysate does not make this protein the active species, and the elution buffer the preparation sits in, imidazole included, was not spotted on its own.
+It does not identify the active agent as this protein. Expression now has positive evidence from two directions, the 2026-10-01 Ni-NTA elution at about 41 kDa against 41.9 kDa predicted and the induced lysate being His-positive at 2.4 times the negative control on the 2026-10-19 dot blot. Neither makes this protein the active species in the drop: the preparation is that eluate rather than purified protein in a defined buffer, and the elution buffer it sits in, imidazole included, was not spotted on its own.
 
 The largest remaining confound is phage carried over from the Phi8 stock. Across the seven strains e1 tracks the phage almost exactly: both fall below 40 percent on six strains, and the single strain where the phage failed, 9-1-1 at 157 percent, is also the one where e1 failed, at 114 percent. An infectious contaminant would produce precisely that agreement. The deciding experiment is a plaque assay of the e1 preparation itself on a sensitive lawn, and it has not been done. Suppression in this assay does not require infection either, since Phi8 cleared colonies on two of the three strains it cannot plaque, so the fact that e1 works on non-hosts does not resolve this.
 
