@@ -51,7 +51,7 @@ removing most of it gives a soluble protein rather than an assembly component.
 ## experiment
 
 Cloned into **pET-28a(+)** (NdeI/XhoI), synthesised by Twist Bioscience, order of 2026-07-27.
-*E. coli* BL21(DE3), kanamycin, IPTG induction at 16–20 °C.
+*E. coli* BL21(DE3), kanamycin, IPTG induction at ~30 °C.
 
 **Status: not yet attempted in earnest.** This construct is **batch 3** in the project's
 expression plan, behind CDS12_WT and the ancestral variants; at 91.6 kDa it is also the hardest

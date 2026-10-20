@@ -73,7 +73,7 @@ fold evidence only) and to **CDS_0010** (function unknown).
 ## experiment
 
 Cloned into **pET-28a(+)** (NdeI/XhoI), synthesised by Twist Bioscience; order sheet filed
-2026-09-10. *E. coli* BL21(DE3), kanamycin, IPTG induction at 16–20 °C.
+2026-09-10. *E. coli* BL21(DE3), kanamycin, IPTG induction at ~30 °C.
 
 ⚠️ **`Codon Optimized: No`**, mammalian-like codon bias — the first suspect behind a missing
 band; try Rosetta or BL21-CodonPlus.

@@ -74,7 +74,7 @@ depolymerase assignment is fold-level only, and not to CDS_0010, whose function 
 ## experiment
 
 Cloned into **pET-28a(+)** (NdeI/XhoI), synthesised by Twist Bioscience; order sheet filed
-2026-09-10. *E. coli* BL21(DE3), kanamycin, IPTG induction at 16–20 °C.
+2026-09-10. *E. coli* BL21(DE3), kanamycin, IPTG induction at ~30 °C.
 
 ⚠️ **`Codon Optimized: No`**, and the insert uses mammalian-like codon bias (`CCC`/`GGG`/`GCC`-
 heavy) rather than *E. coli* bias. This is the first thing to suspect behind a missing band;

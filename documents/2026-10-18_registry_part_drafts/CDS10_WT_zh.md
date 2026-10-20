@@ -47,7 +47,7 @@ CDS_0010 位於噬菌體 9-2-1 Φ8 的 tail 模組，與 tail spike CDS_0011 共
 ## experiment
 
 以 NdeI/XhoI 選殖進 **pET-28a(+)**，Twist Bioscience 合成，2026-07-27 訂單。*E. coli* BL21(DE3)、
-kanamycin、16–20 °C IPTG 誘導。
+kanamycin、~30 °C IPTG 誘導。
 
 **狀態：尚未認真嘗試。** 在專案的表現計畫裡，這個 construct 排在 **batch 3**，在 CDS12_WT 與三個
 祖先變體之後；而且 91.6 kDa 是六個當中最難表現的。目前所有膠都沒有它可解讀的 lane。

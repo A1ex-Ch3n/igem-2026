@@ -52,7 +52,7 @@ AF3 單體 pTM 0.77；cloned 區域內 mean pLDDT **96.4**，其中 98.9% 的殘
 ## experiment
 
 以 NdeI/XhoI 選殖進 **pET-28a(+)**，Twist Bioscience 合成，2026-07-27 訂單。*E. coli* BL21(DE3)、
-kanamycin、16–20 °C IPTG 誘導 16 小時。
+kanamycin、~30 °C IPTG 誘導 16 小時。
 
 2026-09-29 的 SDS-PAGE（`code/0929_gel_annotation.ipynb`）：在 40–43 kDa 出現一條
 **IPTG 依賴的 band**，落在預測的 41.8 kDa 上；未誘導 lane 雖然總蛋白更多卻沒有這條。這是全專案

@@ -22,13 +22,13 @@ We deliberately do not describe this node by tree depth. Until the PI states whe
 
 **Catalytic machinery.** The GH5 acid/base glutamate sits in the conserved NEP motif, IGADLYNEPHQ at insert position 166, with a conserved SPHEY block downstream. Same fold, same catalytic residues, different surface: the structural precondition for an active enzyme with altered specificity.
 
-**Relationship to the other parts.** This is a variant of CDS12\_WT, the template-confirmed GH5 — a free, standalone enzyme. It is not related to the tail spike CDS\_0011, whose depolymerase assignment is fold-level only, and not to CDS\_0010, whose function is unknown.
+**Relationship to the other parts.** This is a variant of CDS12\_WT, the template-confirmed GH5 - a free, standalone enzyme. It is not related to the tail spike CDS\_0011, whose depolymerase assignment is fold-level only, and not to CDS\_0010, whose function is unknown.
 
 ## experiment
 
 **title:** Cloning, induction, and an unassigned 45-50 kDa band
 
-Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience; order sheet filed 2026-09-10. Host E. coli BL21(DE3), kanamycin selection, IPTG induction at 16-20 C. Predicted mass of the tagged protein 41.9 kDa.
+Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience; order sheet filed 2026-09-10. Host E. coli BL21(DE3), kanamycin selection, IPTG induction at ~30 C. Predicted mass of the tagged protein 41.9 kDa.
 
 Codon usage warning. The insert was ordered with Codon Optimized set to No and carries a mammalian-like codon bias (CCC, GGG, GCC heavy) rather than an E. coli bias. This is the first thing to suspect behind a missing band; Rosetta or BL21-CodonPlus are the obvious alternative hosts.
 

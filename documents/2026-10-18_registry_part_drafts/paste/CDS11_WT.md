@@ -28,7 +28,7 @@ Models. AlphaFold3 Server trimer, pTM 0.66 and ipTM 0.64, mean pLDDT 90.3 inside
 
 **title:** Cloning and three expression attempts; no band yet
 
-Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience (order of 2026-07-27). Host E. coli BL21(DE3), kanamycin selection, IPTG induction at 16-20 C. The expressed construct carries the pET-28a leader and the designed GGSGGGGS-His6-ENLYFQ-GGGGSGGGGS linker, giving a predicted mass of 72.0 kDa; neither is part of this part's sequence.
+Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience (order of 2026-07-27). Host E. coli BL21(DE3), kanamycin selection, IPTG induction at ~30 C. The expressed construct carries the pET-28a leader and the designed GGSGGGGS-His6-ENLYFQ-GGGGSGGGGS linker, giving a predicted mass of 72.0 kDa; neither is part of this part's sequence.
 
 Status: expression not yet demonstrated. Across three SDS-PAGE sessions (2026-09-15, 2026-09-29, 2026-10-10) no band was seen at the expected 72.0 kDa. On 2026-09-29 no undiluted lane was run for this construct, so that absence is not interpretable. The untransformed BL21(DE3) control lane is still outstanding, so no band on these gels can be assigned either way.
 
@@ -40,7 +40,7 @@ Practical notes for anyone repeating this: 72 kDa of trimeric beta-solenoid is a
 
 None. No confirmed expression (see the Experiment entry), no purified protein, and therefore no activity assay.
 
-The readout this part needs is a spot assay on a host lawn: a halo from purified protein where the buffer control gives none would be direct evidence of depolymerase activity. Controls fixed in advance: imidazole vehicle, PBS, a phage-positive spot, and the sensitive parent strain from the same batch. A first spot test was run on 2026-10-16, but it covered only the three ancestral GH5 variants — this part was not in it.
+The readout this part needs is a spot assay on a host lawn: a halo from purified protein where the buffer control gives none would be direct evidence of depolymerase activity. Controls fixed in advance: imidazole vehicle, PBS, a phage-positive spot, and the sensitive parent strain from the same batch. A first spot test was run on 2026-10-16, but it covered only the three ancestral GH5 variants - this part was not in it.
 
 Until that assay exists, the depolymerase assignment for this part is a structural hypothesis, not a measured activity.
 

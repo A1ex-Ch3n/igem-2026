@@ -56,7 +56,7 @@ ipTM 偏低不代表界面不好 — 是被 N 端鬆散附屬拖低的，鏈間 
 ## experiment
 
 以 NdeI/XhoI 選殖進 **pET-28a(+)**，Twist Bioscience 合成，2026-07-27 訂單。表現宿主
-*E. coli* BL21(DE3)，kanamycin 篩選，16–20 °C IPTG 誘導。
+*E. coli* BL21(DE3)，kanamycin 篩選，~30 °C IPTG 誘導。
 
 **狀態：這個 part 尚未證實能表現。** 三次 SDS-PAGE（2026-09-15、09-29、10-10）在預期的 72.0 kDa
 都沒有看到 band；09-29 這個 construct 沒有跑未稀釋的 lane，所以「沒有 band」目前還不能解讀。

@@ -28,7 +28,7 @@ Model validation. Folding this sequence with ESMFold (single sequence, no MSA, n
 
 **title:** Cloning and expression trial in E. coli BL21(DE3)
 
-Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience (order of 2026-07-27). Expressed in E. coli BL21(DE3) with kanamycin selection, induced with IPTG at 16-20 C for 16 h. The construct we expressed carries the vector's N-terminal His6 leader MGSSHHHHHHSSGLVPRGSHM, which is not part of this part's sequence; the predicted mass of the tagged protein is 41.8 kDa.
+Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience (order of 2026-07-27). Expressed in E. coli BL21(DE3) with kanamycin selection, induced with IPTG at ~30 C for 16 h. The construct we expressed carries the vector's N-terminal His6 leader MGSSHHHHHHSSGLVPRGSHM, which is not part of this part's sequence; the predicted mass of the tagged protein is 41.8 kDa.
 
 SDS-PAGE, 2026-09-29. An IPTG-dependent band at 40-43 kDa, on the predicted 41.8 kDa, absent from the uninduced lane even though that lane carried more total protein. This is the first induction-dependent signal in the project, and this construct is first in the purification queue.
 

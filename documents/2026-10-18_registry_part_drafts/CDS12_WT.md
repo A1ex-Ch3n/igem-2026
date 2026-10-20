@@ -57,7 +57,7 @@ ancestral variants. The AF3 folds are **Prof. J. Espinoza's** work.
 ## experiment
 
 Cloned into **pET-28a(+)** (NdeI/XhoI), synthesised by Twist Bioscience, order of 2026-07-27.
-*E. coli* BL21(DE3), kanamycin, IPTG induction at 16–20 °C, 16 h.
+*E. coli* BL21(DE3), kanamycin, IPTG induction at ~30 °C, 16 h.
 
 SDS-PAGE on 2026-09-29 (`code/0929_gel_annotation.ipynb`): an **IPTG-dependent band at
 40–43 kDa**, on the predicted 41.8 kDa, absent from the uninduced lane despite that lane

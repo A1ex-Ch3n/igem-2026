@@ -28,7 +28,7 @@ Still to be filled in by the PI: the reconstruction program, the alignment and t
 
 **title:** Cloned; the one gel lane for this construct was barely loaded
 
-Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience; order sheet filed 2026-09-10. Host E. coli BL21(DE3), kanamycin selection, IPTG induction at 16-20 C.
+Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience; order sheet filed 2026-09-10. Host E. coli BL21(DE3), kanamycin selection, IPTG induction at ~30 C.
 
 Codon usage warning: the insert was ordered with Codon Optimized set to No and carries a mammalian-like codon bias. That is the first suspect behind a missing band; Rosetta or BL21-CodonPlus are the alternatives.
 

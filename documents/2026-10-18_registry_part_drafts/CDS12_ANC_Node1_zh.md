@@ -67,7 +67,7 @@ AlphaFold3 模型，得到 **0.28 Å／2139 atoms**，所以這些祖先模型�
 ## experiment
 
 以 NdeI/XhoI 選殖進 **pET-28a(+)**，Twist Bioscience 合成；訂單表於 2026-09-10 歸檔。
-*E. coli* BL21(DE3)、kanamycin、16–20 °C IPTG 誘導。
+*E. coli* BL21(DE3)、kanamycin、~30 °C IPTG 誘導。
 
 ⚠️ **`Codon Optimized: No`**，而且 insert 用的是偏哺乳類的 codon bias（`CCC`/`GGG`/`GCC` 偏多）
 而不是 *E. coli*。band 不見時這是第一個要懷疑的；下一步宿主可換 Rosetta 或 BL21-CodonPlus。

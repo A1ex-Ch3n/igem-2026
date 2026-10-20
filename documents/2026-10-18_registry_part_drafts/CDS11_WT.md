@@ -64,7 +64,7 @@ work (see *attribution* below).
 ## experiment
 
 Cloned into **pET-28a(+)** (NdeI/XhoI), synthesised by Twist Bioscience, order of 2026-07-27.
-Expression host *E. coli* BL21(DE3), kanamycin selection, IPTG induction at 16–20 °C.
+Expression host *E. coli* BL21(DE3), kanamycin selection, IPTG induction at ~30 °C.
 
 **Status: expression not yet demonstrated for this part.** Across three SDS-PAGE sessions
 (2026-09-15, 09-29, 10-10) no band was seen at the expected 72.0 kDa; on 09-29 no undiluted

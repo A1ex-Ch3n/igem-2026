@@ -28,7 +28,7 @@ Still to be filled in by the PI: the reconstruction program, the alignment and t
 
 **title:** Cloning, a failed Ni-NTA purification, and the dot blot that explains it
 
-Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience; order sheet filed 2026-09-10. Host E. coli BL21(DE3), kanamycin selection, IPTG induction at 16-20 C. Predicted mass of the tagged protein 42.3 kDa.
+Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience; order sheet filed 2026-09-10. Host E. coli BL21(DE3), kanamycin selection, IPTG induction at ~30 C. Predicted mass of the tagged protein 42.3 kDa.
 
 Codon usage warning: ordered with Codon Optimized set to No, mammalian-like codon bias. First suspect behind a missing band; Rosetta or BL21-CodonPlus are the alternatives.
 

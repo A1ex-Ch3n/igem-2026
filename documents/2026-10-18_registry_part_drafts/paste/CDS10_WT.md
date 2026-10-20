@@ -24,7 +24,7 @@ Construct boundary. Residues 105-917 cut just inside the Calx-beta anchor (1-110
 
 **title:** Cloned and queued; expression not yet attempted in earnest
 
-Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience (order of 2026-07-27). Host E. coli BL21(DE3), kanamycin selection, IPTG induction at 16-20 C planned.
+Cloned into pET-28a(+) by NdeI/XhoI, synthesised by Twist Bioscience (order of 2026-07-27). Host E. coli BL21(DE3), kanamycin selection, IPTG induction at ~30 C planned.
 
 Status: not yet attempted in earnest. This construct is batch 3 in the project's expression plan, behind CDS\_0012 and the three ancestral GH5 variants, and at a predicted 91.6 kDa for the tagged protein it is the hardest of the six to express. No gel to date carries an interpretable lane for it.
 

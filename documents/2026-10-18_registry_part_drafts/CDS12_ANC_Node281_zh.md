@@ -70,7 +70,7 @@ Node1 和野生型都不同；若這兩個遠親祖先行為相似，這是第�
 ## experiment
 
 以 NdeI/XhoI 選殖進 **pET-28a(+)**，Twist Bioscience 合成；訂單表 2026-09-10 歸檔。
-*E. coli* BL21(DE3)、kanamycin、16–20 °C IPTG 誘導。
+*E. coli* BL21(DE3)、kanamycin、~30 °C IPTG 誘導。
 
 ⚠️ **`Codon Optimized: No`**，偏哺乳類 codon bias — band 不見時的第一嫌疑；可改用 Rosetta 或
 BL21-CodonPlus。

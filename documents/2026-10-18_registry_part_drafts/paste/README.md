@@ -32,6 +32,28 @@ style. Nothing else was touched.
 `CDS11_WT` and `CDS10_WT` were not on the 2026-10-19 membrane, so their files are
 the live text copied through unaltered, present only so one directory holds all six.
 
+## Induction temperature - corrected 2026-10-19
+
+Every one of the six pages said **IPTG induction at 16-20 C**. That number is the
+**DepoCatalog paper's recommendation**, recorded in
+`../../2026-09-21_depocatalog_paper_reading_notes.md`, not a condition we ran. Per
+Alex it is **~30 C**, and that is what these files now say. This is the one change
+that touches all six parts, `CDS11_WT` and `CDS10_WT` included.
+
+Two things to know:
+
+- `CDS10_WT` has never been expressed; its sentence reads "IPTG induction at ~30 C
+  **planned**". It was changed for consistency - revert it to 16-20 C if the plan
+  for that part really is the low-temperature condition.
+- The lab notebook does not agree with ~30 C either. The 2026-09-10 entry records
+  the cultures going back into a **37 C** incubator, twice, and the 09-15 and 09-27
+  inductions have no temperature written down at all. `~30 C` is Alex's figure, and
+  it is the one on these pages; the notebook discrepancy is left standing rather
+  than quietly reconciled.
+
+`live_snapshot_1019/` deliberately still reads 16-20 C - it is the verbatim record
+of what the live pages said on 2026-10-19, and the live pages still need this fix.
+
 ## Not in these files
 
 The parent directory's drafts keep the `==CONFIRM==` / `==UNDONE==` markers, the
