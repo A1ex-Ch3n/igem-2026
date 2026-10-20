@@ -3,7 +3,11 @@
 Paste-ready. Same convention as the six part files: plain ASCII, no Greek letters, no en or em
 dashes, no percent sign, no markdown bold inside the bodies. Built 2026-10-20 from
 `../COLLECTION.md` aligned against the six live part pages as applied on 2026-10-19.
-Not yet created on registry.igem.org.
+
+The collection page already exists on registry.igem.org - created 2026-10-19, UUID
+3edc6bca-7c2b-4c01-b38f-c6ed3b6743ad - and its five entries carry the pre-dot-blot
+text. These bodies are the replacements. The parts list was still empty while the six
+parts were in Draft; all six went to published on 2026-10-20, so they can be added now.
 
 ## Collection-level fields
 
