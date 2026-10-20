@@ -4,11 +4,13 @@ Measures the eleven spots on the 2026-10-19 dot blot so the entry's intensity ta
 rather than eyeballed.
 
 - Input: [`data/assays/1019_dotblot/dotblot.jpeg`](../../data/assays/1019_dotblot/dotblot.jpeg)
-- Output: [`output/1019_dotblot/spot_intensities.tsv`](../output/1019_dotblot/spot_intensities.tsv)
+- Outputs: [`output/1019_dotblot/spot_intensities.tsv`](../output/1019_dotblot/spot_intensities.tsv)
+  and [`fig_dotblot_annotated.png`](../output/1019_dotblot/fig_dotblot_annotated.png) / `.pdf`
 - Write-up: [`lab_notebook/digitalized/2026-10-19_dot-blot-his-tag.md`](../../lab_notebook/digitalized/2026-10-19_dot-blot-his-tag.md)
 
 ```
-python code/1019_dotblot/quantify_dotblot.py
+python code/1019_dotblot/quantify_dotblot.py     # measure, write the TSV
+python code/1019_dotblot/annotate_dotblot.py     # the annotated two-panel figure
 ```
 
 Needs only NumPy, SciPy and Pillow — all in the `igem2026` env.
@@ -22,9 +24,16 @@ specular glare that a single global background would smear across every reading.
 
 Grid positions were read off the photograph by eye, so each spot is allowed to **re-centre on the
 darkest disc within ±25 px** of its nominal position before being measured. The `dx`/`dy` columns
-record how far each one moved. Five spots drift to the full ±25 limit; that is not a measurement,
-it is the search failing to find a spot, and those five are exactly the positions called "no
-spot" in the entry.
+record how far each one moved. A spot whose search **hits the edge of that box** has not been
+found — the search has only run downhill — so it falls back to the nominal position rather than
+measuring somewhere else entirely; those are the positions reported at ~0 and called "nothing
+there". `CDS12−` is a hollow drying ring whose centre had to be located by eye (261, 730); the
+disc average there samples part of the rim, which is why the negative control reads 3.9 rather
+than 0, and why it is used as the noise floor.
+
+`annotate_dotblot.py` marks **every** spotted position, developed or not, and colours a spot as a
+call only at **2x the negative control** (`POS_FACTOR`). That rule is what keeps `CDS12+` at 1.1x
+out of the result.
 
 **These values are relative to this one image.** There is no ladder, no standard and no loading
 normalisation, so they support one comparison only: each spot against the negative control on the

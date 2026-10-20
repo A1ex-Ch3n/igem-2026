@@ -35,33 +35,46 @@ SPOTS = [
     ("e40+",                       417, 635),
     ("e281+ (1:10)",               500, 635),
     ("e281 FT1",                   587, 635),
-    ("CDS12- (negative)",          285, 740),
-    ("e1+ (1:10)",                 370, 740),
-    ("positive control",           455, 740),
+    ("CDS12- (negative)",          261, 730),   # hollow drying ring, measured by eye
+    ("e1+ (1:10)",                 355, 740),
+    ("positive control",           450, 748),
 ]
 
 
-def main() -> None:
+def measure():
+    """Return [(label, x, y, background, spot_lum, darkness, dx, dy), ...].
+
+    Each spot re-centres on the darkest disc within SEARCH px of its nominal
+    grid position before being measured; dx/dy record how far it moved. A spot
+    that drifts to the full +/-SEARCH limit is one the search never found.
+    """
     lum = np.asarray(Image.open(IMG).convert("RGB")).astype(float).mean(2)
     yy, xx = np.mgrid[: lum.shape[0], : lum.shape[1]]
-
-    # The grid was read off by eye, so let each spot re-centre on the darkest
-    # disc within SEARCH px of its nominal position before it is measured.
     smooth = ndimage.gaussian_filter(lum, 6)
 
     rows = []
     for label, x0, y0 in SPOTS:
         win = smooth[y0 - SEARCH : y0 + SEARCH + 1, x0 - SEARCH : x0 + SEARCH + 1]
         dy, dx = np.unravel_index(np.argmin(win), win.shape)
+        # Hitting the edge of the search box means no spot was found, only a
+        # downhill gradient; re-centring on that would measure somewhere else
+        # entirely, so fall back to the nominal grid position.
+        if dx in (0, 2 * SEARCH) or dy in (0, 2 * SEARCH):
+            dx = dy = SEARCH
         x, y = x0 - SEARCH + dx, y0 - SEARCH + dy
         d2 = (xx - x) ** 2 + (yy - y) ** 2
         spot = d2 <= RADIUS ** 2
         ring = (d2 > BG_INNER ** 2) & (d2 <= BG_OUTER ** 2)
         bg = np.median(lum[ring])
-        darkness = bg - lum[spot].mean()          # positive = darker than background
-        rows.append((label, x, y, bg, lum[spot].mean(), darkness, x - x0, y - y0))
+        rows.append((label, x, y, bg, lum[spot].mean(), bg - lum[spot].mean(),
+                     x - x0, y - y0))
+    return rows
 
+
+def main() -> None:
+    rows = measure()
     peak = max(r[5] for r in rows)
+
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with OUT.open("w") as fh:
         fh.write("label\tx\ty\tdx\tdy\tbackground_lum\tspot_lum\tdarkness\t"

@@ -28,10 +28,9 @@ reading a band position off a gel.
 
 - **Blocking:** PBS + Blotting-Grade Blocker, **1 h** incubation.
   `==CONFIRM: the blocker mass and percentage. The sheet's reverse reads "4.25 g" and "0.05"/"20.0" through the paper, mirrored and faint — not reliably legible.==`
-- **Detection:** a **single-step His-tag probe** (directly conjugated — no separate primary and
-  secondary), developed with a **pale brown** substrate solution giving a blue/purple product
-  (per Alex, 2026-10-19).
-  `==CONFIRM: the probe and substrate product names and catalogue numbers. A pale brown substrate giving blue-purple is the behaviour of BCIP/NBT with an alkaline-phosphatase conjugate, but that is an inference from the colour, not something the record states.==`
+- **Detection:** a **single-step anti-His HRP conjugate** (no separate primary and secondary),
+  developed with a **pale brown** substrate solution giving a blue product (per Alex, 2026-10-19).
+  `==CONFIRM: the conjugate and substrate product names and catalogue numbers. With HRP, a pale substrate developing to blue points to precipitating TMB or 4-chloro-1-naphthol — it is specifically not BCIP/NBT, which needs alkaline phosphatase. Which of the two was used is not recorded.==`
 - **Samples:** rough lysates from **10/18**, plus the **1:10 dilutions prepared for the 10/16
   spot test**, plus one `e281` **flow-through** fraction.
   `==CONFIRM: spotting volume per dot — not recorded.==`
@@ -58,37 +57,42 @@ oval.
 ## Result
 
 Measured with [`code/1019_dotblot/quantify_dotblot.py`](../../code/1019_dotblot/quantify_dotblot.py)
-→ [`code/output/1019_dotblot/spot_intensities.tsv`](../../code/output/1019_dotblot/spot_intensities.tsv).
+→ [`code/output/1019_dotblot/spot_intensities.tsv`](../../code/output/1019_dotblot/spot_intensities.tsv);
+annotated by [`annotate_dotblot.py`](../../code/1019_dotblot/annotate_dotblot.py).
+
+![Annotated dot blot](../../code/output/1019_dotblot/fig_dotblot_annotated.png)
+
 "Darkness" is how much darker the 18 px disc at each spot is than its own local background
 annulus, so the values are **relative to this one image** — there is no ladder and no standard.
+A spot is only **called** if it reaches **2× the negative control**; `CDS12+` lands at 1.1× and is
+therefore inside the noise, not a result.
 
 | spot | darkness | vs. negative | call |
 |---|---|---|---|
-| **positive control** | **68.2** | 16× | strong — chemistry worked |
-| **e281 FT1** | **11.0** | **2.6×** | **positive** |
-| **e1+ (rough lysate, 10/18)** | **9.4** | **2.2×** | **positive** |
-| CDS12+ | 4.4 | 1.0× | at the negative — no call |
-| *CDS12− (negative)* | *4.3* | — | *the noise floor* |
-| e1+ | 3.0 | 0.7× | below the negative |
-| CDS12+ (rough lysate) | 2.9 | 0.7× | below the negative |
-| e40+ | 1.3 | 0.3× | no spot |
-| e281+ (1:10) | 0.7 | 0.2× | no spot |
-| e1+ (1:10) | 0.6 | 0.1× | no spot |
-| e40+ (1:10) | 0.6 | 0.1× | no spot |
+| **positive control** | **68.2** | 17.7× | strong — chemistry worked |
+| **e281 FT1** | **11.0** | **2.9×** | **positive** |
+| **e1+ (rough lysate, 10/18)** | **9.3** | **2.4×** | **positive** |
+| CDS12+ | 4.4 | 1.1× | inside the noise — no call |
+| *CDS12− (negative)* | *3.9* | — | *the noise floor — a hollow drying ring* |
+| e1+ | 3.0 | 0.8× | below the negative |
+| CDS12+ (rough lysate) | 2.8 | 0.7× | below the negative |
+| e40+ (1:10) | 0.6 | 0.2× | nothing there |
+| e281+ (1:10) | 0.2 | 0.1× | nothing there |
+| e1+ (1:10) | −0.1 | — | nothing there |
+| e40+ | −0.5 | — | nothing there |
 
 **Three things this says.**
 
-1. **The assay is valid.** The positive control is 16× the negative and six times the strongest
-   sample, so the His-tag probe and the development step both worked. A blot where everything is
-   blank cannot distinguish "no protein" from "no chemistry"; this one can.
-2. **Only two samples clear the negative control: `e281 FT1` and the `e1` rough lysate**, both at
-   roughly 2.2–2.6× the negative. Everything else sits at or below `CDS12−`, which is itself a
-   **hollow ring** on the membrane — a drying artifact, not signal — so the 2.9–4.4 group is
-   indistinguishable from background and no call can be made on it.
-3. **Every 1:10 dilution is at zero.** All four of the spot-test dilutions are under detection,
-   which is internally consistent: those are the same materials as the stronger spots, ten times
-   more dilute. It also means the **10/16 spot test was run with material at or below the
-   detection floor of this blot**.
+1. **The assay is valid.** The positive control is ~18× the negative and six times the strongest
+   sample, so the anti-His HRP conjugate and the development step both worked. A blot where
+   everything is blank cannot distinguish "no protein" from "no chemistry"; this one can.
+2. **Only two samples clear the threshold: `e281 FT1` and the `e1` rough lysate**, at 2.9× and
+   2.4× the negative. Everything else sits at or below `CDS12−` — which is itself a **hollow
+   ring** on the membrane, a drying artifact rather than signal — so no call can be made on it.
+3. **Every 1:10 dilution is at zero.** All four of the spot-test dilutions are at or below
+   background, which is internally consistent: they are the same materials as the stronger spots,
+   ten times more dilute. It also means the **10/16 spot test was run with material at or below
+   the detection floor of this blot**.
 
 **The `e281 FT1` positive is the useful one.** The 10/10 Ni-NTA run failed with blank elutions and
 a flow-through that matched the load
@@ -126,8 +130,9 @@ Two independent assays now point the same way for `e1`.
 
 - [x] Membrane and layout photographs archived → [`data/assays/1019_dotblot/`](../../data/assays/1019_dotblot/)
 - [x] Spot intensities measured and tabulated → [`code/output/1019_dotblot/spot_intensities.tsv`](../../code/output/1019_dotblot/spot_intensities.tsv)
+- [x] Annotated figure → [`code/output/1019_dotblot/fig_dotblot_annotated.png`](../../code/output/1019_dotblot/fig_dotblot_annotated.png)
 - [x] Layout transcribed from the hand-drawn sheet (orientation confirmed with Alex)
-- [ ] Probe / substrate identity and catalogue numbers → `==UNDONE==`
+- [ ] HRP conjugate / substrate catalogue numbers → `==UNDONE==`
 - [ ] Spotting volume per dot → `==UNDONE: not recorded.==`
 - [ ] Blocker concentration → `==UNDONE: illegible on the sheet.==`
 - [ ] Re-run with a BL21 empty-vector lysate and the positive control at an edge → `==UNDONE==`
@@ -135,7 +140,7 @@ Two independent assays now point the same way for `e1`.
 ## Open items
 
 - `==CONFIRM: who ran this blot. Listed as Alex because he supplied the images; the sheet carries no author line.==`
-- `==CONFIRM: the probe and substrate used, and the blocker percentage.==`
+- `==CONFIRM: the conjugate and substrate used, and the blocker percentage.==`
 - `==CONFIRM: that e281 FT1 is the flow-through from the 10/10 Ni-NTA run.==`
 - `==UNDONE: the e281 capture problem. If e281 is in the flow-through, the Ni-NTA conditions are the thing to change — imidazole in the load, binding time, or resin choice — not the expression.==`
 - `==UNDONE: no BL21 empty-vector control anywhere in the protein work.==`

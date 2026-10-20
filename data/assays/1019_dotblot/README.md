@@ -29,12 +29,15 @@ so it validates the chemistry but is not a quantitative reference.
 ## What the blot shows
 
 Quantified by [`code/1019_dotblot/quantify_dotblot.py`](../../../code/1019_dotblot/quantify_dotblot.py)
-→ [`code/output/1019_dotblot/spot_intensities.tsv`](../../../code/output/1019_dotblot/spot_intensities.tsv).
+→ [`code/output/1019_dotblot/spot_intensities.tsv`](../../../code/output/1019_dotblot/spot_intensities.tsv),
+annotated figure at
+[`code/output/1019_dotblot/fig_dotblot_annotated.png`](../../../code/output/1019_dotblot/fig_dotblot_annotated.png).
 
-The positive control is 16× the negative, so the His-tag probe and the development step both
-worked. **Only two samples clear the negative control:** `e281 FT1` (2.6×) and the `e1` rough
-lysate (2.2×). Everything else sits at or below `CDS12−`, which is itself a hollow drying ring
-rather than signal. All four 1:10 spot-test dilutions are under detection.
+The positive control is ~18× the negative, so the anti-His HRP conjugate and the development step
+both worked. Calling a spot only when it reaches **2× the negative control**, **just two clear it**:
+`e281 FT1` (2.9×) and the `e1` rough lysate (2.4×). `CDS12+` lands at 1.1×, inside the noise.
+Everything else sits at or below `CDS12−`, which is itself a hollow drying ring rather than signal,
+and all four 1:10 spot-test dilutions are at background.
 
 The `e281 FT1` positive is the informative one: it says `e281` **was expressed and failed to bind
 the Ni-NTA column**, which reframes the failed 10/10 purification
