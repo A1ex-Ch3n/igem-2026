@@ -4,12 +4,32 @@
 
 ## Project at a glance
 
-- **Goal:** discover novel *Pseudomonas* phages from local soil; sequence both the bacterial hosts and the recovered phages; build a host-range matrix.
-- **Three parallel sequencing tracks** + an iterative plaque assay — see [`scheme/2026-06-04_confirmed_scheme_CLAUDE.md`](scheme/2026-06-04_confirmed_scheme_CLAUDE.md) for the dated, sample-by-sample record + pipeline overview, or [`scheme/2026-06-04_confirmed_scheme.md`](scheme/2026-06-04_confirmed_scheme.md) for Alex's original short version.
-- **Active dates so far:** 2026-05-18 (kickoff) → ongoing. See [`lab_notebook/digitalized/README.md`](lab_notebook/digitalized/README.md) for the chronological table of contents.
-- **Where the science stands:** the 9-2-1 Φ8 phage is assembled and annotated ([`code/0708_phage_assembly/`](code/0708_phage_assembly/)); its receptor-binding protein is a **β-helix depolymerase**, so the receptor is **LPS sugar, not a protein** — which is why the protein–protein binding screen was retired ([`documents/2026-07-13_why_protein_protein_binding_fails.qmd`](documents/2026-07-13_why_protein_protein_binding_fails.qmd)). The fiber to clone is **CDS_0011** ([`code/0716_espinoza_fiber_construct/`](code/0716_espinoza_fiber_construct/)).
+- **Goal:** discover novel *Pseudomonas* phages from local soil; sequence both the bacterial hosts
+  and the recovered phages; work out what sets the phage's host range.
+- **Central hypothesis, in the PI's words:** in capsulated bacteria the **depolymerase substrate
+  range**, not RBP identity, sets the ceiling on host range, and today's narrow specificity is
+  derived from a broader ancestral activity. This is why the project moved from a protein–protein
+  binding screen to ancestral reconstruction of the phage's GH5 enzyme.
+- **Active dates:** 2026-05-18 (kickoff) → **2026-10-19 (final bench day)**. 63 digitized notebook
+  entries; see [`lab_notebook/digitalized/README.md`](lab_notebook/digitalized/README.md).
+- **Published:** the three host genomes are announced in *Microbiology Resource Announcements*,
+  **doi [10.1128/mra.00793-26](https://doi.org/10.1128/mra.00793-26)** (published 2026-09-04,
+  undergraduate first author). Isolates 8-5-2 / 9-2-1 / 8-10-2; assemblies GCA_059295255.1,
+  GCA_059295275.1, GCA_059295235.1 (BioProject PRJNA1482863); reads under PRJNA1483221.
 
-## ⚠️ Two conventions worth knowing before you read anything
+**Where the science stands.** The 9-2-1 Φ8 phage is assembled and annotated
+([`code/0708_phage_assembly/`](code/0708_phage_assembly/)): ~62 kb, 80 CDS, no database match,
+zero virulence and zero antibiotic-resistance genes. Its receptor-binding apparatus is a
+**β-helix depolymerase**, so the receptor is **LPS sugar, not a protein** — which is why the
+protein–protein binding screen was retired
+([`documents/2026-07-13_why_protein_protein_binding_fails.qmd`](documents/2026-07-13_why_protein_protein_binding_fails.qmd)).
+Six proteins were cloned into pET-28a and expressed in *E. coli*: three wild-type phage proteins
+and three computationally reconstructed ancestors of the GH5 enzyme. Expression is **partly
+evidenced and not yet confirmed by size** — the 2026-10-19 anti-His dot blot
+([`lab_notebook/digitalized/2026-10-19_dot-blot-his-tag.md`](lab_notebook/digitalized/2026-10-19_dot-blot-his-tag.md))
+is the furthest the wet lab got.
+
+## ⚠️ Three conventions worth knowing before you read anything
 
 **1. Phage CDS numbering — use Prof. Espinoza's `UUAIURNK_` index.** The 9-2-1 Φ8 genome was
 annotated twice, and the two assemblies are **reverse-oriented**, so the CDS numbers run opposite
@@ -18,7 +38,14 @@ annotated twice, and the two assemblies are **reverse-oriented**, so the CDS num
 [`code/0713_espinoza_structural_mapping/cds_lookup.tsv`](code/0713_espinoza_structural_mapping/cds_lookup.tsv).
 Anything written before 2026-07-16 may still use the old numbers.
 
-**2. File naming.**
+**2. Phage genome topology — report it as circular.** Our own assembly reads as linear with a
+77 bp direct terminal repeat; the PI's reads as circular. On **2026-10-18** it was settled that
+the PI's assembly governs for anything outward-facing: **circular, 62,339 bp** (62,416 bp before
+the 77 bp overhang is trimmed). Documents written before that date still say linear and carry a
+dated footer saying so. The evidence on both sides, and what was never tested, is in
+[`documents/2026-10-18_genome_topology_conflict.md`](documents/2026-10-18_genome_topology_conflict.md).
+
+**3. File naming.**
 
 | where | pattern | example |
 |---|---|---|
@@ -46,7 +73,7 @@ iGEM 26/
 │       ├── README.md          ← chronological TOC
 │       ├── typos.md           ← cataloged handwritten corrections
 │       ├── images/            ← extracted page images (LFS for big PNGs)
-│       └── 2026-MM-DD_*.md    ← 14 entries (2026-05-18 → 2026-06-05)
+│       └── 2026-MM-DD_*.md    ← 63 entries (2026-05-18 → 2026-10-19)
 │
 ├── scheme/                    ← project-level "what we did + why" docs
 │   ├── 2026-06-04_confirmed_scheme.md         ← Alex's original short version
@@ -67,7 +94,21 @@ iGEM 26/
 │   ├── 0712_phage_rbp_detect/      ← RBP Detect + fold: the tail spikes are β-helix depolymerases
 │   ├── 0713_espinoza_structural_mapping/   ← PI's virion map + the CDS-numbering conversion table
 │   ├── 0716_espinoza_fiber_construct/      ← which piece of CDS_0011 to clone (plasmid #1)
+│   ├── 0727_o_antigen_comparison/  ← three strains, three non-homologous O-antigen cassettes
+│   ├── 0729_prof_figures/, 0730_synteny_group_d/  ← figures for the PI; novel podovirus, group-D-like
+│   ├── 0915/0929/1010_gel_annotation.ipynb  ← SDS-PAGE densitometry across the expression rounds
+│   ├── 1010_resistant_mutant_comparison/    ← WGS of two Φ8-resistant picks vs their parents
+│   ├── 1015/1016_spot_test*        ← dilution series and the first activity readout
+│   ├── 1018_construct_structures/  ← ESMFold + PyMOL comparison of the six expressed parts
+│   ├── 1018_prof_asr_zymctrl/      ← the PI's ancestral reconstruction and ZymCTRL scoring
+│   ├── 1019_dotblot/               ← the final experiment: anti-His dot blot quantification
 │   └── output/                     ← every result, mirroring the dir names above
+│
+├── software/                  ← the packaged, reusable tools (MIT; see software/README.md)
+│   ├── phagecheck/            ← DTR-vs-circularity from read coverage; β-helix call from a PDB
+│   ├── gelquant/, olocus/, phageresist/   ← gel densitometry, O-antigen locus comparison,
+│   │                                        resistant-mutant workflow
+│   └── benchmarks/            ← includes the retired binding screen, published as a negative result
 │
 ├── documents/                 ← write-ups for humans (YYYY-MM-DD_slug): findings, safety
 │                                 drafts, PI notes, rendered .qmd → .html/.pdf reports
@@ -78,7 +119,9 @@ iGEM 26/
 │   │                                  the PI's AlphaFold3 folds (bulk files on disk, not in git)
 │   ├── processed_genome/            ← extracted receptors + phage-binding screen
 │   ├── metagenomes/                 ← MG08 / MG09 predicted proteomes
-│   ├── assays/                      ← OD/phage growth data (0529 OD, 0624/0625 od600)
+│   ├── assays/                      ← OD/growth data plus every protein assay: 0915/0929/1001/1010
+│   │                                  SDS-PAGE, 1015 Bradford, 1016 spot test, 1019 dot blot
+│   ├── expressed_proteins/          ← the six pET-28a constructs as ordered
 │   ├── dna_extraction_inventory.md  ← bacteria/phage/DNA storage inventory
 │   └── week_3_bacteria_list.md      ← strains queued for week 3
 │
@@ -96,15 +139,61 @@ every `code/output/` deliverable is reproducible by re-running its script over t
 
 ## How to read this repo
 
-1. **For the WHY + WHAT (per day)** — start with [`scheme/2026-06-04_confirmed_scheme_CLAUDE.md`](scheme/2026-06-04_confirmed_scheme_CLAUDE.md). Detailed timeline with samples + decisions + pipeline overview of each track.
-2. **For the HOW (per procedure)** — [`protocol/md/README.md`](protocol/md/README.md). 23 protocols organized as media / techniques / workflows.
-3. **For raw notebook entries** — [`lab_notebook/digitalized/README.md`](lab_notebook/digitalized/README.md). One markdown file per dated entry.
-4. **For the dry-lab story** — read these in order; each analysis dir's own `README.md` has the detail:
-   - [`documents/2026-07-05_essential_evidence_map.md`](documents/2026-07-05_essential_evidence_map.md) — what we actually know vs. assume
-   - [`documents/2026-07-13_why_protein_protein_binding_fails.qmd`](documents/2026-07-13_why_protein_protein_binding_fails.qmd) — **why the RBP × receptor folding screen was retired.** It was run (7,182 pairs) and a 9-fold control test showed the score reads protein size, not binding. Don't re-attempt it; see [`code/0703_phage_host_matrix/`](code/0703_phage_host_matrix/)
-   - [`code/0712_phage_rbp_detect/README.md`](code/0712_phage_rbp_detect/README.md) — the tail spikes are β-helix depolymerases → the receptor is LPS **sugar**
-   - [`code/0716_espinoza_fiber_construct/README.md`](code/0716_espinoza_fiber_construct/README.md) — the current front line: which piece of CDS_0011 goes into plasmid #1
-5. **For a specific assay** — `code/<MMDD>_<topic>.ipynb`, e.g. [`code/0605_quantification.ipynb`](code/0605_quantification.ipynb) (Qubit DNA quant).
+**Start here.** The canonical, cross-linked index of every result is the pair of synthesis
+documents — same numbers, same figures, one in Traditional Chinese and one in English:
+
+- [`documents/2026-07-28_results_synthesis.qmd`](documents/2026-07-28_results_synthesis.qmd) (中文)
+- [`documents/2026-07-29_results_synthesis_EN.qmd`](documents/2026-07-29_results_synthesis_EN.qmd) (English)
+
+They carry a 53-row results table with an evidence grade on every row, the full O-antigen
+analysis, and a "how each figure was made" note. Read one of those before re-deriving anything.
+Both predate 2026-10-18 and carry dated footers where later work superseded them.
+
+Then, by what you need:
+
+1. **The WHY + WHAT, per day** — [`scheme/2026-06-04_confirmed_scheme_CLAUDE.md`](scheme/2026-06-04_confirmed_scheme_CLAUDE.md).
+   Timeline with samples, decisions and a pipeline overview of each track.
+2. **The HOW, per procedure** — [`protocol/md/README.md`](protocol/md/README.md). 23 protocols as
+   media / techniques / workflows.
+3. **Raw notebook entries** — [`lab_notebook/digitalized/README.md`](lab_notebook/digitalized/README.md).
+   One markdown file per dated entry; open questions are marked `==CONFIRM==` / `==UNDONE==`.
+4. **The dry-lab story**, in order:
+   - [`documents/2026-07-05_essential_evidence_map.md`](documents/2026-07-05_essential_evidence_map.md) — what we know vs. assume
+   - [`documents/2026-07-13_why_protein_protein_binding_fails.qmd`](documents/2026-07-13_why_protein_protein_binding_fails.qmd) — **why the RBP × receptor folding screen was retired.** It ran over 7,182 pairs and a 9-fold control test showed the score reads protein size, not binding. Do not re-attempt it
+   - [`code/0712_phage_rbp_detect/README.md`](code/0712_phage_rbp_detect/README.md) — the tail spikes are β-helix depolymerases, so the receptor is LPS **sugar**
+   - [`code/0727_o_antigen_comparison/`](code/0727_o_antigen_comparison/) — three ANI-distinct strains carry three non-homologous O-antigen cassettes in the same `ihfB`-flanked slot
+   - [`code/1018_prof_asr_zymctrl/`](code/1018_prof_asr_zymctrl/) — the ancestral GH5 reconstruction the expression work is built on
+5. **The protein work and what it does and does not show** — the gels in
+   `code/*_gel_annotation.ipynb` (9/15 inconclusive, 9/29 two unassigned bands, 10/10 Ni-NTA
+   failed), then [`code/1016_spot_test_result.ipynb`](code/1016_spot_test_result.ipynb) and
+   finally [`lab_notebook/digitalized/2026-10-19_dot-blot-his-tag.md`](lab_notebook/digitalized/2026-10-19_dot-blot-his-tag.md).
+   **No construct has been confirmed by size**, and there is still no untransformed BL21(DE3)
+   control lane anywhere in the protein work.
+6. **The Registry parts** — [`documents/2026-10-18_registry_part_drafts/`](documents/2026-10-18_registry_part_drafts/).
+   `paste/` holds the exact ASCII text that went onto registry.igem.org,
+   `live_snapshot_1019/` the verbatim state before the last edit round, and
+   [`REGISTRY_APPLIED.md`](documents/2026-10-18_registry_part_drafts/REGISTRY_APPLIED.md) records
+   what is applied and what is still outstanding.
+7. **A specific assay** — `code/<MMDD>_<topic>.ipynb`, e.g.
+   [`code/0605_quantification.ipynb`](code/0605_quantification.ipynb) (Qubit DNA quant).
+
+## State at the 2026-10-21 freeze
+
+**Done:** the MRA paper is published; six Registry parts exist with full documentation; the wiki
+is live; the Attributions Form is submitted; `software/` is packaged under MIT with tests.
+
+**Known-outstanding**, recorded rather than hidden:
+
+- Two Registry **Functional Descriptions** still need editing, and the parts are still in
+  **Draft** — see `REGISTRY_APPLIED.md`. Sequence, authorship and licence lock permanently at
+  *Send for Screening*.
+- The **Judging Form** has not been saved; its abstract needs the species correction described in
+  [`documents/2026-10-18_judging_form_draft.md`](documents/2026-10-18_judging_form_draft.md).
+- **Induction temperature** is recorded as ~30 °C on the part pages, but the notebook says 37 °C
+  for 2026-09-10 and nothing for the 09-15 and 09-27 rounds. Unreconciled on purpose.
+- Never done: **CheckV**, formal phage taxonomy (`terL` unannotated), and the **9-6-2 Φ8** genome.
+- The 2026-10-16 spot test did **not** settle R1 resistance — Φ8 gave no clearing even on the
+  parent strains.
 
 ## Git LFS
 
