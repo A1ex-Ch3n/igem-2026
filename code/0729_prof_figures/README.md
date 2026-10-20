@@ -17,6 +17,16 @@ python code/0729_prof_figures/render_enzymatic_domains.py   # Q6
 Outputs → [`../output/0729_prof_figures/`](../output/0729_prof_figures/);
 individual PyMOL / pyCirclize renders land in `output/.../panels/`.
 
+⚠️ **`output/.../panels/` cannot be regenerated from a fresh clone.** The
+directory is gitignored (`.gitignore:61`) on the reasoning that the panels are
+intermediates you can re-render — but `render_enzymatic_domains.py` reads the
+PI's AlphaFold3 folds from `data/phage_genome/9-2-1/folds_espinoza/`, and that
+is gitignored too (`.gitignore:77`). So a clone has neither the panels nor the
+inputs that would rebuild them. Anyone who needs a single panel —
+`cds0011_trimer_domains.png` is the one the wiki's Engineering page asks for —
+has to be sent the file, or be given the AF3 folds first. Found 2026-10-20 when
+the wiki session could not find a panel this README points at.
+
 ## Q3 — `fig_bacterial_genomes.{png,svg}`
 
 > *Prepare a diagram of the bacterial genomes we sequenced.*
@@ -114,3 +124,6 @@ orientation + tail-module zoom, superseding the mirrored 0708 figure), Q6
 (four-panel AF3 domain figure, with the CDS_0011-vs-CDS_0012 scope ambiguity
 resolved in the labels). CDS counts switched from .gbff feature counts to
 Bakta's summary .txt after finding a consistent +4 sORF discrepancy.*
+*Log — 2026-10-20: recorded that the `panels/` directory is not reproducible from
+a clone, because the AF3 folds it renders from are gitignored as well. The three
+CDS_0011 panels were handed over as files instead.*
