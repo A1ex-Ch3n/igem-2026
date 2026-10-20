@@ -15,6 +15,21 @@
 **Functional description（設計意圖）：** 噬菌體 GH5 glycoside hydrolase 的重建祖先，是我們三
 個之中離現代酵素最遠的一個，用來測試祖先型酵素是否有**更廣的受質範圍**。
 
+> **Registry「Functional Description」欄位 —— 末句，2026-10-19 更新。**
+> `registry.igem.org/parts/bba-26lhlslw` 線上版本結尾是 *"One purification of this construct was
+> attempted and failed; see the documentation entries."*，現在不完整了 —— blot 說明了失敗原因。
+> 改成：
+>
+> > One purification of this construct was attempted and failed, but an anti-His dot blot on
+> > 2026-10-19 found the flow-through positive at 2.9x the negative control, indicating the
+> > protein was expressed and did not bind the resin. See the documentation entries.
+>
+> 另外兩個 Documentation **標題**也要改：
+> - Experiment：*"Cloning, and a failed Ni-NTA purification (2026-10-10)"* →
+>   **"Cloning, a failed Ni-NTA purification, and the dot blot that explains it"**
+> - Characterisation：*"First activity data, plus one documented failed purification"* →
+>   **"First activity data, and anti-His evidence that the protein was expressed"**
+
 ---
 
 ## design

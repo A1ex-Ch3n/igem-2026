@@ -15,6 +15,14 @@
 **Functional description（設計意圖）：** 噬菌體 GH5 glycoside hydrolase 的重建祖先，用來測試
 祖先型酵素是否比現代、已特化的版本有**更廣的受質範圍**。
 
+> **Registry「Functional Description」欄位 —— 末句，2026-10-19 更新。**
+> `registry.igem.org/parts/bba-26twex42` 線上版本結尾是
+> *"Expression has not been confirmed; see the documentation entries."*，已經過時。改成：
+>
+> > Anti-His dot blot on 2026-10-19 gave a positive signal for this construct's induced lysate,
+> > at 2.4x the negative control; the product has not been assigned by size. See the
+> > documentation entries.
+
 ---
 
 ## design

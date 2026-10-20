@@ -15,6 +15,14 @@
 **Functional description（設計意圖）：** 噬菌體 GH5 glycoside hydrolase 的重建祖先，比 node 1
 更遠離現代酵素，用來測試祖先型酵素是否有**更廣的受質範圍**。
 
+> **Registry「Functional Description」欄位 —— 末句，2026-10-19。**
+> `registry.igem.org/parts/bba-26ek89vw` 線上版本結尾是 *"Expression has not been demonstrated;
+> see the documentation entries."*，**仍然正確**。可選的加強版，把它從孤立的陰性變成同膜對照：
+>
+> > Expression has not been demonstrated: on the 2026-10-19 anti-His dot blot this construct
+> > gave no signal on a membrane where two sibling constructs were positive. See the
+> > documentation entries.
+
 ---
 
 ## design

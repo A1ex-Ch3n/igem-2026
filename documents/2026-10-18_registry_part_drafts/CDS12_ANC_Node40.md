@@ -14,6 +14,15 @@
 glycoside hydrolase, more distant from the modern enzyme than node 1, made to test whether an
 ancestral enzyme has a **broader substrate range** than its modern descendant.
 
+> **Registry "Functional Description" field — closing sentence, 2026-10-19.**
+> The live field on `registry.igem.org/parts/bba-26ek89vw` ends *"Expression has not been
+> demonstrated; see the documentation entries."* That is **still accurate**. Optional
+> strengthening, to make it a like-for-like negative rather than an isolated one:
+>
+> > Expression has not been demonstrated: on the 2026-10-19 anti-His dot blot this construct
+> > gave no signal on a membrane where two sibling constructs were positive. See the
+> > documentation entries.
+
 ---
 
 ## design

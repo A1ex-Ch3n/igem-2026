@@ -14,6 +14,14 @@
 glycoside hydrolase, made to test whether an ancestral enzyme has a **broader substrate range**
 than the modern, host-specialised one.
 
+> **Registry "Functional Description" field — closing sentence, updated 2026-10-19.**
+> The live field on `registry.igem.org/parts/bba-26twex42` ends *"Expression has not been
+> confirmed; see the documentation entries."* That is now out of date. Replace with:
+>
+> > Anti-His dot blot on 2026-10-19 gave a positive signal for this construct's induced lysate,
+> > at 2.4x the negative control; the product has not been assigned by size. See the
+> > documentation entries.
+
 ---
 
 ## design
