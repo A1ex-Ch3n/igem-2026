@@ -276,7 +276,7 @@ frozen cells rather than a fresh transformation. Hands off directly to
   A260/A230 purity ratios exist for these plasmids.
 - **The 10-second heat shock is the step most likely to be got wrong**, because 30 s and 45 s are
   the numbers most people carry from other protocols. The document flags it; so does this note.
-- **The working-stock step (§4b) is the one that paid off.** Every autumn induction round started
+- **The working-stock step (§4b) is the one that paid off.** Every later induction round started
   from a scrape of these stocks rather than a fresh transformation.
 
 ## Checklist — where do the outputs go?

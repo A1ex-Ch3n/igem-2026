@@ -1,7 +1,7 @@
 ---
 title: Maintenance, IPTG Induction, BugBuster Extraction & SDS-PAGE (printed bench document)
 type: workflow
-purpose: The four-part printed protocol the team ran all autumn — daily passaging of transformed BL21(DE3), IPTG induction of a 100 mL culture, BugBuster lysis to a soluble protein fraction, and SDS-PAGE with Coomassie detection.
+purpose: The four-part printed protocol behind the expression work — daily passaging of transformed BL21(DE3), IPTG induction of a 100 mL culture, BugBuster lysis to a soluble protein fraction, and SDS-PAGE with Coomassie detection.
 references:
   - "[[plasmid_miniprep_transformation_seed_culture]]"
   - "[[bradford_protein_assay]]"
@@ -21,7 +21,7 @@ estimated_time: 1 day per induction round (overnight seed + ~4 h to induction + 
 # Maintenance, IPTG Induction, BugBuster Extraction & SDS-PAGE
 
 ## Purpose
-This is the **single printed document that carried the whole autumn expression workflow**, from
+This is the **single printed document that carried the whole expression workflow**, from
 keeping a transformed BL21(DE3) culture alive day to day, through IPTG induction, to a soluble
 lysate and a stained gel. It is the protocol behind the 9/15, 9/27–9/29, 10/10 and 10/14 bench days.
 Its input is a transformed working stock from [[plasmid_miniprep_transformation_seed_culture]]; its
