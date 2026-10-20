@@ -48,7 +48,12 @@ oval.
 | **row 2** | e40+ (1:10) | e40+ | e281+ (1:10) | **e281 FT1** |
 | **row 3** | CDS12− (negative) | e1+ (1:10) | **positive control** (wide) | — |
 
-- `CDS12−` is the negative control, taken **"from the white rack"** per the sheet.
+- `CDS12−` is the **uninduced** CDS12 culture, taken **"from the white rack"** per the sheet;
+  `+` throughout means IPTG-induced, following the convention written on the 2026-09-15 page
+  ("⊖ = non-induced, ⊕ = with IPTG") and confirmed by Alex 2026-10-19. It is therefore a
+  **matched** negative control — the same construct without induction — not a buffer blank,
+  which makes the `CDS12+` vs `CDS12−` pair a result in its own right: **no induction-dependent
+  His signal** for CDS12_WT (4.4 vs 3.9).
 - `e281 FT1` = the **flow-through**, fraction 1. `==CONFIRM: that FT1 means flow-through fraction 1, and which purification run it came from — presumably 10/10.==`
 - The **positive control was borrowed from a neighbouring lab and its identity is not known to
   us** (Alex, 2026-10-19). It therefore validates that the detection chemistry worked, but gives

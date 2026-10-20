@@ -77,9 +77,21 @@ This is the only construct we have attempted to purify, and **the purification f
   protein, not like a His6-tagged construct.
 - The crude 2026-09-29 gel had already shown no band at 42.3 kDa for this construct.
 
-The result cannot distinguish between no expression, insoluble product, and a dead column. The
-documented next step is **not** to purify again, but to run crude ±IPTG beside an untransformed
-BL21(DE3) lane, or an anti-His western.
+The 10-10 gel alone could not distinguish no expression, insoluble product, and a dead column.
+
+**Anti-His dot blot, 2026-10-19** (`lab_notebook/digitalized/2026-10-19_dot-blot-his-tag.md`;
+measured in `code/1019_dotblot/`). Eleven samples spotted directly onto membrane and probed with
+a single-step anti-His HRP conjugate. The positive control reached ~18x the negative control, so
+the chemistry worked. A dot blot reports **the His tag, not size or activity**, and this one's
+detection floor is high — every 1:10 dilution on the membrane fell to background — so absence of
+signal here is weak evidence of absence.
+
+**This part's flow-through (`e281 FT1`) was His-positive at 2.9x the negative control** — the
+second strongest signal on the membrane. That settles the three-way ambiguity above: **the
+protein was expressed and it did not bind the resin.** The failure is capture, not expression,
+so the next move is the binding conditions — imidazole carried into the load, binding time,
+resin choice — not another identical purification. An untransformed BL21(DE3) control lane is
+still outstanding.
 
 ## characterisation
 
@@ -108,8 +120,10 @@ no-effect line.
 - The `e281` preparation is a **crude lysate**, not purified protein, so the
   enzyme is not enriched in it. A weak effect here is **not** evidence that this variant is
   inactive; the experiment cannot tell a missing activity from a diluted one.
-- Expression of this part is still unconfirmed (see *experiment*), so there may be no enzyme
-  in the drop at all.
+- Expression is now supported: the `e281` flow-through was His-positive on the 2026-10-19 blot.
+  That does **not** rescue this result, because what was spotted here was the **1:10 crude
+  lysate**, and every 1:10 dilution fell below that blot's detection floor. How much enzyme was
+  in the drop remains unknown.
 - By contrast the `e1` preparation, the only one that had been through a purification step,
   suppressed colonies almost completely in the same experiment (median 1). That difference
   tracks the preparation, not necessarily the sequence.

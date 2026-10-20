@@ -64,8 +64,17 @@ SDS-PAGE on 2026-09-29 (`code/0929_gel_annotation.ipynb`): an **IPTG-dependent b
 carrying more total protein. This is the project's first induction-dependent signal, and this
 construct is first in the purification queue.
 
-Not yet done: untransformed-BL21(DE3) control lane, anti-His western, Ni-NTA purification of
-this construct.
+**Anti-His dot blot, 2026-10-19** (`lab_notebook/digitalized/2026-10-19_dot-blot-his-tag.md`;
+measured in `code/1019_dotblot/`). This construct was spotted as an induced/uninduced pair.
+**The two are indistinguishable** — 4.4 against 3.9, i.e. 1.1x, inside the noise — so this blot
+gives **no induction-dependent His signal** for this construct, on a membrane where the
+positive control reached ~18x the negative and two other constructs were positive. It does not
+overturn the 09-29 band, but it does not support it either, and the two results should be read
+together. The blot's detection floor is high (every 1:10 dilution on it fell to background) and
+a dot blot reports the His tag rather than the protein.
+
+Not yet done: untransformed-BL21(DE3) control lane, a size-resolved anti-His western, Ni-NTA
+purification of this construct.
 
 ## characterisation
 
@@ -74,7 +83,9 @@ this construct.
 - One induction-dependent band at the predicted mass (above). **Not** confirmed to be this
   protein: no western, no mass spectrometry, and the control lane that would exclude a host
   band is outstanding.
-- No purified protein, therefore **no activity data**.
+- No purified protein, therefore **no activity data**. This construct was also **not** included
+  in the 2026-10-16 spot test, so the ancestor-versus-modern comparison the design asks for
+  still has no modern arm.
 - Note for anyone reusing these parts: this protein and its three ancestral variants differ by
   at most 0.43 kDa (1.0 %) and **cannot be distinguished by SDS-PAGE**. Identity needs
   sequencing or intact-mass MS.

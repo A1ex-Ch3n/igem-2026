@@ -79,6 +79,14 @@ predicted mass — runs on prediction in the same experiment. A host protein is 
 consistent with the data, and the untransformed-BL21(DE3) control lane that would settle it is
 still outstanding.
 
+**Anti-His dot blot, 2026-10-19** (`lab_notebook/digitalized/2026-10-19_dot-blot-his-tag.md`;
+measured in `code/1019_dotblot/`). Eleven samples spotted directly onto membrane and probed with
+a single-step anti-His HRP conjugate; the positive control reached ~18x the negative control.
+**The `e1` rough lysate was His-positive at 2.4x the negative control**, the third strongest
+signal on the membrane. A dot blot reports **the His tag, not size**, so this supports
+expression of a tagged product but does not distinguish full-length protein from a truncation
+or from free tag — and so does not by itself assign the unexplained 45-50 kDa band.
+
 ## characterisation
 
 **First activity data, 2026-10-16 — a positive but preliminary signal.**
@@ -107,9 +115,10 @@ plate**. On that scale the medians are **Φ8 0 %, `e1` 12 %, `e281` 53 %, `e40` 
 **What this does and does not establish.**
 - It is the first evidence that the `e1` preparation carries an activity against *Pseudomonas*,
   and the strongest signal of the three ancestral variants.
-- It does **not** identify the active agent as this protein. Expression is still unconfirmed
-  (see *experiment*), and the elution buffer the preparation sits in (imidazole) was not
-  spotted on its own.
+- It does **not** identify the active agent as this protein. Expression now has positive
+  evidence — the `e1` rough lysate was His-positive at 2.4x on the 2026-10-19 blot — but a His
+  tag in the lysate does not make this protein the active species, and the elution buffer the
+  preparation sits in (imidazole) was not spotted on its own.
 - **The largest remaining confound is phage carried over from the Φ8 stock.** Across the seven
   strains `e1` tracks the phage almost exactly — both fall below 40 % on six strains, and the
   single strain where the phage failed (9-1-1, at 157 %) is also the one where `e1` failed
@@ -141,7 +150,9 @@ phage depolymerase to compare against a modern one.
 **Limitations.**
 - A reconstructed sequence is a **hypothesis about a protein that no longer exists**; it is not
   evidence about any real ancestral phage.
-- No expression confirmed, no activity data, and the one observed band is unassigned.
+- Expression is supported by anti-His signal (2026-10-19), but the product has never been
+  assigned by size: the 45-50 kDa band remains unexplained, and a dot blot cannot tell
+  full-length protein from a truncation or from free tag.
 - The non-optimised, mammalian-biased codon usage is a live expression risk.
 - The structural evidence is a single-sequence model; it says the fold survived reconstruction,
   not that the enzyme works.

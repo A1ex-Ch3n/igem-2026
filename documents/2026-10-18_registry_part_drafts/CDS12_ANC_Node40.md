@@ -73,6 +73,14 @@ band; try Rosetta or BL21-CodonPlus.
 experiment says nothing about it. No usable lane has been run since. In the project's
 expression plan it is **batch 2**, behind CDS12_WT and `e1`.
 
+**Anti-His dot blot, 2026-10-19** (`lab_notebook/digitalized/2026-10-19_dot-blot-his-tag.md`;
+measured in `code/1019_dotblot/`). `e40` was spotted twice, as induced rough lysate and at 1:10,
+and **gave no anti-His signal either time** (-0.2 and 0.7, both at background) — on the same
+membrane where `e1` and the `e281` flow-through were positive and the positive control reached
+~18x the negative. That is a like-for-like negative rather than an isolated one. It is still not
+proof of absence: this blot's detection floor is high, every 1:10 dilution on it fell to
+background, and a dot blot reports the His tag rather than the protein.
+
 ## characterisation
 
 **First activity data, 2026-10-16 — essentially negative for this variant.**
@@ -101,7 +109,8 @@ no-effect line.
   enzyme is not enriched in it. A weak effect here is **not** evidence that this variant is
   inactive; the experiment cannot tell a missing activity from a diluted one.
 - Expression of this part is still unconfirmed (see *experiment*), so there may be no enzyme
-  in the drop at all.
+  in the drop at all. On the 2026-10-19 anti-His dot blot `e40` gave no signal either as induced
+  rough lysate or at 1:10 (-0.2 and 0.7, both at background).
 - By contrast the `e1` preparation, the only one that had been through a purification step,
   suppressed colonies almost completely in the same experiment (median 1). That difference
   tracks the preparation, not necessarily the sequence.
@@ -128,7 +137,9 @@ polysaccharide the wild type cannot.
 ## discussion
 
 **Limitations.** A reconstructed sequence is a hypothesis about a protein that no longer
-exists. No expression, no activity, no interpretable gel lane yet. Non-optimised codon usage is
+exists. No expression, no activity, no interpretable gel lane yet — and on the 2026-10-19
+anti-His dot blot this is the one CDS12-family construct that gave no signal while `e1` and the
+`e281` flow-through were positive on the same membrane. Non-optimised codon usage is
 a live risk. The structural evidence is a single-sequence model: it shows the fold survived
 reconstruction, not that the enzyme works.
 

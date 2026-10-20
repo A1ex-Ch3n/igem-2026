@@ -58,7 +58,15 @@ kanamycin、16–20 °C IPTG 誘導 16 小時。
 **IPTG 依賴的 band**，落在預測的 41.8 kDa 上；未誘導 lane 雖然總蛋白更多卻沒有這條。這是全專案
 第一個誘導依賴訊號，因此這個 construct 排在純化隊列第一位。
 
-尚未完成：未轉形 BL21(DE3) 對照 lane、anti-His western、本 construct 的 Ni-NTA 純化。
+**Anti-His dot blot，2026-10-19**（`lab_notebook/digitalized/2026-10-19_dot-blot-his-tag.md`；
+量化在 `code/1019_dotblot/`）。這個 construct 以「誘導／未誘導」成對點在膜上，**兩者分不出
+來**——4.4 對 3.9，即 1.1 倍，落在雜訊裡——所以這張 blot 對本 construct **沒有給出誘導依賴的
+His 訊號**；而同一張膜上陽性對照達到陰性的約 18 倍，另外兩個 construct 也是陽性。這不推翻
+09-29 那條 band，但也不支持它，兩個結果應該並讀。該 blot 偵測下限偏高（膜上所有 1:10 稀釋都掉
+到背景），而且 dot blot 驗的是 His tag 不是蛋白本身。
+
+尚未完成：未轉形 BL21(DE3) 對照 lane、能分離大小的 anti-His western、本 construct 的 Ni-NTA
+純化。
 
 ## characterisation
 
@@ -66,7 +74,8 @@ kanamycin、16–20 °C IPTG 誘導 16 小時。
 
 - 一條落在預測質量上的誘導依賴 band（見上）。**尚未確認**就是這個蛋白：沒有 western、沒有質譜，
   而且能排除宿主蛋白的對照 lane 還沒跑。
-- 沒有純化蛋白，因此**沒有活性資料**。
+- 沒有純化蛋白，因此**沒有活性資料**。這個 construct 也**沒有**被納入 2026-10-16 的 spot
+  test，所以設計上要求的「祖先 vs 現代」比較至今仍然缺少現代那一側。
 - 給重用者的提醒：本蛋白與三個祖先變體彼此質量差距最多 0.43 kDa（1.0%），
   **SDS-PAGE 無法區分**。要確認身分必須靠定序或 intact-mass MS。
 - **沒有納入 2026-10-16 的 spot test。** 那次是在 7 株 *Pseudomonas* 菌苔上，把三個祖先變體
