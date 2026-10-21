@@ -2,7 +2,7 @@
 """Redraw the PI's ZymCTRL perplexity panel from the scores he sent.
 
 He has the figure only as a raster and its x-axis labels overlap, so this
-rebuilds it from `perp.csv` (997 reconstructed nodes x 24 glycoside-hydrolase EC
+rebuilds it from `perp.csv` (998 reconstructed nodes x 24 glycoside-hydrolase EC
 classes, 2026-10-20) as a vector figure with readable labels.
 
 Two changes from his version, both to make the result legible rather than to
@@ -16,7 +16,7 @@ change it:
 Perplexity is ZymCTRL's, lower = the sequence looks more like what the model
 would write under that EC label.
 
-Input  : 1020_prof_response/perp.csv  (from Prof. Espinoza, 2026-10-20)
+Input  : documents/2026-10-20_prof_zymctrl/perp.csv  (from Prof. Espinoza, 2026-10-20)
 Output : code/output/1020_zymctrl_figure/fig_zymctrl_perplexity.{png,svg}
 """
 from __future__ import annotations
@@ -29,7 +29,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[2]
-CSV = ROOT / "1020_prof_response/perp.csv"
+CSV = ROOT / "documents/2026-10-20_prof_zymctrl/perp.csv"
 OUT = ROOT / "code/output/1020_zymctrl_figure"
 
 # the CDS_0012 -> root path, most recent first (the PI's labels are arbitrary
@@ -71,7 +71,10 @@ def main() -> None:
     ax.set_xticklabels([f"3.2.1.{e[2:]}" for e in order], rotation=45,
                        ha="right", fontsize=9)
     ax.set_ylabel("ZymCTRL perplexity\n(lower = more canonical for that EC)", fontsize=10)
-    ax.set_title("A   All 997 reconstructed nodes scored against 24 glycoside-hydrolase EC classes",
+    # Counted from the table rather than written in, so the title cannot drift
+    # from the file the way the first version did (it said 997 for 998 rows).
+    ax.set_title(f"A   All {len(data)} reconstructed nodes scored against "
+                 f"{len(ecs)} glycoside-hydrolase EC classes",
                  fontsize=12, fontweight="bold", loc="left")
     ax.grid(axis="y", alpha=0.25, linewidth=0.6)
     ax.set_axisbelow(True)
