@@ -93,3 +93,6 @@ documents/2026-09-24_paris_travel_reimbursement/receipts/
 code/output/1010_resistant_mutant_comparison/bam/
 data/bacteria_genome/**/*.fastq.gz
 data/bacteria_genome/**/*.fai
+
+# ===== Office lock files =====
+~$*
