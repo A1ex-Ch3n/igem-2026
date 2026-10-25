@@ -18,10 +18,7 @@ from matplotlib.patches import Polygon, Rectangle
 
 matplotlib.rcParams["font.family"] = ["Avenir Next", "Avenir", "DejaVu Sans"]
 
-OUT = Path(
-    "/private/tmp/claude-501/-Users-alexy-Desktop-iGEM-26/"
-    "77c93b6d-bdc5-452e-8971-b54893d1cd43/scratchpad/anim/adsorption"
-)
+OUT = Path(__file__).resolve().parents[2] / "code/output/1025_presentation_deck/adsorption"
 
 DARK = "#1C2B2B"
 TEAL = "#2D6A6A"
