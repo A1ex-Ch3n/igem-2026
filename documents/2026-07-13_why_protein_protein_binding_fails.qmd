@@ -185,8 +185,9 @@ indistinguishable, and score tracks complex length. Source: `code/output/0703_ph
 # Even if it worked, it is the wrong tool / 就算成功，也是錯的工具
 
 **EN.** On 2026-07-13 we folded the RBPs themselves (real MSA; single_sequence again gave pLDDT≈30
-garbage). The tail spikes are **right-handed β-helix depolymerases** — CDS_0016 (pLDDT **93**, H-bond
-period 16–18), CDS_0002 (pLDDT **82**, period 22–24; a depolymerase the annotation had missed). A
+garbage). The tail spikes are **right-handed β-helix depolymerases** — CDS_0016 (= canonical **CDS_0011 res 540–941**; pLDDT **93**, H-bond
+period 16–18), CDS_0002 (= canonical **CDS_0024**; pLDDT **82**, period 22–24; a depolymerase the
+annotation had missed). A
 depolymerase **degrades a polysaccharide**, so the phage's primary receptor is the **LPS O-antigen — a
 sugar**. Protein–protein docking has **no protein partner to model**; it was mismatched to the biology
 from the start. (`code/0712_phage_rbp_detect/fold_structure/CONCLUSIONS.md`)
