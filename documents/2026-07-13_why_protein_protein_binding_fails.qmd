@@ -35,6 +35,22 @@ and mapped in the last section.
 以及它教我們的事。所有引用的檔案在內文標註、並在最後一節彙整。
 :::
 
+::: {.callout-warning title="CDS numbering — read before quoting any number here / 編號對照"}
+**EN:** This document was written against **our own** Pharokka annotation (`FHABPWTM_` tags).
+Since 2026-07-16 the project's canonical numbering is **the PI's** (`UUAIURNK_` tags), which is
+what the wiki and the Registry use. The two agree on 77 of 80 CDS; the tail spike is one of the
+three that differ. Translation:
+
+| cited here | canonical | note |
+|---|---|---|
+| `CDS_0016` (402 aa) | **`CDS_0011` res 540–941** | our run split the PI's 941 aa tail spike in two; this is its C-terminal half, and it lies inside the Twist fragment (`CDS_0011` res 305–941) |
+| `CDS_0015` (547 aa) | **`CDS_0011` res 1–530** | the N-terminal half, our call running 17 aa long |
+| `CDS_0002` (650 aa) | **`CDS_0024`** | identical protein, still "hypothetical" in both annotations |
+
+Mapping and method: `code/1024_cds_numbering_map/`. **Quote the canonical numbering in anything
+outward-facing.** 原文保留未改，只加這張對照表。
+:::
+
 # TL;DR — the short answer / 一句話答案
 
 ::: {.callout-important}
@@ -176,7 +192,7 @@ sugar**. Protein–protein docking has **no protein partner to model**; it was m
 from the start. (`code/0712_phage_rbp_detect/fold_structure/CONCLUSIONS.md`)
 
 **中文.** 2026-07-13 我們改折 RBP 本身（真 MSA；single_sequence 又是 pLDDT≈30 垃圾）。tail spike 是**右手
-β-helix depolymerase**——CDS_0016（pLDDT **93**，氫鍵週期 16–18）、CDS_0002（pLDDT **82**，週期 22–24；
+β-helix depolymerase**——CDS_0016（＝正本 **CDS_0011 res 540–941**；pLDDT **93**，氫鍵週期 16–18）、CDS_0002（＝正本 **CDS_0024**；pLDDT **82**，週期 22–24；
 一個註解漏掉的 depolymerase）。depolymerase **分解的是多醣**，所以噬菌體的主要受體是 **LPS O-antigen——是醣**。
 蛋白–蛋白 docking **根本沒有蛋白 partner 可模擬**；從一開始就跟生物學錯配。
 （`code/0712_phage_rbp_detect/fold_structure/CONCLUSIONS.md`）
@@ -232,3 +248,5 @@ from the start. (`code/0712_phage_rbp_detect/fold_structure/CONCLUSIONS.md`)
 *Log — 2026-07-13：整合噬菌體 RBP×受體 binding 模擬的完整時間線與兩次對照組實驗。核心結論：跨界配對無 paired MSA →
 界面 ipTM 無訊號（兩種工具、兩次對照組證實）；且受體為 LPS O-antigen（醣），蛋白–蛋白 docking 本就錯配。
 Figure: `2026-07-13_fig_binding_controls.py` → `2026-07-13_binding_controls_comparison.png`. Render: `quarto render` (HTML / --to pdf).*
+
+*Log — 2026-10-24：加入 CDS 編號對照表（我們的 `FHABPWTM_` → 正本 `UUAIURNK_`）。80 個 CDS 有 77 個蛋白層級完全相同；本文引用的 CDS_0016 其實是正本 CDS_0011 的 C 端一半（res 540–941），CDS_0002 對應正本 CDS_0024。原文結論與數字未更動。對照方法與完整表格：`code/1024_cds_numbering_map/`。*

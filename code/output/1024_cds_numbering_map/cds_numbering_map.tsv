@@ -1,0 +1,81 @@
+ours	prof	relation	prof_residues	aa_len	our_product	prof_product
+FHABPWTM_CDS_0001	UUAIURNK_CDS_0025	identical protein	1-528	528	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0002	UUAIURNK_CDS_0024	identical protein	1-650	650	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0003	UUAIURNK_CDS_0023	identical protein	1-120	120	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0004	UUAIURNK_CDS_0022	identical protein	1-105	105	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0005	UUAIURNK_CDS_0021	identical protein	1-154	154	DNA methyltransferase	DNA methyltransferase
+FHABPWTM_CDS_0006	UUAIURNK_CDS_0020	identical protein	1-742	742	portal protein	portal protein
+FHABPWTM_CDS_0007	UUAIURNK_CDS_0019	identical protein	1-333	333	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0008	UUAIURNK_CDS_0018	identical protein	1-40	40	CsrA-like regulator	CsrA-like regulator
+FHABPWTM_CDS_0009	UUAIURNK_CDS_0017	identical protein	1-368	368	major head protein	major head protein
+FHABPWTM_CDS_0010	UUAIURNK_CDS_0016	identical protein	1-158	158	virion structural protein	virion structural protein
+FHABPWTM_CDS_0011	UUAIURNK_CDS_0015	identical protein	1-178	178	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0012	UUAIURNK_CDS_0014	identical protein	1-232	232	structural protein	structural protein
+FHABPWTM_CDS_0013	UUAIURNK_CDS_0013	identical protein	1-201	201	virion structural protein	virion structural protein
+FHABPWTM_CDS_0014	UUAIURNK_CDS_0012	identical protein	1-477	477	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0015	UUAIURNK_CDS_0011	our CDS covers the PI's ORF from its start and runs 17 aa past its end	1-530	547	tail spike protein	tail spike protein
+FHABPWTM_CDS_0016	UUAIURNK_CDS_0011	our CDS is part of the PI's longer ORF	540-941	402	tail spike protein	tail spike protein
+FHABPWTM_CDS_0017	UUAIURNK_CDS_0010	identical protein	1-917	917	tail protein	tail protein
+FHABPWTM_CDS_0018	UUAIURNK_CDS_0009	identical protein	1-118	118	tail fiber protein	tail fiber protein
+FHABPWTM_CDS_0019	UUAIURNK_CDS_0008	identical protein	1-577	577	internal virion protein	internal virion protein
+FHABPWTM_CDS_0020	UUAIURNK_CDS_0007	identical protein	1-212	212	virion structural protein	virion structural protein
+FHABPWTM_CDS_0021	UUAIURNK_CDS_0006	identical protein	1-144	144	acyl-CoA N-acyltransferase	acyl-CoA N-acyltransferase
+FHABPWTM_CDS_0022	UUAIURNK_CDS_0005	identical protein	1-379	379	virion structural protein	virion structural protein
+FHABPWTM_CDS_0023	UUAIURNK_CDS_0004	identical protein	1-121	121	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0024	UUAIURNK_CDS_0003	identical protein	1-425	425	virion structural protein	virion structural protein
+FHABPWTM_CDS_0025	UUAIURNK_CDS_0002	identical protein	1-37	37	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0026	UUAIURNK_CDS_0001	our CDS covers the PI's ORF from its start and runs 1673 aa past its end	1-2520	4193	DarB-like antirestriction	DarB-like antirestriction
+FHABPWTM_CDS_0027	UUAIURNK_CDS_0079	identical protein	1-48	48	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0028	UUAIURNK_CDS_0078	identical protein	1-197	197	endolysin	endolysin
+FHABPWTM_CDS_0029	UUAIURNK_CDS_0077	identical protein	1-120	120	hol-like chemotaxis	hol-like chemotaxis
+FHABPWTM_CDS_0030	UUAIURNK_CDS_0076	identical protein	1-106	106	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0031	UUAIURNK_CDS_0075	identical protein	1-123	123	Rz-like spanin	Rz-like spanin
+FHABPWTM_CDS_0032	UUAIURNK_CDS_0074	identical protein	1-54	54	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0033	UUAIURNK_CDS_0073	identical protein	1-396	396	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0034	UUAIURNK_CDS_0072	identical protein	1-32	32	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0035	UUAIURNK_CDS_0071	identical protein	1-42	42	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0036	UUAIURNK_CDS_0070	identical protein	1-86	86	excisionase	excisionase
+FHABPWTM_CDS_0037	UUAIURNK_CDS_0069	identical protein	1-100	100	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0038	UUAIURNK_CDS_0068	identical protein	1-57	57	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0039	UUAIURNK_CDS_0067	identical protein	1-147	147	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0040	UUAIURNK_CDS_0066	identical protein	1-79	79	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0041	UUAIURNK_CDS_0065	identical protein	1-152	152	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0042	UUAIURNK_CDS_0064	identical protein	1-33	33	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0043	UUAIURNK_CDS_0063	identical protein	1-233	233	RusA-like Holliday junction resolvase	RusA-like Holliday junction resolvase
+FHABPWTM_CDS_0044	UUAIURNK_CDS_0062	identical protein	1-71	71	excisionase and transcriptional regulator	excisionase and transcriptional regulator
+FHABPWTM_CDS_0045	UUAIURNK_CDS_0061	identical protein	1-566	566	RecE-like recombination exonuclease	RecE-like recombination exonuclease
+FHABPWTM_CDS_0046	UUAIURNK_CDS_0060	identical protein	1-236	236	Erf-like ssDNA annealing protein	Erf-like ssDNA annealing protein
+FHABPWTM_CDS_0047	UUAIURNK_CDS_0059	identical protein	1-225	225	transcriptional regulator	transcriptional regulator
+FHABPWTM_CDS_0048	UUAIURNK_CDS_0058	identical protein	1-115	115	transcriptional regulator	transcriptional regulator
+FHABPWTM_CDS_0049	UUAIURNK_CDS_0057	identical protein	1-145	145	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0050	UUAIURNK_CDS_0056	identical protein	1-377	377	exonuclease recombination-associated	exonuclease recombination-associated
+FHABPWTM_CDS_0051	UUAIURNK_CDS_0055	identical protein	1-33	33	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0052	UUAIURNK_CDS_0054	identical protein	1-109	109	NinB/ Orf homologous recombination mediator	NinB/ Orf homologous recombination mediator
+FHABPWTM_CDS_0053	UUAIURNK_CDS_0053	identical protein	1-119	119	Ref-like RecA filament endonuclease	Ref-like RecA filament endonuclease
+FHABPWTM_CDS_0054	UUAIURNK_CDS_0052	identical protein	1-153	153	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0055	UUAIURNK_CDS_0051	identical protein	1-248	248	2OG-Fe(II) oxygenase	2OG-Fe(II) oxygenase
+FHABPWTM_CDS_0056	UUAIURNK_CDS_0050	identical protein	1-82	82	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0057	UUAIURNK_CDS_0049	identical protein	1-78	78	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0058	UUAIURNK_CDS_0048	identical protein	1-232	232	replication initiation protein	replication initiation protein
+FHABPWTM_CDS_0059	UUAIURNK_CDS_0047	identical protein	1-334	334	DnaC-like helicase loader	DnaC-like helicase loader
+FHABPWTM_CDS_0060	UUAIURNK_CDS_0046	identical protein	1-154	154	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0061	UUAIURNK_CDS_0045	identical protein	1-60	60	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0062	UUAIURNK_CDS_0044	identical protein	1-68	68	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0063	UUAIURNK_CDS_0043	identical protein	1-112	112	DNA binding protein	DNA binding protein
+FHABPWTM_CDS_0064	UUAIURNK_CDS_0042	identical protein	1-293	293	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0065	UUAIURNK_CDS_0041	identical protein	1-165	165	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0066	UUAIURNK_CDS_0040	identical protein	1-52	52	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0067	UUAIURNK_CDS_0039	identical protein	1-161	161	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0068	UUAIURNK_CDS_0038	identical protein	1-45	45	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0069	UUAIURNK_CDS_0037	identical protein	1-65	65	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0070	UUAIURNK_CDS_0036	identical protein	1-48	48	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0071	UUAIURNK_CDS_0035	identical protein	1-210	210	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0072	UUAIURNK_CDS_0034	identical protein	1-89	89	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0073	UUAIURNK_CDS_0033	identical protein	1-187	187	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0074	UUAIURNK_CDS_0032	identical protein	1-109	109	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0075	UUAIURNK_CDS_0031	identical protein	1-118	118	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0076	UUAIURNK_CDS_0030	identical protein	1-43	43	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0077	UUAIURNK_CDS_0029	identical protein	1-44	44	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0078	UUAIURNK_CDS_0028	identical protein	1-77	77	hypothetical protein	hypothetical protein
+FHABPWTM_CDS_0079	UUAIURNK_CDS_0027	identical protein	1-245	245	terminase small subunit	terminase small subunit
+FHABPWTM_CDS_0080	UUAIURNK_CDS_0026	identical protein	1-128	128	hypothetical protein	hypothetical protein
