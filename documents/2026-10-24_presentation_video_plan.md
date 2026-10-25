@@ -18,15 +18,24 @@
 
 剩 4 天，做 10 分鐘以上的全動畫不實際：promo 只有 115 秒，就做了兩天。**建議 (c)**。
 
-**D2. 誰講、誰出鏡**
-- 一人講完，或每段換人講。
-- 要不要露臉（例如片頭隊員自我介紹、子母畫面）？出鏡的人都要知情同意，未滿 18 歲的要有監護人同意。
+**D2. 誰講、誰出鏡** — ✅ **已定（2026-10-24）：分兩階段。**
+- **階段 1**：Alex 一個人錄完整片旁白，先把整支片串起來。
+- **階段 2**：有時間再讓隊友重錄其中幾段換上去；真人出鏡的片段也放在這一階段，確定動畫和內容都齊了才加。
+- 所以**先當成方案 A（純投影片加旁白）來做**，真人開場和收尾是加分項，不是前提。這樣如果時間不夠，交出去的仍然是一支完整的片（Hamburg 證明純投影片可以拿 Best Presentation）。
+- 出鏡的人都要知情同意，未滿 18 歲的要有監護人同意。
 
 **D3. 配音** — ✅ **已定（2026-10-24）：隊員自己配音。**
 - 剪入的 promo 片段只用畫面，不用 ElevenLabs 配音，這樣不會牽涉新的 AI 素材。
 
-**D4. 目標長度** — ⚠️ 原本建議 10–12 分鐘，**看了 2025 數據後需要重談**（見 §3.4）。
-- 2025 年 395 支 Team Presentation 的中位數是 **14.5 分鐘**，四支 Best Presentation 得獎片都在 **13.7–15 分鐘**。
+**D4. 目標長度** — ✅ **已定（2026-10-24）：寫稿時瞄準 13.7–15 分鐘，以講清楚為準，不為了湊長度而灌水。**
+- 依據：2025 年 395 支的中位數 14.5 分鐘，四支得獎片 13.7–15 分鐘（§3.4）。
+- ⚠️ **但上限 900 秒是卡在檔案本身**，上傳器直接擋。2025 那些顯示 15.1 分的是 PeerTube 加了 iGEM Intro 之後的長度，不是他們交的檔案長度。
+- **所以成品檔案瞄準 13:30–14:30，不要壓到 14:50。** 約 1,700–1,800 字稿（130 wpm）。
+
+**D4b. 中文版** — 建議做成**中文 .vtt 字幕**，不要另錄中文配音。
+- 規則原文允許：`Captions will be generated in the same language as the video's audio. You may submit other languages below.` 所以中文字幕可以直接加掛在同一支投稿上。
+- 中文配音則不能取代英文旁白（`Narration is required to be in English.`），只能當作隊伍自己平台上的另一支片，成本高、對評分沒有幫助。
+- 中文 .vtt 可以從英文稿直接翻，排在所有事情之後做。
 
 **D5. 背景音樂** — ✅ **已定（2026-10-24）：用 Artlist 這類 stock 平台。**
 - 規則面沒問題。FAQ 原文：「Material released under CC0, CC BY, or a stock platform licence permitting free reuse is acceptable.」
@@ -35,11 +44,15 @@
   - (b) 寫信問 iGEM HQ，凍結後能否補登一筆，或只列片尾字卡是否就夠。
 - **待確認 Artlist 方案條款**：上傳到 video.igem.org（PeerTube，公開播放）是否在方案的授權範圍內；退訂後已下載的曲子是否仍有授權。
 
-**D6. 分工與時程**
-- 誰寫稿、誰做投影片、誰錄音、誰剪接上傳？各自的截止時間？倒推時程草案見第 7 節。
+**D6. 分工** — ✅ **已定（2026-10-24）：Alex + Claude 為主，隊友可能幫忙錄其中幾段。**
+- Claude：稿子、投影片內容、動畫、剪接腳本、上傳前自查。
+- Alex：定調、配音（階段 1 全片）、最後過稿、上傳。
+- 隊友：階段 2 的分段配音（可選）。
 
-**D7. 和 Judging Session 共用骨架嗎？**
-- Judging Session 在 11/13 07:35–08:00 PST，開頭有 5 分鐘 project overview。judge 會先看過這支片再進場。**建議**這支片的投影片當作母版，5 分鐘版本從裡面抽。
+**D7. 和 Judging Session 共用骨架** — ✅ **已定（2026-10-24）：共用。**
+- Judging Session 在 11/13 07:35–08:00 PST，開頭 5 分鐘 project overview，judge 會先看過這支片再進場（handbook p.11）。
+- 做法：這支片的投影片就是母版，5 分鐘版本直接從裡面抽，不另外做一套。
+- 附帶好處見 §3C 第 11 條：V1 的評審說「QA 才答得出來的問題，應該先寫進 wiki」。wiki 已凍結，**這支片是最後一次預先回答 judge 問題的機會**，而共用骨架會逼我們在寫稿時就想過那些問題。
 
 ---
 
@@ -260,12 +273,12 @@ p.14 judge 回饋範例：「Your video was great. I loved the paper artwork and
 
 ### 3.6 要討論的問題
 
-1. **長度**：依照 §3.4 改成 13–14.5 分鐘嗎？§3.5(a) 讓理由更充分：這支片要撐起 Project 的 9 題加上 Presentation 的 5 題。代價是稿子從約 1,400 字增加到約 1,700 字，而只剩 4 天。
-2. **證據主軸**：results 的重心放在 genomic / 計算結果，濕實驗講成 DBTL 加失敗分析。§3.5(c) 支持這個方向，但要避開「troubleshooting 清單」的陷阱。
-3. **故事線的圖像**：用 Φ8 的尾部或 depolymerase，還是用「從校園採樣到新噬菌體」的旅程？
-4. **幾個人講**：handbook 稱讚多人講。誰講哪一段？
-5. **要露臉嗎？**
-6. **PI 的工作怎麼標示**：每張相關投影片的角落都標，還是在章節卡上統一標？
+D1、D2、D4、D6、D7 已定（見 §1）。剩下的：
+
+1. **證據主軸**：results 的重心放在 genomic / 計算結果，濕實驗講成 DBTL 加失敗分析。§3.5(c) 和 §3C 第 4、12 條都支持這個方向，但要避開「troubleshooting 清單」的陷阱。**你同意就定案。**
+2. **故事線的圖像**：用 Φ8 的尾部或 depolymerase 的同一張渲染圖（Hamburg 式），還是用「從校園採樣到新噬菌體」的旅程？
+3. **PI 的工作怎麼標示**：每張相關投影片的角落都標，還是在章節卡上統一標？
+4. **ballot 級距的方向**（§3C）：麻煩在 iGEM 結果頁確認第一個數字是高分還是低分，這決定我們過去最弱的是哪一題。
 
 ---
 
@@ -430,6 +443,68 @@ p.14 judge 回饋範例：「Your video was great. I loved the paper artwork and
 
 ---
 
+## 3C. 過去兩年的評審回饋
+
+來源：Alex 2026-10-24 提供 Taipei-KCISLK-V3 與 Taipei-KCISLK-V1 兩年的 Presentation ballot 分布與六位評審的完整評語。兩年都拿到 Best Presentation 提名。**這是我們手上唯一一份「真的評審、真的對這批人的作品」的回饋，比任何通則都值錢。**
+
+### 分數怎麼讀
+
+兩年都是 6 位評審，每題的數字加起來都是 6，所以那是**各分數級距的人數分布**，不是分數本身。
+
+| 題目 | V3 | V1 |
+|---|---|---|
+| 目標 / 設計 / 結果 | 5, 1 | 2, 3, 1 |
+| 技術數據 | 1, 3, 2 | （該年未列） |
+| 視覺設計 | 1, 4, 1 | 3, 3 |
+| Engaging | 1, 4, 1 | 2, 2, 2 |
+| 出處標註 | 3, 2, 1 | 1, 2, 3 |
+
+⚠️ **級距的方向無法從貼上來的內容判斷**（第一個數字是最高分還是最低分）。看起來像是「從最高的非零級距往下排」，但沒有標籤可以確認。**這會影響我們判斷哪一題最弱，麻煩你在 iGEM 結果頁上看一下原始標籤。** 如果方向是從高到低，那兩年最弱的都是「出處標註」那題（V3 和 V1 的分布都最分散、最往後壓）。
+
+另外，V1 那年只有 4 題，沒有「技術數據」那一題 —— 可能是該年 ballot 不同，也可能是貼上時漏掉。
+
+你說的「總分 30 分，24 分及格」對得上公開量表：24/30 = 每題平均 4.8，而 4 分 = `Good work; complete`、5 分 = `Great work; complete with some impressive components`。**要過 24 就得大部分題目落在 5 分，也就是光做到「完整」不夠，要有讓評審記得住的東西。**
+
+### 重複出現的扣分主題
+
+把兩年十二則評語攤開，扣分的理由高度重複，而且**幾乎每一條都正中我們今年的弱點**。
+
+| # | 評審原話 | 來源 | 我們今年的風險 | 片子裡要做什麼 | §3B |
+|---|---|---|---|---|---|
+| 1 | 「the presentation was unclear. For example there was **no context for why** they were doing the work they presented. They just went straight into presenting the experimental work.」 | V3 #2 | 我們的題目要先解釋「為什麼宿主範圍窄是個問題」才有意義，很容易一開場就跳進基因體 | 開場 60–90 秒只講 why，第一張數據圖不要早於 2:00 | B1 |
+| 2 | 第一個例子舉了極罕見的疫苗副作用，和後面真正的需求脫節 ——「always try to pick the **most relevant examples**」 | V1 #4 | hook 如果用泛泛的抗藥性數字，和我們真正做的（有莢膜細菌的 depolymerase）接不起來 | hook 直接從「噬菌體療法卡在宿主範圍太窄」切入，不要用通用 AMR 統計 | D1 |
+| 3 | 「elaborate more on the **controls** for their measurement」 / 「reproducibility across **biological replicates**」/「improving the presentation of **gel electrophoresis** results」 | V3 #1, V3 #5, V1 #6 | **這是我們最大的風險。** 三次膠都沒有 BL21 空載體對照；spot test 沒有 buffer-only 對照；n=1 | 每張數據圖都明講對照是什麼；**沒有對照的就在畫面上寫出來**，不要讓評審自己發現 | B2, C4 |
+| 4 | 「still need **stronger quantitative data**… sensitivity, specificity, and reproducibility… clear **statistical analysis** and result's significance」 | V3 #5 | 濕實驗目前沒有可量化的結論 | 把定量重心放在基因體和計算結果（ANI、identity %、RMSD、pLDDT、read 支持度），這些我們有真數字 | B2 |
+| 5 | 「I would appreciate if it was **shown this limitation and how to overcome it**」 | V3 #3 | Ni-NTA 失敗、spot test inconclusive、topology 未定 | 限制不是躲，是**專門給一頁**，每條配一個「下一步怎麼解」 | D4 |
+| 6 | 「Remember to clearly **differentiate association with causation**.」 | V3 #3 | O-antigen 三套基因組 → 預測 Φ8 不會在 Strain 1/3 形成 plaque，**這是未驗證的預測** | 講成 prediction，畫面上標 `prediction, untested`，絕不講成結果 | E1 |
+| 7 | 「HP work was very thorough and exemplary… could have showcased it even more by explaining key takeaways **throughout** the wiki and their presentation **instead of having it confined to the HP section**」 | V3 #1 | 我們原本的大綱把 HP 塞在 9:15–10:15 一整塊 | HP 拆開：在相關的設計決定當下插一句「某某說了什麼，所以我們改成什麼」，最後只留一頁收束 | C6 |
+| 8 | 「be more detailed about the interviews with the experts and **what parts of these interviews made a change into your original project**」 | V1 #1 | HP 容易寫成「我們訪問了誰」清單 | 固定句型：**誰 → 說了什麼 → 我們改了哪一個具體決定** | C6 |
+| 9 | 「should be explained clearly that your method has **no potential harmful effect** on human beings and environment」/「I do miss some other **biosafety measures**」 | V1 #2, V1 #3 | 我們有 IBC 條件式核准、0 VFDB / 0 CARD、resistant-mutant 定序，但如果不講，評審會當作沒有 | 安全給一頁，講滿：IBC、VFDB/CARD、為什麼不會擴大宿主範圍 | C7 |
+| 10 | 「the **work mechanism** of your method was not clearly expressed」 | V1 #2 | depolymerase 怎麼作用在 O-antigen 上，是全片的核心機制 | 用 promo 的吸附 3D 動畫，機制講到讓非本行的人也懂 | B3, D2 |
+| 11 | 「Some of the **key questions that were brilliantly answered in the QA, should have already be addressed** in the wiki to avoid confusion in the first place.」 | V1 #4 | wiki 已凍結，改不了 | **這支片是最後一次預先回答 judge 問題的機會。** 寫稿時先列出「評審一定會問什麼」，在片中就答掉（見下） | D7 |
+| 12 | 「the proof of concept remains relatively simple, as it focuses on **the expression of the protein**. However, a **functional assay** would make it more convincing」 | V1 #6 | **一模一樣的處境**：我們也停在表達，depolymerase 活性 assay 沒做 | 誠實說「功能性 assay 是下一步」，並說明已經設計好的做法，不要假裝 proof of concept 已完成 | C3, D4 |
+| 13 | 「There should be a **better description of the parts** submitted to the Registry so that other teams can use these parts」 | V1 #5 | Registry 頁面已送出 | 片中點名 Registry part 編號，讓評審知道去哪看 | C2, C8 |
+| 14 | 「**Scientific names** on the wiki should be in italics」 | V1 #5 | 投影片上 *Pseudomonas*、*Gervaisevirus* 的排版 | 投影片模板直接把學名設成斜體，這是免費的分數 | B5 |
+
+### 兩年都被稱讚的地方 —— 要保住
+
+- **Judging Session 的表現**（V1 #1、V1 #4：「prepared even for the hardest questions」「beyond impressive」）。這是這批人的強項，而 Project 區塊的第 4 題正是現場答問。**影片不必把所有細節講完，留一些給現場。**
+- **把生物學概念用在真實問題上的創意**（V3 #3）。我們的中心假說本身就有這個性質，要講出來。
+- **筆記本詳細**（V1 #1）。notebook 頁面值得在片中提一句。
+
+### 從評語反推：評審今年一定會問的問題
+
+依據第 11 條，這些要在片中先答掉：
+
+1. 你們怎麼知道那個蛋白真的表達出來了？對照在哪裡？（→ 誠實講 Ni-NTA 失敗和缺對照）
+2. depolymerase 的活性測了嗎？（→ 沒有，這是下一步）
+3. 基因體是線狀還是環狀？（→ 兩種證據並陳，說明未定）
+4. 哪些是學生做的，哪些是 PI 做的？（→ 畫面標註）
+5. O-antigen 那個預測驗證了嗎？（→ 沒有，是預測）
+6. 分類學依據是什麼？（→ Foldseek 結構比對，暫定）
+
+---
+
 ## 4. 不可超出 wiki 的說法
 
 wiki 已在 10/21 凍結，judge 會兩邊都看，所以片中說法要和 wiki 一致。以下這些不能講過頭：
@@ -449,9 +524,17 @@ wiki 已在 10/21 凍結，judge 會兩邊都看，所以片中說法要和 wiki
 
 ---
 
-## 5. 大綱草稿（目標約 11 分鐘，**待 §3.6 第 1 題定案後重排**）
+## 5. 大綱草稿（⚠️ **這版是 11 分鐘的舊版，已過時，寫稿前要重排**）
 
-時間是預算，D4 定案後再調。每段標出主要回答哪幾題。
+長度已定為成品檔 13:30–14:30（§1 D4），而且 §3C 的評審回饋要求四處結構性修改。**重排時必須納入：**
+
+- **總長**從 11 分鐘拉到 13:30–14:30，約 1,700–1,800 字。
+- **HP 拆散**（§3C #7）：不再是 9:15–10:15 一整塊，改成在相關設計決定當下插入，最後只留一頁收束。
+- **新增「Limitations + 下一步」一頁**（§3C #5、#12）：Ni-NTA、缺對照、spot test、topology、沒做功能性 assay，每條配下一步。
+- **每張數據圖明講對照**（§3C #3），沒有對照的就寫在畫面上。
+- **第一張數據圖不早於 2:00**（§3C #1）。
+
+下表是舊版，保留作為素材對照用。時間欄位已不適用。每段標出主要回答哪幾題。
 
 | 段 | 時間 | 內容 | 可用素材 | 回答 |
 |---|---|---|---|---|
@@ -485,13 +568,18 @@ wiki 已在 10/21 凍結，judge 會兩邊都看，所以片中說法要和 wiki
 
 目標是 **10/27 就上傳完成**，留一天緩衝給轉檔、修字幕和重傳。
 
+分兩階段（§1 D2）：**階段 1 先做出一支可以交的完整片**，階段 2 才加真人。
+
 | 日期 | 工作 |
 |---|---|
-| 10/24（六） | 回答第 1 節；定分工 |
-| 10/25（日） | 寫英文稿（約 1,400 字）並對照第 4 節檢查；做投影片 |
-| 10/26（一） | 錄音、錄影；剪入 promo 片段 |
-| 10/27（二） | 輸出 1080p mp4、remux、上傳、填標題和摘要，達到 **Submitted**；下載自動字幕修正後重傳 |
-| 10/28（三） | 緩衝。15:00 UTC（台北 23:00 / PDT 08:00）截止 |
+| 10/24（五） | ✅ 規則、評分標準、範本、評審回饋；D1/D2/D4/D6/D7 定案 |
+| 10/25（六） | 重排大綱（§5）；寫英文稿約 1,700–1,800 字，對照 §3B 和 §4 檢查 |
+| 10/26（日） | 投影片與動畫；Alex 錄完整片旁白（階段 1） |
+| 10/27（一） | 剪接、輸出 1080p、remux、上傳、填標題和摘要，**達到 Submitted**；修字幕重傳 |
+| 10/28（二） | 緩衝 + 階段 2：有時間就加隊友配音、真人開場收尾，重新上傳。**15:00 UTC（台北 23:00 / PDT 08:00）截止** |
+| 死線後 | 中文 .vtt 字幕（D4b）；Judging Session 的 5 分鐘版（D7） |
+
+⚠️ 階段 2 要重新上傳整個檔案，**只有在 10/27 已經確實到 Submitted 的前提下才動**。寧可交一支乾淨的純投影片版，也不要為了加真人而在死線前把已完成的投稿改壞。
 
 ---
 
@@ -519,3 +607,4 @@ wiki 已在 10/21 凍結，judge 會兩邊都看，所以片中說法要和 wiki
 - 2026-10-24 — 加入 §3.5，讀 2026 Judging Handbook 的結果：影片也用來打 Project 區塊的 9 題（p.32），附對照表；Presentation 專章與 TUDelft / Hamburg 範例；handbook 對失敗與誠實的立場，以及「troubleshooting」陷阱；不要念稿；討論題改為 §3.6
 - 2026-10-24 — 加入 §3A（下載 5 支得獎片，每 30 秒抽一張畫面，拆解四種形式和逐段時間點）與 §3B（條件總表 A–E，每條附得獎片案例和我們的做法，取代分散的清單）
 - 2026-10-24 — D1 定案：Hamburg 式投影片主體加 TU/e 式真人開場和收尾；handbook PDF 移到 `documents/2026-10-24_judge_handbook_2026_v5.pdf`
+- 2026-10-24 — D2（兩階段配音、真人延後）、D4（13:30–14:30 成品檔）、D4b（中文做字幕不做配音）、D6、D7 定案；加入 §3C，整理 Alex 提供的過去兩年 Presentation ballot 與十二則評審評語，歸納 14 條重複扣分主題並對應到今年的風險；§5 大綱標為過時待重排；§7 時程改為兩階段
