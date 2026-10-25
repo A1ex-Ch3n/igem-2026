@@ -1,45 +1,63 @@
 # Presentation deck
 
-`build_deck.py` writes `documents/2026-10-25_presentation_deck.pptx` — 56 slides,
-16:9, built from the narration in `documents/2026-10-25_presentation_video_script.md`.
-Every slide carries its narration in the speaker notes.
-
-Run it with the `igem2026` env, after `python -m pip install python-pptx`:
+Three scripts, run in this order:
 
 ```
-python code/1025_presentation_deck/build_deck.py
+python code/1025_presentation_deck/anim_adsorption.py   # 7 frames
+python code/1025_presentation_deck/anim_method.py       # 19 frames
+python code/1025_presentation_deck/anim_bench.py        # 25 frames
+python code/1025_presentation_deck/prep_figs.py         # 16 figures
+python code/1025_presentation_deck/build_deck.py        # the .pptx
 ```
 
-## Where the pictures come from
+Everything lands in `code/output/1025_presentation_deck/`; the deck is written to
+`documents/2026-10-25_presentation_deck.pptx`. Needs `python-pptx`
+(`python -m pip install python-pptx`) and the `igem2026` env.
 
-The script reads already-prepared PNGs from a scratch folder rather than the repo
-directly, so re-running it needs that folder repopulated. The sources are:
+## Why the diagrams are rendered rather than drawn in PowerPoint
 
-| key | repo path |
-|---|---|
-| `trimer`, `body-side`, `body-axial`, `gh5` | `code/output/0729_prof_figures/panels/` |
-| `anc-wt`, `anc-n1`, `anc-n40`, `anc-n281`, `anc-overlay`, `virion`, `cds10` | `code/output/1018_construct_structures/panels/` |
-| `controls` | `documents/2026-07-13_binding_controls_comparison.png` |
-| `oantigen`, `clusters` | `code/output/0727_o_antigen_comparison/` |
-| `zymctrl` | `code/output/1020_zymctrl_figure/fig_zymctrl_perplexity.png` |
-| `gel0929`, `gel1010` | `code/output/0929_gel_annotation/`, `code/output/1010_gel_annotation/` |
-| `dotblot`, `spottest`, `mutation` | `code/output/1019_dotblot/`, `1016_spot_test_result/`, `1010_resistant_mutant_comparison/` |
-| `phagemap`, `bactgenomes`, `folds` | `code/output/0729_prof_figures/`, `code/output/0712_phage_rbp_detect/structure/` |
+Nothing here can render a .pptx, so a layout written directly in PowerPoint
+shapes is arithmetic that nobody has looked at — which is how the first version
+ended up with overlapping text. Matplotlib output can be looked at before it goes
+anywhere, so each mechanism is a frame sequence that is checked, then placed.
 
-Each is thumbnailed to 1800 px on its long edge and saved as PNG.
+A mechanism slide therefore carries one image and one short eyebrow label and
+nothing else. The prose that summarises the mechanism waits for a slide of its
+own, after the build has run.
 
-## How the animation works
+`build_deck.py` also estimates, for every text box, how many wrapped lines its
+text needs against the box height. That check is the reason the prose columns
+are 16pt and the card bodies 13pt.
 
-There are no PowerPoint entrance animations. Movement comes from **Morph
-transitions** between near-identical slides: a build is a short run of slides,
-shapes that should tween carry the same `!!`-prefixed name, and PowerPoint
-interpolates between them. That survives export to video and PDF better than a
-timing tree, and it is editable by hand afterwards.
+## anim_style.py
 
-Seven builds use it — the bacterial envelope, the screen funnel, the control
-scores, the tail-spike strip-down, the two enzymes, the ancestral panel, and the
-capsule masking an intact O-antigen.
+The whole drawing vocabulary: palette, line weight, and the primitives for a
+membrane, a sugar chain, a capsule, a phage, a protein blob, a curved pointer
+and a label. Every animation imports it, so they cannot drift apart. Chains lean
+and curve from a seeded sway, bands are feathered with no hard ends, the capsule
+lies over the chain tops in three soft passes, and outlines are a dark teal
+rather than black.
+
+## The builds
+
+| folder | frames | what it explains |
+|---|---|---|
+| `adsorption` | 7 | how a phage gets through the sugar, and where host range is decided |
+| `wheel` | 4 | the DBTL loop, one lap lit, returning at every act |
+| `interface` | 6 | why an interface score has no co-evolutionary record to read |
+| `screen` | 5 | the 7,182-pair screen and the control gate that retired it |
+| `rung` | 4 | how a backbone hydrogen-bond period names a fold, with no database |
+| `nickel` | 5 | the column failing at capture rather than at expression |
+| `indistinguishable` | 4 | three outcomes a gel cannot tell apart, and the assay that can |
+| `cassette` | 5 | one genomic slot, three unrelated cargoes |
+| `masking` | 3 | a capsule lying over an O-antigen that is still intact |
+| `tree` | 5 | walking back up the tree to the reconstructed nodes |
+| `reads` | 3 | seventeen candidate variants filtered to one at read level |
+
+Movement between the frames of a build is a Morph transition; shapes that should
+tween share a `!!`-prefixed name. 39 slides carry one.
 
 ## Log
 
-- 2026-10-25 — first build, 56 slides
+- 2026-10-25 — rebuilt picture-first: 85 slides, 51 rendered frames, 0 estimated
+  text overflows, narration on 82 slides
