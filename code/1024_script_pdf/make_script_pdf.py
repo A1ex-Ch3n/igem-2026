@@ -18,48 +18,55 @@ SRC = ROOT / "documents/2026-10-24_presentation_video_script.md"
 PDF = ROOT / "documents/2026-10-24_presentation_video_script.pdf"
 WPM = 140
 
-# key -> (English heading, on-screen note)
 SECTIONS = {
-    "COLD": ("Cold open", "Plaque assay animation; then the same drop on two other strains, no effect."),
-    "I.1": ("Act I.1 \\textbar{} Our system",
-            "Sampling map (check: no flags), bacterial genomes, phage genome. "
-            "Credit the phage assembly to the PI."),
-    "I.2": ("Act I.2 \\textbar{} The first clue",
-            "The three O-antigen loci side by side, labelled "
-            "\\texttt{prediction --- not yet tested}. This figure returns at the end of Act II."),
-    "I.3": ("Act I.3 \\textbar{} The textbook",
-            "Lock and key. First appearance of the beta-helix tail spike render, labelled "
-            "\\texttt{the key?}"),
-    "II.1": ("Act II.1 \\textbar{} Why a computer",
-             "114 $\\times$ 63 = 7,182 matrix; then an interface score bar from 0 to 1."),
-    "II.2": ("Act II.2 \\textbar{} The controls",
-             "Control design, then the controls comparison figure. "
-             "Hold 0.137 and 0.136 large on screen."),
-    "II.3": ("Act II.3 \\textbar{} What was going wrong",
-             "Two confidence bars: on scrambling the left collapses 0.55 to 0.17, the right "
-             "barely moves. Then paired-MSA diagram: two circles that never intersect."),
-    "II.4": ("Act II.4 \\textbar{} The fold tells the truth",
-             "Beta-helix render returns, H-bond period marked, caption "
-             "\\texttt{CDS\\_0011 res 540--941}. Ends by replaying the Act I.2 figure."),
-    "II.5": ("Act II.5 \\textbar{} The hypothesis forms", "Attribution has to be exact here."),
-    "III.1": ("Act III.1 \\textbar{} The hypothesis",
-              "One-sentence hypothesis box on white, held. Credited to the PI."),
-    "III.2": ("Act III.2 \\textbar{} The targets",
-              "Phage genome zoomed to the tail module. Canonical CDS numbering."),
-    "III.3": ("Act III.3 \\textbar{} Resurrecting the ancestor",
-              "Tree collapsing back to ancestors, the three nodes, identity matrix, perplexity "
-              "trend. Phylogeny, ASR and scoring credited to the PI. RMSD values stay on screen, "
-              "unspoken."),
-    "III.4": ("Act III.4 \\textbar{} The constructs",
-              "Six constructs. Put res 305--941 and res 540--941 on one axis so the overlap is visible."),
-    "III.5": ("Act III.5 \\textbar{} The bench",
-              "Gel with the target boxed in red. On screen: \\texttt{IPTG -/+ : present} \\textbar{} "
-              "\\texttt{empty-vector control: RUNNING NOW} \\textbar{} \\texttt{n = 1}"),
-    "III.6": ("Act III.6 \\textbar{} One clean result, and safety",
-              "Read pileup with F126L marked; sugar locus \\texttt{unchanged}; "
-              "\\texttt{0 VFDB / 0 CARD} and IBC approval."),
-    "CODA": ("Coda \\textbar{} Where we are",
-             "Three columns fading in: Established / Predicted, not tested / Open."),
+    "OPENING": ("Opening", "Team logo, a team photo, then the title card."),
+    "I.1": ("Act I.1 \textbar{} The bottleneck",
+            "Plaque assay animation; then the same drop on two other strains, no effect."),
+    "I.2": ("Act I.2 \textbar{} Adsorption and the sugar coat",
+            "Cross-section of a cell: membrane, wall, O-antigen, capsule. Mark which layer "
+            "the phage meets first."),
+    "I.3": ("Act I.3 \textbar{} Where the project came from",
+            "Team photo with Prof. Libeskind-Hadas, captioned as an early conversation."),
+    "I.4": ("Act I.4 \textbar{} Our system, and the first clue",
+            "Sampling at the California Botanic Garden, the genomes, then the three O-antigen "
+            "cassettes side by side. Label the last one a hypothesis, not a prediction."),
+    "II.1": ("Cycle 1 \textbar{} Design", "DBTL bar with DESIGN lit. Lock and key."),
+    "II.2": ("Cycle 1 \textbar{} Build",
+             "BUILD lit. Funnel from 441 to 178 to 114 $\times$ 63. Three tools and why each "
+             "one stalled."),
+    "II.3": ("Cycle 1 \textbar{} Test",
+             "TEST lit. The ranking first, so it looks reasonable; then the control figure. "
+             "Hold 0.137 and 0.136 large."),
+    "II.4": ("Cycle 1 \textbar{} Learn",
+             "LEARN lit. Two confidence bars: on scrambling the left collapses 0.55 to 0.17, "
+             "the right does not move. Then two circles that never intersect."),
+    "III.1": ("Cycle 2 \textbar{} Design and Build",
+              "PhageRBPdetect over 80 proteins, 8 candidates, rung-period diagram."),
+    "III.2": ("Cycle 2 \textbar{} Test and Learn",
+              "Fold table, eight proteins and four verdicts --- the method discriminates. "
+              "Then the beta-helix render and a sugar-cutting animation."),
+    "III.3": ("Cycle 2 \textbar{} The hypothesis",
+              "One-sentence hypothesis box on white, held. Credited jointly with the PI."),
+    "IV.1": ("Cycle 3 \textbar{} Design and Build",
+             "Shaft versus body rigidity, the six constructs, the tree collapsing to three nodes."),
+    "IV.2": ("Cycle 3 \textbar{} Test",
+             "Four test rounds; the 9-29 gel; the 10-10 nickel column with blank elutions."),
+    "IV.3": ("Cycle 3 \textbar{} Learn: an outside view changed a result",
+             "The strongest human-practices beat in the video. Tolstorukov's email, then the "
+             "10-19 dot blot with 2.9$\times$ marked."),
+    "IV.4": ("Cycle 3 \textbar{} What we still owe",
+             "Honest list. Caption: fifth consecutive assay with no empty-vector lane."),
+    "V.1": ("Cycle 4 \textbar{} Design and Test",
+            "Colonies from the plaque zone, whole-genome sequencing, F126L inside a 30 kb "
+            "capsular cluster."),
+    "V.2": ("Cycle 4 \textbar{} Learn",
+            "Diagram of a capsule hiding an intact O-antigen --- how both conclusions hold."),
+    "C.1": ("Coda \textbar{} The garden",
+            "Interview clips, at least 20 seconds. Credit both hosts and note permission."),
+    "C.2": ("Coda \textbar{} Safety",
+            "The IBC letter, 0 VFDB / 0 CARD, and the open condition quoted."),
+    "C.3": ("Coda \textbar{} Where we are",
+            "Three columns fading in: Established / Predicted / Open."),
 }
 
 PREAMBLE = r"""\documentclass[12pt]{article}
@@ -127,8 +134,8 @@ def spoken_lines(chunk):
 
 def main():
     md = SRC.read_text()
-    body = md.split("## COLD OPEN", 1)[1]
-    body = "## COLD OPEN" + body.split("## 累計時間表", 1)[0]
+    body = md.split("## OPENING", 1)[1]
+    body = "## OPENING" + body.split("## 對照評分表", 1)[0]
 
     out = [PREAMBLE]
     out.append(
@@ -143,7 +150,7 @@ def main():
     total = 0
     for chunk in re.split(r"\n(?=#{2,3} )", body):
         raw = re.sub(r"^#{2,3} ", "", chunk.split("\n")[0]).strip()
-        key = raw.split(" ")[0].replace("COLD", "COLD").replace("CODA", "CODA")
+        key = raw.split(" ")[0]
         if key not in SECTIONS:
             continue
         title, onscreen = SECTIONS[key]
@@ -160,10 +167,10 @@ def main():
         out.extend(inline(s) + r"\par" for s in lines)
         out.append(r"\end{spacing}")
 
-    end = total / WPM * 60 + 38
+    end = total / WPM * 60 + 45
     out.append(
         r"\vspace{14pt}{\color{rule}\hrule}\vspace{6pt}"
-        r"{\color{note}\footnotesize " + f"{total} spoken words. With three act cards and a "
+        r"{\color{note}\footnotesize " + f"{total} spoken words. With six act cards and a "
         r"30-second credit card, the finished file runs about "
         f"{int(end)//60}:{int(end)%60:02d} at {WPM} words per minute." + r"\par}"
     )

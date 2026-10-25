@@ -1,345 +1,459 @@
-# Presentation Video — English narration script (v1)
+# Presentation Video — English narration script (v2)
 
-故事正本見 [`2026-10-24_presentation_video_story.md`](2026-10-24_presentation_video_story.md)。
-拍子與素材見 [`2026-10-24_presentation_video_outline.md`](2026-10-24_presentation_video_outline.md)。
+故事見 [`2026-10-24_presentation_video_story.md`](2026-10-24_presentation_video_story.md)、
+條件總表見 [`2026-10-24_presentation_video_plan.md`](2026-10-24_presentation_video_plan.md) §3B。
 
-**怎麼用這份**
+**v2 相對 v1 的改動**（依 Alex 在 PDF 上的批註 ＋ 重讀 wiki 的 Engineering 與 Human Practices 頁）：
 
-- `>` 區塊裡的英文**就是要念的字**。其餘是導演註記，不念。
-- 每節標了字數。最後有一張**累計時間表**，130 / 140 wpm 兩種語速都算了。
-- 念的時候**當成在跟人講，不是在念稿**（handbook p.14 的評審回饋明講聽得出來）。
-  句子寫得短，就是為了讓你可以停。標 `—` 的地方是停頓點。
-- 數字**念出來**（`zero point one three seven`），不要念成「零點一三七」的英文直譯。
+1. **改成四個 DBTL cycle 講**（批註「Explain in cycles!」）。wiki 的 Engineering 頁本來就有四輪，
+   v1 只講到兩輪半，而且把 Cycle 4 縮成一句話。
+2. **補上 Human Practices**（批註「Where are all the human practice?」）。v1 完全沒有。
+   現在有四段，全部來自 wiki HP 頁，而且**每一段都綁在它改變的那個決定上**。
+3. **修正 Ni-NTA 那段 —— v1 寫錯了。** 真相是：10-13 請教 Prof. Tolstorukov → 他把問題從
+   「為什麼沖提不出來」換成「到底有沒有表達」→ 10-19 anti-His dot blot → Node281 flow-through
+   是陰性對照的 **2.9×**。**蛋白有表達，是管柱沒抓住。** 這是全專案最強的 HP→結果鏈。
+4. **修正「預測尚未驗證」** —— 其實 2026-07-04 的 18 宿主矩陣測過了，方向吻合，但沒有對照所以不宣稱確認。
+5. 開場加「我們是誰、這支片要講什麼」。
+6. 採樣地點改為 **California Botanic Garden**；噬菌體基因體組裝改記為團隊。
+7. 解釋什麼是 sugar coat；把第一幕的預測語氣放軟。
+8. 補上實作細節（ColabFold / Boltz-2 / ESMFold、Laguna、PhageRBPdetect）。
+9. 不再解釋「什麼是對照組」；Cycle 1 改成「先覺得不對勁 → 才做對照 → 找到真正的問題」。
+10. 語氣整體重寫，減少對仗句與格言式收尾。
 
 ---
 
-## COLD OPEN
+## ⚠️ 兩件要先決定的事
 
-> 🎬 promo 的 plaque assay 動畫。第二顆鏡頭：同一滴液體滴到另外兩株菌上，什麼都沒發生。
+**(1) 植物園的訪談片段。** wiki 的 HP 頁寫著，我們在錄音裡對 Ashley Armstrong 和 James Manifold
+說過**會把片段剪進這支 presentation video**，他們同意了。那是一個已經做出的承諾。
+「v1 不要真人出鏡」指的是隊員，但這是利害關係人素材，而且我們答應過。
+**建議至少放兩段共 20 秒。** 如果這版不放，要是有意識地決定，不要是忘記。
 
-> A drop of phage goes onto a lawn of bacteria. A few hours later, there's a clear circle where the bacteria used to be.
->
-> Move the same drop to the plate next door. Same phage. Different strain. Nothing.
->
-> Phages are the most precise killers we know of — and that precision is the problem. If you want to treat an infection with a phage, you need a phage that matches the patient's strain. Most of the time, there isn't one on the shelf.
->
-> What decides the match is the very first step. The phage has to recognise the cell surface and stick to it. And for bacteria that wrap themselves in sugar, that surface isn't protein at all.
->
-> So what is the phage's tail actually recognising?
+**(2) 長度。** 本版比 v1 長。130 wpm 會超過 15:00 硬上限，**必須用 140 wpm**，或照文末建議刪。
 
-**131 字**
+---
+
+## OPENING
+
+> 🎬 隊徽 → 隊員合照（靜照，不算真人出鏡）→ 片名。
+
+> We're iGEM Claremont-CA, a first-year team in California. This is Phagenomics.
+>
+> Our question is what decides which bacteria a phage can kill. We went at it four times this season. Three of those attempts failed, and the failures are the useful part — so that's how this video is organised.
+>
+> Our project is about one question: what decides which bacteria a given phage can kill? We went after that question four times over the season. Three of those attempts failed, and the failures turned out to be the most useful thing we have — so this video is built around them rather than around a result.
+
+**67 字**
 
 ---
 
 ## ACT I — THE BOTTLENECK
 
-> 🎬 幕卡 2.5 秒：`ACT I — THE BOTTLENECK` ／ *Why one phage only kills one host*
+> 🎬 幕卡：`ACT I — THE BOTTLENECK` ／ *Why one phage only kills one host*
 
-### I.1 我們的系統
+### I.1 問題
 
-> 🎬 採樣點地圖（**確認無國旗**）→ 細菌基因體圖 → Φ8 基因體圖。
-> 畫面標註：MRA doi `10.1128/mra.00793-26`；`Phage genome assembly and annotation: Prof. J. Cesar Ignacio Espinoza`
+> 🎬 promo 的 plaque assay 動畫 → 同一滴滴到另外兩株，什麼都沒發生。
 
-> We went looking for our own system — water and soil from around our campus.
+> A drop of phage goes onto a lawn of bacteria, and a few hours later there's a clear circle where the bacteria used to be. Move the same drop to the next plate and nothing happens.
 >
-> We came back with three strains of *Pseudomonas*, distinct from one another, and one phage, Phi-8, that infects exactly one of them. About sixty-two kilobases, sharing almost no genes with anything described before. The three bacterial genomes are ours — sequenced, assembled and published. The phage genome was assembled and annotated by our PI.
+> Same phage, different strain. Phages are fussy, and that fussiness is the bottleneck for using them as medicine: you need one that matches the strain in front of you, and usually there isn't one.
 
-**78 字**
+**80 字**
 
-### I.2 第一條線索
+### I.2 吸附與糖衣
 
-> 🎬 三株菌 O-antigen 基因座並排圖。畫面標 `prediction — not yet tested`。**這張圖 Act II 結尾原樣再出現一次。**
+> 🎬 **Alex 批註要的圖**：細菌剖面 —— 細胞膜 → 細胞壁 → O-antigen → 莢膜。
+> 標出「噬菌體最先碰到的是哪一層」。
 
-> Then we lined up the three strains at the one locus that builds their sugar coat.
+> It gets decided at the first step, before any DNA moves: the phage has to recognise the outside of the cell and stick to it.
 >
-> Same position in the genome. Same gene on either side. And inside — three cassettes with no homology to each other at all. Of forty-five gene clusters, four were shared.
+> And many bacteria aren't presenting a bare protein surface. They're wrapped in sugar — long chains called the O-antigen, and above that, in some species, a capsule. The first thing a phage touches is a forest of sugar.
+
+**95 字**
+
+### I.3 這個專案從哪來
+
+> 🎬 HP 頁 Fig 1：團隊與 Prof. Libeskind-Hadas 的合照。
+> 畫面標 `Prof. Ran Libeskind-Hadas, CMC — early conversation`
+
+> One thing belongs at the start, because it's why half this project exists.
 >
-> Three strains. Three different sugar coats. One phage that kills one of them.
+> Early on, Professor Ran Libeskind-Hadas at Claremont McKenna suggested reconstructing an ancestral phage — a whole organism, inferred from its relatives.
 >
-> The prediction is sitting right there. Whatever Phi-8 recognises, it's that sugar.
+> We couldn't build one. But scale that down to a single enzyme and you can order it from a synthesis company. That is what this project became.
 
-**81 字**
+**120 字**
 
-### I.3 教科書
+### I.4 我們的系統與第一條線索
 
-> 🎬 鎖與鑰匙示意。**β-helix tail spike 渲染圖第一次出現**，標 `the key?`
+> 🎬 California Botanic Garden 採樣照 → 三株細菌基因體 → Φ8 基因體圖 → 三套 O-antigen cassette 並排。
+> 畫面標 `California Botanic Garden · 2026-05-19`、MRA doi、`hypothesis`
 
-> But we didn't follow the sugar. We followed the textbook.
+> Our soil came from the California Botanic Garden in May. Out of it we got three distinct strains of *Pseudomonas* and a phage, Phi-8, that infects exactly one of them. The bacterial genomes are published; our team assembled and annotated the phage.
 >
-> The textbook says a phage's receptor-binding protein meets a protein on the bacterial surface. Lock and key — protein against protein. Work out which binding protein fits which receptor, and you've worked out host range.
+> Then we lined the three strains up at the locus that builds their sugar coat. Same position, same flanking gene — and inside, three cassettes with no homology to each other.
 >
-> So that's what we set out to do.
+> Three strains, three different sugar coats, one phage that kills one of them. So our first hypothesis: the sugar coat might be one of the main things setting what Phi-8 can attack.
 
-**58 字**
+**147 字**
 
 ---
 
-## ACT II — THE WRONG KEY
+## ACT II — CYCLE 1: THE WRONG QUESTION
 
-> 🎬 幕卡 2.5 秒：`ACT II — THE WRONG KEY` ／ *Ten control folds decided the fate of 7,182*
->
-> **這一幕是全片的賣點。** 節奏要穩：先讓方法看起來完全合理，再讓對照組推翻它，然後解釋為什麼。
+> 🎬 幕卡：`CYCLE 1 — THE WRONG QUESTION`
+> 之後四輪都用同一條 DBTL 進度條，當前步驟亮起。這是「explain in cycles」的視覺骨架。
 
-### II.1 為什麼要用電腦
+### II.1 Design
 
-> 🎬 矩陣示意：114 × 63 = 7,182。接著一個「ipTM 0→1」的分數條示意。
+> 🎬 DBTL 條，`DESIGN` 亮。鎖與鑰匙示意。
 
-> We had a hundred and fourteen candidate binding proteins, and sixty-three candidate receptors. That's seven thousand, one hundred and eighty-two combinations. Testing those at the bench is years of work.
+> But that isn't the hypothesis we tested first.
 >
-> So we did what the field does. We asked a computer.
+> The textbook picture of attachment is a receptor-binding protein on the tail meeting a protein on the bacterial surface. Lock and key. If that's what you assume, the obvious move is to work out which binding protein fits which receptor.
 >
-> Programs like AlphaFold predict the shape a protein folds into. Give them two proteins, and they'll also predict how the two fit together — and hand you back a number between zero and one. An interface score. High means: I'm confident these two dock, like this.
->
-> The plan was to score all seven thousand pairs, and let the top of that list tell us where to start in the lab.
->
-> Most of the next few months went into getting it to run at all.
+> If we'd known the receptor was a sugar we'd never have run this. We thought it was a protein, so we went looking for a protein.
 
-**134 字**
+**98 字**
 
-### II.2 對照組
+### II.2 Build
 
-> 🎬 對照組設計圖（3 正 / 打亂 / 錯配）→ 切到 `2026-07-13_binding_controls_comparison.png`，紅框框住重疊區。
-> **0.137 和 0.136 兩個數字要大，停在畫面上。**
+> 🎬 `BUILD` 亮。441 → 178 → 114 × 63 = 7,182 的漏斗。右側列三個工具與各自撞牆的原因。
+> 畫面標 `Laguna HPC · L40S`
 
-> And then, late — too late — we added controls.
+> Four hundred and forty-one candidate receptors, clustered and narrowed to a hundred and fourteen binding proteins against sixty-three receptors — seven thousand, one hundred and eighty-two pairs, each folded as a complex on our university's GPU cluster and ranked by the interface score.
 >
-> A control here is a simple idea. Before you trust a method on a question you can't check, you give it questions you can.
->
-> We picked three phage-receptor pairs that are known to bind. Known well enough that somebody has solved their structures experimentally, atom by atom. Then we built fakes — the same receptor with its sequence shuffled into nonsense, and pairs deliberately mismatched.
->
-> If the method can tell binding from non-binding, the real pairs have to beat the fakes. That's the only bar it has to clear.
->
-> The best-characterised pair we had was T-five's pb-five with FhuA — a complex that has been co-crystallised. It scored zero point one three seven.
->
-> The same receptor, with its sequence shuffled into gibberish, scored zero point one three six.
->
-> One thousandth apart.
->
-> We assumed the tool was at fault, and rebuilt the whole thing with a different program, using real evolutionary data. It got worse. A deliberately mismatched pair scored zero point five — higher than every true binder in the set.
+> Getting it to run took three tools — ColabFold throttled by its alignment server, Boltz-2 blocked by the cluster's CUDA version — and we ended up on ESMFold because it was the one that ran.
 
-**186 字**
+**120 字**
 
-### II.3 機制
+### II.3 Test
 
-> 🎬 **全片解釋力的核心。** 兩條並排的信心柱：打亂後左邊崩掉（0.55→0.17），右邊幾乎不動。
-> 然後 paired MSA 示意：噬菌體的同源都在噬菌體裡，細菌的都在細菌裡，兩個圈永不相交。
+> 🎬 `TEST` 亮。先放「排名看起來很合理」的熱圖，再切對照組圖。
+> **0.137 和 0.136 要大，停在畫面上。**
 
-> One detail told us what was actually going on.
+> And we got a ranking. It looked fine — which is the trouble with this kind of output. It always looks fine.
 >
-> These programs report two separate confidences. One is about the shape of the molecule itself. The other is about how the two pieces fit together.
+> What made us uneasy was that the scores tracked protein length more than anything else. So we ran the method against pairs where the answer was already known — complexes solved experimentally, against the same receptors shuffled into nonsense.
 >
-> When we shuffled the sequence, the first number collapsed — from zero point five five down to zero point one seven. So the model noticed. It knew the shuffled protein wasn't a real protein.
+> T5's pb-five with FhuA, a real co-crystallised complex, scored zero point one three seven. The same receptor shuffled scored zero point one three six.
 >
-> But the second number — the fit — barely moved.
->
-> So the model wasn't being fooled by our fake. It had simply never had an opinion about the fit. Not for the fake, and not for the real pair either. It had been handing us a number that looked like an answer and wasn't one.
->
-> Here's why.
->
-> When AlphaFold predicts how two proteins touch, it isn't simulating physics. It's reading evolutionary history. It looks across thousands of species, finds both proteins in each one, and asks one question: when this spot on protein A changes, does that spot on protein B change to match? Two surfaces that have to keep fitting each other keep changing in step. That pattern is the fingerprint of contact.
->
-> But that record only exists if the two proteins have been inherited together — in the same genome, for millions of years.
->
-> A phage protein's relatives live in other phages. A bacterial protein's relatives live in other bacteria. They are never in the same genome. They have never been inherited together.
->
-> So for a pair like ours, the evolutionary record of that interface isn't hard to find. It was never written.
->
-> Which means this was never a result about our proteins. It's a limit of the method — and it holds for any phage and host, and for host and pathogen across kingdoms generally. More compute doesn't fix it.
->
-> Ten control folds decided the fate of seven thousand. We never ran the real screen.
+> We assumed that was the tool, so we rebuilt it with real evolutionary alignments. It got worse: a deliberately mismatched pair came out at zero point five, above every genuine binder.
 
-**300 字** — 最長的一節，刻意的。
+**146 字**
 
-### II.4 摺疊說了實話
+### II.4 Learn
 
-> 🎬 **β-helix 渲染圖第二次出現**，標出氫鍵週期。接一個酵素在糖鏈上切開的動畫。
-> 畫面小字：`CDS_0011 res 540–941`
-> **結尾把 I.2 那張三套糖 cassette 的圖原樣再放一次。**
+> 🎬 `LEARN` 亮。兩條信心柱（打亂後左邊 0.55→0.17，右邊不動）→ paired MSA 兩個永不相交的圈。
 
-> So we stopped asking what the tail spike binds, and asked what it is. We folded it on its own.
+> Two tools, two control gates, both failed. One failure is about your run; two independent failures are about the method.
 >
-> It came back as a right-handed beta-helix — a long triangular prism with a groove running down the side.
+> These models report two confidences: one for the shape of the molecule, one for how two molecules sit together. When we shuffled a sequence, the shape confidence collapsed from zero point five five to zero point one seven — the model could tell it was nonsense. But the interface number barely moved. It had never been reading an interface at all.
 >
-> That shape is a signature. Enzymes that cut long sugar chains look like this, and they look like this for a reason. A sugar chain is a long thread, and to cut it you need something that holds it straight and feeds it through. You can recognise a wood plane by its shape without being told what it cuts.
+> The reason is that these models don't simulate two proteins touching. They read evolution — looking across thousands of species for positions that change in step. If a residue on one side mutates and one on the other mutates to match, those two are probably in contact.
 >
-> Our tail spike wasn't a key. It was a blade — an enzyme for sugar.
+> That only exists if the two proteins have been inherited together, in one genome, for a long time. A phage protein's relatives are in other phages; a bacterial protein's are in other bacteria. They're never in the same genome, so the record of that interface doesn't exist. Not hidden — never written.
 >
-> Which turns the whole question over. If the tail spike cuts sugar, then what the phage recognises is the sugar coat, and the protein lock we'd spent months looking for doesn't exist.
->
-> The identity of the receptor didn't come from the docking. It came from the shape.
->
-> And it points straight back to those three sugar coats.
+> So this was never a result about our proteins. It's a property of the method for any phage-and-host pair, and more compute doesn't help. Ten control folds decided the fate of seven thousand, and we never ran the real screen.
 
-**168 字**
-
-### II.5 假說成形
-
-> 🎬 署名要準確。B5／C9。
-
-> We weren't the only ones reading it that way. Our own RBP-detection model had already flagged the protein as a depolymerase — and at about the same time, our PI reached the same conclusion from his own structural search.
->
-> What he added was the step from an observation to something you can test.
-
-**57 字**
+**264 字**
 
 ---
 
-## ACT III — THE ENZYME
+## ACT III — CYCLE 2: ASK THE PROTEIN WHAT IT IS
 
-> 🎬 幕卡 2.5 秒：`ACT III — THE ENZYME` ／ *If the ceiling is set by the enzyme, raise the enzyme*
+> 🎬 幕卡：`CYCLE 2 — ASK THE PROTEIN WHAT IT IS`
 
-### III.1 假說
+### III.1 Design → Build
 
-> 🎬 一句話假說框，白底，停久一點。畫面標 `Hypothesis: Prof. J. Cesar Ignacio Espinoza`
+> 🎬 PhageRBPdetect 掃 80 個蛋白 → 8 個候選 → rung period 示意（β-helix 的階梯間距）
+> 畫面標 `PhageRBPdetect v4 (ESM-2), open source`
 
-> In bacteria that wrap themselves in sugar, the ceiling on a phage's host range is set by the substrate range of its depolymerase — not by the identity of its binding protein. And the narrow specificity we see today is a narrowed-down version of something broader in the past.
+> If we couldn't ask what the tail spike binds, we could ask what it is.
 >
-> That changes what you'd test. Not binding. Substrate range.
+> We ran an open-source classifier across all eighty Phi-8 proteins, folded the eight candidates, and classified the folds by the spacing of their backbone hydrogen bonds — which needs no structure database at all.
+
+**79 字**
+
+### III.2 Test → Learn
+
+> 🎬 八個蛋白的摺疊分類表，四種判定。**強調這個方法會分辨，不是只會附和我們**
+> （CDS_0012 被判 α-rich，與它是 GH5 TIM barrel 一致）。然後 β-helix 渲染圖 ＋ 切糖動畫。
+> 畫面標 `CDS 11 · rung period 16–17 · confidence 0.997`
+
+> Eight proteins, four different verdicts — so the method discriminates rather than agreeing with us. CDS 11, the tail spike, came back a right-handed beta-helix: a long triangular prism. And CDS 24, which the annotation had written off as hypothetical, came back as a second one.
 >
-> And if today's enzymes are narrowed-down descendants, then the interesting experiment is to go back up the tree, and ask what the ancestor could do.
-
-**86 字**
-
-### III.2 目標
-
-> 🎬 Φ8 基因體圖放大到 tail 模組，三個 CDS 標出來。**用正本編號。**
-
-> Phi-8's tail module has two enzymes in it. The tail spike we've just been talking about — CDS eleven, with that beta-helix at its business end. And next to it, CDS twelve, a glycoside hydrolase from family five. There's also CDS ten, which is still an unknown protein. We expressed it to find out what it is.
-
-**62 字**
-
-### III.3 復活祖先
-
-> 🎬 系統發生樹由末端往回合併 → 標出三個節點 → 身分矩陣 → ZymCTRL perplexity 趨勢。
-> 整段標題列掛 `Phylogeny, ASR and ZymCTRL scoring: Prof. J. Cesar Ignacio Espinoza`
-> ✂️ 三個 RMSD（0.28 / 0.50 / 0.52 Å）留畫面，不念。
-
-> Our PI took CDS twelve, aligned its closest relatives, built a phylogeny, and reconstructed the ancestral sequence at every node on the path back to the root. Then he scored each reconstruction with a protein language model. The further back he went, the better the model liked it.
+> That fold is a signature. Enzymes that chew through long sugar chains look like this, because a sugar chain is a thread and you need something that holds it straight while you cut. You can recognise a wood plane by its shape without being told what it cuts.
 >
-> We picked three of those nodes and had them synthesised. One is seventy-eight percent identical to the modern enzyme. The other two are about half identical to it — but eighty-seven percent identical to each other. So the panel is the modern enzyme, one close relative, and a pair of more distant cousins.
+> So the tail spike isn't a key. It's a blade — and the lock we'd spent months looking for doesn't exist.
 >
-> Before any bench work, we asked whether those resurrected sequences still fold into the same enzyme. All three come back as the same TIM barrel.
+> That reading arrived from two directions at once: our classifier flagged it as a depolymerase, and our PI reached the same conclusion from his own structural search. Between us we turned it into a hypothesis.
 
-**131 字**
+**181 字**
 
-### III.4 建構
+### III.3 假說
 
-> 🎬 六個建構一覽。**把 CDS_0011 res 305–941 和第二幕的 res 540–941 疊在同一條軸上**，
-> 讓觀眾看見「第二幕認出來的那段，就在我們訂的那段裡面」。
+> 🎬 一句話假說框，白底，停久一點。
+> 畫面標 `Hypothesis — developed jointly with Prof. J. Cesar Ignacio Espinoza`
 
-> Six constructs, all with an N-terminal histidine tag, synthesised by Twist. The beta-helix piece of the tail spike itself. CDS twelve. Its three ancestors. And the unknown protein.
+> In bacteria that wrap themselves in sugar, the ceiling on host range is set by what the depolymerase can digest — not by which protein the tail binds. And the narrow specificity we see now is a narrowed-down version of something broader further back.
 >
-> That first one matters. The fragment we ordered contains exactly the beta-helix domain we'd identified by folding it. What the shape told us to look at is what we put in a tube.
-
-**66 字**
-
-### III.5 實驗台
-
-> 🎬 膠圖，目標位置紅框。畫面標：`IPTG −/+ : present` ｜ `empty-vector control: RUNNING NOW` ｜ `n = 1`
-
-> And then the bench — which is where we are right now.
->
-> When we induce CDS twelve, we see a band in the right size range. To separate that band from host background we need an empty-vector control, and that control is on the bench as I'm speaking.
->
-> The nickel purification of one ancestor failed. The elutions came off empty, and the flow-through looked like the load — so the protein never bound the column. We're repeating it with the binding conditions changed.
->
-> So the enzyme arm is honest work in progress. I'd rather tell you exactly which part is unfinished than show you a cleaner story.
-
-**119 字**
-
-### III.6 乾淨的結果與安全
-
-> 🎬 read pileup 圖，F126L 標出來 → O-antigen 基因座標 `unchanged` → `0 VFDB / 0 CARD` + IBC
-
-> One line did come back clean.
->
-> We raised mutants resistant to Phi-8, and sequenced them. One carries a single amino-acid change in a gene that builds the capsule — confirmed down at the level of the sequencing reads. And the sugar locus itself is untouched.
->
-> On safety: Phi-8's genome carries no virulence factors and no antibiotic-resistance genes. Zero hits in either database. And the work has approval from our institutional biosafety committee.
+> That tells you what to measure — substrate range, not binding — and where to look for the broader version: back up the tree.
 
 **76 字**
 
 ---
 
-## CODA — WHERE WE ARE
+## ACT IV — CYCLE 3: BUILD THE ENZYMES
 
-> 🎬 三欄：`Established` ／ `Predicted, not tested` ／ `Open`。逐欄淡入。
+> 🎬 幕卡：`CYCLE 3 — BUILD THE ENZYMES`
 
-> So, plainly.
->
-> Established: the genomes. Three unrelated sugar cassettes in one slot. A tail spike that turns out to be a sugar-cutting enzyme. A controlled negative result about interface prediction. One resistance mutation, confirmed in the reads.
->
-> Predicted, but not yet tested: that Phi-8 won't infect the other two strains. That the ancestral enzymes have a broader substrate range.
->
-> Still open: clean expression, an activity assay, and the topology of the phage genome.
->
-> The cheapest next step is that control — and it's running. The decisive one is knocking out the sugar and watching whether the phage still sticks.
->
-> And if there's one thing we'd hand to anyone starting a screen like ours — gate it on controls before you trust it.
->
-> Ten folds told us the truth that seven thousand couldn't.
+### IV.1 Design → Build
 
-**143 字**
+> 🎬 CDS_0011 軸桿 vs 本體的剛性比較 → 六個建構體 → 系統發生樹往回合併 → 三個節點
+> 畫面標 `ASR executed by Prof. Espinoza, on sequences prepared by the team`
+
+> Two enzymes sit in the tail module: CDS 11, the beta-helix, and next to it CDS 12, a glycoside hydrolase. CDS 10 is still unknown, so we expressed that one too.
+>
+> For the tail spike we took residues three-oh-five to nine-four-one, because the shaft drifts between models while the body stays rigid.
+>
+> Then the ancestors — the part that came out of that first conversation. We worked out the direction with our PI; he ran the tree and the reconstruction on sequences we prepared.
+>
+> We picked three nodes. Six constructs in all, His-tagged, from Twist. The ancestors are exactly the same length as the wild type, which makes them indistinguishable on a gel — we should have thought about that before ordering.
+
+**192 字**
+
+### IV.2 Test
+
+> 🎬 四輪測試時間軸 → 9-29 的膠（CDS 12 的 IPTG 依賴帶）→ 10-10 的 Ni-NTA（沖提道空白）
+> 畫面標 `empty-vector BL21 lane: still absent`
+
+> Four rounds at the bench. On September the twenty-ninth, CDS 12 gave an IPTG-dependent band at the right size while the tail spike gave nothing. On October the tenth we ran a nickel column on one ancestor, and both elutions came off blank — while the load and the flow-through carried the same band.
+>
+> We read that as a purification we'd botched, and were about to spend another week on the column.
+
+**87 字**
+
+### IV.3 Learn — 外部意見改變了一個結果
+
+> 🎬 **全片最強的 HP 段落。** Tolstorukov 的 email 引文 → 10-19 dot blot → 2.9× 標出來。
+> 畫面標 `Prof. Ilya Tolstorukov, Keck Graduate Institute · 2026-10-13`
+
+> What stopped us was a conversation.
+>
+> On October the thirteenth we took it to Professor Ilya Tolstorukov at Keck Graduate Institute, who works on protein expression. He wrote back before we met to say he wasn't sure he was the right person — expression is his field, purification isn't — and met us anyway. That turned out to be the point.
+>
+> He changed the question. Not *why is nothing eluting*, but *is there anything there to elute*. Check whether the protein is being made at all — a dot blot against an anti-His antibody — before touching the column again.
+>
+> Six days later we ran that blot. The flow-through from the ancestor read two point nine times the negative control.
+>
+> So the protein was there. It had been made, it came off in the flow-through, and the run failed at capture — not at expression. A gel can't tell those apart; all three look identical. One cheap assay separates them, and it pointed the fix at the column instead of the construct.
+>
+> We'd spent a week debugging the last step of a workflow without checking the first step worked, because the last step was the one visibly failing. That's the generalisable mistake, and one meeting fixed it.
+
+**252 字**
+
+### IV.4 還欠什麼
+
+> 🎬 誠實清單。畫面標 `fifth consecutive assay with no empty-vector lane`
+
+> One thing we still owe: we've run five protein assays without an empty-vector BL21 lane, the control that separates our bands from host background. That one is on the bench now.
+
+**69 字**
+
+---
+
+## ACT V — CYCLE 4: LET THE BACTERIA ANSWER
+
+> 🎬 幕卡：`CYCLE 4 — LET THE BACTERIA ANSWER`
+
+### V.1 Design → Test
+
+> 🎬 從噬菌斑區挑菌落 → WGS → read 層級驗證 → F126L 落在 30 kb 莢膜簇裡
+> 畫面標 `every difference verified back to raw reads, against two independent baselines`
+
+> Three cycles in, every guess about the receptor had come from the phage's side. So for the fourth we let the bacteria answer.
+>
+> In July we picked colonies from inside the plaque zone — cells still growing where the phage should have killed them — and sequenced them against their parents.
+>
+> Every difference was checked back against the raw reads. Exactly one survived: a single amino-acid change in a sugar phosphotransferase, inside a thirty-kilobase capsule cluster. The O-antigen cassette was untouched.
+
+**114 字**
+
+### V.2 Learn
+
+> 🎬 莢膜遮住底下完好 O-antigen 的示意圖 —— 兩個結論如何同時成立。
+
+> That disagrees with Cycle 2, which is the whole reason for doing it this way round. Cycle 2 said the receptor is a sugar; Cycle 4 agrees it's a sugar and disagrees about which one. It points at the capsule, not the O-antigen underneath.
+>
+> Both can be true at once, because a capsule can hide an intact O-antigen underneath it. We don't yet know which surface Phi-8 reads.
+>
+> And the honest gap: those colonies were never confirmed resistant. They were colonies in a plaque zone, which is suggestive and isn't the same thing.
+
+**117 字**
+
+---
+
+## CODA
+
+> 🎬 幕卡：`WHAT IT IS FOR, AND WHAT WE GOT WRONG`
+
+### C.1 植物園
+
+> 🎬 **植物園訪談片段（建議 ≥ 20 秒）。** 見文件開頭待決定事項 (1)。
+> 畫面標 `Ashley Armstrong & James Manifold, California Botanic Garden · 2026-10-19 · used with permission`
+
+> Two days before our wiki froze we went back to the garden the soil came from, and asked whether a treatment as strain-specific as ours would be any use to them.
+>
+> Most of what we'd assumed was wrong.
+>
+> We expected to argue for biological control against a chemical default, and didn't have to — they already suppress soil fungi by mulching. We expected the objection to be ecological risk. It wasn't; it was whether the thing works. Copper is the only chemistry they have for bacterial disease, it goes onto every blossom every four or five days, and they have eighty-six acres and eight staff. The objection is arithmetic.
+>
+> And the finding that costs us most: they've never had a sample come back positive for *Pseudomonas*. We isolated a soil phage and its environmental host — not a treatment for a disease this stakeholder has.
+>
+> What they do need is something for bacteria inside the vascular system, where nothing they have reaches. Our strain doesn't solve that.
+
+**190 字**
+
+### C.2 安全
+
+> 🎬 IBC 信件 → `0 VFDB / 0 CARD` → 開放中的那一條原文
+
+> On safety: our biosafety committee gave conditional approval with one condition still open — and that condition is a question about host range, which is the subject of this entire project. We don't have full approval; the revision is being written.
+>
+> Phi-8 carries no virulence factors and no resistance genes, and our constructs are protein fragments in lab *E. coli* — nothing here is a modified phage. But understanding what sets the ceiling on host range is the same as knowing what would have to change to raise it, so we treat this as dual-use rather than arguing our way to a clean no.
+
+**136 字**
+
+### C.3 收尾
+
+> 🎬 三欄：`Established` / `Predicted` / `Open`，逐欄淡入。
+
+> So, where we actually are.
+>
+> Established: the genomes, three unrelated sugar cassettes in one locus, a tail spike that turns out to be a sugar-cutting enzyme, a controlled negative result about interface prediction, and one mutation verified in the reads.
+>
+> Predicted and partly tested: that Phi-8 won't infect the other two strains. A host-range matrix in July pointed the right way, but carried no no-phage control, so we won't call it confirmed.
+>
+> Still open: clean expression, an activity assay, which sugar layer the phage reads, and whether Phi-8 is temperate.
+>
+> Four cycles, three of them wrong, each wrong in a way that told us where to go next. If there's one thing we'd pass on: put the cheap control in front of the expensive experiment. Ten folds told us what seven thousand couldn't, and one afternoon's dot blot told us what a week on a column hadn't.
+
+**177 字**
 
 ---
 
 ## CREDITS
 
-> 🎬 無旁白，30 秒。隊員、PI、advisors、Twist、Artlist 曲名/作者/授權、工具
-> （Claude、Pharokka、ESMFold、ColabFold、IQ-TREE、ZymCTRL、Foldseek、PyMOL）。**停留 ≥ 2 秒。**
+> 🎬 無旁白，30 秒。隊員、PI、Prof. Libeskind-Hadas、Prof. Tolstorukov、Monjima Ghosh、
+> Maggie Chou、California Botanic Garden（Ashley Armstrong、James Manifold）、Twist、
+> Artlist 曲名／作者／授權、工具（Pharokka、PhageRBPdetect、ESMFold、ColabFold、Boltz-2、
+> IQ-TREE、ZymCTRL、Foldseek、PyMOL、Claude）。**停留 ≥ 2 秒。**
 
 ---
 
-## 累計時間表
+## 對照評分表
 
-旁白總字數 **1,802**（程式實測，已排除導演註記）。
-
-| 段 | 字數 | 累計字 | @130 wpm | @140 wpm |
-|---|---|---|---|---|
-| Cold open | 126 | 126 | 0:58 | 0:54 |
-| I.1 | 69 | 195 | 1:30 | 1:23 |
-| I.2 | 71 | 266 | 2:02 | 1:54 |
-| I.3 | 53 | 319 | 2:27 | 2:16 |
-| II.1 | 125 | 444 | 3:24 | 3:10 |
-| II.2 | 181 | 625 | 4:48 | 4:27 |
-| II.3 | 316 | 941 | 7:14 | 6:43 |
-| II.4 | 170 | 1111 | 8:32 | 7:56 |
-| II.5 | 53 | 1164 | 8:57 | 8:18 |
-| III.1 | 83 | 1247 | 9:35 | 8:54 |
-| III.2 | 57 | 1304 | 10:01 | 9:18 |
-| III.3 | 126 | 1430 | 11:00 | 10:12 |
-| III.4 | 61 | 1491 | 11:28 | 10:39 |
-| III.5 | 107 | 1598 | 12:17 | 11:24 |
-| III.6 | 72 | 1670 | 12:50 | 11:55 |
-| Coda | 132 | 1802 | 13:51 | 12:52 |
-| ＋幕卡與片尾 | — | — | **14:29** | **13:30** |
-
-⚠️ 130 wpm 是 **14:29**，140 wpm 是 **13:30**。兩種語速都在 15:00 以內。
-
-你試念之後：
-
-- 念出來**低於 14:00** → 現在這份直接用，還可以把 story 裡標 ✂️ 的兩段加回來。
-- 念出來 **14:00–14:50** → 砍 II.1 的最後一句、III.2 的 CDS 十那句、Coda 的「So, plainly.」，約 −40 字。
-- 念出來**超過 14:50** → 告訴我實際秒數，我重配各節預算，優先保 II.3。
+| 條件 | 在哪 |
+|---|---|
+| B1 目標／設計／結果 | OPENING 一句話定題；C.3 三欄回扣 |
+| B2 技術數據 | 對照組數字、八蛋白分類表、2.9× dot blot、F126L reads |
+| B3 視覺設計 | DBTL 進度條貫穿四輪；β-helix 渲染圖；分幕配色 |
+| B4 engaging | 四輪結構；Cycle 1 與 Cycle 4 兩次翻轉 |
+| B5 出處 | PI 三處署名、Libeskind-Hadas、Tolstorukov、植物園、工具全列 |
+| **C1 DBTL** | **四輪各自完整，每輪都有 Learn** |
+| C2 標準元件 | IV.1 六個 pET-28a 建構 |
+| C3 會不會成功 | C.3 三欄 |
+| C4 數據支持 claim | 畫面寫出缺的對照；預測只說「方向吻合」 |
+| C5 影響 | C.1 植物園說出真正的缺口 |
+| **C6 HP 影響設計** | **I.3 專案起源、IV.3 改變了一個結果、C.1 改變了定位** |
+| C7 責任與安全 | C.2 |
+| C9 學生主導 | 署名精確；ASR 寫成「方向共同決定、PI 執行、我們備料」 |
 
 ---
+
+## 時間表 —— 必讀
+
+字數由 `code/1024_script_pdf/make_script_pdf.py` 實測：**2,184 字**。
+
+| 語速 | 旁白 | ＋幕卡與片尾 45 秒 |
+|---|---|---|
+| 140 wpm | 15:36 | **16:21 ✗ 超過** |
+| 150 wpm | 14:33 | 15:18 ✗ 超過 |
+| 155 wpm | 14:05 | 14:50 ⚠️ 剛好 |
+| 160 wpm | 13:39 | 14:24 ✓ |
+
+**坦白講：你要求補的東西（四輪 DBTL ＋ 四段 HP ＋ 安全 ＋ 對非專業觀眾解釋清楚），
+照正常語速塞不進 15 分鐘。** 我已經把每一段都壓過一輪，從 2,803 字壓到 2,184，
+再壓下去就是砍內容，而砍哪一塊是你的決定不是我的。
+
+### 各段字數（決定要砍哪裡時看這張）
+
+| 字數 | 段落 |
+|---|---|
+| 220 | II.4 Cycle 1 Learn —— 機制解釋 |
+| 207 | IV.3 Cycle 3 Learn —— Tolstorukov |
+| 167 | C.1 植物園 |
+| 150 | III.2 Cycle 2 Test→Learn |
+| 147 | C.3 收尾 |
+| 122 | IV.1 Cycle 3 Design→Build |
+| 116 | II.3 Cycle 1 Test |
+| 106 | OPENING |
+| 105 | I.4 系統與第一條線索 |
+| 104 | C.2 安全 |
+| 93 | V.2 Cycle 4 Learn |
+| 81 | V.1 Cycle 4 Design→Test |
+| 78 | II.2 Cycle 1 Build |
+| 74 | II.1 Cycle 1 Design |
+| 72 | IV.2 Cycle 3 Test |
+| 70 | I.1 問題 |
+| 68 | III.3 假說 |
+| 63 | I.2 糖衣 |
+| 61 | I.3 專案從哪來 |
+| 49 | III.1 Cycle 2 Design→Build |
+| 31 | IV.4 還欠什麼 |
+
+### 三個選項
+
+**A. 念快一點（160 wpm）—— 不砍任何東西。** 14:24 過關。
+代價是語速偏快，而 ballot 有一題是 engaging。紀錄片旁白通常 140–150。
+
+**B. 砍幕卡，念 150。** 六張幕卡改成左下角的 lower-third 標籤，省 15 秒，片尾留 30 秒
+→ 15:03。還是太貼，不建議單用。
+
+**C. 砍約 250 字到 1,930，用 150 wpm → 13:52 ＋ 45 秒 ＝ 14:37。安全。**
+我建議砍這三處，理由是它們在 wiki 上都講得更完整，judge 會去看：
+- **C.2 安全 104 → 45**（−59）。留「有條件核准、條件就是宿主範圍、我們當 dual-use 處理」三句。
+- **I.3 專案從哪來 61 → 0**（−61），把 Libeskind-Hadas 併進 IV.1 的一個從句。
+- **C.1 植物園 167 → 110**（−57）。保留「我們以為的全錯了」「他們沒有 Pseudomonas」
+  「真正的缺口在維管束」三個重點，刪銅劑的細節。
+- **III.2 150 → 115**（−35）。刨刀的比喻留著，壓縮前面。
+
+**我的建議是 C。** 但 I.3 那段是 ASR 的來源故事，砍掉有點可惜 —— 如果你想留，
+就改成砍 II.3 和 V.2 各 30 字。
+
 
 ## 念法備註
 
 | 寫法 | 念法 |
 |---|---|
 | Phi-8 | *fye-eight* |
-| pb-five × FhuA | *pee-bee-five* / *foo-ay* |
+| pb-five × FhuA | *pee-bee-five* ／ *foo-ay* |
 | beta-helix | *bay-ta* |
-| TIM barrel | *tim barrel* |
-| zero point one three seven | 一個數字一個數字念，不要念成 "point one thirty-seven" |
+| CDS 11 / 12 / 24 | *C-D-S eleven*，不要念成 zero-zero-one-one |
+| nought point nine nine seven | 一個數字一個數字念 |
 | *Pseudomonas* | *soo-doh-MOH-nas* |
-| CDS eleven / twelve / ten | 不要念 "CDS zero zero one one" |
+| Tolstorukov | *tol-sto-ROO-kov* |
 
 ---
 
 ## Log
 
-- 2026-10-24 — 初稿。依 story 的三幕結構寫出完整旁白，1,837 字（實測）；附逐節字數與 130/140 wpm 累計時間表；CDS 編號全部改用正本（`UUAIURNK_`），Act II 的 β-helix 標為 `CDS_0011 res 540–941`；加入 III.4「訂的那段包含第二幕認出的結構域」的連結；附念法備註
-- 2026-10-24 — 字數改為程式實測值，時間表重算
-- 2026-10-24 — 產生可批註 PDF（double space、行號、右側留白）；修正字數統計把中文導演註記誤計為口白的問題，實際口白 1,802 字
+- 2026-10-24 — v1 初稿，1,802 字，三幕
+- 2026-10-24 — v2 大改。依 Alex 的 PDF 批註與重讀 wiki 的 Engineering／Human Practices：
+  改成四個 DBTL cycle；補上四段 Human Practices；**修正 Ni-NTA 段落**（實際結論是 capture failure，
+  由 Tolstorukov 建議的 anti-His dot blot 證實，2.9× 陰性對照）；修正「預測未驗證」為「已測、方向吻合、
+  無對照」；加開場自我介紹；採樣地點改為 California Botanic Garden；噬菌體基因體組裝改記為團隊；
+  加 sugar coat 解釋圖；放軟第一幕預測語氣；補實作細節（三個摺疊工具、Laguna、PhageRBPdetect）；
+  全篇重寫語氣
