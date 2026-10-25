@@ -14,8 +14,8 @@ import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-SRC = ROOT / "documents/2026-10-24_presentation_video_script.md"
-PDF = ROOT / "documents/2026-10-24_presentation_video_script.pdf"
+SRC = ROOT / "documents/2026-10-25_presentation_video_script.md"
+PDF = ROOT / "documents/2026-10-25_presentation_video_script.pdf"
 WPM = 140
 
 SECTIONS = {
@@ -29,37 +29,43 @@ SECTIONS = {
     "I.4": ("Act I.4 | What we isolated",
             "Sampling photo; five isolates collapsing to three strains; the circular phage genome with the tail spike outlined."),
     "I.5": ("Act I.5 | The first clue",
-            "The three O-antigen loci side by side, labelled as a hypothesis."),
+            "The three cassettes as gene arrows, then the presence-absence matrix of the 45 clusters with the four shared columns marked."),
     "C1.D": ("Cycle 1 | Design", "DBTL bar, DESIGN lit. Lock and key."),
     "C1.B": ("Cycle 1 | Build",
-             "BUILD lit. Funnel from 441 to 144 clusters to 114 x 63. The surrogate-host trade-off as two columns. Three tools and why each stalled."),
+             "BUILD lit. Funnel from 441 to 144 clusters to 114 x 63. The surrogate-host trade-off as two columns."),
     "C1.T": ("Cycle 1 | Test",
-             "TEST lit. The ranking first so it looks reasonable, then score against protein length, then the control figure. Hold 0.137 and 0.136 large."),
+             "TEST lit. The ranking first so it looks reasonable, then score against protein length, then the control table. Hold 0.137 and 0.136 large."),
     "C1.L": ("Cycle 1 | Learn",
-             "LEARN lit. Two confidence bars: on scrambling the left collapses 0.55 to 0.17, the right does not move. Then two circles that never intersect."),
+             "LEARN lit. Two confidence bars: on scrambling the shape score collapses 0.55 to 0.17, the interface score does not move."),
     "C2.DB": ("Cycle 2 | Design and Build",
-              "An open-source classifier over 80 proteins, 8 candidates, rung-period diagram."),
+              "The classifier over 80 proteins; then the rung-period idea drawn on a coiled prism."),
     "C2.TL": ("Cycle 2 | Test and Learn",
-              "Fold table: eight proteins, four verdicts, so the method discriminates. Then the beta-helix render and a sugar-cutting animation."),
+              "The seven-protein verdict table, five of them turned down. Then the beta-helix render and a sugar-cutting animation."),
     "C2.H": ("Cycle 2 | The hypothesis",
              "One-sentence hypothesis box on white, held. Credited jointly with the PI."),
-    "C3.D": ("Cycle 3 | Design",
-             "Domain map of CDS 11: anchor, flexible shaft, rigid body. Then the tree collapsing to three nodes."),
+    "C2.P": ("Cycle 2 | The prediction, and its test",
+             "The 18-host matrix. Put all three caveats on screen with it: no no-phage control, one isolate unscored, two readouts never recorded."),
+    "C3.D1": ("Cycle 3 | Line one: the enzyme that reads the receptor",
+              "Domain map of CDS 11, and the Registry card for the submitted fragment."),
+    "C3.D2": ("Cycle 3 | Line two: why the ancestors are a different protein",
+              "The judge will ask this. CDS 11 and CDS 12 side by side, captioned a separate protein, not a domain."),
     "C3.B": ("Cycle 3 | Build",
-             "Registry cards for the six parts, published and CC0. Caption: three of the six are sequences that exist nowhere in nature."),
+             "Tree collapsing to three nodes; Registry cards for the six parts, published and CC0."),
+    "C3.M": ("Cycle 3 | What the model said, and its own control",
+             "ZymCTRL perplexity along the path, with the 21-of-24 control laid over it. Caption: perplexity is not activity."),
     "C3.T": ("Cycle 3 | Test",
-             "Four test rounds. The 9-15 gels, the 9-29 band, the 10-01 elution that worked, the 10-10 column that did not."),
+             "Four test rounds: the 9-15 gels, the 9-29 band, the 10-01 elution that worked and the one 29 kDa short, the 10-10 column that did not."),
     "C3.L": ("Cycle 3 | Learn: an outside view changed a result",
-             "The strongest human-practices beat in the video. Tolstorukov's email, then the 10-19 dot blot with 2.9x marked."),
-    "C3.A": ("Cycle 3 | The activity assay",
-             "The 10-16 spot test and colony counts normalised to the PBS control. Caption the missing carry-over control."),
+             "The strongest human-practices beat. Tolstorukov's email, then the 10-19 dot blot with 2.9x marked."),
+    "C3.A": ("Cycle 3 | The activity assay, and what it carries",
+             "The 10-16 spot test and colony counts against the PBS control. All three caveats on screen."),
     "C3.G": ("Cycle 3 | What we still owe", "Honest list."),
     "C4.DT": ("Cycle 4 | Design and Test",
-              "Colonies from the plaque zone, whole-genome sequencing, read-level verification, F126L inside a 30 kb capsule cluster."),
+              "Picks from the plaque zone, sequencing, 70 candidate sites down to one, F126L in a 30 kb capsule cluster."),
     "C4.L": ("Cycle 4 | Learn",
              "A capsule hiding an intact O-antigen: how both conclusions hold at once."),
     "WHAT": ("What we're leaving behind",
-             "Tool terminal output, the GitLab repository, the six parts, the negative result."),
+             "Tool output, the GitLab repository, the six parts, the negative result."),
     "CO.1": ("Coda | The garden",
              "Interview clips, at least 20 seconds. Credit both hosts and note permission."),
     "CO.2": ("Coda | Safety",
@@ -67,6 +73,7 @@ SECTIONS = {
     "CO.3": ("Coda | Where we are",
              "Three columns fading in: Established / Partly tested / Open."),
 }
+
 
 
 PREAMBLE = r"""\documentclass[12pt]{article}
@@ -141,12 +148,12 @@ def spoken_lines(chunk):
 def main():
     md = SRC.read_text()
     body = md.split("## OPENING", 1)[1]
-    body = "## OPENING" + body.split("## 對照評分表", 1)[0]
+    body = "## OPENING" + body.split("## FC. 逐項對照表", 1)[0]
 
     out = [PREAMBLE]
     out.append(
-        r"{\LARGE\bfseries Presentation Video --- narration, v3}\\[5pt]"
-        r"{\color{note}iGEM Claremont-CA 2026 \quad\textbar\quad draft of 2026-10-24}\\[3pt]"
+        r"{\LARGE\bfseries Presentation Video --- narration, v4}\\[5pt]"
+        r"{\color{note}iGEM Claremont-CA 2026 \quad\textbar\quad draft of 2026-10-25}\\[3pt]"
         r"{\color{note}Timecodes assume " + str(WPM) + r" words per minute; the uploaded "
         r"file has a hard limit of 15:00.}\\[3pt]"
         r"{\color{note}Line numbers run continuously --- send edits back as "
