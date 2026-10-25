@@ -2,3 +2,11 @@
 lab_notebook/**/*.png filter=lfs diff=lfs merge=lfs -text
 lab_notebook/pre_0604.pdf filter=lfs diff=lfs merge=lfs -text
 documents/2026-05-07_proposal_general.pdf filter=lfs diff=lfs merge=lfs -text
+
+# 1025 presentation video: packed figure assets, rendered clips and their posters.
+# Binary and regenerable, so they ride in LFS rather than bloating the pack.
+documents/2026-10-25_video_assets/*.png filter=lfs diff=lfs merge=lfs -text
+code/output/1025_presentation_deck/movies/*.mp4 filter=lfs diff=lfs merge=lfs -text
+code/output/1025_presentation_deck/posters/*.png filter=lfs diff=lfs merge=lfs -text
+documents/2026-10-25_design_system/*.pdf filter=lfs diff=lfs merge=lfs -text
+documents/2026-10-25_design_system/*.mp4 filter=lfs diff=lfs merge=lfs -text
