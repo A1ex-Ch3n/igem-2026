@@ -20,54 +20,54 @@ WPM = 140
 
 SECTIONS = {
     "OPENING": ("Opening", "Team logo, a team photo, then the title card."),
-    "I.1": ("Act I.1 \textbar{} The bottleneck",
+    "I.1": ("Act I.1 | The bottleneck",
             "Plaque assay animation; then the same drop on two other strains, no effect."),
-    "I.2": ("Act I.2 \textbar{} Adsorption and the sugar coat",
-            "Cross-section of a cell: membrane, wall, O-antigen, capsule. Mark which layer "
-            "the phage meets first."),
-    "I.3": ("Act I.3 \textbar{} Where the project came from",
+    "I.2": ("Act I.2 | Adsorption and the sugar coat",
+            "Cross-section of a cell: membrane, wall, O-antigen, capsule. Mark which layer the phage meets first."),
+    "I.3": ("Act I.3 | Where the project came from",
             "Team photo with Prof. Libeskind-Hadas, captioned as an early conversation."),
-    "I.4": ("Act I.4 \textbar{} Our system, and the first clue",
-            "Sampling at the California Botanic Garden, the genomes, then the three O-antigen "
-            "cassettes side by side. Label the last one a hypothesis, not a prediction."),
-    "II.1": ("Cycle 1 \textbar{} Design", "DBTL bar with DESIGN lit. Lock and key."),
-    "II.2": ("Cycle 1 \textbar{} Build",
-             "BUILD lit. Funnel from 441 to 178 to 114 $\times$ 63. Three tools and why each "
-             "one stalled."),
-    "II.3": ("Cycle 1 \textbar{} Test",
-             "TEST lit. The ranking first, so it looks reasonable; then the control figure. "
-             "Hold 0.137 and 0.136 large."),
-    "II.4": ("Cycle 1 \textbar{} Learn",
-             "LEARN lit. Two confidence bars: on scrambling the left collapses 0.55 to 0.17, "
-             "the right does not move. Then two circles that never intersect."),
-    "III.1": ("Cycle 2 \textbar{} Design and Build",
-              "PhageRBPdetect over 80 proteins, 8 candidates, rung-period diagram."),
-    "III.2": ("Cycle 2 \textbar{} Test and Learn",
-              "Fold table, eight proteins and four verdicts --- the method discriminates. "
-              "Then the beta-helix render and a sugar-cutting animation."),
-    "III.3": ("Cycle 2 \textbar{} The hypothesis",
-              "One-sentence hypothesis box on white, held. Credited jointly with the PI."),
-    "IV.1": ("Cycle 3 \textbar{} Design and Build",
-             "Shaft versus body rigidity, the six constructs, the tree collapsing to three nodes."),
-    "IV.2": ("Cycle 3 \textbar{} Test",
-             "Four test rounds; the 9-29 gel; the 10-10 nickel column with blank elutions."),
-    "IV.3": ("Cycle 3 \textbar{} Learn: an outside view changed a result",
-             "The strongest human-practices beat in the video. Tolstorukov's email, then the "
-             "10-19 dot blot with 2.9$\times$ marked."),
-    "IV.4": ("Cycle 3 \textbar{} What we still owe",
-             "Honest list. Caption: fifth consecutive assay with no empty-vector lane."),
-    "V.1": ("Cycle 4 \textbar{} Design and Test",
-            "Colonies from the plaque zone, whole-genome sequencing, F126L inside a 30 kb "
-            "capsular cluster."),
-    "V.2": ("Cycle 4 \textbar{} Learn",
-            "Diagram of a capsule hiding an intact O-antigen --- how both conclusions hold."),
-    "C.1": ("Coda \textbar{} The garden",
-            "Interview clips, at least 20 seconds. Credit both hosts and note permission."),
-    "C.2": ("Coda \textbar{} Safety",
-            "The IBC letter, 0 VFDB / 0 CARD, and the open condition quoted."),
-    "C.3": ("Coda \textbar{} Where we are",
-            "Three columns fading in: Established / Predicted / Open."),
+    "I.4": ("Act I.4 | What we isolated",
+            "Sampling photo; five isolates collapsing to three strains; the circular phage genome with the tail spike outlined."),
+    "I.5": ("Act I.5 | The first clue",
+            "The three O-antigen loci side by side, labelled as a hypothesis."),
+    "C1.D": ("Cycle 1 | Design", "DBTL bar, DESIGN lit. Lock and key."),
+    "C1.B": ("Cycle 1 | Build",
+             "BUILD lit. Funnel from 441 to 144 clusters to 114 x 63. The surrogate-host trade-off as two columns. Three tools and why each stalled."),
+    "C1.T": ("Cycle 1 | Test",
+             "TEST lit. The ranking first so it looks reasonable, then score against protein length, then the control figure. Hold 0.137 and 0.136 large."),
+    "C1.L": ("Cycle 1 | Learn",
+             "LEARN lit. Two confidence bars: on scrambling the left collapses 0.55 to 0.17, the right does not move. Then two circles that never intersect."),
+    "C2.DB": ("Cycle 2 | Design and Build",
+              "An open-source classifier over 80 proteins, 8 candidates, rung-period diagram."),
+    "C2.TL": ("Cycle 2 | Test and Learn",
+              "Fold table: eight proteins, four verdicts, so the method discriminates. Then the beta-helix render and a sugar-cutting animation."),
+    "C2.H": ("Cycle 2 | The hypothesis",
+             "One-sentence hypothesis box on white, held. Credited jointly with the PI."),
+    "C3.D": ("Cycle 3 | Design",
+             "Domain map of CDS 11: anchor, flexible shaft, rigid body. Then the tree collapsing to three nodes."),
+    "C3.B": ("Cycle 3 | Build",
+             "Registry cards for the six parts, published and CC0. Caption: three of the six are sequences that exist nowhere in nature."),
+    "C3.T": ("Cycle 3 | Test",
+             "Four test rounds. The 9-15 gels, the 9-29 band, the 10-01 elution that worked, the 10-10 column that did not."),
+    "C3.L": ("Cycle 3 | Learn: an outside view changed a result",
+             "The strongest human-practices beat in the video. Tolstorukov's email, then the 10-19 dot blot with 2.9x marked."),
+    "C3.A": ("Cycle 3 | The activity assay",
+             "The 10-16 spot test and colony counts normalised to the PBS control. Caption the missing carry-over control."),
+    "C3.G": ("Cycle 3 | What we still owe", "Honest list."),
+    "C4.DT": ("Cycle 4 | Design and Test",
+              "Colonies from the plaque zone, whole-genome sequencing, read-level verification, F126L inside a 30 kb capsule cluster."),
+    "C4.L": ("Cycle 4 | Learn",
+             "A capsule hiding an intact O-antigen: how both conclusions hold at once."),
+    "WHAT": ("What we're leaving behind",
+             "Tool terminal output, the GitLab repository, the six parts, the negative result."),
+    "CO.1": ("Coda | The garden",
+             "Interview clips, at least 20 seconds. Credit both hosts and note permission."),
+    "CO.2": ("Coda | Safety",
+             "The IBC letter, 0 VFDB / 0 CARD, and the open condition quoted."),
+    "CO.3": ("Coda | Where we are",
+             "Three columns fading in: Established / Partly tested / Open."),
 }
+
 
 PREAMBLE = r"""\documentclass[12pt]{article}
 \usepackage{fontspec}
@@ -93,6 +93,11 @@ PREAMBLE = r"""\documentclass[12pt]{article}
 \begin{document}
 \linenumbers
 """
+
+
+def esc_bar(text):
+    """Headings and notes use a plain pipe as a separator; LaTeX needs \textbar."""
+    return text.replace("|", r"\textbar{}").replace("x 63", r"$\times$ 63").replace("2.9x", r"2.9$\times$")
 
 
 def esc(text):
@@ -127,7 +132,8 @@ def spoken_lines(chunk):
         content = line[2:].strip()
         if not content or CJK.search(content):
             continue
-        if content[0].isascii() and content[0].isalpha():
+        probe = content.lstrip("*_`")
+        if probe and probe[0].isascii() and probe[0].isalpha():
             out.append(content)
     return out
 
@@ -139,7 +145,7 @@ def main():
 
     out = [PREAMBLE]
     out.append(
-        r"{\LARGE\bfseries Presentation Video --- narration, v1}\\[5pt]"
+        r"{\LARGE\bfseries Presentation Video --- narration, v3}\\[5pt]"
         r"{\color{note}iGEM Claremont-CA 2026 \quad\textbar\quad draft of 2026-10-24}\\[3pt]"
         r"{\color{note}Timecodes assume " + str(WPM) + r" words per minute; the uploaded "
         r"file has a hard limit of 15:00.}\\[3pt]"
@@ -159,18 +165,18 @@ def main():
         total += words
         stamp = total / WPM * 60
         out.append(
-            f"\\section*{{{title} \\normalsize\\mdseries\\color{{note}}\\hfill "
+            f"\\section*{{{esc_bar(title)} \\normalsize\\mdseries\\color{{note}}\\hfill "
             f"{words} words \\quad ends {int(stamp)//60}:{int(stamp)%60:02d}}}"
         )
-        out.append(r"{\singlespacing\footnotesize\color{note}ON SCREEN --- " + onscreen + r"\par}")
+        out.append(r"{\singlespacing\footnotesize\color{note}ON SCREEN --- " + esc_bar(onscreen) + r"\par}")
         out.append(r"\begin{spacing}{2.0}")
         out.extend(inline(s) + r"\par" for s in lines)
         out.append(r"\end{spacing}")
 
-    end = total / WPM * 60 + 45
+    end = total / WPM * 60 + 60
     out.append(
         r"\vspace{14pt}{\color{rule}\hrule}\vspace{6pt}"
-        r"{\color{note}\footnotesize " + f"{total} spoken words. With six act cards and a "
+        r"{\color{note}\footnotesize " + f"{total} spoken words. With the act cards and a "
         r"30-second credit card, the finished file runs about "
         f"{int(end)//60}:{int(end)%60:02d} at {WPM} words per minute." + r"\par}"
     )
